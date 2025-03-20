@@ -1,0 +1,703 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\accountmagiamgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\accountmagiamgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\anhdanhgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\anhdanhgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\sanphamgiohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\sanphamgiohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\sanphamgiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\sanphamgiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\sanphamdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\sanphamdonhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\prj_ban_quan_ao.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\prj_ban_quan_ao.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\dbquanaocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\dbquanaocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\anhsanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\anhsanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\yeuthichescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\yeuthichescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\donhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\donhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\giohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\giohangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\loaisanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\loaisanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\sanphamkichcoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\sanphamkichcoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\danhgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\danhgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\sanphamdonhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\sanphamdonhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\sanphamkichco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\sanphamkichco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\anhdanhgium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\anhdanhgium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\yeuthich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\yeuthich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\chatboxescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\chatboxescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\chatbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\chatbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\baiviet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\baiviet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\gopiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\gopiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\baivietscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\baivietscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\danhgium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\danhgium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\magiamgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\magiamgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\diachiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\diachiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\anhsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\anhsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|e:\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\luongbahoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\magiamgium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\magiamgium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AnhSanPhamsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AnhSanPhamsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\AnhSanPhamsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AnhSanPhamsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\AnhSanPhamsController.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAIwJsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:50:55.445Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SanPhamGioHangsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamGioHangsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamGioHangsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamGioHangsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamGioHangsController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwFQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T06:50:16.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SanPhamGioHang.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPhamGioHang.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\SanPhamGioHang.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPhamGioHang.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\SanPhamGioHang.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T15:36:54.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAlwGcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:25:08.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountMaGiamGiumsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AccountMaGiamGiumsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\AccountMaGiamGiumsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AccountMaGiamGiumsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\AccountMaGiamGiumsController.cs",
+              "ViewState": "AgIAAAkAAAAALzMzMzMRwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:49:03.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnhDanhGiumsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AnhDanhGiumsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\AnhDanhGiumsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AnhDanhGiumsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\AnhDanhGiumsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:50:19.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DonHang.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T00:49:15.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\appsettings.json",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\appsettings.json",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\appsettings.json",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-28T15:11:48.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GioHang.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T11:00:19.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SanPhamDonHang.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPhamDonHang.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\SanPhamDonHang.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPhamDonHang.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\SanPhamDonHang.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T15:36:33.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAUwCIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T04:37:32.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAADYbAAAAAAAAAADwv0gbAACBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-15T09:48:15.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-14T06:28:14.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\appsettings.Development.json",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\appsettings.Development.json",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-15T09:15:50.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DbQuanAoContext.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwDcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T15:15:31.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Prj_Ban_Quan_Ao.csproj",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-15T09:30:54.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "YeuThichesController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\YeuThichesController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\YeuThichesController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\YeuThichesController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\YeuThichesController.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAuwJkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T07:02:11.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Account.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\Account.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\Account.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\Account.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwA8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T01:55:50.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GioHangsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\GioHangsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\GioHangsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\GioHangsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\GioHangsController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAswGoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:56:04.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SanPhamsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamsController.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAADwv58AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T07:00:09.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DonHangsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\DonHangsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\DonHangsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\DonHangsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\DonHangsController.cs",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAwwBMBAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:55:08.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoaiSanPhamsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\LoaiSanPhamsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\LoaiSanPhamsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\LoaiSanPhamsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\LoaiSanPhamsController.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAswIAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:57:01.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SanPhamKichCoesController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamKichCoesController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamKichCoesController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamKichCoesController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamKichCoesController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAYwEwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T07:01:40.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DanhGiumsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\DanhGiumsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\DanhGiumsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\DanhGiumsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\DanhGiumsController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswF8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:54:03.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SanPhamDonHangsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamDonHangsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamDonHangsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamDonHangsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamDonHangsController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAqwIQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T07:00:45.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SanPhamKichCo.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPhamKichCo.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\SanPhamKichCo.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPhamKichCo.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\SanPhamKichCo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T08:25:40.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AnhDanhGium.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\AnhDanhGium.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\AnhDanhGium.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\AnhDanhGium.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\AnhDanhGium.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T04:29:22.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoaiSanPham.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T16:10:19.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "YeuThich.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\YeuThich.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\YeuThich.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\YeuThich.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\YeuThich.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T05:16:18.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BaiViet.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\BaiViet.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\BaiViet.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\BaiViet.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\BaiViet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T14:39:03.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ChatBoxesController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\ChatBoxesController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\ChatBoxesController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\ChatBoxesController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\ChatBoxesController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAIAwwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T02:58:37.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ChatBox.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\ChatBox.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\ChatBox.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\ChatBox.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\ChatBox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T03:15:54.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Program.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Program.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Program.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T15:10:42.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "GopiesController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\GopiesController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\GopiesController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\GopiesController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\GopiesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:55:36.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "BaiVietsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\BaiVietsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\BaiVietsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\BaiVietsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\BaiVietsController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:51:22.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DanhGium.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DanhGium.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\DanhGium.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DanhGium.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\DanhGium.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T09:04:26.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MaGiamGiumsController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\MaGiamGiumsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\MaGiamGiumsController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\MaGiamGiumsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\MaGiamGiumsController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAkwHIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:59:30.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "DiaChisController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\DiaChisController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\DiaChisController.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\DiaChisController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\DiaChisController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAswGcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:54:38.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AnhSanPham.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\AnhSanPham.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\AnhSanPham.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\AnhSanPham.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\AnhSanPham.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T15:17:22.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "MaGiamGium.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\MaGiamGium.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\MaGiamGium.cs",
+              "ToolTip": "E:\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\LuongBaHoang_2021602751\\ecomercewebsite\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\MaGiamGium.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\MaGiamGium.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T15:15:54.943Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1144,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1256,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
