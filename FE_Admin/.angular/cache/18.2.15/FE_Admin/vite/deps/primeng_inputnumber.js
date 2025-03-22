@@ -1,24 +1,20 @@
 import {
   INPUTNUMBER_VALUE_ACCESSOR,
   InputNumber,
-  InputNumberClasses,
-  InputNumberModule,
-  InputNumberStyle
-} from "./chunk-4ICUU7I2.js";
-import "./chunk-V5LXI32G.js";
-import "./chunk-CJJYOLWX.js";
-import "./chunk-DPTKBWVE.js";
-import "./chunk-QYDFBSVR.js";
-import "./chunk-SOKPZCQ7.js";
-import "./chunk-WJIUAD7S.js";
-import "./chunk-HLIPVD2M.js";
-import "./chunk-JZFRVOZK.js";
-import "./chunk-WDMUDEB6.js";
+  InputNumberModule
+} from "./chunk-HOCBD36I.js";
+import "./chunk-VTFTFSXC.js";
+import "./chunk-CBZSW7SF.js";
+import "./chunk-NKZKW7PO.js";
+import "./chunk-TNKOLSEQ.js";
+import "./chunk-VNAEY2G3.js";
+import "./chunk-SLKG3S73.js";
+import "./chunk-LJGW4UUE.js";
+import "./chunk-YCFEHKBY.js";
+import "./chunk-VKUFYADX.js";
 export {
   INPUTNUMBER_VALUE_ACCESSOR,
   InputNumber,
-  InputNumberClasses,
-  InputNumberModule,
-  InputNumberStyle
+  InputNumberModule
 };
 //# sourceMappingURL=primeng_inputnumber.js.map

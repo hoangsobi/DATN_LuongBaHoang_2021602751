@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+th{
+  font-weight: 500;
+  font-size: 14px;
+}
+th,td{
+  font-family: 'nunito', sans-serif;
+}
+td{
+  font-size: 14px;
+}

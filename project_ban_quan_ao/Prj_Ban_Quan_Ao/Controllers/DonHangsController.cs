@@ -27,9 +27,19 @@ namespace Prj_Ban_Quan_Ao.Controllers
 
         // GET: api/DonHangs
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<DonHang>>> GetDonHangs()
+        public async Task<ActionResult<IEnumerable<object>>> GetDonHangs()
         {
-            return await _context.DonHangs.ToListAsync();
+            return await (from dh in _context.DonHangs
+                          join ac in _context.Accounts on dh.AccountId equals ac.Id
+                          orderby dh.NgayTao descending
+                          select new
+                          {
+                              dh.Id,
+                              dh.ThanhTien,
+                              dh.TrangThai,
+                              dh.NgayTao,
+                              ac.TenHienThi
+                          }).ToListAsync();
         }
 
         // GET: api/DonHangs/5
@@ -288,6 +298,43 @@ namespace Prj_Ban_Quan_Ao.Controllers
                          };
 
             return Ok(result.ToList());
+
+
+        }
+
+        [HttpGet("getListSanPhamByIDDonHang/{orderId}")]
+        public async Task<IActionResult> GetListSanPhamByIDDonHang(Guid orderId)
+        {
+            var sanPhams = await (from spdh in _context.SanPhamDonHangs
+                      join sp in _context.SanPhams on spdh.SanPhamId equals sp.Id
+                      where spdh.DonHangId == orderId
+                      select new
+                      {
+                          sanPhamId = sp.Id,
+                          maSanPham = sp.MaSanPham, 
+                          tenSanPham = sp.Ten,
+                          gia = sp.Gia,
+                          giaSauGiam = sp.GiaSauGiam,
+                          soLuong = spdh.SoLuong,
+                          duongDan = sp.DuongDanAnh
+                      })
+                      .ToListAsync();
+
+            return Ok(sanPhams);
+
+            //if (query != null)
+            //{
+            //    foreach (var sp in query.sanPhams)
+            //    {
+            //        sp.duongDan = await _context.AnhSanPhams
+            //            .Where(a => a.SanPhamId == sp.sanPhamId)
+            //            .OrderByDescending(a => a.NgayTao)
+            //            .Select(a => a.DuongDan)
+            //            .FirstOrDefaultAsync();
+            //    }
+            //}
+
+           // return Ok(query);
 
 
         }

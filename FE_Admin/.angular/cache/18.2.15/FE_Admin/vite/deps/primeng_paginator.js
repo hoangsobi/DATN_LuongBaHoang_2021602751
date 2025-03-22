@@ -1,26 +1,23 @@
 import {
   Paginator,
-  PaginatorClasses,
-  PaginatorModule,
-  PaginatorStyle
-} from "./chunk-TRH7TZ2Z.js";
-import "./chunk-4ICUU7I2.js";
-import "./chunk-TPQC65W5.js";
-import "./chunk-V5LXI32G.js";
-import "./chunk-UPZTWTS2.js";
-import "./chunk-CJJYOLWX.js";
-import "./chunk-NHXGZ5UY.js";
-import "./chunk-DPTKBWVE.js";
-import "./chunk-QYDFBSVR.js";
-import "./chunk-SOKPZCQ7.js";
-import "./chunk-WJIUAD7S.js";
-import "./chunk-HLIPVD2M.js";
-import "./chunk-JZFRVOZK.js";
-import "./chunk-WDMUDEB6.js";
+  PaginatorModule
+} from "./chunk-L3XLBJ4M.js";
+import "./chunk-NTPFIEJK.js";
+import "./chunk-XESPVB35.js";
+import "./chunk-HOCBD36I.js";
+import "./chunk-VTFTFSXC.js";
+import "./chunk-ZIMREN4U.js";
+import "./chunk-CBZSW7SF.js";
+import "./chunk-VBPCWGUM.js";
+import "./chunk-NKZKW7PO.js";
+import "./chunk-TNKOLSEQ.js";
+import "./chunk-VNAEY2G3.js";
+import "./chunk-SLKG3S73.js";
+import "./chunk-LJGW4UUE.js";
+import "./chunk-YCFEHKBY.js";
+import "./chunk-VKUFYADX.js";
 export {
   Paginator,
-  PaginatorClasses,
-  PaginatorModule,
-  PaginatorStyle
+  PaginatorModule
 };
 //# sourceMappingURL=primeng_paginator.js.map

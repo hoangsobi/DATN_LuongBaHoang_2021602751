@@ -1,20 +1,13 @@
 import {
   InputText,
-  InputTextClasses,
-  InputTextModule,
-  InputTextStyle
-} from "./chunk-V5LXI32G.js";
-import "./chunk-DPTKBWVE.js";
-import "./chunk-QYDFBSVR.js";
-import "./chunk-SOKPZCQ7.js";
-import "./chunk-WJIUAD7S.js";
-import "./chunk-HLIPVD2M.js";
-import "./chunk-JZFRVOZK.js";
-import "./chunk-WDMUDEB6.js";
+  InputTextModule
+} from "./chunk-VTFTFSXC.js";
+import "./chunk-NKZKW7PO.js";
+import "./chunk-LJGW4UUE.js";
+import "./chunk-YCFEHKBY.js";
+import "./chunk-VKUFYADX.js";
 export {
   InputText,
-  InputTextClasses,
-  InputTextModule,
-  InputTextStyle
+  InputTextModule
 };
 //# sourceMappingURL=primeng_inputtext.js.map

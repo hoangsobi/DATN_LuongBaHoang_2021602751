@@ -2,24 +2,21 @@ import { createRequire } from 'module';const require = createRequire(import.meta
 import {
   INPUTNUMBER_VALUE_ACCESSOR,
   InputNumber,
-  InputNumberClasses,
-  InputNumberModule,
-  InputNumberStyle
-} from "./chunk-2IAJX5AJ.js";
-import "./chunk-WB253L6V.js";
+  InputNumberModule
+} from "./chunk-OWYASCBQ.js";
+import "./chunk-KT2OVCTQ.js";
+import "./chunk-WPWBS2EW.js";
 import "./chunk-234BFN4O.js";
-import "./chunk-R6YFRBVF.js";
-import "./chunk-THRB5IZZ.js";
-import "./chunk-LLU75WQ7.js";
-import "./chunk-HXVAWUBR.js";
+import "./chunk-AZDVLQUO.js";
+import "./chunk-HGQIFGGP.js";
+import "./chunk-CTFQDCDC.js";
 import "./chunk-D3JV2RY4.js";
+import "./chunk-2DBR2GLK.js";
 import "./chunk-NCYSEW5N.js";
 import "./chunk-NQ4HTGF6.js";
 export {
   INPUTNUMBER_VALUE_ACCESSOR,
   InputNumber,
-  InputNumberClasses,
-  InputNumberModule,
-  InputNumberStyle
+  InputNumberModule
 };
 //# sourceMappingURL=primeng_inputnumber.js.map

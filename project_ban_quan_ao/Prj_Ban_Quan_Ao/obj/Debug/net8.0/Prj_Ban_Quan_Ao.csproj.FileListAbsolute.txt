@@ -1,1045 +1,265 @@
-<<<<<<< HEAD
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\appsettings.Development.json
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\appsettings.json
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.exe
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.deps.json
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.runtimeconfig.json
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.pdb
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Azure.Core.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Azure.Identity.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Humanizer.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.OpenApi.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.CodeDom.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Convention.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Hosting.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Runtime.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.TypedParts.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Memory.Data.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.csproj.AssemblyReference.cache
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.GeneratedMSBuildEditorConfig.editorconfig
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.AssemblyInfoInputs.cache
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.AssemblyInfo.cs
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.csproj.CoreCompileInputs.cache
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.MvcApplicationPartsAssemblyInfo.cs
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.MvcApplicationPartsAssemblyInfo.cache
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.build.json
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.development.json
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.Prj_Ban_Quan_Ao.Microsoft.AspNetCore.StaticWebAssets.props
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.build.Prj_Ban_Quan_Ao.props
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Prj_Ban_Quan_Ao.props
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Prj_Ban_Quan_Ao.props
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.pack.json
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\scopedcss\bundle\Prj_Ban_Quan_Ao.styles.css
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_.93CD160F.Up2Date
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\refint\Prj_Ban_Quan_Ao.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.pdb
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.genruntimeconfig.cache
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\ref\Prj_Ban_Quan_Ao.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Build.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Build.Framework.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Newtonsoft.Json.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Common.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Configuration.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Frameworks.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.LibraryModel.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Packaging.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.ProjectModel.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Protocol.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Versioning.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\af\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ar\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\az\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\bg\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\da\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\el\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fa\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\he\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hr\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hu\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hy\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\id\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\is\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ku\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\lv\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\mt\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nb\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nl\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ro\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sk\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sl\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sr\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sv\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uk\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\vi\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-D:\core_Web_API\Prj_Ban_Quan_Ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\appsettings.Development.json
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\appsettings.json
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.exe
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.deps.json
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.runtimeconfig.json
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.pdb
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Azure.Core.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Azure.Identity.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Humanizer.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Build.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Build.Framework.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.OpenApi.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Newtonsoft.Json.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Common.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Configuration.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Frameworks.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.LibraryModel.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Packaging.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.ProjectModel.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Protocol.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Versioning.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.CodeDom.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Convention.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Hosting.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Runtime.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.TypedParts.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Memory.Data.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\af\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ar\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\az\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\bg\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\da\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\el\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fa\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\he\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hr\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hu\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hy\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\id\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\is\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ku\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\lv\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\mt\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nb\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nl\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ro\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sk\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sl\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sr\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sv\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uk\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\vi\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.csproj.AssemblyReference.cache
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.GeneratedMSBuildEditorConfig.editorconfig
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.AssemblyInfoInputs.cache
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.AssemblyInfo.cs
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.csproj.CoreCompileInputs.cache
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.MvcApplicationPartsAssemblyInfo.cs
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.MvcApplicationPartsAssemblyInfo.cache
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.sourcelink.json
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.build.json
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.development.json
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.Prj_Ban_Quan_Ao.Microsoft.AspNetCore.StaticWebAssets.props
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.build.Prj_Ban_Quan_Ao.props
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Prj_Ban_Quan_Ao.props
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Prj_Ban_Quan_Ao.props
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.pack.json
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\scopedcss\bundle\Prj_Ban_Quan_Ao.styles.css
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_.93CD160F.Up2Date
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\refint\Prj_Ban_Quan_Ao.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.pdb
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.genruntimeconfig.cache
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\ref\Prj_Ban_Quan_Ao.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\CommunityToolkit.HighPerformance.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Minio.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.IO.Hashing.dll
-D:\DoAnChuyenNganh\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Reactive.dll
-=======
->>>>>>> 0dc853f6085e6111669323456a8a740a5c7eff39
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\appsettings.Development.json
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\appsettings.json
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.exe
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.deps.json
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.runtimeconfig.json
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.pdb
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Azure.Core.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Azure.Identity.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\CommunityToolkit.HighPerformance.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Humanizer.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Build.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Build.Framework.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.OpenApi.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Minio.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Newtonsoft.Json.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Common.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Configuration.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Frameworks.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.LibraryModel.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Packaging.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.ProjectModel.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Protocol.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Versioning.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.CodeDom.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Convention.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Hosting.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Runtime.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.TypedParts.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.IO.Hashing.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Memory.Data.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Reactive.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Text.Json.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\af\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ar\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\az\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\bg\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\da\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\el\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fa\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\he\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hr\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hu\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hy\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\id\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\is\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ku\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\lv\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\mt\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nb\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nl\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ro\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sk\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sl\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sr\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sv\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uk\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\vi\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.csproj.AssemblyReference.cache
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.GeneratedMSBuildEditorConfig.editorconfig
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.AssemblyInfoInputs.cache
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.AssemblyInfo.cs
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.csproj.CoreCompileInputs.cache
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.MvcApplicationPartsAssemblyInfo.cs
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.MvcApplicationPartsAssemblyInfo.cache
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.sourcelink.json
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.build.json
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.development.json
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.Prj_Ban_Quan_Ao.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.build.Prj_Ban_Quan_Ao.props
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Prj_Ban_Quan_Ao.props
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Prj_Ban_Quan_Ao.props
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\scopedcss\bundle\Prj_Ban_Quan_Ao.styles.css
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_.93CD160F.Up2Date
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\refint\Prj_Ban_Quan_Ao.dll
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.pdb
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.genruntimeconfig.cache
-D:\Angular\FrontEnd_DoAn_er\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\ref\Prj_Ban_Quan_Ao.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\refint\Prj_Ban_Quan_Ao.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.pdb
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\appsettings.Development.json
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\appsettings.json
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.staticwebassets.endpoints.json
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.exe
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.deps.json
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.runtimeconfig.json
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.pdb
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Azure.Core.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Azure.Identity.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\CommunityToolkit.HighPerformance.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Humanizer.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Build.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Build.Framework.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.OpenApi.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Minio.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Mono.TextTemplating.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Newtonsoft.Json.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Common.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Configuration.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Frameworks.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.LibraryModel.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Packaging.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.ProjectModel.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Protocol.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Versioning.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.CodeDom.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Convention.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Hosting.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Runtime.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.TypedParts.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Drawing.Common.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.IO.Hashing.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Memory.Data.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Reactive.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Runtime.Caching.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Security.Permissions.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Windows.Extensions.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\af\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ar\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\az\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\bg\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\da\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\el\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fa\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\he\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hr\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hu\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hy\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\id\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\is\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ku\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\lv\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\mt\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nb\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nl\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ro\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sk\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sl\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sr\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sv\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uk\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\vi\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.csproj.AssemblyReference.cache
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.GeneratedMSBuildEditorConfig.editorconfig
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.AssemblyInfoInputs.cache
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.AssemblyInfo.cs
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.csproj.CoreCompileInputs.cache
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.MvcApplicationPartsAssemblyInfo.cs
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.MvcApplicationPartsAssemblyInfo.cache
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.sourcelink.json
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\scopedcss\bundle\Prj_Ban_Quan_Ao.styles.css
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.build.json
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.development.json
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.Prj_Ban_Quan_Ao.Microsoft.AspNetCore.StaticWebAssets.props
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.Prj_Ban_Quan_Ao.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.build.Prj_Ban_Quan_Ao.props
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Prj_Ban_Quan_Ao.props
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Prj_Ban_Quan_Ao.props
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.pack.json
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_.93CD160F.Up2Date
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.genruntimeconfig.cache
-E:\Đồ án tốt nghiệp\LuongBaHoang_2021602751\ecomercewebsite\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\ref\Prj_Ban_Quan_Ao.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\appsettings.Development.json
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\appsettings.json
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.exe
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.deps.json
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.runtimeconfig.json
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Prj_Ban_Quan_Ao.pdb
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Azure.Core.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Azure.Identity.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\CommunityToolkit.HighPerformance.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Humanizer.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Build.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Build.Framework.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Features.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Minio.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Common.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Configuration.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.DependencyResolver.Core.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Frameworks.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.LibraryModel.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Packaging.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.ProjectModel.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Protocol.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\NuGet.Versioning.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.CodeDom.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.IO.Hashing.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Memory.Data.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Reactive.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Text.Json.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\af\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ar\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\az\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\bg\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\bn-BD\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\da\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\el\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fa\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fi-FI\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr-BE\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\he\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hr\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hu\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\hy\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\id\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\is\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko-KR\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ku\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\lv\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ms-MY\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\mt\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nb\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nb-NO\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\nl\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ro\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sk\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sl\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sr\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sr-Latn\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\sv\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\th-TH\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uk\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\vi\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.csproj.AssemblyReference.cache
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.GeneratedMSBuildEditorConfig.editorconfig
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.AssemblyInfoInputs.cache
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.AssemblyInfo.cs
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.csproj.CoreCompileInputs.cache
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.MvcApplicationPartsAssemblyInfo.cs
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.MvcApplicationPartsAssemblyInfo.cache
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.sourcelink.json
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.build.json
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.development.json
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.Prj_Ban_Quan_Ao.Microsoft.AspNetCore.StaticWebAssets.props
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.build.Prj_Ban_Quan_Ao.props
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Prj_Ban_Quan_Ao.props
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Prj_Ban_Quan_Ao.props
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\staticwebassets.pack.json
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\scopedcss\bundle\Prj_Ban_Quan_Ao.styles.css
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_.93CD160F.Up2Date
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\refint\Prj_Ban_Quan_Ao.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.pdb
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.genruntimeconfig.cache
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\ref\Prj_Ban_Quan_Ao.dll
