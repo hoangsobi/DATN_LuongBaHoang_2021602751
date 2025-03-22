@@ -13,8 +13,6 @@ public partial class Account
 
     public string? MatKhau { get; set; }
 
-    public bool? VaiTro { get; set; }
-
     public bool? GioiTinh { get; set; }
 
     public DateOnly? NgaySinh { get; set; }
@@ -27,6 +25,10 @@ public partial class Account
 
     public DateTime? NgayTao { get; set; }
 
+    public bool? IsLocked { get; set; }
+
+    public Guid? VaiTroId { get; set; }
+
     public virtual ICollection<AccountMaGiamGium> AccountMaGiamGia { get; set; } = new List<AccountMaGiamGium>();
 
     public virtual ICollection<DanhGium> DanhGia { get; set; } = new List<DanhGium>();
@@ -36,6 +38,8 @@ public partial class Account
     public virtual ICollection<DonHang> DonHangs { get; set; } = new List<DonHang>();
 
     public virtual GioHang? GioHang { get; set; }
+
+    public virtual VaiTro? VaiTro { get; set; }
 
     public virtual ICollection<YeuThich> YeuThiches { get; set; } = new List<YeuThich>();
 }

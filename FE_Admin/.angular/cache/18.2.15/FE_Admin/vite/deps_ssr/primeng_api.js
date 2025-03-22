@@ -11,12 +11,12 @@ import {
   MessageService,
   OverlayService,
   PrimeIcons,
+  PrimeNGConfig,
   PrimeTemplate,
   SharedModule,
   TranslationKeys,
   TreeDragDropService
-} from "./chunk-HXVAWUBR.js";
-import "./chunk-D3JV2RY4.js";
+} from "./chunk-2DBR2GLK.js";
 import "./chunk-NCYSEW5N.js";
 import "./chunk-NQ4HTGF6.js";
 export {
@@ -31,6 +31,7 @@ export {
   MessageService,
   OverlayService,
   PrimeIcons,
+  PrimeNGConfig,
   PrimeTemplate,
   SharedModule,
   TranslationKeys,

@@ -28,7 +28,38 @@ namespace Prj_Ban_Quan_Ao.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Account>>> GetAccounts()
         {
-            return await _context.Accounts.ToListAsync();
+            return await (from ac in _context.Accounts
+                          join vt in _context.VaiTros on ac.VaiTroId equals vt.Id
+                          where vt.Name == "User"
+                          select ac)
+                          .OrderByDescending(x => x.NgayTao)
+                          .ToListAsync();
+        }
+
+        [HttpGet("getAllRole")]
+        public async Task<ActionResult<IEnumerable<VaiTro>>> GetRoles()
+        {
+            return await _context.VaiTros.Where(x => x.Name != "User").ToListAsync();
+        }
+
+        [HttpGet("getalluseradmin")]
+        public async Task<ActionResult<IEnumerable<object>>> GetAllAccounts()
+        {
+            return await (from ac in _context.Accounts
+                          join vt in _context.VaiTros on ac.VaiTroId equals vt.Id
+                          where vt.Name == "Admin"
+                          orderby ac.NgayTao descending
+                          select new
+                          {
+                              ac.Id,
+                              ac.TenHienThi,
+                              ac.NgayTao,
+                              ac.SoDienThoai,
+                              ac.Email,
+                              ac.DuongDanAnh,
+                              vt.Name,
+                              ac.IsLocked
+                          }).ToListAsync();
         }
 
 
@@ -37,7 +68,6 @@ namespace Prj_Ban_Quan_Ao.Controllers
         {
             var query =
                         (from ac in _context.Accounts
-                         where ac.VaiTro == false
                          select new
                          {
                              accountId = ac.Id,
@@ -58,15 +88,51 @@ namespace Prj_Ban_Quan_Ao.Controllers
 
         // GET: api/Accounts/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Account>> GetAccount(Guid id)
+        public async Task<ActionResult<object>> GetAccount(Guid id)
         {
-            var account = await _context.Accounts.FindAsync(id);
 
-            if (account == null)
-            {
-                return NotFound();
-            }
 
+            var account = await (from ac in _context.Accounts
+                                 join ad in _context.DiaChis on ac.Id equals ad.AccountId into AaGroup
+                                 from aa in AaGroup.DefaultIfEmpty()
+                                 where ac.Id == id
+                                 group aa by new
+                                 {
+                                     ac.Id,
+                                     ac.MatKhau,
+                                     ac.TenHienThi,
+                                     ac.TenDangNhap,
+                                     ac.Email,
+                                     ac.NgaySinh,
+                                     ac.GioiTinh,
+                                     ac.SoDienThoai,
+                                     ac.DuongDanAnh,
+                                     ac.VaiTroId,
+                                     ac.IsLocked
+                                 } into grouped
+                                 select new
+                                 {
+                                     grouped.Key.Id,
+                                     grouped.Key.MatKhau,
+                                     grouped.Key.TenHienThi,
+                                     grouped.Key.TenDangNhap,
+                                     grouped.Key.Email,
+                                     grouped.Key.NgaySinh,
+                                     grouped.Key.GioiTinh,
+                                     grouped.Key.SoDienThoai,
+                                     grouped.Key.DuongDanAnh,
+                                     grouped.Key.VaiTroId,
+                                     grouped.Key.IsLocked,
+                                     diaChis = grouped.Where(x => x != null)
+                                                      .Select(x => new 
+                                                         {
+                                                             x.Tinh,
+                                                             x.Huyen,
+                                                             x.Xa,
+                                                             x.GhiChu
+                                                         }).ToList()
+                                 }).FirstOrDefaultAsync();
+                                 
             return account;
         }
 
@@ -107,13 +173,13 @@ namespace Prj_Ban_Quan_Ao.Controllers
         public async Task<ActionResult<Account>> PostAccount(Account account)
         {
             _context.Accounts.Add(account);
-            var newCart = new GioHang
-            {
-                Id = account.Id,
-                TongSoLuong = 0,
-                NgayTao = DateTime.Now
-            };
-            _context.GioHangs.Add(newCart);
+            //var newCart = new GioHang
+            //{
+            //    Id = account.Id,
+            //    TongSoLuong = 0,
+            //    NgayTao = DateTime.Now
+            //};
+            //_context.GioHangs.Add(newCart);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetAccount", new { id = account.Id, status = "success" }, account);
@@ -175,6 +241,25 @@ namespace Prj_Ban_Quan_Ao.Controllers
                    subject,
                    message
                 ));
+        }
+
+
+        [HttpGet("lockUser/{userId}")]
+        public async Task<bool> LockUser(Guid userId)
+        {
+            var curUser = await _context.Accounts.FirstOrDefaultAsync(x => x.Id.Equals(userId));
+            curUser.IsLocked = true;
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        [HttpGet("unlockUser/{userId}")]
+        public async Task<bool> UnlockUser(Guid userId)
+        {
+            var curUser = await _context.Accounts.FirstOrDefaultAsync(x => x.Id.Equals(userId));
+            curUser.IsLocked = false;
+            await _context.SaveChangesAsync();
+            return true;
         }
 
 

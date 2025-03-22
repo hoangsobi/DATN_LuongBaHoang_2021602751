@@ -1,31 +1,35 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
+  Calendar,
+  CalendarModule
+} from "./chunk-L6E4EVMS.js";
+import {
   Paginator,
-  PaginatorModule,
+  PaginatorModule
+} from "./chunk-OLLOD2GQ.js";
+import {
+  Dropdown,
+  DropdownModule,
   Scroller,
-  ScrollerModule,
-  Select,
-  SelectModule
-} from "./chunk-O3Y7DXW6.js";
+  ScrollerModule
+} from "./chunk-QOMDLTSW.js";
+import "./chunk-LIYI4IOE.js";
 import {
   InputNumber,
   InputNumberModule
-} from "./chunk-2IAJX5AJ.js";
-import {
-  ObjectUtils,
-  UniqueComponentId,
-  zindexutils
-} from "./chunk-VUPOKX3N.js";
+} from "./chunk-OWYASCBQ.js";
 import {
   InputText,
   InputTextModule
-} from "./chunk-WB253L6V.js";
+} from "./chunk-KT2OVCTQ.js";
 import {
-  SelectButtonModule
-} from "./chunk-4RLNRXFL.js";
+  CheckIcon
+} from "./chunk-YHU57XPM.js";
+import {
+  TimesIcon
+} from "./chunk-WPWBS2EW.js";
 import {
   animate,
-  state,
   style,
   transition,
   trigger
@@ -33,75 +37,29 @@ import {
 import {
   FormsModule,
   NG_VALUE_ACCESSOR,
-  NgControl,
   NgControlStatus,
   NgModel
 } from "./chunk-234BFN4O.js";
 import {
-  Button,
-  ButtonModule
-} from "./chunk-3WX4V3XO.js";
+  DomSanitizer
+} from "./chunk-FSNCU3LC.js";
+import "./chunk-QXBJHUZT.js";
 import {
-  ArrowDownIcon,
-  ArrowUpIcon,
+  ButtonDirective,
+  ButtonModule
+} from "./chunk-AZDVLQUO.js";
+import {
   AutoFocus,
-  CalendarIcon,
-  CheckIcon,
-  ChevronDownIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  ChevronUpIcon,
+  AutoFocusModule,
+  SpinnerIcon
+} from "./chunk-HGQIFGGP.js";
+import {
+  BaseIcon,
   ConnectedOverlayScrollHandler,
   DomHandler,
-  FilterIcon,
-  FilterSlashIcon,
-  MinusIcon,
-  PlusIcon,
-  SortAltIcon,
-  SortAmountDownIcon,
-  SortAmountUpAltIcon,
-  SpinnerIcon,
-  TimesIcon,
-  TrashIcon
-} from "./chunk-R6YFRBVF.js";
-import {
-  Ripple
-} from "./chunk-ZP6BZ522.js";
-import {
-  BaseComponent
-} from "./chunk-THRB5IZZ.js";
-import {
-  BaseStyle
-} from "./chunk-LLU75WQ7.js";
-import {
-  FilterMatchMode,
-  FilterOperator,
-  FilterService,
-  OverlayService,
-  PrimeTemplate,
-  SharedModule,
-  TranslationKeys,
-  absolutePosition,
-  addClass,
-  addStyle,
-  appendChild,
-  blockBodyScroll,
-  contains,
-  equals,
-  find,
-  findSingle,
-  getFocusableElements,
-  getIndex,
-  getOuterWidth,
-  hasClass,
-  isDate,
-  isNotEmpty,
-  isTouchDevice,
-  relativePosition,
-  setAttribute,
-  unblockBodyScroll,
-  uuid
-} from "./chunk-HXVAWUBR.js";
+  Ripple,
+  RippleModule
+} from "./chunk-CTFQDCDC.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -115,6 +73,19 @@ import {
   isPlatformBrowser
 } from "./chunk-D3JV2RY4.js";
 import {
+  FilterMatchMode,
+  FilterOperator,
+  FilterService,
+  ObjectUtils,
+  OverlayService,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  TranslationKeys,
+  UniqueComponentId,
+  zindexutils
+} from "./chunk-2DBR2GLK.js";
+import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
@@ -126,7 +97,6 @@ import {
   HostListener,
   Inject,
   Injectable,
-  Injector,
   Input,
   NgModule,
   NgZone,
@@ -138,12 +108,9 @@ import {
   ViewEncapsulation$1,
   booleanAttribute,
   forwardRef,
-  inject,
   numberAttribute,
   require_cjs,
   setClassMetadata,
-  signal,
-  ɵsetClassDebugInfo,
   ɵɵInheritDefinitionFeature,
   ɵɵInputTransformsFeature,
   ɵɵNgOnChangesFeature,
@@ -170,13 +137,13 @@ import {
   ɵɵgetInheritedFactory,
   ɵɵlistener,
   ɵɵloadQuery,
+  ɵɵnamespaceSVG,
   ɵɵnextContext,
-  ɵɵprojection,
-  ɵɵprojectionDef,
   ɵɵproperty,
   ɵɵpureFunction0,
   ɵɵpureFunction1,
   ɵɵpureFunction2,
+  ɵɵpureFunction3,
   ɵɵpureFunction4,
   ɵɵpureFunction5,
   ɵɵpureFunction6,
@@ -187,7 +154,6 @@ import {
   ɵɵresetView,
   ɵɵresolveWindow,
   ɵɵrestoreView,
-  ɵɵsetNgModuleScope,
   ɵɵstyleMap,
   ɵɵstyleProp,
   ɵɵtemplate,
@@ -195,10 +161,6 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
-  ɵɵtextInterpolate2,
-  ɵɵtwoWayBindingSet,
-  ɵɵtwoWayListener,
-  ɵɵtwoWayProperty,
   ɵɵviewQuery
 } from "./chunk-NCYSEW5N.js";
 import {
@@ -207,1919 +169,778 @@ import {
   __toESM
 } from "./chunk-NQ4HTGF6.js";
 
-// node_modules/primeng/fesm2022/primeng-datepicker.mjs
-var theme = ({
-  dt
-}) => `
-.p-datepicker {
-    position: relative;
-    display: inline-flex;
-    max-width: 100%;
-}
-
-.p-datepicker-input {
-    flex: 1 1 auto;
-    width: 1%;
-}
-
-.p-datepicker:has(.p-datepicker-dropdown) .p-datepicker-input {
-    border-start-end-radius: 0;
-    border-end-end-radius: 0;
-}
-
-.p-datepicker-dropdown {
-    cursor: pointer;
-    display: inline-flex;
-    user-select: none;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    width: ${dt("datepicker.dropdown.width")};
-    border-start-end-radius: ${dt("datepicker.dropdown.border.radius")};
-    border-end-end-radius: ${dt("datepicker.dropdown.border.radius")};
-    background: ${dt("datepicker.dropdown.background")};
-    border: 1px solid ${dt("datepicker.dropdown.border.color")};
-    border-inline-start: 0 none;
-    color: ${dt("datepicker.dropdown.color")};
-    transition: background ${dt("datepicker.transition.duration")}, color ${dt("datepicker.transition.duration")}, border-color ${dt("datepicker.transition.duration")}, outline-color ${dt("datepicker.transition.duration")};
-    outline-color: transparent;
-}
-
-.p-datepicker-dropdown:not(:disabled):hover {
-    background: ${dt("datepicker.dropdown.hover.background")};
-    border-color: ${dt("datepicker.dropdown.hover.border.color")};
-    color: ${dt("datepicker.dropdown.hover.color")};
-}
-
-.p-datepicker-dropdown:not(:disabled):active {
-    background: ${dt("datepicker.dropdown.active.background")};
-    border-color: ${dt("datepicker.dropdown.active.border.color")};
-    color: ${dt("datepicker.dropdown.active.color")};
-}
-
-.p-datepicker-dropdown:focus-visible {
-    box-shadow: ${dt("datepicker.dropdown.focus.ring.shadow")};
-    outline: ${dt("datepicker.dropdown.focus.ring.width")} ${dt("datepicker.dropdown.focus.ring.style")} ${dt("datepicker.dropdown.focus.ring.color")};
-    outline-offset: ${dt("datepicker.dropdown.focus.ring.offset")};
-}
-
-.p-datepicker:has(.p-datepicker-input-icon-container) {
-    position: relative;
-}
-
-.p-datepicker:has(.p-datepicker-input-icon-container) .p-datepicker-input {
-    padding-inline-end: calc((${dt("form.field.padding.x")} * 2) + ${dt("icon.size")});
-}
-
-.p-datepicker-input-icon-container {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    inset-inline-end: ${dt("form.field.padding.x")};
-    margin-top: calc(-1 * (${dt("icon.size")} / 2));
-    color: ${dt("datepicker.input.icon.color")};
-    line-height: 1;
-}
-
-.p-datepicker-fluid {
-    display: flex;
-}
-
-.p-datepicker-fluid .p-datepicker-input {
-    width: 1%;
-}
-
-.p-datepicker .p-datepicker-panel {
-    min-width: 100%;
-}
-
-.p-datepicker-panel {
-    width: auto;
-    padding: ${dt("datepicker.panel.padding")};
-    background: ${dt("datepicker.panel.background")};
-    color: ${dt("datepicker.panel.color")};
-    border: 1px solid ${dt("datepicker.panel.border.color")};
-    border-radius: ${dt("datepicker.panel.border.radius")};
-    box-shadow: ${dt("datepicker.panel.shadow")};
-}
-
-.p-datepicker-panel-inline {
-    display: inline-block;
-    overflow-x: auto;
-    box-shadow: none;
-}
-
-.p-datepicker-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: ${dt("datepicker.header.padding")};
-    background: ${dt("datepicker.header.background")};
-    color: ${dt("datepicker.header.color")};
-    border-bottom: 1px solid ${dt("datepicker.header.border.color")};
-}
-
-.p-datepicker-next-button:dir(rtl) {
-    transform: rotate(180deg);
-}
-
-.p-datepicker-prev-button:dir(rtl) {
-    transform: rotate(180deg);
-}
-
-.p-datepicker-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: ${dt("datepicker.title.gap")};
-    font-weight: ${dt("datepicker.title.font.weight")};
-}
-
-.p-datepicker-select-year,
-.p-datepicker-select-month {
-    border: none;
-    background: transparent;
-    margin: 0;
-    cursor: pointer;
-    font-weight: inherit;
-    transition: background ${dt("datepicker.transition.duration")}, color ${dt("datepicker.transition.duration")}, border-color ${dt("datepicker.transition.duration")}, outline-color ${dt("datepicker.transition.duration")}, box-shadow ${dt("datepicker.transition.duration")};
-}
-
-.p-datepicker-select-month {
-    padding: ${dt("datepicker.select.month.padding")};
-    color: ${dt("datepicker.select.month.color")};
-    border-radius: ${dt("datepicker.select.month.border.radius")};
-}
-
-.p-datepicker-select-year {
-    padding: ${dt("datepicker.select.year.padding")};
-    color: ${dt("datepicker.select.year.color")};
-    border-radius: ${dt("datepicker.select.year.border.radius")};
-}
-
-.p-datepicker-select-month:enabled:hover {
-    background: ${dt("datepicker.select.month.hover.background")};
-    color: ${dt("datepicker.select.month.hover.color")};
-}
-
-.p-datepicker-select-year:enabled:hover {
-    background: ${dt("datepicker.select.year.hover.background")};
-    color: ${dt("datepicker.select.year.hover.color")};
-}
-
-.p-datepicker-calendar-container {
-    display: flex;
-}
-
-.p-datepicker-calendar-container .p-datepicker-calendar {
-    flex: 1 1 auto;
-    border-inline-start: 1px solid ${dt("datepicker.group.border.color")};
-    padding-inline: ${dt("datepicker.group.gap")};
-}
-
-.p-datepicker-calendar-container .p-datepicker-calendar:first-child {
-    padding-inline-start: 0;
-    border-inline-start: 0 none;
-}
-
-.p-datepicker-calendar-container .p-datepicker-calendar:last-child {
-    padding-inline-end: 0;
-}
-
-.p-datepicker-day-view {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 1rem;
-    margin: ${dt("datepicker.day.view.margin")};
-}
-
-.p-datepicker-weekday-cell {
-    padding: ${dt("datepicker.week.day.padding")};
-}
-
-.p-datepicker-weekday {
-    font-weight: ${dt("datepicker.week.day.font.weight")};
-    color: ${dt("datepicker.week.day.color")};
-}
-
-.p-datepicker-day-cell {
-    padding: ${dt("datepicker.date.padding")};
-}
-
-.p-datepicker-day {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    width: ${dt("datepicker.date.width")};
-    height: ${dt("datepicker.date.height")};
-    border-radius: ${dt("datepicker.date.border.radius")};
-    transition: background ${dt("datepicker.transition.duration")}, color ${dt("datepicker.transition.duration")}, border-color ${dt("datepicker.transition.duration")},
-        box-shadow ${dt("datepicker.transition.duration")}, outline-color ${dt("datepicker.transition.duration")};
-    border: 1px solid transparent;
-    outline-color: transparent;
-    color: ${dt("datepicker.date.color")};
-}
-
-.p-datepicker-day:not(.p-datepicker-day-selected):not(.p-disabled):hover {
-    background: ${dt("datepicker.date.hover.background")};
-    color: ${dt("datepicker.date.hover.color")};
-}
-
-.p-datepicker-day:focus-visible {
-    box-shadow: ${dt("datepicker.date.focus.ring.shadow")};
-    outline: ${dt("datepicker.date.focus.ring.width")} ${dt("datepicker.date.focus.ring.style")} ${dt("datepicker.date.focus.ring.color")};
-    outline-offset: ${dt("datepicker.date.focus.ring.offset")};
-}
-
-.p-datepicker-day-selected {
-    background: ${dt("datepicker.date.selected.background")};
-    color: ${dt("datepicker.date.selected.color")};
-}
-
-.p-datepicker-day-selected-range {
-    background: ${dt("datepicker.date.range.selected.background")};
-    color: ${dt("datepicker.date.range.selected.color")};
-}
-
-.p-datepicker-today > .p-datepicker-day {
-    background: ${dt("datepicker.today.background")};
-    color: ${dt("datepicker.today.color")};
-}
-
-.p-datepicker-today > .p-datepicker-day-selected {
-    background: ${dt("datepicker.date.selected.background")};
-    color: ${dt("datepicker.date.selected.color")};
-}
-
-.p-datepicker-today > .p-datepicker-day-selected-range {
-    background: ${dt("datepicker.date.range.selected.background")};
-    color: ${dt("datepicker.date.range.selected.color")};
-}
-
-.p-datepicker-weeknumber {
-    text-align: center
-}
-
-.p-datepicker-month-view {
-    margin: ${dt("datepicker.month.view.margin")};
-}
-
-.p-datepicker-month {
-    width: 33.3%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    padding: ${dt("datepicker.month.padding")};
-    transition: background ${dt("datepicker.transition.duration")}, color ${dt("datepicker.transition.duration")}, border-color ${dt("datepicker.transition.duration")}, box-shadow ${dt("datepicker.transition.duration")}, outline-color ${dt("datepicker.transition.duration")};
-    border-radius: ${dt("datepicker.month.border.radius")};
-    outline-color: transparent;
-    color: ${dt("datepicker.date.color")};
-}
-
-.p-datepicker-month:not(.p-disabled):not(.p-datepicker-month-selected):hover {
-    color:  ${dt("datepicker.date.hover.color")};
-    background: ${dt("datepicker.date.hover.background")};
-}
-
-.p-datepicker-month-selected {
-    color: ${dt("datepicker.date.selected.color")};
-    background: ${dt("datepicker.date.selected.background")};
-}
-
-.p-datepicker-month:not(.p-disabled):focus-visible {
-    box-shadow: ${dt("datepicker.date.focus.ring.shadow")};
-    outline: ${dt("datepicker.date.focus.ring.width")} ${dt("datepicker.date.focus.ring.style")} ${dt("datepicker.date.focus.ring.color")};
-    outline-offset: ${dt("datepicker.date.focus.ring.offset")};
-}
-
-.p-datepicker-year-view {
-    margin: ${dt("datepicker.year.view.margin")};
-}
-
-.p-datepicker-year {
-    width: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    padding: ${dt("datepicker.year.padding")};
-    transition: background ${dt("datepicker.transition.duration")}, color ${dt("datepicker.transition.duration")}, border-color ${dt("datepicker.transition.duration")}, box-shadow ${dt("datepicker.transition.duration")}, outline-color ${dt("datepicker.transition.duration")};
-    border-radius: ${dt("datepicker.year.border.radius")};
-    outline-color: transparent;
-    color: ${dt("datepicker.date.color")};
-}
-
-.p-datepicker-year:not(.p-disabled):not(.p-datepicker-year-selected):hover {
-    color: ${dt("datepicker.date.hover.color")};
-    background: ${dt("datepicker.date.hover.background")};
-}
-
-.p-datepicker-year-selected {
-    color: ${dt("datepicker.date.selected.color")};
-    background: ${dt("datepicker.date.selected.background")};
-}
-
-.p-datepicker-year:not(.p-disabled):focus-visible {
-    box-shadow: ${dt("datepicker.date.focus.ring.shadow")};
-    outline: ${dt("datepicker.date.focus.ring.width")} ${dt("datepicker.date.focus.ring.style")} ${dt("datepicker.date.focus.ring.color")};
-    outline-offset: ${dt("datepicker.date.focus.ring.offset")};
-}
-
-.p-datepicker-buttonbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:  ${dt("datepicker.buttonbar.padding")};
-    border-top: 1px solid ${dt("datepicker.buttonbar.border.color")};
-}
-
-.p-datepicker-buttonbar .p-button {
-    width: auto;
-}
-
-.p-datepicker-time-picker {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid ${dt("datepicker.time.picker.border.color")};
-    padding: 0;
-    gap: ${dt("datepicker.time.picker.gap")};
-}
-
-.p-datepicker-calendar-container + .p-datepicker-time-picker {
-    padding: ${dt("datepicker.time.picker.padding")};
-}
-
-.p-datepicker-time-picker > div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: ${dt("datepicker.time.picker.button.gap")};
-}
-
-.p-datepicker-time-picker span {
-    font-size: 1rem;
-}
-
-.p-datepicker-timeonly .p-datepicker-time-picker {
-    border-top: 0 none;
-}
-
-.p-datepicker-calendar:not(:first-child):not(:last-child) .p-datepicker-header {
-    justify-content: center;
-}
-
-.p-datepicker:has(.p-inputtext-sm) .p-datepicker-dropdown {
-    width: ${dt("datepicker.dropdown.sm.width")};
-}
-
-.p-datepicker:has(.p-inputtext-sm) .p-datepicker-dropdown .p-icon,
-.p-datepicker:has(.p-inputtext-sm) .p-datepicker-input-icon {
-    font-size: ${dt("form.field.sm.font.size")};
-    width: ${dt("form.field.sm.font.size")};
-    height: ${dt("form.field.sm.font.size")};
-}
-
-.p-datepicker:has(.p-inputtext-lg) .p-datepicker-dropdown {
-    width: ${dt("datepicker.dropdown.lg.width")};
-}
-
-.p-datepicker:has(.p-inputtext-lg) .p-datepicker-dropdown .p-icon,
-.p-datepicker:has(.p-inputtext-lg) .p-datepicker-input-icon {
-    font-size: ${dt("form.field.lg.font.size")};
-    width: ${dt("form.field.lg.font.size")};
-    height: ${dt("form.field.lg.font.size")};
-}
-
-/* For PrimeNG */
-
-p-calendar.ng-invalid.ng-dirty .p-datepicker.p-inputwrapper .p-inputtext{
-    border-color: ${dt("inputtext.invalid.border.color")};
-}
-
-p-datepicker.ng-invalid.ng-dirty .p-datepicker.p-inputwrapper .p-inputtext{
-    border-color: ${dt("inputtext.invalid.border.color")};
-}
-`;
-var inlineStyles = {
-  root: ({
-    props
-  }) => ({
-    position: props.appendTo === "self" ? "relative" : void 0
-  })
-};
-var classes = {
-  root: ({
-    instance
-  }) => ({
-    "p-datepicker p-component p-inputwrapper": true,
-    "p-datepicker-fluid": instance.hasFluid,
-    "p-inputwrapper-filled": instance.filled,
-    "p-inputwrapper-focus": instance.focus,
-    "p-focus": instance.focus || instance.overlayVisible
-  }),
-  pcInput: "p-datepicker-input",
-  dropdown: "p-datepicker-dropdown",
-  inputIconContainer: "p-datepicker-input-icon-container",
-  inputIcon: "p-datepicker-input-icon",
-  panel: ({
-    instance
-  }) => ({
-    "p-datepicker-panel p-component": true,
-    "p-datepicker-panel-inline": instance.inline,
-    "p-disabled": instance.disabled,
-    "p-datepicker-timeonly": instance.timeOnly
-  }),
-  calendarContainer: "p-datepicker-calendar-container",
-  calendar: "p-datepicker-calendar",
-  header: "p-datepicker-header",
-  pcPrevButton: "p-datepicker-prev-button",
-  title: "p-datepicker-title",
-  selectMonth: "p-datepicker-select-month",
-  selectYear: "p-datepicker-select-year",
-  decade: "p-datepicker-decade",
-  pcNextButton: "p-datepicker-next-button",
-  dayView: "p-datepicker-day-view",
-  weekHeader: "p-datepicker-weekheader p-disabled",
-  weekNumber: "p-datepicker-weeknumber",
-  weekLabelContainer: "p-datepicker-weeklabel-container p-disabled",
-  weekDayCell: "p-datepicker-weekday-cell",
-  weekDay: "p-datepicker-weekday",
-  dayCell: ({
-    date
-  }) => ["p-datepicker-day-cell", {
-    "p-datepicker-other-month": date.otherMonth,
-    "p-datepicker-today": date.today
-  }],
-  day: ({
-    instance,
-    date
-  }) => {
-    let selectedDayClass = "";
-    if (instance.isRangeSelection() && instance.isSelected(date) && date.selectable) {
-      selectedDayClass = date.day === instance.value[0].getDate() || date.day === instance.value[1].getDate() ? "p-datepicker-day-selected" : "p-datepicker-day-selected-range";
-    }
-    return {
-      "p-datepicker-day": true,
-      "p-datepicker-day-selected": !instance.isRangeSelection() && instance.isSelected(date) && date.selectable,
-      "p-disabled": instance.disabled || !date.selectable,
-      [selectedDayClass]: true
-    };
-  },
-  monthView: "p-datepicker-month-view",
-  month: ({
-    instance,
-    props,
-    month,
-    index
-  }) => ["p-datepicker-month", {
-    "p-datepicker-month-selected": instance.isMonthSelected(index),
-    "p-disabled": props.disabled || !month.selectable
-  }],
-  yearView: "p-datepicker-year-view",
-  year: ({
-    instance,
-    props,
-    year
-  }) => ["p-datepicker-year", {
-    "p-datepicker-year-selected": instance.isYearSelected(year.value),
-    "p-disabled": props.disabled || !year.selectable
-  }],
-  timePicker: "p-datepicker-time-picker",
-  hourPicker: "p-datepicker-hour-picker",
-  pcIncrementButton: "p-datepicker-increment-button",
-  pcDecrementButton: "p-datepicker-decrement-button",
-  separator: "p-datepicker-separator",
-  minutePicker: "p-datepicker-minute-picker",
-  secondPicker: "p-datepicker-second-picker",
-  ampmPicker: "p-datepicker-ampm-picker",
-  buttonbar: "p-datepicker-buttonbar",
-  pcTodayButton: "p-datepicker-today-button",
-  pcClearButton: "p-datepicker-clear-button"
-};
-var DatePickerStyle = class _DatePickerStyle extends BaseStyle {
-  name = "datepicker";
-  theme = theme;
-  classes = classes;
-  inlineStyles = inlineStyles;
+// node_modules/primeng/fesm2022/primeng-icons-arrowdown.mjs
+var ArrowDownIcon = class _ArrowDownIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
   static ɵfac = /* @__PURE__ */ (() => {
-    let ɵDatePickerStyle_BaseFactory;
-    return function DatePickerStyle_Factory(__ngFactoryType__) {
-      return (ɵDatePickerStyle_BaseFactory || (ɵDatePickerStyle_BaseFactory = ɵɵgetInheritedFactory(_DatePickerStyle)))(__ngFactoryType__ || _DatePickerStyle);
+    let ɵArrowDownIcon_BaseFactory;
+    return function ArrowDownIcon_Factory(__ngFactoryType__) {
+      return (ɵArrowDownIcon_BaseFactory || (ɵArrowDownIcon_BaseFactory = ɵɵgetInheritedFactory(_ArrowDownIcon)))(__ngFactoryType__ || _ArrowDownIcon);
     };
   })();
-  static ɵprov = ɵɵdefineInjectable({
-    token: _DatePickerStyle,
-    factory: _DatePickerStyle.ɵfac
+  static ɵcmp = ɵɵdefineComponent({
+    type: _ArrowDownIcon,
+    selectors: [["ArrowDownIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 6,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M6.99994 14C6.91097 14.0004 6.82281 13.983 6.74064 13.9489C6.65843 13.9148 6.58387 13.8646 6.52133 13.8013L1.10198 8.38193C0.982318 8.25351 0.917175 8.08367 0.920272 7.90817C0.923368 7.73267 0.994462 7.56523 1.11858 7.44111C1.24269 7.317 1.41014 7.2459 1.58563 7.2428C1.76113 7.23971 1.93098 7.30485 2.0594 7.42451L6.32263 11.6877V0.677419C6.32263 0.497756 6.394 0.325452 6.52104 0.198411C6.64808 0.0713706 6.82039 0 7.00005 0C7.17971 0 7.35202 0.0713706 7.47906 0.198411C7.6061 0.325452 7.67747 0.497756 7.67747 0.677419V11.6877L11.9407 7.42451C12.0691 7.30485 12.2389 7.23971 12.4144 7.2428C12.5899 7.2459 12.7574 7.317 12.8815 7.44111C13.0056 7.56523 13.0767 7.73267 13.0798 7.90817C13.0829 8.08367 13.0178 8.25351 12.8981 8.38193L7.47875 13.8013C7.41621 13.8646 7.34164 13.9148 7.25944 13.9489C7.17727 13.983 7.08912 14.0004 7.00015 14C7.00012 14 7.00009 14 7.00005 14C7.00001 14 6.99998 14 6.99994 14Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function ArrowDownIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+        ɵɵelement(5, "rect", 3);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(3);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DatePickerStyle, [{
-    type: Injectable
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ArrowDownIcon, [{
+    type: Component,
+    args: [{
+      selector: "ArrowDownIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.99994 14C6.91097 14.0004 6.82281 13.983 6.74064 13.9489C6.65843 13.9148 6.58387 13.8646 6.52133 13.8013L1.10198 8.38193C0.982318 8.25351 0.917175 8.08367 0.920272 7.90817C0.923368 7.73267 0.994462 7.56523 1.11858 7.44111C1.24269 7.317 1.41014 7.2459 1.58563 7.2428C1.76113 7.23971 1.93098 7.30485 2.0594 7.42451L6.32263 11.6877V0.677419C6.32263 0.497756 6.394 0.325452 6.52104 0.198411C6.64808 0.0713706 6.82039 0 7.00005 0C7.17971 0 7.35202 0.0713706 7.47906 0.198411C7.6061 0.325452 7.67747 0.497756 7.67747 0.677419V11.6877L11.9407 7.42451C12.0691 7.30485 12.2389 7.23971 12.4144 7.2428C12.5899 7.2459 12.7574 7.317 12.8815 7.44111C13.0056 7.56523 13.0767 7.73267 13.0798 7.90817C13.0829 8.08367 13.0178 8.25351 12.8981 8.38193L7.47875 13.8013C7.41621 13.8646 7.34164 13.9148 7.25944 13.9489C7.17727 13.983 7.08912 14.0004 7.00015 14C7.00012 14 7.00009 14 7.00005 14C7.00001 14 6.99998 14 6.99994 14Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
   }], null, null);
 })();
-var DatePickerClasses;
-(function(DatePickerClasses2) {
-  DatePickerClasses2["root"] = "p-datepicker";
-  DatePickerClasses2["pcInput"] = "p-datepicker-input";
-  DatePickerClasses2["dropdown"] = "p-datepicker-dropdown";
-  DatePickerClasses2["inputIconContainer"] = "p-datepicker-input-icon-container";
-  DatePickerClasses2["inputIcon"] = "p-datepicker-input-icon";
-  DatePickerClasses2["panel"] = "p-datepicker-panel";
-  DatePickerClasses2["calendarContainer"] = "p-datepicker-calendar-container";
-  DatePickerClasses2["calendar"] = "p-datepicker-calendar";
-  DatePickerClasses2["header"] = "p-datepicker-header";
-  DatePickerClasses2["pcPrevButton"] = "p-datepicker-prev-button";
-  DatePickerClasses2["title"] = "p-datepicker-title";
-  DatePickerClasses2["selectMonth"] = "p-datepicker-select-month";
-  DatePickerClasses2["selectYear"] = "p-datepicker-select-year";
-  DatePickerClasses2["decade"] = "p-datepicker-decade";
-  DatePickerClasses2["pcNextButton"] = "p-datepicker-next-button";
-  DatePickerClasses2["dayView"] = "p-datepicker-day-view";
-  DatePickerClasses2["weekHeader"] = "p-datepicker-weekheader";
-  DatePickerClasses2["weekNumber"] = "p-datepicker-weeknumber";
-  DatePickerClasses2["weekLabelContainer"] = "p-datepicker-weeklabel-container";
-  DatePickerClasses2["weekDayCell"] = "p-datepicker-weekday-cell";
-  DatePickerClasses2["weekDay"] = "p-datepicker-weekday";
-  DatePickerClasses2["dayCell"] = "p-datepicker-day-cell";
-  DatePickerClasses2["day"] = "p-datepicker-day";
-  DatePickerClasses2["monthView"] = "p-datepicker-month-view";
-  DatePickerClasses2["month"] = "p-datepicker-month";
-  DatePickerClasses2["yearView"] = "p-datepicker-year-view";
-  DatePickerClasses2["year"] = "p-datepicker-year";
-  DatePickerClasses2["timePicker"] = "p-datepicker-time-picker";
-  DatePickerClasses2["hourPicker"] = "p-datepicker-hour-picker";
-  DatePickerClasses2["pcIncrementButton"] = "p-datepicker-increment-button";
-  DatePickerClasses2["pcDecrementButton"] = "p-datepicker-decrement-button";
-  DatePickerClasses2["separator"] = "p-datepicker-separator";
-  DatePickerClasses2["minutePicker"] = "p-datepicker-minute-picker";
-  DatePickerClasses2["secondPicker"] = "p-datepicker-second-picker";
-  DatePickerClasses2["ampmPicker"] = "p-datepicker-ampm-picker";
-  DatePickerClasses2["buttonbar"] = "p-datepicker-buttonbar";
-  DatePickerClasses2["pcTodayButton"] = "p-datepicker-today-button";
-  DatePickerClasses2["pcClearButton"] = "p-datepicker-clear-button";
-})(DatePickerClasses || (DatePickerClasses = {}));
-var _c0 = ["date"];
-var _c1 = ["header"];
-var _c2 = ["footer"];
-var _c3 = ["disabledDate"];
-var _c4 = ["decade"];
-var _c5 = ["previousicon"];
-var _c6 = ["nexticon"];
-var _c7 = ["triggericon"];
-var _c8 = ["clearicon"];
-var _c9 = ["decrementicon"];
-var _c10 = ["incrementicon"];
-var _c11 = ["inputicon"];
-var _c12 = ["container"];
-var _c13 = ["inputfield"];
-var _c14 = ["contentWrapper"];
-var _c15 = [[["p-header"]], [["p-footer"]]];
-var _c16 = ["p-header", "p-footer"];
-var _c17 = (a0) => ({
-  clickCallBack: a0
+
+// node_modules/primeng/fesm2022/primeng-icons-arrowup.mjs
+var ArrowUpIcon = class _ArrowUpIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
+  static ɵfac = /* @__PURE__ */ (() => {
+    let ɵArrowUpIcon_BaseFactory;
+    return function ArrowUpIcon_Factory(__ngFactoryType__) {
+      return (ɵArrowUpIcon_BaseFactory || (ɵArrowUpIcon_BaseFactory = ɵɵgetInheritedFactory(_ArrowUpIcon)))(__ngFactoryType__ || _ArrowUpIcon);
+    };
+  })();
+  static ɵcmp = ɵɵdefineComponent({
+    type: _ArrowUpIcon,
+    selectors: [["ArrowUpIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 6,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M6.51551 13.799C6.64205 13.9255 6.813 13.9977 6.99193 14C7.17087 13.9977 7.34182 13.9255 7.46835 13.799C7.59489 13.6725 7.66701 13.5015 7.66935 13.3226V2.31233L11.9326 6.57554C11.9951 6.63887 12.0697 6.68907 12.1519 6.72319C12.2341 6.75731 12.3223 6.77467 12.4113 6.77425C12.5003 6.77467 12.5885 6.75731 12.6707 6.72319C12.7529 6.68907 12.8274 6.63887 12.89 6.57554C13.0168 6.44853 13.0881 6.27635 13.0881 6.09683C13.0881 5.91732 13.0168 5.74514 12.89 5.61812L7.48846 0.216594C7.48274 0.210436 7.4769 0.204374 7.47094 0.198411C7.3439 0.0713707 7.1716 0 6.99193 0C6.81227 0 6.63997 0.0713707 6.51293 0.198411C6.50704 0.204296 6.50128 0.210278 6.49563 0.216354L1.09386 5.61812C0.974201 5.74654 0.909057 5.91639 0.912154 6.09189C0.91525 6.26738 0.986345 6.43483 1.11046 6.55894C1.23457 6.68306 1.40202 6.75415 1.57752 6.75725C1.75302 6.76035 1.92286 6.6952 2.05128 6.57554L6.31451 2.31231V13.3226C6.31685 13.5015 6.38898 13.6725 6.51551 13.799Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function ArrowUpIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+        ɵɵelement(5, "rect", 3);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(3);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ArrowUpIcon, [{
+    type: Component,
+    args: [{
+      selector: "ArrowUpIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.51551 13.799C6.64205 13.9255 6.813 13.9977 6.99193 14C7.17087 13.9977 7.34182 13.9255 7.46835 13.799C7.59489 13.6725 7.66701 13.5015 7.66935 13.3226V2.31233L11.9326 6.57554C11.9951 6.63887 12.0697 6.68907 12.1519 6.72319C12.2341 6.75731 12.3223 6.77467 12.4113 6.77425C12.5003 6.77467 12.5885 6.75731 12.6707 6.72319C12.7529 6.68907 12.8274 6.63887 12.89 6.57554C13.0168 6.44853 13.0881 6.27635 13.0881 6.09683C13.0881 5.91732 13.0168 5.74514 12.89 5.61812L7.48846 0.216594C7.48274 0.210436 7.4769 0.204374 7.47094 0.198411C7.3439 0.0713707 7.1716 0 6.99193 0C6.81227 0 6.63997 0.0713707 6.51293 0.198411C6.50704 0.204296 6.50128 0.210278 6.49563 0.216354L1.09386 5.61812C0.974201 5.74654 0.909057 5.91639 0.912154 6.09189C0.91525 6.26738 0.986345 6.43483 1.11046 6.55894C1.23457 6.68306 1.40202 6.75415 1.57752 6.75725C1.75302 6.76035 1.92286 6.6952 2.05128 6.57554L6.31451 2.31231V13.3226C6.31685 13.5015 6.38898 13.6725 6.51551 13.799Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-icons-filter.mjs
+var FilterIcon = class _FilterIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
+  static ɵfac = /* @__PURE__ */ (() => {
+    let ɵFilterIcon_BaseFactory;
+    return function FilterIcon_Factory(__ngFactoryType__) {
+      return (ɵFilterIcon_BaseFactory || (ɵFilterIcon_BaseFactory = ɵɵgetInheritedFactory(_FilterIcon)))(__ngFactoryType__ || _FilterIcon);
+    };
+  })();
+  static ɵcmp = ɵɵdefineComponent({
+    type: _FilterIcon,
+    selectors: [["FilterIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 6,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M8.64708 14H5.35296C5.18981 13.9979 5.03395 13.9321 4.91858 13.8167C4.8032 13.7014 4.73745 13.5455 4.73531 13.3824V7L0.329431 0.98C0.259794 0.889466 0.217389 0.780968 0.20718 0.667208C0.19697 0.553448 0.219379 0.439133 0.271783 0.337647C0.324282 0.236453 0.403423 0.151519 0.500663 0.0920138C0.597903 0.0325088 0.709548 0.000692754 0.823548 0H13.1765C13.2905 0.000692754 13.4021 0.0325088 13.4994 0.0920138C13.5966 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7826 0.780968 13.7402 0.889466 13.6706 0.98L9.26472 7V13.3824C9.26259 13.5455 9.19683 13.7014 9.08146 13.8167C8.96609 13.9321 8.81022 13.9979 8.64708 14ZM5.97061 12.7647H8.02943V6.79412C8.02878 6.66289 8.07229 6.53527 8.15296 6.43177L11.9412 1.23529H2.05884L5.86355 6.43177C5.94422 6.53527 5.98773 6.66289 5.98708 6.79412L5.97061 12.7647Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function FilterIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+        ɵɵelement(5, "rect", 3);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(3);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FilterIcon, [{
+    type: Component,
+    args: [{
+      selector: "FilterIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    d="M8.64708 14H5.35296C5.18981 13.9979 5.03395 13.9321 4.91858 13.8167C4.8032 13.7014 4.73745 13.5455 4.73531 13.3824V7L0.329431 0.98C0.259794 0.889466 0.217389 0.780968 0.20718 0.667208C0.19697 0.553448 0.219379 0.439133 0.271783 0.337647C0.324282 0.236453 0.403423 0.151519 0.500663 0.0920138C0.597903 0.0325088 0.709548 0.000692754 0.823548 0H13.1765C13.2905 0.000692754 13.4021 0.0325088 13.4994 0.0920138C13.5966 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7826 0.780968 13.7402 0.889466 13.6706 0.98L9.26472 7V13.3824C9.26259 13.5455 9.19683 13.7014 9.08146 13.8167C8.96609 13.9321 8.81022 13.9979 8.64708 14ZM5.97061 12.7647H8.02943V6.79412C8.02878 6.66289 8.07229 6.53527 8.15296 6.43177L11.9412 1.23529H2.05884L5.86355 6.43177C5.94422 6.53527 5.98773 6.66289 5.98708 6.79412L5.97061 12.7647Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-icons-filterslash.mjs
+var FilterSlashIcon = class _FilterSlashIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
+  static ɵfac = /* @__PURE__ */ (() => {
+    let ɵFilterSlashIcon_BaseFactory;
+    return function FilterSlashIcon_Factory(__ngFactoryType__) {
+      return (ɵFilterSlashIcon_BaseFactory || (ɵFilterSlashIcon_BaseFactory = ɵɵgetInheritedFactory(_FilterSlashIcon)))(__ngFactoryType__ || _FilterSlashIcon);
+    };
+  })();
+  static ɵcmp = ɵɵdefineComponent({
+    type: _FilterSlashIcon,
+    selectors: [["FilterSlashIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 6,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M13.4994 0.0920138C13.5967 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7827 0.780968 13.7403 0.889466 13.6707 0.98L11.406 4.06823C11.3099 4.19928 11.1656 4.28679 11.005 4.3115C10.8444 4.33621 10.6805 4.2961 10.5495 4.2C10.4184 4.1039 10.3309 3.95967 10.3062 3.79905C10.2815 3.63843 10.3216 3.47458 10.4177 3.34353L11.9412 1.23529H7.41184C7.24803 1.23529 7.09093 1.17022 6.97509 1.05439C6.85926 0.938558 6.79419 0.781457 6.79419 0.617647C6.79419 0.453837 6.85926 0.296736 6.97509 0.180905C7.09093 0.0650733 7.24803 0 7.41184 0H13.1765C13.2905 0.000692754 13.4022 0.0325088 13.4994 0.0920138ZM4.20008 0.181168H4.24126L13.2013 9.03411C13.3169 9.14992 13.3819 9.3069 13.3819 9.47058C13.3819 9.63426 13.3169 9.79124 13.2013 9.90705C13.1445 9.96517 13.0766 10.0112 13.0016 10.0423C12.9266 10.0735 12.846 10.0891 12.7648 10.0882C12.6836 10.0886 12.6032 10.0728 12.5283 10.0417C12.4533 10.0106 12.3853 9.96479 12.3283 9.90705L9.3142 6.92587L9.26479 6.99999V13.3823C9.26265 13.5455 9.19689 13.7014 9.08152 13.8167C8.96615 13.9321 8.81029 13.9979 8.64714 14H5.35302C5.18987 13.9979 5.03401 13.9321 4.91864 13.8167C4.80327 13.7014 4.73751 13.5455 4.73537 13.3823V6.99999L0.329492 1.02117C0.259855 0.930634 0.21745 0.822137 0.207241 0.708376C0.197031 0.594616 0.21944 0.480301 0.271844 0.378815C0.324343 0.277621 0.403484 0.192687 0.500724 0.133182C0.597964 0.073677 0.709609 0.041861 0.823609 0.0411682H3.86243C3.92448 0.0461551 3.9855 0.060022 4.04361 0.0823446C4.10037 0.10735 4.15311 0.140655 4.20008 0.181168ZM8.02949 6.79411C8.02884 6.66289 8.07235 6.53526 8.15302 6.43176L8.42478 6.05293L3.55773 1.23529H2.0589L5.84714 6.43176C5.92781 6.53526 5.97132 6.66289 5.97067 6.79411V12.7647H8.02949V6.79411Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function FilterSlashIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+        ɵɵelement(5, "rect", 3);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(3);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FilterSlashIcon, [{
+    type: Component,
+    args: [{
+      selector: "FilterSlashIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13.4994 0.0920138C13.5967 0.151519 13.6758 0.236453 13.7283 0.337647C13.7807 0.439133 13.8031 0.553448 13.7929 0.667208C13.7827 0.780968 13.7403 0.889466 13.6707 0.98L11.406 4.06823C11.3099 4.19928 11.1656 4.28679 11.005 4.3115C10.8444 4.33621 10.6805 4.2961 10.5495 4.2C10.4184 4.1039 10.3309 3.95967 10.3062 3.79905C10.2815 3.63843 10.3216 3.47458 10.4177 3.34353L11.9412 1.23529H7.41184C7.24803 1.23529 7.09093 1.17022 6.97509 1.05439C6.85926 0.938558 6.79419 0.781457 6.79419 0.617647C6.79419 0.453837 6.85926 0.296736 6.97509 0.180905C7.09093 0.0650733 7.24803 0 7.41184 0H13.1765C13.2905 0.000692754 13.4022 0.0325088 13.4994 0.0920138ZM4.20008 0.181168H4.24126L13.2013 9.03411C13.3169 9.14992 13.3819 9.3069 13.3819 9.47058C13.3819 9.63426 13.3169 9.79124 13.2013 9.90705C13.1445 9.96517 13.0766 10.0112 13.0016 10.0423C12.9266 10.0735 12.846 10.0891 12.7648 10.0882C12.6836 10.0886 12.6032 10.0728 12.5283 10.0417C12.4533 10.0106 12.3853 9.96479 12.3283 9.90705L9.3142 6.92587L9.26479 6.99999V13.3823C9.26265 13.5455 9.19689 13.7014 9.08152 13.8167C8.96615 13.9321 8.81029 13.9979 8.64714 14H5.35302C5.18987 13.9979 5.03401 13.9321 4.91864 13.8167C4.80327 13.7014 4.73751 13.5455 4.73537 13.3823V6.99999L0.329492 1.02117C0.259855 0.930634 0.21745 0.822137 0.207241 0.708376C0.197031 0.594616 0.21944 0.480301 0.271844 0.378815C0.324343 0.277621 0.403484 0.192687 0.500724 0.133182C0.597964 0.073677 0.709609 0.041861 0.823609 0.0411682H3.86243C3.92448 0.0461551 3.9855 0.060022 4.04361 0.0823446C4.10037 0.10735 4.15311 0.140655 4.20008 0.181168ZM8.02949 6.79411C8.02884 6.66289 8.07235 6.53526 8.15302 6.43176L8.42478 6.05293L3.55773 1.23529H2.0589L5.84714 6.43176C5.92781 6.53526 5.97132 6.66289 5.97067 6.79411V12.7647H8.02949V6.79411Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-icons-plus.mjs
+var PlusIcon = class _PlusIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
+  static ɵfac = /* @__PURE__ */ (() => {
+    let ɵPlusIcon_BaseFactory;
+    return function PlusIcon_Factory(__ngFactoryType__) {
+      return (ɵPlusIcon_BaseFactory || (ɵPlusIcon_BaseFactory = ɵɵgetInheritedFactory(_PlusIcon)))(__ngFactoryType__ || _PlusIcon);
+    };
+  })();
+  static ɵcmp = ɵɵdefineComponent({
+    type: _PlusIcon,
+    selectors: [["PlusIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 6,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M7.67742 6.32258V0.677419C7.67742 0.497757 7.60605 0.325452 7.47901 0.198411C7.35197 0.0713707 7.17966 0 7 0C6.82034 0 6.64803 0.0713707 6.52099 0.198411C6.39395 0.325452 6.32258 0.497757 6.32258 0.677419V6.32258H0.677419C0.497757 6.32258 0.325452 6.39395 0.198411 6.52099C0.0713707 6.64803 0 6.82034 0 7C0 7.17966 0.0713707 7.35197 0.198411 7.47901C0.325452 7.60605 0.497757 7.67742 0.677419 7.67742H6.32258V13.3226C6.32492 13.5015 6.39704 13.6725 6.52358 13.799C6.65012 13.9255 6.82106 13.9977 7 14C7.17966 14 7.35197 13.9286 7.47901 13.8016C7.60605 13.6745 7.67742 13.5022 7.67742 13.3226V7.67742H13.3226C13.5022 7.67742 13.6745 7.60605 13.8016 7.47901C13.9286 7.35197 14 7.17966 14 7C13.9977 6.82106 13.9255 6.65012 13.799 6.52358C13.6725 6.39704 13.5015 6.32492 13.3226 6.32258H7.67742Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function PlusIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+        ɵɵelement(5, "rect", 3);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(3);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PlusIcon, [{
+    type: Component,
+    args: [{
+      selector: "PlusIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    d="M7.67742 6.32258V0.677419C7.67742 0.497757 7.60605 0.325452 7.47901 0.198411C7.35197 0.0713707 7.17966 0 7 0C6.82034 0 6.64803 0.0713707 6.52099 0.198411C6.39395 0.325452 6.32258 0.497757 6.32258 0.677419V6.32258H0.677419C0.497757 6.32258 0.325452 6.39395 0.198411 6.52099C0.0713707 6.64803 0 6.82034 0 7C0 7.17966 0.0713707 7.35197 0.198411 7.47901C0.325452 7.60605 0.497757 7.67742 0.677419 7.67742H6.32258V13.3226C6.32492 13.5015 6.39704 13.6725 6.52358 13.799C6.65012 13.9255 6.82106 13.9977 7 14C7.17966 14 7.35197 13.9286 7.47901 13.8016C7.60605 13.6745 7.67742 13.5022 7.67742 13.3226V7.67742H13.3226C13.5022 7.67742 13.6745 7.60605 13.8016 7.47901C13.9286 7.35197 14 7.17966 14 7C13.9977 6.82106 13.9255 6.65012 13.799 6.52358C13.6725 6.39704 13.5015 6.32492 13.3226 6.32258H7.67742Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-icons-sortalt.mjs
+var SortAltIcon = class _SortAltIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
+  static ɵfac = /* @__PURE__ */ (() => {
+    let ɵSortAltIcon_BaseFactory;
+    return function SortAltIcon_Factory(__ngFactoryType__) {
+      return (ɵSortAltIcon_BaseFactory || (ɵSortAltIcon_BaseFactory = ɵɵgetInheritedFactory(_SortAltIcon)))(__ngFactoryType__ || _SortAltIcon);
+    };
+  })();
+  static ɵcmp = ɵɵdefineComponent({
+    type: _SortAltIcon,
+    selectors: [["SortAltIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 9,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M5.64515 3.61291C5.47353 3.61291 5.30192 3.54968 5.16644 3.4142L3.38708 1.63484L1.60773 3.4142C1.34579 3.67613 0.912244 3.67613 0.650309 3.4142C0.388374 3.15226 0.388374 2.71871 0.650309 2.45678L2.90837 0.198712C3.17031 -0.0632236 3.60386 -0.0632236 3.86579 0.198712L6.12386 2.45678C6.38579 2.71871 6.38579 3.15226 6.12386 3.4142C5.98837 3.54968 5.81676 3.61291 5.64515 3.61291Z", "fill", "currentColor"], ["d", "M3.38714 14C3.01681 14 2.70972 13.6929 2.70972 13.3226V0.677419C2.70972 0.307097 3.01681 0 3.38714 0C3.75746 0 4.06456 0.307097 4.06456 0.677419V13.3226C4.06456 13.6929 3.75746 14 3.38714 14Z", "fill", "currentColor"], ["d", "M10.6129 14C10.4413 14 10.2697 13.9368 10.1342 13.8013L7.87611 11.5432C7.61418 11.2813 7.61418 10.8477 7.87611 10.5858C8.13805 10.3239 8.5716 10.3239 8.83353 10.5858L10.6129 12.3652L12.3922 10.5858C12.6542 10.3239 13.0877 10.3239 13.3497 10.5858C13.6116 10.8477 13.6116 11.2813 13.3497 11.5432L11.0916 13.8013C10.9561 13.9368 10.7845 14 10.6129 14Z", "fill", "currentColor"], ["d", "M10.6129 14C10.2426 14 9.93552 13.6929 9.93552 13.3226V0.677419C9.93552 0.307097 10.2426 0 10.6129 0C10.9833 0 11.2904 0.307097 11.2904 0.677419V13.3226C11.2904 13.6929 10.9832 14 10.6129 14Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function SortAltIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1)(3, "path", 2)(4, "path", 3)(5, "path", 4);
+        ɵɵelementEnd();
+        ɵɵelementStart(6, "defs")(7, "clipPath", 5);
+        ɵɵelement(8, "rect", 6);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(6);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SortAltIcon, [{
+    type: Component,
+    args: [{
+      selector: "SortAltIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    d="M5.64515 3.61291C5.47353 3.61291 5.30192 3.54968 5.16644 3.4142L3.38708 1.63484L1.60773 3.4142C1.34579 3.67613 0.912244 3.67613 0.650309 3.4142C0.388374 3.15226 0.388374 2.71871 0.650309 2.45678L2.90837 0.198712C3.17031 -0.0632236 3.60386 -0.0632236 3.86579 0.198712L6.12386 2.45678C6.38579 2.71871 6.38579 3.15226 6.12386 3.4142C5.98837 3.54968 5.81676 3.61291 5.64515 3.61291Z"
+                    fill="currentColor"
+                />
+                <path d="M3.38714 14C3.01681 14 2.70972 13.6929 2.70972 13.3226V0.677419C2.70972 0.307097 3.01681 0 3.38714 0C3.75746 0 4.06456 0.307097 4.06456 0.677419V13.3226C4.06456 13.6929 3.75746 14 3.38714 14Z" fill="currentColor" />
+                <path
+                    d="M10.6129 14C10.4413 14 10.2697 13.9368 10.1342 13.8013L7.87611 11.5432C7.61418 11.2813 7.61418 10.8477 7.87611 10.5858C8.13805 10.3239 8.5716 10.3239 8.83353 10.5858L10.6129 12.3652L12.3922 10.5858C12.6542 10.3239 13.0877 10.3239 13.3497 10.5858C13.6116 10.8477 13.6116 11.2813 13.3497 11.5432L11.0916 13.8013C10.9561 13.9368 10.7845 14 10.6129 14Z"
+                    fill="currentColor"
+                />
+                <path d="M10.6129 14C10.2426 14 9.93552 13.6929 9.93552 13.3226V0.677419C9.93552 0.307097 10.2426 0 10.6129 0C10.9833 0 11.2904 0.307097 11.2904 0.677419V13.3226C11.2904 13.6929 10.9832 14 10.6129 14Z" fill="currentColor" />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-icons-sortamountdown.mjs
+var SortAmountDownIcon = class _SortAmountDownIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
+  static ɵfac = /* @__PURE__ */ (() => {
+    let ɵSortAmountDownIcon_BaseFactory;
+    return function SortAmountDownIcon_Factory(__ngFactoryType__) {
+      return (ɵSortAmountDownIcon_BaseFactory || (ɵSortAmountDownIcon_BaseFactory = ɵɵgetInheritedFactory(_SortAmountDownIcon)))(__ngFactoryType__ || _SortAmountDownIcon);
+    };
+  })();
+  static ɵcmp = ɵɵdefineComponent({
+    type: _SortAmountDownIcon,
+    selectors: [["SortAmountDownIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 6,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M4.93953 10.5858L3.83759 11.6877V0.677419C3.83759 0.307097 3.53049 0 3.16017 0C2.78985 0 2.48275 0.307097 2.48275 0.677419V11.6877L1.38082 10.5858C1.11888 10.3239 0.685331 10.3239 0.423396 10.5858C0.16146 10.8477 0.16146 11.2813 0.423396 11.5432L2.68146 13.8013C2.74469 13.8645 2.81694 13.9097 2.89823 13.9458C2.97952 13.9819 3.06985 14 3.16017 14C3.25049 14 3.33178 13.9819 3.42211 13.9458C3.5034 13.9097 3.57565 13.8645 3.63888 13.8013L5.89694 11.5432C6.15888 11.2813 6.15888 10.8477 5.89694 10.5858C5.63501 10.3239 5.20146 10.3239 4.93953 10.5858ZM13.0957 0H7.22468C6.85436 0 6.54726 0.307097 6.54726 0.677419C6.54726 1.04774 6.85436 1.35484 7.22468 1.35484H13.0957C13.466 1.35484 13.7731 1.04774 13.7731 0.677419C13.7731 0.307097 13.466 0 13.0957 0ZM7.22468 5.41935H9.48275C9.85307 5.41935 10.1602 5.72645 10.1602 6.09677C10.1602 6.4671 9.85307 6.77419 9.48275 6.77419H7.22468C6.85436 6.77419 6.54726 6.4671 6.54726 6.09677C6.54726 5.72645 6.85436 5.41935 7.22468 5.41935ZM7.6763 8.12903H7.22468C6.85436 8.12903 6.54726 8.43613 6.54726 8.80645C6.54726 9.17677 6.85436 9.48387 7.22468 9.48387H7.6763C8.04662 9.48387 8.35372 9.17677 8.35372 8.80645C8.35372 8.43613 8.04662 8.12903 7.6763 8.12903ZM7.22468 2.70968H11.2892C11.6595 2.70968 11.9666 3.01677 11.9666 3.3871C11.9666 3.75742 11.6595 4.06452 11.2892 4.06452H7.22468C6.85436 4.06452 6.54726 3.75742 6.54726 3.3871C6.54726 3.01677 6.85436 2.70968 7.22468 2.70968Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function SortAmountDownIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+        ɵɵelement(5, "rect", 3);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(3);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SortAmountDownIcon, [{
+    type: Component,
+    args: [{
+      selector: "SortAmountDownIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    d="M4.93953 10.5858L3.83759 11.6877V0.677419C3.83759 0.307097 3.53049 0 3.16017 0C2.78985 0 2.48275 0.307097 2.48275 0.677419V11.6877L1.38082 10.5858C1.11888 10.3239 0.685331 10.3239 0.423396 10.5858C0.16146 10.8477 0.16146 11.2813 0.423396 11.5432L2.68146 13.8013C2.74469 13.8645 2.81694 13.9097 2.89823 13.9458C2.97952 13.9819 3.06985 14 3.16017 14C3.25049 14 3.33178 13.9819 3.42211 13.9458C3.5034 13.9097 3.57565 13.8645 3.63888 13.8013L5.89694 11.5432C6.15888 11.2813 6.15888 10.8477 5.89694 10.5858C5.63501 10.3239 5.20146 10.3239 4.93953 10.5858ZM13.0957 0H7.22468C6.85436 0 6.54726 0.307097 6.54726 0.677419C6.54726 1.04774 6.85436 1.35484 7.22468 1.35484H13.0957C13.466 1.35484 13.7731 1.04774 13.7731 0.677419C13.7731 0.307097 13.466 0 13.0957 0ZM7.22468 5.41935H9.48275C9.85307 5.41935 10.1602 5.72645 10.1602 6.09677C10.1602 6.4671 9.85307 6.77419 9.48275 6.77419H7.22468C6.85436 6.77419 6.54726 6.4671 6.54726 6.09677C6.54726 5.72645 6.85436 5.41935 7.22468 5.41935ZM7.6763 8.12903H7.22468C6.85436 8.12903 6.54726 8.43613 6.54726 8.80645C6.54726 9.17677 6.85436 9.48387 7.22468 9.48387H7.6763C8.04662 9.48387 8.35372 9.17677 8.35372 8.80645C8.35372 8.43613 8.04662 8.12903 7.6763 8.12903ZM7.22468 2.70968H11.2892C11.6595 2.70968 11.9666 3.01677 11.9666 3.3871C11.9666 3.75742 11.6595 4.06452 11.2892 4.06452H7.22468C6.85436 4.06452 6.54726 3.75742 6.54726 3.3871C6.54726 3.01677 6.85436 2.70968 7.22468 2.70968Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-icons-sortamountupalt.mjs
+var SortAmountUpAltIcon = class _SortAmountUpAltIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
+  static ɵfac = /* @__PURE__ */ (() => {
+    let ɵSortAmountUpAltIcon_BaseFactory;
+    return function SortAmountUpAltIcon_Factory(__ngFactoryType__) {
+      return (ɵSortAmountUpAltIcon_BaseFactory || (ɵSortAmountUpAltIcon_BaseFactory = ɵɵgetInheritedFactory(_SortAmountUpAltIcon)))(__ngFactoryType__ || _SortAmountUpAltIcon);
+    };
+  })();
+  static ɵcmp = ɵɵdefineComponent({
+    type: _SortAmountUpAltIcon,
+    selectors: [["SortAmountUpAltIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 6,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M3.63435 0.19871C3.57113 0.135484 3.49887 0.0903226 3.41758 0.0541935C3.255 -0.0180645 3.06532 -0.0180645 2.90274 0.0541935C2.82145 0.0903226 2.74919 0.135484 2.68597 0.19871L0.427901 2.45677C0.165965 2.71871 0.165965 3.15226 0.427901 3.41419C0.689836 3.67613 1.12338 3.67613 1.38532 3.41419L2.48726 2.31226V13.3226C2.48726 13.6929 2.79435 14 3.16467 14C3.535 14 3.84209 13.6929 3.84209 13.3226V2.31226L4.94403 3.41419C5.07951 3.54968 5.25113 3.6129 5.42274 3.6129C5.59435 3.6129 5.76597 3.54968 5.90145 3.41419C6.16338 3.15226 6.16338 2.71871 5.90145 2.45677L3.64338 0.19871H3.63435ZM13.7685 13.3226C13.7685 12.9523 13.4615 12.6452 13.0911 12.6452H7.22016C6.84984 12.6452 6.54274 12.9523 6.54274 13.3226C6.54274 13.6929 6.84984 14 7.22016 14H13.0911C13.4615 14 13.7685 13.6929 13.7685 13.3226ZM7.22016 8.58064C6.84984 8.58064 6.54274 8.27355 6.54274 7.90323C6.54274 7.5329 6.84984 7.22581 7.22016 7.22581H9.47823C9.84855 7.22581 10.1556 7.5329 10.1556 7.90323C10.1556 8.27355 9.84855 8.58064 9.47823 8.58064H7.22016ZM7.22016 5.87097H7.67177C8.0421 5.87097 8.34919 5.56387 8.34919 5.19355C8.34919 4.82323 8.0421 4.51613 7.67177 4.51613H7.22016C6.84984 4.51613 6.54274 4.82323 6.54274 5.19355C6.54274 5.56387 6.84984 5.87097 7.22016 5.87097ZM11.2847 11.2903H7.22016C6.84984 11.2903 6.54274 10.9832 6.54274 10.6129C6.54274 10.2426 6.84984 9.93548 7.22016 9.93548H11.2847C11.655 9.93548 11.9621 10.2426 11.9621 10.6129C11.9621 10.9832 11.655 11.2903 11.2847 11.2903Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function SortAmountUpAltIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+        ɵɵelement(5, "rect", 3);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(3);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SortAmountUpAltIcon, [{
+    type: Component,
+    args: [{
+      selector: "SortAmountUpAltIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    d="M3.63435 0.19871C3.57113 0.135484 3.49887 0.0903226 3.41758 0.0541935C3.255 -0.0180645 3.06532 -0.0180645 2.90274 0.0541935C2.82145 0.0903226 2.74919 0.135484 2.68597 0.19871L0.427901 2.45677C0.165965 2.71871 0.165965 3.15226 0.427901 3.41419C0.689836 3.67613 1.12338 3.67613 1.38532 3.41419L2.48726 2.31226V13.3226C2.48726 13.6929 2.79435 14 3.16467 14C3.535 14 3.84209 13.6929 3.84209 13.3226V2.31226L4.94403 3.41419C5.07951 3.54968 5.25113 3.6129 5.42274 3.6129C5.59435 3.6129 5.76597 3.54968 5.90145 3.41419C6.16338 3.15226 6.16338 2.71871 5.90145 2.45677L3.64338 0.19871H3.63435ZM13.7685 13.3226C13.7685 12.9523 13.4615 12.6452 13.0911 12.6452H7.22016C6.84984 12.6452 6.54274 12.9523 6.54274 13.3226C6.54274 13.6929 6.84984 14 7.22016 14H13.0911C13.4615 14 13.7685 13.6929 13.7685 13.3226ZM7.22016 8.58064C6.84984 8.58064 6.54274 8.27355 6.54274 7.90323C6.54274 7.5329 6.84984 7.22581 7.22016 7.22581H9.47823C9.84855 7.22581 10.1556 7.5329 10.1556 7.90323C10.1556 8.27355 9.84855 8.58064 9.47823 8.58064H7.22016ZM7.22016 5.87097H7.67177C8.0421 5.87097 8.34919 5.56387 8.34919 5.19355C8.34919 4.82323 8.0421 4.51613 7.67177 4.51613H7.22016C6.84984 4.51613 6.54274 4.82323 6.54274 5.19355C6.54274 5.56387 6.84984 5.87097 7.22016 5.87097ZM11.2847 11.2903H7.22016C6.84984 11.2903 6.54274 10.9832 6.54274 10.6129C6.54274 10.2426 6.84984 9.93548 7.22016 9.93548H11.2847C11.655 9.93548 11.9621 10.2426 11.9621 10.6129C11.9621 10.9832 11.655 11.2903 11.2847 11.2903Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-icons-trash.mjs
+var TrashIcon = class _TrashIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
+  static ɵfac = /* @__PURE__ */ (() => {
+    let ɵTrashIcon_BaseFactory;
+    return function TrashIcon_Factory(__ngFactoryType__) {
+      return (ɵTrashIcon_BaseFactory || (ɵTrashIcon_BaseFactory = ɵɵgetInheritedFactory(_TrashIcon)))(__ngFactoryType__ || _TrashIcon);
+    };
+  })();
+  static ɵcmp = ɵɵdefineComponent({
+    type: _TrashIcon,
+    selectors: [["TrashIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 6,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M3.44802 13.9955H10.552C10.8056 14.0129 11.06 13.9797 11.3006 13.898C11.5412 13.8163 11.7632 13.6877 11.9537 13.5196C12.1442 13.3515 12.2995 13.1473 12.4104 12.9188C12.5213 12.6903 12.5858 12.442 12.6 12.1884V4.36041H13.4C13.5591 4.36041 13.7117 4.29722 13.8243 4.18476C13.9368 4.07229 14 3.91976 14 3.76071C14 3.60166 13.9368 3.44912 13.8243 3.33666C13.7117 3.22419 13.5591 3.16101 13.4 3.16101H12.0537C12.0203 3.1557 11.9863 3.15299 11.952 3.15299C11.9178 3.15299 11.8838 3.1557 11.8503 3.16101H11.2285C11.2421 3.10893 11.2487 3.05513 11.248 3.00106V1.80966C11.2171 1.30262 10.9871 0.828306 10.608 0.48989C10.229 0.151475 9.73159 -0.0236625 9.22402 0.00257442H4.77602C4.27251 -0.0171866 3.78126 0.160868 3.40746 0.498617C3.03365 0.836366 2.807 1.30697 2.77602 1.80966V3.00106C2.77602 3.0556 2.78346 3.10936 2.79776 3.16101H0.6C0.521207 3.16101 0.443185 3.17652 0.37039 3.20666C0.297595 3.2368 0.231451 3.28097 0.175736 3.33666C0.120021 3.39235 0.0758251 3.45846 0.0456722 3.53121C0.0155194 3.60397 0 3.68196 0 3.76071C0 3.83946 0.0155194 3.91744 0.0456722 3.9902C0.0758251 4.06296 0.120021 4.12907 0.175736 4.18476C0.231451 4.24045 0.297595 4.28462 0.37039 4.31476C0.443185 4.3449 0.521207 4.36041 0.6 4.36041H1.40002V12.1884C1.41426 12.442 1.47871 12.6903 1.58965 12.9188C1.7006 13.1473 1.85582 13.3515 2.04633 13.5196C2.23683 13.6877 2.45882 13.8163 2.69944 13.898C2.94005 13.9797 3.1945 14.0129 3.44802 13.9955ZM2.60002 4.36041H11.304V12.1884C11.304 12.5163 10.952 12.7961 10.504 12.7961H3.40002C2.97602 12.7961 2.60002 12.5163 2.60002 12.1884V4.36041ZM3.95429 3.16101C3.96859 3.10936 3.97602 3.0556 3.97602 3.00106V1.80966C3.97602 1.48183 4.33602 1.20197 4.77602 1.20197H9.24802C9.66403 1.20197 10.048 1.48183 10.048 1.80966V3.00106C10.0473 3.05515 10.054 3.10896 10.0678 3.16101H3.95429ZM5.57571 10.997C5.41731 10.995 5.26597 10.9311 5.15395 10.8191C5.04193 10.7071 4.97808 10.5558 4.97601 10.3973V6.77517C4.97601 6.61612 5.0392 6.46359 5.15166 6.35112C5.26413 6.23866 5.41666 6.17548 5.57571 6.17548C5.73476 6.17548 5.8873 6.23866 5.99976 6.35112C6.11223 6.46359 6.17541 6.61612 6.17541 6.77517V10.3894C6.17647 10.4688 6.16174 10.5476 6.13208 10.6213C6.10241 10.695 6.05841 10.762 6.00261 10.8186C5.94682 10.8751 5.88035 10.92 5.80707 10.9506C5.73378 10.9813 5.65514 10.9971 5.57571 10.997ZM7.99968 10.8214C8.11215 10.9339 8.26468 10.997 8.42373 10.997C8.58351 10.9949 8.73604 10.93 8.84828 10.8163C8.96052 10.7025 9.02345 10.5491 9.02343 10.3894V6.77517C9.02343 6.61612 8.96025 6.46359 8.84778 6.35112C8.73532 6.23866 8.58278 6.17548 8.42373 6.17548C8.26468 6.17548 8.11215 6.23866 7.99968 6.35112C7.88722 6.46359 7.82404 6.61612 7.82404 6.77517V10.3973C7.82404 10.5564 7.88722 10.7089 7.99968 10.8214Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function TrashIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+        ɵɵelement(5, "rect", 3);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(3);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TrashIcon, [{
+    type: Component,
+    args: [{
+      selector: "TrashIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.44802 13.9955H10.552C10.8056 14.0129 11.06 13.9797 11.3006 13.898C11.5412 13.8163 11.7632 13.6877 11.9537 13.5196C12.1442 13.3515 12.2995 13.1473 12.4104 12.9188C12.5213 12.6903 12.5858 12.442 12.6 12.1884V4.36041H13.4C13.5591 4.36041 13.7117 4.29722 13.8243 4.18476C13.9368 4.07229 14 3.91976 14 3.76071C14 3.60166 13.9368 3.44912 13.8243 3.33666C13.7117 3.22419 13.5591 3.16101 13.4 3.16101H12.0537C12.0203 3.1557 11.9863 3.15299 11.952 3.15299C11.9178 3.15299 11.8838 3.1557 11.8503 3.16101H11.2285C11.2421 3.10893 11.2487 3.05513 11.248 3.00106V1.80966C11.2171 1.30262 10.9871 0.828306 10.608 0.48989C10.229 0.151475 9.73159 -0.0236625 9.22402 0.00257442H4.77602C4.27251 -0.0171866 3.78126 0.160868 3.40746 0.498617C3.03365 0.836366 2.807 1.30697 2.77602 1.80966V3.00106C2.77602 3.0556 2.78346 3.10936 2.79776 3.16101H0.6C0.521207 3.16101 0.443185 3.17652 0.37039 3.20666C0.297595 3.2368 0.231451 3.28097 0.175736 3.33666C0.120021 3.39235 0.0758251 3.45846 0.0456722 3.53121C0.0155194 3.60397 0 3.68196 0 3.76071C0 3.83946 0.0155194 3.91744 0.0456722 3.9902C0.0758251 4.06296 0.120021 4.12907 0.175736 4.18476C0.231451 4.24045 0.297595 4.28462 0.37039 4.31476C0.443185 4.3449 0.521207 4.36041 0.6 4.36041H1.40002V12.1884C1.41426 12.442 1.47871 12.6903 1.58965 12.9188C1.7006 13.1473 1.85582 13.3515 2.04633 13.5196C2.23683 13.6877 2.45882 13.8163 2.69944 13.898C2.94005 13.9797 3.1945 14.0129 3.44802 13.9955ZM2.60002 4.36041H11.304V12.1884C11.304 12.5163 10.952 12.7961 10.504 12.7961H3.40002C2.97602 12.7961 2.60002 12.5163 2.60002 12.1884V4.36041ZM3.95429 3.16101C3.96859 3.10936 3.97602 3.0556 3.97602 3.00106V1.80966C3.97602 1.48183 4.33602 1.20197 4.77602 1.20197H9.24802C9.66403 1.20197 10.048 1.48183 10.048 1.80966V3.00106C10.0473 3.05515 10.054 3.10896 10.0678 3.16101H3.95429ZM5.57571 10.997C5.41731 10.995 5.26597 10.9311 5.15395 10.8191C5.04193 10.7071 4.97808 10.5558 4.97601 10.3973V6.77517C4.97601 6.61612 5.0392 6.46359 5.15166 6.35112C5.26413 6.23866 5.41666 6.17548 5.57571 6.17548C5.73476 6.17548 5.8873 6.23866 5.99976 6.35112C6.11223 6.46359 6.17541 6.61612 6.17541 6.77517V10.3894C6.17647 10.4688 6.16174 10.5476 6.13208 10.6213C6.10241 10.695 6.05841 10.762 6.00261 10.8186C5.94682 10.8751 5.88035 10.92 5.80707 10.9506C5.73378 10.9813 5.65514 10.9971 5.57571 10.997ZM7.99968 10.8214C8.11215 10.9339 8.26468 10.997 8.42373 10.997C8.58351 10.9949 8.73604 10.93 8.84828 10.8163C8.96052 10.7025 9.02345 10.5491 9.02343 10.3894V6.77517C9.02343 6.61612 8.96025 6.46359 8.84778 6.35112C8.73532 6.23866 8.58278 6.17548 8.42373 6.17548C8.26468 6.17548 8.11215 6.23866 7.99968 6.35112C7.88722 6.46359 7.82404 6.61612 7.82404 6.77517V10.3973C7.82404 10.5564 7.88722 10.7089 7.99968 10.8214Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-selectbutton.mjs
+var _c0 = ["container"];
+var _c1 = (a0, a1, a2) => ({
+  "p-highlight": a0,
+  "p-disabled": a1,
+  "p-button-icon-only": a2
 });
-var _c18 = (a0) => ({
-  "p-datepicker-input-icon": a0
+var _c2 = (a0, a1) => ({
+  $implicit: a0,
+  index: a1
 });
-var _c19 = (a0, a1) => ({
-  showTransitionParams: a0,
-  hideTransitionParams: a1
-});
-var _c20 = (a0) => ({
-  value: "visible",
-  params: a0
-});
-var _c21 = (a0) => ({
-  visibility: a0
-});
-var _c22 = (a0) => ({
-  $implicit: a0
-});
-var _c23 = (a0, a1) => ({
-  "p-datepicker-day-cell": true,
-  "p-datepicker-other-month": a0,
-  "p-datepicker-today": a1
-});
-var _c24 = (a0, a1) => ({
-  "p-datepicker-month": true,
-  "p-datepicker-month-selected": a0,
-  "p-disabled": a1
-});
-var _c25 = (a0, a1) => ({
-  "p-datepicker-year": true,
-  "p-datepicker-year-selected": a0,
-  "p-disabled": a1
-});
-function DatePicker_ng_template_2_ng_container_2_TimesIcon_1_Template(rf, ctx) {
+function SelectButton_div_2_ng_container_1_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    const _r3 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "TimesIcon", 11);
-    ɵɵlistener("click", function DatePicker_ng_template_2_ng_container_2_TimesIcon_1_Template_TimesIcon_click_0_listener() {
-      ɵɵrestoreView(_r3);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.clear());
-    });
-    ɵɵelementEnd();
+    ɵɵelement(0, "span", 8);
   }
   if (rf & 2) {
-    ɵɵclassMap("p-datepicker-clear-icon");
+    const option_r3 = ɵɵnextContext(2).$implicit;
+    ɵɵclassMap(option_r3.icon);
+    ɵɵproperty("ngClass", "p-button-icon p-button-icon-left");
+    ɵɵattribute("data-pc-section", "icon");
   }
 }
-function DatePicker_ng_template_2_ng_container_2_span_2_1_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_ng_template_2_ng_container_2_span_2_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_ng_template_2_ng_container_2_span_2_1_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_ng_template_2_ng_container_2_span_2_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r4 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "span", 12);
-    ɵɵlistener("click", function DatePicker_ng_template_2_ng_container_2_span_2_Template_span_click_0_listener() {
-      ɵɵrestoreView(_r4);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.clear());
-    });
-    ɵɵtemplate(1, DatePicker_ng_template_2_ng_container_2_span_2_1_Template, 1, 0, null, 13);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.clearIconTemplate || ctx_r1._clearIconTemplate);
-  }
-}
-function DatePicker_ng_template_2_ng_container_2_Template(rf, ctx) {
+function SelectButton_div_2_ng_container_1_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, DatePicker_ng_template_2_ng_container_2_TimesIcon_1_Template, 1, 2, "TimesIcon", 9)(2, DatePicker_ng_template_2_ng_container_2_span_2_Template, 2, 1, "span", 10);
+    ɵɵtemplate(1, SelectButton_div_2_ng_container_1_span_1_Template, 1, 4, "span", 6);
+    ɵɵelementStart(2, "span", 7);
+    ɵɵtext(3);
+    ɵɵelementEnd();
     ɵɵelementContainerEnd();
   }
   if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(2);
+    const option_r3 = ɵɵnextContext().$implicit;
+    const ctx_r4 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.clearIconTemplate && !ctx_r1._clearIconTemplate);
+    ɵɵproperty("ngIf", option_r3.icon);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.clearIconTemplate || ctx_r1._clearIconTemplate);
-  }
-}
-function DatePicker_ng_template_2_button_3_span_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "span", 16);
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵproperty("ngClass", ctx_r1.icon);
-  }
-}
-function DatePicker_ng_template_2_button_3_ng_container_2_CalendarIcon_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "CalendarIcon");
-  }
-}
-function DatePicker_ng_template_2_button_3_ng_container_2_2_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_ng_template_2_button_3_ng_container_2_2_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_ng_template_2_button_3_ng_container_2_2_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_ng_template_2_button_3_ng_container_2_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, DatePicker_ng_template_2_button_3_ng_container_2_CalendarIcon_1_Template, 1, 0, "CalendarIcon", 7)(2, DatePicker_ng_template_2_button_3_ng_container_2_2_Template, 1, 0, null, 13);
-    ɵɵelementContainerEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
+    ɵɵattribute("data-pc-section", "label");
     ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.triggerIconTemplate && !ctx_r1._triggerIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.triggerIconTemplate || ctx_r1._triggerIconTemplate);
+    ɵɵtextInterpolate(ctx_r4.getOptionLabel(option_r3));
   }
 }
-function DatePicker_ng_template_2_button_3_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r5 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 14);
-    ɵɵlistener("click", function DatePicker_ng_template_2_button_3_Template_button_click_0_listener($event) {
-      ɵɵrestoreView(_r5);
-      ɵɵnextContext();
-      const inputfield_r6 = ɵɵreference(1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.onButtonClick($event, inputfield_r6));
-    });
-    ɵɵtemplate(1, DatePicker_ng_template_2_button_3_span_1_Template, 1, 1, "span", 15)(2, DatePicker_ng_template_2_button_3_ng_container_2_Template, 3, 2, "ng-container", 7);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    let tmp_6_0;
-    const ctx_r1 = ɵɵnextContext(2);
-    ɵɵproperty("disabled", ctx_r1.disabled);
-    ɵɵattribute("aria-label", ctx_r1.iconButtonAriaLabel)("aria-expanded", (tmp_6_0 = ctx_r1.overlayVisible) !== null && tmp_6_0 !== void 0 ? tmp_6_0 : false)("aria-controls", ctx_r1.overlayVisible ? ctx_r1.panelId : null);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.icon);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.icon);
-  }
-}
-function DatePicker_ng_template_2_ng_container_4_CalendarIcon_2_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r7 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "CalendarIcon", 20);
-    ɵɵlistener("click", function DatePicker_ng_template_2_ng_container_4_CalendarIcon_2_Template_CalendarIcon_click_0_listener($event) {
-      ɵɵrestoreView(_r7);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onButtonClick($event));
-    });
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵproperty("ngClass", ɵɵpureFunction1(1, _c18, ctx_r1.showOnFocus));
-  }
-}
-function DatePicker_ng_template_2_ng_container_4_ng_container_3_Template(rf, ctx) {
+function SelectButton_div_2_ng_template_2_ng_container_0_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainer(0);
   }
 }
-function DatePicker_ng_template_2_ng_container_4_Template(rf, ctx) {
+function SelectButton_div_2_ng_template_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "span", 17);
-    ɵɵtemplate(2, DatePicker_ng_template_2_ng_container_4_CalendarIcon_2_Template, 1, 3, "CalendarIcon", 18)(3, DatePicker_ng_template_2_ng_container_4_ng_container_3_Template, 1, 0, "ng-container", 19);
-    ɵɵelementEnd();
-    ɵɵelementContainerEnd();
+    ɵɵtemplate(0, SelectButton_div_2_ng_template_2_ng_container_0_Template, 1, 0, "ng-container", 9);
   }
   if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(2);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", !ctx_r1.inputIconTemplate && !ctx_r1._inputIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.inputIconTemplate || ctx_r1._inputIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(3, _c17, ctx_r1.onButtonClick.bind(ctx_r1)));
+    const ctx_r6 = ɵɵnextContext();
+    const option_r3 = ctx_r6.$implicit;
+    const i_r4 = ctx_r6.index;
+    const ctx_r4 = ɵɵnextContext();
+    ɵɵproperty("ngTemplateOutlet", ctx_r4.selectButtonTemplate)("ngTemplateOutletContext", ɵɵpureFunction2(2, _c2, option_r3, i_r4));
   }
 }
-function DatePicker_ng_template_2_Template(rf, ctx) {
+function SelectButton_div_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "input", 6, 1);
-    ɵɵlistener("focus", function DatePicker_ng_template_2_Template_input_focus_0_listener($event) {
+    ɵɵelementStart(0, "div", 4);
+    ɵɵlistener("click", function SelectButton_div_2_Template_div_click_0_listener($event) {
+      const ctx_r1 = ɵɵrestoreView(_r1);
+      const option_r3 = ctx_r1.$implicit;
+      const i_r4 = ctx_r1.index;
+      const ctx_r4 = ɵɵnextContext();
+      return ɵɵresetView(ctx_r4.onOptionSelect($event, option_r3, i_r4));
+    })("keydown", function SelectButton_div_2_Template_div_keydown_0_listener($event) {
+      const ctx_r5 = ɵɵrestoreView(_r1);
+      const option_r3 = ctx_r5.$implicit;
+      const i_r4 = ctx_r5.index;
+      const ctx_r4 = ɵɵnextContext();
+      return ɵɵresetView(ctx_r4.onKeyDown($event, option_r3, i_r4));
+    })("focus", function SelectButton_div_2_Template_div_focus_0_listener($event) {
+      const i_r4 = ɵɵrestoreView(_r1).index;
+      const ctx_r4 = ɵɵnextContext();
+      return ɵɵresetView(ctx_r4.onFocus($event, i_r4));
+    })("blur", function SelectButton_div_2_Template_div_blur_0_listener() {
       ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.onInputFocus($event));
-    })("keydown", function DatePicker_ng_template_2_Template_input_keydown_0_listener($event) {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.onInputKeydown($event));
-    })("click", function DatePicker_ng_template_2_Template_input_click_0_listener() {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.onInputClick());
-    })("blur", function DatePicker_ng_template_2_Template_input_blur_0_listener($event) {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.onInputBlur($event));
-    })("input", function DatePicker_ng_template_2_Template_input_input_0_listener($event) {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.onUserInput($event));
+      const ctx_r4 = ɵɵnextContext();
+      return ɵɵresetView(ctx_r4.onBlur());
     });
-    ɵɵelementEnd();
-    ɵɵtemplate(2, DatePicker_ng_template_2_ng_container_2_Template, 3, 2, "ng-container", 7)(3, DatePicker_ng_template_2_button_3_Template, 3, 6, "button", 8)(4, DatePicker_ng_template_2_ng_container_4_Template, 4, 5, "ng-container", 7);
-  }
-  if (rf & 2) {
-    let tmp_17_0;
-    const ctx_r1 = ɵɵnextContext();
-    ɵɵclassMap(ctx_r1.inputStyleClass);
-    ɵɵproperty("value", ctx_r1.inputFieldValue)("readonly", ctx_r1.readonlyInput)("ngStyle", ctx_r1.inputStyle)("ngClass", "p-datepicker-input")("placeholder", ctx_r1.placeholder || "")("disabled", ctx_r1.disabled)("pAutoFocus", ctx_r1.autofocus)("variant", ctx_r1.variant)("fluid", ctx_r1.hasFluid);
-    ɵɵattribute("id", ctx_r1.inputId)("name", ctx_r1.name)("required", ctx_r1.required)("aria-required", ctx_r1.required)("aria-expanded", (tmp_17_0 = ctx_r1.overlayVisible) !== null && tmp_17_0 !== void 0 ? tmp_17_0 : false)("aria-controls", ctx_r1.overlayVisible ? ctx_r1.panelId : null)("aria-labelledby", ctx_r1.ariaLabelledBy)("aria-label", ctx_r1.ariaLabel)("tabindex", ctx_r1.tabindex)("inputmode", ctx_r1.touchUI ? "off" : null);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", ctx_r1.showClear && !ctx_r1.disabled && ctx_r1.value != null);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.showIcon && ctx_r1.iconDisplay === "button");
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.iconDisplay === "input" && ctx_r1.showIcon);
-  }
-}
-function DatePicker_div_3_ng_container_3_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainer(0);
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_ChevronLeftIcon_3_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "ChevronLeftIcon");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_span_4_1_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_div_3_ng_container_4_div_2_span_4_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_div_3_ng_container_4_div_2_span_4_1_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_span_4_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "span");
-    ɵɵtemplate(1, DatePicker_div_3_ng_container_4_div_2_span_4_1_Template, 1, 0, null, 13);
+    ɵɵtemplate(1, SelectButton_div_2_ng_container_1_Template, 4, 3, "ng-container", 5)(2, SelectButton_div_2_ng_template_2_Template, 1, 5, "ng-template", null, 1, ɵɵtemplateRefExtractor);
     ɵɵelementEnd();
   }
   if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(4);
+    const option_r3 = ctx.$implicit;
+    const i_r4 = ctx.index;
+    const customcontent_r8 = ɵɵreference(3);
+    const ctx_r4 = ɵɵnextContext();
+    ɵɵclassMap(option_r3.styleClass);
+    ɵɵproperty("role", ctx_r4.multiple ? "checkbox" : "radio")("ngClass", ɵɵpureFunction3(14, _c1, ctx_r4.isSelected(option_r3), ctx_r4.disabled || ctx_r4.isOptionDisabled(option_r3), option_r3.icon && !ctx_r4.getOptionLabel(option_r3)))("autofocus", ctx_r4.autofocus);
+    ɵɵattribute("tabindex", i_r4 === ctx_r4.focusedIndex && !ctx_r4.disabled ? "0" : "-1")("aria-label", option_r3.label)("aria-checked", ctx_r4.isSelected(option_r3))("aria-disabled", ctx_r4.optionDisabled)("title", option_r3.title)("aria-labelledby", ctx_r4.getOptionLabel(option_r3))("data-pc-section", "button");
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.previousIconTemplate || ctx_r1._previousIconTemplate);
+    ɵɵproperty("ngIf", !ctx_r4.itemTemplate)("ngIfElse", customcontent_r8);
   }
 }
-function DatePicker_div_3_ng_container_4_div_2_button_6_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r10 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 37);
-    ɵɵlistener("click", function DatePicker_div_3_ng_container_4_div_2_button_6_Template_button_click_0_listener($event) {
-      ɵɵrestoreView(_r10);
-      const ctx_r1 = ɵɵnextContext(4);
-      return ɵɵresetView(ctx_r1.switchToMonthView($event));
-    })("keydown", function DatePicker_div_3_ng_container_4_div_2_button_6_Template_button_keydown_0_listener($event) {
-      ɵɵrestoreView(_r10);
-      const ctx_r1 = ɵɵnextContext(4);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    });
-    ɵɵtext(1);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const month_r11 = ɵɵnextContext().$implicit;
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵproperty("disabled", ctx_r1.switchViewButtonDisabled());
-    ɵɵattribute("aria-label", ctx_r1.getTranslation("chooseMonth"));
-    ɵɵadvance();
-    ɵɵtextInterpolate1(" ", ctx_r1.getMonthName(month_r11.month), " ");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_button_7_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r12 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 38);
-    ɵɵlistener("click", function DatePicker_div_3_ng_container_4_div_2_button_7_Template_button_click_0_listener($event) {
-      ɵɵrestoreView(_r12);
-      const ctx_r1 = ɵɵnextContext(4);
-      return ɵɵresetView(ctx_r1.switchToYearView($event));
-    })("keydown", function DatePicker_div_3_ng_container_4_div_2_button_7_Template_button_keydown_0_listener($event) {
-      ɵɵrestoreView(_r12);
-      const ctx_r1 = ɵɵnextContext(4);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    });
-    ɵɵtext(1);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const month_r11 = ɵɵnextContext().$implicit;
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵproperty("disabled", ctx_r1.switchViewButtonDisabled());
-    ɵɵattribute("aria-label", ctx_r1.getTranslation("chooseYear"));
-    ɵɵadvance();
-    ɵɵtextInterpolate1(" ", ctx_r1.getYear(month_r11), " ");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_span_8_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(5);
-    ɵɵadvance();
-    ɵɵtextInterpolate2("", ctx_r1.yearPickerValues()[0], " - ", ctx_r1.yearPickerValues()[ctx_r1.yearPickerValues().length - 1], "");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_span_8_ng_container_2_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainer(0);
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_span_8_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "span", 39);
-    ɵɵtemplate(1, DatePicker_div_3_ng_container_4_div_2_span_8_ng_container_1_Template, 2, 2, "ng-container", 7)(2, DatePicker_div_3_ng_container_4_div_2_span_8_ng_container_2_Template, 1, 0, "ng-container", 19);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(4);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.decadeTemplate && ctx_r1._decadeTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.decadeTemplate || ctx_r1._decadeTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(3, _c22, ctx_r1.yearPickerValues));
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_ChevronRightIcon_10_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "ChevronRightIcon");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_span_11_1_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_div_3_ng_container_4_div_2_span_11_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_div_3_ng_container_4_div_2_span_11_1_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_span_11_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "span");
-    ɵɵtemplate(1, DatePicker_div_3_ng_container_4_div_2_span_11_1_Template, 1, 0, null, 13);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(4);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.nextIconTemplate || ctx_r1._nextIconTemplate);
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_th_3_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "th", 44)(1, "span");
-    ɵɵtext(2);
-    ɵɵelementEnd()();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(5);
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r1.getTranslation("weekHeader"));
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_th_4_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "th", 45)(1, "span", 46);
-    ɵɵtext(2);
-    ɵɵelementEnd()();
-  }
-  if (rf & 2) {
-    const weekDay_r13 = ctx.$implicit;
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(weekDay_r13);
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "td", 49)(1, "span", 50);
-    ɵɵtext(2);
-    ɵɵelementEnd()();
-  }
-  if (rf & 2) {
-    const j_r14 = ɵɵnextContext().index;
-    const month_r11 = ɵɵnextContext(2).$implicit;
-    ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", month_r11.weekNumbers[j_r14], " ");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_ng_container_2_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-  }
-  if (rf & 2) {
-    const date_r16 = ɵɵnextContext(2).$implicit;
-    ɵɵadvance();
-    ɵɵtextInterpolate(date_r16.day);
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_ng_container_3_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainer(0);
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_ng_container_3_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_ng_container_3_ng_container_1_Template, 1, 0, "ng-container", 19);
-    ɵɵelementContainerEnd();
-  }
-  if (rf & 2) {
-    const date_r16 = ɵɵnextContext(2).$implicit;
-    const ctx_r1 = ɵɵnextContext(6);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.dateTemplate || ctx_r1._dateTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c22, date_r16));
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_ng_container_4_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainer(0);
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_ng_container_4_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_ng_container_4_ng_container_1_Template, 1, 0, "ng-container", 19);
-    ɵɵelementContainerEnd();
-  }
-  if (rf & 2) {
-    const date_r16 = ɵɵnextContext(2).$implicit;
-    const ctx_r1 = ɵɵnextContext(6);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.disabledDateTemplate || ctx_r1._disabledDateTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c22, date_r16));
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_div_5_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "div", 53);
-    ɵɵtext(1);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const date_r16 = ɵɵnextContext(2).$implicit;
-    ɵɵadvance();
-    ɵɵtextInterpolate1(" ", date_r16.day, " ");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r15 = ɵɵgetCurrentView();
-    ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "span", 51);
-    ɵɵlistener("click", function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_Template_span_click_1_listener($event) {
-      ɵɵrestoreView(_r15);
-      const date_r16 = ɵɵnextContext().$implicit;
-      const ctx_r1 = ɵɵnextContext(6);
-      return ɵɵresetView(ctx_r1.onDateSelect($event, date_r16));
-    })("keydown", function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_Template_span_keydown_1_listener($event) {
-      ɵɵrestoreView(_r15);
-      const date_r16 = ɵɵnextContext().$implicit;
-      const i_r17 = ɵɵnextContext(3).index;
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onDateCellKeydown($event, date_r16, i_r17));
-    });
-    ɵɵtemplate(2, DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_ng_container_2_Template, 2, 1, "ng-container", 7)(3, DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_ng_container_3_Template, 2, 4, "ng-container", 7)(4, DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_ng_container_4_Template, 2, 4, "ng-container", 7);
-    ɵɵelementEnd();
-    ɵɵtemplate(5, DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_div_5_Template, 2, 1, "div", 52);
-    ɵɵelementContainerEnd();
-  }
-  if (rf & 2) {
-    const date_r16 = ɵɵnextContext().$implicit;
-    const ctx_r1 = ɵɵnextContext(6);
-    ɵɵadvance();
-    ɵɵproperty("ngClass", ctx_r1.dayClass(date_r16));
-    ɵɵattribute("data-date", ctx_r1.formatDateKey(ctx_r1.formatDateMetaToDate(date_r16)));
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.dateTemplate && !ctx_r1._dateTemplate && (date_r16.selectable || !ctx_r1.disabledDateTemplate && !ctx_r1._disabledDateTemplate));
-    ɵɵadvance();
-    ɵɵproperty("ngIf", date_r16.selectable || !ctx_r1.disabledDateTemplate && !ctx_r1._disabledDateTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !date_r16.selectable);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.isSelected(date_r16));
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "td", 16);
-    ɵɵtemplate(1, DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_ng_container_1_Template, 6, 6, "ng-container", 7);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const date_r16 = ctx.$implicit;
-    const ctx_r1 = ɵɵnextContext(6);
-    ɵɵproperty("ngClass", ɵɵpureFunction2(3, _c23, date_r16.otherMonth, date_r16.today));
-    ɵɵattribute("aria-label", date_r16.day);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", date_r16.otherMonth ? ctx_r1.showOtherMonths : true);
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "tr");
-    ɵɵtemplate(1, DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_1_Template, 3, 1, "td", 47)(2, DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_td_2_Template, 2, 6, "td", 48);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const week_r18 = ctx.$implicit;
-    const ctx_r1 = ɵɵnextContext(5);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.showWeek);
-    ɵɵadvance();
-    ɵɵproperty("ngForOf", week_r18);
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_table_12_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "table", 40)(1, "thead")(2, "tr");
-    ɵɵtemplate(3, DatePicker_div_3_ng_container_4_div_2_table_12_th_3_Template, 3, 1, "th", 41)(4, DatePicker_div_3_ng_container_4_div_2_table_12_th_4_Template, 3, 1, "th", 42);
-    ɵɵelementEnd()();
-    ɵɵelementStart(5, "tbody");
-    ɵɵtemplate(6, DatePicker_div_3_ng_container_4_div_2_table_12_tr_6_Template, 3, 2, "tr", 43);
-    ɵɵelementEnd()();
-  }
-  if (rf & 2) {
-    const month_r11 = ɵɵnextContext().$implicit;
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵadvance(3);
-    ɵɵproperty("ngIf", ctx_r1.showWeek);
-    ɵɵadvance();
-    ɵɵproperty("ngForOf", ctx_r1.weekDays);
-    ɵɵadvance(2);
-    ɵɵproperty("ngForOf", month_r11.dates);
-  }
-}
-function DatePicker_div_3_ng_container_4_div_2_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r9 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 28)(1, "div", 29)(2, "p-button", 30);
-    ɵɵlistener("keydown", function DatePicker_div_3_ng_container_4_div_2_Template_p_button_keydown_2_listener($event) {
-      ɵɵrestoreView(_r9);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("onClick", function DatePicker_div_3_ng_container_4_div_2_Template_p_button_onClick_2_listener($event) {
-      ɵɵrestoreView(_r9);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onPrevButtonClick($event));
-    });
-    ɵɵtemplate(3, DatePicker_div_3_ng_container_4_div_2_ChevronLeftIcon_3_Template, 1, 0, "ChevronLeftIcon", 7)(4, DatePicker_div_3_ng_container_4_div_2_span_4_Template, 2, 1, "span", 7);
-    ɵɵelementEnd();
-    ɵɵelementStart(5, "div", 31);
-    ɵɵtemplate(6, DatePicker_div_3_ng_container_4_div_2_button_6_Template, 2, 3, "button", 32)(7, DatePicker_div_3_ng_container_4_div_2_button_7_Template, 2, 3, "button", 33)(8, DatePicker_div_3_ng_container_4_div_2_span_8_Template, 3, 5, "span", 34);
-    ɵɵelementEnd();
-    ɵɵelementStart(9, "p-button", 35);
-    ɵɵlistener("keydown", function DatePicker_div_3_ng_container_4_div_2_Template_p_button_keydown_9_listener($event) {
-      ɵɵrestoreView(_r9);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("onClick", function DatePicker_div_3_ng_container_4_div_2_Template_p_button_onClick_9_listener($event) {
-      ɵɵrestoreView(_r9);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onNextButtonClick($event));
-    });
-    ɵɵtemplate(10, DatePicker_div_3_ng_container_4_div_2_ChevronRightIcon_10_Template, 1, 0, "ChevronRightIcon", 7)(11, DatePicker_div_3_ng_container_4_div_2_span_11_Template, 2, 1, "span", 7);
-    ɵɵelementEnd()();
-    ɵɵtemplate(12, DatePicker_div_3_ng_container_4_div_2_table_12_Template, 7, 3, "table", 36);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const i_r17 = ctx.index;
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵadvance(2);
-    ɵɵproperty("ngStyle", ɵɵpureFunction1(12, _c21, i_r17 === 0 ? "visible" : "hidden"));
-    ɵɵattribute("aria-label", ctx_r1.prevIconAriaLabel);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.previousIconTemplate && !ctx_r1._previousIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.previousIconTemplate || !ctx_r1._previousIconTemplate);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", ctx_r1.currentView === "date");
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.currentView !== "year");
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.currentView === "year");
-    ɵɵadvance();
-    ɵɵproperty("ngStyle", ɵɵpureFunction1(14, _c21, i_r17 === ctx_r1.months.length - 1 ? "visible" : "hidden"));
-    ɵɵattribute("aria-label", ctx_r1.nextIconAriaLabel);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.decadeTemplate && !ctx_r1._decadeTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.nextIconTemplate || !ctx_r1._nextIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.currentView === "date");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_3_span_1_div_2_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "div", 53);
-    ɵɵtext(1);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const m_r21 = ɵɵnextContext().$implicit;
-    ɵɵadvance();
-    ɵɵtextInterpolate1(" ", m_r21, " ");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_3_span_1_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r19 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "span", 56);
-    ɵɵlistener("click", function DatePicker_div_3_ng_container_4_div_3_span_1_Template_span_click_0_listener($event) {
-      const i_r20 = ɵɵrestoreView(_r19).index;
-      const ctx_r1 = ɵɵnextContext(4);
-      return ɵɵresetView(ctx_r1.onMonthSelect($event, i_r20));
-    })("keydown", function DatePicker_div_3_ng_container_4_div_3_span_1_Template_span_keydown_0_listener($event) {
-      const i_r20 = ɵɵrestoreView(_r19).index;
-      const ctx_r1 = ɵɵnextContext(4);
-      return ɵɵresetView(ctx_r1.onMonthCellKeydown($event, i_r20));
-    });
-    ɵɵtext(1);
-    ɵɵtemplate(2, DatePicker_div_3_ng_container_4_div_3_span_1_div_2_Template, 2, 1, "div", 52);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const m_r21 = ctx.$implicit;
-    const i_r20 = ctx.index;
-    const ctx_r1 = ɵɵnextContext(4);
-    ɵɵproperty("ngClass", ɵɵpureFunction2(3, _c24, ctx_r1.isMonthSelected(i_r20), ctx_r1.isMonthDisabled(i_r20)));
-    ɵɵadvance();
-    ɵɵtextInterpolate1(" ", m_r21, " ");
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.isMonthSelected(i_r20));
-  }
-}
-function DatePicker_div_3_ng_container_4_div_3_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "div", 54);
-    ɵɵtemplate(1, DatePicker_div_3_ng_container_4_div_3_span_1_Template, 3, 6, "span", 55);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵadvance();
-    ɵɵproperty("ngForOf", ctx_r1.monthPickerValues());
-  }
-}
-function DatePicker_div_3_ng_container_4_div_4_span_1_div_2_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "div", 53);
-    ɵɵtext(1);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const y_r23 = ɵɵnextContext().$implicit;
-    ɵɵadvance();
-    ɵɵtextInterpolate1(" ", y_r23, " ");
-  }
-}
-function DatePicker_div_3_ng_container_4_div_4_span_1_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r22 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "span", 56);
-    ɵɵlistener("click", function DatePicker_div_3_ng_container_4_div_4_span_1_Template_span_click_0_listener($event) {
-      const y_r23 = ɵɵrestoreView(_r22).$implicit;
-      const ctx_r1 = ɵɵnextContext(4);
-      return ɵɵresetView(ctx_r1.onYearSelect($event, y_r23));
-    })("keydown", function DatePicker_div_3_ng_container_4_div_4_span_1_Template_span_keydown_0_listener($event) {
-      const y_r23 = ɵɵrestoreView(_r22).$implicit;
-      const ctx_r1 = ɵɵnextContext(4);
-      return ɵɵresetView(ctx_r1.onYearCellKeydown($event, y_r23));
-    });
-    ɵɵtext(1);
-    ɵɵtemplate(2, DatePicker_div_3_ng_container_4_div_4_span_1_div_2_Template, 2, 1, "div", 52);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const y_r23 = ctx.$implicit;
-    const ctx_r1 = ɵɵnextContext(4);
-    ɵɵproperty("ngClass", ɵɵpureFunction2(3, _c25, ctx_r1.isYearSelected(y_r23), ctx_r1.isYearDisabled(y_r23)));
-    ɵɵadvance();
-    ɵɵtextInterpolate1(" ", y_r23, " ");
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.isYearSelected(y_r23));
-  }
-}
-function DatePicker_div_3_ng_container_4_div_4_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "div", 57);
-    ɵɵtemplate(1, DatePicker_div_3_ng_container_4_div_4_span_1_Template, 3, 6, "span", 55);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵadvance();
-    ɵɵproperty("ngForOf", ctx_r1.yearPickerValues());
-  }
-}
-function DatePicker_div_3_ng_container_4_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelementStart(1, "div", 24);
-    ɵɵtemplate(2, DatePicker_div_3_ng_container_4_div_2_Template, 13, 16, "div", 25);
-    ɵɵelementEnd();
-    ɵɵtemplate(3, DatePicker_div_3_ng_container_4_div_3_Template, 2, 1, "div", 26)(4, DatePicker_div_3_ng_container_4_div_4_Template, 2, 1, "div", 27);
-    ɵɵelementContainerEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(2);
-    ɵɵadvance(2);
-    ɵɵproperty("ngForOf", ctx_r1.months);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.currentView === "month");
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.currentView === "year");
-  }
-}
-function DatePicker_div_3_div_5_ChevronUpIcon_3_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "ChevronUpIcon");
-  }
-}
-function DatePicker_div_3_div_5_4_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_div_3_div_5_4_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_div_3_div_5_4_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_div_3_div_5_ng_container_6_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1, "0");
-    ɵɵelementContainerEnd();
-  }
-}
-function DatePicker_div_3_div_5_ChevronDownIcon_9_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "ChevronDownIcon");
-  }
-}
-function DatePicker_div_3_div_5_10_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_div_3_div_5_10_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_div_3_div_5_10_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_div_3_div_5_ChevronUpIcon_16_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "ChevronUpIcon");
-  }
-}
-function DatePicker_div_3_div_5_17_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_div_3_div_5_17_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_div_3_div_5_17_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_div_3_div_5_ng_container_19_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1, "0");
-    ɵɵelementContainerEnd();
-  }
-}
-function DatePicker_div_3_div_5_ChevronDownIcon_22_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "ChevronDownIcon");
-  }
-}
-function DatePicker_div_3_div_5_ng_container_23_1_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_div_3_div_5_ng_container_23_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_div_3_div_5_ng_container_23_1_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_div_3_div_5_ng_container_23_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, DatePicker_div_3_div_5_ng_container_23_1_Template, 1, 0, null, 13);
-    ɵɵelementContainerEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.decrementIconTemplate || ctx_r1._decrementIconTemplate);
-  }
-}
-function DatePicker_div_3_div_5_div_24_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "div", 61)(1, "span");
-    ɵɵtext(2);
-    ɵɵelementEnd()();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r1.timeSeparator);
-  }
-}
-function DatePicker_div_3_div_5_div_25_ChevronUpIcon_2_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "ChevronUpIcon");
-  }
-}
-function DatePicker_div_3_div_5_div_25_3_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_div_3_div_5_div_25_3_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_div_3_div_5_div_25_3_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_div_3_div_5_div_25_ng_container_5_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1, "0");
-    ɵɵelementContainerEnd();
-  }
-}
-function DatePicker_div_3_div_5_div_25_ChevronDownIcon_8_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "ChevronDownIcon");
-  }
-}
-function DatePicker_div_3_div_5_div_25_9_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_div_3_div_5_div_25_9_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_div_3_div_5_div_25_9_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_div_3_div_5_div_25_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r25 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 66)(1, "p-button", 60);
-    ɵɵlistener("keydown", function DatePicker_div_3_div_5_div_25_Template_p_button_keydown_1_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("keydown.enter", function DatePicker_div_3_div_5_div_25_Template_p_button_keydown_enter_1_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.incrementSecond($event));
-    })("keydown.space", function DatePicker_div_3_div_5_div_25_Template_p_button_keydown_space_1_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.incrementSecond($event));
-    })("mousedown", function DatePicker_div_3_div_5_div_25_Template_p_button_mousedown_1_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseDown($event, 2, 1));
-    })("mouseup", function DatePicker_div_3_div_5_div_25_Template_p_button_mouseup_1_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.enter", function DatePicker_div_3_div_5_div_25_Template_p_button_keyup_enter_1_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.space", function DatePicker_div_3_div_5_div_25_Template_p_button_keyup_space_1_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("mouseleave", function DatePicker_div_3_div_5_div_25_Template_p_button_mouseleave_1_listener() {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseLeave());
-    });
-    ɵɵtemplate(2, DatePicker_div_3_div_5_div_25_ChevronUpIcon_2_Template, 1, 0, "ChevronUpIcon", 7)(3, DatePicker_div_3_div_5_div_25_3_Template, 1, 0, null, 13);
-    ɵɵelementEnd();
-    ɵɵelementStart(4, "span");
-    ɵɵtemplate(5, DatePicker_div_3_div_5_div_25_ng_container_5_Template, 2, 0, "ng-container", 7);
-    ɵɵtext(6);
-    ɵɵelementEnd();
-    ɵɵelementStart(7, "p-button", 60);
-    ɵɵlistener("keydown", function DatePicker_div_3_div_5_div_25_Template_p_button_keydown_7_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("keydown.enter", function DatePicker_div_3_div_5_div_25_Template_p_button_keydown_enter_7_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.decrementSecond($event));
-    })("keydown.space", function DatePicker_div_3_div_5_div_25_Template_p_button_keydown_space_7_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.decrementSecond($event));
-    })("mousedown", function DatePicker_div_3_div_5_div_25_Template_p_button_mousedown_7_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseDown($event, 2, -1));
-    })("mouseup", function DatePicker_div_3_div_5_div_25_Template_p_button_mouseup_7_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.enter", function DatePicker_div_3_div_5_div_25_Template_p_button_keyup_enter_7_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.space", function DatePicker_div_3_div_5_div_25_Template_p_button_keyup_space_7_listener($event) {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("mouseleave", function DatePicker_div_3_div_5_div_25_Template_p_button_mouseleave_7_listener() {
-      ɵɵrestoreView(_r25);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseLeave());
-    });
-    ɵɵtemplate(8, DatePicker_div_3_div_5_div_25_ChevronDownIcon_8_Template, 1, 0, "ChevronDownIcon", 7)(9, DatePicker_div_3_div_5_div_25_9_Template, 1, 0, null, 13);
-    ɵɵelementEnd()();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵadvance();
-    ɵɵattribute("aria-label", ctx_r1.getTranslation("nextSecond"));
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.incrementIconTemplate && !ctx_r1._incrementIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.incrementIconTemplate || ctx_r1._incrementIconTemplate);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", ctx_r1.currentSecond < 10);
-    ɵɵadvance();
-    ɵɵtextInterpolate(ctx_r1.currentSecond);
-    ɵɵadvance();
-    ɵɵattribute("aria-label", ctx_r1.getTranslation("prevSecond"));
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.decrementIconTemplate && !ctx_r1._decrementIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.decrementIconTemplate || ctx_r1._decrementIconTemplate);
-  }
-}
-function DatePicker_div_3_div_5_div_26_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "div", 61)(1, "span");
-    ɵɵtext(2);
-    ɵɵelementEnd()();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r1.timeSeparator);
-  }
-}
-function DatePicker_div_3_div_5_div_27_ChevronUpIcon_2_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "ChevronUpIcon");
-  }
-}
-function DatePicker_div_3_div_5_div_27_3_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_div_3_div_5_div_27_3_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_div_3_div_5_div_27_3_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_div_3_div_5_div_27_ChevronDownIcon_7_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelement(0, "ChevronDownIcon");
-  }
-}
-function DatePicker_div_3_div_5_div_27_8_ng_template_0_Template(rf, ctx) {
-}
-function DatePicker_div_3_div_5_div_27_8_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, DatePicker_div_3_div_5_div_27_8_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function DatePicker_div_3_div_5_div_27_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r26 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 67)(1, "p-button", 68);
-    ɵɵlistener("keydown", function DatePicker_div_3_div_5_div_27_Template_p_button_keydown_1_listener($event) {
-      ɵɵrestoreView(_r26);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("onClick", function DatePicker_div_3_div_5_div_27_Template_p_button_onClick_1_listener($event) {
-      ɵɵrestoreView(_r26);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.toggleAMPM($event));
-    })("keydown.enter", function DatePicker_div_3_div_5_div_27_Template_p_button_keydown_enter_1_listener($event) {
-      ɵɵrestoreView(_r26);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.toggleAMPM($event));
-    });
-    ɵɵtemplate(2, DatePicker_div_3_div_5_div_27_ChevronUpIcon_2_Template, 1, 0, "ChevronUpIcon", 7)(3, DatePicker_div_3_div_5_div_27_3_Template, 1, 0, null, 13);
-    ɵɵelementEnd();
-    ɵɵelementStart(4, "span");
-    ɵɵtext(5);
-    ɵɵelementEnd();
-    ɵɵelementStart(6, "p-button", 69);
-    ɵɵlistener("keydown", function DatePicker_div_3_div_5_div_27_Template_p_button_keydown_6_listener($event) {
-      ɵɵrestoreView(_r26);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("click", function DatePicker_div_3_div_5_div_27_Template_p_button_click_6_listener($event) {
-      ɵɵrestoreView(_r26);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.toggleAMPM($event));
-    })("keydown.enter", function DatePicker_div_3_div_5_div_27_Template_p_button_keydown_enter_6_listener($event) {
-      ɵɵrestoreView(_r26);
-      const ctx_r1 = ɵɵnextContext(3);
-      return ɵɵresetView(ctx_r1.toggleAMPM($event));
-    });
-    ɵɵtemplate(7, DatePicker_div_3_div_5_div_27_ChevronDownIcon_7_Template, 1, 0, "ChevronDownIcon", 7)(8, DatePicker_div_3_div_5_div_27_8_Template, 1, 0, null, 13);
-    ɵɵelementEnd()();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵadvance();
-    ɵɵattribute("aria-label", ctx_r1.getTranslation("am"));
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.incrementIconTemplate && !ctx_r1._incrementIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.incrementIconTemplate || ctx_r1._incrementIconTemplate);
-    ɵɵadvance(2);
-    ɵɵtextInterpolate(ctx_r1.pm ? "PM" : "AM");
-    ɵɵadvance();
-    ɵɵattribute("aria-label", ctx_r1.getTranslation("pm"));
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.decrementIconTemplate && !ctx_r1._decrementIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.decrementIconTemplate || ctx_r1._decrementIconTemplate);
-  }
-}
-function DatePicker_div_3_div_5_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r24 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 58)(1, "div", 59)(2, "p-button", 60);
-    ɵɵlistener("keydown", function DatePicker_div_3_div_5_Template_p_button_keydown_2_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("keydown.enter", function DatePicker_div_3_div_5_Template_p_button_keydown_enter_2_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.incrementHour($event));
-    })("keydown.space", function DatePicker_div_3_div_5_Template_p_button_keydown_space_2_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.incrementHour($event));
-    })("mousedown", function DatePicker_div_3_div_5_Template_p_button_mousedown_2_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseDown($event, 0, 1));
-    })("mouseup", function DatePicker_div_3_div_5_Template_p_button_mouseup_2_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.enter", function DatePicker_div_3_div_5_Template_p_button_keyup_enter_2_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.space", function DatePicker_div_3_div_5_Template_p_button_keyup_space_2_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("mouseleave", function DatePicker_div_3_div_5_Template_p_button_mouseleave_2_listener() {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseLeave());
-    });
-    ɵɵtemplate(3, DatePicker_div_3_div_5_ChevronUpIcon_3_Template, 1, 0, "ChevronUpIcon", 7)(4, DatePicker_div_3_div_5_4_Template, 1, 0, null, 13);
-    ɵɵelementEnd();
-    ɵɵelementStart(5, "span");
-    ɵɵtemplate(6, DatePicker_div_3_div_5_ng_container_6_Template, 2, 0, "ng-container", 7);
-    ɵɵtext(7);
-    ɵɵelementEnd();
-    ɵɵelementStart(8, "p-button", 60);
-    ɵɵlistener("keydown", function DatePicker_div_3_div_5_Template_p_button_keydown_8_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("keydown.enter", function DatePicker_div_3_div_5_Template_p_button_keydown_enter_8_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.decrementHour($event));
-    })("keydown.space", function DatePicker_div_3_div_5_Template_p_button_keydown_space_8_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.decrementHour($event));
-    })("mousedown", function DatePicker_div_3_div_5_Template_p_button_mousedown_8_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseDown($event, 0, -1));
-    })("mouseup", function DatePicker_div_3_div_5_Template_p_button_mouseup_8_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.enter", function DatePicker_div_3_div_5_Template_p_button_keyup_enter_8_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.space", function DatePicker_div_3_div_5_Template_p_button_keyup_space_8_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("mouseleave", function DatePicker_div_3_div_5_Template_p_button_mouseleave_8_listener() {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseLeave());
-    });
-    ɵɵtemplate(9, DatePicker_div_3_div_5_ChevronDownIcon_9_Template, 1, 0, "ChevronDownIcon", 7)(10, DatePicker_div_3_div_5_10_Template, 1, 0, null, 13);
-    ɵɵelementEnd()();
-    ɵɵelementStart(11, "div", 61)(12, "span");
-    ɵɵtext(13);
-    ɵɵelementEnd()();
-    ɵɵelementStart(14, "div", 62)(15, "p-button", 60);
-    ɵɵlistener("keydown", function DatePicker_div_3_div_5_Template_p_button_keydown_15_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("keydown.enter", function DatePicker_div_3_div_5_Template_p_button_keydown_enter_15_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.incrementMinute($event));
-    })("keydown.space", function DatePicker_div_3_div_5_Template_p_button_keydown_space_15_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.incrementMinute($event));
-    })("mousedown", function DatePicker_div_3_div_5_Template_p_button_mousedown_15_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseDown($event, 1, 1));
-    })("mouseup", function DatePicker_div_3_div_5_Template_p_button_mouseup_15_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.enter", function DatePicker_div_3_div_5_Template_p_button_keyup_enter_15_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.space", function DatePicker_div_3_div_5_Template_p_button_keyup_space_15_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("mouseleave", function DatePicker_div_3_div_5_Template_p_button_mouseleave_15_listener() {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseLeave());
-    });
-    ɵɵtemplate(16, DatePicker_div_3_div_5_ChevronUpIcon_16_Template, 1, 0, "ChevronUpIcon", 7)(17, DatePicker_div_3_div_5_17_Template, 1, 0, null, 13);
-    ɵɵelementEnd();
-    ɵɵelementStart(18, "span");
-    ɵɵtemplate(19, DatePicker_div_3_div_5_ng_container_19_Template, 2, 0, "ng-container", 7);
-    ɵɵtext(20);
-    ɵɵelementEnd();
-    ɵɵelementStart(21, "p-button", 60);
-    ɵɵlistener("keydown", function DatePicker_div_3_div_5_Template_p_button_keydown_21_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("keydown.enter", function DatePicker_div_3_div_5_Template_p_button_keydown_enter_21_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.decrementMinute($event));
-    })("keydown.space", function DatePicker_div_3_div_5_Template_p_button_keydown_space_21_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.decrementMinute($event));
-    })("mousedown", function DatePicker_div_3_div_5_Template_p_button_mousedown_21_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseDown($event, 1, -1));
-    })("mouseup", function DatePicker_div_3_div_5_Template_p_button_mouseup_21_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.enter", function DatePicker_div_3_div_5_Template_p_button_keyup_enter_21_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("keyup.space", function DatePicker_div_3_div_5_Template_p_button_keyup_space_21_listener($event) {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseUp($event));
-    })("mouseleave", function DatePicker_div_3_div_5_Template_p_button_mouseleave_21_listener() {
-      ɵɵrestoreView(_r24);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimePickerElementMouseLeave());
-    });
-    ɵɵtemplate(22, DatePicker_div_3_div_5_ChevronDownIcon_22_Template, 1, 0, "ChevronDownIcon", 7)(23, DatePicker_div_3_div_5_ng_container_23_Template, 2, 1, "ng-container", 7);
-    ɵɵelementEnd()();
-    ɵɵtemplate(24, DatePicker_div_3_div_5_div_24_Template, 3, 1, "div", 63)(25, DatePicker_div_3_div_5_div_25_Template, 10, 8, "div", 64)(26, DatePicker_div_3_div_5_div_26_Template, 3, 1, "div", 63)(27, DatePicker_div_3_div_5_div_27_Template, 9, 7, "div", 65);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(2);
-    ɵɵadvance(2);
-    ɵɵattribute("aria-label", ctx_r1.getTranslation("nextHour"));
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.incrementIconTemplate && !ctx_r1._incrementIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.incrementIconTemplate || ctx_r1._incrementIconTemplate);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", ctx_r1.currentHour < 10);
-    ɵɵadvance();
-    ɵɵtextInterpolate(ctx_r1.currentHour);
-    ɵɵadvance();
-    ɵɵattribute("aria-label", ctx_r1.getTranslation("prevHour"));
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.decrementIconTemplate && !ctx_r1._decrementIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.decrementIconTemplate || ctx_r1._decrementIconTemplate);
-    ɵɵadvance(3);
-    ɵɵtextInterpolate(ctx_r1.timeSeparator);
-    ɵɵadvance(2);
-    ɵɵattribute("aria-label", ctx_r1.getTranslation("nextMinute"));
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.incrementIconTemplate && !ctx_r1._incrementIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.incrementIconTemplate || ctx_r1._incrementIconTemplate);
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", ctx_r1.currentMinute < 10);
-    ɵɵadvance();
-    ɵɵtextInterpolate(ctx_r1.currentMinute);
-    ɵɵadvance();
-    ɵɵattribute("aria-label", ctx_r1.getTranslation("prevMinute"));
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.decrementIconTemplate && !ctx_r1._decrementIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.decrementIconTemplate || ctx_r1._decrementIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.showSeconds);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.showSeconds);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.hourFormat == "12");
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.hourFormat == "12");
-  }
-}
-function DatePicker_div_3_div_6_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r27 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 70)(1, "p-button", 71);
-    ɵɵlistener("keydown", function DatePicker_div_3_div_6_Template_p_button_keydown_1_listener($event) {
-      ɵɵrestoreView(_r27);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("onClick", function DatePicker_div_3_div_6_Template_p_button_onClick_1_listener($event) {
-      ɵɵrestoreView(_r27);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTodayButtonClick($event));
-    });
-    ɵɵelementEnd();
-    ɵɵelementStart(2, "p-button", 72);
-    ɵɵlistener("keydown", function DatePicker_div_3_div_6_Template_p_button_keydown_2_listener($event) {
-      ɵɵrestoreView(_r27);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onContainerButtonKeydown($event));
-    })("onClick", function DatePicker_div_3_div_6_Template_p_button_onClick_2_listener($event) {
-      ɵɵrestoreView(_r27);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onClearButtonClick($event));
-    });
-    ɵɵelementEnd()();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(2);
-    ɵɵadvance();
-    ɵɵproperty("label", ctx_r1.getTranslation("today"))("ngClass", ctx_r1.todayButtonStyleClass);
-    ɵɵadvance();
-    ɵɵproperty("label", ctx_r1.getTranslation("clear"))("ngClass", ctx_r1.clearButtonStyleClass);
-  }
-}
-function DatePicker_div_3_ng_container_8_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementContainer(0);
-  }
-}
-function DatePicker_div_3_Template(rf, ctx) {
-  if (rf & 1) {
-    const _r8 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 21, 2);
-    ɵɵlistener("@overlayAnimation.start", function DatePicker_div_3_Template_div_animation_overlayAnimation_start_0_listener($event) {
-      ɵɵrestoreView(_r8);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.onOverlayAnimationStart($event));
-    })("@overlayAnimation.done", function DatePicker_div_3_Template_div_animation_overlayAnimation_done_0_listener($event) {
-      ɵɵrestoreView(_r8);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.onOverlayAnimationDone($event));
-    })("click", function DatePicker_div_3_Template_div_click_0_listener($event) {
-      ɵɵrestoreView(_r8);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.onOverlayClick($event));
-    });
-    ɵɵprojection(2);
-    ɵɵtemplate(3, DatePicker_div_3_ng_container_3_Template, 1, 0, "ng-container", 13)(4, DatePicker_div_3_ng_container_4_Template, 5, 3, "ng-container", 7)(5, DatePicker_div_3_div_5_Template, 28, 21, "div", 22)(6, DatePicker_div_3_div_6_Template, 3, 4, "div", 23);
-    ɵɵprojection(7, 1);
-    ɵɵtemplate(8, DatePicker_div_3_ng_container_8_Template, 1, 0, "ng-container", 13);
-    ɵɵelementEnd();
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext();
-    ɵɵclassMap(ctx_r1.panelStyleClass);
-    ɵɵproperty("ngStyle", ctx_r1.panelStyle)("ngClass", ctx_r1.panelClass)("@overlayAnimation", ɵɵpureFunction1(18, _c20, ɵɵpureFunction2(15, _c19, ctx_r1.showTransitionOptions, ctx_r1.hideTransitionOptions)))("@.disabled", ctx_r1.inline === true);
-    ɵɵattribute("id", ctx_r1.panelId)("aria-label", ctx_r1.getTranslation("chooseDate"))("role", ctx_r1.inline ? null : "dialog")("aria-modal", ctx_r1.inline ? null : "true");
-    ɵɵadvance(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.headerTemplate || ctx_r1._headerTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.timeOnly);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", (ctx_r1.showTime || ctx_r1.timeOnly) && ctx_r1.currentView === "date");
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.showButtonBar);
-    ɵɵadvance(2);
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.footerTemplate || ctx_r1._footerTemplate);
-  }
-}
-var DATEPICKER_VALUE_ACCESSOR = {
+var SELECTBUTTON_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => DatePicker),
+  useExisting: forwardRef(() => SelectButton),
   multi: true
 };
-var DatePicker = class _DatePicker extends BaseComponent {
-  zone;
-  overlayService;
-  iconDisplay = "button";
+var SelectButton = class _SelectButton {
+  cd;
+  /**
+   * An array of selectitems to display as the available options.
+   * @group Props
+   */
+  options;
+  /**
+   * Name of the label field of an option.
+   * @group Props
+   */
+  optionLabel;
+  /**
+   * Name of the value field of an option.
+   * @group Props
+   */
+  optionValue;
+  /**
+   * Name of the disabled field of an option.
+   * @group Props
+   */
+  optionDisabled;
+  /**
+   * Whether selection can be cleared.
+   * @group Props
+   */
+  unselectable = false;
+  /**
+   * Index of the element in tabbing order.
+   * @group Props
+   */
+  tabindex = 0;
+  /**
+   * When specified, allows selecting multiple values.
+   * @group Props
+   */
+  multiple;
+  /**
+   * Whether selection can not be cleared.
+   * @group Props
+   */
+  allowEmpty = true;
   /**
    * Inline style of the component.
    * @group Props
@@ -2131,2453 +952,65 @@ var DatePicker = class _DatePicker extends BaseComponent {
    */
   styleClass;
   /**
-   * Inline style of the input field.
-   * @group Props
-   */
-  inputStyle;
-  /**
-   * Identifier of the focus input to match a label defined for the component.
-   * @group Props
-   */
-  inputId;
-  /**
-   * Name of the input element.
-   * @group Props
-   */
-  name;
-  /**
-   * Style class of the input field.
-   * @group Props
-   */
-  inputStyleClass;
-  /**
-   * Placeholder text for the input.
-   * @group Props
-   */
-  placeholder;
-  /**
    * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
    * @group Props
    */
   ariaLabelledBy;
   /**
-   * Defines a string that labels the input for accessibility.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Defines a string that labels the icon button for accessibility.
-   * @group Props
-   */
-  iconAriaLabel;
-  /**
-   * When specified, disables the component.
+   * When present, it specifies that the element should be disabled.
    * @group Props
    */
   disabled;
   /**
-   * Format of the date which can also be defined at locale settings.
+   * A property to uniquely identify a value in options.
    * @group Props
    */
-  dateFormat;
-  /**
-   * Separator for multiple selection mode.
-   * @group Props
-   */
-  multipleSeparator = ",";
-  /**
-   * Separator for joining start and end dates on range selection mode.
-   * @group Props
-   */
-  rangeSeparator = "-";
-  /**
-   * When enabled, displays the datepicker as inline. Default is false for popup mode.
-   * @group Props
-   */
-  inline = false;
-  /**
-   * Whether to display dates in other months (non-selectable) at the start or end of the current month. To make these days selectable use the selectOtherMonths option.
-   * @group Props
-   */
-  showOtherMonths = true;
-  /**
-   * Whether days in other months shown before or after the current month are selectable. This only applies if the showOtherMonths option is set to true.
-   * @group Props
-   */
-  selectOtherMonths;
-  /**
-   * When enabled, displays a button with icon next to input.
-   * @group Props
-   */
-  showIcon;
-  /**
-   * Whether the component should span the full width of its parent.
-   * @group Props
-   */
-  fluid;
-  /**
-   * Icon of the datepicker button.
-   * @group Props
-   */
-  icon;
-  /**
-   * Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having#mydiv as variable name).
-   * @group Props
-   */
-  appendTo;
-  /**
-   * When specified, prevents entering the date manually with keyboard.
-   * @group Props
-   */
-  readonlyInput;
-  /**
-   * The cutoff year for determining the century for a date.
-   * @group Props
-   */
-  shortYearCutoff = "+10";
-  /**
-   * Whether the month should be rendered as a dropdown instead of text.
-   * @group Props
-   * @deprecated Navigator is always on.
-   */
-  monthNavigator;
-  /**
-   * Whether the year should be rendered as a dropdown instead of text.
-   * @group Props
-   * @deprecated  Navigator is always on.
-   */
-  yearNavigator;
-  /**
-   * Specifies 12 or 24 hour format.
-   * @group Props
-   */
-  hourFormat = "24";
-  /**
-   * Whether to display timepicker only.
-   * @group Props
-   */
-  timeOnly;
-  /**
-   * Hours to change per step.
-   * @group Props
-   */
-  stepHour = 1;
-  /**
-   * Minutes to change per step.
-   * @group Props
-   */
-  stepMinute = 1;
-  /**
-   * Seconds to change per step.
-   * @group Props
-   */
-  stepSecond = 1;
-  /**
-   * Whether to show the seconds in time picker.
-   * @group Props
-   */
-  showSeconds = false;
-  /**
-   * When present, it specifies that an input field must be filled out before submitting the form.
-   * @group Props
-   */
-  required;
-  /**
-   * When disabled, datepicker will not be visible with input focus.
-   * @group Props
-   */
-  showOnFocus = true;
-  /**
-   * When enabled, datepicker will show week numbers.
-   * @group Props
-   */
-  showWeek = false;
-  /**
-   * When enabled, datepicker will start week numbers from first day of the year.
-   * @group Props
-   */
-  startWeekFromFirstDayOfYear = false;
-  /**
-   * When enabled, a clear icon is displayed to clear the value.
-   * @group Props
-   */
-  showClear = false;
-  /**
-   * Type of the value to write back to ngModel, default is date and alternative is string.
-   * @group Props
-   */
-  dataType = "date";
-  /**
-   * Defines the quantity of the selection, valid values are "single", "multiple" and "range".
-   * @group Props
-   */
-  selectionMode = "single";
-  /**
-   * Maximum number of selectable dates in multiple mode.
-   * @group Props
-   */
-  maxDateCount;
-  /**
-   * Whether to display today and clear buttons at the footer
-   * @group Props
-   */
-  showButtonBar;
-  /**
-   * Style class of the today button.
-   * @group Props
-   */
-  todayButtonStyleClass;
-  /**
-   * Style class of the clear button.
-   * @group Props
-   */
-  clearButtonStyleClass;
+  dataKey;
   /**
    * When present, it specifies that the component should automatically get focus on load.
    * @group Props
    */
   autofocus;
   /**
-   * Whether to automatically manage layering.
-   * @group Props
-   */
-  autoZIndex = true;
-  /**
-   * Base zIndex value to use in layering.
-   * @group Props
-   */
-  baseZIndex = 0;
-  /**
-   * Style class of the datetimepicker container element.
-   * @group Props
-   */
-  panelStyleClass;
-  /**
-   * Inline style of the datetimepicker container element.
-   * @group Props
-   */
-  panelStyle;
-  /**
-   * Keep invalid value when input blur.
-   * @group Props
-   */
-  keepInvalid = false;
-  /**
-   * Whether to hide the overlay on date selection.
-   * @group Props
-   */
-  hideOnDateTimeSelect = true;
-  /**
-   * When enabled, datepicker overlay is displayed as optimized for touch devices.
-   * @group Props
-   */
-  touchUI;
-  /**
-   * Separator of time selector.
-   * @group Props
-   */
-  timeSeparator = ":";
-  /**
-   * When enabled, can only focus on elements inside the datepicker.
-   * @group Props
-   */
-  focusTrap = true;
-  /**
-   * Transition options of the show animation.
-   * @group Props
-   */
-  showTransitionOptions = ".12s cubic-bezier(0, 0, 0.2, 1)";
-  /**
-   * Transition options of the hide animation.
-   * @group Props
-   */
-  hideTransitionOptions = ".1s linear";
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex;
-  /**
-   * Specifies the input variant of the component.
-   * @group Props
-   */
-  variant;
-  /**
-   * Defines the size of the component.
-   * @group Props
-   */
-  size;
-  /**
-   * The minimum selectable date.
-   * @group Props
-   */
-  get minDate() {
-    return this._minDate;
-  }
-  set minDate(date) {
-    this._minDate = date;
-    if (this.currentMonth != void 0 && this.currentMonth != null && this.currentYear) {
-      this.createMonths(this.currentMonth, this.currentYear);
-    }
-  }
-  /**
-   * The maximum selectable date.
-   * @group Props
-   */
-  get maxDate() {
-    return this._maxDate;
-  }
-  set maxDate(date) {
-    this._maxDate = date;
-    if (this.currentMonth != void 0 && this.currentMonth != null && this.currentYear) {
-      this.createMonths(this.currentMonth, this.currentYear);
-    }
-  }
-  /**
-   * Array with dates that should be disabled (not selectable).
-   * @group Props
-   */
-  get disabledDates() {
-    return this._disabledDates;
-  }
-  set disabledDates(disabledDates) {
-    this._disabledDates = disabledDates;
-    if (this.currentMonth != void 0 && this.currentMonth != null && this.currentYear) {
-      this.createMonths(this.currentMonth, this.currentYear);
-    }
-  }
-  /**
-   * Array with weekday numbers that should be disabled (not selectable).
-   * @group Props
-   */
-  get disabledDays() {
-    return this._disabledDays;
-  }
-  set disabledDays(disabledDays) {
-    this._disabledDays = disabledDays;
-    if (this.currentMonth != void 0 && this.currentMonth != null && this.currentYear) {
-      this.createMonths(this.currentMonth, this.currentYear);
-    }
-  }
-  /**
-   * The range of years displayed in the year drop-down in (nnnn:nnnn) format such as (2000:2020).
-   * @group Props
-   * @deprecated Years are based on decades by default.
-   */
-  get yearRange() {
-    return this._yearRange;
-  }
-  set yearRange(yearRange) {
-    this._yearRange = yearRange;
-    if (yearRange) {
-      const years = yearRange.split(":");
-      const yearStart = parseInt(years[0]);
-      const yearEnd = parseInt(years[1]);
-      this.populateYearOptions(yearStart, yearEnd);
-    }
-  }
-  /**
-   * Whether to display timepicker.
-   * @group Props
-   */
-  get showTime() {
-    return this._showTime;
-  }
-  set showTime(showTime) {
-    this._showTime = showTime;
-    if (this.currentHour === void 0) {
-      this.initTime(this.value || /* @__PURE__ */ new Date());
-    }
-    this.updateInputfield();
-  }
-  /**
-   * An array of options for responsive design.
-   * @group Props
-   */
-  get responsiveOptions() {
-    return this._responsiveOptions;
-  }
-  set responsiveOptions(responsiveOptions) {
-    this._responsiveOptions = responsiveOptions;
-    this.destroyResponsiveStyleElement();
-    this.createResponsiveStyle();
-  }
-  /**
-   * Number of months to display.
-   * @group Props
-   */
-  get numberOfMonths() {
-    return this._numberOfMonths;
-  }
-  set numberOfMonths(numberOfMonths) {
-    this._numberOfMonths = numberOfMonths;
-    this.destroyResponsiveStyleElement();
-    this.createResponsiveStyle();
-  }
-  /**
-   * Defines the first of the week for various date calculations.
-   * @group Props
-   */
-  get firstDayOfWeek() {
-    return this._firstDayOfWeek;
-  }
-  set firstDayOfWeek(firstDayOfWeek) {
-    this._firstDayOfWeek = firstDayOfWeek;
-    this.createWeekDays();
-  }
-  /**
-   * Option to set datepicker locale.
-   * @group Props
-   * @deprecated Locale property has no effect, use new i18n API instead.
-   */
-  set locale(newLocale) {
-    console.log("Locale property has no effect, use new i18n API instead.");
-  }
-  /**
-   * Type of view to display, valid values are "date" for datepicker and "month" for month picker.
-   * @group Props
-   */
-  get view() {
-    return this._view;
-  }
-  set view(view) {
-    this._view = view;
-    this.currentView = this._view;
-  }
-  /**
-   * Set the date to highlight on first opening if the field is blank.
-   * @group Props
-   */
-  get defaultDate() {
-    return this._defaultDate;
-  }
-  set defaultDate(defaultDate) {
-    this._defaultDate = defaultDate;
-    if (this.initialized) {
-      const date = defaultDate || /* @__PURE__ */ new Date();
-      this.currentMonth = date.getMonth();
-      this.currentYear = date.getFullYear();
-      this.initTime(date);
-      this.createMonths(this.currentMonth, this.currentYear);
-    }
-  }
-  /**
-   * Callback to invoke on focus of input field.
-   * @param {Event} event - browser event.
+   * Callback to invoke on input click.
+   * @param {SelectButtonOptionClickEvent} event - Custom click event.
    * @group Emits
    */
-  onFocus = new EventEmitter();
+  onOptionClick = new EventEmitter();
   /**
-   * Callback to invoke on blur of input field.
-   * @param {Event} event - browser event.
+   * Callback to invoke on selection change.
+   * @param {SelectButtonChangeEvent} event - Custom change event.
    * @group Emits
    */
-  onBlur = new EventEmitter();
-  /**
-   * Callback to invoke when date panel closed.
-   * @param {Event} event - Mouse event
-   * @group Emits
-   */
-  onClose = new EventEmitter();
-  /**
-   * Callback to invoke on date select.
-   * @param {Date} date - date value.
-   * @group Emits
-   */
-  onSelect = new EventEmitter();
-  /**
-   * Callback to invoke when input field cleared.
-   * @group Emits
-   */
-  onClear = new EventEmitter();
-  /**
-   * Callback to invoke when input field is being typed.
-   * @param {Event} event - browser event
-   * @group Emits
-   */
-  onInput = new EventEmitter();
-  /**
-   * Callback to invoke when today button is clicked.
-   * @param {Date} date - today as a date instance.
-   * @group Emits
-   */
-  onTodayClick = new EventEmitter();
-  /**
-   * Callback to invoke when clear button is clicked.
-   * @param {Event} event - browser event.
-   * @group Emits
-   */
-  onClearClick = new EventEmitter();
-  /**
-   * Callback to invoke when a month is changed using the navigators.
-   * @param {DatePickerMonthChangeEvent} event - custom month change event.
-   * @group Emits
-   */
-  onMonthChange = new EventEmitter();
-  /**
-   * Callback to invoke when a year is changed using the navigators.
-   * @param {DatePickerYearChangeEvent} event - custom year change event.
-   * @group Emits
-   */
-  onYearChange = new EventEmitter();
-  /**
-   * Callback to invoke when clicked outside of the date panel.
-   * @group Emits
-   */
-  onClickOutside = new EventEmitter();
-  /**
-   * Callback to invoke when datepicker panel is shown.
-   * @group Emits
-   */
-  onShow = new EventEmitter();
-  containerViewChild;
-  inputfieldViewChild;
-  set content(content) {
-    this.contentViewChild = content;
-    if (this.contentViewChild) {
-      if (this.isMonthNavigate) {
-        Promise.resolve(null).then(() => this.updateFocus());
-        this.isMonthNavigate = false;
-      } else {
-        if (!this.focus && !this.inline) {
-          this.initFocusableCell();
-        }
-      }
-    }
+  onChange = new EventEmitter();
+  container;
+  itemTemplate;
+  get selectButtonTemplate() {
+    return this.itemTemplate?.template;
   }
-  _componentStyle = inject(DatePickerStyle);
-  contentViewChild;
+  get equalityKey() {
+    return this.optionValue ? null : this.dataKey;
+  }
   value;
-  dates;
-  months;
-  weekDays;
-  currentMonth;
-  currentYear;
-  currentHour;
-  currentMinute;
-  currentSecond;
-  pm;
-  mask;
-  maskClickListener;
-  overlay;
-  responsiveStyleElement;
-  overlayVisible;
   onModelChange = () => {
   };
   onModelTouched = () => {
   };
-  calendarElement;
-  timePickerTimer;
-  documentClickListener;
-  animationEndListener;
-  ticksTo1970;
-  yearOptions;
-  focus;
-  isKeydown;
-  filled;
-  inputFieldValue = null;
-  _minDate;
-  _maxDate;
-  _showTime;
-  _yearRange;
-  preventDocumentListener;
-  dayClass(date) {
-    return this._componentStyle.classes.day({
-      instance: this,
-      date
-    });
+  focusedIndex = 0;
+  constructor(cd) {
+    this.cd = cd;
   }
-  /**
-   * Custom template for date cells.
-   * @group Templates
-   */
-  dateTemplate;
-  /**
-   * Custom template for header section.
-   * @group Templates
-   */
-  headerTemplate;
-  /**
-   * Custom template for footer section.
-   * @group Templates
-   */
-  footerTemplate;
-  /**
-   * Custom template for disabled date cells.
-   * @group Templates
-   */
-  disabledDateTemplate;
-  /**
-   * Custom template for decade view.
-   * @group Templates
-   */
-  decadeTemplate;
-  /**
-   * Custom template for previous month icon.
-   * @group Templates
-   */
-  previousIconTemplate;
-  /**
-   * Custom template for next month icon.
-   * @group Templates
-   */
-  nextIconTemplate;
-  /**
-   * Custom template for trigger icon.
-   * @group Templates
-   */
-  triggerIconTemplate;
-  /**
-   * Custom template for clear icon.
-   * @group Templates
-   */
-  clearIconTemplate;
-  /**
-   * Custom template for decrement icon.
-   * @group Templates
-   */
-  decrementIconTemplate;
-  /**
-   * Custom template for increment icon.
-   * @group Templates
-   */
-  incrementIconTemplate;
-  /**
-   * Custom template for input icon.
-   * @group Templates
-   */
-  inputIconTemplate;
-  _dateTemplate;
-  _headerTemplate;
-  _footerTemplate;
-  _disabledDateTemplate;
-  _decadeTemplate;
-  _previousIconTemplate;
-  _nextIconTemplate;
-  _triggerIconTemplate;
-  _clearIconTemplate;
-  _decrementIconTemplate;
-  _incrementIconTemplate;
-  _inputIconTemplate;
-  _disabledDates;
-  _disabledDays;
-  selectElement;
-  todayElement;
-  focusElement;
-  scrollHandler;
-  documentResizeListener;
-  navigationState = null;
-  isMonthNavigate;
-  initialized;
-  translationSubscription;
-  _locale;
-  _responsiveOptions;
-  currentView;
-  attributeSelector;
-  panelId;
-  _numberOfMonths = 1;
-  _firstDayOfWeek;
-  _view = "date";
-  preventFocus;
-  _defaultDate;
-  _focusKey = null;
-  window;
-  get locale() {
-    return this._locale;
+  getOptionLabel(option) {
+    return this.optionLabel ? ObjectUtils.resolveFieldData(option, this.optionLabel) : option.label != void 0 ? option.label : option;
   }
-  get iconButtonAriaLabel() {
-    return this.iconAriaLabel ? this.iconAriaLabel : this.getTranslation("chooseDate");
+  getOptionValue(option) {
+    return this.optionValue ? ObjectUtils.resolveFieldData(option, this.optionValue) : this.optionLabel || option.value === void 0 ? option : option.value;
   }
-  get prevIconAriaLabel() {
-    return this.currentView === "year" ? this.getTranslation("prevDecade") : this.currentView === "month" ? this.getTranslation("prevYear") : this.getTranslation("prevMonth");
-  }
-  get nextIconAriaLabel() {
-    return this.currentView === "year" ? this.getTranslation("nextDecade") : this.currentView === "month" ? this.getTranslation("nextYear") : this.getTranslation("nextMonth");
-  }
-  get rootClass() {
-    return this._componentStyle.classes.root({
-      instance: this
-    });
-  }
-  get panelClass() {
-    return this._componentStyle.classes.panel({
-      instance: this
-    });
-  }
-  get hasFluid() {
-    const nativeElement = this.el.nativeElement;
-    const fluidComponent = nativeElement.closest("p-fluid");
-    return this.fluid || !!fluidComponent;
-  }
-  constructor(zone, overlayService) {
-    super();
-    this.zone = zone;
-    this.overlayService = overlayService;
-    this.window = this.document.defaultView;
-  }
-  ngOnInit() {
-    super.ngOnInit();
-    this.attributeSelector = uuid("pn_id_");
-    this.panelId = this.attributeSelector + "_panel";
-    const date = this.defaultDate || /* @__PURE__ */ new Date();
-    this.createResponsiveStyle();
-    this.currentMonth = date.getMonth();
-    this.currentYear = date.getFullYear();
-    this.yearOptions = [];
-    this.currentView = this.view;
-    if (this.view === "date") {
-      this.createWeekDays();
-      this.initTime(date);
-      this.createMonths(this.currentMonth, this.currentYear);
-      this.ticksTo1970 = ((1970 - 1) * 365 + Math.floor(1970 / 4) - Math.floor(1970 / 100) + Math.floor(1970 / 400)) * 24 * 60 * 60 * 1e7;
-    }
-    this.translationSubscription = this.config.translationObserver.subscribe(() => {
-      this.createWeekDays();
-      this.cd.markForCheck();
-    });
-    this.initialized = true;
-  }
-  ngAfterViewInit() {
-    super.ngAfterViewInit();
-    if (this.inline) {
-      this.contentViewChild && this.contentViewChild.nativeElement.setAttribute(this.attributeSelector, "");
-      if (!this.disabled && !this.inline) {
-        this.initFocusableCell();
-        if (this.numberOfMonths === 1) {
-          if (this.contentViewChild && this.contentViewChild.nativeElement) {
-            this.contentViewChild.nativeElement.style.width = getOuterWidth(this.containerViewChild?.nativeElement) + "px";
-          }
-        }
-      }
-    }
-  }
-  templates;
-  ngAfterContentInit() {
-    this.templates.forEach((item) => {
-      switch (item.getType()) {
-        case "date":
-          this._dateTemplate = item.template;
-          break;
-        case "decade":
-          this._decadeTemplate = item.template;
-          break;
-        case "disabledDate":
-          this._disabledDateTemplate = item.template;
-          break;
-        case "header":
-          this._headerTemplate = item.template;
-          break;
-        case "inputicon":
-          this._inputIconTemplate = item.template;
-          break;
-        case "previousicon":
-          this._previousIconTemplate = item.template;
-          break;
-        case "nexticon":
-          this._nextIconTemplate = item.template;
-          break;
-        case "triggericon":
-          this._triggerIconTemplate = item.template;
-          break;
-        case "clearicon":
-          this._clearIconTemplate = item.template;
-          break;
-        case "decrementicon":
-          this._decrementIconTemplate = item.template;
-          break;
-        case "incrementicon":
-          this._incrementIconTemplate = item.template;
-          break;
-        case "footer":
-          this._footerTemplate = item.template;
-          break;
-        default:
-          this._dateTemplate = item.template;
-          break;
-      }
-    });
-  }
-  getTranslation(option) {
-    return this.config.getTranslation(option);
-  }
-  populateYearOptions(start, end) {
-    this.yearOptions = [];
-    for (let i = start; i <= end; i++) {
-      this.yearOptions.push(i);
-    }
-  }
-  createWeekDays() {
-    this.weekDays = [];
-    let dayIndex = this.getFirstDateOfWeek();
-    let dayLabels = this.getTranslation(TranslationKeys.DAY_NAMES_MIN);
-    for (let i = 0; i < 7; i++) {
-      this.weekDays.push(dayLabels[dayIndex]);
-      dayIndex = dayIndex == 6 ? 0 : ++dayIndex;
-    }
-  }
-  monthPickerValues() {
-    let monthPickerValues = [];
-    for (let i = 0; i <= 11; i++) {
-      monthPickerValues.push(this.config.getTranslation("monthNamesShort")[i]);
-    }
-    return monthPickerValues;
-  }
-  yearPickerValues() {
-    let yearPickerValues = [];
-    let base = this.currentYear - this.currentYear % 10;
-    for (let i = 0; i < 10; i++) {
-      yearPickerValues.push(base + i);
-    }
-    return yearPickerValues;
-  }
-  createMonths(month, year) {
-    this.months = this.months = [];
-    for (let i = 0; i < this.numberOfMonths; i++) {
-      let m = month + i;
-      let y = year;
-      if (m > 11) {
-        m = m % 11 - 1;
-        y = year + 1;
-      }
-      this.months.push(this.createMonth(m, y));
-    }
-  }
-  getWeekNumber(date) {
-    let checkDate = new Date(date.getTime());
-    if (this.startWeekFromFirstDayOfYear) {
-      let firstDayOfWeek = +this.getFirstDateOfWeek();
-      checkDate.setDate(checkDate.getDate() + 6 + firstDayOfWeek - checkDate.getDay());
-    } else {
-      checkDate.setDate(checkDate.getDate() + 4 - (checkDate.getDay() || 7));
-    }
-    let time = checkDate.getTime();
-    checkDate.setMonth(0);
-    checkDate.setDate(1);
-    return Math.floor(Math.round((time - checkDate.getTime()) / 864e5) / 7) + 1;
-  }
-  createMonth(month, year) {
-    let dates = [];
-    let firstDay = this.getFirstDayOfMonthIndex(month, year);
-    let daysLength = this.getDaysCountInMonth(month, year);
-    let prevMonthDaysLength = this.getDaysCountInPrevMonth(month, year);
-    let dayNo = 1;
-    let today = /* @__PURE__ */ new Date();
-    let weekNumbers = [];
-    let monthRows = Math.ceil((daysLength + firstDay) / 7);
-    for (let i = 0; i < monthRows; i++) {
-      let week = [];
-      if (i == 0) {
-        for (let j = prevMonthDaysLength - firstDay + 1; j <= prevMonthDaysLength; j++) {
-          let prev = this.getPreviousMonthAndYear(month, year);
-          week.push({
-            day: j,
-            month: prev.month,
-            year: prev.year,
-            otherMonth: true,
-            today: this.isToday(today, j, prev.month, prev.year),
-            selectable: this.isSelectable(j, prev.month, prev.year, true)
-          });
-        }
-        let remainingDaysLength = 7 - week.length;
-        for (let j = 0; j < remainingDaysLength; j++) {
-          week.push({
-            day: dayNo,
-            month,
-            year,
-            today: this.isToday(today, dayNo, month, year),
-            selectable: this.isSelectable(dayNo, month, year, false)
-          });
-          dayNo++;
-        }
-      } else {
-        for (let j = 0; j < 7; j++) {
-          if (dayNo > daysLength) {
-            let next = this.getNextMonthAndYear(month, year);
-            week.push({
-              day: dayNo - daysLength,
-              month: next.month,
-              year: next.year,
-              otherMonth: true,
-              today: this.isToday(today, dayNo - daysLength, next.month, next.year),
-              selectable: this.isSelectable(dayNo - daysLength, next.month, next.year, true)
-            });
-          } else {
-            week.push({
-              day: dayNo,
-              month,
-              year,
-              today: this.isToday(today, dayNo, month, year),
-              selectable: this.isSelectable(dayNo, month, year, false)
-            });
-          }
-          dayNo++;
-        }
-      }
-      if (this.showWeek) {
-        weekNumbers.push(this.getWeekNumber(new Date(week[0].year, week[0].month, week[0].day)));
-      }
-      dates.push(week);
-    }
-    return {
-      month,
-      year,
-      dates,
-      weekNumbers
-    };
-  }
-  initTime(date) {
-    this.pm = date.getHours() > 11;
-    if (this.showTime) {
-      this.currentMinute = date.getMinutes();
-      this.currentSecond = date.getSeconds();
-      this.setCurrentHourPM(date.getHours());
-    } else if (this.timeOnly) {
-      this.currentMinute = 0;
-      this.currentHour = 0;
-      this.currentSecond = 0;
-    }
-  }
-  navBackward(event2) {
-    if (this.disabled) {
-      event2.preventDefault();
-      return;
-    }
-    this.isMonthNavigate = true;
-    if (this.currentView === "month") {
-      this.decrementYear();
-      setTimeout(() => {
-        this.updateFocus();
-      }, 1);
-    } else if (this.currentView === "year") {
-      this.decrementDecade();
-      setTimeout(() => {
-        this.updateFocus();
-      }, 1);
-    } else {
-      if (this.currentMonth === 0) {
-        this.currentMonth = 11;
-        this.decrementYear();
-      } else {
-        this.currentMonth--;
-      }
-      this.onMonthChange.emit({
-        month: this.currentMonth + 1,
-        year: this.currentYear
-      });
-      this.createMonths(this.currentMonth, this.currentYear);
-    }
-  }
-  navForward(event2) {
-    if (this.disabled) {
-      event2.preventDefault();
-      return;
-    }
-    this.isMonthNavigate = true;
-    if (this.currentView === "month") {
-      this.incrementYear();
-      setTimeout(() => {
-        this.updateFocus();
-      }, 1);
-    } else if (this.currentView === "year") {
-      this.incrementDecade();
-      setTimeout(() => {
-        this.updateFocus();
-      }, 1);
-    } else {
-      if (this.currentMonth === 11) {
-        this.currentMonth = 0;
-        this.incrementYear();
-      } else {
-        this.currentMonth++;
-      }
-      this.onMonthChange.emit({
-        month: this.currentMonth + 1,
-        year: this.currentYear
-      });
-      this.createMonths(this.currentMonth, this.currentYear);
-    }
-  }
-  decrementYear() {
-    this.currentYear--;
-    let _yearOptions = this.yearOptions;
-    if (this.yearNavigator && this.currentYear < _yearOptions[0]) {
-      let difference = _yearOptions[_yearOptions.length - 1] - _yearOptions[0];
-      this.populateYearOptions(_yearOptions[0] - difference, _yearOptions[_yearOptions.length - 1] - difference);
-    }
-  }
-  decrementDecade() {
-    this.currentYear = this.currentYear - 10;
-  }
-  incrementDecade() {
-    this.currentYear = this.currentYear + 10;
-  }
-  incrementYear() {
-    this.currentYear++;
-    let _yearOptions = this.yearOptions;
-    if (this.yearNavigator && this.currentYear > _yearOptions[_yearOptions.length - 1]) {
-      let difference = _yearOptions[_yearOptions.length - 1] - _yearOptions[0];
-      this.populateYearOptions(_yearOptions[0] + difference, _yearOptions[_yearOptions.length - 1] + difference);
-    }
-  }
-  switchToMonthView(event2) {
-    this.setCurrentView("month");
-    event2.preventDefault();
-  }
-  switchToYearView(event2) {
-    this.setCurrentView("year");
-    event2.preventDefault();
-  }
-  onDateSelect(event2, dateMeta) {
-    if (this.disabled || !dateMeta.selectable) {
-      event2.preventDefault();
-      return;
-    }
-    if (this.isMultipleSelection() && this.isSelected(dateMeta)) {
-      this.value = this.value.filter((date, i) => {
-        return !this.isDateEquals(date, dateMeta);
-      });
-      if (this.value.length === 0) {
-        this.value = null;
-      }
-      this.updateModel(this.value);
-    } else {
-      if (this.shouldSelectDate(dateMeta)) {
-        this.selectDate(dateMeta);
-      }
-    }
-    if (this.isSingleSelection() && this.hideOnDateTimeSelect || this.isRangeSelection() && this.value[1]) {
-      setTimeout(() => {
-        event2.preventDefault();
-        this.hideOverlay();
-        if (this.mask) {
-          this.disableModality();
-        }
-        this.cd.markForCheck();
-      }, 150);
-    }
-    this.updateInputfield();
-    event2.preventDefault();
-  }
-  shouldSelectDate(dateMeta) {
-    if (this.isMultipleSelection()) return this.maxDateCount != null ? this.maxDateCount > (this.value ? this.value.length : 0) : true;
-    else return true;
-  }
-  onMonthSelect(event2, index) {
-    if (this.view === "month") {
-      this.onDateSelect(event2, {
-        year: this.currentYear,
-        month: index,
-        day: 1,
-        selectable: true
-      });
-    } else {
-      this.currentMonth = index;
-      this.createMonths(this.currentMonth, this.currentYear);
-      this.setCurrentView("date");
-      this.onMonthChange.emit({
-        month: this.currentMonth + 1,
-        year: this.currentYear
-      });
-    }
-  }
-  onYearSelect(event2, year) {
-    if (this.view === "year") {
-      this.onDateSelect(event2, {
-        year,
-        month: 0,
-        day: 1,
-        selectable: true
-      });
-    } else {
-      this.currentYear = year;
-      this.setCurrentView("month");
-      this.onYearChange.emit({
-        month: this.currentMonth + 1,
-        year: this.currentYear
-      });
-    }
-  }
-  updateInputfield() {
-    let formattedValue = "";
-    if (this.value) {
-      if (this.isSingleSelection()) {
-        formattedValue = this.formatDateTime(this.value);
-      } else if (this.isMultipleSelection()) {
-        for (let i = 0; i < this.value.length; i++) {
-          let dateAsString = this.formatDateTime(this.value[i]);
-          formattedValue += dateAsString;
-          if (i !== this.value.length - 1) {
-            formattedValue += this.multipleSeparator + " ";
-          }
-        }
-      } else if (this.isRangeSelection()) {
-        if (this.value && this.value.length) {
-          let startDate = this.value[0];
-          let endDate = this.value[1];
-          formattedValue = this.formatDateTime(startDate);
-          if (endDate) {
-            formattedValue += " " + this.rangeSeparator + " " + this.formatDateTime(endDate);
-          }
-        }
-      }
-    }
-    this.inputFieldValue = formattedValue;
-    this.updateFilledState();
-    if (this.inputfieldViewChild && this.inputfieldViewChild.nativeElement) {
-      this.inputfieldViewChild.nativeElement.value = this.inputFieldValue;
-    }
-  }
-  formatDateTime(date) {
-    let formattedValue = this.keepInvalid ? date : null;
-    const isDateValid = this.isValidDateForTimeConstraints(date);
-    if (this.isValidDate(date)) {
-      if (this.timeOnly) {
-        formattedValue = this.formatTime(date);
-      } else {
-        formattedValue = this.formatDate(date, this.getDateFormat());
-        if (this.showTime) {
-          formattedValue += " " + this.formatTime(date);
-        }
-      }
-    } else if (this.dataType === "string") {
-      formattedValue = date;
-    }
-    formattedValue = isDateValid ? formattedValue : "";
-    return formattedValue;
-  }
-  formatDateMetaToDate(dateMeta) {
-    return new Date(dateMeta.year, dateMeta.month, dateMeta.day);
-  }
-  formatDateKey(date) {
-    return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
-  }
-  setCurrentHourPM(hours) {
-    if (this.hourFormat == "12") {
-      this.pm = hours > 11;
-      if (hours >= 12) {
-        this.currentHour = hours == 12 ? 12 : hours - 12;
-      } else {
-        this.currentHour = hours == 0 ? 12 : hours;
-      }
-    } else {
-      this.currentHour = hours;
-    }
-  }
-  setCurrentView(currentView) {
-    this.currentView = currentView;
-    this.cd.detectChanges();
-    this.alignOverlay();
-  }
-  selectDate(dateMeta) {
-    let date = this.formatDateMetaToDate(dateMeta);
-    if (this.showTime) {
-      if (this.hourFormat == "12") {
-        if (this.currentHour === 12) date.setHours(this.pm ? 12 : 0);
-        else date.setHours(this.pm ? this.currentHour + 12 : this.currentHour);
-      } else {
-        date.setHours(this.currentHour);
-      }
-      date.setMinutes(this.currentMinute);
-      date.setSeconds(this.currentSecond);
-    }
-    if (this.minDate && this.minDate > date) {
-      date = this.minDate;
-      this.setCurrentHourPM(date.getHours());
-      this.currentMinute = date.getMinutes();
-      this.currentSecond = date.getSeconds();
-    }
-    if (this.maxDate && this.maxDate < date) {
-      date = this.maxDate;
-      this.setCurrentHourPM(date.getHours());
-      this.currentMinute = date.getMinutes();
-      this.currentSecond = date.getSeconds();
-    }
-    if (this.isSingleSelection()) {
-      this.updateModel(date);
-    } else if (this.isMultipleSelection()) {
-      this.updateModel(this.value ? [...this.value, date] : [date]);
-    } else if (this.isRangeSelection()) {
-      if (this.value && this.value.length) {
-        let startDate = this.value[0];
-        let endDate = this.value[1];
-        if (!endDate && date.getTime() >= startDate.getTime()) {
-          endDate = date;
-        } else {
-          startDate = date;
-          endDate = null;
-        }
-        this.updateModel([startDate, endDate]);
-      } else {
-        this.updateModel([date, null]);
-      }
-    }
-    this.onSelect.emit(date);
-  }
-  updateModel(value) {
-    this.value = value;
-    if (this.dataType == "date") {
-      this.onModelChange(this.value);
-    } else if (this.dataType == "string") {
-      if (this.isSingleSelection()) {
-        this.onModelChange(this.formatDateTime(this.value));
-      } else {
-        let stringArrValue = null;
-        if (Array.isArray(this.value)) {
-          stringArrValue = this.value.map((date) => this.formatDateTime(date));
-        }
-        this.onModelChange(stringArrValue);
-      }
-    }
-  }
-  getFirstDayOfMonthIndex(month, year) {
-    let day = /* @__PURE__ */ new Date();
-    day.setDate(1);
-    day.setMonth(month);
-    day.setFullYear(year);
-    let dayIndex = day.getDay() + this.getSundayIndex();
-    return dayIndex >= 7 ? dayIndex - 7 : dayIndex;
-  }
-  getDaysCountInMonth(month, year) {
-    return 32 - this.daylightSavingAdjust(new Date(year, month, 32)).getDate();
-  }
-  getDaysCountInPrevMonth(month, year) {
-    let prev = this.getPreviousMonthAndYear(month, year);
-    return this.getDaysCountInMonth(prev.month, prev.year);
-  }
-  getPreviousMonthAndYear(month, year) {
-    let m, y;
-    if (month === 0) {
-      m = 11;
-      y = year - 1;
-    } else {
-      m = month - 1;
-      y = year;
-    }
-    return {
-      month: m,
-      year: y
-    };
-  }
-  getNextMonthAndYear(month, year) {
-    let m, y;
-    if (month === 11) {
-      m = 0;
-      y = year + 1;
-    } else {
-      m = month + 1;
-      y = year;
-    }
-    return {
-      month: m,
-      year: y
-    };
-  }
-  getSundayIndex() {
-    let firstDayOfWeek = this.getFirstDateOfWeek();
-    return firstDayOfWeek > 0 ? 7 - firstDayOfWeek : 0;
-  }
-  isSelected(dateMeta) {
-    if (this.value) {
-      if (this.isSingleSelection()) {
-        return this.isDateEquals(this.value, dateMeta);
-      } else if (this.isMultipleSelection()) {
-        let selected = false;
-        for (let date of this.value) {
-          selected = this.isDateEquals(date, dateMeta);
-          if (selected) {
-            break;
-          }
-        }
-        return selected;
-      } else if (this.isRangeSelection()) {
-        if (this.value[1]) return this.isDateEquals(this.value[0], dateMeta) || this.isDateEquals(this.value[1], dateMeta) || this.isDateBetween(this.value[0], this.value[1], dateMeta);
-        else return this.isDateEquals(this.value[0], dateMeta);
-      }
-    } else {
-      return false;
-    }
-  }
-  isComparable() {
-    return this.value != null && typeof this.value !== "string";
-  }
-  isMonthSelected(month) {
-    if (this.isComparable() && !this.isMultipleSelection()) {
-      const [start, end] = this.isRangeSelection() ? this.value : [this.value, this.value];
-      const selected = new Date(this.currentYear, month, 1);
-      return selected >= start && selected <= (end ?? start);
-    }
-    return false;
-  }
-  isMonthDisabled(month, year) {
-    const yearToCheck = year ?? this.currentYear;
-    for (let day = 1; day < this.getDaysCountInMonth(month, yearToCheck) + 1; day++) {
-      if (this.isSelectable(day, month, yearToCheck, false)) {
-        return false;
-      }
-    }
-    return true;
-  }
-  isYearDisabled(year) {
-    return Array(12).fill(0).every((v, month) => this.isMonthDisabled(month, year));
-  }
-  isYearSelected(year) {
-    if (this.isComparable()) {
-      let value = this.isRangeSelection() ? this.value[0] : this.value;
-      return !this.isMultipleSelection() ? value.getFullYear() === year : false;
-    }
-    return false;
-  }
-  isDateEquals(value, dateMeta) {
-    if (value && isDate(value)) return value.getDate() === dateMeta.day && value.getMonth() === dateMeta.month && value.getFullYear() === dateMeta.year;
-    else return false;
-  }
-  isDateBetween(start, end, dateMeta) {
-    let between = false;
-    if (isDate(start) && isDate(end)) {
-      let date = this.formatDateMetaToDate(dateMeta);
-      return start.getTime() <= date.getTime() && end.getTime() >= date.getTime();
-    }
-    return between;
-  }
-  isSingleSelection() {
-    return this.selectionMode === "single";
-  }
-  isRangeSelection() {
-    return this.selectionMode === "range";
-  }
-  isMultipleSelection() {
-    return this.selectionMode === "multiple";
-  }
-  isToday(today, day, month, year) {
-    return today.getDate() === day && today.getMonth() === month && today.getFullYear() === year;
-  }
-  isSelectable(day, month, year, otherMonth) {
-    let validMin = true;
-    let validMax = true;
-    let validDate = true;
-    let validDay = true;
-    if (otherMonth && !this.selectOtherMonths) {
-      return false;
-    }
-    if (this.minDate) {
-      if (this.minDate.getFullYear() > year) {
-        validMin = false;
-      } else if (this.minDate.getFullYear() === year && this.currentView != "year") {
-        if (this.minDate.getMonth() > month) {
-          validMin = false;
-        } else if (this.minDate.getMonth() === month) {
-          if (this.minDate.getDate() > day) {
-            validMin = false;
-          }
-        }
-      }
-    }
-    if (this.maxDate) {
-      if (this.maxDate.getFullYear() < year) {
-        validMax = false;
-      } else if (this.maxDate.getFullYear() === year) {
-        if (this.maxDate.getMonth() < month) {
-          validMax = false;
-        } else if (this.maxDate.getMonth() === month) {
-          if (this.maxDate.getDate() < day) {
-            validMax = false;
-          }
-        }
-      }
-    }
-    if (this.disabledDates) {
-      validDate = !this.isDateDisabled(day, month, year);
-    }
-    if (this.disabledDays) {
-      validDay = !this.isDayDisabled(day, month, year);
-    }
-    return validMin && validMax && validDate && validDay;
-  }
-  isDateDisabled(day, month, year) {
-    if (this.disabledDates) {
-      for (let disabledDate of this.disabledDates) {
-        if (disabledDate.getFullYear() === year && disabledDate.getMonth() === month && disabledDate.getDate() === day) {
-          return true;
-        }
-      }
-    }
-    return false;
-  }
-  isDayDisabled(day, month, year) {
-    if (this.disabledDays) {
-      let weekday = new Date(year, month, day);
-      let weekdayNumber = weekday.getDay();
-      return this.disabledDays.indexOf(weekdayNumber) !== -1;
-    }
-    return false;
-  }
-  onInputFocus(event2) {
-    this.focus = true;
-    if (this.showOnFocus) {
-      this.showOverlay();
-    }
-    this.onFocus.emit(event2);
-  }
-  onInputClick() {
-    if (this.showOnFocus && !this.overlayVisible) {
-      this.showOverlay();
-    }
-  }
-  onInputBlur(event2) {
-    this.focus = false;
-    this.onBlur.emit(event2);
-    if (!this.keepInvalid) {
-      this.updateInputfield();
-    }
-    this.onModelTouched();
-  }
-  onButtonClick(event2, inputfield = this.inputfieldViewChild?.nativeElement) {
-    if (!this.overlayVisible) {
-      inputfield.focus();
-      this.showOverlay();
-    } else {
-      this.hideOverlay();
-    }
-  }
-  clear() {
-    this.inputFieldValue = null;
-    this.value = null;
-    this.onModelChange(this.value);
-    this.onClear.emit();
-  }
-  onOverlayClick(event2) {
-    this.overlayService.add({
-      originalEvent: event2,
-      target: this.el.nativeElement
-    });
-  }
-  getMonthName(index) {
-    return this.config.getTranslation("monthNames")[index];
-  }
-  getYear(month) {
-    return this.currentView === "month" ? this.currentYear : month.year;
-  }
-  switchViewButtonDisabled() {
-    return this.numberOfMonths > 1 || this.disabled;
-  }
-  onPrevButtonClick(event2) {
-    this.navigationState = {
-      backward: true,
-      button: true
-    };
-    this.navBackward(event2);
-  }
-  onNextButtonClick(event2) {
-    this.navigationState = {
-      backward: false,
-      button: true
-    };
-    this.navForward(event2);
-  }
-  onContainerButtonKeydown(event2) {
-    switch (event2.which) {
-      case 9:
-        if (!this.inline) {
-          this.trapFocus(event2);
-        }
-        if (this.inline) {
-          const headerElements = findSingle(this.containerViewChild?.nativeElement, ".p-datepicker-header");
-          const element = event2.target;
-          if (this.timeOnly) {
-            return;
-          } else {
-            if (element == headerElements.children[headerElements?.children?.length - 1]) {
-              this.initFocusableCell();
-            }
-          }
-        }
-        break;
-      case 27:
-        this.inputfieldViewChild?.nativeElement.focus();
-        this.overlayVisible = false;
-        event2.preventDefault();
-        break;
-      default:
-        break;
-    }
-  }
-  onInputKeydown(event2) {
-    this.isKeydown = true;
-    if (event2.keyCode === 40 && this.contentViewChild) {
-      this.trapFocus(event2);
-    } else if (event2.keyCode === 27) {
-      if (this.overlayVisible) {
-        this.inputfieldViewChild?.nativeElement.focus();
-        this.overlayVisible = false;
-        event2.preventDefault();
-      }
-    } else if (event2.keyCode === 13) {
-      if (this.overlayVisible) {
-        this.overlayVisible = false;
-        event2.preventDefault();
-      }
-    } else if (event2.keyCode === 9 && this.contentViewChild) {
-      getFocusableElements(this.contentViewChild.nativeElement).forEach((el) => el.tabIndex = "-1");
-      if (this.overlayVisible) {
-        this.overlayVisible = false;
-      }
-    }
-  }
-  onDateCellKeydown(event2, dateMeta, groupIndex) {
-    const cellContent = event2.currentTarget;
-    const cell = cellContent.parentElement;
-    const currentDate = this.formatDateMetaToDate(dateMeta);
-    switch (event2.which) {
-      case 40: {
-        cellContent.tabIndex = "-1";
-        let cellIndex = getIndex(cell);
-        let nextRow = cell.parentElement.nextElementSibling;
-        if (nextRow) {
-          let focusCell = nextRow.children[cellIndex].children[0];
-          if (hasClass(focusCell, "p-disabled")) {
-            this.navigationState = {
-              backward: false
-            };
-            this.navForward(event2);
-          } else {
-            nextRow.children[cellIndex].children[0].tabIndex = "0";
-            nextRow.children[cellIndex].children[0].focus();
-          }
-        } else {
-          this.navigationState = {
-            backward: false
-          };
-          this.navForward(event2);
-        }
-        event2.preventDefault();
-        break;
-      }
-      case 38: {
-        cellContent.tabIndex = "-1";
-        let cellIndex = getIndex(cell);
-        let prevRow = cell.parentElement.previousElementSibling;
-        if (prevRow) {
-          let focusCell = prevRow.children[cellIndex].children[0];
-          if (hasClass(focusCell, "p-disabled")) {
-            this.navigationState = {
-              backward: true
-            };
-            this.navBackward(event2);
-          } else {
-            focusCell.tabIndex = "0";
-            focusCell.focus();
-          }
-        } else {
-          this.navigationState = {
-            backward: true
-          };
-          this.navBackward(event2);
-        }
-        event2.preventDefault();
-        break;
-      }
-      case 37: {
-        cellContent.tabIndex = "-1";
-        let prevCell = cell.previousElementSibling;
-        if (prevCell) {
-          let focusCell = prevCell.children[0];
-          if (hasClass(focusCell, "p-disabled") || hasClass(focusCell.parentElement, "p-datepicker-weeknumber")) {
-            this.navigateToMonth(true, groupIndex);
-          } else {
-            focusCell.tabIndex = "0";
-            focusCell.focus();
-          }
-        } else {
-          this.navigateToMonth(true, groupIndex);
-        }
-        event2.preventDefault();
-        break;
-      }
-      case 39: {
-        cellContent.tabIndex = "-1";
-        let nextCell = cell.nextElementSibling;
-        if (nextCell) {
-          let focusCell = nextCell.children[0];
-          if (hasClass(focusCell, "p-disabled")) {
-            this.navigateToMonth(false, groupIndex);
-          } else {
-            focusCell.tabIndex = "0";
-            focusCell.focus();
-          }
-        } else {
-          this.navigateToMonth(false, groupIndex);
-        }
-        event2.preventDefault();
-        break;
-      }
-      case 13:
-      case 32: {
-        this.onDateSelect(event2, dateMeta);
-        event2.preventDefault();
-        break;
-      }
-      case 27: {
-        this.inputfieldViewChild?.nativeElement.focus();
-        this.overlayVisible = false;
-        event2.preventDefault();
-        break;
-      }
-      case 9: {
-        if (!this.inline) {
-          this.trapFocus(event2);
-        }
-        break;
-      }
-      case 33: {
-        cellContent.tabIndex = "-1";
-        const dateToFocus = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, currentDate.getDate());
-        const focusKey = this.formatDateKey(dateToFocus);
-        this.navigateToMonth(true, groupIndex, `span[data-date='${focusKey}']:not(.p-disabled):not(.p-ink)`);
-        event2.preventDefault();
-        break;
-      }
-      case 34: {
-        cellContent.tabIndex = "-1";
-        const dateToFocus = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, currentDate.getDate());
-        const focusKey = this.formatDateKey(dateToFocus);
-        this.navigateToMonth(false, groupIndex, `span[data-date='${focusKey}']:not(.p-disabled):not(.p-ink)`);
-        event2.preventDefault();
-        break;
-      }
-      case 36:
-        cellContent.tabIndex = "-1";
-        const firstDayDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
-        const firstDayDateKey = this.formatDateKey(firstDayDate);
-        const firstDayCell = findSingle(cellContent.offsetParent, `span[data-date='${firstDayDateKey}']:not(.p-disabled):not(.p-ink)`);
-        if (firstDayCell) {
-          firstDayCell.tabIndex = "0";
-          firstDayCell.focus();
-        }
-        event2.preventDefault();
-        break;
-      case 35:
-        cellContent.tabIndex = "-1";
-        const lastDayDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
-        const lastDayDateKey = this.formatDateKey(lastDayDate);
-        const lastDayCell = findSingle(cellContent.offsetParent, `span[data-date='${lastDayDateKey}']:not(.p-disabled):not(.p-ink)`);
-        if (lastDayDate) {
-          lastDayCell.tabIndex = "0";
-          lastDayCell.focus();
-        }
-        event2.preventDefault();
-        break;
-      default:
-        break;
-    }
-  }
-  onMonthCellKeydown(event2, index) {
-    const cell = event2.currentTarget;
-    switch (event2.which) {
-      case 38:
-      case 40: {
-        cell.tabIndex = "-1";
-        var cells = cell.parentElement.children;
-        var cellIndex = getIndex(cell);
-        let nextCell = cells[event2.which === 40 ? cellIndex + 3 : cellIndex - 3];
-        if (nextCell) {
-          nextCell.tabIndex = "0";
-          nextCell.focus();
-        }
-        event2.preventDefault();
-        break;
-      }
-      case 37: {
-        cell.tabIndex = "-1";
-        let prevCell = cell.previousElementSibling;
-        if (prevCell) {
-          prevCell.tabIndex = "0";
-          prevCell.focus();
-        } else {
-          this.navigationState = {
-            backward: true
-          };
-          this.navBackward(event2);
-        }
-        event2.preventDefault();
-        break;
-      }
-      case 39: {
-        cell.tabIndex = "-1";
-        let nextCell = cell.nextElementSibling;
-        if (nextCell) {
-          nextCell.tabIndex = "0";
-          nextCell.focus();
-        } else {
-          this.navigationState = {
-            backward: false
-          };
-          this.navForward(event2);
-        }
-        event2.preventDefault();
-        break;
-      }
-      case 13:
-      case 32: {
-        this.onMonthSelect(event2, index);
-        event2.preventDefault();
-        break;
-      }
-      case 27: {
-        this.inputfieldViewChild?.nativeElement.focus();
-        this.overlayVisible = false;
-        event2.preventDefault();
-        break;
-      }
-      case 9: {
-        if (!this.inline) {
-          this.trapFocus(event2);
-        }
-        break;
-      }
-      default:
-        break;
-    }
-  }
-  onYearCellKeydown(event2, index) {
-    const cell = event2.currentTarget;
-    switch (event2.which) {
-      case 38:
-      case 40: {
-        cell.tabIndex = "-1";
-        var cells = cell.parentElement.children;
-        var cellIndex = getIndex(cell);
-        let nextCell = cells[event2.which === 40 ? cellIndex + 2 : cellIndex - 2];
-        if (nextCell) {
-          nextCell.tabIndex = "0";
-          nextCell.focus();
-        }
-        event2.preventDefault();
-        break;
-      }
-      case 37: {
-        cell.tabIndex = "-1";
-        let prevCell = cell.previousElementSibling;
-        if (prevCell) {
-          prevCell.tabIndex = "0";
-          prevCell.focus();
-        } else {
-          this.navigationState = {
-            backward: true
-          };
-          this.navBackward(event2);
-        }
-        event2.preventDefault();
-        break;
-      }
-      case 39: {
-        cell.tabIndex = "-1";
-        let nextCell = cell.nextElementSibling;
-        if (nextCell) {
-          nextCell.tabIndex = "0";
-          nextCell.focus();
-        } else {
-          this.navigationState = {
-            backward: false
-          };
-          this.navForward(event2);
-        }
-        event2.preventDefault();
-        break;
-      }
-      case 13:
-      case 32: {
-        this.onYearSelect(event2, index);
-        event2.preventDefault();
-        break;
-      }
-      case 27: {
-        this.inputfieldViewChild?.nativeElement.focus();
-        this.overlayVisible = false;
-        event2.preventDefault();
-        break;
-      }
-      case 9: {
-        this.trapFocus(event2);
-        break;
-      }
-      default:
-        break;
-    }
-  }
-  navigateToMonth(prev, groupIndex, focusKey) {
-    if (prev) {
-      if (this.numberOfMonths === 1 || groupIndex === 0) {
-        this.navigationState = {
-          backward: true
-        };
-        this._focusKey = focusKey;
-        this.navBackward(event);
-      } else {
-        let prevMonthContainer = this.contentViewChild.nativeElement.children[groupIndex - 1];
-        if (focusKey) {
-          const firstDayCell = findSingle(prevMonthContainer, focusKey);
-          firstDayCell.tabIndex = "0";
-          firstDayCell.focus();
-        } else {
-          let cells = find(prevMonthContainer, ".p-datepicker-calendar td span:not(.p-disabled):not(.p-ink)");
-          let focusCell = cells[cells.length - 1];
-          focusCell.tabIndex = "0";
-          focusCell.focus();
-        }
-      }
-    } else {
-      if (this.numberOfMonths === 1 || groupIndex === this.numberOfMonths - 1) {
-        this.navigationState = {
-          backward: false
-        };
-        this._focusKey = focusKey;
-        this.navForward(event);
-      } else {
-        let nextMonthContainer = this.contentViewChild.nativeElement.children[groupIndex + 1];
-        if (focusKey) {
-          const firstDayCell = findSingle(nextMonthContainer, focusKey);
-          firstDayCell.tabIndex = "0";
-          firstDayCell.focus();
-        } else {
-          let focusCell = findSingle(nextMonthContainer, ".p-datepicker-calendar td span:not(.p-disabled):not(.p-ink)");
-          focusCell.tabIndex = "0";
-          focusCell.focus();
-        }
-      }
-    }
-  }
-  updateFocus() {
-    let cell;
-    if (this.navigationState) {
-      if (this.navigationState.button) {
-        this.initFocusableCell();
-        if (this.navigationState.backward) findSingle(this.contentViewChild.nativeElement, ".p-datepicker-prev-button").focus();
-        else findSingle(this.contentViewChild.nativeElement, ".p-datepicker-next-button").focus();
-      } else {
-        if (this.navigationState.backward) {
-          let cells;
-          if (this.currentView === "month") {
-            cells = find(this.contentViewChild.nativeElement, ".p-monthpicker .p-monthpicker-month:not(.p-disabled)");
-          } else if (this.currentView === "year") {
-            cells = find(this.contentViewChild.nativeElement, ".p-yearpicker .p-yearpicker-year:not(.p-disabled)");
-          } else {
-            cells = find(this.contentViewChild.nativeElement, this._focusKey || ".p-datepicker-calendar td span:not(.p-disabled):not(.p-ink)");
-          }
-          if (cells && cells.length > 0) {
-            cell = cells[cells.length - 1];
-          }
-        } else {
-          if (this.currentView === "month") {
-            cell = findSingle(this.contentViewChild.nativeElement, ".p-monthpicker .p-monthpicker-month:not(.p-disabled)");
-          } else if (this.currentView === "year") {
-            cell = findSingle(this.contentViewChild.nativeElement, ".p-yearpicker .p-yearpicker-year:not(.p-disabled)");
-          } else {
-            cell = findSingle(this.contentViewChild.nativeElement, this._focusKey || ".p-datepicker-calendar td span:not(.p-disabled):not(.p-ink)");
-          }
-        }
-        if (cell) {
-          cell.tabIndex = "0";
-          cell.focus();
-        }
-      }
-      this.navigationState = null;
-      this._focusKey = null;
-    } else {
-      this.initFocusableCell();
-    }
-  }
-  initFocusableCell() {
-    const contentEl = this.contentViewChild?.nativeElement;
-    let cell;
-    if (this.currentView === "month") {
-      let cells = find(contentEl, ".p-monthpicker .p-monthpicker-month:not(.p-disabled)");
-      let selectedCell = findSingle(contentEl, ".p-monthpicker .p-monthpicker-month.p-highlight");
-      cells.forEach((cell2) => cell2.tabIndex = -1);
-      cell = selectedCell || cells[0];
-      if (cells.length === 0) {
-        let disabledCells = find(contentEl, '.p-monthpicker .p-monthpicker-month.p-disabled[tabindex = "0"]');
-        disabledCells.forEach((cell2) => cell2.tabIndex = -1);
-      }
-    } else if (this.currentView === "year") {
-      let cells = find(contentEl, ".p-yearpicker .p-yearpicker-year:not(.p-disabled)");
-      let selectedCell = findSingle(contentEl, ".p-yearpicker .p-yearpicker-year.p-highlight");
-      cells.forEach((cell2) => cell2.tabIndex = -1);
-      cell = selectedCell || cells[0];
-      if (cells.length === 0) {
-        let disabledCells = find(contentEl, '.p-yearpicker .p-yearpicker-year.p-disabled[tabindex = "0"]');
-        disabledCells.forEach((cell2) => cell2.tabIndex = -1);
-      }
-    } else {
-      cell = findSingle(contentEl, "span.p-highlight");
-      if (!cell) {
-        let todayCell = findSingle(contentEl, "td.p-datepicker-today span:not(.p-disabled):not(.p-ink)");
-        if (todayCell) cell = todayCell;
-        else cell = findSingle(contentEl, ".p-datepicker-calendar td span:not(.p-disabled):not(.p-ink)");
-      }
-    }
-    if (cell) {
-      cell.tabIndex = "0";
-      if (!this.preventFocus && (!this.navigationState || !this.navigationState.button)) {
-        setTimeout(() => {
-          if (!this.disabled) {
-            cell.focus();
-          }
-        }, 1);
-      }
-      this.preventFocus = false;
-    }
-  }
-  trapFocus(event2) {
-    let focusableElements = getFocusableElements(this.contentViewChild.nativeElement);
-    if (focusableElements && focusableElements.length > 0) {
-      if (!focusableElements[0].ownerDocument.activeElement) {
-        focusableElements[0].focus();
-      } else {
-        let focusedIndex = focusableElements.indexOf(focusableElements[0].ownerDocument.activeElement);
-        if (event2.shiftKey) {
-          if (focusedIndex == -1 || focusedIndex === 0) {
-            if (this.focusTrap) {
-              focusableElements[focusableElements.length - 1].focus();
-            } else {
-              if (focusedIndex === -1) return this.hideOverlay();
-              else if (focusedIndex === 0) return;
-            }
-          } else {
-            focusableElements[focusedIndex - 1].focus();
-          }
-        } else {
-          if (focusedIndex == -1) {
-            if (this.timeOnly) {
-              focusableElements[0].focus();
-            } else {
-              let spanIndex = 0;
-              for (let i = 0; i < focusableElements.length; i++) {
-                if (focusableElements[i].tagName === "SPAN") spanIndex = i;
-              }
-              focusableElements[spanIndex].focus();
-            }
-          } else if (focusedIndex === focusableElements.length - 1) {
-            if (!this.focusTrap && focusedIndex != -1) return this.hideOverlay();
-            focusableElements[0].focus();
-          } else {
-            focusableElements[focusedIndex + 1].focus();
-          }
-        }
-      }
-    }
-    event2.preventDefault();
-  }
-  onMonthDropdownChange(m) {
-    this.currentMonth = parseInt(m);
-    this.onMonthChange.emit({
-      month: this.currentMonth + 1,
-      year: this.currentYear
-    });
-    this.createMonths(this.currentMonth, this.currentYear);
-  }
-  onYearDropdownChange(y) {
-    this.currentYear = parseInt(y);
-    this.onYearChange.emit({
-      month: this.currentMonth + 1,
-      year: this.currentYear
-    });
-    this.createMonths(this.currentMonth, this.currentYear);
-  }
-  convertTo24Hour(hours, pm) {
-    if (this.hourFormat == "12") {
-      if (hours === 12) {
-        return pm ? 12 : 0;
-      } else {
-        return pm ? hours + 12 : hours;
-      }
-    }
-    return hours;
-  }
-  constrainTime(hour, minute, second, pm) {
-    let returnTimeTriple = [hour, minute, second];
-    let minHoursExceeds12;
-    let value = this.value;
-    const convertedHour = this.convertTo24Hour(hour, pm);
-    const isRange = this.isRangeSelection(), isMultiple = this.isMultipleSelection(), isMultiValue = isRange || isMultiple;
-    if (isMultiValue) {
-      if (!this.value) {
-        this.value = [/* @__PURE__ */ new Date(), /* @__PURE__ */ new Date()];
-      }
-      if (isRange) {
-        value = this.value[1] || this.value[0];
-      }
-      if (isMultiple) {
-        value = this.value[this.value.length - 1];
-      }
-    }
-    const valueDateString = value ? value.toDateString() : null;
-    let isMinDate = this.minDate && valueDateString && this.minDate.toDateString() === valueDateString;
-    let isMaxDate = this.maxDate && valueDateString && this.maxDate.toDateString() === valueDateString;
-    if (isMinDate) {
-      minHoursExceeds12 = this.minDate.getHours() >= 12;
-    }
-    switch (true) {
-      case (isMinDate && minHoursExceeds12 && this.minDate.getHours() === 12 && this.minDate.getHours() > convertedHour):
-        returnTimeTriple[0] = 11;
-      case (isMinDate && this.minDate.getHours() === convertedHour && this.minDate.getMinutes() > minute):
-        returnTimeTriple[1] = this.minDate.getMinutes();
-      case (isMinDate && this.minDate.getHours() === convertedHour && this.minDate.getMinutes() === minute && this.minDate.getSeconds() > second):
-        returnTimeTriple[2] = this.minDate.getSeconds();
-        break;
-      case (isMinDate && !minHoursExceeds12 && this.minDate.getHours() - 1 === convertedHour && this.minDate.getHours() > convertedHour):
-        returnTimeTriple[0] = 11;
-        this.pm = true;
-      case (isMinDate && this.minDate.getHours() === convertedHour && this.minDate.getMinutes() > minute):
-        returnTimeTriple[1] = this.minDate.getMinutes();
-      case (isMinDate && this.minDate.getHours() === convertedHour && this.minDate.getMinutes() === minute && this.minDate.getSeconds() > second):
-        returnTimeTriple[2] = this.minDate.getSeconds();
-        break;
-      case (isMinDate && minHoursExceeds12 && this.minDate.getHours() > convertedHour && convertedHour !== 12):
-        this.setCurrentHourPM(this.minDate.getHours());
-        returnTimeTriple[0] = this.currentHour;
-      case (isMinDate && this.minDate.getHours() === convertedHour && this.minDate.getMinutes() > minute):
-        returnTimeTriple[1] = this.minDate.getMinutes();
-      case (isMinDate && this.minDate.getHours() === convertedHour && this.minDate.getMinutes() === minute && this.minDate.getSeconds() > second):
-        returnTimeTriple[2] = this.minDate.getSeconds();
-        break;
-      case (isMinDate && this.minDate.getHours() > convertedHour):
-        returnTimeTriple[0] = this.minDate.getHours();
-      case (isMinDate && this.minDate.getHours() === convertedHour && this.minDate.getMinutes() > minute):
-        returnTimeTriple[1] = this.minDate.getMinutes();
-      case (isMinDate && this.minDate.getHours() === convertedHour && this.minDate.getMinutes() === minute && this.minDate.getSeconds() > second):
-        returnTimeTriple[2] = this.minDate.getSeconds();
-        break;
-      case (isMaxDate && this.maxDate.getHours() < convertedHour):
-        returnTimeTriple[0] = this.maxDate.getHours();
-      case (isMaxDate && this.maxDate.getHours() === convertedHour && this.maxDate.getMinutes() < minute):
-        returnTimeTriple[1] = this.maxDate.getMinutes();
-      case (isMaxDate && this.maxDate.getHours() === convertedHour && this.maxDate.getMinutes() === minute && this.maxDate.getSeconds() < second):
-        returnTimeTriple[2] = this.maxDate.getSeconds();
-        break;
-    }
-    return returnTimeTriple;
-  }
-  incrementHour(event2) {
-    const prevHour = this.currentHour ?? 0;
-    let newHour = (this.currentHour ?? 0) + this.stepHour;
-    let newPM = this.pm;
-    if (this.hourFormat == "24") newHour = newHour >= 24 ? newHour - 24 : newHour;
-    else if (this.hourFormat == "12") {
-      if (prevHour < 12 && newHour > 11) {
-        newPM = !this.pm;
-      }
-      newHour = newHour >= 13 ? newHour - 12 : newHour;
-    }
-    this.toggleAMPMIfNotMinDate(newPM);
-    [this.currentHour, this.currentMinute, this.currentSecond] = this.constrainTime(newHour, this.currentMinute, this.currentSecond, newPM);
-    event2.preventDefault();
-  }
-  toggleAMPMIfNotMinDate(newPM) {
-    let value = this.value;
-    const valueDateString = value ? value.toDateString() : null;
-    let isMinDate = this.minDate && valueDateString && this.minDate.toDateString() === valueDateString;
-    if (isMinDate && this.minDate.getHours() >= 12) {
-      this.pm = true;
-    } else {
-      this.pm = newPM;
-    }
-  }
-  onTimePickerElementMouseDown(event2, type, direction) {
-    if (!this.disabled) {
-      this.repeat(event2, null, type, direction);
-      event2.preventDefault();
-    }
-  }
-  onTimePickerElementMouseUp(event2) {
-    if (!this.disabled) {
-      this.clearTimePickerTimer();
-      this.updateTime();
-    }
-  }
-  onTimePickerElementMouseLeave() {
-    if (!this.disabled && this.timePickerTimer) {
-      this.clearTimePickerTimer();
-      this.updateTime();
-    }
-  }
-  repeat(event2, interval, type, direction) {
-    let i = interval || 500;
-    this.clearTimePickerTimer();
-    this.timePickerTimer = setTimeout(() => {
-      this.repeat(event2, 100, type, direction);
-      this.cd.markForCheck();
-    }, i);
-    switch (type) {
-      case 0:
-        if (direction === 1) this.incrementHour(event2);
-        else this.decrementHour(event2);
-        break;
-      case 1:
-        if (direction === 1) this.incrementMinute(event2);
-        else this.decrementMinute(event2);
-        break;
-      case 2:
-        if (direction === 1) this.incrementSecond(event2);
-        else this.decrementSecond(event2);
-        break;
-    }
-    this.updateInputfield();
-  }
-  clearTimePickerTimer() {
-    if (this.timePickerTimer) {
-      clearTimeout(this.timePickerTimer);
-      this.timePickerTimer = null;
-    }
-  }
-  decrementHour(event2) {
-    let newHour = (this.currentHour ?? 0) - this.stepHour;
-    let newPM = this.pm;
-    if (this.hourFormat == "24") newHour = newHour < 0 ? 24 + newHour : newHour;
-    else if (this.hourFormat == "12") {
-      if (this.currentHour === 12) {
-        newPM = !this.pm;
-      }
-      newHour = newHour <= 0 ? 12 + newHour : newHour;
-    }
-    this.toggleAMPMIfNotMinDate(newPM);
-    [this.currentHour, this.currentMinute, this.currentSecond] = this.constrainTime(newHour, this.currentMinute, this.currentSecond, newPM);
-    event2.preventDefault();
-  }
-  incrementMinute(event2) {
-    let newMinute = (this.currentMinute ?? 0) + this.stepMinute;
-    newMinute = newMinute > 59 ? newMinute - 60 : newMinute;
-    [this.currentHour, this.currentMinute, this.currentSecond] = this.constrainTime(this.currentHour, newMinute, this.currentSecond, this.pm);
-    event2.preventDefault();
-  }
-  decrementMinute(event2) {
-    let newMinute = (this.currentMinute ?? 0) - this.stepMinute;
-    newMinute = newMinute < 0 ? 60 + newMinute : newMinute;
-    [this.currentHour, this.currentMinute, this.currentSecond] = this.constrainTime(this.currentHour, newMinute, this.currentSecond, this.pm);
-    event2.preventDefault();
-  }
-  incrementSecond(event2) {
-    let newSecond = this.currentSecond + this.stepSecond;
-    newSecond = newSecond > 59 ? newSecond - 60 : newSecond;
-    [this.currentHour, this.currentMinute, this.currentSecond] = this.constrainTime(this.currentHour, this.currentMinute, newSecond, this.pm);
-    event2.preventDefault();
-  }
-  decrementSecond(event2) {
-    let newSecond = this.currentSecond - this.stepSecond;
-    newSecond = newSecond < 0 ? 60 + newSecond : newSecond;
-    [this.currentHour, this.currentMinute, this.currentSecond] = this.constrainTime(this.currentHour, this.currentMinute, newSecond, this.pm);
-    event2.preventDefault();
-  }
-  updateTime() {
-    let value = this.value;
-    if (this.isRangeSelection()) {
-      value = this.value[1] || this.value[0];
-    }
-    if (this.isMultipleSelection()) {
-      value = this.value[this.value.length - 1];
-    }
-    value = value ? new Date(value.getTime()) : /* @__PURE__ */ new Date();
-    if (this.hourFormat == "12") {
-      if (this.currentHour === 12) value.setHours(this.pm ? 12 : 0);
-      else value.setHours(this.pm ? this.currentHour + 12 : this.currentHour);
-    } else {
-      value.setHours(this.currentHour);
-    }
-    value.setMinutes(this.currentMinute);
-    value.setSeconds(this.currentSecond);
-    if (this.isRangeSelection()) {
-      if (this.value[1]) value = [this.value[0], value];
-      else value = [value, null];
-    }
-    if (this.isMultipleSelection()) {
-      value = [...this.value.slice(0, -1), value];
-    }
-    this.updateModel(value);
-    this.onSelect.emit(value);
-    this.updateInputfield();
-  }
-  toggleAMPM(event2) {
-    const newPM = !this.pm;
-    this.pm = newPM;
-    [this.currentHour, this.currentMinute, this.currentSecond] = this.constrainTime(this.currentHour, this.currentMinute, this.currentSecond, newPM);
-    this.updateTime();
-    event2.preventDefault();
-  }
-  onUserInput(event2) {
-    if (!this.isKeydown) {
-      return;
-    }
-    this.isKeydown = false;
-    let val = event2.target.value;
-    try {
-      let value = this.parseValueFromString(val);
-      if (this.isValidSelection(value)) {
-        this.updateModel(value);
-        this.updateUI();
-      } else if (this.keepInvalid) {
-        this.updateModel(value);
-      }
-    } catch (err) {
-      let value = this.keepInvalid ? val : null;
-      this.updateModel(value);
-    }
-    this.filled = val != null && val.length;
-    this.onInput.emit(event2);
-  }
-  isValidSelection(value) {
-    if (this.isSingleSelection()) {
-      return this.isSelectable(value.getDate(), value.getMonth(), value.getFullYear(), false);
-    }
-    let isValid = value.every((v) => this.isSelectable(v.getDate(), v.getMonth(), v.getFullYear(), false));
-    if (isValid && this.isRangeSelection()) {
-      isValid = value.length === 1 || value.length > 1 && value[1] >= value[0];
-    }
-    return isValid;
-  }
-  parseValueFromString(text) {
-    if (!text || text.trim().length === 0) {
-      return null;
-    }
-    let value;
-    if (this.isSingleSelection()) {
-      value = this.parseDateTime(text);
-    } else if (this.isMultipleSelection()) {
-      let tokens = text.split(this.multipleSeparator);
-      value = [];
-      for (let token of tokens) {
-        value.push(this.parseDateTime(token.trim()));
-      }
-    } else if (this.isRangeSelection()) {
-      let tokens = text.split(" " + this.rangeSeparator + " ");
-      value = [];
-      for (let i = 0; i < tokens.length; i++) {
-        value[i] = this.parseDateTime(tokens[i].trim());
-      }
-    }
-    return value;
-  }
-  parseDateTime(text) {
-    let date;
-    let parts = text.split(" ");
-    if (this.timeOnly) {
-      date = /* @__PURE__ */ new Date();
-      this.populateTime(date, parts[0], parts[1]);
-    } else {
-      const dateFormat = this.getDateFormat();
-      if (this.showTime) {
-        let ampm = this.hourFormat == "12" ? parts.pop() : null;
-        let timeString = parts.pop();
-        date = this.parseDate(parts.join(" "), dateFormat);
-        this.populateTime(date, timeString, ampm);
-      } else {
-        date = this.parseDate(text, dateFormat);
-      }
-    }
-    return date;
-  }
-  populateTime(value, timeString, ampm) {
-    if (this.hourFormat == "12" && !ampm) {
-      throw "Invalid Time";
-    }
-    this.pm = ampm === "PM" || ampm === "pm";
-    let time = this.parseTime(timeString);
-    value.setHours(time.hour);
-    value.setMinutes(time.minute);
-    value.setSeconds(time.second);
-  }
-  isValidDate(date) {
-    return isDate(date) && isNotEmpty(date);
-  }
-  updateUI() {
-    let propValue = this.value;
-    if (Array.isArray(propValue)) {
-      propValue = propValue.length === 2 ? propValue[1] : propValue[0];
-    }
-    let val = this.defaultDate && this.isValidDate(this.defaultDate) && !this.value ? this.defaultDate : propValue && this.isValidDate(propValue) ? propValue : /* @__PURE__ */ new Date();
-    this.currentMonth = val.getMonth();
-    this.currentYear = val.getFullYear();
-    this.createMonths(this.currentMonth, this.currentYear);
-    if (this.showTime || this.timeOnly) {
-      this.setCurrentHourPM(val.getHours());
-      this.currentMinute = val.getMinutes();
-      this.currentSecond = val.getSeconds();
-    }
-  }
-  showOverlay() {
-    if (!this.overlayVisible) {
-      this.updateUI();
-      if (!this.touchUI) {
-        this.preventFocus = true;
-      }
-      this.overlayVisible = true;
-    }
-  }
-  hideOverlay() {
-    this.inputfieldViewChild?.nativeElement.focus();
-    this.overlayVisible = false;
-    this.clearTimePickerTimer();
-    if (this.touchUI) {
-      this.disableModality();
-    }
-    this.cd.markForCheck();
-  }
-  toggle() {
-    if (!this.inline) {
-      if (!this.overlayVisible) {
-        this.showOverlay();
-        this.inputfieldViewChild?.nativeElement.focus();
-      } else {
-        this.hideOverlay();
-      }
-    }
-  }
-  onOverlayAnimationStart(event2) {
-    switch (event2.toState) {
-      case "visible":
-      case "visibleTouchUI":
-        if (!this.inline) {
-          this.overlay = event2.element;
-          this.overlay?.setAttribute(this.attributeSelector, "");
-          const styles = !this.inline ? {
-            position: "absolute",
-            top: "0",
-            left: "0"
-          } : void 0;
-          addStyle(this.overlay, styles);
-          this.appendOverlay();
-          this.updateFocus();
-          if (this.autoZIndex) {
-            if (this.touchUI) zindexutils.set("modal", this.overlay, this.baseZIndex || this.config.zIndex.modal);
-            else zindexutils.set("overlay", this.overlay, this.baseZIndex || this.config.zIndex.overlay);
-          }
-          this.alignOverlay();
-          this.onShow.emit(event2);
-        }
-        break;
-      case "void":
-        this.onOverlayHide();
-        this.onClose.emit(event2);
-        break;
-    }
-  }
-  onOverlayAnimationDone(event2) {
-    switch (event2.toState) {
-      case "visible":
-      case "visibleTouchUI":
-        if (!this.inline) {
-          this.bindDocumentClickListener();
-          this.bindDocumentResizeListener();
-          this.bindScrollListener();
-        }
-        break;
-      case "void":
-        if (this.autoZIndex) {
-          zindexutils.clear(event2.element);
-        }
-        break;
-    }
-  }
-  appendOverlay() {
-    if (this.appendTo) {
-      if (this.appendTo === "body") this.document.body.appendChild(this.overlay);
-      else appendChild(this.appendTo, this.overlay);
-    }
-  }
-  restoreOverlayAppend() {
-    if (this.overlay && this.appendTo) {
-      this.el.nativeElement.appendChild(this.overlay);
-    }
-  }
-  alignOverlay() {
-    if (this.touchUI) {
-      this.enableModality(this.overlay);
-    } else if (this.overlay) {
-      if (this.appendTo) {
-        if (this.view === "date") {
-          if (!this.overlay.style.width) {
-            this.overlay.style.width = getOuterWidth(this.overlay) + "px";
-          }
-          if (!this.overlay.style.minWidth) {
-            this.overlay.style.minWidth = getOuterWidth(this.inputfieldViewChild?.nativeElement) + "px";
-          }
-        } else {
-          if (!this.overlay.style.width) {
-            this.overlay.style.width = getOuterWidth(this.inputfieldViewChild?.nativeElement) + "px";
-          }
-        }
-        absolutePosition(this.overlay, this.inputfieldViewChild?.nativeElement);
-      } else {
-        relativePosition(this.overlay, this.inputfieldViewChild?.nativeElement);
-      }
-    }
-  }
-  enableModality(element) {
-    if (!this.mask && this.touchUI) {
-      this.mask = this.renderer.createElement("div");
-      this.renderer.setStyle(this.mask, "zIndex", String(parseInt(element.style.zIndex) - 1));
-      let maskStyleClass = "p-overlay-mask p-datepicker-mask p-datepicker-mask-scrollblocker p-overlay-mask p-overlay-mask-enter";
-      addClass(this.mask, maskStyleClass);
-      this.maskClickListener = this.renderer.listen(this.mask, "click", (event2) => {
-        this.disableModality();
-        this.overlayVisible = false;
-      });
-      this.renderer.appendChild(this.document.body, this.mask);
-      blockBodyScroll();
-    }
-  }
-  disableModality() {
-    if (this.mask) {
-      addClass(this.mask, "p-overlay-mask-leave");
-      if (!this.animationEndListener) {
-        this.animationEndListener = this.renderer.listen(this.mask, "animationend", this.destroyMask.bind(this));
-      }
-    }
-  }
-  destroyMask() {
-    if (!this.mask) {
-      return;
-    }
-    this.renderer.removeChild(this.document.body, this.mask);
-    let bodyChildren = this.document.body.children;
-    let hasBlockerMasks;
-    for (let i = 0; i < bodyChildren.length; i++) {
-      let bodyChild = bodyChildren[i];
-      if (hasClass(bodyChild, "p-datepicker-mask-scrollblocker")) {
-        hasBlockerMasks = true;
-        break;
-      }
-    }
-    if (!hasBlockerMasks) {
-      unblockBodyScroll();
-    }
-    this.unbindAnimationEndListener();
-    this.unbindMaskClickListener();
-    this.mask = null;
-  }
-  unbindMaskClickListener() {
-    if (this.maskClickListener) {
-      this.maskClickListener();
-      this.maskClickListener = null;
-    }
-  }
-  unbindAnimationEndListener() {
-    if (this.animationEndListener && this.mask) {
-      this.animationEndListener();
-      this.animationEndListener = null;
-    }
+  isOptionDisabled(option) {
+    return this.optionDisabled ? ObjectUtils.resolveFieldData(option, this.optionDisabled) : option.disabled !== void 0 ? option.disabled : false;
   }
   writeValue(value) {
     this.value = value;
-    if (this.value && typeof this.value === "string") {
-      try {
-        this.value = this.parseValueFromString(this.value);
-      } catch {
-        if (this.keepInvalid) {
-          this.value = value;
-        }
-      }
-    }
-    this.updateInputfield();
-    this.updateUI();
     this.cd.markForCheck();
   }
   registerOnChange(fn) {
@@ -4590,1093 +1023,258 @@ var DatePicker = class _DatePicker extends BaseComponent {
     this.disabled = val;
     this.cd.markForCheck();
   }
-  getDateFormat() {
-    return this.dateFormat || this.getTranslation("dateFormat");
-  }
-  getFirstDateOfWeek() {
-    return this._firstDayOfWeek || this.getTranslation(TranslationKeys.FIRST_DAY_OF_WEEK);
-  }
-  // Ported from jquery-ui datepicker formatDate
-  formatDate(date, format) {
-    if (!date) {
-      return "";
+  onOptionSelect(event, option, index) {
+    if (this.disabled || this.isOptionDisabled(option)) {
+      return;
     }
-    let iFormat;
-    const lookAhead = (match) => {
-      const matches = iFormat + 1 < format.length && format.charAt(iFormat + 1) === match;
-      if (matches) {
-        iFormat++;
-      }
-      return matches;
-    }, formatNumber = (match, value, len) => {
-      let num = "" + value;
-      if (lookAhead(match)) {
-        while (num.length < len) {
-          num = "0" + num;
-        }
-      }
-      return num;
-    }, formatName = (match, value, shortNames, longNames) => {
-      return lookAhead(match) ? longNames[value] : shortNames[value];
-    };
-    let output = "";
-    let literal = false;
-    if (date) {
-      for (iFormat = 0; iFormat < format.length; iFormat++) {
-        if (literal) {
-          if (format.charAt(iFormat) === "'" && !lookAhead("'")) {
-            literal = false;
-          } else {
-            output += format.charAt(iFormat);
-          }
-        } else {
-          switch (format.charAt(iFormat)) {
-            case "d":
-              output += formatNumber("d", date.getDate(), 2);
-              break;
-            case "D":
-              output += formatName("D", date.getDay(), this.getTranslation(TranslationKeys.DAY_NAMES_SHORT), this.getTranslation(TranslationKeys.DAY_NAMES));
-              break;
-            case "o":
-              output += formatNumber("o", Math.round((new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime() - new Date(date.getFullYear(), 0, 0).getTime()) / 864e5), 3);
-              break;
-            case "m":
-              output += formatNumber("m", date.getMonth() + 1, 2);
-              break;
-            case "M":
-              output += formatName("M", date.getMonth(), this.getTranslation(TranslationKeys.MONTH_NAMES_SHORT), this.getTranslation(TranslationKeys.MONTH_NAMES));
-              break;
-            case "y":
-              output += lookAhead("y") ? date.getFullYear() : (date.getFullYear() % 100 < 10 ? "0" : "") + date.getFullYear() % 100;
-              break;
-            case "@":
-              output += date.getTime();
-              break;
-            case "!":
-              output += date.getTime() * 1e4 + this.ticksTo1970;
-              break;
-            case "'":
-              if (lookAhead("'")) {
-                output += "'";
-              } else {
-                literal = true;
-              }
-              break;
-            default:
-              output += format.charAt(iFormat);
-          }
-        }
-      }
+    let selected = this.isSelected(option);
+    if (selected && this.unselectable) {
+      return;
     }
-    return output;
-  }
-  formatTime(date) {
-    if (!date) {
-      return "";
-    }
-    let output = "";
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
-    if (this.hourFormat == "12" && hours > 11 && hours != 12) {
-      hours -= 12;
-    }
-    if (this.hourFormat == "12") {
-      output += hours === 0 ? 12 : hours < 10 ? "0" + hours : hours;
+    let optionValue = this.getOptionValue(option);
+    let newValue;
+    if (this.multiple) {
+      if (selected) newValue = this.value.filter((val) => !ObjectUtils.equals(val, optionValue, this.equalityKey));
+      else newValue = this.value ? [...this.value, optionValue] : [optionValue];
     } else {
-      output += hours < 10 ? "0" + hours : hours;
-    }
-    output += ":";
-    output += minutes < 10 ? "0" + minutes : minutes;
-    if (this.showSeconds) {
-      output += ":";
-      output += seconds < 10 ? "0" + seconds : seconds;
-    }
-    if (this.hourFormat == "12") {
-      output += date.getHours() > 11 ? " PM" : " AM";
-    }
-    return output;
-  }
-  parseTime(value) {
-    let tokens = value.split(":");
-    let validTokenLength = this.showSeconds ? 3 : 2;
-    if (tokens.length !== validTokenLength) {
-      throw "Invalid time";
-    }
-    let h = parseInt(tokens[0]);
-    let m = parseInt(tokens[1]);
-    let s = this.showSeconds ? parseInt(tokens[2]) : null;
-    if (isNaN(h) || isNaN(m) || h > 23 || m > 59 || this.hourFormat == "12" && h > 12 || this.showSeconds && (isNaN(s) || s > 59)) {
-      throw "Invalid time";
-    } else {
-      if (this.hourFormat == "12") {
-        if (h !== 12 && this.pm) {
-          h += 12;
-        } else if (!this.pm && h === 12) {
-          h -= 12;
-        }
+      if (selected && !this.allowEmpty) {
+        return;
       }
-      return {
-        hour: h,
-        minute: m,
-        second: s
+      newValue = selected ? null : optionValue;
+    }
+    this.focusedIndex = index;
+    this.value = newValue;
+    this.onModelChange(this.value);
+    this.onChange.emit({
+      originalEvent: event,
+      value: this.value
+    });
+    this.onOptionClick.emit({
+      originalEvent: event,
+      option,
+      index
+    });
+  }
+  onKeyDown(event, option, index) {
+    switch (event.code) {
+      case "Space": {
+        this.onOptionSelect(event, option, index);
+        event.preventDefault();
+        break;
+      }
+      case "ArrowDown":
+      case "ArrowRight": {
+        this.changeTabIndexes(event, "next");
+        event.preventDefault();
+        break;
+      }
+      case "ArrowUp":
+      case "ArrowLeft": {
+        this.changeTabIndexes(event, "prev");
+        event.preventDefault();
+        break;
+      }
+      default:
+        break;
+    }
+  }
+  changeTabIndexes(event, direction) {
+    let firstTabableChild, index;
+    for (let i = 0; i <= this.container.nativeElement.children.length - 1; i++) {
+      if (this.container.nativeElement.children[i].getAttribute("tabindex") === "0") firstTabableChild = {
+        elem: this.container.nativeElement.children[i],
+        index: i
       };
     }
+    if (direction === "prev") {
+      if (firstTabableChild.index === 0) index = this.container.nativeElement.children.length - 1;
+      else index = firstTabableChild.index - 1;
+    } else {
+      if (firstTabableChild.index === this.container.nativeElement.children.length - 1) index = 0;
+      else index = firstTabableChild.index + 1;
+    }
+    this.focusedIndex = index;
+    this.container.nativeElement.children[index].focus();
   }
-  // Ported from jquery-ui datepicker parseDate
-  parseDate(value, format) {
-    if (format == null || value == null) {
-      throw "Invalid arguments";
-    }
-    value = typeof value === "object" ? value.toString() : value + "";
-    if (value === "") {
-      return null;
-    }
-    let iFormat, dim, extra, iValue = 0, shortYearCutoff = typeof this.shortYearCutoff !== "string" ? this.shortYearCutoff : (/* @__PURE__ */ new Date()).getFullYear() % 100 + parseInt(this.shortYearCutoff, 10), year = -1, month = -1, day = -1, doy = -1, literal = false, date, lookAhead = (match) => {
-      let matches = iFormat + 1 < format.length && format.charAt(iFormat + 1) === match;
-      if (matches) {
-        iFormat++;
-      }
-      return matches;
-    }, getNumber = (match) => {
-      let isDoubled = lookAhead(match), size = match === "@" ? 14 : match === "!" ? 20 : match === "y" && isDoubled ? 4 : match === "o" ? 3 : 2, minSize = match === "y" ? size : 1, digits = new RegExp("^\\d{" + minSize + "," + size + "}"), num = value.substring(iValue).match(digits);
-      if (!num) {
-        throw "Missing number at position " + iValue;
-      }
-      iValue += num[0].length;
-      return parseInt(num[0], 10);
-    }, getName = (match, shortNames, longNames) => {
-      let index = -1;
-      let arr = lookAhead(match) ? longNames : shortNames;
-      let names = [];
-      for (let i = 0; i < arr.length; i++) {
-        names.push([i, arr[i]]);
-      }
-      names.sort((a, b) => {
-        return -(a[1].length - b[1].length);
-      });
-      for (let i = 0; i < names.length; i++) {
-        let name = names[i][1];
-        if (value.substr(iValue, name.length).toLowerCase() === name.toLowerCase()) {
-          index = names[i][0];
-          iValue += name.length;
-          break;
-        }
-      }
-      if (index !== -1) {
-        return index + 1;
-      } else {
-        throw "Unknown name at position " + iValue;
-      }
-    }, checkLiteral = () => {
-      if (value.charAt(iValue) !== format.charAt(iFormat)) {
-        throw "Unexpected literal at position " + iValue;
-      }
-      iValue++;
-    };
-    if (this.view === "month") {
-      day = 1;
-    }
-    for (iFormat = 0; iFormat < format.length; iFormat++) {
-      if (literal) {
-        if (format.charAt(iFormat) === "'" && !lookAhead("'")) {
-          literal = false;
-        } else {
-          checkLiteral();
-        }
-      } else {
-        switch (format.charAt(iFormat)) {
-          case "d":
-            day = getNumber("d");
-            break;
-          case "D":
-            getName("D", this.getTranslation(TranslationKeys.DAY_NAMES_SHORT), this.getTranslation(TranslationKeys.DAY_NAMES));
-            break;
-          case "o":
-            doy = getNumber("o");
-            break;
-          case "m":
-            month = getNumber("m");
-            break;
-          case "M":
-            month = getName("M", this.getTranslation(TranslationKeys.MONTH_NAMES_SHORT), this.getTranslation(TranslationKeys.MONTH_NAMES));
-            break;
-          case "y":
-            year = getNumber("y");
-            break;
-          case "@":
-            date = new Date(getNumber("@"));
-            year = date.getFullYear();
-            month = date.getMonth() + 1;
-            day = date.getDate();
-            break;
-          case "!":
-            date = new Date((getNumber("!") - this.ticksTo1970) / 1e4);
-            year = date.getFullYear();
-            month = date.getMonth() + 1;
-            day = date.getDate();
-            break;
-          case "'":
-            if (lookAhead("'")) {
-              checkLiteral();
-            } else {
-              literal = true;
-            }
-            break;
-          default:
-            checkLiteral();
-        }
-      }
-    }
-    if (iValue < value.length) {
-      extra = value.substr(iValue);
-      if (!/^\s+/.test(extra)) {
-        throw "Extra/unparsed characters found in date: " + extra;
-      }
-    }
-    if (year === -1) {
-      year = (/* @__PURE__ */ new Date()).getFullYear();
-    } else if (year < 100) {
-      year += (/* @__PURE__ */ new Date()).getFullYear() - (/* @__PURE__ */ new Date()).getFullYear() % 100 + (year <= shortYearCutoff ? 0 : -100);
-    }
-    if (doy > -1) {
-      month = 1;
-      day = doy;
-      do {
-        dim = this.getDaysCountInMonth(year, month - 1);
-        if (day <= dim) {
-          break;
-        }
-        month++;
-        day -= dim;
-      } while (true);
-    }
-    if (this.view === "year") {
-      month = month === -1 ? 1 : month;
-      day = day === -1 ? 1 : day;
-    }
-    date = this.daylightSavingAdjust(new Date(year, month - 1, day));
-    if (date.getFullYear() !== year || date.getMonth() + 1 !== month || date.getDate() !== day) {
-      throw "Invalid date";
-    }
-    return date;
+  onFocus(event, index) {
+    this.focusedIndex = index;
   }
-  daylightSavingAdjust(date) {
-    if (!date) {
-      return null;
-    }
-    date.setHours(date.getHours() > 12 ? date.getHours() + 2 : 0);
-    return date;
+  onBlur() {
+    this.onModelTouched();
   }
-  updateFilledState() {
-    this.filled = this.inputFieldValue && this.inputFieldValue != "";
+  removeOption(option) {
+    this.value = this.value.filter((val) => !ObjectUtils.equals(val, this.getOptionValue(option), this.dataKey));
   }
-  isValidDateForTimeConstraints(selectedDate) {
-    if (this.keepInvalid) {
-      return true;
-    }
-    return (!this.minDate || selectedDate >= this.minDate) && (!this.maxDate || selectedDate <= this.maxDate);
-  }
-  onTodayButtonClick(event2) {
-    const date = /* @__PURE__ */ new Date();
-    const dateMeta = {
-      day: date.getDate(),
-      month: date.getMonth(),
-      year: date.getFullYear(),
-      otherMonth: date.getMonth() !== this.currentMonth || date.getFullYear() !== this.currentYear,
-      today: true,
-      selectable: true
-    };
-    this.createMonths(date.getMonth(), date.getFullYear());
-    this.onDateSelect(event2, dateMeta);
-    this.onTodayClick.emit(date);
-  }
-  onClearButtonClick(event2) {
-    this.updateModel(null);
-    this.updateInputfield();
-    this.hideOverlay();
-    this.onClearClick.emit(event2);
-  }
-  createResponsiveStyle() {
-    if (this.numberOfMonths > 1 && this.responsiveOptions) {
-      if (!this.responsiveStyleElement) {
-        this.responsiveStyleElement = this.renderer.createElement("style");
-        this.responsiveStyleElement.type = "text/css";
-        this.renderer.appendChild(this.document.body, this.responsiveStyleElement);
-      }
-      let innerHTML = "";
-      if (this.responsiveOptions) {
-        let responsiveOptions = [...this.responsiveOptions].filter((o) => !!(o.breakpoint && o.numMonths)).sort((o1, o2) => -1 * o1.breakpoint.localeCompare(o2.breakpoint, void 0, {
-          numeric: true
-        }));
-        for (let i = 0; i < responsiveOptions.length; i++) {
-          let {
-            breakpoint,
-            numMonths
-          } = responsiveOptions[i];
-          let styles = `
-                        .p-datepicker[${this.attributeSelector}] .p-datepicker-group:nth-child(${numMonths}) .p-datepicker-next {
-                            display: inline-flex !important;
-                        }
-                    `;
-          for (let j = numMonths; j < this.numberOfMonths; j++) {
-            styles += `
-                            .p-datepicker[${this.attributeSelector}] .p-datepicker-group:nth-child(${j + 1}) {
-                                display: none !important;
-                            }
-                        `;
+  isSelected(option) {
+    let selected = false;
+    const optionValue = this.getOptionValue(option);
+    if (this.multiple) {
+      if (this.value && Array.isArray(this.value)) {
+        for (let val of this.value) {
+          if (ObjectUtils.equals(val, optionValue, this.dataKey)) {
+            selected = true;
+            break;
           }
-          innerHTML += `
-                        @media screen and (max-width: ${breakpoint}) {
-                            ${styles}
-                        }
-                    `;
         }
       }
-      this.responsiveStyleElement.innerHTML = innerHTML;
-      setAttribute(this.responsiveStyleElement, "nonce", this.config?.csp()?.nonce);
+    } else {
+      selected = ObjectUtils.equals(this.getOptionValue(option), this.value, this.equalityKey);
     }
+    return selected;
   }
-  destroyResponsiveStyleElement() {
-    if (this.responsiveStyleElement) {
-      this.responsiveStyleElement.remove();
-      this.responsiveStyleElement = null;
-    }
-  }
-  bindDocumentClickListener() {
-    if (!this.documentClickListener) {
-      this.zone.runOutsideAngular(() => {
-        const documentTarget = this.el ? this.el.nativeElement.ownerDocument : this.document;
-        this.documentClickListener = this.renderer.listen(documentTarget, "mousedown", (event2) => {
-          if (this.isOutsideClicked(event2) && this.overlayVisible) {
-            this.zone.run(() => {
-              this.hideOverlay();
-              this.onClickOutside.emit(event2);
-              this.cd.markForCheck();
-            });
-          }
-        });
-      });
-    }
-  }
-  unbindDocumentClickListener() {
-    if (this.documentClickListener) {
-      this.documentClickListener();
-      this.documentClickListener = null;
-    }
-  }
-  bindDocumentResizeListener() {
-    if (!this.documentResizeListener && !this.touchUI) {
-      this.documentResizeListener = this.renderer.listen(this.window, "resize", this.onWindowResize.bind(this));
-    }
-  }
-  unbindDocumentResizeListener() {
-    if (this.documentResizeListener) {
-      this.documentResizeListener();
-      this.documentResizeListener = null;
-    }
-  }
-  bindScrollListener() {
-    if (!this.scrollHandler) {
-      this.scrollHandler = new ConnectedOverlayScrollHandler(this.containerViewChild?.nativeElement, () => {
-        if (this.overlayVisible) {
-          this.hideOverlay();
-        }
-      });
-    }
-    this.scrollHandler.bindScrollListener();
-  }
-  unbindScrollListener() {
-    if (this.scrollHandler) {
-      this.scrollHandler.unbindScrollListener();
-    }
-  }
-  isOutsideClicked(event2) {
-    return !(this.el.nativeElement.isSameNode(event2.target) || this.isNavIconClicked(event2) || this.el.nativeElement.contains(event2.target) || this.overlay && this.overlay.contains(event2.target));
-  }
-  isNavIconClicked(event2) {
-    return hasClass(event2.target, "p-datepicker-prev-button") || hasClass(event2.target, "p-datepicker-prev-icon") || hasClass(event2.target, "p-datepicker-next-button") || hasClass(event2.target, "p-datepicker-next-icon");
-  }
-  onWindowResize() {
-    if (this.overlayVisible && !isTouchDevice()) {
-      this.hideOverlay();
-    }
-  }
-  onOverlayHide() {
-    this.currentView = this.view;
-    if (this.mask) {
-      this.destroyMask();
-    }
-    this.unbindDocumentClickListener();
-    this.unbindDocumentResizeListener();
-    this.unbindScrollListener();
-    this.overlay = null;
-  }
-  ngOnDestroy() {
-    if (this.scrollHandler) {
-      this.scrollHandler.destroy();
-      this.scrollHandler = null;
-    }
-    if (this.translationSubscription) {
-      this.translationSubscription.unsubscribe();
-    }
-    if (this.overlay && this.autoZIndex) {
-      zindexutils.clear(this.overlay);
-    }
-    this.destroyResponsiveStyleElement();
-    this.clearTimePickerTimer();
-    this.restoreOverlayAppend();
-    this.onOverlayHide();
-    super.ngOnDestroy();
-  }
-  static ɵfac = function DatePicker_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DatePicker)(ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(OverlayService));
+  static ɵfac = function SelectButton_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _SelectButton)(ɵɵdirectiveInject(ChangeDetectorRef));
   };
   static ɵcmp = ɵɵdefineComponent({
-    type: _DatePicker,
-    selectors: [["p-datePicker"], ["p-datepicker"], ["p-date-picker"]],
-    contentQueries: function DatePicker_ContentQueries(rf, ctx, dirIndex) {
+    type: _SelectButton,
+    selectors: [["p-selectButton"]],
+    contentQueries: function SelectButton_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, _c0, 4);
-        ɵɵcontentQuery(dirIndex, _c1, 4);
-        ɵɵcontentQuery(dirIndex, _c2, 4);
-        ɵɵcontentQuery(dirIndex, _c3, 4);
-        ɵɵcontentQuery(dirIndex, _c4, 4);
-        ɵɵcontentQuery(dirIndex, _c5, 4);
-        ɵɵcontentQuery(dirIndex, _c6, 4);
-        ɵɵcontentQuery(dirIndex, _c7, 4);
-        ɵɵcontentQuery(dirIndex, _c8, 4);
-        ɵɵcontentQuery(dirIndex, _c9, 4);
-        ɵɵcontentQuery(dirIndex, _c10, 4);
-        ɵɵcontentQuery(dirIndex, _c11, 4);
-        ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
+        ɵɵcontentQuery(dirIndex, PrimeTemplate, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.dateTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.footerTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.disabledDateTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.decadeTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.previousIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.nextIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.triggerIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.clearIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.decrementIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.incrementIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.itemTemplate = _t.first);
       }
     },
-    viewQuery: function DatePicker_Query(rf, ctx) {
+    viewQuery: function SelectButton_Query(rf, ctx) {
       if (rf & 1) {
-        ɵɵviewQuery(_c12, 5);
-        ɵɵviewQuery(_c13, 5);
-        ɵɵviewQuery(_c14, 5);
+        ɵɵviewQuery(_c0, 5);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputfieldViewChild = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.content = _t.first);
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.container = _t.first);
       }
     },
+    hostAttrs: [1, "p-element"],
     inputs: {
-      iconDisplay: "iconDisplay",
+      options: "options",
+      optionLabel: "optionLabel",
+      optionValue: "optionValue",
+      optionDisabled: "optionDisabled",
+      unselectable: [2, "unselectable", "unselectable", booleanAttribute],
+      tabindex: [2, "tabindex", "tabindex", numberAttribute],
+      multiple: [2, "multiple", "multiple", booleanAttribute],
+      allowEmpty: [2, "allowEmpty", "allowEmpty", booleanAttribute],
       style: "style",
       styleClass: "styleClass",
-      inputStyle: "inputStyle",
-      inputId: "inputId",
-      name: "name",
-      inputStyleClass: "inputStyleClass",
-      placeholder: "placeholder",
       ariaLabelledBy: "ariaLabelledBy",
-      ariaLabel: "ariaLabel",
-      iconAriaLabel: "iconAriaLabel",
       disabled: [2, "disabled", "disabled", booleanAttribute],
-      dateFormat: "dateFormat",
-      multipleSeparator: "multipleSeparator",
-      rangeSeparator: "rangeSeparator",
-      inline: [2, "inline", "inline", booleanAttribute],
-      showOtherMonths: [2, "showOtherMonths", "showOtherMonths", booleanAttribute],
-      selectOtherMonths: [2, "selectOtherMonths", "selectOtherMonths", booleanAttribute],
-      showIcon: [2, "showIcon", "showIcon", booleanAttribute],
-      fluid: [2, "fluid", "fluid", booleanAttribute],
-      icon: "icon",
-      appendTo: "appendTo",
-      readonlyInput: [2, "readonlyInput", "readonlyInput", booleanAttribute],
-      shortYearCutoff: "shortYearCutoff",
-      monthNavigator: [2, "monthNavigator", "monthNavigator", booleanAttribute],
-      yearNavigator: [2, "yearNavigator", "yearNavigator", booleanAttribute],
-      hourFormat: "hourFormat",
-      timeOnly: [2, "timeOnly", "timeOnly", booleanAttribute],
-      stepHour: [2, "stepHour", "stepHour", numberAttribute],
-      stepMinute: [2, "stepMinute", "stepMinute", numberAttribute],
-      stepSecond: [2, "stepSecond", "stepSecond", numberAttribute],
-      showSeconds: [2, "showSeconds", "showSeconds", booleanAttribute],
-      required: [2, "required", "required", booleanAttribute],
-      showOnFocus: [2, "showOnFocus", "showOnFocus", booleanAttribute],
-      showWeek: [2, "showWeek", "showWeek", booleanAttribute],
-      startWeekFromFirstDayOfYear: "startWeekFromFirstDayOfYear",
-      showClear: [2, "showClear", "showClear", booleanAttribute],
-      dataType: "dataType",
-      selectionMode: "selectionMode",
-      maxDateCount: [2, "maxDateCount", "maxDateCount", numberAttribute],
-      showButtonBar: [2, "showButtonBar", "showButtonBar", booleanAttribute],
-      todayButtonStyleClass: "todayButtonStyleClass",
-      clearButtonStyleClass: "clearButtonStyleClass",
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute],
-      autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
-      baseZIndex: [2, "baseZIndex", "baseZIndex", numberAttribute],
-      panelStyleClass: "panelStyleClass",
-      panelStyle: "panelStyle",
-      keepInvalid: [2, "keepInvalid", "keepInvalid", booleanAttribute],
-      hideOnDateTimeSelect: [2, "hideOnDateTimeSelect", "hideOnDateTimeSelect", booleanAttribute],
-      touchUI: [2, "touchUI", "touchUI", booleanAttribute],
-      timeSeparator: "timeSeparator",
-      focusTrap: [2, "focusTrap", "focusTrap", booleanAttribute],
-      showTransitionOptions: "showTransitionOptions",
-      hideTransitionOptions: "hideTransitionOptions",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      variant: "variant",
-      size: "size",
-      minDate: "minDate",
-      maxDate: "maxDate",
-      disabledDates: "disabledDates",
-      disabledDays: "disabledDays",
-      yearRange: "yearRange",
-      showTime: "showTime",
-      responsiveOptions: "responsiveOptions",
-      numberOfMonths: "numberOfMonths",
-      firstDayOfWeek: "firstDayOfWeek",
-      locale: "locale",
-      view: "view",
-      defaultDate: "defaultDate"
+      dataKey: "dataKey",
+      autofocus: [2, "autofocus", "autofocus", booleanAttribute]
     },
     outputs: {
-      onFocus: "onFocus",
-      onBlur: "onBlur",
-      onClose: "onClose",
-      onSelect: "onSelect",
-      onClear: "onClear",
-      onInput: "onInput",
-      onTodayClick: "onTodayClick",
-      onClearClick: "onClearClick",
-      onMonthChange: "onMonthChange",
-      onYearChange: "onYearChange",
-      onClickOutside: "onClickOutside",
-      onShow: "onShow"
+      onOptionClick: "onOptionClick",
+      onChange: "onChange"
     },
-    standalone: true,
-    features: [ɵɵProvidersFeature([DATEPICKER_VALUE_ACCESSOR, DatePickerStyle]), ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
-    ngContentSelectors: _c16,
-    decls: 4,
-    vars: 6,
-    consts: [["container", ""], ["inputfield", ""], ["contentWrapper", ""], [3, "ngClass", "ngStyle"], [3, "ngIf"], [3, "class", "ngStyle", "ngClass", "click", 4, "ngIf"], ["pInputText", "", "type", "text", "role", "combobox", "aria-autocomplete", "none", "aria-haspopup", "dialog", "autocomplete", "off", 3, "focus", "keydown", "click", "blur", "input", "value", "readonly", "ngStyle", "ngClass", "placeholder", "disabled", "pAutoFocus", "variant", "fluid"], [4, "ngIf"], ["type", "button", "aria-haspopup", "dialog", "class", "p-datepicker-dropdown", "tabindex", "0", 3, "disabled", "click", 4, "ngIf"], [3, "class", "click", 4, "ngIf"], ["class", "p-datepicker-clear-icon", 3, "click", 4, "ngIf"], [3, "click"], [1, "p-datepicker-clear-icon", 3, "click"], [4, "ngTemplateOutlet"], ["type", "button", "aria-haspopup", "dialog", "tabindex", "0", 1, "p-datepicker-dropdown", 3, "click", "disabled"], [3, "ngClass", 4, "ngIf"], [3, "ngClass"], [1, "p-datepicker-input-icon-container"], [3, "ngClass", "click", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "click", "ngClass"], [3, "click", "ngStyle", "ngClass"], ["class", "p-datepicker-time-picker", 4, "ngIf"], ["class", "p-datepicker-buttonbar", 4, "ngIf"], [1, "p-datepicker-calendar-container"], ["class", "p-datepicker-calendar", 4, "ngFor", "ngForOf"], ["class", "p-datepicker-month-view", 4, "ngIf"], ["class", "p-datepicker-year-view", 4, "ngIf"], [1, "p-datepicker-calendar"], [1, "p-datepicker-header"], ["size", "small", "rounded", "", "text", "", "styleClass", "p-datepicker-prev-button p-button-icon-only", "type", "button", 3, "keydown", "onClick", "ngStyle"], [1, "p-datepicker-title"], ["type", "button", "class", "p-datepicker-select-month", "pRipple", "", 3, "disabled", "click", "keydown", 4, "ngIf"], ["type", "button", "class", "p-datepicker-select-year", "pRipple", "", 3, "disabled", "click", "keydown", 4, "ngIf"], ["class", "p-datepicker-decade", 4, "ngIf"], ["rounded", "", "text", "", "size", "small", "styleClass", "p-datepicker-next-button p-button-icon-only", 3, "keydown", "onClick", "ngStyle"], ["class", "p-datepicker-day-view", "role", "grid", 4, "ngIf"], ["type", "button", "pRipple", "", 1, "p-datepicker-select-month", 3, "click", "keydown", "disabled"], ["type", "button", "pRipple", "", 1, "p-datepicker-select-year", 3, "click", "keydown", "disabled"], [1, "p-datepicker-decade"], ["role", "grid", 1, "p-datepicker-day-view"], ["class", "p-datepicker-weekheader p-disabled", 4, "ngIf"], ["class", "p-datepicker-weekday-cell", "scope", "col", 4, "ngFor", "ngForOf"], [4, "ngFor", "ngForOf"], [1, "p-datepicker-weekheader", "p-disabled"], ["scope", "col", 1, "p-datepicker-weekday-cell"], [1, "p-datepicker-weekday"], ["class", "p-datepicker-weeknumber", 4, "ngIf"], [3, "ngClass", 4, "ngFor", "ngForOf"], [1, "p-datepicker-weeknumber"], [1, "p-datepicker-weeklabel-container", "p-disabled"], ["draggable", "false", "pRipple", "", 3, "click", "keydown", "ngClass"], ["class", "p-hidden-accessible", "aria-live", "polite", 4, "ngIf"], ["aria-live", "polite", 1, "p-hidden-accessible"], [1, "p-datepicker-month-view"], ["pRipple", "", 3, "ngClass", "click", "keydown", 4, "ngFor", "ngForOf"], ["pRipple", "", 3, "click", "keydown", "ngClass"], [1, "p-datepicker-year-view"], [1, "p-datepicker-time-picker"], [1, "p-datepicker-hour-picker"], ["rounded", "", "text", "", "size", "small", "styleClass", "p-datepicker-increment-button p-button-icon-only", 3, "keydown", "keydown.enter", "keydown.space", "mousedown", "mouseup", "keyup.enter", "keyup.space", "mouseleave"], [1, "p-datepicker-separator"], [1, "p-datepicker-minute-picker"], ["class", "p-datepicker-separator", 4, "ngIf"], ["class", "p-datepicker-second-picker", 4, "ngIf"], ["class", "p-datepicker-ampm-picker", 4, "ngIf"], [1, "p-datepicker-second-picker"], [1, "p-datepicker-ampm-picker"], ["size", "small", "text", "", "rounded", "", "styleClass", "p-datepicker-increment-button p-button-icon-only", 3, "keydown", "onClick", "keydown.enter"], ["size", "small", "text", "", "rounded", "", "styleClass", "p-datepicker-increment-button p-button-icon-only", 3, "keydown", "click", "keydown.enter"], [1, "p-datepicker-buttonbar"], ["size", "small", "styleClass", "p-datepicker-today-button", 3, "keydown", "onClick", "label", "ngClass"], ["size", "small", "styleClass", "p-datepicker-clear-button", 3, "keydown", "onClick", "label", "ngClass"]],
-    template: function DatePicker_Template(rf, ctx) {
+    features: [ɵɵProvidersFeature([SELECTBUTTON_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+    decls: 3,
+    vars: 8,
+    consts: [["container", ""], ["customcontent", ""], ["role", "group", 3, "ngClass", "ngStyle"], ["pRipple", "", "class", "p-button p-component", "pAutoFocus", "", 3, "role", "class", "ngClass", "autofocus", "click", "keydown", "focus", "blur", 4, "ngFor", "ngForOf"], ["pRipple", "", "pAutoFocus", "", 1, "p-button", "p-component", 3, "click", "keydown", "focus", "blur", "role", "ngClass", "autofocus"], [4, "ngIf", "ngIfElse"], [3, "ngClass", "class", 4, "ngIf"], [1, "p-button-label"], [3, "ngClass"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
+    template: function SelectButton_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵprojectionDef(_c15);
-        ɵɵelementStart(0, "span", 3, 0);
-        ɵɵtemplate(2, DatePicker_ng_template_2_Template, 5, 24, "ng-template", 4)(3, DatePicker_div_3_Template, 9, 20, "div", 5);
+        ɵɵelementStart(0, "div", 2, 0);
+        ɵɵtemplate(2, SelectButton_div_2_Template, 4, 18, "div", 3);
         ɵɵelementEnd();
       }
       if (rf & 2) {
         ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.rootClass)("ngStyle", ctx.style);
+        ɵɵproperty("ngClass", "p-selectbutton p-buttonset p-component")("ngStyle", ctx.style);
+        ɵɵattribute("aria-labelledby", ctx.ariaLabelledBy)("data-pc-name", "selectbutton")("data-pc-section", "root");
         ɵɵadvance(2);
-        ɵɵproperty("ngIf", !ctx.inline);
-        ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.inline || ctx.overlayVisible);
+        ɵɵproperty("ngForOf", ctx.options);
       }
     },
-    dependencies: [CommonModule, NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, Button, Ripple, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, ChevronDownIcon, TimesIcon, CalendarIcon, AutoFocus, InputText, SharedModule],
+    dependencies: [NgClass, NgForOf, NgIf, NgTemplateOutlet, NgStyle, Ripple, AutoFocus],
+    styles: ['@layer primeng{.p-button{margin:0;display:inline-flex;cursor:pointer;-webkit-user-select:none;user-select:none;align-items:center;vertical-align:bottom;text-align:center;overflow:hidden;position:relative}.p-button-label{flex:1 1 auto}.p-button-icon-right{order:1}.p-button:disabled{cursor:default;pointer-events:none}.p-button-icon-only{justify-content:center}.p-button-icon-only:after{content:"p";visibility:hidden;clip:rect(0 0 0 0);width:0}.p-button-vertical{flex-direction:column}.p-button-icon-bottom{order:2}.p-button-group .p-button{margin:0}.p-button-group .p-button:focus,.p-button-group p-button:focus .p-button,.p-buttonset .p-button:focus,.p-buttonset p-button:focus .p-button{position:relative;z-index:1}.p-button-group .p-button:not(:last-child),.p-button-group .p-button:not(:last-child):hover,.p-button-group p-button:not(:last-child) .p-button,.p-button-group p-button:not(:last-child) .p-button:hover,.p-buttonset .p-button:not(:last-child),.p-buttonset .p-button:not(:last-child):hover,.p-buttonset p-button:not(:last-child) .p-button,.p-buttonset p-button:not(:last-child) .p-button:hover{border-right:0 none}.p-button-group .p-button:not(:first-of-type):not(:last-of-type),.p-button-group p-button:not(:first-of-type):not(:last-of-type) .p-button,.p-buttonset .p-button:not(:first-of-type):not(:last-of-type),.p-buttonset p-button:not(:first-of-type):not(:last-of-type) .p-button{border-radius:0}.p-button-group .p-button:first-of-type:not(:only-of-type),.p-button-group p-button:first-of-type:not(:only-of-type) .p-button,.p-buttonset .p-button:first-of-type:not(:only-of-type),.p-buttonset p-button:first-of-type:not(:only-of-type) .p-button{border-top-right-radius:0;border-bottom-right-radius:0}.p-button-group .p-button:last-of-type:not(:only-of-type),.p-button-group p-button:last-of-type:not(:only-of-type) .p-button,.p-buttonset .p-button:last-of-type:not(:only-of-type),.p-buttonset p-button:last-of-type:not(:only-of-type) .p-button{border-top-left-radius:0;border-bottom-left-radius:0}p-button[iconpos=right] spinnericon{order:1}}\n'],
     encapsulation: 2,
-    data: {
-      animation: [trigger("overlayAnimation", [state("visibleTouchUI", style({
-        transform: "translate(-50%,-50%)",
-        opacity: 1
-      })), transition("void => visible", [style({
-        opacity: 0,
-        transform: "scaleY(0.8)"
-      }), animate("{{showTransitionParams}}", style({
-        opacity: 1,
-        transform: "*"
-      }))]), transition("visible => void", [animate("{{hideTransitionParams}}", style({
-        opacity: 0
-      }))]), transition("void => visibleTouchUI", [style({
-        opacity: 0,
-        transform: "translate3d(-50%, -40%, 0) scale(0.9)"
-      }), animate("{{showTransitionParams}}")]), transition("visibleTouchUI => void", [animate("{{hideTransitionParams}}", style({
-        opacity: 0,
-        transform: "translate3d(-50%, -40%, 0) scale(0.9)"
-      }))])])]
-    },
     changeDetection: 0
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DatePicker, [{
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SelectButton, [{
     type: Component,
     args: [{
-      selector: "p-datePicker, p-datepicker, p-date-picker",
-      standalone: true,
-      imports: [CommonModule, Button, Ripple, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, ChevronDownIcon, TimesIcon, CalendarIcon, AutoFocus, InputText, SharedModule],
+      selector: "p-selectButton",
       template: `
-        <span #container [ngClass]="rootClass" [ngStyle]="style" [class]="styleClass">
-            <ng-template [ngIf]="!inline">
-                <input
-                    #inputfield
-                    pInputText
-                    type="text"
-                    role="combobox"
-                    [attr.id]="inputId"
-                    [attr.name]="name"
-                    [attr.required]="required"
-                    [attr.aria-required]="required"
-                    aria-autocomplete="none"
-                    aria-haspopup="dialog"
-                    [attr.aria-expanded]="overlayVisible ?? false"
-                    [attr.aria-controls]="overlayVisible ? panelId : null"
-                    [attr.aria-labelledby]="ariaLabelledBy"
-                    [attr.aria-label]="ariaLabel"
-                    [value]="inputFieldValue"
-                    (focus)="onInputFocus($event)"
-                    (keydown)="onInputKeydown($event)"
-                    (click)="onInputClick()"
-                    (blur)="onInputBlur($event)"
-                    [readonly]="readonlyInput"
-                    (input)="onUserInput($event)"
-                    [ngStyle]="inputStyle"
-                    [class]="inputStyleClass"
-                    [ngClass]="'p-datepicker-input'"
-                    [placeholder]="placeholder || ''"
-                    [disabled]="disabled"
-                    [attr.tabindex]="tabindex"
-                    [attr.inputmode]="touchUI ? 'off' : null"
-                    autocomplete="off"
-                    [pAutoFocus]="autofocus"
-                    [variant]="variant"
-                    [fluid]="hasFluid"
-                />
-                <ng-container *ngIf="showClear && !disabled && value != null">
-                    <TimesIcon *ngIf="!clearIconTemplate && !_clearIconTemplate" [class]="'p-datepicker-clear-icon'" (click)="clear()" />
-                    <span *ngIf="clearIconTemplate || _clearIconTemplate" class="p-datepicker-clear-icon" (click)="clear()">
-                        <ng-template *ngTemplateOutlet="clearIconTemplate || _clearIconTemplate"></ng-template>
-                    </span>
-                </ng-container>
-                <button
-                    type="button"
-                    [attr.aria-label]="iconButtonAriaLabel"
-                    aria-haspopup="dialog"
-                    [attr.aria-expanded]="overlayVisible ?? false"
-                    [attr.aria-controls]="overlayVisible ? panelId : null"
-                    *ngIf="showIcon && iconDisplay === 'button'"
-                    (click)="onButtonClick($event, inputfield)"
-                    class="p-datepicker-dropdown"
-                    [disabled]="disabled"
-                    tabindex="0"
-                >
-                    <span *ngIf="icon" [ngClass]="icon"></span>
-                    <ng-container *ngIf="!icon">
-                        <CalendarIcon *ngIf="!triggerIconTemplate && !_triggerIconTemplate" />
-                        <ng-template *ngTemplateOutlet="triggerIconTemplate || _triggerIconTemplate"></ng-template>
-                    </ng-container>
-                </button>
-                <ng-container *ngIf="iconDisplay === 'input' && showIcon">
-                    <span class="p-datepicker-input-icon-container">
-                        <CalendarIcon
-                            (click)="onButtonClick($event)"
-                            *ngIf="!inputIconTemplate && !_inputIconTemplate"
-                            [ngClass]="{
-                                'p-datepicker-input-icon': showOnFocus
-                            }"
-                        />
-
-                        <ng-container *ngTemplateOutlet="inputIconTemplate || _inputIconTemplate; context: { clickCallBack: onButtonClick.bind(this) }"></ng-container>
-                    </span>
-                </ng-container>
-            </ng-template>
+        <div #container [ngClass]="'p-selectbutton p-buttonset p-component'" [ngStyle]="style" [class]="styleClass" role="group" [attr.aria-labelledby]="ariaLabelledBy" [attr.data-pc-name]="'selectbutton'" [attr.data-pc-section]="'root'">
             <div
-                #contentWrapper
-                [attr.id]="panelId"
-                [class]="panelStyleClass"
-                [ngStyle]="panelStyle"
-                [ngClass]="panelClass"
-                [@overlayAnimation]="{
-                    value: 'visible',
-                    params: { showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions }
-                }"
-                [attr.aria-label]="getTranslation('chooseDate')"
-                [attr.role]="inline ? null : 'dialog'"
-                [attr.aria-modal]="inline ? null : 'true'"
-                [@.disabled]="inline === true"
-                (@overlayAnimation.start)="onOverlayAnimationStart($event)"
-                (@overlayAnimation.done)="onOverlayAnimationDone($event)"
-                (click)="onOverlayClick($event)"
-                *ngIf="inline || overlayVisible"
+                *ngFor="let option of options; let i = index"
+                pRipple
+                [attr.tabindex]="i === focusedIndex && !disabled ? '0' : '-1'"
+                [attr.aria-label]="option.label"
+                [role]="multiple ? 'checkbox' : 'radio'"
+                [attr.aria-checked]="isSelected(option)"
+                [attr.aria-disabled]="optionDisabled"
+                class="p-button p-component"
+                [class]="option.styleClass"
+                [ngClass]="{ 'p-highlight': isSelected(option), 'p-disabled': disabled || isOptionDisabled(option), 'p-button-icon-only': option.icon && !getOptionLabel(option) }"
+                (click)="onOptionSelect($event, option, i)"
+                (keydown)="onKeyDown($event, option, i)"
+                [attr.title]="option.title"
+                (focus)="onFocus($event, i)"
+                (blur)="onBlur()"
+                [attr.aria-labelledby]="this.getOptionLabel(option)"
+                [attr.data-pc-section]="'button'"
+                pAutoFocus
+                [autofocus]="autofocus"
             >
-                <ng-content select="p-header"></ng-content>
-                <ng-container *ngTemplateOutlet="headerTemplate || _headerTemplate"></ng-container>
-                <ng-container *ngIf="!timeOnly">
-                    <div class="p-datepicker-calendar-container">
-                        <div class="p-datepicker-calendar" *ngFor="let month of months; let i = index">
-                            <div class="p-datepicker-header">
-                                <p-button
-                                    size="small"
-                                    rounded
-                                    text
-                                    (keydown)="onContainerButtonKeydown($event)"
-                                    styleClass="p-datepicker-prev-button p-button-icon-only"
-                                    (onClick)="onPrevButtonClick($event)"
-                                    [ngStyle]="{ visibility: i === 0 ? 'visible' : 'hidden' }"
-                                    type="button"
-                                    [attr.aria-label]="prevIconAriaLabel"
-                                >
-                                    <ChevronLeftIcon *ngIf="!previousIconTemplate && !_previousIconTemplate" />
-                                    <span *ngIf="previousIconTemplate || !_previousIconTemplate">
-                                        <ng-template *ngTemplateOutlet="previousIconTemplate || _previousIconTemplate"></ng-template>
-                                    </span>
-                                </p-button>
-                                <div class="p-datepicker-title">
-                                    <button
-                                        *ngIf="currentView === 'date'"
-                                        type="button"
-                                        (click)="switchToMonthView($event)"
-                                        (keydown)="onContainerButtonKeydown($event)"
-                                        class="p-datepicker-select-month"
-                                        [disabled]="switchViewButtonDisabled()"
-                                        [attr.aria-label]="this.getTranslation('chooseMonth')"
-                                        pRipple
-                                    >
-                                        {{ getMonthName(month.month) }}
-                                    </button>
-                                    <button
-                                        *ngIf="currentView !== 'year'"
-                                        type="button"
-                                        (click)="switchToYearView($event)"
-                                        (keydown)="onContainerButtonKeydown($event)"
-                                        class="p-datepicker-select-year"
-                                        [disabled]="switchViewButtonDisabled()"
-                                        [attr.aria-label]="getTranslation('chooseYear')"
-                                        pRipple
-                                    >
-                                        {{ getYear(month) }}
-                                    </button>
-                                    <span class="p-datepicker-decade" *ngIf="currentView === 'year'">
-                                        <ng-container *ngIf="!decadeTemplate && _decadeTemplate">{{ yearPickerValues()[0] }} - {{ yearPickerValues()[yearPickerValues().length - 1] }}</ng-container>
-                                        <ng-container *ngTemplateOutlet="decadeTemplate || _decadeTemplate; context: { $implicit: yearPickerValues }"></ng-container>
-                                    </span>
-                                </div>
-                                <p-button
-                                    rounded
-                                    text
-                                    size="small"
-                                    (keydown)="onContainerButtonKeydown($event)"
-                                    styleClass="p-datepicker-next-button p-button-icon-only"
-                                    (onClick)="onNextButtonClick($event)"
-                                    [ngStyle]="{ visibility: i === months.length - 1 ? 'visible' : 'hidden' }"
-                                    [attr.aria-label]="nextIconAriaLabel"
-                                >
-                                    <ChevronRightIcon *ngIf="!decadeTemplate && !_decadeTemplate" />
-
-                                    <span *ngIf="nextIconTemplate || !_nextIconTemplate">
-                                        <ng-template *ngTemplateOutlet="nextIconTemplate || _nextIconTemplate"></ng-template>
-                                    </span>
-                                </p-button>
-                            </div>
-                            <table class="p-datepicker-day-view" role="grid" *ngIf="currentView === 'date'">
-                                <thead>
-                                    <tr>
-                                        <th *ngIf="showWeek" class="p-datepicker-weekheader p-disabled">
-                                            <span>{{ getTranslation('weekHeader') }}</span>
-                                        </th>
-                                        <th class="p-datepicker-weekday-cell" scope="col" *ngFor="let weekDay of weekDays; let begin = first; let end = last">
-                                            <span class="p-datepicker-weekday">{{ weekDay }}</span>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr *ngFor="let week of month.dates; let j = index">
-                                        <td *ngIf="showWeek" class="p-datepicker-weeknumber">
-                                            <span class="p-datepicker-weeklabel-container p-disabled">
-                                                {{ month.weekNumbers[j] }}
-                                            </span>
-                                        </td>
-                                        <td
-                                            *ngFor="let date of week"
-                                            [attr.aria-label]="date.day"
-                                            [ngClass]="{
-                                                'p-datepicker-day-cell': true,
-                                                'p-datepicker-other-month': date.otherMonth,
-                                                'p-datepicker-today': date.today
-                                            }"
-                                        >
-                                            <ng-container *ngIf="date.otherMonth ? showOtherMonths : true">
-                                                <span
-                                                    [ngClass]="dayClass(date)"
-                                                    (click)="onDateSelect($event, date)"
-                                                    draggable="false"
-                                                    [attr.data-date]="formatDateKey(formatDateMetaToDate(date))"
-                                                    (keydown)="onDateCellKeydown($event, date, i)"
-                                                    pRipple
-                                                >
-                                                    <ng-container *ngIf="!dateTemplate && !_dateTemplate && (date.selectable || (!disabledDateTemplate && !_disabledDateTemplate))">{{ date.day }}</ng-container>
-                                                    <ng-container *ngIf="date.selectable || (!disabledDateTemplate && !_disabledDateTemplate)">
-                                                        <ng-container *ngTemplateOutlet="dateTemplate || _dateTemplate; context: { $implicit: date }"></ng-container>
-                                                    </ng-container>
-                                                    <ng-container *ngIf="!date.selectable">
-                                                        <ng-container *ngTemplateOutlet="disabledDateTemplate || _disabledDateTemplate; context: { $implicit: date }"></ng-container>
-                                                    </ng-container>
-                                                </span>
-                                                <div *ngIf="isSelected(date)" class="p-hidden-accessible" aria-live="polite">
-                                                    {{ date.day }}
-                                                </div>
-                                            </ng-container>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="p-datepicker-month-view" *ngIf="currentView === 'month'">
-                        <span
-                            *ngFor="let m of monthPickerValues(); let i = index"
-                            (click)="onMonthSelect($event, i)"
-                            (keydown)="onMonthCellKeydown($event, i)"
-                            [ngClass]="{
-                                'p-datepicker-month': true,
-                                'p-datepicker-month-selected': isMonthSelected(i),
-                                'p-disabled': isMonthDisabled(i)
-                            }"
-                            pRipple
-                        >
-                            {{ m }}
-                            <div *ngIf="isMonthSelected(i)" class="p-hidden-accessible" aria-live="polite">
-                                {{ m }}
-                            </div>
-                        </span>
-                    </div>
-                    <div class="p-datepicker-year-view" *ngIf="currentView === 'year'">
-                        <span
-                            *ngFor="let y of yearPickerValues()"
-                            (click)="onYearSelect($event, y)"
-                            (keydown)="onYearCellKeydown($event, y)"
-                            [ngClass]="{
-                                'p-datepicker-year': true,
-                                'p-datepicker-year-selected': isYearSelected(y),
-                                'p-disabled': isYearDisabled(y)
-                            }"
-                            pRipple
-                        >
-                            {{ y }}
-                            <div *ngIf="isYearSelected(y)" class="p-hidden-accessible" aria-live="polite">
-                                {{ y }}
-                            </div>
-                        </span>
-                    </div>
+                <ng-container *ngIf="!itemTemplate; else customcontent">
+                    <span [ngClass]="'p-button-icon p-button-icon-left'" [class]="option.icon" *ngIf="option.icon" [attr.data-pc-section]="'icon'"></span>
+                    <span class="p-button-label" [attr.data-pc-section]="'label'">{{ getOptionLabel(option) }}</span>
                 </ng-container>
-                <div class="p-datepicker-time-picker" *ngIf="(showTime || timeOnly) && currentView === 'date'">
-                    <div class="p-datepicker-hour-picker">
-                        <p-button
-                            rounded
-                            text
-                            size="small"
-                            styleClass="p-datepicker-increment-button p-button-icon-only"
-                            (keydown)="onContainerButtonKeydown($event)"
-                            (keydown.enter)="incrementHour($event)"
-                            (keydown.space)="incrementHour($event)"
-                            (mousedown)="onTimePickerElementMouseDown($event, 0, 1)"
-                            (mouseup)="onTimePickerElementMouseUp($event)"
-                            (keyup.enter)="onTimePickerElementMouseUp($event)"
-                            (keyup.space)="onTimePickerElementMouseUp($event)"
-                            (mouseleave)="onTimePickerElementMouseLeave()"
-                            [attr.aria-label]="getTranslation('nextHour')"
-                        >
-                            <ChevronUpIcon *ngIf="!incrementIconTemplate && !_incrementIconTemplate" />
-
-                            <ng-template *ngTemplateOutlet="incrementIconTemplate || _incrementIconTemplate"></ng-template>
-                        </p-button>
-                        <span><ng-container *ngIf="currentHour < 10">0</ng-container>{{ currentHour }}</span>
-                        <p-button
-                            rounded
-                            text
-                            size="small"
-                            styleClass="p-datepicker-increment-button p-button-icon-only"
-                            (keydown)="onContainerButtonKeydown($event)"
-                            (keydown.enter)="decrementHour($event)"
-                            (keydown.space)="decrementHour($event)"
-                            (mousedown)="onTimePickerElementMouseDown($event, 0, -1)"
-                            (mouseup)="onTimePickerElementMouseUp($event)"
-                            (keyup.enter)="onTimePickerElementMouseUp($event)"
-                            (keyup.space)="onTimePickerElementMouseUp($event)"
-                            (mouseleave)="onTimePickerElementMouseLeave()"
-                            [attr.aria-label]="getTranslation('prevHour')"
-                        >
-                            <ChevronDownIcon *ngIf="!decrementIconTemplate && !_decrementIconTemplate" />
-
-                            <ng-template *ngTemplateOutlet="decrementIconTemplate || _decrementIconTemplate"></ng-template>
-                        </p-button>
-                    </div>
-                    <div class="p-datepicker-separator">
-                        <span>{{ timeSeparator }}</span>
-                    </div>
-                    <div class="p-datepicker-minute-picker">
-                        <p-button
-                            rounded
-                            text
-                            size="small"
-                            styleClass="p-datepicker-increment-button p-button-icon-only"
-                            (keydown)="onContainerButtonKeydown($event)"
-                            (keydown.enter)="incrementMinute($event)"
-                            (keydown.space)="incrementMinute($event)"
-                            (mousedown)="onTimePickerElementMouseDown($event, 1, 1)"
-                            (mouseup)="onTimePickerElementMouseUp($event)"
-                            (keyup.enter)="onTimePickerElementMouseUp($event)"
-                            (keyup.space)="onTimePickerElementMouseUp($event)"
-                            (mouseleave)="onTimePickerElementMouseLeave()"
-                            [attr.aria-label]="getTranslation('nextMinute')"
-                        >
-                            <ChevronUpIcon *ngIf="!incrementIconTemplate && !_incrementIconTemplate" />
-
-                            <ng-template *ngTemplateOutlet="incrementIconTemplate || _incrementIconTemplate"></ng-template>
-                        </p-button>
-                        <span><ng-container *ngIf="currentMinute < 10">0</ng-container>{{ currentMinute }}</span>
-                        <p-button
-                            rounded
-                            text
-                            size="small"
-                            styleClass="p-datepicker-increment-button p-button-icon-only"
-                            (keydown)="onContainerButtonKeydown($event)"
-                            (keydown.enter)="decrementMinute($event)"
-                            (keydown.space)="decrementMinute($event)"
-                            (mousedown)="onTimePickerElementMouseDown($event, 1, -1)"
-                            (mouseup)="onTimePickerElementMouseUp($event)"
-                            (keyup.enter)="onTimePickerElementMouseUp($event)"
-                            (keyup.space)="onTimePickerElementMouseUp($event)"
-                            (mouseleave)="onTimePickerElementMouseLeave()"
-                            [attr.aria-label]="getTranslation('prevMinute')"
-                        >
-                            <ChevronDownIcon *ngIf="!decrementIconTemplate && !_decrementIconTemplate" />
-                            <ng-container *ngIf="decrementIconTemplate || _decrementIconTemplate">
-                                <ng-template *ngTemplateOutlet="decrementIconTemplate || _decrementIconTemplate"></ng-template>
-                            </ng-container>
-                        </p-button>
-                    </div>
-                    <div class="p-datepicker-separator" *ngIf="showSeconds">
-                        <span>{{ timeSeparator }}</span>
-                    </div>
-                    <div class="p-datepicker-second-picker" *ngIf="showSeconds">
-                        <p-button
-                            rounded
-                            text
-                            size="small"
-                            styleClass="p-datepicker-increment-button p-button-icon-only"
-                            (keydown)="onContainerButtonKeydown($event)"
-                            (keydown.enter)="incrementSecond($event)"
-                            (keydown.space)="incrementSecond($event)"
-                            (mousedown)="onTimePickerElementMouseDown($event, 2, 1)"
-                            (mouseup)="onTimePickerElementMouseUp($event)"
-                            (keyup.enter)="onTimePickerElementMouseUp($event)"
-                            (keyup.space)="onTimePickerElementMouseUp($event)"
-                            (mouseleave)="onTimePickerElementMouseLeave()"
-                            [attr.aria-label]="getTranslation('nextSecond')"
-                        >
-                            <ChevronUpIcon *ngIf="!incrementIconTemplate && !_incrementIconTemplate" />
-
-                            <ng-template *ngTemplateOutlet="incrementIconTemplate || _incrementIconTemplate"></ng-template>
-                        </p-button>
-                        <span><ng-container *ngIf="currentSecond < 10">0</ng-container>{{ currentSecond }}</span>
-                        <p-button
-                            rounded
-                            text
-                            size="small"
-                            styleClass="p-datepicker-increment-button p-button-icon-only"
-                            (keydown)="onContainerButtonKeydown($event)"
-                            (keydown.enter)="decrementSecond($event)"
-                            (keydown.space)="decrementSecond($event)"
-                            (mousedown)="onTimePickerElementMouseDown($event, 2, -1)"
-                            (mouseup)="onTimePickerElementMouseUp($event)"
-                            (keyup.enter)="onTimePickerElementMouseUp($event)"
-                            (keyup.space)="onTimePickerElementMouseUp($event)"
-                            (mouseleave)="onTimePickerElementMouseLeave()"
-                            [attr.aria-label]="getTranslation('prevSecond')"
-                        >
-                            <ChevronDownIcon *ngIf="!decrementIconTemplate && !_decrementIconTemplate" />
-
-                            <ng-template *ngTemplateOutlet="decrementIconTemplate || _decrementIconTemplate"></ng-template>
-                        </p-button>
-                    </div>
-                    <div class="p-datepicker-separator" *ngIf="hourFormat == '12'">
-                        <span>{{ timeSeparator }}</span>
-                    </div>
-                    <div class="p-datepicker-ampm-picker" *ngIf="hourFormat == '12'">
-                        <p-button
-                            size="small"
-                            text
-                            rounded
-                            styleClass="p-datepicker-increment-button p-button-icon-only"
-                            (keydown)="onContainerButtonKeydown($event)"
-                            (onClick)="toggleAMPM($event)"
-                            (keydown.enter)="toggleAMPM($event)"
-                            [attr.aria-label]="getTranslation('am')"
-                        >
-                            <ChevronUpIcon *ngIf="!incrementIconTemplate && !_incrementIconTemplate" />
-                            <ng-template *ngTemplateOutlet="incrementIconTemplate || _incrementIconTemplate"></ng-template>
-                        </p-button>
-                        <span>{{ pm ? 'PM' : 'AM' }}</span>
-                        <p-button
-                            size="small"
-                            text
-                            rounded
-                            styleClass="p-datepicker-increment-button p-button-icon-only"
-                            (keydown)="onContainerButtonKeydown($event)"
-                            (click)="toggleAMPM($event)"
-                            (keydown.enter)="toggleAMPM($event)"
-                            [attr.aria-label]="getTranslation('pm')"
-                        >
-                            <ChevronDownIcon *ngIf="!decrementIconTemplate && !_decrementIconTemplate" />
-                            <ng-template *ngTemplateOutlet="decrementIconTemplate || _decrementIconTemplate"></ng-template>
-                        </p-button>
-                    </div>
-                </div>
-                <div class="p-datepicker-buttonbar" *ngIf="showButtonBar">
-                    <p-button size="small" styleClass="p-datepicker-today-button" [label]="getTranslation('today')" (keydown)="onContainerButtonKeydown($event)" (onClick)="onTodayButtonClick($event)" [ngClass]="todayButtonStyleClass" />
-                    <p-button size="small" styleClass="p-datepicker-clear-button" [label]="getTranslation('clear')" (keydown)="onContainerButtonKeydown($event)" (onClick)="onClearButtonClick($event)" [ngClass]="clearButtonStyleClass" />
-                </div>
-                <ng-content select="p-footer"></ng-content>
-                <ng-container *ngTemplateOutlet="footerTemplate || _footerTemplate"></ng-container>
+                <ng-template #customcontent>
+                    <ng-container *ngTemplateOutlet="selectButtonTemplate; context: { $implicit: option, index: i }"></ng-container>
+                </ng-template>
             </div>
-        </span>
+        </div>
     `,
-      animations: [trigger("overlayAnimation", [state("visibleTouchUI", style({
-        transform: "translate(-50%,-50%)",
-        opacity: 1
-      })), transition("void => visible", [style({
-        opacity: 0,
-        transform: "scaleY(0.8)"
-      }), animate("{{showTransitionParams}}", style({
-        opacity: 1,
-        transform: "*"
-      }))]), transition("visible => void", [animate("{{hideTransitionParams}}", style({
-        opacity: 0
-      }))]), transition("void => visibleTouchUI", [style({
-        opacity: 0,
-        transform: "translate3d(-50%, -40%, 0) scale(0.9)"
-      }), animate("{{showTransitionParams}}")]), transition("visibleTouchUI => void", [animate("{{hideTransitionParams}}", style({
-        opacity: 0,
-        transform: "translate3d(-50%, -40%, 0) scale(0.9)"
-      }))])])],
-      providers: [DATEPICKER_VALUE_ACCESSOR, DatePickerStyle],
+      providers: [SELECTBUTTON_VALUE_ACCESSOR],
       changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      },
+      styles: ['@layer primeng{.p-button{margin:0;display:inline-flex;cursor:pointer;-webkit-user-select:none;user-select:none;align-items:center;vertical-align:bottom;text-align:center;overflow:hidden;position:relative}.p-button-label{flex:1 1 auto}.p-button-icon-right{order:1}.p-button:disabled{cursor:default;pointer-events:none}.p-button-icon-only{justify-content:center}.p-button-icon-only:after{content:"p";visibility:hidden;clip:rect(0 0 0 0);width:0}.p-button-vertical{flex-direction:column}.p-button-icon-bottom{order:2}.p-button-group .p-button{margin:0}.p-button-group .p-button:focus,.p-button-group p-button:focus .p-button,.p-buttonset .p-button:focus,.p-buttonset p-button:focus .p-button{position:relative;z-index:1}.p-button-group .p-button:not(:last-child),.p-button-group .p-button:not(:last-child):hover,.p-button-group p-button:not(:last-child) .p-button,.p-button-group p-button:not(:last-child) .p-button:hover,.p-buttonset .p-button:not(:last-child),.p-buttonset .p-button:not(:last-child):hover,.p-buttonset p-button:not(:last-child) .p-button,.p-buttonset p-button:not(:last-child) .p-button:hover{border-right:0 none}.p-button-group .p-button:not(:first-of-type):not(:last-of-type),.p-button-group p-button:not(:first-of-type):not(:last-of-type) .p-button,.p-buttonset .p-button:not(:first-of-type):not(:last-of-type),.p-buttonset p-button:not(:first-of-type):not(:last-of-type) .p-button{border-radius:0}.p-button-group .p-button:first-of-type:not(:only-of-type),.p-button-group p-button:first-of-type:not(:only-of-type) .p-button,.p-buttonset .p-button:first-of-type:not(:only-of-type),.p-buttonset p-button:first-of-type:not(:only-of-type) .p-button{border-top-right-radius:0;border-bottom-right-radius:0}.p-button-group .p-button:last-of-type:not(:only-of-type),.p-button-group p-button:last-of-type:not(:only-of-type) .p-button,.p-buttonset .p-button:last-of-type:not(:only-of-type),.p-buttonset p-button:last-of-type:not(:only-of-type) .p-button{border-top-left-radius:0;border-bottom-left-radius:0}p-button[iconpos=right] spinnericon{order:1}}\n']
     }]
   }], () => [{
-    type: NgZone
-  }, {
-    type: OverlayService
+    type: ChangeDetectorRef
   }], {
-    iconDisplay: [{
+    options: [{
       type: Input
+    }],
+    optionLabel: [{
+      type: Input
+    }],
+    optionValue: [{
+      type: Input
+    }],
+    optionDisabled: [{
+      type: Input
+    }],
+    unselectable: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }],
+    tabindex: [{
+      type: Input,
+      args: [{
+        transform: numberAttribute
+      }]
+    }],
+    multiple: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
+    }],
+    allowEmpty: [{
+      type: Input,
+      args: [{
+        transform: booleanAttribute
+      }]
     }],
     style: [{
       type: Input
@@ -5684,28 +1282,7 @@ var DatePicker = class _DatePicker extends BaseComponent {
     styleClass: [{
       type: Input
     }],
-    inputStyle: [{
-      type: Input
-    }],
-    inputId: [{
-      type: Input
-    }],
-    name: [{
-      type: Input
-    }],
-    inputStyleClass: [{
-      type: Input
-    }],
-    placeholder: [{
-      type: Input
-    }],
     ariaLabelledBy: [{
-      type: Input
-    }],
-    ariaLabel: [{
-      type: Input
-    }],
-    iconAriaLabel: [{
       type: Input
     }],
     disabled: [{
@@ -5714,154 +1291,7 @@ var DatePicker = class _DatePicker extends BaseComponent {
         transform: booleanAttribute
       }]
     }],
-    dateFormat: [{
-      type: Input
-    }],
-    multipleSeparator: [{
-      type: Input
-    }],
-    rangeSeparator: [{
-      type: Input
-    }],
-    inline: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    showOtherMonths: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    selectOtherMonths: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    showIcon: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    fluid: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    icon: [{
-      type: Input
-    }],
-    appendTo: [{
-      type: Input
-    }],
-    readonlyInput: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    shortYearCutoff: [{
-      type: Input
-    }],
-    monthNavigator: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    yearNavigator: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    hourFormat: [{
-      type: Input
-    }],
-    timeOnly: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    stepHour: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    stepMinute: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    stepSecond: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    showSeconds: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    required: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    showOnFocus: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    showWeek: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    startWeekFromFirstDayOfYear: [{
-      type: Input
-    }],
-    showClear: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    dataType: [{
-      type: Input
-    }],
-    selectionMode: [{
-      type: Input
-    }],
-    maxDateCount: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    showButtonBar: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    todayButtonStyleClass: [{
-      type: Input
-    }],
-    clearButtonStyleClass: [{
+    dataKey: [{
       type: Input
     }],
     autofocus: [{
@@ -5870,556 +1300,256 @@ var DatePicker = class _DatePicker extends BaseComponent {
         transform: booleanAttribute
       }]
     }],
-    autoZIndex: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    baseZIndex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    panelStyleClass: [{
-      type: Input
-    }],
-    panelStyle: [{
-      type: Input
-    }],
-    keepInvalid: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    hideOnDateTimeSelect: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    touchUI: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    timeSeparator: [{
-      type: Input
-    }],
-    focusTrap: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    showTransitionOptions: [{
-      type: Input
-    }],
-    hideTransitionOptions: [{
-      type: Input
-    }],
-    tabindex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    variant: [{
-      type: Input
-    }],
-    size: [{
-      type: Input
-    }],
-    minDate: [{
-      type: Input
-    }],
-    maxDate: [{
-      type: Input
-    }],
-    disabledDates: [{
-      type: Input
-    }],
-    disabledDays: [{
-      type: Input
-    }],
-    yearRange: [{
-      type: Input
-    }],
-    showTime: [{
-      type: Input
-    }],
-    responsiveOptions: [{
-      type: Input
-    }],
-    numberOfMonths: [{
-      type: Input
-    }],
-    firstDayOfWeek: [{
-      type: Input
-    }],
-    locale: [{
-      type: Input
-    }],
-    view: [{
-      type: Input
-    }],
-    defaultDate: [{
-      type: Input
-    }],
-    onFocus: [{
+    onOptionClick: [{
       type: Output
     }],
-    onBlur: [{
+    onChange: [{
       type: Output
     }],
-    onClose: [{
-      type: Output
-    }],
-    onSelect: [{
-      type: Output
-    }],
-    onClear: [{
-      type: Output
-    }],
-    onInput: [{
-      type: Output
-    }],
-    onTodayClick: [{
-      type: Output
-    }],
-    onClearClick: [{
-      type: Output
-    }],
-    onMonthChange: [{
-      type: Output
-    }],
-    onYearChange: [{
-      type: Output
-    }],
-    onClickOutside: [{
-      type: Output
-    }],
-    onShow: [{
-      type: Output
-    }],
-    containerViewChild: [{
+    container: [{
       type: ViewChild,
-      args: ["container", {
-        static: false
-      }]
+      args: ["container"]
     }],
-    inputfieldViewChild: [{
-      type: ViewChild,
-      args: ["inputfield", {
-        static: false
-      }]
-    }],
-    content: [{
-      type: ViewChild,
-      args: ["contentWrapper", {
-        static: false
-      }]
-    }],
-    dateTemplate: [{
+    itemTemplate: [{
       type: ContentChild,
-      args: ["date", {
-        descendants: false
-      }]
-    }],
-    headerTemplate: [{
-      type: ContentChild,
-      args: ["header", {
-        descendants: false
-      }]
-    }],
-    footerTemplate: [{
-      type: ContentChild,
-      args: ["footer", {
-        descendants: false
-      }]
-    }],
-    disabledDateTemplate: [{
-      type: ContentChild,
-      args: ["disabledDate", {
-        descendants: false
-      }]
-    }],
-    decadeTemplate: [{
-      type: ContentChild,
-      args: ["decade", {
-        descendants: false
-      }]
-    }],
-    previousIconTemplate: [{
-      type: ContentChild,
-      args: ["previousicon", {
-        descendants: false
-      }]
-    }],
-    nextIconTemplate: [{
-      type: ContentChild,
-      args: ["nexticon", {
-        descendants: false
-      }]
-    }],
-    triggerIconTemplate: [{
-      type: ContentChild,
-      args: ["triggericon", {
-        descendants: false
-      }]
-    }],
-    clearIconTemplate: [{
-      type: ContentChild,
-      args: ["clearicon", {
-        descendants: false
-      }]
-    }],
-    decrementIconTemplate: [{
-      type: ContentChild,
-      args: ["decrementicon", {
-        descendants: false
-      }]
-    }],
-    incrementIconTemplate: [{
-      type: ContentChild,
-      args: ["incrementicon", {
-        descendants: false
-      }]
-    }],
-    inputIconTemplate: [{
-      type: ContentChild,
-      args: ["inputicon", {
-        descendants: false
-      }]
-    }],
-    templates: [{
-      type: ContentChildren,
       args: [PrimeTemplate]
     }]
   });
 })();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(DatePicker, {
-    className: "DatePicker"
-  });
-})();
-var DatePickerModule = class _DatePickerModule {
-  static ɵfac = function DatePickerModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _DatePickerModule)();
+var SelectButtonModule = class _SelectButtonModule {
+  static ɵfac = function SelectButtonModule_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _SelectButtonModule)();
   };
   static ɵmod = ɵɵdefineNgModule({
-    type: _DatePickerModule
+    type: _SelectButtonModule,
+    declarations: [SelectButton],
+    imports: [CommonModule, RippleModule, SharedModule, AutoFocusModule],
+    exports: [SelectButton, SharedModule]
   });
   static ɵinj = ɵɵdefineInjector({
-    imports: [DatePicker, SharedModule, SharedModule]
+    imports: [CommonModule, RippleModule, SharedModule, AutoFocusModule, SharedModule]
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DatePickerModule, [{
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SelectButtonModule, [{
     type: NgModule,
     args: [{
-      imports: [DatePicker, SharedModule],
-      exports: [DatePicker, SharedModule]
+      imports: [CommonModule, RippleModule, SharedModule, AutoFocusModule],
+      exports: [SelectButton, SharedModule],
+      declarations: [SelectButton]
     }]
   }], null, null);
 })();
-(function() {
-  (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(DatePickerModule, {
-    imports: [DatePicker, SharedModule],
-    exports: [DatePicker, SharedModule]
-  });
-})();
 
-// node_modules/primeng/fesm2022/primeng-checkbox.mjs
-var theme2 = ({
-  dt
-}) => `
-.p-checkbox {
-    position: relative;
-    display: inline-flex;
-    user-select: none;
-    vertical-align: bottom;
-    width: ${dt("checkbox.width")};
-    height: ${dt("checkbox.height")};
-}
-
-.p-checkbox-input {
-    cursor: pointer;
-    appearance: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    z-index: 1;
-    outline: 0 none;
-    border: 1px solid transparent;
-    border-radius: ${dt("checkbox.border.radius")};
-}
-
-.p-checkbox-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: ${dt("checkbox.border.radius")};
-    border: 1px solid ${dt("checkbox.border.color")};
-    background: ${dt("checkbox.background")};
-    width: ${dt("checkbox.width")};
-    height: ${dt("checkbox.height")};
-    transition: background ${dt("checkbox.transition.duration")}, color ${dt("checkbox.transition.duration")}, border-color ${dt("checkbox.transition.duration")}, box-shadow ${dt("checkbox.transition.duration")}, outline-color ${dt("checkbox.transition.duration")};
-    outline-color: transparent;
-    box-shadow: ${dt("checkbox.shadow")};
-}
-
-.p-checkbox-icon {
-    transition-duration: ${dt("checkbox.transition.duration")};
-    color: ${dt("checkbox.icon.color")};
-    font-size: ${dt("checkbox.icon.size")};
-    width: ${dt("checkbox.icon.size")};
-    height: ${dt("checkbox.icon.size")};
-}
-
-.p-checkbox:not(.p-disabled):has(.p-checkbox-input:hover) .p-checkbox-box {
-    border-color: ${dt("checkbox.hover.border.color")};
-}
-
-.p-checkbox-checked .p-checkbox-box {
-    border-color: ${dt("checkbox.checked.border.color")};
-    background: ${dt("checkbox.checked.background")};
-}
-
-.p-checkbox-checked .p-checkbox-icon {
-    color: ${dt("checkbox.icon.checked.color")};
-}
-
-.p-checkbox-checked:not(.p-disabled):has(.p-checkbox-input:hover) .p-checkbox-box {
-    background: ${dt("checkbox.checked.hover.background")};
-    border-color: ${dt("checkbox.checked.hover.border.color")};
-}
-
-.p-checkbox-checked:not(.p-disabled):has(.p-checkbox-input:hover) .p-checkbox-icon {
-    color: ${dt("checkbox.icon.checked.hover.color")};
-}
-
-.p-checkbox:not(.p-disabled):has(.p-checkbox-input:focus-visible) .p-checkbox-box {
-    border-color: ${dt("checkbox.focus.border.color")};
-    box-shadow: ${dt("checkbox.focus.ring.shadow")};
-    outline: ${dt("checkbox.focus.ring.width")} ${dt("checkbox.focus.ring.style")} ${dt("checkbox.focus.ring.color")};
-    outline-offset: ${dt("checkbox.focus.ring.offset")};
-}
-
-.p-checkbox-checked:not(.p-disabled):has(.p-checkbox-input:focus-visible) .p-checkbox-box {
-    border-color: ${dt("checkbox.checked.focus.border.color")};
-}
-
-.p-checkbox.ng-invalid.ng-dirty > .p-checkbox-box {
-    border-color: ${dt("checkbox.invalid.border.color")};
-}
-
-.p-checkbox.p-variant-filled .p-checkbox-box {
-    background: ${dt("checkbox.filled.background")};
-}
-
-.p-checkbox-checked.p-variant-filled .p-checkbox-box {
-    background: ${dt("checkbox.checked.background")};
-}
-
-.p-checkbox-checked.p-variant-filled:not(.p-disabled):has(.p-checkbox-input:hover) .p-checkbox-box {
-    background: ${dt("checkbox.checked.hover.background")};
-}
-
-.p-checkbox.p-disabled {
-    opacity: 1;
-}
-
-.p-checkbox.p-disabled .p-checkbox-box {
-    background: ${dt("checkbox.disabled.background")};
-    border-color: ${dt("checkbox.checked.disabled.border.color")};
-}
-
-.p-checkbox.p-disabled .p-checkbox-box .p-checkbox-icon {
-    color: ${dt("checkbox.icon.disabled.color")};
-}
-
-.p-checkbox-sm,
-.p-checkbox-sm .p-checkbox-box {
-    width: ${dt("checkbox.sm.width")};
-    height: ${dt("checkbox.sm.height")};
-}
-
-.p-checkbox-sm .p-checkbox-icon {
-    font-size: ${dt("checkbox.icon.sm.size")};
-    width: ${dt("checkbox.icon.sm.size")};
-    height: ${dt("checkbox.icon.sm.size")};
-}
-
-.p-checkbox-lg,
-.p-checkbox-lg .p-checkbox-box {
-    width: ${dt("checkbox.lg.width")};
-    height: ${dt("checkbox.lg.height")};
-}
-
-.p-checkbox-lg .p-checkbox-icon {
-    font-size: ${dt("checkbox.icon.lg.size")};
-    width: ${dt("checkbox.icon.lg.size")};
-    height: ${dt("checkbox.icon.lg.size")};
-}
-`;
-var classes2 = {
-  root: ({
-    instance,
-    props
-  }) => ["p-checkbox p-component", {
-    "p-checkbox-checked": instance.checked,
-    "p-disabled": props.disabled,
-    "p-invalid": props.invalid,
-    "p-variant-filled": props.variant ? props.variant === "filled" : instance.config.inputStyle === "filled" || instance.config.inputVariant === "filled"
-  }],
-  box: "p-checkbox-box",
-  input: "p-checkbox-input",
-  icon: "p-checkbox-icon"
-};
-var CheckboxStyle = class _CheckboxStyle extends BaseStyle {
-  name = "checkbox";
-  theme = theme2;
-  classes = classes2;
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵCheckboxStyle_BaseFactory;
-    return function CheckboxStyle_Factory(__ngFactoryType__) {
-      return (ɵCheckboxStyle_BaseFactory || (ɵCheckboxStyle_BaseFactory = ɵɵgetInheritedFactory(_CheckboxStyle)))(__ngFactoryType__ || _CheckboxStyle);
-    };
-  })();
-  static ɵprov = ɵɵdefineInjectable({
-    token: _CheckboxStyle,
-    factory: _CheckboxStyle.ɵfac
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CheckboxStyle, [{
-    type: Injectable
-  }], null, null);
-})();
-var CheckboxClasses;
-(function(CheckboxClasses2) {
-  CheckboxClasses2["root"] = "p-checkbox";
-  CheckboxClasses2["box"] = "p-checkbox-box";
-  CheckboxClasses2["input"] = "p-checkbox-input";
-  CheckboxClasses2["icon"] = "p-checkbox-icon";
-})(CheckboxClasses || (CheckboxClasses = {}));
-var _c02 = ["checkboxicon"];
-var _c110 = ["input"];
-var _c26 = () => ({
-  "p-checkbox-input": true
+// node_modules/primeng/fesm2022/primeng-tristatecheckbox.mjs
+var _c02 = (a0, a1, a2) => ({
+  "p-checkbox p-component": true,
+  "p-checkbox-disabled": a0,
+  "p-checkbox-focused": a1,
+  "p-variant-filled": a2
 });
-var _c32 = (a0) => ({
-  checked: a0,
-  class: "p-checkbox-icon"
+var _c12 = (a0, a1, a2) => ({
+  "p-highlight": a0,
+  "p-disabled": a1,
+  "p-focus": a2
 });
-function Checkbox_ng_container_4_ng_container_1_span_1_Template(rf, ctx) {
+var _c22 = (a0, a1, a2) => ({
+  "p-checkbox-label-active": a0,
+  "p-disabled": a1,
+  "p-checkbox-label-focus": a2
+});
+function TriStateCheckbox_ng_container_5_span_1_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelement(0, "span", 8);
   }
   if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵproperty("ngClass", ctx_r1.checkboxIcon);
-    ɵɵattribute("data-pc-section", "icon");
+    const ctx_r2 = ɵɵnextContext(2);
+    ɵɵproperty("ngClass", ctx_r2.checkboxTrueIcon);
+    ɵɵattribute("data-pc-section", "checkIcon");
   }
 }
-function Checkbox_ng_container_4_ng_container_1_CheckIcon_2_Template(rf, ctx) {
+function TriStateCheckbox_ng_container_5_ng_container_2_CheckIcon_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "CheckIcon", 9);
+    ɵɵelement(0, "CheckIcon", 11);
   }
   if (rf & 2) {
     ɵɵproperty("styleClass", "p-checkbox-icon");
-    ɵɵattribute("data-pc-section", "icon");
+    ɵɵattribute("data-pc-section", "checkIcon");
   }
 }
-function Checkbox_ng_container_4_ng_container_1_Template(rf, ctx) {
+function TriStateCheckbox_ng_container_5_ng_container_2_span_2_1_ng_template_0_Template(rf, ctx) {
+}
+function TriStateCheckbox_ng_container_5_ng_container_2_span_2_1_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵtemplate(0, TriStateCheckbox_ng_container_5_ng_container_2_span_2_1_ng_template_0_Template, 0, 0, "ng-template");
+  }
+}
+function TriStateCheckbox_ng_container_5_ng_container_2_span_2_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵelementStart(0, "span", 12);
+    ɵɵtemplate(1, TriStateCheckbox_ng_container_5_ng_container_2_span_2_1_Template, 1, 0, null, 13);
+    ɵɵelementEnd();
+  }
+  if (rf & 2) {
+    const ctx_r2 = ɵɵnextContext(3);
+    ɵɵattribute("data-pc-section", "checkIcon");
+    ɵɵadvance();
+    ɵɵproperty("ngTemplateOutlet", ctx_r2.checkIconTemplate);
+  }
+}
+function TriStateCheckbox_ng_container_5_ng_container_2_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, Checkbox_ng_container_4_ng_container_1_span_1_Template, 1, 2, "span", 7)(2, Checkbox_ng_container_4_ng_container_1_CheckIcon_2_Template, 1, 2, "CheckIcon", 6);
+    ɵɵtemplate(1, TriStateCheckbox_ng_container_5_ng_container_2_CheckIcon_1_Template, 1, 2, "CheckIcon", 9)(2, TriStateCheckbox_ng_container_5_ng_container_2_span_2_Template, 2, 2, "span", 10);
     ɵɵelementContainerEnd();
   }
   if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(2);
+    const ctx_r2 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.checkboxIcon);
+    ɵɵproperty("ngIf", !ctx_r2.checkIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r1.checkboxIcon);
+    ɵɵproperty("ngIf", ctx_r2.checkIconTemplate);
   }
 }
-function Checkbox_ng_container_4_MinusIcon_2_Template(rf, ctx) {
+function TriStateCheckbox_ng_container_5_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "MinusIcon", 9);
+    ɵɵelementContainerStart(0);
+    ɵɵtemplate(1, TriStateCheckbox_ng_container_5_span_1_Template, 1, 2, "span", 7)(2, TriStateCheckbox_ng_container_5_ng_container_2_Template, 3, 2, "ng-container", 5);
+    ɵɵelementContainerEnd();
+  }
+  if (rf & 2) {
+    const ctx_r2 = ɵɵnextContext();
+    ɵɵadvance();
+    ɵɵproperty("ngIf", ctx_r2.checkboxTrueIcon);
+    ɵɵadvance();
+    ɵɵproperty("ngIf", !ctx_r2.checkboxTrueIcon);
+  }
+}
+function TriStateCheckbox_ng_container_6_span_1_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵelement(0, "span", 8);
+  }
+  if (rf & 2) {
+    const ctx_r2 = ɵɵnextContext(2);
+    ɵɵproperty("ngClass", ctx_r2.checkboxFalseIcon);
+    ɵɵattribute("data-pc-section", "uncheckIcon");
+  }
+}
+function TriStateCheckbox_ng_container_6_ng_container_2_TimesIcon_1_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵelement(0, "TimesIcon", 11);
   }
   if (rf & 2) {
     ɵɵproperty("styleClass", "p-checkbox-icon");
-    ɵɵattribute("data-pc-section", "icon");
+    ɵɵattribute("data-pc-section", "uncheckIcon");
   }
 }
-function Checkbox_ng_container_4_Template(rf, ctx) {
+function TriStateCheckbox_ng_container_6_ng_container_2_span_2_1_ng_template_0_Template(rf, ctx) {
+}
+function TriStateCheckbox_ng_container_6_ng_container_2_span_2_1_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵtemplate(0, TriStateCheckbox_ng_container_6_ng_container_2_span_2_1_ng_template_0_Template, 0, 0, "ng-template");
+  }
+}
+function TriStateCheckbox_ng_container_6_ng_container_2_span_2_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵelementStart(0, "span", 12);
+    ɵɵtemplate(1, TriStateCheckbox_ng_container_6_ng_container_2_span_2_1_Template, 1, 0, null, 13);
+    ɵɵelementEnd();
+  }
+  if (rf & 2) {
+    const ctx_r2 = ɵɵnextContext(3);
+    ɵɵattribute("data-pc-section", "uncheckIcon");
+    ɵɵadvance();
+    ɵɵproperty("ngTemplateOutlet", ctx_r2.uncheckIconTemplate);
+  }
+}
+function TriStateCheckbox_ng_container_6_ng_container_2_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, Checkbox_ng_container_4_ng_container_1_Template, 3, 2, "ng-container", 4)(2, Checkbox_ng_container_4_MinusIcon_2_Template, 1, 2, "MinusIcon", 6);
+    ɵɵtemplate(1, TriStateCheckbox_ng_container_6_ng_container_2_TimesIcon_1_Template, 1, 2, "TimesIcon", 9)(2, TriStateCheckbox_ng_container_6_ng_container_2_span_2_Template, 2, 2, "span", 10);
     ɵɵelementContainerEnd();
   }
   if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext();
+    const ctx_r2 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1.checked);
+    ɵɵproperty("ngIf", !ctx_r2.uncheckIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r1._indeterminate());
+    ɵɵproperty("ngIf", ctx_r2.uncheckIconTemplate);
   }
 }
-function Checkbox_5_ng_template_0_Template(rf, ctx) {
-}
-function Checkbox_5_Template(rf, ctx) {
+function TriStateCheckbox_ng_container_6_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Checkbox_5_ng_template_0_Template, 0, 0, "ng-template");
+    ɵɵelementContainerStart(0);
+    ɵɵtemplate(1, TriStateCheckbox_ng_container_6_span_1_Template, 1, 2, "span", 7)(2, TriStateCheckbox_ng_container_6_ng_container_2_Template, 3, 2, "ng-container", 5);
+    ɵɵelementContainerEnd();
+  }
+  if (rf & 2) {
+    const ctx_r2 = ɵɵnextContext();
+    ɵɵadvance();
+    ɵɵproperty("ngIf", ctx_r2.checkboxFalseIcon);
+    ɵɵadvance();
+    ɵɵproperty("ngIf", !ctx_r2.checkboxFalseIcon);
   }
 }
-var CHECKBOX_VALUE_ACCESSOR = {
+function TriStateCheckbox_label_7_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r4 = ɵɵgetCurrentView();
+    ɵɵelementStart(0, "label", 14);
+    ɵɵlistener("click", function TriStateCheckbox_label_7_Template_label_click_0_listener($event) {
+      ɵɵrestoreView(_r4);
+      const ctx_r2 = ɵɵnextContext();
+      const input_r2 = ɵɵreference(3);
+      return ɵɵresetView(ctx_r2.onClick($event, input_r2));
+    });
+    ɵɵtext(1);
+    ɵɵelementEnd();
+  }
+  if (rf & 2) {
+    const ctx_r2 = ɵɵnextContext();
+    ɵɵproperty("ngClass", ɵɵpureFunction3(3, _c22, ctx_r2.value != null, ctx_r2.disabled, ctx_r2.focused));
+    ɵɵattribute("for", ctx_r2.inputId);
+    ɵɵadvance();
+    ɵɵtextInterpolate(ctx_r2.label);
+  }
+}
+var TRISTATECHECKBOX_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => Checkbox),
+  useExisting: forwardRef(() => TriStateCheckbox),
   multi: true
 };
-var Checkbox = class _Checkbox extends BaseComponent {
-  /**
-   * Value of the checkbox.
-   * @group Props
-   */
-  value;
-  /**
-   * Name of the checkbox group.
-   * @group Props
-   */
-  name;
+var TriStateCheckbox = class _TriStateCheckbox {
+  cd;
+  config;
+  constructor(cd, config) {
+    this.cd = cd;
+    this.config = config;
+  }
   /**
    * When present, it specifies that the element should be disabled.
    * @group Props
    */
   disabled;
   /**
-   * Allows to select a boolean value instead of multiple values.
+   * Name of the component.
    * @group Props
    */
-  binary;
+  name;
+  /**
+   * Defines a string that labels the input for accessibility.
+   * @group Props
+   */
+  ariaLabel;
   /**
    * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
    * @group Props
    */
   ariaLabelledBy;
   /**
-   * Used to define a string that labels the input element.
+   * Specifies the input variant of the component.
    * @group Props
    */
-  ariaLabel;
+  variant = "outlined";
   /**
    * Index of the element in tabbing order.
    * @group Props
@@ -6436,183 +1566,91 @@ var Checkbox = class _Checkbox extends BaseComponent {
    */
   style;
   /**
-   * Inline style of the input element.
-   * @group Props
-   */
-  inputStyle;
-  /**
    * Style class of the component.
    * @group Props
    */
   styleClass;
   /**
-   * Style class of the input element.
+   * Label of the checkbox.
    * @group Props
    */
-  inputClass;
-  /**
-   * When present, it specifies input state as indeterminate.
-   * @group Props
-   */
-  indeterminate = false;
-  /**
-   * Defines the size of the component.
-   * @group Props
-   */
-  size;
-  /**
-   * Form control value.
-   * @group Props
-   */
-  formControl;
-  /**
-   * Icon class of the checkbox icon.
-   * @group Props
-   */
-  checkboxIcon;
+  label;
   /**
    * When present, it specifies that the component cannot be edited.
    * @group Props
    */
   readonly;
   /**
-   * When present, it specifies that checkbox must be checked before submitting the form.
+   * Specifies the icon for checkbox true value.
    * @group Props
    */
-  required;
+  checkboxTrueIcon;
+  /**
+   * Specifies the icon for checkbox false value.
+   * @group Props
+   */
+  checkboxFalseIcon;
   /**
    * When present, it specifies that the component should automatically get focus on load.
    * @group Props
    */
   autofocus;
   /**
-   * Value in checked state.
-   * @group Props
-   */
-  trueValue = true;
-  /**
-   * Value in unchecked state.
-   * @group Props
-   */
-  falseValue = false;
-  /**
-   * Specifies the input variant of the component.
-   * @group Props
-   */
-  variant = "outlined";
-  /**
    * Callback to invoke on value change.
-   * @param {CheckboxChangeEvent} event - Custom value change event.
+   * @param {TriStateCheckboxChangeEvent} event - Custom change event.
    * @group Emits
    */
   onChange = new EventEmitter();
-  /**
-   * Callback to invoke when the receives focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onFocus = new EventEmitter();
-  /**
-   * Callback to invoke when the loses focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onBlur = new EventEmitter();
-  inputViewChild;
-  get checked() {
-    return this._indeterminate() ? false : this.binary ? this.model === this.trueValue : contains(this.value, this.model);
-  }
-  get containerClass() {
-    return {
-      "p-checkbox p-component": true,
-      "p-checkbox-checked p-highlight": this.checked,
-      "p-disabled": this.disabled,
-      "p-variant-filled": this.variant === "filled" || this.config.inputStyle() === "filled" || this.config.inputVariant() === "filled",
-      "p-checkbox-sm p-inputfield-sm": this.size === "small",
-      "p-checkbox-lg p-inputfield-lg": this.size === "large"
-    };
-  }
-  _indeterminate = signal(void 0);
-  /**
-   * The template of the checkbox icon.
-   * @group Templates
-   */
-  checkboxIconTemplate;
   templates;
-  _checkboxIconTemplate;
-  model;
+  checkIconTemplate;
+  uncheckIconTemplate;
+  focused;
+  value;
   onModelChange = () => {
   };
   onModelTouched = () => {
   };
-  focused = false;
-  _componentStyle = inject(CheckboxStyle);
+  onClick(event, input) {
+    if (!this.disabled && !this.readonly) {
+      this.toggle(event);
+      this.focused = true;
+      input.focus();
+    }
+  }
+  onKeyDown(event) {
+    if (event.key === "Enter") {
+      this.toggle(event);
+      event.preventDefault();
+    }
+  }
+  toggle(event) {
+    if (this.value == null || this.value == void 0) this.value = true;
+    else if (this.value == true) this.value = false;
+    else if (this.value == false) this.value = null;
+    this.onModelChange(this.value);
+    this.onChange.emit({
+      originalEvent: event,
+      value: this.value
+    });
+  }
   ngAfterContentInit() {
     this.templates.forEach((item) => {
       switch (item.getType()) {
-        case "icon":
-          this._checkboxIconTemplate = item.template;
+        case "checkicon":
+          this.checkIconTemplate = item.template;
           break;
-        case "checkboxicon":
-          this._checkboxIconTemplate = item.template;
+        case "uncheckicon":
+          this.uncheckIconTemplate = item.template;
           break;
       }
     });
   }
-  ngOnChanges(changes) {
-    super.ngOnChanges(changes);
-    if (changes.indeterminate) {
-      this._indeterminate.set(changes.indeterminate.currentValue);
-    }
-  }
-  updateModel(event2) {
-    let newModelValue;
-    const selfControl = this.injector.get(NgControl, null, {
-      optional: true,
-      self: true
-    });
-    const currentModelValue = selfControl && !this.formControl ? selfControl.value : this.model;
-    if (!this.binary) {
-      if (this.checked || this._indeterminate()) newModelValue = currentModelValue.filter((val) => !equals(val, this.value));
-      else newModelValue = currentModelValue ? [...currentModelValue, this.value] : [this.value];
-      this.onModelChange(newModelValue);
-      this.model = newModelValue;
-      if (this.formControl) {
-        this.formControl.setValue(newModelValue);
-      }
-    } else {
-      newModelValue = this._indeterminate() ? this.trueValue : this.checked ? this.falseValue : this.trueValue;
-      this.model = newModelValue;
-      this.onModelChange(newModelValue);
-    }
-    if (this._indeterminate()) {
-      this._indeterminate.set(false);
-    }
-    this.onChange.emit({
-      checked: newModelValue,
-      originalEvent: event2
-    });
-  }
-  handleChange(event2) {
-    if (!this.readonly) {
-      this.updateModel(event2);
-    }
-  }
-  onInputFocus(event2) {
+  onFocus() {
     this.focused = true;
-    this.onFocus.emit(event2);
   }
-  onInputBlur(event2) {
+  onBlur() {
     this.focused = false;
-    this.onBlur.emit(event2);
     this.onModelTouched();
-  }
-  focus() {
-    this.inputViewChild.nativeElement.focus();
-  }
-  writeValue(model) {
-    this.model = model;
-    this.cd.markForCheck();
   }
   registerOnChange(fn) {
     this.onModelChange = fn;
@@ -6620,183 +1658,187 @@ var Checkbox = class _Checkbox extends BaseComponent {
   registerOnTouched(fn) {
     this.onModelTouched = fn;
   }
-  setDisabledState(val) {
-    setTimeout(() => {
-      this.disabled = val;
-      this.cd.markForCheck();
-    });
+  writeValue(value) {
+    this.value = value;
+    this.cd.markForCheck();
   }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵCheckbox_BaseFactory;
-    return function Checkbox_Factory(__ngFactoryType__) {
-      return (ɵCheckbox_BaseFactory || (ɵCheckbox_BaseFactory = ɵɵgetInheritedFactory(_Checkbox)))(__ngFactoryType__ || _Checkbox);
-    };
-  })();
+  setDisabledState(disabled) {
+    this.disabled = disabled;
+    this.cd.markForCheck();
+  }
+  static ɵfac = function TriStateCheckbox_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _TriStateCheckbox)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
+  };
   static ɵcmp = ɵɵdefineComponent({
-    type: _Checkbox,
-    selectors: [["p-checkbox"], ["p-checkBox"], ["p-check-box"]],
-    contentQueries: function Checkbox_ContentQueries(rf, ctx, dirIndex) {
+    type: _TriStateCheckbox,
+    selectors: [["p-triStateCheckbox"]],
+    contentQueries: function TriStateCheckbox_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, _c02, 4);
         ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.checkboxIconTemplate = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
       }
     },
-    viewQuery: function Checkbox_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c110, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
-      }
-    },
+    hostAttrs: [1, "p-element"],
     inputs: {
-      value: "value",
-      name: "name",
       disabled: [2, "disabled", "disabled", booleanAttribute],
-      binary: [2, "binary", "binary", booleanAttribute],
-      ariaLabelledBy: "ariaLabelledBy",
+      name: "name",
       ariaLabel: "ariaLabel",
+      ariaLabelledBy: "ariaLabelledBy",
+      variant: "variant",
       tabindex: [2, "tabindex", "tabindex", numberAttribute],
       inputId: "inputId",
       style: "style",
-      inputStyle: "inputStyle",
       styleClass: "styleClass",
-      inputClass: "inputClass",
-      indeterminate: [2, "indeterminate", "indeterminate", booleanAttribute],
-      size: "size",
-      formControl: "formControl",
-      checkboxIcon: "checkboxIcon",
+      label: "label",
       readonly: [2, "readonly", "readonly", booleanAttribute],
-      required: [2, "required", "required", booleanAttribute],
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute],
-      trueValue: "trueValue",
-      falseValue: "falseValue",
-      variant: "variant"
+      checkboxTrueIcon: "checkboxTrueIcon",
+      checkboxFalseIcon: "checkboxFalseIcon",
+      autofocus: [2, "autofocus", "autofocus", booleanAttribute]
     },
     outputs: {
-      onChange: "onChange",
-      onFocus: "onFocus",
-      onBlur: "onBlur"
+      onChange: "onChange"
     },
-    standalone: true,
-    features: [ɵɵProvidersFeature([CHECKBOX_VALUE_ACCESSOR, CheckboxStyle]), ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
-    decls: 6,
-    vars: 29,
-    consts: [["input", ""], [3, "ngClass"], ["type", "checkbox", 3, "focus", "blur", "change", "value", "checked", "disabled", "readonly", "ngClass"], [1, "p-checkbox-box"], [4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "styleClass", 4, "ngIf"], ["class", "p-checkbox-icon", 3, "ngClass", 4, "ngIf"], [1, "p-checkbox-icon", 3, "ngClass"], [3, "styleClass"]],
-    template: function Checkbox_Template(rf, ctx) {
+    features: [ɵɵProvidersFeature([TRISTATECHECKBOX_VALUE_ACCESSOR]), ɵɵInputTransformsFeature],
+    decls: 8,
+    vars: 28,
+    consts: [["input", ""], [3, "click", "ngStyle", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", "inputmode", "none", "pAutoFocus", "", 3, "keydown", "focus", "blur", "name", "readonly", "disabled", "autofocus"], ["role", "checkbox", 1, "p-checkbox-box", 3, "ngClass"], [4, "ngIf"], ["class", "p-checkbox-label", 3, "ngClass", "click", 4, "ngIf"], ["class", "p-checkbox-icon", 3, "ngClass", 4, "ngIf"], [1, "p-checkbox-icon", 3, "ngClass"], [3, "styleClass", 4, "ngIf"], ["class", "p-checkbox-icon", 4, "ngIf"], [3, "styleClass"], [1, "p-checkbox-icon"], [4, "ngTemplateOutlet"], [1, "p-checkbox-label", 3, "click", "ngClass"]],
+    template: function TriStateCheckbox_Template(rf, ctx) {
       if (rf & 1) {
         const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 1)(1, "input", 2, 0);
-        ɵɵlistener("focus", function Checkbox_Template_input_focus_1_listener($event) {
+        ɵɵelementStart(0, "div", 1);
+        ɵɵlistener("click", function TriStateCheckbox_Template_div_click_0_listener($event) {
           ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputFocus($event));
-        })("blur", function Checkbox_Template_input_blur_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputBlur($event));
-        })("change", function Checkbox_Template_input_change_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.handleChange($event));
+          const input_r2 = ɵɵreference(3);
+          return ɵɵresetView(ctx.onClick($event, input_r2));
         });
-        ɵɵelementEnd();
-        ɵɵelementStart(3, "div", 3);
-        ɵɵtemplate(4, Checkbox_ng_container_4_Template, 3, 2, "ng-container", 4)(5, Checkbox_5_Template, 1, 0, null, 5);
+        ɵɵelementStart(1, "div", 2)(2, "input", 3, 0);
+        ɵɵlistener("keydown", function TriStateCheckbox_Template_input_keydown_2_listener($event) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onKeyDown($event));
+        })("focus", function TriStateCheckbox_Template_input_focus_2_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onFocus());
+        })("blur", function TriStateCheckbox_Template_input_blur_2_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onBlur());
+        });
         ɵɵelementEnd()();
+        ɵɵelementStart(4, "div", 4);
+        ɵɵtemplate(5, TriStateCheckbox_ng_container_5_Template, 3, 2, "ng-container", 5)(6, TriStateCheckbox_ng_container_6_Template, 3, 2, "ng-container", 5);
+        ɵɵelementEnd()();
+        ɵɵtemplate(7, TriStateCheckbox_label_7_Template, 2, 7, "label", 6);
       }
       if (rf & 2) {
-        ɵɵstyleMap(ctx.style);
         ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.containerClass);
-        ɵɵattribute("data-p-highlight", ctx.checked)("data-p-checked", ctx.checked)("data-p-disabled", ctx.disabled);
+        ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction3(20, _c02, ctx.disabled, ctx.focused, ctx.variant === "filled" || ctx.config.inputStyle() === "filled"));
+        ɵɵattribute("data-pc-name", "tristatecheckbox")("data-pc-section", "root");
+        ɵɵadvance(2);
+        ɵɵproperty("name", ctx.name)("readonly", ctx.readonly)("disabled", ctx.disabled)("autofocus", ctx.autofocus);
+        ɵɵattribute("id", ctx.inputId)("tabindex", ctx.tabindex)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("data-pc-section", "hiddenInput");
+        ɵɵadvance(2);
+        ɵɵproperty("ngClass", ɵɵpureFunction3(24, _c12, ctx.value != null, ctx.disabled, ctx.focused));
+        ɵɵattribute("aria-checked", ctx.value === true);
         ɵɵadvance();
-        ɵɵstyleMap(ctx.inputStyle);
-        ɵɵclassMap(ctx.inputClass);
-        ɵɵproperty("value", ctx.value)("checked", ctx.checked)("disabled", ctx.disabled)("readonly", ctx.readonly)("ngClass", ɵɵpureFunction0(26, _c26));
-        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("tabindex", ctx.tabindex)("required", ctx.required)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel);
-        ɵɵadvance(3);
-        ɵɵproperty("ngIf", !ctx.checkboxIconTemplate && !ctx._checkboxIconTemplate);
+        ɵɵproperty("ngIf", ctx.value === true);
         ɵɵadvance();
-        ɵɵproperty("ngTemplateOutlet", ctx.checkboxIconTemplate || ctx._checkboxIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(27, _c32, ctx.checked));
+        ɵɵproperty("ngIf", ctx.value === false);
+        ɵɵadvance();
+        ɵɵproperty("ngIf", ctx.label);
       }
     },
-    dependencies: [CommonModule, NgClass, NgIf, NgTemplateOutlet, CheckIcon, MinusIcon, SharedModule],
+    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, AutoFocus, CheckIcon, TimesIcon],
     encapsulation: 2,
     changeDetection: 0
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Checkbox, [{
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TriStateCheckbox, [{
     type: Component,
     args: [{
-      selector: "p-checkbox, p-checkBox, p-check-box",
-      standalone: true,
-      imports: [CommonModule, CheckIcon, MinusIcon, SharedModule],
+      selector: "p-triStateCheckbox",
       template: `
-        <div [style]="style" [class]="styleClass" [ngClass]="containerClass" [attr.data-p-highlight]="checked" [attr.data-p-checked]="checked" [attr.data-p-disabled]="disabled">
-            <input
-                #input
-                [attr.id]="inputId"
-                type="checkbox"
-                [value]="value"
-                [attr.name]="name"
-                [checked]="checked"
-                [attr.tabindex]="tabindex"
-                [disabled]="disabled"
-                [readonly]="readonly"
-                [attr.required]="required"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                [attr.aria-label]="ariaLabel"
-                [style]="inputStyle"
-                [class]="inputClass"
-                [ngClass]="{ 'p-checkbox-input': true }"
-                (focus)="onInputFocus($event)"
-                (blur)="onInputBlur($event)"
-                (change)="handleChange($event)"
-            />
-            <div class="p-checkbox-box">
-                <ng-container *ngIf="!checkboxIconTemplate && !_checkboxIconTemplate">
-                    <ng-container *ngIf="checked">
-                        <span *ngIf="checkboxIcon" class="p-checkbox-icon" [ngClass]="checkboxIcon" [attr.data-pc-section]="'icon'"></span>
-                        <CheckIcon *ngIf="!checkboxIcon" [styleClass]="'p-checkbox-icon'" [attr.data-pc-section]="'icon'" />
+        <div
+            [ngStyle]="style"
+            [ngClass]="{ 'p-checkbox p-component': true, 'p-checkbox-disabled': disabled, 'p-checkbox-focused': focused, 'p-variant-filled': variant === 'filled' || config.inputStyle() === 'filled' }"
+            [class]="styleClass"
+            (click)="onClick($event, input)"
+            [attr.data-pc-name]="'tristatecheckbox'"
+            [attr.data-pc-section]="'root'"
+        >
+            <div class="p-hidden-accessible">
+                <input
+                    #input
+                    [attr.id]="inputId"
+                    type="checkbox"
+                    [name]="name"
+                    [attr.tabindex]="tabindex"
+                    [readonly]="readonly"
+                    [disabled]="disabled"
+                    (keydown)="onKeyDown($event)"
+                    (focus)="onFocus()"
+                    (blur)="onBlur()"
+                    [attr.aria-labelledby]="ariaLabelledBy"
+                    [attr.aria-label]="ariaLabel"
+                    inputmode="none"
+                    [attr.data-pc-section]="'hiddenInput'"
+                    pAutoFocus
+                    [autofocus]="autofocus"
+                />
+            </div>
+            <div class="p-checkbox-box" role="checkbox" [attr.aria-checked]="value === true" [ngClass]="{ 'p-highlight': value != null, 'p-disabled': disabled, 'p-focus': focused }">
+                <ng-container *ngIf="value === true">
+                    <span *ngIf="checkboxTrueIcon" [ngClass]="checkboxTrueIcon" class="p-checkbox-icon" [attr.data-pc-section]="'checkIcon'"></span>
+                    <ng-container *ngIf="!checkboxTrueIcon">
+                        <CheckIcon [styleClass]="'p-checkbox-icon'" *ngIf="!checkIconTemplate" [attr.data-pc-section]="'checkIcon'" />
+                        <span *ngIf="checkIconTemplate" class="p-checkbox-icon" [attr.data-pc-section]="'checkIcon'">
+                            <ng-template *ngTemplateOutlet="checkIconTemplate"></ng-template>
+                        </span>
                     </ng-container>
-                    <MinusIcon *ngIf="_indeterminate()" [styleClass]="'p-checkbox-icon'" [attr.data-pc-section]="'icon'" />
                 </ng-container>
-                <ng-template *ngTemplateOutlet="checkboxIconTemplate || _checkboxIconTemplate; context: { checked: checked, class: 'p-checkbox-icon' }"></ng-template>
+                <ng-container *ngIf="value === false">
+                    <span *ngIf="checkboxFalseIcon" [ngClass]="checkboxFalseIcon" class="p-checkbox-icon" [attr.data-pc-section]="'uncheckIcon'"></span>
+                    <ng-container *ngIf="!checkboxFalseIcon">
+                        <TimesIcon [styleClass]="'p-checkbox-icon'" *ngIf="!uncheckIconTemplate" [attr.data-pc-section]="'uncheckIcon'" />
+                        <span class="p-checkbox-icon" *ngIf="uncheckIconTemplate" [attr.data-pc-section]="'uncheckIcon'">
+                            <ng-template *ngTemplateOutlet="uncheckIconTemplate"></ng-template>
+                        </span>
+                    </ng-container>
+                </ng-container>
             </div>
         </div>
+        <label class="p-checkbox-label" (click)="onClick($event, input)" [ngClass]="{ 'p-checkbox-label-active': value != null, 'p-disabled': disabled, 'p-checkbox-label-focus': focused }" *ngIf="label" [attr.for]="inputId">{{ label }}</label>
     `,
-      providers: [CHECKBOX_VALUE_ACCESSOR, CheckboxStyle],
+      providers: [TRISTATECHECKBOX_VALUE_ACCESSOR],
       changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      }
     }]
-  }], null, {
-    value: [{
-      type: Input
-    }],
-    name: [{
-      type: Input
-    }],
+  }], () => [{
+    type: ChangeDetectorRef
+  }, {
+    type: PrimeNGConfig
+  }], {
     disabled: [{
       type: Input,
       args: [{
         transform: booleanAttribute
       }]
     }],
-    binary: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
+    name: [{
+      type: Input
+    }],
+    ariaLabel: [{
+      type: Input
     }],
     ariaLabelledBy: [{
       type: Input
     }],
-    ariaLabel: [{
+    variant: [{
       type: Input
     }],
     tabindex: [{
@@ -6811,28 +1853,10 @@ var Checkbox = class _Checkbox extends BaseComponent {
     style: [{
       type: Input
     }],
-    inputStyle: [{
-      type: Input
-    }],
     styleClass: [{
       type: Input
     }],
-    inputClass: [{
-      type: Input
-    }],
-    indeterminate: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    size: [{
-      type: Input
-    }],
-    formControl: [{
-      type: Input
-    }],
-    checkboxIcon: [{
+    label: [{
       type: Input
     }],
     readonly: [{
@@ -6841,11 +1865,11 @@ var Checkbox = class _Checkbox extends BaseComponent {
         transform: booleanAttribute
       }]
     }],
-    required: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
+    checkboxTrueIcon: [{
+      type: Input
+    }],
+    checkboxFalseIcon: [{
+      type: Input
     }],
     autofocus: [{
       type: Input,
@@ -6853,33 +1877,8 @@ var Checkbox = class _Checkbox extends BaseComponent {
         transform: booleanAttribute
       }]
     }],
-    trueValue: [{
-      type: Input
-    }],
-    falseValue: [{
-      type: Input
-    }],
-    variant: [{
-      type: Input
-    }],
     onChange: [{
       type: Output
-    }],
-    onFocus: [{
-      type: Output
-    }],
-    onBlur: [{
-      type: Output
-    }],
-    inputViewChild: [{
-      type: ViewChild,
-      args: ["input"]
-    }],
-    checkboxIconTemplate: [{
-      type: ContentChild,
-      args: ["checkboxicon", {
-        descendants: false
-      }]
     }],
     templates: [{
       type: ContentChildren,
@@ -6887,1522 +1886,72 @@ var Checkbox = class _Checkbox extends BaseComponent {
     }]
   });
 })();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(Checkbox, {
-    className: "Checkbox"
-  });
-})();
-var CheckboxModule = class _CheckboxModule {
-  static ɵfac = function CheckboxModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _CheckboxModule)();
+var TriStateCheckboxModule = class _TriStateCheckboxModule {
+  static ɵfac = function TriStateCheckboxModule_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _TriStateCheckboxModule)();
   };
   static ɵmod = ɵɵdefineNgModule({
-    type: _CheckboxModule
+    type: _TriStateCheckboxModule,
+    declarations: [TriStateCheckbox],
+    imports: [CommonModule, SharedModule, AutoFocusModule, CheckIcon, TimesIcon],
+    exports: [TriStateCheckbox, SharedModule]
   });
   static ɵinj = ɵɵdefineInjector({
-    imports: [Checkbox, SharedModule, SharedModule]
+    imports: [CommonModule, SharedModule, AutoFocusModule, CheckIcon, TimesIcon, SharedModule]
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CheckboxModule, [{
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TriStateCheckboxModule, [{
     type: NgModule,
     args: [{
-      imports: [Checkbox, SharedModule],
-      exports: [Checkbox, SharedModule]
+      imports: [CommonModule, SharedModule, AutoFocusModule, CheckIcon, TimesIcon],
+      exports: [TriStateCheckbox, SharedModule],
+      declarations: [TriStateCheckbox]
     }]
   }], null, null);
-})();
-(function() {
-  (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(CheckboxModule, {
-    imports: [Checkbox, SharedModule],
-    exports: [Checkbox, SharedModule]
-  });
-})();
-
-// node_modules/primeng/fesm2022/primeng-radiobutton.mjs
-var theme3 = ({
-  dt
-}) => `
-.p-radiobutton {
-    position: relative;
-    display: inline-flex;
-    user-select: none;
-    vertical-align: bottom;
-    width: ${dt("radiobutton.width")};
-    height: ${dt("radiobutton.height")};
-}
-
-.p-radiobutton-input {
-    cursor: pointer;
-    appearance: none;
-    position: absolute;
-    top: 0;
-    inset-inline-start: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    z-index: 1;
-    outline: 0 none;
-    border: 1px solid transparent;
-    border-radius: 50%;
-}
-
-.p-radiobutton-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px solid ${dt("radiobutton.border.color")};
-    background: ${dt("radiobutton.background")};
-    width: ${dt("radiobutton.width")};
-    height: ${dt("radiobutton.height")};
-    transition: background ${dt("radiobutton.transition.duration")}, color ${dt("radiobutton.transition.duration")}, border-color ${dt("radiobutton.transition.duration")}, box-shadow ${dt("radiobutton.transition.duration")}, outline-color ${dt("radiobutton.transition.duration")};
-    outline-color: transparent;
-    box-shadow: ${dt("radiobutton.shadow")};
-}
-
-.p-radiobutton-icon {
-    transition-duration: ${dt("radiobutton.transition.duration")};
-    background: transparent;
-    font-size: ${dt("radiobutton.icon.size")};
-    width: ${dt("radiobutton.icon.size")};
-    height: ${dt("radiobutton.icon.size")};
-    border-radius: 50%;
-    backface-visibility: hidden;
-    transform: translateZ(0) scale(0.1);
-}
-
-.p-radiobutton:not(.p-disabled):has(.p-radiobutton-input:hover) .p-radiobutton-box {
-    border-color: ${dt("radiobutton.hover.border.color")};
-}
-
-.p-radiobutton-checked .p-radiobutton-box {
-    border-color: ${dt("radiobutton.checked.border.color")};
-    background: ${dt("radiobutton.checked.background")};
-}
-
-.p-radiobutton-checked .p-radiobutton-box .p-radiobutton-icon {
-    background: ${dt("radiobutton.icon.checked.color")};
-    transform: translateZ(0) scale(1, 1);
-    visibility: visible;
-}
-
-.p-radiobutton-checked:not(.p-disabled):has(.p-radiobutton-input:hover) .p-radiobutton-box {
-    border-color: ${dt("radiobutton.checked.hover.border.color")};
-    background: ${dt("radiobutton.checked.hover.background")};
-}
-
-.p-radiobutton:not(.p-disabled):has(.p-radiobutton-input:hover).p-radiobutton-checked .p-radiobutton-box .p-radiobutton-icon {
-    background: ${dt("radiobutton.icon.checked.hover.color")};
-}
-
-.p-radiobutton:not(.p-disabled):has(.p-radiobutton-input:focus-visible) .p-radiobutton-box {
-    border-color: ${dt("radiobutton.focus.border.color")};
-    box-shadow: ${dt("radiobutton.focus.ring.shadow")};
-    outline: ${dt("radiobutton.focus.ring.width")} ${dt("radiobutton.focus.ring.style")} ${dt("radiobutton.focus.ring.color")};
-    outline-offset: ${dt("radiobutton.focus.ring.offset")};
-}
-
-.p-radiobutton-checked:not(.p-disabled):has(.p-radiobutton-input:focus-visible) .p-radiobutton-box {
-    border-color: ${dt("radiobutton.checked.focus.border.color")};
-}
-
-.p-radiobutton.ng-invalid.ng-dirty > .p-radiobutton-box {
-    border-color: ${dt("radiobutton.invalid.border.color")};
-}
-
-.p-radiobutton.p-variant-filled .p-radiobutton-box {
-    background: ${dt("radiobutton.filled.background")};
-}
-
-.p-radiobutton.p-variant-filled.p-radiobutton-checked .p-radiobutton-box {
-    background: ${dt("radiobutton.checked.background")};
-}
-
-.p-radiobutton.p-variant-filled:not(.p-disabled):has(.p-radiobutton-input:hover).p-radiobutton-checked .p-radiobutton-box {
-    background: ${dt("radiobutton.checked.hover.background")};
-}
-
-.p-radiobutton.p-disabled {
-    opacity: 1;
-}
-
-.p-radiobutton.p-disabled .p-radiobutton-box {
-    background: ${dt("radiobutton.disabled.background")};
-    border-color: ${dt("radiobutton.checked.disabled.border.color")};
-}
-
-.p-radiobutton-checked.p-disabled .p-radiobutton-box .p-radiobutton-icon {
-    background: ${dt("radiobutton.icon.disabled.color")};
-}
-
-.p-radiobutton-sm,
-.p-radiobutton-sm .p-radiobutton-box {
-    width: ${dt("radiobutton.sm.width")};
-    height: ${dt("radiobutton.sm.height")};
-}
-
-.p-radiobutton-sm .p-radiobutton-icon {
-    font-size: ${dt("radiobutton.icon.sm.size")};
-    width: ${dt("radiobutton.icon.sm.size")};
-    height: ${dt("radiobutton.icon.sm.size")};
-}
-
-.p-radiobutton-lg,
-.p-radiobutton-lg .p-radiobutton-box {
-    width: ${dt("radiobutton.lg.width")};
-    height: ${dt("radiobutton.lg.height")};
-}
-
-.p-radiobutton-lg .p-radiobutton-icon {
-    font-size: ${dt("radiobutton.icon.lg.size")};
-    width: ${dt("radiobutton.icon.lg.size")};
-    height: ${dt("radiobutton.icon.lg.size")};
-}
-`;
-var classes3 = {
-  root: ({
-    instance,
-    props
-  }) => ["p-radiobutton p-component", {
-    "p-radiobutton-checked": instance.checked,
-    "p-disabled": props.disabled,
-    "p-invalid": props.invalid,
-    "p-variant-filled": props.variant ? props.variant === "filled" : instance.config.inputStyle === "filled" || instance.config.inputVariant === "filled"
-  }],
-  box: "p-radiobutton-box",
-  input: "p-radiobutton-input",
-  icon: "p-radiobutton-icon"
-};
-var RadioButtonStyle = class _RadioButtonStyle extends BaseStyle {
-  name = "radiobutton";
-  theme = theme3;
-  classes = classes3;
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵRadioButtonStyle_BaseFactory;
-    return function RadioButtonStyle_Factory(__ngFactoryType__) {
-      return (ɵRadioButtonStyle_BaseFactory || (ɵRadioButtonStyle_BaseFactory = ɵɵgetInheritedFactory(_RadioButtonStyle)))(__ngFactoryType__ || _RadioButtonStyle);
-    };
-  })();
-  static ɵprov = ɵɵdefineInjectable({
-    token: _RadioButtonStyle,
-    factory: _RadioButtonStyle.ɵfac
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RadioButtonStyle, [{
-    type: Injectable
-  }], null, null);
-})();
-var RadioButtonClasses;
-(function(RadioButtonClasses2) {
-  RadioButtonClasses2["root"] = "p-radiobutton";
-  RadioButtonClasses2["box"] = "p-radiobutton-box";
-  RadioButtonClasses2["input"] = "p-radiobutton-input";
-  RadioButtonClasses2["icon"] = "p-radiobutton-icon";
-})(RadioButtonClasses || (RadioButtonClasses = {}));
-var _c03 = ["input"];
-var _c111 = (a0, a1, a2, a3, a4) => ({
-  "p-radiobutton p-component": true,
-  "p-radiobutton-checked": a0,
-  "p-disabled": a1,
-  "p-variant-filled": a2,
-  "p-radiobutton-sm p-inputfield-sm": a3,
-  "p-radiobutton-lg p-inputfield-lg": a4
-});
-var RADIO_VALUE_ACCESSOR = {
-  provide: NG_VALUE_ACCESSOR,
-  useExisting: forwardRef(() => RadioButton),
-  multi: true
-};
-var RadioControlRegistry = class _RadioControlRegistry {
-  accessors = [];
-  add(control, accessor) {
-    this.accessors.push([control, accessor]);
-  }
-  remove(accessor) {
-    this.accessors = this.accessors.filter((c) => {
-      return c[1] !== accessor;
-    });
-  }
-  select(accessor) {
-    this.accessors.forEach((c) => {
-      if (this.isSameGroup(c, accessor) && c[1] !== accessor) {
-        c[1].writeValue(accessor.value);
-      }
-    });
-  }
-  isSameGroup(controlPair, accessor) {
-    if (!controlPair[0].control) {
-      return false;
-    }
-    return controlPair[0].control.root === accessor.control.control.root && controlPair[1].name === accessor.name;
-  }
-  static ɵfac = function RadioControlRegistry_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _RadioControlRegistry)();
-  };
-  static ɵprov = ɵɵdefineInjectable({
-    token: _RadioControlRegistry,
-    factory: _RadioControlRegistry.ɵfac,
-    providedIn: "root"
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RadioControlRegistry, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
-})();
-var RadioButton = class _RadioButton extends BaseComponent {
-  /**
-   * Value of the radiobutton.
-   * @group Props
-   */
-  value;
-  /**
-   * The name of the form control.
-   * @group Props
-   */
-  formControlName;
-  /**
-   * Name of the radiobutton group.
-   * @group Props
-   */
-  name;
-  /**
-   * When present, it specifies that the element should be disabled.
-   * @group Props
-   */
-  disabled;
-  /**
-   * Specifies the input variant of the component.
-   * @group Props
-   */
-  variant = "outlined";
-  /**
-   * Defines the size of the component.
-   * @group Props
-   */
-  size;
-  /**
-   * Index of the element in tabbing order.
-   * @group Props
-   */
-  tabindex;
-  /**
-   * Identifier of the focus input to match a label defined for the component.
-   * @group Props
-   */
-  inputId;
-  /**
-   * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
-   * @group Props
-   */
-  ariaLabelledBy;
-  /**
-   * Used to define a string that labels the input element.
-   * @group Props
-   */
-  ariaLabel;
-  /**
-   * Inline style of the component.
-   * @group Props
-   */
-  style;
-  /**
-   * Style class of the component.
-   * @group Props
-   */
-  styleClass;
-  /**
-   * When present, it specifies that the component should automatically get focus on load.
-   * @group Props
-   */
-  autofocus;
-  /**
-   * Allows to select a boolean value.
-   * @group Props
-   */
-  binary;
-  /**
-   * Callback to invoke on radio button click.
-   * @param {RadioButtonClickEvent} event - Custom click event.
-   * @group Emits
-   */
-  onClick = new EventEmitter();
-  /**
-   * Callback to invoke when the receives focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onFocus = new EventEmitter();
-  /**
-   * Callback to invoke when the loses focus.
-   * @param {Event} event - Browser event.
-   * @group Emits
-   */
-  onBlur = new EventEmitter();
-  inputViewChild;
-  onModelChange = () => {
-  };
-  onModelTouched = () => {
-  };
-  checked;
-  focused;
-  control;
-  _componentStyle = inject(RadioButtonStyle);
-  injector = inject(Injector);
-  registry = inject(RadioControlRegistry);
-  ngOnInit() {
-    super.ngOnInit();
-    this.control = this.injector.get(NgControl);
-    this.checkName();
-    this.registry.add(this.control, this);
-  }
-  onChange(event2) {
-    if (!this.disabled) {
-      this.select(event2);
-    }
-  }
-  select(event2) {
-    if (!this.disabled) {
-      this.checked = true;
-      this.onModelChange(this.value);
-      this.registry.select(this);
-      this.onClick.emit({
-        originalEvent: event2,
-        value: this.value
-      });
-    }
-  }
-  writeValue(value) {
-    if (!this.binary) {
-      this.checked = value == this.value;
-    } else {
-      this.checked = !!value;
-    }
-    if (this.inputViewChild && this.inputViewChild.nativeElement) {
-      this.inputViewChild.nativeElement.checked = this.checked;
-    }
-    this.cd.markForCheck();
-  }
-  registerOnChange(fn) {
-    this.onModelChange = fn;
-  }
-  registerOnTouched(fn) {
-    this.onModelTouched = fn;
-  }
-  setDisabledState(val) {
-    this.disabled = val;
-    this.cd.markForCheck();
-  }
-  onInputFocus(event2) {
-    this.focused = true;
-    this.onFocus.emit(event2);
-  }
-  onInputBlur(event2) {
-    this.focused = false;
-    this.onModelTouched();
-    this.onBlur.emit(event2);
-  }
-  /**
-   * Applies focus to input field.
-   * @group Method
-   */
-  focus() {
-    this.inputViewChild.nativeElement.focus();
-  }
-  ngOnDestroy() {
-    this.registry.remove(this);
-    super.ngOnDestroy();
-  }
-  checkName() {
-    if (this.name && this.formControlName && this.name !== this.formControlName) {
-      this.throwNameError();
-    }
-    if (!this.name && this.formControlName) {
-      this.name = this.formControlName;
-    }
-  }
-  throwNameError() {
-    throw new Error(`
-          If you define both a name and a formControlName attribute on your radio button, their values
-          must match. Ex: <p-radioButton formControlName="food" name="food"></p-radioButton>
-        `);
-  }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵRadioButton_BaseFactory;
-    return function RadioButton_Factory(__ngFactoryType__) {
-      return (ɵRadioButton_BaseFactory || (ɵRadioButton_BaseFactory = ɵɵgetInheritedFactory(_RadioButton)))(__ngFactoryType__ || _RadioButton);
-    };
-  })();
-  static ɵcmp = ɵɵdefineComponent({
-    type: _RadioButton,
-    selectors: [["p-radioButton"], ["p-radiobutton"], ["p-radio-button"]],
-    viewQuery: function RadioButton_Query(rf, ctx) {
-      if (rf & 1) {
-        ɵɵviewQuery(_c03, 5);
-      }
-      if (rf & 2) {
-        let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
-      }
-    },
-    inputs: {
-      value: "value",
-      formControlName: "formControlName",
-      name: "name",
-      disabled: [2, "disabled", "disabled", booleanAttribute],
-      variant: "variant",
-      size: "size",
-      tabindex: [2, "tabindex", "tabindex", numberAttribute],
-      inputId: "inputId",
-      ariaLabelledBy: "ariaLabelledBy",
-      ariaLabel: "ariaLabel",
-      style: "style",
-      styleClass: "styleClass",
-      autofocus: [2, "autofocus", "autofocus", booleanAttribute],
-      binary: [2, "binary", "binary", booleanAttribute]
-    },
-    outputs: {
-      onClick: "onClick",
-      onFocus: "onFocus",
-      onBlur: "onBlur"
-    },
-    standalone: true,
-    features: [ɵɵProvidersFeature([RADIO_VALUE_ACCESSOR, RadioButtonStyle]), ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
-    decls: 5,
-    vars: 24,
-    consts: [["input", ""], [3, "ngStyle", "ngClass"], ["type", "radio", 1, "p-radiobutton-input", 3, "focus", "blur", "change", "checked", "disabled", "value", "pAutoFocus"], [1, "p-radiobutton-box"], [1, "p-radiobutton-icon"]],
-    template: function RadioButton_Template(rf, ctx) {
-      if (rf & 1) {
-        const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 1)(1, "input", 2, 0);
-        ɵɵlistener("focus", function RadioButton_Template_input_focus_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputFocus($event));
-        })("blur", function RadioButton_Template_input_blur_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onInputBlur($event));
-        })("change", function RadioButton_Template_input_change_1_listener($event) {
-          ɵɵrestoreView(_r1);
-          return ɵɵresetView(ctx.onChange($event));
-        });
-        ɵɵelementEnd();
-        ɵɵelementStart(3, "div", 3);
-        ɵɵelement(4, "div", 4);
-        ɵɵelementEnd()();
-      }
-      if (rf & 2) {
-        ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction5(18, _c111, ctx.checked, ctx.disabled, ctx.variant === "filled" || ctx.config.inputStyle() === "filled" || ctx.config.inputVariant() === "filled", ctx.size === "small", ctx.size === "large"));
-        ɵɵattribute("data-pc-name", "radiobutton")("data-pc-section", "root");
-        ɵɵadvance();
-        ɵɵproperty("checked", ctx.checked)("disabled", ctx.disabled)("value", ctx.value)("pAutoFocus", ctx.autofocus);
-        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-labelledby", ctx.ariaLabelledBy)("aria-label", ctx.ariaLabel)("tabindex", ctx.tabindex)("aria-checked", ctx.checked);
-        ɵɵadvance(2);
-        ɵɵattribute("data-pc-section", "input");
-        ɵɵadvance();
-        ɵɵattribute("data-pc-section", "icon");
-      }
-    },
-    dependencies: [CommonModule, NgClass, NgStyle, AutoFocus, SharedModule],
-    encapsulation: 2,
-    changeDetection: 0
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RadioButton, [{
-    type: Component,
-    args: [{
-      selector: "p-radioButton, p-radiobutton, p-radio-button",
-      standalone: true,
-      imports: [CommonModule, AutoFocus, SharedModule],
-      template: `
-        <div
-            [ngStyle]="style"
-            [ngClass]="{
-                'p-radiobutton p-component': true,
-                'p-radiobutton-checked': checked,
-                'p-disabled': disabled,
-                'p-variant-filled': variant === 'filled' || config.inputStyle() === 'filled' || config.inputVariant() === 'filled',
-                'p-radiobutton-sm p-inputfield-sm': size === 'small',
-                'p-radiobutton-lg p-inputfield-lg': size === 'large'
-            }"
-            [class]="styleClass"
-            [attr.data-pc-name]="'radiobutton'"
-            [attr.data-pc-section]="'root'"
-        >
-            <input
-                #input
-                [attr.id]="inputId"
-                type="radio"
-                class="p-radiobutton-input"
-                [attr.name]="name"
-                [checked]="checked"
-                [disabled]="disabled"
-                [value]="value"
-                [attr.aria-labelledby]="ariaLabelledBy"
-                [attr.aria-label]="ariaLabel"
-                [attr.tabindex]="tabindex"
-                [attr.aria-checked]="checked"
-                (focus)="onInputFocus($event)"
-                (blur)="onInputBlur($event)"
-                (change)="onChange($event)"
-                [pAutoFocus]="autofocus"
-            />
-            <div class="p-radiobutton-box" [attr.data-pc-section]="'input'">
-                <div class="p-radiobutton-icon" [attr.data-pc-section]="'icon'"></div>
-            </div>
-        </div>
-    `,
-      providers: [RADIO_VALUE_ACCESSOR, RadioButtonStyle],
-      changeDetection: ChangeDetectionStrategy.OnPush
-    }]
-  }], null, {
-    value: [{
-      type: Input
-    }],
-    formControlName: [{
-      type: Input
-    }],
-    name: [{
-      type: Input
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    variant: [{
-      type: Input
-    }],
-    size: [{
-      type: Input
-    }],
-    tabindex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    inputId: [{
-      type: Input
-    }],
-    ariaLabelledBy: [{
-      type: Input
-    }],
-    ariaLabel: [{
-      type: Input
-    }],
-    style: [{
-      type: Input
-    }],
-    styleClass: [{
-      type: Input
-    }],
-    autofocus: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    binary: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    onClick: [{
-      type: Output
-    }],
-    onFocus: [{
-      type: Output
-    }],
-    onBlur: [{
-      type: Output
-    }],
-    inputViewChild: [{
-      type: ViewChild,
-      args: ["input"]
-    }]
-  });
-})();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(RadioButton, {
-    className: "RadioButton"
-  });
-})();
-var RadioButtonModule = class _RadioButtonModule {
-  static ɵfac = function RadioButtonModule_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _RadioButtonModule)();
-  };
-  static ɵmod = ɵɵdefineNgModule({
-    type: _RadioButtonModule
-  });
-  static ɵinj = ɵɵdefineInjector({
-    imports: [RadioButton, SharedModule, SharedModule]
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RadioButtonModule, [{
-    type: NgModule,
-    args: [{
-      imports: [RadioButton, SharedModule],
-      exports: [RadioButton, SharedModule]
-    }]
-  }], null, null);
-})();
-(function() {
-  (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(RadioButtonModule, {
-    imports: [RadioButton, SharedModule],
-    exports: [RadioButton, SharedModule]
-  });
 })();
 
 // node_modules/primeng/fesm2022/primeng-table.mjs
 var import_rxjs = __toESM(require_cjs(), 1);
-var theme4 = ({
-  dt
-}) => `
-.p-datatable {
-    position: relative;
-}
-
-.p-datatable-table {
-    border-spacing: 0;
-    border-collapse: separate;
-    width: 100%;
-}
-
-.p-datatable-scrollable > .p-datatable-table-container {
-    position: relative;
-}
-/* For PrimeNG */
-.p-datatable-scrollable-table > .p-datatable-thead {
-    top: 0;
-    z-index: 2;
-}
-/* For PrimeNG */
-.p-datatable-scrollable-table > .p-datatable-frozen-tbody {
-    position: sticky;
-    z-index: 2;
-}
-/* For PrimeNG */
-.p-datatable-scrollable-table > .p-datatable-frozen-tbody:last-child {
-    z-index: 1;
-}
-
-.p-datatable-scrollable-table > .p-datatable-tfoot {
-    bottom: 0;
-    z-index: 1;
-}
-
-.p-datatable-scrollable .p-datatable-frozen-column {
-    position: sticky;
-    background: ${dt("datatable.header.cell.background")};
-}
-
-.p-datatable-scrollable th.p-datatable-frozen-column {
-    z-index: 1;
-}
-
-.p-datatable-scrollable > .p-datatable-table-container > .p-datatable-table > .p-datatable-thead,
-.p-datatable-scrollable > .p-datatable-table-container > .p-virtualscroller > .p-datatable-table > .p-datatable-thead {
-    background: ${dt("datatable.header.cell.background")};
-}
-
-.p-datatable-scrollable > .p-datatable-table-container > .p-datatable-table > .p-datatable-tfoot,
-.p-datatable-scrollable > .p-datatable-table-container > .p-virtualscroller > .p-datatable-table > .p-datatable-tfoot {
-    background: ${dt("datatable.footer.cell.background")};
-}
-
-.p-datatable-flex-scrollable {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.p-datatable-flex-scrollable > .p-datatable-table-container {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: 100%;
-}
-
-.p-datatable-scrollable-table > .p-datatable-tbody > .p-datatable-row-group-header {
-    position: sticky;
-    z-index: 1;
-}
-
-.p-datatable-resizable-table > .p-datatable-thead > tr > th,
-.p-datatable-resizable-table > .p-datatable-tfoot > tr > td,
-.p-datatable-resizable-table > .p-datatable-tbody > tr > td {
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.p-datatable-resizable-table > .p-datatable-thead > tr > th.p-datatable-resizable-column:not(.p-datatable-frozen-column) {
-    background-clip: padding-box;
-    position: relative;
-}
-
-.p-datatable-resizable-table-fit > .p-datatable-thead > tr > th.p-datatable-resizable-column:last-child .p-datatable-column-resizer {
-    display: none;
-}
-
-.p-datatable-column-resizer {
-    display: block;
-    position: absolute;
-    top: 0;
-    inset-inline-end: 0;
-    margin: 0;
-    width: ${dt("datatable.column.resizer.width")};
-    height: 100%;
-    padding: 0px;
-    cursor: col-resize;
-    border: 1px solid transparent;
-}
-
-/*
-.p-datatable-column-header-content {
-    display: flex;
-    align-items: center;
-    gap: ${dt("datatable.header.cell.gap")};
-}
-.p-datatable-thead > tr > th {
-    display: flex;
-    align-items: center;
-    gap: ${dt("datatable.header.cell.gap")};
-}
-*/
-
-.p-datatable-column-resize-indicator {
-    width: ${dt("datatable.resize.indicator.width")};
-    position: absolute;
-    z-index: 10;
-    display: none;
-    background: ${dt("datatable.resize.indicator.color")};
-}
-
-.p-datatable-row-reorder-indicator-up,
-.p-datatable-row-reorder-indicator-down {
-    position: absolute;
-    display: none;
-}
-
-.p-datatable-reorderable-column,
-.p-datatable-reorderable-row-handle {
-    cursor: move;
-}
-
-.p-datatable-mask {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-}
-
-.p-datatable-inline-filter {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: ${dt("datatable.filter.inline.gap")};
-}
-
-.p-datatable-inline-filter .p-datatable-filter-element-container {
-    flex: 1 1 auto;
-    width: 1%;
-}
-
-.p-datatable-filter-overlay {
-    position: absolute;
-    background: ${dt("datatable.filter.overlay.select.background")};
-    color: ${dt("datatable.filter.overlay.select.color")};
-    border: 1px solid ${dt("datatable.filter.overlay.select.border.color")};
-    border-radius: ${dt("datatable.filter.overlay.select.border.radius")};
-    box-shadow: ${dt("datatable.filter.overlay.select.shadow")};
-    min-width: 12.5rem;
-}
-
-.p-datatable-filter-constraint-list {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: ${dt("datatable.filter.constraint.list.padding")};
-    gap: ${dt("datatable.filter.constraint.list.gap")};
-}
-
-.p-datatable-filter-constraint {
-    padding: ${dt("datatable.filter.constraint.padding")};
-    color: ${dt("datatable.filter.constraint.color")};
-    border-radius: ${dt("datatable.filter.constraint.border.radius")};
-    cursor: pointer;
-    transition: background ${dt("datatable.transition.duration")}, color ${dt("datatable.transition.duration")}, border-color ${dt("datatable.transition.duration")},
-        box-shadow ${dt("datatable.transition.duration")};
-}
-
-.p-datatable-filter-constraint-selected {
-    background: ${dt("datatable.filter.constraint.selected.background")};
-    color: ${dt("datatable.filter.constraint.selected.color")};
-}
-
-.p-datatable-filter-constraint:not(.p-datatable-filter-constraint-selected):not(.p-disabled):hover {
-    background: ${dt("datatable.filter.constraint.focus.background")};
-    color: ${dt("datatable.filter.constraint.focus.color")};
-}
-
-.p-datatable-filter-constraint:focus-visible {
-    outline: 0 none;
-    background: ${dt("datatable.filter.constraint.focus.background")};
-    color: ${dt("datatable.filter.constraint.focus.color")};
-}
-
-.p-datatable-filter-constraint-selected:focus-visible {
-    outline: 0 none;
-    background: ${dt("datatable.filter.constraint.selected.focus.background")};
-    color: ${dt("datatable.filter.constraint.selected.focus.color")};
-}
-
-.p-datatable-filter-constraint-separator {
-    border-top: 1px solid ${dt("datatable.filter.constraint.separator.border.color")};
-}
-
-.p-datatable-popover-filter {
-    display: inline-flex;
-    margin-inline-start: auto;
-}
-
-.p-datatable-filter-overlay-popover {
-    background: ${dt("datatable.filter.overlay.popover.background")};
-    color: ${dt("datatable.filter.overlay.popover.color")};
-    border: 1px solid ${dt("datatable.filter.overlay.popover.border.color")};
-    border-radius: ${dt("datatable.filter.overlay.popover.border.radius")};
-    box-shadow: ${dt("datatable.filter.overlay.popover.shadow")};
-    min-width: 12.5rem;
-    padding: ${dt("datatable.filter.overlay.popover.padding")};
-    display: flex;
-    flex-direction: column;
-    gap: ${dt("datatable.filter.overlay.popover.gap")};
-}
-
-.p-datatable-filter-operator-dropdown, .p-datatable-filter-constraint-dropdown {
-    width: 100%;
-}
-
-.p-datatable-filter-rule-list,
-.p-datatable-filter-rule {
-    display: flex;
-    flex-direction: column;
-    gap: ${dt("datatable.filter.overlay.popover.gap")};
-}
-
-.p-datatable-filter-rule {
-    border-bottom: 1px solid ${dt("datatable.filter.rule.border.color")};
-}
-
-.p-datatable-filter-rule:last-child {
-    border-bottom: 0 none;
-}
-
-.p-datatable-filter-add-rule-button, .p-datatable-filter-remove-rule-button {
-    width: 100%;
-}
-
-.p-datatable-filter-remove-button {
-    width: 100%;
-}
-
-.p-datatable-filter-buttonbar {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.p-datatable-virtualscroller-spacer {
-    display: flex;
-}
-
-.p-datatable .p-virtualscroller .p-virtualscroller-loading {
-    transform: none !important;
-    min-height: 0;
-    position: sticky;
-    top: 0;
-    inset-inline-start: 0;
-}
-
-.p-datatable-paginator-top {
-    border-color: ${dt("datatable.paginator.top.border.color")};
-    border-style: solid;
-    border-width: ${dt("datatable.paginator.top.border.width")};
-}
-
-.p-datatable-paginator-bottom {
-    border-color: ${dt("datatable.paginator.bottom.border.color")};
-    border-style: solid;
-    border-width: ${dt("datatable.paginator.bottom.border.width")};
-}
-
-.p-datatable-header {
-    background: ${dt("datatable.header.background")};
-    color: ${dt("datatable.header.color")};
-    border-color: ${dt("datatable.header.border.color")};
-    border-style: solid;
-    border-width: ${dt("datatable.header.border.width")};
-    padding: ${dt("datatable.header.padding")};
-}
-
-.p-datatable-footer {
-    background: ${dt("datatable.footer.background")};
-    color: ${dt("datatable.footer.color")};
-    border-color: ${dt("datatable.footer.border.color")};
-    border-style: solid;
-    border-width: ${dt("datatable.footer.border.width")};
-    padding: ${dt("datatable.footer.padding")};
-}
-
-.p-datatable-thead > tr > th {
-    padding: ${dt("datatable.header.cell.padding")};
-    background: ${dt("datatable.header.cell.background")};
-    border-color: ${dt("datatable.header.cell.border.color")};
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    color: ${dt("datatable.header.cell.color")};
-    font-weight: ${dt("datatable.column.title.font.weight")};
-    text-align: start;
-    transition: background ${dt("datatable.transition.duration")}, color ${dt("datatable.transition.duration")}, border-color ${dt("datatable.transition.duration")},
-            outline-color ${dt("datatable.transition.duration")}, box-shadow ${dt("datatable.transition.duration")};
-}
-
-/** For PrimeNG **/
-.p-datatable-thead > tr > th p-columnfilter {
-    font-weight: normal;
-}
-/** For PrimeNG End **/
-
-/*
-.p-datatable-column-title {
-    font-weight: ${dt("datatable.column.title.font.weight")};
-}
-*/
-
-.p-datatable-tbody > tr {
-    outline-color: transparent;
-    background: ${dt("datatable.row.background")};
-    color: ${dt("datatable.row.color")};
-    transition: background ${dt("datatable.transition.duration")}, color ${dt("datatable.transition.duration")}, border-color ${dt("datatable.transition.duration")},
-            outline-color ${dt("datatable.transition.duration")}, box-shadow ${dt("datatable.transition.duration")};
-}
-
-.p-datatable-tbody > tr > td {
-    text-align: start;
-    border-color: ${dt("datatable.body.cell.border.color")};
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    padding: ${dt("datatable.body.cell.padding")};
-}
-
-.p-datatable-hoverable .p-datatable-tbody > tr:not(.p-datatable-row-selected):hover {
-    background: ${dt("datatable.row.hover.background")};
-    color: ${dt("datatable.row.hover.color")};
-}
-
-.p-datatable-tbody > tr.p-datatable-row-selected {
-    background: ${dt("datatable.row.selected.background")};
-    color: ${dt("datatable.row.selected.color")};
-}
-
-.p-datatable-tbody > tr:has(+ .p-datatable-row-selected) > td {
-    border-bottom-color: ${dt("datatable.body.cell.selected.border.color")};
-}
-
-.p-datatable-tbody > tr.p-datatable-row-selected > td {
-    border-bottom-color: ${dt("datatable.body.cell.selected.border.color")};
-}
-
-.p-datatable-tbody > tr:focus-visible,
-.p-datatable-tbody > tr.p-datatable-contextmenu-row-selected {
-    box-shadow: ${dt("datatable.row.focus.ring.shadow")};
-    outline: ${dt("datatable.row.focus.ring.width")} ${dt("datatable.row.focus.ring.style")} ${dt("datatable.row.focus.ring.color")};
-    outline-offset: ${dt("datatable.row.focus.ring.offset")};
-}
-
-.p-datatable-tfoot > tr > td {
-    text-align: start;
-    padding: ${dt("datatable.footer.cell.padding")};
-    border-color: ${dt("datatable.footer.cell.border.color")};
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    color: ${dt("datatable.footer.cell.color")};
-    background: ${dt("datatable.footer.cell.background")};
-}
-
-.p-datatable-column-footer {
-    font-weight: ${dt("datatable.column.footer.font.weight")};
-}
-
-.p-datatable-sortable-column {
-    cursor: pointer;
-    user-select: none;
-    outline-color: transparent;
-}
-
-.p-datatable-thead > tr > th,
-.p-datatable-sort-icon,
-.p-datatable-sort-badge {
-    vertical-align: middle;
-}
-
-.p-datatable-sort-icon {
-    color: ${dt("datatable.sort.icon.color")};
-    transition: color ${dt("datatable.transition.duration")};
-}
-
-.p-datatable-sortable-column:not(.p-datatable-column-sorted):hover {
-    background: ${dt("datatable.header.cell.hover.background")};
-    color: ${dt("datatable.header.cell.hover.color")};
-}
-
-.p-datatable-sortable-column:not(.p-datatable-column-sorted):hover .p-datatable-sort-icon {
-    color: ${dt("datatable.sort.icon.hover.color")};
-}
-
-.p-datatable-thead > tr > th.p-datatable-column-sorted {
-    background: ${dt("datatable.header.cell.selected.background")};
-    color: ${dt("datatable.header.cell.selected.color")};
-}
-
-.p-datatable-thead > tr > th.p-datatable-column-sorted .p-datatable-sort-icon {
-    color: ${dt("datatable.header.cell.selected.color")};
-}
-
-.p-datatable-sortable-column:focus-visible {
-    box-shadow: ${dt("datatable.header.cell.focus.ring.shadow")};
-    outline: ${dt("datatable.header.cell.focus.ring.width")} ${dt("datatable.header.cell.focus.ring.style")} ${dt("datatable.header.cell.focus.ring.color")};
-    outline-offset: ${dt("datatable.header.cell.focus.ring.offset")};
-}
-
-.p-datatable-hoverable .p-datatable-selectable-row {
-    cursor: pointer;
-}
-
-.p-datatable-tbody > tr.p-datatable-dragpoint-top > td {
-    box-shadow: inset 0 2px 0 0 ${dt("datatable.drop.point.color")};
-}
-
-.p-datatable-tbody > tr.p-datatable-dragpoint-bottom > td {
-    box-shadow: inset 0 -2px 0 0 ${dt("datatable.drop.point.color")};
-}
-
-.p-datatable-loading-icon {
-    font-size: ${dt("datatable.loading.icon.size")};
-    width: ${dt("datatable.loading.icon.size")};
-    height: ${dt("datatable.loading.icon.size")};
-}
-
-.p-datatable-gridlines .p-datatable-header {
-    border-width: 1px 1px 0 1px;
-}
-
-.p-datatable-gridlines .p-datatable-footer {
-    border-width: 0 1px 1px 1px;
-}
-
-.p-datatable-gridlines .p-datatable-paginator-top {
-    border-width: 1px 1px 0 1px;
-}
-
-.p-datatable-gridlines .p-datatable-paginator-bottom {
-    border-width: 0 1px 1px 1px;
-}
-
-.p-datatable-gridlines .p-datatable-thead > tr > th {
-    border-width: 1px 0 1px 1px;
-}
-
-.p-datatable-gridlines .p-datatable-thead > tr > th:last-child {
-    border-width: 1px;
-}
-
-.p-datatable-gridlines .p-datatable-tbody > tr > td {
-    border-width: 1px 0 0 1px;
-}
-
-.p-datatable-gridlines .p-datatable-tbody > tr > td:last-child {
-    border-width: 1px 1px 0 1px;
-}
-
-p-datatable-gridlines .p-datatable-tbody > tr:last-child > td {
-    border-width: 1px 0 1px 1px;
-}
-
-.p-datatable-gridlines .p-datatable-tbody > tr:last-child > td:last-child {
-    border-width: 1px;
-}
-
-.p-datatable-gridlines .p-datatable-tfoot > tr > td {
-    border-width: 1px 0 1px 1px;
-}
-
-.p-datatable-gridlines .p-datatable-tfoot > tr > td:last-child {
-    border-width: 1px 1px 1px 1px;
-}
-
-.p-datatable.p-datatable-gridlines .p-datatable-thead + .p-datatable-tfoot > tr > td {
-    border-width: 0 0 1px 1px;
-}
-
-.p-datatable.p-datatable-gridlines .p-datatable-thead + .p-datatable-tfoot > tr > td:last-child {
-    border-width: 0 1px 1px 1px;
-}
-
-.p-datatable.p-datatable-gridlines:has(.p-datatable-thead):has(.p-datatable-tbody) .p-datatable-tbody > tr > td {
-    border-width: 0 0 1px 1px;
-}
-
-.p-datatable.p-datatable-gridlines:has(.p-datatable-thead):has(.p-datatable-tbody) .p-datatable-tbody > tr > td:last-child {
-    border-width: 0 1px 1px 1px;
-}
-
-.p-datatable.p-datatable-gridlines:has(.p-datatable-tbody):has(.p-datatable-tfoot) .p-datatable-tbody > tr:last-child > td {
-    border-width: 0 0 0 1px;
-}
-
-.p-datatable.p-datatable-gridlines:has(.p-datatable-tbody):has(.p-datatable-tfoot) .p-datatable-tbody > tr:last-child > td:last-child {
-    border-width: 0 1px 0 1px;
-}
-
-.p-datatable.p-datatable-striped .p-datatable-tbody > tr:nth-child(odd) {
-    background: ${dt("datatable.row.striped.background")};
-}
-
-.p-datatable.p-datatable-striped .p-datatable-tbody > tr:nth-child(odd).p-datatable-row-selected {
-    background: ${dt("datatable.row.selected.background")};
-    color: ${dt("datatable.row.selected.color")};
-}
-
-.p-datatable.p-datatable-sm .p-datatable-header {
-    padding: 0.375rem 0.5rem;
-}
-
-.p-datatable.p-datatable-sm .p-datatable-thead > tr > th {
-    padding: 0.375rem 0.5rem;
-}
-
-.p-datatable.p-datatable-sm .p-datatable-tbody > tr > td {
-    padding: 0.375rem 0.5rem;
-}
-
-.p-datatable.p-datatable-sm .p-datatable-tfoot > tr > td {
-    padding: 0.375rem 0.5rem;
-}
-
-.p-datatable.p-datatable-sm .p-datatable-footer {
-    padding: 0.375rem 0.5rem;
-}
-
-.p-datatable.p-datatable-lg .p-datatable-header {
-    padding: 0.9375rem 1.25rem;
-}
-
-.p-datatable.p-datatable-lg .p-datatable-thead > tr > th {
-    padding: 0.9375rem 1.25rem;
-}
-
-.p-datatable.p-datatable-lg .p-datatable-tbody>tr>td {
-    padding: 0.9375rem 1.25rem;
-}
-
-.p-datatable.p-datatable-lg .p-datatable-tfoot>tr>td {
-    padding: 0.9375rem 1.25rem;
-}
-
-.p-datatable.p-datatable-lg .p-datatable-footer {
-    padding: 0.9375rem 1.25rem;
-}
-
-.p-datatable-row-toggle-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    width: ${dt("datatable.row.toggle.button.size")};
-    height: ${dt("datatable.row.toggle.button.size")};
-    color: ${dt("datatable.row.toggle.button.color")};
-    border: 0 none;
-    background: transparent;
-    cursor: pointer;
-    border-radius: ${dt("datatable.row.toggle.button.border.radius")};
-    transition: background ${dt("datatable.transition.duration")}, color ${dt("datatable.transition.duration")}, border-color ${dt("datatable.transition.duration")},
-            outline-color ${dt("datatable.transition.duration")}, box-shadow ${dt("datatable.transition.duration")};
-    outline-color: transparent;
-    user-select: none;
-}
-
-.p-datatable-row-toggle-button:enabled:hover {
-    color: ${dt("datatable.row.toggle.button.hover.color")};
-    background: ${dt("datatable.row.toggle.button.hover.background")};
-}
-
-.p-datatable-tbody > tr.p-datatable-row-selected .p-datatable-row-toggle-button:hover {
-    background: ${dt("datatable.row.toggle.button.selected.hover.background")};
-    ${dt("datatable.row.toggle.button.selected.hover.color")};
-}
-
-.p-datatable-row-toggle-button:focus-visible {
-    box-shadow: ${dt("datatable.row.toggle.button.focus.ring.shadow")};
-    outline: ${dt("datatable.row.toggle.button.focus.ring.width")} ${dt("datatable.row.toggle.button.focus.ring.style")} ${dt("datatable.row.toggle.button.focus.ring.color")};
-    outline-offset: ${dt("datatable.row.toggle.button.focus.ring.offset")};
-}
-`;
-var classes4 = {
-  root: ({
-    instance
-  }) => ({
-    "p-datatable p-component": true,
-    "p-datatable-hoverable": instance.rowHover || instance.selectionMode,
-    "p-datatable-resizable": instance.resizableColumns,
-    "p-datatable-resizable-fit": instance.resizableColumns && instance.columnResizeMode === "fit",
-    "p-datatable-scrollable": instance.scrollable,
-    "p-datatable-flex-scrollable": instance.scrollable && instance.scrollHeight === "flex",
-    "p-datatable-striped": instance.stripedRows,
-    "p-datatable-gridlines": instance.showGridlines,
-    "p-datatable-sm": instance.size === "small",
-    "p-datatable-lg": instance.size === "large"
-  }),
-  mask: "p-datatable-mask p-overlay-mask",
-  loadingIcon: "p-datatable-loading-icon",
-  header: "p-datatable-header",
-  pcPaginator: ({
-    instance
-  }) => "p-datatable-paginator-" + instance.paginatorPosition,
-  tableContainer: "p-datatable-table-container",
-  table: ({
-    instance
-  }) => ({
-    "p-datatable-table": true,
-    "p-datatable-scrollable-table": instance.scrollable,
-    "p-datatable-resizable-table": instance.resizableColumns,
-    "p-datatable-resizable-table-fit": instance.resizableColumns && instance.columnResizeMode === "fit"
-  }),
-  thead: "p-datatable-thead",
-  columnResizer: "p-datatable-column-resizer",
-  columnHeaderContent: "p-datatable-column-header-content",
-  columnTitle: "p-datatable-column-title",
-  columnFooter: "p-datatable-column-footer",
-  sortIcon: "p-datatable-sort-icon",
-  pcSortBadge: "p-datatable-sort-badge",
-  filter: ({
-    instance
-  }) => ({
-    "p-datatable-filter": true,
-    "p-datatable-inline-filter": instance.display === "row",
-    "p-datatable-popover-filter": instance.display === "menu"
-  }),
-  filterElementContainer: "p-datatable-filter-element-container",
-  pcColumnFilterButton: "p-datatable-column-filter-button",
-  pcColumnFilterClearButton: "p-datatable-column-filter-clear-button",
-  filterOverlay: ({
-    instance
-  }) => ({
-    "p-datatable-filter-overlay p-component": true,
-    "p-datatable-filter-overlay-popover": instance.display === "menu"
-  }),
-  filterConstraintList: "p-datatable-filter-constraint-list",
-  filterConstraint: "p-datatable-filter-constraint",
-  filterConstraintSeparator: "p-datatable-filter-constraint-separator",
-  filterOperator: "p-datatable-filter-operator",
-  pcFilterOperatorDropdown: "p-datatable-filter-operator-dropdown",
-  filterRuleList: "p-datatable-filter-rule-list",
-  filterRule: "p-datatable-filter-rule",
-  pcFilterConstraintDropdown: "p-datatable-filter-constraint-dropdown",
-  pcFilterRemoveRuleButton: "p-datatable-filter-remove-rule-button",
-  pcFilterAddRuleButton: "p-datatable-filter-add-rule-button",
-  filterButtonbar: "p-datatable-filter-buttonbar",
-  pcFilterClearButton: "p-datatable-filter-clear-button",
-  pcFilterApplyButton: "p-datatable-filter-apply-button",
-  tbody: ({
-    instance
-  }) => ({
-    "p-datatable-tbody": true,
-    "p-datatable-frozen-tbody": instance.frozenValue || instance.frozenBodyTemplate,
-    "p-virtualscroller-content": instance.virtualScroll
-  }),
-  rowGroupHeader: "p-datatable-row-group-header",
-  rowToggleButton: "p-datatable-row-toggle-button",
-  rowToggleIcon: "p-datatable-row-toggle-icon",
-  rowExpansion: "p-datatable-row-expansion",
-  rowGroupFooter: "p-datatable-row-group-footer",
-  emptyMessage: "p-datatable-empty-message",
-  bodyCell: ({
-    instance
-  }) => ({
-    "p-datatable-frozen-column": instance.columnProp("frozen")
-  }),
-  reorderableRowHandle: "p-datatable-reorderable-row-handle",
-  pcRowEditorInit: "p-datatable-row-editor-init",
-  pcRowEditorSave: "p-datatable-row-editor-save",
-  pcRowEditorCancel: "p-datatable-row-editor-cancel",
-  tfoot: "p-datatable-tfoot",
-  footerCell: ({
-    instance
-  }) => ({
-    "p-datatable-frozen-column": instance.columnProp("frozen")
-  }),
-  virtualScrollerSpacer: "p-datatable-virtualscroller-spacer",
-  footer: "p-datatable-tfoot",
-  columnResizeIndicator: "p-datatable-column-resize-indicator",
-  rowReorderIndicatorUp: "p-datatable-row-reorder-indicator-up",
-  rowReorderIndicatorDown: "p-datatable-row-reorder-indicator-down"
-};
-var inlineStyles2 = {
-  tableContainer: ({
-    instance
-  }) => ({
-    "max-height": instance.virtualScroll ? "" : instance.scrollHeight,
-    overflow: "auto"
-  }),
-  thead: {
-    position: "sticky"
-  },
-  tfoot: {
-    position: "sticky"
-  }
-};
-var TableStyle = class _TableStyle extends BaseStyle {
-  name = "datatable";
-  theme = theme4;
-  classes = classes4;
-  inlineStyles = inlineStyles2;
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵTableStyle_BaseFactory;
-    return function TableStyle_Factory(__ngFactoryType__) {
-      return (ɵTableStyle_BaseFactory || (ɵTableStyle_BaseFactory = ɵɵgetInheritedFactory(_TableStyle)))(__ngFactoryType__ || _TableStyle);
-    };
-  })();
-  static ɵprov = ɵɵdefineInjectable({
-    token: _TableStyle,
-    factory: _TableStyle.ɵfac
-  });
-};
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TableStyle, [{
-    type: Injectable
-  }], null, null);
-})();
-var TableClasses;
-(function(TableClasses2) {
-  TableClasses2["root"] = "p-datatable";
-  TableClasses2["mask"] = "p-datatable-mask";
-  TableClasses2["loadingIcon"] = "p-datatable-loading-icon";
-  TableClasses2["header"] = "p-datatable-header";
-  TableClasses2["pcPaginator"] = "p-datatable-paginator-[position]";
-  TableClasses2["tableContainer"] = "p-datatable-table-container";
-  TableClasses2["table"] = "p-datatable-table";
-  TableClasses2["thead"] = "p-datatable-thead";
-  TableClasses2["columnResizer"] = "p-datatable-column-resizer";
-  TableClasses2["columnHeaderContent"] = "p-datatable-column-header-content";
-  TableClasses2["columnTitle"] = "p-datatable-column-title";
-  TableClasses2["sortIcon"] = "p-datatable-sort-icon";
-  TableClasses2["pcSortBadge"] = "p-datatable-sort-badge";
-  TableClasses2["filter"] = "p-datatable-filter";
-  TableClasses2["filterElementContainer"] = "p-datatable-filter-element-container";
-  TableClasses2["pcColumnFilterButton"] = "p-datatable-column-filter-button";
-  TableClasses2["pcColumnFilterClearButton"] = "p-datatable-column-filter-clear-button";
-  TableClasses2["filterOverlay"] = "p-datatable-filter-overlay";
-  TableClasses2["filterConstraintList"] = "p-datatable-filter-constraint-list";
-  TableClasses2["filterConstraint"] = "p-datatable-filter-constraint";
-  TableClasses2["filterConstraintSeparator"] = "p-datatable-filter-constraint-separator";
-  TableClasses2["filterOperator"] = "p-datatable-filter-operator";
-  TableClasses2["pcFilterOperatorDropdown"] = "p-datatable-filter-operator-dropdown";
-  TableClasses2["filterRuleList"] = "p-datatable-filter-rule-list";
-  TableClasses2["filterRule"] = "p-datatable-filter-rule";
-  TableClasses2["pcFilterConstraintDropdown"] = "p-datatable-filter-constraint-dropdown";
-  TableClasses2["pcFilterRemoveRuleButton"] = "p-datatable-filter-remove-rule-button";
-  TableClasses2["pcFilterAddRuleButton"] = "p-datatable-filter-add-rule-button";
-  TableClasses2["filterButtonbar"] = "p-datatable-filter-buttonbar";
-  TableClasses2["pcFilterClearButton"] = "p-datatable-filter-clear-button";
-  TableClasses2["pcFilterApplyButton"] = "p-datatable-filter-apply-button";
-  TableClasses2["tbody"] = "p-datatable-tbody";
-  TableClasses2["rowGroupHeader"] = "p-datatable-row-group-header";
-  TableClasses2["rowToggleButton"] = "p-datatable-row-toggle-button";
-  TableClasses2["rowToggleIcon"] = "p-datatable-row-toggle-icon";
-  TableClasses2["rowExpansion"] = "p-datatable-row-expansion";
-  TableClasses2["rowGroupFooter"] = "p-datatable-row-group-footer";
-  TableClasses2["emptyMessage"] = "p-datatable-empty-message";
-  TableClasses2["reorderableRowHandle"] = "p-datatable-reorderable-row-handle";
-  TableClasses2["pcRowEditorInit"] = "p-datatable-row-editor-init";
-  TableClasses2["pcRowEditorSave"] = "p-datatable-row-editor-save";
-  TableClasses2["pcRowEditorCancel"] = "p-datatable-row-editor-cancel";
-  TableClasses2["tfoot"] = "p-datatable-tfoot";
-  TableClasses2["virtualScrollerSpacer"] = "p-datatable-virtualscroller-spacer";
-  TableClasses2["footer"] = "p-datatable-footer";
-  TableClasses2["columnResizeIndicator"] = "p-datatable-column-resize-indicator";
-  TableClasses2["rowReorderIndicatorUp"] = "p-datatable-row-reorder-indicator-up";
-  TableClasses2["rowReorderIndicatorDown"] = "p-datatable-row-reorder-indicator-down";
-})(TableClasses || (TableClasses = {}));
-var _c04 = ["header"];
-var _c112 = ["headergrouped"];
-var _c27 = ["body"];
-var _c33 = ["loadingbody"];
-var _c42 = ["caption"];
-var _c52 = ["footer"];
-var _c62 = ["footergrouped"];
-var _c72 = ["summary"];
-var _c82 = ["colgroup"];
-var _c92 = ["expandedrow"];
-var _c102 = ["groupheader"];
-var _c113 = ["groupfooter"];
-var _c122 = ["frozenexpandedrow"];
-var _c132 = ["frozenheader"];
-var _c142 = ["frozenbody"];
-var _c152 = ["frozenfooter"];
-var _c162 = ["frozencolgroup"];
-var _c172 = ["emptymessage"];
-var _c182 = ["paginatorleft"];
-var _c192 = ["paginatorright"];
-var _c202 = ["paginatordropdownitem"];
-var _c212 = ["loadingicon"];
-var _c222 = ["reorderindicatorupicon"];
-var _c232 = ["reorderindicatordownicon"];
-var _c242 = ["sorticon"];
-var _c252 = ["checkboxicon"];
-var _c262 = ["headercheckboxicon"];
-var _c272 = ["paginatordropdownicon"];
-var _c28 = ["paginatorfirstpagelinkicon"];
-var _c29 = ["paginatorlastpagelinkicon"];
-var _c30 = ["paginatorpreviouspagelinkicon"];
-var _c31 = ["paginatornextpagelinkicon"];
-var _c322 = ["container"];
-var _c332 = ["resizeHelper"];
-var _c34 = ["reorderIndicatorUp"];
-var _c35 = ["reorderIndicatorDown"];
-var _c36 = ["wrapper"];
-var _c37 = ["table"];
-var _c38 = ["thead"];
-var _c39 = ["tfoot"];
-var _c40 = ["scroller"];
-var _c41 = (a0) => ({
+var _c03 = ["container"];
+var _c13 = ["resizeHelper"];
+var _c23 = ["reorderIndicatorUp"];
+var _c3 = ["reorderIndicatorDown"];
+var _c4 = ["wrapper"];
+var _c5 = ["table"];
+var _c6 = ["thead"];
+var _c7 = ["tfoot"];
+var _c8 = ["scroller"];
+var _c9 = (a0, a1, a2) => ({
+  "p-datatable p-component": true,
+  "p-datatable-hoverable-rows": a0,
+  "p-datatable-scrollable": a1,
+  "p-datatable-flex-scrollable": a2
+});
+var _c10 = (a0) => ({
+  maxHeight: a0
+});
+var _c11 = (a0) => ({
   height: a0
 });
-var _c422 = (a0, a1) => ({
+var _c122 = (a0, a1) => ({
   $implicit: a0,
   options: a1
 });
-var _c43 = (a0) => ({
+var _c132 = (a0) => ({
   columns: a0
 });
-var _c44 = (a0) => ({
+var _c14 = (a0, a1, a2) => ({
+  "p-datatable-table": true,
+  "p-datatable-scrollable-table": a0,
+  "p-datatable-resizable-table": a1,
+  "p-datatable-resizable-table-fit": a2
+});
+var _c15 = (a0) => ({
   $implicit: a0
+});
+var _c16 = () => ({
+  display: "none"
 });
 function Table_div_2_i_1_Template(rf, ctx) {
   if (rf & 1) {
@@ -8415,11 +1964,10 @@ function Table_div_2_i_1_Template(rf, ctx) {
 }
 function Table_div_2_ng_container_2_SpinnerIcon_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "SpinnerIcon", 22);
+    ɵɵelement(0, "SpinnerIcon", 25);
   }
   if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("spin", true)("styleClass", ctx_r0.cx("loadingIcon"));
+    ɵɵproperty("spin", true)("styleClass", "p-datatable-loading-icon");
   }
 }
 function Table_div_2_ng_container_2_span_2_1_ng_template_0_Template(rf, ctx) {
@@ -8431,40 +1979,38 @@ function Table_div_2_ng_container_2_span_2_1_Template(rf, ctx) {
 }
 function Table_div_2_ng_container_2_span_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 19);
-    ɵɵtemplate(1, Table_div_2_ng_container_2_span_2_1_Template, 1, 0, null, 23);
+    ɵɵelementStart(0, "span", 26);
+    ɵɵtemplate(1, Table_div_2_ng_container_2_span_2_1_Template, 1, 0, null, 27);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngClass", ctx_r0.cx("loadingIcon"));
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.loadingIconTemplate || ctx_r0._loadingIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.loadingIconTemplate);
   }
 }
 function Table_div_2_ng_container_2_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, Table_div_2_ng_container_2_SpinnerIcon_1_Template, 1, 2, "SpinnerIcon", 21)(2, Table_div_2_ng_container_2_span_2_Template, 2, 2, "span", 12);
+    ɵɵtemplate(1, Table_div_2_ng_container_2_SpinnerIcon_1_Template, 1, 2, "SpinnerIcon", 23)(2, Table_div_2_ng_container_2_span_2_Template, 2, 1, "span", 24);
     ɵɵelementContainerEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r0.loadingIconTemplate && !ctx_r0._loadingIconTemplate);
+    ɵɵproperty("ngIf", !ctx_r0.loadingIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.loadingIconTemplate || ctx_r0._loadingIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.loadingIconTemplate);
   }
 }
 function Table_div_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 19);
-    ɵɵtemplate(1, Table_div_2_i_1_Template, 1, 2, "i", 20)(2, Table_div_2_ng_container_2_Template, 3, 2, "ng-container", 16);
+    ɵɵelementStart(0, "div", 21);
+    ɵɵtemplate(1, Table_div_2_i_1_Template, 1, 2, "i", 22)(2, Table_div_2_ng_container_2_Template, 3, 2, "ng-container", 16);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ctx_r0.cx("mask"));
     ɵɵadvance();
     ɵɵproperty("ngIf", ctx_r0.loadingIcon);
     ɵɵadvance();
@@ -8478,15 +2024,14 @@ function Table_div_3_ng_container_1_Template(rf, ctx) {
 }
 function Table_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 19);
-    ɵɵtemplate(1, Table_div_3_ng_container_1_Template, 1, 0, "ng-container", 23);
+    ɵɵelementStart(0, "div", 28);
+    ɵɵtemplate(1, Table_div_3_ng_container_1_Template, 1, 0, "ng-container", 27);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ctx_r0.cx("header"));
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.captionTemplate || ctx_r0._captionTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.captionTemplate);
   }
 }
 function Table_p_paginator_4_1_ng_template_0_ng_container_0_Template(rf, ctx) {
@@ -8496,16 +2041,16 @@ function Table_p_paginator_4_1_ng_template_0_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_paginator_4_1_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_4_1_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 23);
+    ɵɵtemplate(0, Table_p_paginator_4_1_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 27);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorDropdownIconTemplate || ctx_r0._paginatorDropdownIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorDropdownIconTemplate);
   }
 }
 function Table_p_paginator_4_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_4_1_ng_template_0_Template, 1, 1, "ng-template", 25);
+    ɵɵtemplate(0, Table_p_paginator_4_1_ng_template_0_Template, 1, 1, "ng-template", 30);
   }
 }
 function Table_p_paginator_4_2_ng_template_0_ng_container_0_Template(rf, ctx) {
@@ -8515,16 +2060,16 @@ function Table_p_paginator_4_2_ng_template_0_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_paginator_4_2_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_4_2_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 23);
+    ɵɵtemplate(0, Table_p_paginator_4_2_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 27);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorFirstPageLinkIconTemplate || ctx_r0._paginatorFirstPageLinkIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorFirstPageLinkIconTemplate);
   }
 }
 function Table_p_paginator_4_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_4_2_ng_template_0_Template, 1, 1, "ng-template", 26);
+    ɵɵtemplate(0, Table_p_paginator_4_2_ng_template_0_Template, 1, 1, "ng-template", 31);
   }
 }
 function Table_p_paginator_4_3_ng_template_0_ng_container_0_Template(rf, ctx) {
@@ -8534,16 +2079,16 @@ function Table_p_paginator_4_3_ng_template_0_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_paginator_4_3_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_4_3_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 23);
+    ɵɵtemplate(0, Table_p_paginator_4_3_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 27);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorPreviousPageLinkIconTemplate || ctx_r0._paginatorPreviousPageLinkIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorPreviousPageLinkIconTemplate);
   }
 }
 function Table_p_paginator_4_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_4_3_ng_template_0_Template, 1, 1, "ng-template", 27);
+    ɵɵtemplate(0, Table_p_paginator_4_3_ng_template_0_Template, 1, 1, "ng-template", 32);
   }
 }
 function Table_p_paginator_4_4_ng_template_0_ng_container_0_Template(rf, ctx) {
@@ -8553,16 +2098,16 @@ function Table_p_paginator_4_4_ng_template_0_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_paginator_4_4_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_4_4_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 23);
+    ɵɵtemplate(0, Table_p_paginator_4_4_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 27);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorLastPageLinkIconTemplate || ctx_r0._paginatorLastPageLinkIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorLastPageLinkIconTemplate);
   }
 }
 function Table_p_paginator_4_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_4_4_ng_template_0_Template, 1, 1, "ng-template", 28);
+    ɵɵtemplate(0, Table_p_paginator_4_4_ng_template_0_Template, 1, 1, "ng-template", 33);
   }
 }
 function Table_p_paginator_4_5_ng_template_0_ng_container_0_Template(rf, ctx) {
@@ -8572,22 +2117,22 @@ function Table_p_paginator_4_5_ng_template_0_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_paginator_4_5_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_4_5_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 23);
+    ɵɵtemplate(0, Table_p_paginator_4_5_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 27);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorNextPageLinkIconTemplate || ctx_r0._paginatorNextPageLinkIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorNextPageLinkIconTemplate);
   }
 }
 function Table_p_paginator_4_5_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_4_5_ng_template_0_Template, 1, 1, "ng-template", 29);
+    ɵɵtemplate(0, Table_p_paginator_4_5_ng_template_0_Template, 1, 1, "ng-template", 34);
   }
 }
 function Table_p_paginator_4_Template(rf, ctx) {
   if (rf & 1) {
     const _r2 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-paginator", 24);
+    ɵɵelementStart(0, "p-paginator", 29);
     ɵɵlistener("onPageChange", function Table_p_paginator_4_Template_p_paginator_onPageChange_0_listener($event) {
       ɵɵrestoreView(_r2);
       const ctx_r0 = ɵɵnextContext();
@@ -8598,17 +2143,17 @@ function Table_p_paginator_4_Template(rf, ctx) {
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("rows", ctx_r0.rows)("first", ctx_r0.first)("totalRecords", ctx_r0.totalRecords)("pageLinkSize", ctx_r0.pageLinks)("alwaysShow", ctx_r0.alwaysShowPaginator)("rowsPerPageOptions", ctx_r0.rowsPerPageOptions)("templateLeft", ctx_r0.paginatorLeftTemplate)("templateRight", ctx_r0.paginatorRightTemplate)("dropdownAppendTo", ctx_r0.paginatorDropdownAppendTo)("dropdownScrollHeight", ctx_r0.paginatorDropdownScrollHeight)("currentPageReportTemplate", ctx_r0.currentPageReportTemplate)("showFirstLastIcon", ctx_r0.showFirstLastIcon)("dropdownItemTemplate", ctx_r0.paginatorDropdownItemTemplate || ctx_r0._paginatorDropdownItemTemplate)("showCurrentPageReport", ctx_r0.showCurrentPageReport)("showJumpToPageDropdown", ctx_r0.showJumpToPageDropdown)("showJumpToPageInput", ctx_r0.showJumpToPageInput)("showPageLinks", ctx_r0.showPageLinks)("styleClass", ctx_r0.cx("pcPaginator") + " " + ctx_r0.paginatorStyleClass && ctx_r0.paginatorStyleClass)("locale", ctx_r0.paginatorLocale);
+    ɵɵproperty("rows", ctx_r0.rows)("first", ctx_r0.first)("totalRecords", ctx_r0.totalRecords)("pageLinkSize", ctx_r0.pageLinks)("alwaysShow", ctx_r0.alwaysShowPaginator)("rowsPerPageOptions", ctx_r0.rowsPerPageOptions)("templateLeft", ctx_r0.paginatorLeftTemplate)("templateRight", ctx_r0.paginatorRightTemplate)("dropdownAppendTo", ctx_r0.paginatorDropdownAppendTo)("dropdownScrollHeight", ctx_r0.paginatorDropdownScrollHeight)("currentPageReportTemplate", ctx_r0.currentPageReportTemplate)("showFirstLastIcon", ctx_r0.showFirstLastIcon)("dropdownItemTemplate", ctx_r0.paginatorDropdownItemTemplate)("showCurrentPageReport", ctx_r0.showCurrentPageReport)("showJumpToPageDropdown", ctx_r0.showJumpToPageDropdown)("showJumpToPageInput", ctx_r0.showJumpToPageInput)("showPageLinks", ctx_r0.showPageLinks)("styleClass", ctx_r0.getPaginatorStyleClasses("p-paginator-top"))("locale", ctx_r0.paginatorLocale);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.paginatorDropdownIconTemplate || ctx_r0._paginatorDropdownIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.paginatorDropdownIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.paginatorFirstPageLinkIconTemplate || ctx_r0._paginatorFirstPageLinkIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.paginatorFirstPageLinkIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.paginatorPreviousPageLinkIconTemplate || ctx_r0._paginatorPreviousPageLinkIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.paginatorPreviousPageLinkIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.paginatorLastPageLinkIconTemplate || ctx_r0._paginatorLastPageLinkIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.paginatorLastPageLinkIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.paginatorNextPageLinkIconTemplate || ctx_r0._paginatorNextPageLinkIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.paginatorNextPageLinkIconTemplate);
   }
 }
 function Table_p_scroller_7_ng_template_2_ng_container_0_Template(rf, ctx) {
@@ -8618,32 +2163,32 @@ function Table_p_scroller_7_ng_template_2_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_scroller_7_ng_template_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_scroller_7_ng_template_2_ng_container_0_Template, 1, 0, "ng-container", 31);
+    ɵɵtemplate(0, Table_p_scroller_7_ng_template_2_ng_container_0_Template, 1, 0, "ng-container", 37);
   }
   if (rf & 2) {
     const items_r4 = ctx.$implicit;
     const scrollerOptions_r5 = ctx.options;
     ɵɵnextContext(2);
     const buildInTable_r6 = ɵɵreference(10);
-    ɵɵproperty("ngTemplateOutlet", buildInTable_r6)("ngTemplateOutletContext", ɵɵpureFunction2(2, _c422, items_r4, scrollerOptions_r5));
+    ɵɵproperty("ngTemplateOutlet", buildInTable_r6)("ngTemplateOutletContext", ɵɵpureFunction2(2, _c122, items_r4, scrollerOptions_r5));
   }
 }
 function Table_p_scroller_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-scroller", 30, 3);
+    ɵɵelementStart(0, "p-scroller", 35, 3);
     ɵɵlistener("onLazyLoad", function Table_p_scroller_7_Template_p_scroller_onLazyLoad_0_listener($event) {
       ɵɵrestoreView(_r3);
       const ctx_r0 = ɵɵnextContext();
       return ɵɵresetView(ctx_r0.onLazyItemLoad($event));
     });
-    ɵɵtemplate(2, Table_p_scroller_7_ng_template_2_Template, 1, 5, "ng-template", null, 4, ɵɵtemplateRefExtractor);
+    ɵɵtemplate(2, Table_p_scroller_7_ng_template_2_Template, 1, 5, "ng-template", 36);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵstyleMap(ɵɵpureFunction1(15, _c41, ctx_r0.scrollHeight !== "flex" ? ctx_r0.scrollHeight : void 0));
-    ɵɵproperty("items", ctx_r0.processedData)("columns", ctx_r0.columns)("scrollHeight", ctx_r0.scrollHeight !== "flex" ? void 0 : "100%")("itemSize", ctx_r0.virtualScrollItemSize || ctx_r0._virtualRowHeight)("step", ctx_r0.rows)("delay", ctx_r0.lazy ? ctx_r0.virtualScrollDelay : 0)("inline", true)("lazy", ctx_r0.lazy)("loaderDisabled", true)("showSpacer", false)("showLoader", ctx_r0.loadingBodyTemplate || ctx_r0._loadingBodyTemplate)("options", ctx_r0.virtualScrollOptions)("autoSize", true);
+    ɵɵstyleMap(ɵɵpureFunction1(15, _c11, ctx_r0.scrollHeight !== "flex" ? ctx_r0.scrollHeight : void 0));
+    ɵɵproperty("items", ctx_r0.processedData)("columns", ctx_r0.columns)("scrollHeight", ctx_r0.scrollHeight !== "flex" ? void 0 : "100%")("itemSize", ctx_r0.virtualScrollItemSize || ctx_r0._virtualRowHeight)("step", ctx_r0.rows)("delay", ctx_r0.lazy ? ctx_r0.virtualScrollDelay : 0)("inline", true)("autoSize", true)("lazy", ctx_r0.lazy)("loaderDisabled", true)("showSpacer", false)("showLoader", ctx_r0.loadingBodyTemplate)("options", ctx_r0.virtualScrollOptions);
   }
 }
 function Table_ng_container_8_ng_container_1_Template(rf, ctx) {
@@ -8654,14 +2199,14 @@ function Table_ng_container_8_ng_container_1_Template(rf, ctx) {
 function Table_ng_container_8_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, Table_ng_container_8_ng_container_1_Template, 1, 0, "ng-container", 31);
+    ɵɵtemplate(1, Table_ng_container_8_ng_container_1_Template, 1, 0, "ng-container", 37);
     ɵɵelementContainerEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
     const buildInTable_r6 = ɵɵreference(10);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", buildInTable_r6)("ngTemplateOutletContext", ɵɵpureFunction2(4, _c422, ctx_r0.processedData, ɵɵpureFunction1(2, _c43, ctx_r0.columns)));
+    ɵɵproperty("ngTemplateOutlet", buildInTable_r6)("ngTemplateOutletContext", ɵɵpureFunction2(4, _c122, ctx_r0.processedData, ɵɵpureFunction1(2, _c132, ctx_r0.columns)));
   }
 }
 function Table_ng_template_9_ng_container_2_Template(rf, ctx) {
@@ -8676,23 +2221,21 @@ function Table_ng_template_9_ng_container_5_Template(rf, ctx) {
 }
 function Table_ng_template_9_tbody_6_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "tbody", 38);
+    ɵɵelement(0, "tbody", 44);
   }
   if (rf & 2) {
     const scrollerOptions_r7 = ɵɵnextContext().options;
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ctx_r0.cx("tbody"))("value", ctx_r0.frozenValue)("frozenRows", true)("pTableBody", scrollerOptions_r7.columns)("pTableBodyTemplate", ctx_r0.frozenBodyTemplate || ctx_r0._frozenBodyTemplate)("frozen", true);
+    ɵɵproperty("value", ctx_r0.frozenValue)("frozenRows", true)("pTableBody", scrollerOptions_r7.columns)("pTableBodyTemplate", ctx_r0.frozenBodyTemplate)("frozen", true);
   }
 }
 function Table_ng_template_9_tbody_8_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "tbody", 39);
+    ɵɵelement(0, "tbody", 45);
   }
   if (rf & 2) {
     const scrollerOptions_r7 = ɵɵnextContext().options;
-    const ctx_r0 = ɵɵnextContext();
-    ɵɵstyleMap("height: calc(" + scrollerOptions_r7.spacerStyle.height + " - " + scrollerOptions_r7.rows.length * scrollerOptions_r7.itemSize + "px);");
-    ɵɵproperty("ngClass", ctx_r0.cx("virtualScrollerSpacer"));
+    ɵɵproperty("ngStyle", ɵɵpureFunction1(1, _c11, "calc(" + scrollerOptions_r7.spacerStyle.height + " - " + scrollerOptions_r7.rows.length * scrollerOptions_r7.itemSize + "px)"));
   }
 }
 function Table_ng_template_9_tfoot_9_ng_container_2_Template(rf, ctx) {
@@ -8702,52 +2245,47 @@ function Table_ng_template_9_tfoot_9_ng_container_2_Template(rf, ctx) {
 }
 function Table_ng_template_9_tfoot_9_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "tfoot", 39, 7);
-    ɵɵtemplate(2, Table_ng_template_9_tfoot_9_ng_container_2_Template, 1, 0, "ng-container", 31);
+    ɵɵelementStart(0, "tfoot", 46, 6);
+    ɵɵtemplate(2, Table_ng_template_9_tfoot_9_ng_container_2_Template, 1, 0, "ng-container", 37);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const scrollerOptions_r7 = ɵɵnextContext().options;
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ctx_r0.cx("footer"));
     ɵɵadvance(2);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.footerGroupedTemplate || ctx_r0.footerTemplate || ctx_r0._footerTemplate || ctx_r0._footerGroupedTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(3, _c44, scrollerOptions_r7.columns));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.footerGroupedTemplate || ctx_r0.footerTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c15, scrollerOptions_r7.columns));
   }
 }
 function Table_ng_template_9_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "table", 32, 5);
-    ɵɵtemplate(2, Table_ng_template_9_ng_container_2_Template, 1, 0, "ng-container", 31);
-    ɵɵelementStart(3, "thead", 33, 6);
-    ɵɵtemplate(5, Table_ng_template_9_ng_container_5_Template, 1, 0, "ng-container", 31);
+    ɵɵelementStart(0, "table", 38, 4);
+    ɵɵtemplate(2, Table_ng_template_9_ng_container_2_Template, 1, 0, "ng-container", 37);
+    ɵɵelementStart(3, "thead", 39, 5);
+    ɵɵtemplate(5, Table_ng_template_9_ng_container_5_Template, 1, 0, "ng-container", 37);
     ɵɵelementEnd();
-    ɵɵtemplate(6, Table_ng_template_9_tbody_6_Template, 1, 6, "tbody", 34);
-    ɵɵelement(7, "tbody", 35);
-    ɵɵtemplate(8, Table_ng_template_9_tbody_8_Template, 1, 3, "tbody", 36)(9, Table_ng_template_9_tfoot_9_Template, 3, 5, "tfoot", 37);
+    ɵɵtemplate(6, Table_ng_template_9_tbody_6_Template, 1, 5, "tbody", 40);
+    ɵɵelement(7, "tbody", 41);
+    ɵɵtemplate(8, Table_ng_template_9_tbody_8_Template, 1, 3, "tbody", 42)(9, Table_ng_template_9_tfoot_9_Template, 3, 4, "tfoot", 43);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const scrollerOptions_r7 = ctx.options;
     const ctx_r0 = ɵɵnextContext();
-    ɵɵstyleMap(ctx_r0.tableStyle);
     ɵɵclassMap(ctx_r0.tableStyleClass);
-    ɵɵproperty("ngClass", ctx_r0.cx("table"));
+    ɵɵproperty("ngClass", ɵɵpureFunction3(18, _c14, ctx_r0.scrollable, ctx_r0.resizableColumns, ctx_r0.resizableColumns && ctx_r0.columnResizeMode === "fit"))("ngStyle", ctx_r0.tableStyle);
     ɵɵattribute("id", ctx_r0.id + "-table");
     ɵɵadvance(2);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.colGroupTemplate || ctx_r0._colGroupTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(22, _c44, scrollerOptions_r7.columns));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.colGroupTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(22, _c15, scrollerOptions_r7.columns));
+    ɵɵadvance(3);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.headerGroupedTemplate || ctx_r0.headerTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(24, _c15, scrollerOptions_r7.columns));
     ɵɵadvance();
-    ɵɵproperty("ngClass", ctx_r0.cx("thead"))("ngStyle", ctx_r0.sx("thead"));
-    ɵɵadvance(2);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.headerGroupedTemplate || ctx_r0.headerTemplate || ctx_r0._headerTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(24, _c44, scrollerOptions_r7.columns));
+    ɵɵproperty("ngIf", ctx_r0.frozenValue || ctx_r0.frozenBodyTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.frozenValue || ctx_r0.frozenBodyTemplate || ctx_r0._frozenBodyTemplate);
-    ɵɵadvance();
-    ɵɵstyleMap(scrollerOptions_r7.contentStyle);
-    ɵɵproperty("ngClass", ctx_r0.cx("tbody", scrollerOptions_r7.contentStyleClass))("value", ctx_r0.dataToRender(scrollerOptions_r7.rows))("pTableBody", scrollerOptions_r7.columns)("pTableBodyTemplate", ctx_r0.bodyTemplate || ctx_r0._bodyTemplate)("scrollerOptions", scrollerOptions_r7);
+    ɵɵproperty("ngClass", scrollerOptions_r7.contentStyleClass)("ngStyle", scrollerOptions_r7.contentStyle)("value", ctx_r0.dataToRender(scrollerOptions_r7.rows))("pTableBody", scrollerOptions_r7.columns)("pTableBodyTemplate", ctx_r0.bodyTemplate)("scrollerOptions", scrollerOptions_r7);
     ɵɵadvance();
     ɵɵproperty("ngIf", scrollerOptions_r7.spacerStyle);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.footerGroupedTemplate || ctx_r0.footerTemplate || ctx_r0._footerTemplate || ctx_r0._footerGroupedTemplate);
+    ɵɵproperty("ngIf", ctx_r0.footerGroupedTemplate || ctx_r0.footerTemplate);
   }
 }
 function Table_p_paginator_11_1_ng_template_0_ng_container_0_Template(rf, ctx) {
@@ -8757,16 +2295,16 @@ function Table_p_paginator_11_1_ng_template_0_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_paginator_11_1_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_11_1_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 23);
+    ɵɵtemplate(0, Table_p_paginator_11_1_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 27);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorDropdownIconTemplate || ctx_r0._paginatorDropdownIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorDropdownIconTemplate);
   }
 }
 function Table_p_paginator_11_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_11_1_ng_template_0_Template, 1, 1, "ng-template", 25);
+    ɵɵtemplate(0, Table_p_paginator_11_1_ng_template_0_Template, 1, 1, "ng-template", 30);
   }
 }
 function Table_p_paginator_11_2_ng_template_0_ng_container_0_Template(rf, ctx) {
@@ -8776,16 +2314,16 @@ function Table_p_paginator_11_2_ng_template_0_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_paginator_11_2_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_11_2_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 23);
+    ɵɵtemplate(0, Table_p_paginator_11_2_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 27);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorFirstPageLinkIconTemplate || ctx_r0._paginatorFirstPageLinkIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorFirstPageLinkIconTemplate);
   }
 }
 function Table_p_paginator_11_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_11_2_ng_template_0_Template, 1, 1, "ng-template", 26);
+    ɵɵtemplate(0, Table_p_paginator_11_2_ng_template_0_Template, 1, 1, "ng-template", 31);
   }
 }
 function Table_p_paginator_11_3_ng_template_0_ng_container_0_Template(rf, ctx) {
@@ -8795,16 +2333,16 @@ function Table_p_paginator_11_3_ng_template_0_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_paginator_11_3_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_11_3_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 23);
+    ɵɵtemplate(0, Table_p_paginator_11_3_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 27);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorPreviousPageLinkIconTemplate || ctx_r0._paginatorPreviousPageLinkIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorPreviousPageLinkIconTemplate);
   }
 }
 function Table_p_paginator_11_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_11_3_ng_template_0_Template, 1, 1, "ng-template", 27);
+    ɵɵtemplate(0, Table_p_paginator_11_3_ng_template_0_Template, 1, 1, "ng-template", 32);
   }
 }
 function Table_p_paginator_11_4_ng_template_0_ng_container_0_Template(rf, ctx) {
@@ -8814,16 +2352,16 @@ function Table_p_paginator_11_4_ng_template_0_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_paginator_11_4_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_11_4_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 23);
+    ɵɵtemplate(0, Table_p_paginator_11_4_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 27);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorLastPageLinkIconTemplate || ctx_r0._paginatorLastPageLinkIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorLastPageLinkIconTemplate);
   }
 }
 function Table_p_paginator_11_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_11_4_ng_template_0_Template, 1, 1, "ng-template", 28);
+    ɵɵtemplate(0, Table_p_paginator_11_4_ng_template_0_Template, 1, 1, "ng-template", 33);
   }
 }
 function Table_p_paginator_11_5_ng_template_0_ng_container_0_Template(rf, ctx) {
@@ -8833,22 +2371,22 @@ function Table_p_paginator_11_5_ng_template_0_ng_container_0_Template(rf, ctx) {
 }
 function Table_p_paginator_11_5_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_11_5_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 23);
+    ɵɵtemplate(0, Table_p_paginator_11_5_ng_template_0_ng_container_0_Template, 1, 0, "ng-container", 27);
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorNextPageLinkIconTemplate || ctx_r0._paginatorNextPageLinkIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.paginatorNextPageLinkIconTemplate);
   }
 }
 function Table_p_paginator_11_5_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, Table_p_paginator_11_5_ng_template_0_Template, 1, 1, "ng-template", 29);
+    ɵɵtemplate(0, Table_p_paginator_11_5_ng_template_0_Template, 1, 1, "ng-template", 34);
   }
 }
 function Table_p_paginator_11_Template(rf, ctx) {
   if (rf & 1) {
     const _r8 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-paginator", 24);
+    ɵɵelementStart(0, "p-paginator", 29);
     ɵɵlistener("onPageChange", function Table_p_paginator_11_Template_p_paginator_onPageChange_0_listener($event) {
       ɵɵrestoreView(_r8);
       const ctx_r0 = ɵɵnextContext();
@@ -8859,17 +2397,17 @@ function Table_p_paginator_11_Template(rf, ctx) {
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("rows", ctx_r0.rows)("first", ctx_r0.first)("totalRecords", ctx_r0.totalRecords)("pageLinkSize", ctx_r0.pageLinks)("alwaysShow", ctx_r0.alwaysShowPaginator)("rowsPerPageOptions", ctx_r0.rowsPerPageOptions)("templateLeft", ctx_r0.paginatorLeftTemplate || ctx_r0._paginatorLeftTemplate)("templateRight", ctx_r0.paginatorRightTemplate || ctx_r0._paginatorRightTemplate)("dropdownAppendTo", ctx_r0.paginatorDropdownAppendTo)("dropdownScrollHeight", ctx_r0.paginatorDropdownScrollHeight)("currentPageReportTemplate", ctx_r0.currentPageReportTemplate)("showFirstLastIcon", ctx_r0.showFirstLastIcon)("dropdownItemTemplate", ctx_r0.paginatorDropdownItemTemplate || ctx_r0._paginatorDropdownItemTemplate)("showCurrentPageReport", ctx_r0.showCurrentPageReport)("showJumpToPageDropdown", ctx_r0.showJumpToPageDropdown)("showJumpToPageInput", ctx_r0.showJumpToPageInput)("showPageLinks", ctx_r0.showPageLinks)("styleClass", ctx_r0.cx("pcPaginator") + " " + ctx_r0.paginatorStyleClass && ctx_r0.paginatorStyleClass)("locale", ctx_r0.paginatorLocale);
+    ɵɵproperty("rows", ctx_r0.rows)("first", ctx_r0.first)("totalRecords", ctx_r0.totalRecords)("pageLinkSize", ctx_r0.pageLinks)("alwaysShow", ctx_r0.alwaysShowPaginator)("rowsPerPageOptions", ctx_r0.rowsPerPageOptions)("templateLeft", ctx_r0.paginatorLeftTemplate)("templateRight", ctx_r0.paginatorRightTemplate)("dropdownAppendTo", ctx_r0.paginatorDropdownAppendTo)("dropdownScrollHeight", ctx_r0.paginatorDropdownScrollHeight)("currentPageReportTemplate", ctx_r0.currentPageReportTemplate)("showFirstLastIcon", ctx_r0.showFirstLastIcon)("dropdownItemTemplate", ctx_r0.paginatorDropdownItemTemplate)("showCurrentPageReport", ctx_r0.showCurrentPageReport)("showJumpToPageDropdown", ctx_r0.showJumpToPageDropdown)("showJumpToPageInput", ctx_r0.showJumpToPageInput)("showPageLinks", ctx_r0.showPageLinks)("styleClass", ctx_r0.getPaginatorStyleClasses("p-paginator-bottom"))("locale", ctx_r0.paginatorLocale);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.paginatorDropdownIconTemplate || ctx_r0._paginatorDropdownIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.paginatorDropdownIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.paginatorFirstPageLinkIconTemplate || ctx_r0._paginatorFirstPageLinkIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.paginatorFirstPageLinkIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.paginatorPreviousPageLinkIconTemplate || ctx_r0._paginatorPreviousPageLinkIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.paginatorPreviousPageLinkIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.paginatorLastPageLinkIconTemplate || ctx_r0._paginatorLastPageLinkIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.paginatorLastPageLinkIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.paginatorNextPageLinkIconTemplate || ctx_r0._paginatorNextPageLinkIconTemplate);
+    ɵɵproperty("ngIf", ctx_r0.paginatorNextPageLinkIconTemplate);
   }
 }
 function Table_div_12_ng_container_1_Template(rf, ctx) {
@@ -8879,24 +2417,22 @@ function Table_div_12_ng_container_1_Template(rf, ctx) {
 }
 function Table_div_12_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 19);
-    ɵɵtemplate(1, Table_div_12_ng_container_1_Template, 1, 0, "ng-container", 23);
+    ɵɵelementStart(0, "div", 47);
+    ɵɵtemplate(1, Table_div_12_ng_container_1_Template, 1, 0, "ng-container", 27);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ctx_r0.cx("footer"));
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.summaryTemplate || ctx_r0._summaryTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.summaryTemplate);
   }
 }
 function Table_div_13_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "div", 40, 8);
+    ɵɵelement(0, "div", 48, 7);
   }
   if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ctx_r0.cx("columnResizeIndicator"));
+    ɵɵproperty("ngStyle", ɵɵpureFunction0(1, _c16));
   }
 }
 function Table_span_14_ArrowDownIcon_2_Template(rf, ctx) {
@@ -8913,17 +2449,17 @@ function Table_span_14_3_Template(rf, ctx) {
 }
 function Table_span_14_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 40, 9);
-    ɵɵtemplate(2, Table_span_14_ArrowDownIcon_2_Template, 1, 0, "ArrowDownIcon", 16)(3, Table_span_14_3_Template, 1, 0, null, 23);
+    ɵɵelementStart(0, "span", 49, 8);
+    ɵɵtemplate(2, Table_span_14_ArrowDownIcon_2_Template, 1, 0, "ArrowDownIcon", 16)(3, Table_span_14_3_Template, 1, 0, null, 27);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ctx_r0.cx("rowReorderIndicatorUp"));
+    ɵɵproperty("ngStyle", ɵɵpureFunction0(3, _c16));
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", !ctx_r0.reorderIndicatorUpIconTemplate && !ctx_r0._reorderIndicatorUpIconTemplate);
+    ɵɵproperty("ngIf", !ctx_r0.reorderIndicatorUpIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.reorderIndicatorUpIconTemplate || ctx_r0._reorderIndicatorUpIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.reorderIndicatorUpIconTemplate);
   }
 }
 function Table_span_15_ArrowUpIcon_2_Template(rf, ctx) {
@@ -8940,28 +2476,28 @@ function Table_span_15_3_Template(rf, ctx) {
 }
 function Table_span_15_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 40, 10);
-    ɵɵtemplate(2, Table_span_15_ArrowUpIcon_2_Template, 1, 0, "ArrowUpIcon", 16)(3, Table_span_15_3_Template, 1, 0, null, 23);
+    ɵɵelementStart(0, "span", 50, 9);
+    ɵɵtemplate(2, Table_span_15_ArrowUpIcon_2_Template, 1, 0, "ArrowUpIcon", 16)(3, Table_span_15_3_Template, 1, 0, null, 27);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ctx_r0.cx("rowReorderIndicatorDown"));
+    ɵɵproperty("ngStyle", ɵɵpureFunction0(3, _c16));
     ɵɵadvance(2);
-    ɵɵproperty("ngIf", !ctx_r0.reorderIndicatorDownIconTemplate && !ctx_r0._reorderIndicatorDownIconTemplate);
+    ɵɵproperty("ngIf", !ctx_r0.reorderIndicatorDownIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.reorderIndicatorDownIconTemplate || ctx_r0._reorderIndicatorDownIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.reorderIndicatorDownIconTemplate);
   }
 }
-var _c45 = ["pTableBody", ""];
-var _c46 = (a0, a1, a2, a3, a4) => ({
+var _c17 = ["pTableBody", ""];
+var _c18 = (a0, a1, a2, a3, a4) => ({
   $implicit: a0,
   rowIndex: a1,
   columns: a2,
   editing: a3,
   frozen: a4
 });
-var _c47 = (a0, a1, a2, a3, a4, a5, a6) => ({
+var _c19 = (a0, a1, a2, a3, a4, a5, a6) => ({
   $implicit: a0,
   rowIndex: a1,
   columns: a2,
@@ -8970,7 +2506,7 @@ var _c47 = (a0, a1, a2, a3, a4, a5, a6) => ({
   rowgroup: a5,
   rowspan: a6
 });
-var _c48 = (a0, a1, a2, a3, a4, a5) => ({
+var _c20 = (a0, a1, a2, a3, a4, a5) => ({
   $implicit: a0,
   rowIndex: a1,
   columns: a2,
@@ -8978,13 +2514,13 @@ var _c48 = (a0, a1, a2, a3, a4, a5) => ({
   editing: a4,
   frozen: a5
 });
-var _c49 = (a0, a1, a2, a3) => ({
+var _c21 = (a0, a1, a2, a3) => ({
   $implicit: a0,
   rowIndex: a1,
   columns: a2,
   frozen: a3
 });
-var _c50 = (a0, a1) => ({
+var _c222 = (a0, a1) => ({
   $implicit: a0,
   frozen: a1
 });
@@ -9005,7 +2541,7 @@ function TableBody_ng_container_0_ng_template_1_ng_container_0_Template(rf, ctx)
     const rowIndex_r3 = ctx_r0.index;
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.groupHeaderTemplate || ctx_r3.dt._groupHeaderTemplate)("ngTemplateOutletContext", ɵɵpureFunction5(2, _c46, rowData_r2, ctx_r3.getRowIndex(rowIndex_r3), ctx_r3.columns, ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r2), ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.groupHeaderTemplate)("ngTemplateOutletContext", ɵɵpureFunction5(2, _c18, rowData_r2, ctx_r3.getRowIndex(rowIndex_r3), ctx_r3.columns, ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r2), ctx_r3.frozen));
   }
 }
 function TableBody_ng_container_0_ng_template_1_ng_container_1_ng_container_1_Template(rf, ctx) {
@@ -9025,7 +2561,7 @@ function TableBody_ng_container_0_ng_template_1_ng_container_1_Template(rf, ctx)
     const rowIndex_r3 = ctx_r0.index;
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", rowData_r2 ? ctx_r3.template : ctx_r3.dt.loadingBodyTemplate || ctx_r3.dt._loadingBodyTemplate)("ngTemplateOutletContext", ɵɵpureFunction5(2, _c46, rowData_r2, ctx_r3.getRowIndex(rowIndex_r3), ctx_r3.columns, ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r2), ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", rowData_r2 ? ctx_r3.template : ctx_r3.dt.loadingBodyTemplate)("ngTemplateOutletContext", ɵɵpureFunction5(2, _c18, rowData_r2, ctx_r3.getRowIndex(rowIndex_r3), ctx_r3.columns, ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r2), ctx_r3.frozen));
   }
 }
 function TableBody_ng_container_0_ng_template_1_ng_container_2_ng_container_1_Template(rf, ctx) {
@@ -9045,7 +2581,7 @@ function TableBody_ng_container_0_ng_template_1_ng_container_2_Template(rf, ctx)
     const rowIndex_r3 = ctx_r0.index;
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", rowData_r2 ? ctx_r3.template : ctx_r3.dt.loadingBodyTemplate || ctx_r3.dt._loadingBodyTemplate)("ngTemplateOutletContext", ɵɵpureFunction7(2, _c47, rowData_r2, ctx_r3.getRowIndex(rowIndex_r3), ctx_r3.columns, ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r2), ctx_r3.frozen, ctx_r3.shouldRenderRowspan(ctx_r3.value, rowData_r2, rowIndex_r3), ctx_r3.calculateRowGroupSize(ctx_r3.value, rowData_r2, rowIndex_r3)));
+    ɵɵproperty("ngTemplateOutlet", rowData_r2 ? ctx_r3.template : ctx_r3.dt.loadingBodyTemplate)("ngTemplateOutletContext", ɵɵpureFunction7(2, _c19, rowData_r2, ctx_r3.getRowIndex(rowIndex_r3), ctx_r3.columns, ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r2), ctx_r3.frozen, ctx_r3.shouldRenderRowspan(ctx_r3.value, rowData_r2, rowIndex_r3), ctx_r3.calculateRowGroupSize(ctx_r3.value, rowData_r2, rowIndex_r3)));
   }
 }
 function TableBody_ng_container_0_ng_template_1_ng_container_3_ng_container_1_Template(rf, ctx) {
@@ -9065,7 +2601,7 @@ function TableBody_ng_container_0_ng_template_1_ng_container_3_Template(rf, ctx)
     const rowIndex_r3 = ctx_r0.index;
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.groupFooterTemplate || ctx_r3.dt._groupFooterTemplate)("ngTemplateOutletContext", ɵɵpureFunction5(2, _c46, rowData_r2, ctx_r3.getRowIndex(rowIndex_r3), ctx_r3.columns, ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r2), ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.groupFooterTemplate)("ngTemplateOutletContext", ɵɵpureFunction5(2, _c18, rowData_r2, ctx_r3.getRowIndex(rowIndex_r3), ctx_r3.columns, ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r2), ctx_r3.frozen));
   }
 }
 function TableBody_ng_container_0_ng_template_1_Template(rf, ctx) {
@@ -9076,13 +2612,13 @@ function TableBody_ng_container_0_ng_template_1_Template(rf, ctx) {
     const rowData_r2 = ctx.$implicit;
     const rowIndex_r3 = ctx.index;
     const ctx_r3 = ɵɵnextContext(2);
-    ɵɵproperty("ngIf", (ctx_r3.dt.groupHeaderTemplate || ctx_r3.dt._groupHeaderTemplate) && !ctx_r3.dt.virtualScroll && ctx_r3.dt.rowGroupMode === "subheader" && ctx_r3.shouldRenderRowGroupHeader(ctx_r3.value, rowData_r2, rowIndex_r3));
+    ɵɵproperty("ngIf", ctx_r3.dt.groupHeaderTemplate && !ctx_r3.dt.virtualScroll && ctx_r3.dt.rowGroupMode === "subheader" && ctx_r3.shouldRenderRowGroupHeader(ctx_r3.value, rowData_r2, ctx_r3.getRowIndex(rowIndex_r3)));
     ɵɵadvance();
     ɵɵproperty("ngIf", ctx_r3.dt.rowGroupMode !== "rowspan");
     ɵɵadvance();
     ɵɵproperty("ngIf", ctx_r3.dt.rowGroupMode === "rowspan");
     ɵɵadvance();
-    ɵɵproperty("ngIf", (ctx_r3.dt.groupFooterTemplate || ctx_r3.dt._groupFooterTemplate) && !ctx_r3.dt.virtualScroll && ctx_r3.dt.rowGroupMode === "subheader" && ctx_r3.shouldRenderRowGroupFooter(ctx_r3.value, rowData_r2, rowIndex_r3));
+    ɵɵproperty("ngIf", ctx_r3.dt.groupFooterTemplate && !ctx_r3.dt.virtualScroll && ctx_r3.dt.rowGroupMode === "subheader" && ctx_r3.shouldRenderRowGroupFooter(ctx_r3.value, rowData_r2, rowIndex_r3));
   }
 }
 function TableBody_ng_container_0_Template(rf, ctx) {
@@ -9114,7 +2650,7 @@ function TableBody_ng_container_1_ng_template_1_ng_container_0_Template(rf, ctx)
     const rowIndex_r7 = ctx_r4.index;
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r3.template)("ngTemplateOutletContext", ɵɵpureFunction6(2, _c48, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7), ctx_r3.columns, ctx_r3.dt.isRowExpanded(rowData_r6), ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r6), ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", ctx_r3.template)("ngTemplateOutletContext", ɵɵpureFunction6(2, _c20, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7), ctx_r3.columns, ctx_r3.dt.isRowExpanded(rowData_r6), ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r6), ctx_r3.frozen));
   }
 }
 function TableBody_ng_container_1_ng_template_1_ng_container_1_ng_container_1_Template(rf, ctx) {
@@ -9134,7 +2670,7 @@ function TableBody_ng_container_1_ng_template_1_ng_container_1_Template(rf, ctx)
     const rowIndex_r7 = ctx_r4.index;
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.groupHeaderTemplate || ctx_r3.dt._groupHeaderTemplate)("ngTemplateOutletContext", ɵɵpureFunction6(2, _c48, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7), ctx_r3.columns, ctx_r3.dt.isRowExpanded(rowData_r6), ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r6), ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.groupHeaderTemplate)("ngTemplateOutletContext", ɵɵpureFunction6(2, _c20, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7), ctx_r3.columns, ctx_r3.dt.isRowExpanded(rowData_r6), ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r6), ctx_r3.frozen));
   }
 }
 function TableBody_ng_container_1_ng_template_1_ng_container_2_ng_container_1_Template(rf, ctx) {
@@ -9159,7 +2695,7 @@ function TableBody_ng_container_1_ng_template_1_ng_container_2_ng_container_2_Te
     const rowIndex_r7 = ctx_r4.index;
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.groupFooterTemplate || ctx_r3.dt._groupFooterTemplate)("ngTemplateOutletContext", ɵɵpureFunction6(2, _c48, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7), ctx_r3.columns, ctx_r3.dt.isRowExpanded(rowData_r6), ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r6), ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.groupFooterTemplate)("ngTemplateOutletContext", ɵɵpureFunction6(2, _c20, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7), ctx_r3.columns, ctx_r3.dt.isRowExpanded(rowData_r6), ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r6), ctx_r3.frozen));
   }
 }
 function TableBody_ng_container_1_ng_template_1_ng_container_2_Template(rf, ctx) {
@@ -9174,9 +2710,9 @@ function TableBody_ng_container_1_ng_template_1_ng_container_2_Template(rf, ctx)
     const rowIndex_r7 = ctx_r4.index;
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.expandedRowTemplate || ctx_r3.dt._expandedRowTemplate)("ngTemplateOutletContext", ɵɵpureFunction4(3, _c49, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7), ctx_r3.columns, ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.expandedRowTemplate)("ngTemplateOutletContext", ɵɵpureFunction4(3, _c21, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7), ctx_r3.columns, ctx_r3.frozen));
     ɵɵadvance();
-    ɵɵproperty("ngIf", (ctx_r3.dt.groupFooterTemplate || ctx_r3.dt._groupFooterTemplate) && ctx_r3.dt.rowGroupMode === "subheader" && ctx_r3.shouldRenderRowGroupFooter(ctx_r3.value, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7)));
+    ɵɵproperty("ngIf", ctx_r3.dt.groupFooterTemplate && ctx_r3.dt.rowGroupMode === "subheader" && ctx_r3.shouldRenderRowGroupFooter(ctx_r3.value, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7)));
   }
 }
 function TableBody_ng_container_1_ng_template_1_Template(rf, ctx) {
@@ -9187,9 +2723,9 @@ function TableBody_ng_container_1_ng_template_1_Template(rf, ctx) {
     const rowData_r6 = ctx.$implicit;
     const rowIndex_r7 = ctx.index;
     const ctx_r3 = ɵɵnextContext(2);
-    ɵɵproperty("ngIf", !(ctx_r3.dt.groupHeaderTemplate && ctx_r3.dt._groupHeaderTemplate));
+    ɵɵproperty("ngIf", !ctx_r3.dt.groupHeaderTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", (ctx_r3.dt.groupHeaderTemplate || ctx_r3.dt._groupHeaderTemplate) && ctx_r3.dt.rowGroupMode === "subheader" && ctx_r3.shouldRenderRowGroupHeader(ctx_r3.value, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7)));
+    ɵɵproperty("ngIf", ctx_r3.dt.groupHeaderTemplate && ctx_r3.dt.rowGroupMode === "subheader" && ctx_r3.shouldRenderRowGroupHeader(ctx_r3.value, rowData_r6, ctx_r3.getRowIndex(rowIndex_r7)));
     ɵɵadvance();
     ɵɵproperty("ngIf", ctx_r3.dt.isRowExpanded(rowData_r6));
   }
@@ -9228,7 +2764,7 @@ function TableBody_ng_container_2_ng_template_1_ng_container_1_Template(rf, ctx)
     const rowIndex_r10 = ctx_r7.index;
     const ctx_r3 = ɵɵnextContext(2);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.frozenExpandedRowTemplate || ctx_r3.dt._frozenExpandedRowTemplate)("ngTemplateOutletContext", ɵɵpureFunction4(2, _c49, rowData_r9, ctx_r3.getRowIndex(rowIndex_r10), ctx_r3.columns, ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.frozenExpandedRowTemplate)("ngTemplateOutletContext", ɵɵpureFunction4(2, _c21, rowData_r9, ctx_r3.getRowIndex(rowIndex_r10), ctx_r3.columns, ctx_r3.frozen));
   }
 }
 function TableBody_ng_container_2_ng_template_1_Template(rf, ctx) {
@@ -9239,7 +2775,7 @@ function TableBody_ng_container_2_ng_template_1_Template(rf, ctx) {
     const rowData_r9 = ctx.$implicit;
     const rowIndex_r10 = ctx.index;
     const ctx_r3 = ɵɵnextContext(2);
-    ɵɵproperty("ngTemplateOutlet", ctx_r3.template)("ngTemplateOutletContext", ɵɵpureFunction6(3, _c48, rowData_r9, ctx_r3.getRowIndex(rowIndex_r10), ctx_r3.columns, ctx_r3.dt.isRowExpanded(rowData_r9), ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r9), ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", ctx_r3.template)("ngTemplateOutletContext", ɵɵpureFunction6(3, _c20, rowData_r9, ctx_r3.getRowIndex(rowIndex_r10), ctx_r3.columns, ctx_r3.dt.isRowExpanded(rowData_r9), ctx_r3.dt.editMode === "row" && ctx_r3.dt.isRowEditing(rowData_r9), ctx_r3.frozen));
     ɵɵadvance();
     ɵɵproperty("ngIf", ctx_r3.dt.isRowExpanded(rowData_r9));
   }
@@ -9270,7 +2806,7 @@ function TableBody_ng_container_3_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r3 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.loadingBodyTemplate || ctx_r3.dt._loadingBodyTemplate)("ngTemplateOutletContext", ɵɵpureFunction2(2, _c50, ctx_r3.columns, ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.loadingBodyTemplate)("ngTemplateOutletContext", ɵɵpureFunction2(2, _c222, ctx_r3.columns, ctx_r3.frozen));
   }
 }
 function TableBody_ng_container_4_ng_container_1_Template(rf, ctx) {
@@ -9287,7 +2823,7 @@ function TableBody_ng_container_4_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r3 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.emptyMessageTemplate || ctx_r3.dt._emptyMessageTemplate)("ngTemplateOutletContext", ɵɵpureFunction2(2, _c50, ctx_r3.columns, ctx_r3.frozen));
+    ɵɵproperty("ngTemplateOutlet", ctx_r3.dt.emptyMessageTemplate)("ngTemplateOutletContext", ɵɵpureFunction2(2, _c222, ctx_r3.columns, ctx_r3.frozen));
   }
 }
 function SortIcon_ng_container_0_SortAltIcon_1_Template(rf, ctx) {
@@ -9346,7 +2882,7 @@ function SortIcon_span_1_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.dt.sortIconTemplate || ctx_r0.dt._sortIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c44, ctx_r0.sortOrder));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.dt.sortIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c15, ctx_r0.sortOrder));
   }
 }
 function SortIcon_span_2_Template(rf, ctx) {
@@ -9361,8 +2897,6 @@ function SortIcon_span_2_Template(rf, ctx) {
     ɵɵtextInterpolate(ctx_r0.getBadgeValue());
   }
 }
-var _c51 = ["input"];
-var _c522 = ["output"];
 function CellEditor_ng_container_0_ng_container_1_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainer(0);
@@ -9377,7 +2911,7 @@ function CellEditor_ng_container_0_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.inputTemplate || ctx_r0._inputTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.inputTemplate);
   }
 }
 function CellEditor_ng_container_1_ng_container_1_Template(rf, ctx) {
@@ -9394,62 +2928,135 @@ function CellEditor_ng_container_1_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.outputTemplate || ctx_r0._outputTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.outputTemplate);
   }
 }
-var _c53 = ["rb"];
-function TableCheckbox_ng_container_1_ng_template_1_0_ng_template_0_Template(rf, ctx) {
-}
-function TableCheckbox_ng_container_1_ng_template_1_0_Template(rf, ctx) {
+var _c232 = ["rb"];
+var _c24 = (a0, a1, a2) => ({
+  "p-radiobutton-focused": a0,
+  "p-radiobutton-checked": a1,
+  "p-radiobutton-disabled": a2
+});
+var _c25 = (a0, a1, a2) => ({
+  "p-radiobutton-box p-component": true,
+  "p-highlight": a0,
+  "p-focus": a1,
+  "p-disabled": a2
+});
+var _c26 = (a0, a1) => ({
+  "p-checkbox-focused": a0,
+  "p-checkbox-disabled": a1
+});
+var _c27 = (a0, a1, a2) => ({
+  "p-checkbox-box p-component": true,
+  "p-highlight": a0,
+  "p-focus": a1,
+  "p-disabled": a2
+});
+function TableCheckbox_ng_container_5_CheckIcon_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, TableCheckbox_ng_container_1_ng_template_1_0_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function TableCheckbox_ng_container_1_ng_template_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, TableCheckbox_ng_container_1_ng_template_1_0_Template, 1, 0, null, 3);
+    ɵɵelement(0, "CheckIcon", 7);
   }
   if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext(2);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.dt.checkboxIconTemplate || ctx_r0.dt._checkboxIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c44, ctx_r0.checked));
+    ɵɵproperty("styleClass", "p-checkbox-icon");
   }
 }
-function TableCheckbox_ng_container_1_Template(rf, ctx) {
+function TableCheckbox_ng_container_5_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, TableCheckbox_ng_container_1_ng_template_1_Template, 1, 4, "ng-template", 2);
+    ɵɵtemplate(1, TableCheckbox_ng_container_5_CheckIcon_1_Template, 1, 1, "CheckIcon", 6);
     ɵɵelementContainerEnd();
-  }
-}
-function TableHeaderCheckbox_ng_container_1_ng_template_1_0_ng_template_0_Template(rf, ctx) {
-}
-function TableHeaderCheckbox_ng_container_1_ng_template_1_0_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, TableHeaderCheckbox_ng_container_1_ng_template_1_0_ng_template_0_Template, 0, 0, "ng-template");
-  }
-}
-function TableHeaderCheckbox_ng_container_1_ng_template_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, TableHeaderCheckbox_ng_container_1_ng_template_1_0_Template, 1, 0, null, 3);
   }
   if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext(2);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.dt.headerCheckboxIconTemplate || ctx_r0.dt._headerCheckboxIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c44, ctx_r0.checked));
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵadvance();
+    ɵɵproperty("ngIf", ctx_r1.checked);
   }
 }
-function TableHeaderCheckbox_ng_container_1_Template(rf, ctx) {
+function TableCheckbox_span_6_1_ng_template_0_Template(rf, ctx) {
+}
+function TableCheckbox_span_6_1_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵtemplate(0, TableCheckbox_span_6_1_ng_template_0_Template, 0, 0, "ng-template");
+  }
+}
+function TableCheckbox_span_6_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵelementStart(0, "span");
+    ɵɵtemplate(1, TableCheckbox_span_6_1_Template, 1, 0, null, 8);
+    ɵɵelementEnd();
+  }
+  if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵadvance();
+    ɵɵproperty("ngTemplateOutlet", ctx_r1.dt.checkboxIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c15, ctx_r1.checked));
+  }
+}
+var _c28 = (a0, a1, a2) => ({
+  "p-checkbox-box": true,
+  "p-highlight": a0,
+  "p-focus": a1,
+  "p-disabled": a2
+});
+function TableHeaderCheckbox_ng_container_6_CheckIcon_1_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵelement(0, "CheckIcon", 9);
+  }
+  if (rf & 2) {
+    ɵɵproperty("styleClass", "p-checkbox-icon");
+  }
+}
+function TableHeaderCheckbox_ng_container_6_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, TableHeaderCheckbox_ng_container_1_ng_template_1_Template, 1, 4, "ng-template", 2);
+    ɵɵtemplate(1, TableHeaderCheckbox_ng_container_6_CheckIcon_1_Template, 1, 1, "CheckIcon", 8);
     ɵɵelementContainerEnd();
   }
+  if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵadvance();
+    ɵɵproperty("ngIf", ctx_r1.checked);
+  }
 }
-var _c54 = ["filter"];
-var _c55 = ["filtericon"];
-var _c56 = ["removeruleicon"];
-var _c57 = ["addruleicon"];
-var _c58 = ["clearfiltericon"];
-var _c59 = ["clearBtn"];
+function TableHeaderCheckbox_span_7_1_ng_template_0_Template(rf, ctx) {
+}
+function TableHeaderCheckbox_span_7_1_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵtemplate(0, TableHeaderCheckbox_span_7_1_ng_template_0_Template, 0, 0, "ng-template");
+  }
+}
+function TableHeaderCheckbox_span_7_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵelementStart(0, "span", 10);
+    ɵɵtemplate(1, TableHeaderCheckbox_span_7_1_Template, 1, 0, null, 11);
+    ɵɵelementEnd();
+  }
+  if (rf & 2) {
+    const ctx_r1 = ɵɵnextContext();
+    ɵɵadvance();
+    ɵɵproperty("ngTemplateOutlet", ctx_r1.dt.headerCheckboxIconTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(2, _c15, ctx_r1.checked));
+  }
+}
+var _c29 = ["icon"];
+var _c30 = ["clearBtn"];
+var _c31 = (a0, a1) => ({
+  "p-column-filter-row": a0,
+  "p-column-filter-menu": a1
+});
+var _c32 = (a0, a1) => ({
+  "p-column-filter-menu-button-open": a0,
+  "p-column-filter-menu-button-active": a1
+});
+var _c33 = (a0) => ({
+  "p-hidden-space": a0
+});
+var _c34 = (a0) => ({
+  "p-column-filter-overlay p-component p-fluid": true,
+  "p-column-filter-overlay-menu": a0
+});
+var _c35 = (a0) => ({
+  "p-highlight": a0
+});
 function ColumnFilter_p_columnFilterFormElement_1_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelement(0, "p-columnFilterFormElement", 8);
@@ -9459,102 +3066,92 @@ function ColumnFilter_p_columnFilterFormElement_1_Template(rf, ctx) {
     ɵɵproperty("type", ctx_r0.type)("field", ctx_r0.field)("ariaLabel", ctx_r0.ariaLabel)("filterConstraint", ctx_r0.dt.filters[ctx_r0.field])("filterTemplate", ctx_r0.filterTemplate)("placeholder", ctx_r0.placeholder)("minFractionDigits", ctx_r0.minFractionDigits)("maxFractionDigits", ctx_r0.maxFractionDigits)("prefix", ctx_r0.prefix)("suffix", ctx_r0.suffix)("locale", ctx_r0.locale)("localeMatcher", ctx_r0.localeMatcher)("currency", ctx_r0.currency)("currencyDisplay", ctx_r0.currencyDisplay)("useGrouping", ctx_r0.useGrouping)("showButtons", ctx_r0.showButtons);
   }
 }
-function ColumnFilter_p_button_2_ng_template_1_FilterIcon_0_Template(rf, ctx) {
+function ColumnFilter_button_2_FilterIcon_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "FilterIcon");
+    ɵɵelement(0, "FilterIcon", 12);
+  }
+  if (rf & 2) {
+    ɵɵproperty("styleClass", "pi-filter-icon");
   }
 }
-function ColumnFilter_p_button_2_ng_template_1_span_1_1_ng_template_0_Template(rf, ctx) {
+function ColumnFilter_button_2_span_3_1_ng_template_0_Template(rf, ctx) {
 }
-function ColumnFilter_p_button_2_ng_template_1_span_1_1_Template(rf, ctx) {
+function ColumnFilter_button_2_span_3_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, ColumnFilter_p_button_2_ng_template_1_span_1_1_ng_template_0_Template, 0, 0, "ng-template");
+    ɵɵtemplate(0, ColumnFilter_button_2_span_3_1_ng_template_0_Template, 0, 0, "ng-template");
   }
 }
-function ColumnFilter_p_button_2_ng_template_1_span_1_Template(rf, ctx) {
+function ColumnFilter_button_2_span_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "span", 12);
-    ɵɵtemplate(1, ColumnFilter_p_button_2_ng_template_1_span_1_1_Template, 1, 0, null, 13);
+    ɵɵelementStart(0, "span", 13);
+    ɵɵtemplate(1, ColumnFilter_button_2_span_3_1_Template, 1, 0, null, 14);
     ɵɵelementEnd();
   }
   if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext(3);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.filterIconTemplate || ctx_r0._filterIconTemplate);
-  }
-}
-function ColumnFilter_p_button_2_ng_template_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, ColumnFilter_p_button_2_ng_template_1_FilterIcon_0_Template, 1, 0, "FilterIcon", 10)(1, ColumnFilter_p_button_2_ng_template_1_span_1_Template, 2, 1, "span", 11);
-  }
-  if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(2);
-    ɵɵproperty("ngIf", !ctx_r0.filterIconTemplate && !ctx_r0._filterIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.filterIconTemplate || ctx_r0._filterIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.filterIconTemplate);
   }
 }
-function ColumnFilter_p_button_2_Template(rf, ctx) {
+function ColumnFilter_button_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r2 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-button", 9);
-    ɵɵlistener("click", function ColumnFilter_p_button_2_Template_p_button_click_0_listener($event) {
+    ɵɵelementStart(0, "button", 9, 0);
+    ɵɵlistener("click", function ColumnFilter_button_2_Template_button_click_0_listener() {
       ɵɵrestoreView(_r2);
       const ctx_r0 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r0.toggleMenu($event));
-    })("keydown", function ColumnFilter_p_button_2_Template_p_button_keydown_0_listener($event) {
+      return ɵɵresetView(ctx_r0.toggleMenu());
+    })("keydown", function ColumnFilter_button_2_Template_button_keydown_0_listener($event) {
       ɵɵrestoreView(_r2);
       const ctx_r0 = ɵɵnextContext();
       return ɵɵresetView(ctx_r0.onToggleButtonKeyDown($event));
     });
-    ɵɵtemplate(1, ColumnFilter_p_button_2_ng_template_1_Template, 2, 2, "ng-template", null, 0, ɵɵtemplateRefExtractor);
+    ɵɵtemplate(2, ColumnFilter_button_2_FilterIcon_2_Template, 1, 1, "FilterIcon", 10)(3, ColumnFilter_button_2_span_3_Template, 2, 1, "span", 11);
     ɵɵelementEnd();
   }
   if (rf & 2) {
-    let tmp_7_0;
+    let tmp_5_0;
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("styleClass", ctx_r0.cx("pcColumnFilterButton"))("ariaLabel", ctx_r0.filterMenuButtonAriaLabel)("buttonProps", ctx_r0.filterButtonProps == null ? null : ctx_r0.filterButtonProps.filter);
-    ɵɵattribute("aria-haspopup", true)("aria-controls", ctx_r0.overlayVisible ? ctx_r0.overlayId : null)("aria-expanded", (tmp_7_0 = ctx_r0.overlayVisible) !== null && tmp_7_0 !== void 0 ? tmp_7_0 : false);
+    ɵɵproperty("ngClass", ɵɵpureFunction2(6, _c32, ctx_r0.overlayVisible, ctx_r0.hasFilter()));
+    ɵɵattribute("aria-label", ctx_r0.filterMenuButtonAriaLabel)("aria-controls", ctx_r0.overlayVisible ? ctx_r0.overlayId : null)("aria-expanded", (tmp_5_0 = ctx_r0.overlayVisible) !== null && tmp_5_0 !== void 0 ? tmp_5_0 : false);
+    ɵɵadvance(2);
+    ɵɵproperty("ngIf", !ctx_r0.filterIconTemplate);
+    ɵɵadvance();
+    ɵɵproperty("ngIf", ctx_r0.filterIconTemplate);
   }
 }
-function ColumnFilter_p_button_3_ng_template_1_FilterSlashIcon_0_Template(rf, ctx) {
+function ColumnFilter_button_3_FilterSlashIcon_2_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelement(0, "FilterSlashIcon");
   }
 }
-function ColumnFilter_p_button_3_ng_template_1_1_ng_template_0_Template(rf, ctx) {
+function ColumnFilter_button_3_3_ng_template_0_Template(rf, ctx) {
 }
-function ColumnFilter_p_button_3_ng_template_1_1_Template(rf, ctx) {
+function ColumnFilter_button_3_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, ColumnFilter_p_button_3_ng_template_1_1_ng_template_0_Template, 0, 0, "ng-template");
+    ɵɵtemplate(0, ColumnFilter_button_3_3_ng_template_0_Template, 0, 0, "ng-template");
   }
 }
-function ColumnFilter_p_button_3_ng_template_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, ColumnFilter_p_button_3_ng_template_1_FilterSlashIcon_0_Template, 1, 0, "FilterSlashIcon", 10)(1, ColumnFilter_p_button_3_ng_template_1_1_Template, 1, 0, null, 13);
-  }
-  if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext(2);
-    ɵɵproperty("ngIf", !ctx_r0.clearFilterIconTemplate && !ctx_r0._clearFilterIconTemplate);
-    ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.clearFilterIconTemplate || ctx_r0._clearFilterIconTemplate);
-  }
-}
-function ColumnFilter_p_button_3_Template(rf, ctx) {
+function ColumnFilter_button_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-button", 14);
-    ɵɵlistener("onClick", function ColumnFilter_p_button_3_Template_p_button_onClick_0_listener() {
+    ɵɵelementStart(0, "button", 15, 0);
+    ɵɵlistener("click", function ColumnFilter_button_3_Template_button_click_0_listener() {
       ɵɵrestoreView(_r3);
       const ctx_r0 = ɵɵnextContext();
       return ɵɵresetView(ctx_r0.clearFilter());
     });
-    ɵɵtemplate(1, ColumnFilter_p_button_3_ng_template_1_Template, 2, 2, "ng-template", null, 0, ɵɵtemplateRefExtractor);
+    ɵɵtemplate(2, ColumnFilter_button_3_FilterSlashIcon_2_Template, 1, 0, "FilterSlashIcon", 16)(3, ColumnFilter_button_3_3_Template, 1, 0, null, 14);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("styleClass", ctx_r0.cx("pcColumnfilterClearButton"))("ariaLabel", ctx_r0.clearButtonLabel)("buttonProps", ctx_r0.filterButtonProps == null ? null : ctx_r0.filterButtonProps.inline == null ? null : ctx_r0.filterButtonProps.inline.clear);
+    ɵɵproperty("ngClass", ɵɵpureFunction1(4, _c33, !ctx_r0.hasRowFilter()));
+    ɵɵattribute("aria-label", ctx_r0.clearButtonLabel);
+    ɵɵadvance(2);
+    ɵɵproperty("ngIf", !ctx_r0.clearFilterIconTemplate);
+    ɵɵadvance();
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.clearFilterIconTemplate);
   }
 }
 function ColumnFilter_div_4_ng_container_1_Template(rf, ctx) {
@@ -9565,7 +3162,7 @@ function ColumnFilter_div_4_ng_container_1_Template(rf, ctx) {
 function ColumnFilter_div_4_ul_2_li_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "li", 19);
+    ɵɵelementStart(0, "li", 24);
     ɵɵlistener("click", function ColumnFilter_div_4_ul_2_li_1_Template_li_click_0_listener() {
       const matchMode_r7 = ɵɵrestoreView(_r6).$implicit;
       const ctx_r0 = ɵɵnextContext(3);
@@ -9586,8 +3183,7 @@ function ColumnFilter_div_4_ul_2_li_1_Template(rf, ctx) {
     const matchMode_r7 = ctx.$implicit;
     const i_r8 = ctx.index;
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵclassProp("p-datatable-filter-constraint-selected", ctx_r0.isRowMatchModeSelected(matchMode_r7.value));
-    ɵɵproperty("ngClass", ctx_r0.cx("filterConstraint"));
+    ɵɵproperty("ngClass", ɵɵpureFunction1(3, _c35, ctx_r0.isRowMatchModeSelected(matchMode_r7.value)));
     ɵɵattribute("tabindex", i_r8 === 0 ? "0" : null);
     ɵɵadvance();
     ɵɵtextInterpolate1(" ", matchMode_r7.label, " ");
@@ -9596,10 +3192,10 @@ function ColumnFilter_div_4_ul_2_li_1_Template(rf, ctx) {
 function ColumnFilter_div_4_ul_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "ul", 3);
-    ɵɵtemplate(1, ColumnFilter_div_4_ul_2_li_1_Template, 2, 5, "li", 18);
-    ɵɵelement(2, "li", 3);
-    ɵɵelementStart(3, "li", 19);
+    ɵɵelementStart(0, "ul", 20);
+    ɵɵtemplate(1, ColumnFilter_div_4_ul_2_li_1_Template, 2, 5, "li", 21);
+    ɵɵelement(2, "li", 22);
+    ɵɵelementStart(3, "li", 23);
     ɵɵlistener("click", function ColumnFilter_div_4_ul_2_Template_li_click_3_listener() {
       ɵɵrestoreView(_r5);
       const ctx_r0 = ɵɵnextContext(2);
@@ -9618,22 +3214,17 @@ function ColumnFilter_div_4_ul_2_Template(rf, ctx) {
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(2);
-    ɵɵproperty("ngClass", ctx_r0.cx("filterConstraintList"));
     ɵɵadvance();
     ɵɵproperty("ngForOf", ctx_r0.matchModes);
-    ɵɵadvance();
-    ɵɵproperty("ngClass", ctx_r0.cx("filterConstraintSeparator"));
-    ɵɵadvance();
-    ɵɵproperty("ngClass", ctx_r0.cx("filterConstraint"));
-    ɵɵadvance();
-    ɵɵtextInterpolate1(" ", ctx_r0.noFilterLabel, " ");
+    ɵɵadvance(3);
+    ɵɵtextInterpolate(ctx_r0.noFilterLabel);
   }
 }
 function ColumnFilter_div_4_ng_template_3_div_0_Template(rf, ctx) {
   if (rf & 1) {
     const _r9 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 3)(1, "p-select", 24);
-    ɵɵlistener("ngModelChange", function ColumnFilter_div_4_ng_template_3_div_0_Template_p_select_ngModelChange_1_listener($event) {
+    ɵɵelementStart(0, "div", 30)(1, "p-dropdown", 31);
+    ɵɵlistener("ngModelChange", function ColumnFilter_div_4_ng_template_3_div_0_Template_p_dropdown_ngModelChange_1_listener($event) {
       ɵɵrestoreView(_r9);
       const ctx_r0 = ɵɵnextContext(3);
       return ɵɵresetView(ctx_r0.onOperatorChange($event));
@@ -9642,16 +3233,15 @@ function ColumnFilter_div_4_ng_template_3_div_0_Template(rf, ctx) {
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngClass", ctx_r0.cx("filterOperator"));
     ɵɵadvance();
-    ɵɵproperty("options", ctx_r0.operatorOptions)("ngModel", ctx_r0.operator)("styleClass", ctx_r0.cx("pcFilterOperatorDropdown"));
+    ɵɵproperty("options", ctx_r0.operatorOptions)("ngModel", ctx_r0.operator);
   }
 }
-function ColumnFilter_div_4_ng_template_3_div_2_p_select_1_Template(rf, ctx) {
+function ColumnFilter_div_4_ng_template_3_div_2_p_dropdown_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r10 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-select", 24);
-    ɵɵlistener("ngModelChange", function ColumnFilter_div_4_ng_template_3_div_2_p_select_1_Template_p_select_ngModelChange_0_listener($event) {
+    ɵɵelementStart(0, "p-dropdown", 36);
+    ɵɵlistener("ngModelChange", function ColumnFilter_div_4_ng_template_3_div_2_p_dropdown_1_Template_p_dropdown_ngModelChange_0_listener($event) {
       ɵɵrestoreView(_r10);
       const fieldConstraint_r11 = ɵɵnextContext().$implicit;
       const ctx_r0 = ɵɵnextContext(3);
@@ -9662,67 +3252,73 @@ function ColumnFilter_div_4_ng_template_3_div_2_p_select_1_Template(rf, ctx) {
   if (rf & 2) {
     const fieldConstraint_r11 = ɵɵnextContext().$implicit;
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("options", ctx_r0.matchModes)("ngModel", fieldConstraint_r11.matchMode)("styleClass", ctx_r0.cx("pcFilterConstraintDropdown"));
+    ɵɵproperty("options", ctx_r0.matchModes)("ngModel", fieldConstraint_r11.matchMode);
   }
 }
-function ColumnFilter_div_4_ng_template_3_div_2_p_button_4_TrashIcon_1_Template(rf, ctx) {
+function ColumnFilter_div_4_ng_template_3_div_2_button_4_TrashIcon_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "TrashIcon");
+    ɵɵelement(0, "TrashIcon", 12);
+  }
+  if (rf & 2) {
+    ɵɵproperty("styleClass", "p-button-icon-left");
   }
 }
-function ColumnFilter_div_4_ng_template_3_div_2_p_button_4_2_ng_template_0_Template(rf, ctx) {
+function ColumnFilter_div_4_ng_template_3_div_2_button_4_2_ng_template_0_Template(rf, ctx) {
 }
-function ColumnFilter_div_4_ng_template_3_div_2_p_button_4_2_Template(rf, ctx) {
+function ColumnFilter_div_4_ng_template_3_div_2_button_4_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, ColumnFilter_div_4_ng_template_3_div_2_p_button_4_2_ng_template_0_Template, 0, 0, "ng-template");
+    ɵɵtemplate(0, ColumnFilter_div_4_ng_template_3_div_2_button_4_2_ng_template_0_Template, 0, 0, "ng-template");
   }
 }
-function ColumnFilter_div_4_ng_template_3_div_2_p_button_4_Template(rf, ctx) {
+function ColumnFilter_div_4_ng_template_3_div_2_button_4_Template(rf, ctx) {
   if (rf & 1) {
     const _r12 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-button", 28);
-    ɵɵlistener("onClick", function ColumnFilter_div_4_ng_template_3_div_2_p_button_4_Template_p_button_onClick_0_listener() {
+    ɵɵelementStart(0, "button", 37);
+    ɵɵlistener("click", function ColumnFilter_div_4_ng_template_3_div_2_button_4_Template_button_click_0_listener() {
       ɵɵrestoreView(_r12);
       const fieldConstraint_r11 = ɵɵnextContext().$implicit;
       const ctx_r0 = ɵɵnextContext(3);
       return ɵɵresetView(ctx_r0.removeConstraint(fieldConstraint_r11));
     });
-    ɵɵtemplate(1, ColumnFilter_div_4_ng_template_3_div_2_p_button_4_TrashIcon_1_Template, 1, 0, "TrashIcon", 10)(2, ColumnFilter_div_4_ng_template_3_div_2_p_button_4_2_Template, 1, 0, null, 13);
+    ɵɵtemplate(1, ColumnFilter_div_4_ng_template_3_div_2_button_4_TrashIcon_1_Template, 1, 1, "TrashIcon", 10)(2, ColumnFilter_div_4_ng_template_3_div_2_button_4_2_Template, 1, 0, null, 14);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(4);
-    ɵɵproperty("styleClass", ctx_r0.cx("pcFilterRemoveRuleButton"))("text", true)("ariaLabel", ctx_r0.removeRuleButtonLabel)("label", ctx_r0.removeRuleButtonLabel)("buttonProps", ctx_r0.filterButtonProps == null ? null : ctx_r0.filterButtonProps.popover == null ? null : ctx_r0.filterButtonProps.popover.removeRule);
+    ɵɵproperty("label", ctx_r0.removeRuleButtonLabel);
+    ɵɵattribute("aria-label", ctx_r0.removeRuleButtonLabel);
     ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r0.removeRuleIconTemplate && !ctx_r0._removeRuleIconTemplate);
+    ɵɵproperty("ngIf", !ctx_r0.removeRuleIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.removeRuleIconTemplate || ctx_r0._removeRuleIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.removeRuleIconTemplate);
   }
 }
 function ColumnFilter_div_4_ng_template_3_div_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 3);
-    ɵɵtemplate(1, ColumnFilter_div_4_ng_template_3_div_2_p_select_1_Template, 1, 3, "p-select", 25);
-    ɵɵelement(2, "p-columnFilterFormElement", 26);
+    ɵɵelementStart(0, "div", 32);
+    ɵɵtemplate(1, ColumnFilter_div_4_ng_template_3_div_2_p_dropdown_1_Template, 1, 2, "p-dropdown", 33);
+    ɵɵelement(2, "p-columnFilterFormElement", 34);
     ɵɵelementStart(3, "div");
-    ɵɵtemplate(4, ColumnFilter_div_4_ng_template_3_div_2_p_button_4_Template, 3, 7, "p-button", 27);
+    ɵɵtemplate(4, ColumnFilter_div_4_ng_template_3_div_2_button_4_Template, 3, 4, "button", 35);
     ɵɵelementEnd()();
   }
   if (rf & 2) {
     const fieldConstraint_r11 = ctx.$implicit;
     const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("ngClass", ctx_r0.cx("filterRule"));
     ɵɵadvance();
     ɵɵproperty("ngIf", ctx_r0.showMatchModes && ctx_r0.matchModes);
     ɵɵadvance();
-    ɵɵproperty("type", ctx_r0.type)("field", ctx_r0.field)("filterConstraint", fieldConstraint_r11)("filterTemplate", ctx_r0.filterTemplate || ctx_r0._filterTemplate)("placeholder", ctx_r0.placeholder)("minFractionDigits", ctx_r0.minFractionDigits)("maxFractionDigits", ctx_r0.maxFractionDigits)("prefix", ctx_r0.prefix)("suffix", ctx_r0.suffix)("locale", ctx_r0.locale)("localeMatcher", ctx_r0.localeMatcher)("currency", ctx_r0.currency)("currencyDisplay", ctx_r0.currencyDisplay)("useGrouping", ctx_r0.useGrouping);
+    ɵɵproperty("type", ctx_r0.type)("field", ctx_r0.field)("filterConstraint", fieldConstraint_r11)("filterTemplate", ctx_r0.filterTemplate)("placeholder", ctx_r0.placeholder)("minFractionDigits", ctx_r0.minFractionDigits)("maxFractionDigits", ctx_r0.maxFractionDigits)("prefix", ctx_r0.prefix)("suffix", ctx_r0.suffix)("locale", ctx_r0.locale)("localeMatcher", ctx_r0.localeMatcher)("currency", ctx_r0.currency)("currencyDisplay", ctx_r0.currencyDisplay)("useGrouping", ctx_r0.useGrouping);
     ɵɵadvance(2);
     ɵɵproperty("ngIf", ctx_r0.showRemoveIcon);
   }
 }
 function ColumnFilter_div_4_ng_template_3_div_3_PlusIcon_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "PlusIcon");
+    ɵɵelement(0, "PlusIcon", 12);
+  }
+  if (rf & 2) {
+    ɵɵproperty("styleClass", "p-button-icon-left");
   }
 }
 function ColumnFilter_div_4_ng_template_3_div_3_3_ng_template_0_Template(rf, ctx) {
@@ -9735,86 +3331,91 @@ function ColumnFilter_div_4_ng_template_3_div_3_3_Template(rf, ctx) {
 function ColumnFilter_div_4_ng_template_3_div_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r13 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div")(1, "p-button", 29);
-    ɵɵlistener("onClick", function ColumnFilter_div_4_ng_template_3_div_3_Template_p_button_onClick_1_listener() {
+    ɵɵelementStart(0, "div", 38)(1, "button", 39);
+    ɵɵlistener("click", function ColumnFilter_div_4_ng_template_3_div_3_Template_button_click_1_listener() {
       ɵɵrestoreView(_r13);
       const ctx_r0 = ɵɵnextContext(3);
       return ɵɵresetView(ctx_r0.addConstraint());
     });
-    ɵɵtemplate(2, ColumnFilter_div_4_ng_template_3_div_3_PlusIcon_2_Template, 1, 0, "PlusIcon", 10)(3, ColumnFilter_div_4_ng_template_3_div_3_3_Template, 1, 0, null, 13);
+    ɵɵtemplate(2, ColumnFilter_div_4_ng_template_3_div_3_PlusIcon_2_Template, 1, 1, "PlusIcon", 10)(3, ColumnFilter_div_4_ng_template_3_div_3_3_Template, 1, 0, null, 14);
     ɵɵelementEnd()();
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(3);
     ɵɵadvance();
-    ɵɵproperty("label", ctx_r0.addRuleButtonLabel)("styleClass", ctx_r0.cx("pcFilterAddRuleButton"))("text", true)("buttonProps", ctx_r0.filterButtonProps == null ? null : ctx_r0.filterButtonProps.popover == null ? null : ctx_r0.filterButtonProps.popover.addRule);
+    ɵɵproperty("label", ctx_r0.addRuleButtonLabel);
     ɵɵattribute("aria-label", ctx_r0.addRuleButtonLabel);
     ɵɵadvance();
-    ɵɵproperty("ngIf", !ctx_r0.addRuleIconTemplate && !ctx_r0._addRuleIconTemplate);
+    ɵɵproperty("ngIf", !ctx_r0.addRuleIconTemplate);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.addRuleIconTemplate || ctx_r0._addRuleIconTemplate);
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.addRuleIconTemplate);
   }
 }
-function ColumnFilter_div_4_ng_template_3_p_button_5_Template(rf, ctx) {
+function ColumnFilter_div_4_ng_template_3_div_4_button_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r14 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-button", 30, 2);
-    ɵɵlistener("onClick", function ColumnFilter_div_4_ng_template_3_p_button_5_Template_p_button_onClick_0_listener() {
+    ɵɵelementStart(0, "button", 43, 2);
+    ɵɵlistener("click", function ColumnFilter_div_4_ng_template_3_div_4_button_1_Template_button_click_0_listener() {
       ɵɵrestoreView(_r14);
-      const ctx_r0 = ɵɵnextContext(3);
+      const ctx_r0 = ɵɵnextContext(4);
       return ɵɵresetView(ctx_r0.clearFilter());
     });
     ɵɵelementEnd();
   }
   if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("outlined", true)("label", ctx_r0.clearButtonLabel)("buttonProps", ctx_r0.filterButtonProps == null ? null : ctx_r0.filterButtonProps.popover == null ? null : ctx_r0.filterButtonProps.popover.clear);
+    const ctx_r0 = ɵɵnextContext(4);
+    ɵɵproperty("label", ctx_r0.clearButtonLabel);
     ɵɵattribute("aria-label", ctx_r0.clearButtonLabel);
   }
 }
-function ColumnFilter_div_4_ng_template_3_p_button_6_Template(rf, ctx) {
+function ColumnFilter_div_4_ng_template_3_div_4_button_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r15 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-button", 31);
-    ɵɵlistener("onClick", function ColumnFilter_div_4_ng_template_3_p_button_6_Template_p_button_onClick_0_listener() {
+    ɵɵelementStart(0, "button", 44);
+    ɵɵlistener("click", function ColumnFilter_div_4_ng_template_3_div_4_button_2_Template_button_click_0_listener() {
       ɵɵrestoreView(_r15);
-      const ctx_r0 = ɵɵnextContext(3);
+      const ctx_r0 = ɵɵnextContext(4);
       return ɵɵresetView(ctx_r0.applyFilter());
     });
     ɵɵelementEnd();
   }
   if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext(3);
-    ɵɵproperty("label", ctx_r0.applyButtonLabel)("buttonProps", ctx_r0.filterButtonProps == null ? null : ctx_r0.filterButtonProps.popover == null ? null : ctx_r0.filterButtonProps.popover.apply);
+    const ctx_r0 = ɵɵnextContext(4);
+    ɵɵproperty("label", ctx_r0.applyButtonLabel);
     ɵɵattribute("aria-label", ctx_r0.applyButtonLabel);
   }
 }
-function ColumnFilter_div_4_ng_template_3_Template(rf, ctx) {
+function ColumnFilter_div_4_ng_template_3_div_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, ColumnFilter_div_4_ng_template_3_div_0_Template, 2, 4, "div", 20);
-    ɵɵelementStart(1, "div", 3);
-    ɵɵtemplate(2, ColumnFilter_div_4_ng_template_3_div_2_Template, 5, 17, "div", 21);
-    ɵɵelementEnd();
-    ɵɵtemplate(3, ColumnFilter_div_4_ng_template_3_div_3_Template, 4, 7, "div", 10);
-    ɵɵelementStart(4, "div", 3);
-    ɵɵtemplate(5, ColumnFilter_div_4_ng_template_3_p_button_5_Template, 2, 4, "p-button", 22)(6, ColumnFilter_div_4_ng_template_3_p_button_6_Template, 1, 3, "p-button", 23);
+    ɵɵelementStart(0, "div", 40);
+    ɵɵtemplate(1, ColumnFilter_div_4_ng_template_3_div_4_button_1_Template, 2, 2, "button", 41)(2, ColumnFilter_div_4_ng_template_3_div_4_button_2_Template, 1, 2, "button", 42);
     ɵɵelementEnd();
   }
   if (rf & 2) {
-    const ctx_r0 = ɵɵnextContext(2);
-    ɵɵproperty("ngIf", ctx_r0.isShowOperator);
-    ɵɵadvance();
-    ɵɵproperty("ngClass", ctx_r0.cx("filterRuleList"));
-    ɵɵadvance();
-    ɵɵproperty("ngForOf", ctx_r0.fieldConstraints);
-    ɵɵadvance();
-    ɵɵproperty("ngIf", ctx_r0.isShowAddConstraint);
-    ɵɵadvance();
-    ɵɵproperty("ngClass", ctx_r0.cx("filterButtonbar"));
+    const ctx_r0 = ɵɵnextContext(3);
     ɵɵadvance();
     ɵɵproperty("ngIf", ctx_r0.showClearButton);
     ɵɵadvance();
     ɵɵproperty("ngIf", ctx_r0.showApplyButton);
+  }
+}
+function ColumnFilter_div_4_ng_template_3_Template(rf, ctx) {
+  if (rf & 1) {
+    ɵɵtemplate(0, ColumnFilter_div_4_ng_template_3_div_0_Template, 2, 2, "div", 25);
+    ɵɵelementStart(1, "div", 26);
+    ɵɵtemplate(2, ColumnFilter_div_4_ng_template_3_div_2_Template, 5, 16, "div", 27);
+    ɵɵelementEnd();
+    ɵɵtemplate(3, ColumnFilter_div_4_ng_template_3_div_3_Template, 4, 4, "div", 28)(4, ColumnFilter_div_4_ng_template_3_div_4_Template, 3, 2, "div", 29);
+  }
+  if (rf & 2) {
+    const ctx_r0 = ɵɵnextContext(2);
+    ɵɵproperty("ngIf", ctx_r0.isShowOperator);
+    ɵɵadvance(2);
+    ɵɵproperty("ngForOf", ctx_r0.fieldConstraints);
+    ɵɵadvance();
+    ɵɵproperty("ngIf", ctx_r0.isShowAddConstraint);
+    ɵɵadvance();
+    ɵɵproperty("ngIf", ctx_r0.showButtons);
   }
 }
 function ColumnFilter_div_4_ng_container_5_Template(rf, ctx) {
@@ -9825,7 +3426,7 @@ function ColumnFilter_div_4_ng_container_5_Template(rf, ctx) {
 function ColumnFilter_div_4_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 15);
+    ɵɵelementStart(0, "div", 17);
     ɵɵlistener("click", function ColumnFilter_div_4_Template_div_click_0_listener() {
       ɵɵrestoreView(_r4);
       const ctx_r0 = ɵɵnextContext();
@@ -9843,23 +3444,23 @@ function ColumnFilter_div_4_Template(rf, ctx) {
       const ctx_r0 = ɵɵnextContext();
       return ɵɵresetView(ctx_r0.onEscape());
     });
-    ɵɵtemplate(1, ColumnFilter_div_4_ng_container_1_Template, 1, 0, "ng-container", 16)(2, ColumnFilter_div_4_ul_2_Template, 5, 5, "ul", 17)(3, ColumnFilter_div_4_ng_template_3_Template, 7, 7, "ng-template", null, 1, ɵɵtemplateRefExtractor)(5, ColumnFilter_div_4_ng_container_5_Template, 1, 0, "ng-container", 16);
+    ɵɵtemplate(1, ColumnFilter_div_4_ng_container_1_Template, 1, 0, "ng-container", 18)(2, ColumnFilter_div_4_ul_2_Template, 5, 2, "ul", 19)(3, ColumnFilter_div_4_ng_template_3_Template, 5, 4, "ng-template", null, 1, ɵɵtemplateRefExtractor)(5, ColumnFilter_div_4_ng_container_5_Template, 1, 0, "ng-container", 18);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const menu_r16 = ɵɵreference(4);
     const ctx_r0 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ctx_r0.cx("filterOverlay"))("id", ctx_r0.overlayId)("@overlayAnimation", "visible");
+    ɵɵproperty("ngClass", ɵɵpureFunction1(10, _c34, ctx_r0.display === "menu"))("id", ctx_r0.overlayId)("@overlayAnimation", "visible");
     ɵɵattribute("aria-modal", true);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.headerTemplate || ctx_r0._headerTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(10, _c44, ctx_r0.field));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.headerTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(12, _c15, ctx_r0.field));
     ɵɵadvance();
     ɵɵproperty("ngIf", ctx_r0.display === "row")("ngIfElse", menu_r16);
     ɵɵadvance(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.footerTemplate || ctx_r0._footerTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(12, _c44, ctx_r0.field));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.footerTemplate)("ngTemplateOutletContext", ɵɵpureFunction1(14, _c15, ctx_r0.field));
   }
 }
-var _c60 = (a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15) => ({
+var _c36 = (a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15) => ({
   $implicit: a0,
   filterCallback: a1,
   type: a2,
@@ -9891,7 +3492,7 @@ function ColumnFilterFormElement_ng_container_0_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r0.filterTemplate)("ngTemplateOutletContext", ɵɵpureFunctionV(2, _c60, [ctx_r0.filterConstraint.value, ctx_r0.filterCallback, ctx_r0.type, ctx_r0.field, ctx_r0.filterConstraint, ctx_r0.placeholder, ctx_r0.minFractionDigits, ctx_r0.maxFractionDigits, ctx_r0.prefix, ctx_r0.suffix, ctx_r0.locale, ctx_r0.localeMatcher, ctx_r0.currency, ctx_r0.currencyDisplay, ctx_r0.useGrouping, ctx_r0.showButtons]));
+    ɵɵproperty("ngTemplateOutlet", ctx_r0.filterTemplate)("ngTemplateOutletContext", ɵɵpureFunctionV(2, _c36, [ctx_r0.filterConstraint == null ? null : ctx_r0.filterConstraint.value, ctx_r0.filterCallback, ctx_r0.type, ctx_r0.field, ctx_r0.filterConstraint, ctx_r0.placeholder, ctx_r0.minFractionDigits, ctx_r0.maxFractionDigits, ctx_r0.prefix, ctx_r0.suffix, ctx_r0.locale, ctx_r0.localeMatcher, ctx_r0.currency, ctx_r0.currencyDisplay, ctx_r0.useGrouping, ctx_r0.showButtons]));
   }
 }
 function ColumnFilterFormElement_ng_template_1_input_1_Template(rf, ctx) {
@@ -9935,11 +3536,11 @@ function ColumnFilterFormElement_ng_template_1_p_inputNumber_2_Template(rf, ctx)
     ɵɵproperty("ngModel", ctx_r0.filterConstraint == null ? null : ctx_r0.filterConstraint.value)("showButtons", ctx_r0.showButtons)("minFractionDigits", ctx_r0.minFractionDigits)("maxFractionDigits", ctx_r0.maxFractionDigits)("ariaLabel", ctx_r0.ariaLabel)("prefix", ctx_r0.prefix)("suffix", ctx_r0.suffix)("placeholder", ctx_r0.placeholder)("mode", ctx_r0.currency ? "currency" : "decimal")("locale", ctx_r0.locale)("localeMatcher", ctx_r0.localeMatcher)("currency", ctx_r0.currency)("currencyDisplay", ctx_r0.currencyDisplay)("useGrouping", ctx_r0.useGrouping);
   }
 }
-function ColumnFilterFormElement_ng_template_1_p_checkbox_3_Template(rf, ctx) {
+function ColumnFilterFormElement_ng_template_1_p_triStateCheckbox_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-checkbox", 10);
-    ɵɵlistener("ngModelChange", function ColumnFilterFormElement_ng_template_1_p_checkbox_3_Template_p_checkbox_ngModelChange_0_listener($event) {
+    ɵɵelementStart(0, "p-triStateCheckbox", 10);
+    ɵɵlistener("ngModelChange", function ColumnFilterFormElement_ng_template_1_p_triStateCheckbox_3_Template_p_triStateCheckbox_ngModelChange_0_listener($event) {
       ɵɵrestoreView(_r4);
       const ctx_r0 = ɵɵnextContext(2);
       return ɵɵresetView(ctx_r0.onModelChange($event));
@@ -9948,14 +3549,14 @@ function ColumnFilterFormElement_ng_template_1_p_checkbox_3_Template(rf, ctx) {
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(2);
-    ɵɵproperty("indeterminate", true)("binary", true)("ngModel", ctx_r0.filterConstraint == null ? null : ctx_r0.filterConstraint.value);
+    ɵɵproperty("ariaLabel", ctx_r0.ariaLabel)("ngModel", ctx_r0.filterConstraint == null ? null : ctx_r0.filterConstraint.value);
   }
 }
-function ColumnFilterFormElement_ng_template_1_p_datepicker_4_Template(rf, ctx) {
+function ColumnFilterFormElement_ng_template_1_p_calendar_4_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-datepicker", 11);
-    ɵɵlistener("ngModelChange", function ColumnFilterFormElement_ng_template_1_p_datepicker_4_Template_p_datepicker_ngModelChange_0_listener($event) {
+    ɵɵelementStart(0, "p-calendar", 11);
+    ɵɵlistener("ngModelChange", function ColumnFilterFormElement_ng_template_1_p_calendar_4_Template_p_calendar_ngModelChange_0_listener($event) {
       ɵɵrestoreView(_r5);
       const ctx_r0 = ɵɵnextContext(2);
       return ɵɵresetView(ctx_r0.onModelChange($event));
@@ -9970,7 +3571,7 @@ function ColumnFilterFormElement_ng_template_1_p_datepicker_4_Template(rf, ctx) 
 function ColumnFilterFormElement_ng_template_1_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainerStart(0, 3);
-    ɵɵtemplate(1, ColumnFilterFormElement_ng_template_1_input_1_Template, 1, 3, "input", 4)(2, ColumnFilterFormElement_ng_template_1_p_inputNumber_2_Template, 1, 14, "p-inputNumber", 5)(3, ColumnFilterFormElement_ng_template_1_p_checkbox_3_Template, 1, 3, "p-checkbox", 6)(4, ColumnFilterFormElement_ng_template_1_p_datepicker_4_Template, 1, 3, "p-datepicker", 7);
+    ɵɵtemplate(1, ColumnFilterFormElement_ng_template_1_input_1_Template, 1, 3, "input", 4)(2, ColumnFilterFormElement_ng_template_1_p_inputNumber_2_Template, 1, 14, "p-inputNumber", 5)(3, ColumnFilterFormElement_ng_template_1_p_triStateCheckbox_3_Template, 1, 2, "p-triStateCheckbox", 6)(4, ColumnFilterFormElement_ng_template_1_p_calendar_4_Template, 1, 3, "p-calendar", 7);
     ɵɵelementContainerEnd();
   }
   if (rf & 2) {
@@ -9993,7 +3594,9 @@ var TableService = class _TableService {
   valueSource = new import_rxjs.Subject();
   totalRecordsSource = new import_rxjs.Subject();
   columnsSource = new import_rxjs.Subject();
+  isHeaderCheckboxSelection = new import_rxjs.Subject();
   sortSource$ = this.sortSource.asObservable();
+  isHeaderCheckboxSelection$ = this.isHeaderCheckboxSelection.asObservable();
   selectionSource$ = this.selectionSource.asObservable();
   contextMenuSource$ = this.contextMenuSource.asObservable();
   valueSource$ = this.valueSource.asObservable();
@@ -10017,6 +3620,9 @@ var TableService = class _TableService {
   onColumnsChange(columns) {
     this.columnsSource.next(columns);
   }
+  onHeaderCheckboxSelection(value) {
+    this.isHeaderCheckboxSelection.next(value);
+  }
   static ɵfac = function TableService_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _TableService)();
   };
@@ -10030,7 +3636,18 @@ var TableService = class _TableService {
     type: Injectable
   }], null, null);
 })();
-var Table = class _Table extends BaseComponent {
+var Table = class _Table {
+  document;
+  platformId;
+  renderer;
+  el;
+  zone;
+  tableService;
+  cd;
+  filterService;
+  overlayService;
+  config;
+  domSanitizer;
   /**
    * An array of objects to represent dynamic columns that are frozen.
    * @group Props
@@ -10308,7 +3925,7 @@ var Table = class _Table extends BaseComponent {
   }
   set responsive(val) {
     this._responsive = val;
-    console.log("responsive property is deprecated as table is always responsive with scrollable behavior.");
+    console.warn("responsive property is deprecated as table is always responsive with scrollable behavior.");
   }
   _responsive;
   /**
@@ -10396,21 +4013,6 @@ var Table = class _Table extends BaseComponent {
    * @group Props
    */
   groupRowsBy;
-  /**
-   * Defines the size of the table.
-   * @group Props
-   */
-  size;
-  /**
-   * Whether to show grid lines between cells.
-   * @group Props
-   */
-  showGridlines;
-  /**
-   * Whether to display rows with alternating colors.
-   * @group Props
-   */
-  stripedRows;
   /**
    * Order to sort when default row grouping is enabled.
    * @group Props
@@ -10521,18 +4123,6 @@ var Table = class _Table extends BaseComponent {
   }
   set selection(val) {
     this._selection = val;
-  }
-  /**
-   * Indicates the height of rows to be scrolled.
-   * @group Props
-   * @deprecated use virtualScrollItemSize property instead.
-   */
-  get virtualRowHeight() {
-    return this._virtualRowHeight;
-  }
-  set virtualRowHeight(val) {
-    this._virtualRowHeight = val;
-    console.log("The virtualRowHeight property is deprecated.");
   }
   /**
    * Whether all data is selected.
@@ -10691,7 +4281,19 @@ var Table = class _Table extends BaseComponent {
   tableHeaderViewChild;
   tableFooterViewChild;
   scroller;
-  _templates;
+  templates;
+  /**
+   * Indicates the height of rows to be scrolled.
+   * @group Props
+   * @deprecated use virtualScrollItemSize property instead.
+   */
+  get virtualRowHeight() {
+    return this._virtualRowHeight;
+  }
+  set virtualRowHeight(val) {
+    this._virtualRowHeight = val;
+    console.warn("The virtualRowHeight property is deprecated.");
+  }
   _virtualRowHeight = 28;
   _value = [];
   _columns;
@@ -10699,70 +4301,37 @@ var Table = class _Table extends BaseComponent {
   _first = 0;
   _rows;
   filteredValue;
-  // @todo will be refactored later
-  _headerTemplate;
   headerTemplate;
-  _headerGroupedTemplate;
   headerGroupedTemplate;
-  _bodyTemplate;
   bodyTemplate;
-  _loadingBodyTemplate;
   loadingBodyTemplate;
-  _captionTemplate;
   captionTemplate;
-  _footerTemplate;
   footerTemplate;
-  _footerGroupedTemplate;
   footerGroupedTemplate;
-  _summaryTemplate;
   summaryTemplate;
-  _colGroupTemplate;
   colGroupTemplate;
-  _expandedRowTemplate;
   expandedRowTemplate;
-  _groupHeaderTemplate;
   groupHeaderTemplate;
-  _groupFooterTemplate;
   groupFooterTemplate;
-  _frozenExpandedRowTemplate;
   frozenExpandedRowTemplate;
-  _frozenHeaderTemplate;
   frozenHeaderTemplate;
-  _frozenBodyTemplate;
   frozenBodyTemplate;
-  _frozenFooterTemplate;
   frozenFooterTemplate;
-  _frozenColGroupTemplate;
   frozenColGroupTemplate;
-  _emptyMessageTemplate;
   emptyMessageTemplate;
-  _paginatorLeftTemplate;
   paginatorLeftTemplate;
-  _paginatorRightTemplate;
   paginatorRightTemplate;
-  _paginatorDropdownItemTemplate;
   paginatorDropdownItemTemplate;
-  _loadingIconTemplate;
   loadingIconTemplate;
-  _reorderIndicatorUpIconTemplate;
   reorderIndicatorUpIconTemplate;
-  _reorderIndicatorDownIconTemplate;
   reorderIndicatorDownIconTemplate;
-  _sortIconTemplate;
   sortIconTemplate;
-  _checkboxIconTemplate;
   checkboxIconTemplate;
-  _headerCheckboxIconTemplate;
   headerCheckboxIconTemplate;
-  _paginatorDropdownIconTemplate;
   paginatorDropdownIconTemplate;
-  _paginatorFirstPageLinkIconTemplate;
   paginatorFirstPageLinkIconTemplate;
-  _paginatorLastPageLinkIconTemplate;
   paginatorLastPageLinkIconTemplate;
-  _paginatorPreviousPageLinkIconTemplate;
   paginatorPreviousPageLinkIconTemplate;
-  _paginatorNextPageLinkIconTemplate;
   paginatorNextPageLinkIconTemplate;
   selectionKeys = {};
   lastResizerHelperX;
@@ -10803,13 +4372,22 @@ var Table = class _Table extends BaseComponent {
   id = UniqueComponentId();
   styleElement;
   responsiveStyleElement;
-  overlayService = inject(OverlayService);
-  filterService = inject(FilterService);
-  tableService = inject(TableService);
-  zone = inject(NgZone);
-  _componentStyle = inject(TableStyle);
+  window;
+  constructor(document2, platformId, renderer, el, zone, tableService, cd, filterService, overlayService, config, domSanitizer) {
+    this.document = document2;
+    this.platformId = platformId;
+    this.renderer = renderer;
+    this.el = el;
+    this.zone = zone;
+    this.tableService = tableService;
+    this.cd = cd;
+    this.filterService = filterService;
+    this.overlayService = overlayService;
+    this.config = config;
+    this.domSanitizer = domSanitizer;
+    this.window = this.document.defaultView;
+  }
   ngOnInit() {
-    super.ngOnInit();
     if (this.lazy && this.lazyLoadOnInit) {
       if (!this.virtualScroll) {
         this.onLazyLoad.emit(this.createLazyLoadMetadata());
@@ -10824,7 +4402,7 @@ var Table = class _Table extends BaseComponent {
     this.initialized = true;
   }
   ngAfterContentInit() {
-    this._templates.forEach((item) => {
+    this.templates.forEach((item) => {
       switch (item.getType()) {
         case "caption":
           this.captionTemplate = item.template;
@@ -10926,7 +4504,6 @@ var Table = class _Table extends BaseComponent {
     });
   }
   ngAfterViewInit() {
-    super.ngAfterViewInit();
     if (isPlatformBrowser(this.platformId)) {
       if (this.isStateful() && this.resizableColumns) {
         this.restoreColumnWidths();
@@ -10934,7 +4511,6 @@ var Table = class _Table extends BaseComponent {
     }
   }
   ngOnChanges(simpleChange) {
-    super.ngOnChanges(simpleChange);
     if (simpleChange.value) {
       if (this.isStateful() && !this.stateRestored && isPlatformBrowser(this.platformId)) {
         this.restoreState();
@@ -11039,9 +4615,9 @@ var Table = class _Table extends BaseComponent {
       }
     }
   }
-  onPageChange(event2) {
-    this.first = event2.first;
-    this.rows = event2.rows;
+  onPageChange(event) {
+    this.first = event.first;
+    this.rows = event.rows;
     this.onPage.emit({
       first: this.first,
       rows: this.rows
@@ -11060,11 +4636,11 @@ var Table = class _Table extends BaseComponent {
       this.resetScrollTop();
     }
   }
-  sort(event2) {
-    let originalEvent = event2.originalEvent;
+  sort(event) {
+    let originalEvent = event.originalEvent;
     if (this.sortMode === "single") {
-      this._sortOrder = this.sortField === event2.field ? this.sortOrder * -1 : this.defaultSortOrder;
-      this._sortField = event2.field;
+      this._sortOrder = this.sortField === event.field ? this.sortOrder * -1 : this.defaultSortOrder;
+      this._sortField = event.field;
       if (this.resetPageOnSort) {
         this._first = 0;
         this.firstChange.emit(this._first);
@@ -11076,11 +4652,11 @@ var Table = class _Table extends BaseComponent {
     }
     if (this.sortMode === "multiple") {
       let metaKey = originalEvent.metaKey || originalEvent.ctrlKey;
-      let sortMeta = this.getSortMeta(event2.field);
+      let sortMeta = this.getSortMeta(event.field);
       if (sortMeta) {
         if (!metaKey) {
           this._multiSortMeta = [{
-            field: event2.field,
+            field: event.field,
             order: sortMeta.order * -1
           }];
           if (this.resetPageOnSort) {
@@ -11102,7 +4678,7 @@ var Table = class _Table extends BaseComponent {
           }
         }
         this._multiSortMeta.push({
-          field: event2.field,
+          field: event.field,
           order: this.defaultSortOrder
         });
       }
@@ -11232,24 +4808,24 @@ var Table = class _Table extends BaseComponent {
       return sorted;
     }
   }
-  handleRowClick(event2) {
-    let target = event2.originalEvent.target;
+  handleRowClick(event) {
+    let target = event.originalEvent.target;
     let targetNode = target.nodeName;
     let parentNode = target.parentElement && target.parentElement.nodeName;
-    if (targetNode == "INPUT" || targetNode == "BUTTON" || targetNode == "A" || parentNode == "INPUT" || parentNode == "BUTTON" || parentNode == "A" || DomHandler.hasClass(event2.originalEvent.target, "p-clickable")) {
+    if (targetNode == "INPUT" || targetNode == "BUTTON" || targetNode == "A" || parentNode == "INPUT" || parentNode == "BUTTON" || parentNode == "A" || DomHandler.hasClass(event.originalEvent.target, "p-clickable")) {
       return;
     }
     if (this.selectionMode) {
-      let rowData = event2.rowData;
-      let rowIndex = event2.rowIndex;
+      let rowData = event.rowData;
+      let rowIndex = event.rowIndex;
       this.preventSelectionSetterPropagation = true;
-      if (this.isMultipleSelectionMode() && event2.originalEvent.shiftKey && this.anchorRowIndex != null) {
+      if (this.isMultipleSelectionMode() && event.originalEvent.shiftKey && this.anchorRowIndex != null) {
         DomHandler.clearSelection();
         if (this.rangeRowIndex != null) {
-          this.clearSelectionRange(event2.originalEvent);
+          this.clearSelectionRange(event.originalEvent);
         }
         this.rangeRowIndex = rowIndex;
-        this.selectRange(event2.originalEvent, rowIndex);
+        this.selectRange(event.originalEvent, rowIndex);
       } else {
         let selected = this.isSelected(rowData);
         if (!selected && !this.isRowSelectable(rowData, rowIndex)) {
@@ -11260,7 +4836,7 @@ var Table = class _Table extends BaseComponent {
         this.anchorRowIndex = rowIndex;
         this.rangeRowIndex = rowIndex;
         if (metaSelection) {
-          let metaKey = event2.originalEvent.metaKey || event2.originalEvent.ctrlKey;
+          let metaKey = event.originalEvent.metaKey || event.originalEvent.ctrlKey;
           if (selected && metaKey) {
             if (this.isSingleSelectionMode()) {
               this._selection = null;
@@ -11275,7 +4851,7 @@ var Table = class _Table extends BaseComponent {
               }
             }
             this.onRowUnselect.emit({
-              originalEvent: event2.originalEvent,
+              originalEvent: event.originalEvent,
               data: rowData,
               type: "row"
             });
@@ -11301,7 +4877,7 @@ var Table = class _Table extends BaseComponent {
               }
             }
             this.onRowSelect.emit({
-              originalEvent: event2.originalEvent,
+              originalEvent: event.originalEvent,
               data: rowData,
               type: "row",
               index: rowIndex
@@ -11314,7 +4890,7 @@ var Table = class _Table extends BaseComponent {
               this.selectionKeys = {};
               this.selectionChange.emit(this.selection);
               this.onRowUnselect.emit({
-                originalEvent: event2.originalEvent,
+                originalEvent: event.originalEvent,
                 data: rowData,
                 type: "row",
                 index: rowIndex
@@ -11323,7 +4899,7 @@ var Table = class _Table extends BaseComponent {
               this._selection = rowData;
               this.selectionChange.emit(this.selection);
               this.onRowSelect.emit({
-                originalEvent: event2.originalEvent,
+                originalEvent: event.originalEvent,
                 data: rowData,
                 type: "row",
                 index: rowIndex
@@ -11339,7 +4915,7 @@ var Table = class _Table extends BaseComponent {
               this._selection = this.selection.filter((val, i) => i != selectionIndex);
               this.selectionChange.emit(this.selection);
               this.onRowUnselect.emit({
-                originalEvent: event2.originalEvent,
+                originalEvent: event.originalEvent,
                 data: rowData,
                 type: "row",
                 index: rowIndex
@@ -11351,7 +4927,7 @@ var Table = class _Table extends BaseComponent {
               this._selection = this.selection ? [...this.selection, rowData] : [rowData];
               this.selectionChange.emit(this.selection);
               this.onRowSelect.emit({
-                originalEvent: event2.originalEvent,
+                originalEvent: event.originalEvent,
                 data: rowData,
                 type: "row",
                 index: rowIndex
@@ -11370,22 +4946,22 @@ var Table = class _Table extends BaseComponent {
     }
     this.rowTouched = false;
   }
-  handleRowTouchEnd(event2) {
+  handleRowTouchEnd(event) {
     this.rowTouched = true;
   }
-  handleRowRightClick(event2) {
+  handleRowRightClick(event) {
     if (this.contextMenu) {
-      const rowData = event2.rowData;
-      const rowIndex = event2.rowIndex;
+      const rowData = event.rowData;
+      const rowIndex = event.rowIndex;
       if (this.contextMenuSelectionMode === "separate") {
         this.contextMenuSelection = rowData;
         this.contextMenuSelectionChange.emit(rowData);
         this.onContextMenuSelect.emit({
-          originalEvent: event2.originalEvent,
+          originalEvent: event.originalEvent,
           data: rowData,
-          index: event2.rowIndex
+          index: event.rowIndex
         });
-        this.contextMenu.show(event2.originalEvent);
+        this.contextMenu.show(event.originalEvent);
         this.tableService.onContextMenu(rowData);
       } else if (this.contextMenuSelectionMode === "joint") {
         this.preventSelectionSetterPropagation = true;
@@ -11411,16 +4987,16 @@ var Table = class _Table extends BaseComponent {
           }
         }
         this.tableService.onSelectionChange();
-        this.contextMenu.show(event2.originalEvent);
+        this.contextMenu.show(event.originalEvent);
         this.onContextMenuSelect.emit({
-          originalEvent: event2,
+          originalEvent: event,
           data: rowData,
-          index: event2.rowIndex
+          index: event.rowIndex
         });
       }
     }
   }
-  selectRange(event2, rowIndex) {
+  selectRange(event, rowIndex, isMetaKeySelection) {
     let rangeStart, rangeEnd;
     if (this.anchorRowIndex > rowIndex) {
       rangeStart = rowIndex;
@@ -11439,7 +5015,7 @@ var Table = class _Table extends BaseComponent {
     let rangeRowsData = [];
     for (let i = rangeStart; i <= rangeEnd; i++) {
       let rangeRowData = this.filteredValue ? this.filteredValue[i] : this.value[i];
-      if (!this.isSelected(rangeRowData)) {
+      if (!this.isSelected(rangeRowData) && !isMetaKeySelection) {
         if (!this.isRowSelectable(rangeRowData, rowIndex)) {
           continue;
         }
@@ -11453,12 +5029,12 @@ var Table = class _Table extends BaseComponent {
     }
     this.selectionChange.emit(this.selection);
     this.onRowSelect.emit({
-      originalEvent: event2,
+      originalEvent: event,
       data: rangeRowsData,
       type: "row"
     });
   }
-  clearSelectionRange(event2) {
+  clearSelectionRange(event) {
     let rangeStart, rangeEnd;
     let rangeRowIndex = this.rangeRowIndex;
     let anchorRowIndex = this.anchorRowIndex;
@@ -11481,7 +5057,7 @@ var Table = class _Table extends BaseComponent {
         delete this.selectionKeys[dataKeyValue];
       }
       this.onRowUnselect.emit({
-        originalEvent: event2,
+        originalEvent: event,
         data: rangeRowData,
         type: "row"
       });
@@ -11519,17 +5095,17 @@ var Table = class _Table extends BaseComponent {
     }
     return true;
   }
-  toggleRowWithRadio(event2, rowData) {
+  toggleRowWithRadio(event, rowData) {
     this.preventSelectionSetterPropagation = true;
     if (this.selection != rowData) {
-      if (!this.isRowSelectable(rowData, event2.rowIndex)) {
+      if (!this.isRowSelectable(rowData, event.rowIndex)) {
         return;
       }
       this._selection = rowData;
       this.selectionChange.emit(this.selection);
       this.onRowSelect.emit({
-        originalEvent: event2.originalEvent,
-        index: event2.rowIndex,
+        originalEvent: event.originalEvent,
+        index: event.rowIndex,
         data: rowData,
         type: "radiobutton"
       });
@@ -11541,8 +5117,8 @@ var Table = class _Table extends BaseComponent {
       this._selection = null;
       this.selectionChange.emit(this.selection);
       this.onRowUnselect.emit({
-        originalEvent: event2.originalEvent,
-        index: event2.rowIndex,
+        originalEvent: event.originalEvent,
+        index: event.rowIndex,
         data: rowData,
         type: "radiobutton"
       });
@@ -11552,7 +5128,7 @@ var Table = class _Table extends BaseComponent {
       this.saveState();
     }
   }
-  toggleRowWithCheckbox(event2, rowData) {
+  toggleRowWithCheckbox(event, rowData) {
     this.selection = this.selection || [];
     let selected = this.isSelected(rowData);
     let dataKeyValue = this.dataKey ? String(ObjectUtils.resolveFieldData(rowData, this.dataKey)) : null;
@@ -11562,8 +5138,8 @@ var Table = class _Table extends BaseComponent {
       this._selection = this.selection.filter((val, i) => i != selectionIndex);
       this.selectionChange.emit(this.selection);
       this.onRowUnselect.emit({
-        originalEvent: event2.originalEvent,
-        index: event2.rowIndex,
+        originalEvent: event.originalEvent,
+        index: event.rowIndex,
         data: rowData,
         type: "checkbox"
       });
@@ -11571,14 +5147,14 @@ var Table = class _Table extends BaseComponent {
         delete this.selectionKeys[dataKeyValue];
       }
     } else {
-      if (!this.isRowSelectable(rowData, event2.rowIndex)) {
+      if (!this.isRowSelectable(rowData, event.rowIndex)) {
         return;
       }
       this._selection = this.selection ? [...this.selection, rowData] : [rowData];
       this.selectionChange.emit(this.selection);
       this.onRowSelect.emit({
-        originalEvent: event2.originalEvent,
-        index: event2.rowIndex,
+        originalEvent: event.originalEvent,
+        index: event.rowIndex,
         data: rowData,
         type: "checkbox"
       });
@@ -11591,10 +5167,10 @@ var Table = class _Table extends BaseComponent {
       this.saveState();
     }
   }
-  toggleRowsWithCheckbox(event2, check) {
+  toggleRowsWithCheckbox(event, check) {
     if (this._selectAll !== null) {
       this.selectAllChange.emit({
-        originalEvent: event2,
+        originalEvent: event,
         checked: check
       });
     } else {
@@ -11613,7 +5189,7 @@ var Table = class _Table extends BaseComponent {
       this.selectionChange.emit(this._selection);
       this.tableService.onSelectionChange();
       this.onHeaderCheckboxToggle.emit({
-        originalEvent: event2,
+        originalEvent: event,
         checked: check
       });
       if (this.isStateful()) {
@@ -11852,13 +5428,13 @@ var Table = class _Table extends BaseComponent {
       link.click();
     } else {
       csv = "data:text/csv;charset=utf-8," + csv;
-      this.document.defaultView.open(encodeURI(csv));
+      this.window.open(encodeURI(csv));
     }
     this.renderer.removeChild(this.document.body, link);
   }
-  onLazyItemLoad(event2) {
-    this.onLazyLoad.emit(__spreadProps(__spreadValues(__spreadValues({}, this.createLazyLoadMetadata()), event2), {
-      rows: event2.last - event2.first
+  onLazyItemLoad(event) {
+    this.onLazyLoad.emit(__spreadProps(__spreadValues(__spreadValues({}, this.createLazyLoadMetadata()), event), {
+      rows: event.last - event.first
     }));
   }
   /**
@@ -11908,14 +5484,14 @@ var Table = class _Table extends BaseComponent {
   }
   bindDocumentEditListener() {
     if (!this.documentEditListener) {
-      this.documentEditListener = this.renderer.listen(this.document, "click", (event2) => {
+      this.documentEditListener = this.renderer.listen(this.document, "click", (event) => {
         if (this.editingCell && !this.selfClick && this.isEditingCellValid()) {
           DomHandler.removeClass(this.editingCell, "p-cell-editing");
           this.editingCell = null;
           this.onEditComplete.emit({
             field: this.editingCellField,
             data: this.editingCellData,
-            originalEvent: event2,
+            originalEvent: event,
             index: this.editingCellRowIndex
           });
           this.editingCellField = null;
@@ -11951,7 +5527,7 @@ var Table = class _Table extends BaseComponent {
     let dataKeyValue = String(ObjectUtils.resolveFieldData(rowData, this.dataKey));
     delete this.editingRowKeys[dataKeyValue];
   }
-  toggleRow(rowData, event2) {
+  toggleRow(rowData, event) {
     if (!this.dataKey && !this.groupRowsBy) {
       throw new Error("dataKey or groupRowsBy must be defined to use row expansion");
     }
@@ -11959,7 +5535,7 @@ var Table = class _Table extends BaseComponent {
     if (this.expandedRowKeys[dataKeyValue] != null) {
       delete this.expandedRowKeys[dataKeyValue];
       this.onRowCollapse.emit({
-        originalEvent: event2,
+        originalEvent: event,
         data: rowData
       });
     } else {
@@ -11968,12 +5544,12 @@ var Table = class _Table extends BaseComponent {
       }
       this.expandedRowKeys[dataKeyValue] = true;
       this.onRowExpand.emit({
-        originalEvent: event2,
+        originalEvent: event,
         data: rowData
       });
     }
-    if (event2) {
-      event2.preventDefault();
+    if (event) {
+      event.preventDefault();
     }
     if (this.isStateful()) {
       this.saveState();
@@ -11991,45 +5567,46 @@ var Table = class _Table extends BaseComponent {
   isMultipleSelectionMode() {
     return this.selectionMode === "multiple";
   }
-  onColumnResizeBegin(event2) {
+  onColumnResizeBegin(event) {
     let containerLeft = DomHandler.getOffset(this.containerViewChild?.nativeElement).left;
-    this.resizeColumnElement = event2.target.parentElement;
+    this.resizeColumnElement = event.target.closest("th");
     this.columnResizing = true;
-    if (event2.type == "touchstart") {
-      this.lastResizerHelperX = event2.changedTouches[0].clientX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft;
+    if (event.type == "touchstart") {
+      this.lastResizerHelperX = event.changedTouches[0].clientX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft;
     } else {
-      this.lastResizerHelperX = event2.pageX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft;
+      this.lastResizerHelperX = event.pageX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft;
     }
-    this.onColumnResize(event2);
-    event2.preventDefault();
+    this.onColumnResize(event);
+    event.preventDefault();
   }
-  onColumnResize(event2) {
+  onColumnResize(event) {
     let containerLeft = DomHandler.getOffset(this.containerViewChild?.nativeElement).left;
     DomHandler.addClass(this.containerViewChild?.nativeElement, "p-unselectable-text");
     this.resizeHelperViewChild.nativeElement.style.height = this.containerViewChild?.nativeElement.offsetHeight + "px";
     this.resizeHelperViewChild.nativeElement.style.top = "0px";
-    if (event2.type == "touchmove") {
-      this.resizeHelperViewChild.nativeElement.style.left = event2.changedTouches[0].clientX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft + "px";
+    if (event.type == "touchmove") {
+      this.resizeHelperViewChild.nativeElement.style.left = event.changedTouches[0].clientX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft + "px";
     } else {
-      this.resizeHelperViewChild.nativeElement.style.left = event2.pageX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft + "px";
+      this.resizeHelperViewChild.nativeElement.style.left = event.pageX - containerLeft + this.containerViewChild?.nativeElement.scrollLeft + "px";
     }
     this.resizeHelperViewChild.nativeElement.style.display = "block";
   }
   onColumnResizeEnd() {
-    let delta = this.resizeHelperViewChild?.nativeElement.offsetLeft - this.lastResizerHelperX;
-    let columnWidth = this.resizeColumnElement.offsetWidth;
-    let newColumnWidth = columnWidth + delta;
-    let minWidth = this.resizeColumnElement.style.minWidth.replace(/[^\d.]/g, "") || 15;
+    const delta = this.resizeHelperViewChild?.nativeElement.offsetLeft - this.lastResizerHelperX;
+    const columnWidth = this.resizeColumnElement.offsetWidth;
+    const newColumnWidth = columnWidth + delta;
+    const elementMinWidth = this.resizeColumnElement.style.minWidth.replace(/[^\d.]/g, "");
+    const minWidth = elementMinWidth ? parseFloat(elementMinWidth) : 15;
     if (newColumnWidth >= minWidth) {
       if (this.columnResizeMode === "fit") {
-        let nextColumn = this.resizeColumnElement.nextElementSibling;
-        let nextColumnWidth = nextColumn.offsetWidth - delta;
+        const nextColumn = this.resizeColumnElement.nextElementSibling;
+        const nextColumnWidth = nextColumn.offsetWidth - delta;
         if (newColumnWidth > 15 && nextColumnWidth > 15) {
           this.resizeTableCells(newColumnWidth, nextColumnWidth);
         }
       } else if (this.columnResizeMode === "expand") {
         this._initialColWidths = this._totalTableWidth();
-        let tableWidth = this.tableViewChild?.nativeElement.offsetWidth + delta;
+        const tableWidth = this.tableViewChild?.nativeElement.offsetWidth + delta;
         this.setResizeTableWidth(tableWidth + "px");
         this.resizeTableCells(newColumnWidth, null);
       }
@@ -12051,15 +5628,15 @@ var Table = class _Table extends BaseComponent {
     headers.forEach((header) => widths.push(DomHandler.getOuterWidth(header)));
     return widths;
   }
-  onColumnDragStart(event2, columnElement) {
+  onColumnDragStart(event, columnElement) {
     this.reorderIconWidth = DomHandler.getHiddenElementOuterWidth(this.reorderIndicatorUpViewChild?.nativeElement);
     this.reorderIconHeight = DomHandler.getHiddenElementOuterHeight(this.reorderIndicatorDownViewChild?.nativeElement);
     this.draggedColumn = columnElement;
-    event2.dataTransfer.setData("text", "b");
+    event.dataTransfer.setData("text", "b");
   }
-  onColumnDragEnter(event2, dropHeader) {
+  onColumnDragEnter(event, dropHeader) {
     if (this.reorderableColumns && this.draggedColumn && dropHeader) {
-      event2.preventDefault();
+      event.preventDefault();
       let containerOffset = DomHandler.getOffset(this.containerViewChild?.nativeElement);
       let dropHeaderOffset = DomHandler.getOffset(dropHeader);
       if (this.draggedColumn != dropHeader) {
@@ -12070,7 +5647,7 @@ var Table = class _Table extends BaseComponent {
         let columnCenter = dropHeaderOffset.left + dropHeader.offsetWidth / 2;
         this.reorderIndicatorUpViewChild.nativeElement.style.top = dropHeaderOffset.top - containerOffset.top - (this.reorderIconHeight - 1) + "px";
         this.reorderIndicatorDownViewChild.nativeElement.style.top = dropHeaderOffset.top - containerOffset.top + dropHeader.offsetHeight + "px";
-        if (event2.pageX > columnCenter) {
+        if (event.pageX > columnCenter) {
           this.reorderIndicatorUpViewChild.nativeElement.style.left = targetLeft + dropHeader.offsetWidth - Math.ceil(this.reorderIconWidth / 2) + "px";
           this.reorderIndicatorDownViewChild.nativeElement.style.left = targetLeft + dropHeader.offsetWidth - Math.ceil(this.reorderIconWidth / 2) + "px";
           this.dropPosition = 1;
@@ -12082,17 +5659,17 @@ var Table = class _Table extends BaseComponent {
         this.reorderIndicatorUpViewChild.nativeElement.style.display = "block";
         this.reorderIndicatorDownViewChild.nativeElement.style.display = "block";
       } else {
-        event2.dataTransfer.dropEffect = "none";
+        event.dataTransfer.dropEffect = "none";
       }
     }
   }
-  onColumnDragLeave(event2) {
+  onColumnDragLeave(event) {
     if (this.reorderableColumns && this.draggedColumn) {
-      event2.preventDefault();
+      event.preventDefault();
     }
   }
-  onColumnDrop(event2, dropColumn) {
-    event2.preventDefault();
+  onColumnDrop(event, dropColumn) {
+    event.preventDefault();
     if (this.draggedColumn) {
       let dragIndex = DomHandler.indexWithinGroup(this.draggedColumn, "preorderablecolumn");
       let dropIndex = DomHandler.indexWithinGroup(dropColumn, "preorderablecolumn");
@@ -12153,17 +5730,17 @@ var Table = class _Table extends BaseComponent {
                 }
             `;
     });
-    this.renderer.setProperty(this.styleElement, "innerHTML", innerHTML);
+    this.renderer.setProperty(this.styleElement, "innerHTML", this.domSanitizer.bypassSecurityTrustStyle(innerHTML));
   }
-  onRowDragStart(event2, index) {
+  onRowDragStart(event, index) {
     this.rowDragging = true;
     this.draggedRowIndex = index;
-    event2.dataTransfer.setData("text", "b");
+    event.dataTransfer.setData("text", "b");
   }
-  onRowDragOver(event2, index, rowElement) {
+  onRowDragOver(event, index, rowElement) {
     if (this.rowDragging && this.draggedRowIndex !== index) {
       let rowY = DomHandler.getOffset(rowElement).top;
-      let pageY = event2.pageY;
+      let pageY = event.pageY;
       let rowMidY = rowY + DomHandler.getOuterHeight(rowElement) / 2;
       let prevRowElement = rowElement.previousElementSibling;
       if (pageY < rowMidY) {
@@ -12179,7 +5756,7 @@ var Table = class _Table extends BaseComponent {
       }
     }
   }
-  onRowDragLeave(event2, rowElement) {
+  onRowDragLeave(event, rowElement) {
     let prevRowElement = rowElement.previousElementSibling;
     if (prevRowElement) {
       DomHandler.removeClass(prevRowElement, "p-datatable-dragpoint-bottom");
@@ -12187,12 +5764,12 @@ var Table = class _Table extends BaseComponent {
     DomHandler.removeClass(rowElement, "p-datatable-dragpoint-bottom");
     DomHandler.removeClass(rowElement, "p-datatable-dragpoint-top");
   }
-  onRowDragEnd(event2) {
+  onRowDragEnd(event) {
     this.rowDragging = false;
     this.draggedRowIndex = null;
     this.droppedRowIndex = null;
   }
-  onRowDrop(event2, rowElement) {
+  onRowDrop(event, rowElement) {
     if (this.droppedRowIndex != null) {
       let dropIndex = this.draggedRowIndex > this.droppedRowIndex ? this.droppedRowIndex : this.droppedRowIndex === 0 ? 0 : this.droppedRowIndex - 1;
       ObjectUtils.reorderArray(this.value, this.draggedRowIndex, dropIndex);
@@ -12204,8 +5781,8 @@ var Table = class _Table extends BaseComponent {
         dropIndex
       });
     }
-    this.onRowDragLeave(event2, rowElement);
-    this.onRowDragEnd(event2);
+    this.onRowDragLeave(event, rowElement);
+    this.onRowDragEnd(event);
   }
   isEmpty() {
     let data = this.filteredValue || this.value;
@@ -12233,35 +5810,35 @@ var Table = class _Table extends BaseComponent {
   }
   saveState() {
     const storage = this.getStorage();
-    let state2 = {};
+    let state = {};
     if (this.paginator) {
-      state2.first = this.first;
-      state2.rows = this.rows;
+      state.first = this.first;
+      state.rows = this.rows;
     }
     if (this.sortField) {
-      state2.sortField = this.sortField;
-      state2.sortOrder = this.sortOrder;
+      state.sortField = this.sortField;
+      state.sortOrder = this.sortOrder;
     }
     if (this.multiSortMeta) {
-      state2.multiSortMeta = this.multiSortMeta;
+      state.multiSortMeta = this.multiSortMeta;
     }
     if (this.hasFilter()) {
-      state2.filters = this.filters;
+      state.filters = this.filters;
     }
     if (this.resizableColumns) {
-      this.saveColumnWidths(state2);
+      this.saveColumnWidths(state);
     }
     if (this.reorderableColumns) {
-      this.saveColumnOrder(state2);
+      this.saveColumnOrder(state);
     }
     if (this.selection) {
-      state2.selection = this.selection;
+      state.selection = this.selection;
     }
     if (Object.keys(this.expandedRowKeys).length) {
-      state2.expandedRowKeys = this.expandedRowKeys;
+      state.expandedRowKeys = this.expandedRowKeys;
     }
-    storage.setItem(this.stateKey, JSON.stringify(state2));
-    this.onStateSave.emit(state2);
+    storage.setItem(this.stateKey, JSON.stringify(state));
+    this.onStateSave.emit(state);
   }
   clearState() {
     const storage = this.getStorage();
@@ -12280,51 +5857,55 @@ var Table = class _Table extends BaseComponent {
       return value;
     };
     if (stateString) {
-      let state2 = JSON.parse(stateString, reviver);
+      let state = JSON.parse(stateString, reviver);
       if (this.paginator) {
         if (this.first !== void 0) {
-          this.first = state2.first;
+          this.first = state.first;
           this.firstChange.emit(this.first);
         }
         if (this.rows !== void 0) {
-          this.rows = state2.rows;
+          this.rows = state.rows;
           this.rowsChange.emit(this.rows);
         }
       }
-      if (state2.sortField) {
+      if (state.sortField) {
         this.restoringSort = true;
-        this._sortField = state2.sortField;
-        this._sortOrder = state2.sortOrder;
+        this._sortField = state.sortField;
+        this._sortOrder = state.sortOrder;
       }
-      if (state2.multiSortMeta) {
+      if (state.multiSortMeta) {
         this.restoringSort = true;
-        this._multiSortMeta = state2.multiSortMeta;
+        this._multiSortMeta = state.multiSortMeta;
       }
-      if (state2.filters) {
+      if (state.filters) {
         this.restoringFilter = true;
-        this.filters = state2.filters;
+        this.filters = state.filters;
       }
       if (this.resizableColumns) {
-        this.columnWidthsState = state2.columnWidths;
-        this.tableWidthState = state2.tableWidth;
+        this.columnWidthsState = state.columnWidths;
+        this.tableWidthState = state.tableWidth;
       }
-      if (state2.expandedRowKeys) {
-        this.expandedRowKeys = state2.expandedRowKeys;
+      if (state.expandedRowKeys) {
+        this.expandedRowKeys = state.expandedRowKeys;
       }
-      if (state2.selection) {
-        Promise.resolve(null).then(() => this.selectionChange.emit(state2.selection));
+      if (state.selection) {
+        Promise.resolve(null).then(() => this.selectionChange.emit(state.selection));
       }
       this.stateRestored = true;
-      this.onStateRestore.emit(state2);
+      this.onStateRestore.emit(state);
     }
   }
-  saveColumnWidths(state2) {
+  saveColumnWidths(state) {
     let widths = [];
-    let headers = DomHandler.find(this.containerViewChild?.nativeElement, ".p-datatable-thead > tr > th");
+    let headers = [];
+    const container = this.containerViewChild?.nativeElement;
+    if (container) {
+      headers = DomHandler.find(container, ".p-datatable-thead > tr > th");
+    }
     headers.forEach((header) => widths.push(DomHandler.getOuterWidth(header)));
-    state2.columnWidths = widths.join(",");
+    state.columnWidths = widths.join(",");
     if (this.columnResizeMode === "expand") {
-      state2.tableWidth = DomHandler.getOuterWidth(this.tableViewChild?.nativeElement);
+      state.tableWidth = DomHandler.getOuterWidth(this.tableViewChild?.nativeElement);
     }
   }
   setResizeTableWidth(width) {
@@ -12350,25 +5931,25 @@ var Table = class _Table extends BaseComponent {
                         }
                     `;
         });
-        this.styleElement.innerHTML = innerHTML;
+        this.styleElement.textContent = innerHTML;
       }
     }
   }
-  saveColumnOrder(state2) {
+  saveColumnOrder(state) {
     if (this.columns) {
       let columnOrder = [];
       this.columns.map((column) => {
         columnOrder.push(column.field || column.key);
       });
-      state2.columnOrder = columnOrder;
+      state.columnOrder = columnOrder;
     }
   }
   restoreColumnOrder() {
     const storage = this.getStorage();
     const stateString = storage.getItem(this.stateKey);
     if (stateString) {
-      let state2 = JSON.parse(stateString);
-      let columnOrder = state2.columnOrder;
+      let state = JSON.parse(stateString);
+      let columnOrder = state.columnOrder;
       if (columnOrder) {
         let reorderedColumns = [];
         columnOrder.map((key) => {
@@ -12395,8 +5976,8 @@ var Table = class _Table extends BaseComponent {
   createStyleElement() {
     this.styleElement = this.renderer.createElement("style");
     this.styleElement.type = "text/css";
-    this.renderer.appendChild(this.document.head, this.styleElement);
     DomHandler.setAttribute(this.styleElement, "nonce", this.config?.csp()?.nonce);
+    this.renderer.appendChild(this.document.head, this.styleElement);
   }
   getGroupRowsMeta() {
     return {
@@ -12409,6 +5990,7 @@ var Table = class _Table extends BaseComponent {
       if (!this.responsiveStyleElement) {
         this.responsiveStyleElement = this.renderer.createElement("style");
         this.responsiveStyleElement.type = "text/css";
+        DomHandler.setAttribute(this.responsiveStyleElement, "nonce", this.config?.csp()?.nonce);
         this.renderer.appendChild(this.document.head, this.responsiveStyleElement);
         let innerHTML = `
     @media screen and (max-width: ${this.breakpoint}) {
@@ -12428,18 +6010,18 @@ var Table = class _Table extends BaseComponent {
             border: 0 none;
         }
 
-        #${this.id}.p-datatable-gridlines > .p-datatable-table-container > .p-datatable-table > .p-datatable-tbody > tr > td:last-child {
+        #${this.id}.p-datatable-gridlines > .p-datatable-wrapper > .p-datatable-table > .p-datatable-tbody > tr > td:last-child {
             border-top: 0;
             border-right: 0;
             border-left: 0;
         }
 
-        #${this.id}-table > .p-datatable-tbody > tr > td > .p-datatable-column-title {
+        #${this.id}-table > .p-datatable-tbody > tr > td > .p-column-title {
             display: block;
         }
     }
     `;
-        this.renderer.setProperty(this.responsiveStyleElement, "innerHTML", innerHTML);
+        this.renderer.setProperty(this.responsiveStyleElement, "innerHTML", this.domSanitizer.bypassSecurityTrustStyle(innerHTML));
       }
     }
   }
@@ -12461,101 +6043,36 @@ var Table = class _Table extends BaseComponent {
     this.initialized = null;
     this.destroyStyleElement();
     this.destroyResponsiveStyle();
-    super.ngOnDestroy();
   }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵTable_BaseFactory;
-    return function Table_Factory(__ngFactoryType__) {
-      return (ɵTable_BaseFactory || (ɵTable_BaseFactory = ɵɵgetInheritedFactory(_Table)))(__ngFactoryType__ || _Table);
-    };
-  })();
+  getPaginatorStyleClasses(className) {
+    return [this.paginatorStyleClass, className].filter((c) => !!c).join(" ").trim();
+  }
+  static ɵfac = function Table_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _Table)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(PLATFORM_ID), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FilterService), ɵɵdirectiveInject(OverlayService), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(DomSanitizer));
+  };
   static ɵcmp = ɵɵdefineComponent({
     type: _Table,
     selectors: [["p-table"]],
     contentQueries: function Table_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, _c04, 4);
-        ɵɵcontentQuery(dirIndex, _c112, 4);
-        ɵɵcontentQuery(dirIndex, _c27, 4);
-        ɵɵcontentQuery(dirIndex, _c33, 4);
-        ɵɵcontentQuery(dirIndex, _c42, 4);
-        ɵɵcontentQuery(dirIndex, _c52, 4);
-        ɵɵcontentQuery(dirIndex, _c62, 4);
-        ɵɵcontentQuery(dirIndex, _c72, 4);
-        ɵɵcontentQuery(dirIndex, _c82, 4);
-        ɵɵcontentQuery(dirIndex, _c92, 4);
-        ɵɵcontentQuery(dirIndex, _c102, 4);
-        ɵɵcontentQuery(dirIndex, _c113, 4);
-        ɵɵcontentQuery(dirIndex, _c122, 4);
-        ɵɵcontentQuery(dirIndex, _c132, 4);
-        ɵɵcontentQuery(dirIndex, _c142, 4);
-        ɵɵcontentQuery(dirIndex, _c152, 4);
-        ɵɵcontentQuery(dirIndex, _c162, 4);
-        ɵɵcontentQuery(dirIndex, _c172, 4);
-        ɵɵcontentQuery(dirIndex, _c182, 4);
-        ɵɵcontentQuery(dirIndex, _c192, 4);
-        ɵɵcontentQuery(dirIndex, _c202, 4);
-        ɵɵcontentQuery(dirIndex, _c212, 4);
-        ɵɵcontentQuery(dirIndex, _c222, 4);
-        ɵɵcontentQuery(dirIndex, _c232, 4);
-        ɵɵcontentQuery(dirIndex, _c242, 4);
-        ɵɵcontentQuery(dirIndex, _c252, 4);
-        ɵɵcontentQuery(dirIndex, _c262, 4);
-        ɵɵcontentQuery(dirIndex, _c272, 4);
-        ɵɵcontentQuery(dirIndex, _c28, 4);
-        ɵɵcontentQuery(dirIndex, _c29, 4);
-        ɵɵcontentQuery(dirIndex, _c30, 4);
-        ɵɵcontentQuery(dirIndex, _c31, 4);
         ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._headerTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._headerGroupedTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._bodyTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._loadingBodyTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._captionTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._footerTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._footerGroupedTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._summaryTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._colGroupTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._expandedRowTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._groupHeaderTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._groupFooterTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._frozenExpandedRowTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._frozenHeaderTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._frozenBodyTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._frozenFooterTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._frozenColGroupTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._emptyMessageTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._paginatorLeftTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._paginatorRightTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._paginatorDropdownItemTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._loadingIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._reorderIndicatorUpIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._reorderIndicatorDownIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._sortIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._checkboxIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._headerCheckboxIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._paginatorDropdownIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._paginatorFirstPageLinkIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._paginatorLastPageLinkIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._paginatorPreviousPageLinkIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._paginatorNextPageLinkIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._templates = _t);
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
       }
     },
     viewQuery: function Table_Query(rf, ctx) {
       if (rf & 1) {
-        ɵɵviewQuery(_c322, 5);
-        ɵɵviewQuery(_c332, 5);
-        ɵɵviewQuery(_c34, 5);
-        ɵɵviewQuery(_c35, 5);
-        ɵɵviewQuery(_c36, 5);
-        ɵɵviewQuery(_c37, 5);
-        ɵɵviewQuery(_c38, 5);
-        ɵɵviewQuery(_c39, 5);
-        ɵɵviewQuery(_c40, 5);
+        ɵɵviewQuery(_c03, 5);
+        ɵɵviewQuery(_c13, 5);
+        ɵɵviewQuery(_c23, 5);
+        ɵɵviewQuery(_c3, 5);
+        ɵɵviewQuery(_c4, 5);
+        ɵɵviewQuery(_c5, 5);
+        ɵɵviewQuery(_c6, 5);
+        ɵɵviewQuery(_c7, 5);
+        ɵɵviewQuery(_c8, 5);
       }
       if (rf & 2) {
         let _t;
@@ -12570,6 +6087,7 @@ var Table = class _Table extends BaseComponent {
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.scroller = _t.first);
       }
     },
+    hostAttrs: [1, "p-element"],
     inputs: {
       frozenColumns: "frozenColumns",
       frozenValue: "frozenValue",
@@ -12641,9 +6159,6 @@ var Table = class _Table extends BaseComponent {
       stateStorage: "stateStorage",
       editMode: "editMode",
       groupRowsBy: "groupRowsBy",
-      size: "size",
-      showGridlines: [2, "showGridlines", "showGridlines", booleanAttribute],
-      stripedRows: [2, "stripedRows", "stripedRows", booleanAttribute],
       groupRowsByOrder: [2, "groupRowsByOrder", "groupRowsByOrder", numberAttribute],
       responsiveLayout: "responsiveLayout",
       breakpoint: "breakpoint",
@@ -12657,8 +6172,8 @@ var Table = class _Table extends BaseComponent {
       sortOrder: "sortOrder",
       multiSortMeta: "multiSortMeta",
       selection: "selection",
-      virtualRowHeight: "virtualRowHeight",
-      selectAll: "selectAll"
+      selectAll: "selectAll",
+      virtualRowHeight: "virtualRowHeight"
     },
     outputs: {
       contextMenuSelectionChange: "contextMenuSelectionChange",
@@ -12686,32 +6201,32 @@ var Table = class _Table extends BaseComponent {
       onStateSave: "onStateSave",
       onStateRestore: "onStateRestore"
     },
-    features: [ɵɵProvidersFeature([TableService, TableStyle]), ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature],
+    features: [ɵɵProvidersFeature([TableService]), ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature],
     decls: 16,
-    vars: 17,
-    consts: [["container", ""], ["wrapper", ""], ["buildInTable", ""], ["scroller", ""], ["content", ""], ["table", ""], ["thead", ""], ["tfoot", ""], ["resizeHelper", ""], ["reorderIndicatorUp", ""], ["reorderIndicatorDown", ""], [3, "ngStyle", "ngClass"], [3, "ngClass", 4, "ngIf"], [3, "rows", "first", "totalRecords", "pageLinkSize", "alwaysShow", "rowsPerPageOptions", "templateLeft", "templateRight", "dropdownAppendTo", "dropdownScrollHeight", "currentPageReportTemplate", "showFirstLastIcon", "dropdownItemTemplate", "showCurrentPageReport", "showJumpToPageDropdown", "showJumpToPageInput", "showPageLinks", "styleClass", "locale", "onPageChange", 4, "ngIf"], [3, "ngClass", "ngStyle"], [3, "items", "columns", "style", "scrollHeight", "itemSize", "step", "delay", "inline", "lazy", "loaderDisabled", "showSpacer", "showLoader", "options", "autoSize", "onLazyLoad", 4, "ngIf"], [4, "ngIf"], ["style", "display:none", 3, "ngClass", 4, "ngIf"], ["style", "display: none;", 3, "ngClass", 4, "ngIf"], [3, "ngClass"], [3, "class", 4, "ngIf"], [3, "spin", "styleClass", 4, "ngIf"], [3, "spin", "styleClass"], [4, "ngTemplateOutlet"], [3, "onPageChange", "rows", "first", "totalRecords", "pageLinkSize", "alwaysShow", "rowsPerPageOptions", "templateLeft", "templateRight", "dropdownAppendTo", "dropdownScrollHeight", "currentPageReportTemplate", "showFirstLastIcon", "dropdownItemTemplate", "showCurrentPageReport", "showJumpToPageDropdown", "showJumpToPageInput", "showPageLinks", "styleClass", "locale"], ["pTemplate", "dropdownicon"], ["pTemplate", "firstpagelinkicon"], ["pTemplate", "previouspagelinkicon"], ["pTemplate", "lastpagelinkicon"], ["pTemplate", "nextpagelinkicon"], [3, "onLazyLoad", "items", "columns", "scrollHeight", "itemSize", "step", "delay", "inline", "lazy", "loaderDisabled", "showSpacer", "showLoader", "options", "autoSize"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "table", 3, "ngClass"], ["role", "rowgroup", 3, "ngClass", "ngStyle"], ["role", "rowgroup", 3, "ngClass", "value", "frozenRows", "pTableBody", "pTableBodyTemplate", "frozen", 4, "ngIf"], ["role", "rowgroup", 3, "ngClass", "value", "pTableBody", "pTableBodyTemplate", "scrollerOptions"], ["role", "rowgroup", 3, "style", "ngClass", 4, "ngIf"], ["role", "rowgroup", 3, "ngClass", 4, "ngIf"], ["role", "rowgroup", 3, "ngClass", "value", "frozenRows", "pTableBody", "pTableBodyTemplate", "frozen"], ["role", "rowgroup", 3, "ngClass"], [2, "display", "none", 3, "ngClass"]],
+    vars: 22,
+    consts: [["container", ""], ["wrapper", ""], ["buildInTable", ""], ["scroller", ""], ["table", ""], ["thead", ""], ["tfoot", ""], ["resizeHelper", ""], ["reorderIndicatorUp", ""], ["reorderIndicatorDown", ""], [3, "ngStyle", "ngClass"], ["class", "p-datatable-loading-overlay p-component-overlay", 4, "ngIf"], ["class", "p-datatable-header", 4, "ngIf"], [3, "rows", "first", "totalRecords", "pageLinkSize", "alwaysShow", "rowsPerPageOptions", "templateLeft", "templateRight", "dropdownAppendTo", "dropdownScrollHeight", "currentPageReportTemplate", "showFirstLastIcon", "dropdownItemTemplate", "showCurrentPageReport", "showJumpToPageDropdown", "showJumpToPageInput", "showPageLinks", "styleClass", "locale", "onPageChange", 4, "ngIf"], [1, "p-datatable-wrapper", 3, "ngStyle"], [3, "items", "columns", "style", "scrollHeight", "itemSize", "step", "delay", "inline", "autoSize", "lazy", "loaderDisabled", "showSpacer", "showLoader", "options", "onLazyLoad", 4, "ngIf"], [4, "ngIf"], ["class", "p-datatable-footer", 4, "ngIf"], ["class", "p-column-resizer-helper", 3, "ngStyle", 4, "ngIf"], ["class", "p-datatable-reorder-indicator-up", 3, "ngStyle", 4, "ngIf"], ["class", "p-datatable-reorder-indicator-down", 3, "ngStyle", 4, "ngIf"], [1, "p-datatable-loading-overlay", "p-component-overlay"], [3, "class", 4, "ngIf"], [3, "spin", "styleClass", 4, "ngIf"], ["class", "p-datatable-loading-icon", 4, "ngIf"], [3, "spin", "styleClass"], [1, "p-datatable-loading-icon"], [4, "ngTemplateOutlet"], [1, "p-datatable-header"], [3, "onPageChange", "rows", "first", "totalRecords", "pageLinkSize", "alwaysShow", "rowsPerPageOptions", "templateLeft", "templateRight", "dropdownAppendTo", "dropdownScrollHeight", "currentPageReportTemplate", "showFirstLastIcon", "dropdownItemTemplate", "showCurrentPageReport", "showJumpToPageDropdown", "showJumpToPageInput", "showPageLinks", "styleClass", "locale"], ["pTemplate", "dropdownicon"], ["pTemplate", "firstpagelinkicon"], ["pTemplate", "previouspagelinkicon"], ["pTemplate", "lastpagelinkicon"], ["pTemplate", "nextpagelinkicon"], [3, "onLazyLoad", "items", "columns", "scrollHeight", "itemSize", "step", "delay", "inline", "autoSize", "lazy", "loaderDisabled", "showSpacer", "showLoader", "options"], ["pTemplate", "content"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "table", 3, "ngClass", "ngStyle"], ["role", "rowgroup", 1, "p-datatable-thead"], ["role", "rowgroup", "class", "p-datatable-tbody p-datatable-frozen-tbody", 3, "value", "frozenRows", "pTableBody", "pTableBodyTemplate", "frozen", 4, "ngIf"], ["role", "rowgroup", 1, "p-datatable-tbody", 3, "ngClass", "ngStyle", "value", "pTableBody", "pTableBodyTemplate", "scrollerOptions"], ["role", "rowgroup", "class", "p-datatable-scroller-spacer", 3, "ngStyle", 4, "ngIf"], ["role", "rowgroup", "class", "p-datatable-tfoot", 4, "ngIf"], ["role", "rowgroup", 1, "p-datatable-tbody", "p-datatable-frozen-tbody", 3, "value", "frozenRows", "pTableBody", "pTableBodyTemplate", "frozen"], ["role", "rowgroup", 1, "p-datatable-scroller-spacer", 3, "ngStyle"], ["role", "rowgroup", 1, "p-datatable-tfoot"], [1, "p-datatable-footer"], [1, "p-column-resizer-helper", 3, "ngStyle"], [1, "p-datatable-reorder-indicator-up", 3, "ngStyle"], [1, "p-datatable-reorder-indicator-down", 3, "ngStyle"]],
     template: function Table_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "div", 11, 0);
-        ɵɵtemplate(2, Table_div_2_Template, 3, 3, "div", 12)(3, Table_div_3_Template, 2, 2, "div", 12)(4, Table_p_paginator_4_Template, 6, 24, "p-paginator", 13);
+        ɵɵelementStart(0, "div", 10, 0);
+        ɵɵtemplate(2, Table_div_2_Template, 3, 2, "div", 11)(3, Table_div_3_Template, 2, 1, "div", 12)(4, Table_p_paginator_4_Template, 6, 24, "p-paginator", 13);
         ɵɵelementStart(5, "div", 14, 1);
-        ɵɵtemplate(7, Table_p_scroller_7_Template, 4, 17, "p-scroller", 15)(8, Table_ng_container_8_Template, 2, 7, "ng-container", 16)(9, Table_ng_template_9_Template, 10, 26, "ng-template", null, 2, ɵɵtemplateRefExtractor);
+        ɵɵtemplate(7, Table_p_scroller_7_Template, 3, 17, "p-scroller", 15)(8, Table_ng_container_8_Template, 2, 7, "ng-container", 16)(9, Table_ng_template_9_Template, 10, 26, "ng-template", null, 2, ɵɵtemplateRefExtractor);
         ɵɵelementEnd();
-        ɵɵtemplate(11, Table_p_paginator_11_Template, 6, 24, "p-paginator", 13)(12, Table_div_12_Template, 2, 2, "div", 12)(13, Table_div_13_Template, 2, 1, "div", 17)(14, Table_span_14_Template, 4, 3, "span", 18)(15, Table_span_15_Template, 4, 3, "span", 18);
+        ɵɵtemplate(11, Table_p_paginator_11_Template, 6, 24, "p-paginator", 13)(12, Table_div_12_Template, 2, 1, "div", 17)(13, Table_div_13_Template, 2, 2, "div", 18)(14, Table_span_14_Template, 4, 4, "span", 19)(15, Table_span_15_Template, 4, 4, "span", 20);
         ɵɵelementEnd();
       }
       if (rf & 2) {
         ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngStyle", ctx.style)("ngClass", ctx.cx("root"));
+        ɵɵproperty("ngStyle", ctx.style)("ngClass", ɵɵpureFunction3(16, _c9, ctx.rowHover || ctx.selectionMode, ctx.scrollable, ctx.scrollable && ctx.scrollHeight === "flex"));
         ɵɵattribute("id", ctx.id);
         ɵɵadvance(2);
         ɵɵproperty("ngIf", ctx.loading && ctx.showLoader);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.captionTemplate || ctx._captionTemplate);
+        ɵɵproperty("ngIf", ctx.captionTemplate);
         ɵɵadvance();
         ɵɵproperty("ngIf", ctx.paginator && (ctx.paginatorPosition === "top" || ctx.paginatorPosition == "both"));
         ɵɵadvance();
-        ɵɵproperty("ngClass", ctx.cx("tableContainer"))("ngStyle", ctx.sx("tableContainer"));
+        ɵɵproperty("ngStyle", ɵɵpureFunction1(20, _c10, ctx.virtualScroll ? "" : ctx.scrollHeight));
         ɵɵadvance(2);
         ɵɵproperty("ngIf", ctx.virtualScroll);
         ɵɵadvance();
@@ -12719,7 +6234,7 @@ var Table = class _Table extends BaseComponent {
         ɵɵadvance(3);
         ɵɵproperty("ngIf", ctx.paginator && (ctx.paginatorPosition === "bottom" || ctx.paginatorPosition == "both"));
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.summaryTemplate || ctx._summaryTemplate);
+        ɵɵproperty("ngIf", ctx.summaryTemplate);
         ɵɵadvance();
         ɵɵproperty("ngIf", ctx.resizableColumns);
         ɵɵadvance();
@@ -12729,6 +6244,7 @@ var Table = class _Table extends BaseComponent {
       }
     },
     dependencies: () => [NgClass, NgIf, NgTemplateOutlet, NgStyle, Paginator, PrimeTemplate, Scroller, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, TableBody],
+    styles: ["@layer primeng{.p-datatable{position:relative}.p-datatable>.p-datatable-wrapper{overflow:auto}.p-datatable-table{border-spacing:0px;width:100%}.p-datatable .p-sortable-column{cursor:pointer;-webkit-user-select:none;user-select:none}.p-datatable .p-sortable-column .p-column-title,.p-datatable .p-sortable-column .p-sortable-column-icon,.p-datatable .p-sortable-column .p-sortable-column-badge{vertical-align:middle}.p-datatable .p-sortable-column .p-icon-wrapper{display:inline}.p-datatable .p-sortable-column .p-sortable-column-badge{display:inline-flex;align-items:center;justify-content:center}.p-datatable-hoverable-rows .p-selectable-row{cursor:pointer}.p-datatable-scrollable>.p-datatable-wrapper{position:relative}.p-datatable-scrollable-table>.p-datatable-thead{position:sticky;top:0;z-index:2}.p-datatable-scrollable-table>.p-datatable-frozen-tbody{position:sticky;z-index:1}.p-datatable-scrollable-table>.p-datatable-tfoot{position:sticky;bottom:0;z-index:1}.p-datatable-scrollable .p-frozen-column{position:sticky;background:inherit;z-index:1}.p-datatable-scrollable th.p-frozen-column{z-index:1}.p-datatable-flex-scrollable{display:flex;flex-direction:column;height:100%}.p-datatable-flex-scrollable>.p-datatable-wrapper{display:flex;flex-direction:column;flex:1;height:100%}.p-datatable-scrollable-table>.p-datatable-tbody>.p-rowgroup-header{position:sticky;z-index:2}.p-datatable-resizable-table>.p-datatable-thead>tr>th,.p-datatable-resizable-table>.p-datatable-tfoot>tr>td,.p-datatable-resizable-table>.p-datatable-tbody>tr>td{overflow:hidden;white-space:nowrap}.p-datatable-resizable-table>.p-datatable-thead>tr>th.p-resizable-column:not(.p-frozen-column){background-clip:padding-box;position:relative}.p-datatable-resizable-table-fit>.p-datatable-thead>tr>th.p-resizable-column:last-child .p-column-resizer{display:none}.p-datatable .p-column-resizer{display:block;position:absolute!important;top:0;right:0;margin:0;width:.5rem;height:100%;padding:0;cursor:col-resize;border:1px solid transparent}.p-datatable .p-column-resizer-helper{width:1px;position:absolute;z-index:10;display:none}.p-datatable .p-row-editor-init,.p-datatable .p-row-editor-save,.p-datatable .p-row-editor-cancel,.p-datatable .p-row-toggler{display:inline-flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.p-datatable-reorder-indicator-up,.p-datatable-reorder-indicator-down{position:absolute}.p-datatable-reorderablerow-handle,[pReorderableColumn]{cursor:move}.p-datatable .p-datatable-loading-overlay{position:absolute;display:flex;align-items:center;justify-content:center;z-index:3}.p-column-filter-row{display:flex;align-items:center;width:100%}.p-column-filter-menu{display:inline-flex}.p-column-filter-row p-columnfilterformelement{flex:1 1 auto;width:1%}.p-column-filter-menu-button,.p-column-filter-clear-button{display:inline-flex;justify-content:center;align-items:center;cursor:pointer;text-decoration:none;overflow:hidden;position:relative}.p-column-filter-overlay{position:absolute;top:0;left:0}.p-column-filter-row-items{margin:0;padding:0;list-style:none}.p-column-filter-row-item{cursor:pointer}.p-column-filter-add-button,.p-column-filter-remove-button{justify-content:center}.p-column-filter-add-button .p-button-label,.p-column-filter-remove-button .p-button-label{flex-grow:0}.p-column-filter-buttonbar{display:flex;align-items:center;justify-content:space-between}.p-column-filter-buttonbar .p-button{width:auto}.p-datatable-tbody>tr>td>.p-column-title{display:none}.p-datatable-scroller-spacer{display:flex}.p-datatable .p-scroller .p-scroller-loading{transform:none!important;min-height:0;position:sticky;top:0;left:0}}\n"],
     encapsulation: 2
   });
 };
@@ -12738,18 +6254,24 @@ var Table = class _Table extends BaseComponent {
     args: [{
       selector: "p-table",
       template: `
-        <div #container [ngStyle]="style" [class]="styleClass" [ngClass]="cx('root')" [attr.id]="id">
-            <div [ngClass]="cx('mask')" *ngIf="loading && showLoader">
+        <div
+            #container
+            [ngStyle]="style"
+            [class]="styleClass"
+            [ngClass]="{ 'p-datatable p-component': true, 'p-datatable-hoverable-rows': rowHover || selectionMode, 'p-datatable-scrollable': scrollable, 'p-datatable-flex-scrollable': scrollable && scrollHeight === 'flex' }"
+            [attr.id]="id"
+        >
+            <div class="p-datatable-loading-overlay p-component-overlay" *ngIf="loading && showLoader">
                 <i *ngIf="loadingIcon" [class]="'p-datatable-loading-icon ' + loadingIcon"></i>
                 <ng-container *ngIf="!loadingIcon">
-                    <SpinnerIcon *ngIf="!loadingIconTemplate && !_loadingIconTemplate" [spin]="true" [styleClass]="cx('loadingIcon')" />
-                    <span *ngIf="loadingIconTemplate || _loadingIconTemplate" [ngClass]="cx('loadingIcon')">
-                        <ng-template *ngTemplateOutlet="loadingIconTemplate || _loadingIconTemplate"></ng-template>
+                    <SpinnerIcon *ngIf="!loadingIconTemplate" [spin]="true" [styleClass]="'p-datatable-loading-icon'" />
+                    <span *ngIf="loadingIconTemplate" class="p-datatable-loading-icon">
+                        <ng-template *ngTemplateOutlet="loadingIconTemplate"></ng-template>
                     </span>
                 </ng-container>
             </div>
-            <div *ngIf="captionTemplate || _captionTemplate" [ngClass]="cx('header')">
-                <ng-container *ngTemplateOutlet="captionTemplate || _captionTemplate"></ng-container>
+            <div *ngIf="captionTemplate" class="p-datatable-header">
+                <ng-container *ngTemplateOutlet="captionTemplate"></ng-container>
             </div>
             <p-paginator
                 [rows]="rows"
@@ -12766,128 +6288,104 @@ var Table = class _Table extends BaseComponent {
                 [dropdownScrollHeight]="paginatorDropdownScrollHeight"
                 [currentPageReportTemplate]="currentPageReportTemplate"
                 [showFirstLastIcon]="showFirstLastIcon"
-                [dropdownItemTemplate]="paginatorDropdownItemTemplate || _paginatorDropdownItemTemplate"
+                [dropdownItemTemplate]="paginatorDropdownItemTemplate"
                 [showCurrentPageReport]="showCurrentPageReport"
                 [showJumpToPageDropdown]="showJumpToPageDropdown"
                 [showJumpToPageInput]="showJumpToPageInput"
                 [showPageLinks]="showPageLinks"
-                [styleClass]="cx('pcPaginator') + ' ' + paginatorStyleClass && paginatorStyleClass"
+                [styleClass]="getPaginatorStyleClasses('p-paginator-top')"
                 [locale]="paginatorLocale"
             >
-                <ng-template pTemplate="dropdownicon" *ngIf="paginatorDropdownIconTemplate || _paginatorDropdownIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorDropdownIconTemplate || _paginatorDropdownIconTemplate"></ng-container>
+                <ng-template pTemplate="dropdownicon" *ngIf="paginatorDropdownIconTemplate">
+                    <ng-container *ngTemplateOutlet="paginatorDropdownIconTemplate"></ng-container>
                 </ng-template>
 
-                <ng-template pTemplate="firstpagelinkicon" *ngIf="paginatorFirstPageLinkIconTemplate || _paginatorFirstPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorFirstPageLinkIconTemplate || _paginatorFirstPageLinkIconTemplate"></ng-container>
+                <ng-template pTemplate="firstpagelinkicon" *ngIf="paginatorFirstPageLinkIconTemplate">
+                    <ng-container *ngTemplateOutlet="paginatorFirstPageLinkIconTemplate"></ng-container>
                 </ng-template>
 
-                <ng-template pTemplate="previouspagelinkicon" *ngIf="paginatorPreviousPageLinkIconTemplate || _paginatorPreviousPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorPreviousPageLinkIconTemplate || _paginatorPreviousPageLinkIconTemplate"></ng-container>
+                <ng-template pTemplate="previouspagelinkicon" *ngIf="paginatorPreviousPageLinkIconTemplate">
+                    <ng-container *ngTemplateOutlet="paginatorPreviousPageLinkIconTemplate"></ng-container>
                 </ng-template>
 
-                <ng-template pTemplate="lastpagelinkicon" *ngIf="paginatorLastPageLinkIconTemplate || _paginatorLastPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorLastPageLinkIconTemplate || _paginatorLastPageLinkIconTemplate"></ng-container>
+                <ng-template pTemplate="lastpagelinkicon" *ngIf="paginatorLastPageLinkIconTemplate">
+                    <ng-container *ngTemplateOutlet="paginatorLastPageLinkIconTemplate"></ng-container>
                 </ng-template>
 
-                <ng-template pTemplate="nextpagelinkicon" *ngIf="paginatorNextPageLinkIconTemplate || _paginatorNextPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorNextPageLinkIconTemplate || _paginatorNextPageLinkIconTemplate"></ng-container>
+                <ng-template pTemplate="nextpagelinkicon" *ngIf="paginatorNextPageLinkIconTemplate">
+                    <ng-container *ngTemplateOutlet="paginatorNextPageLinkIconTemplate"></ng-container>
                 </ng-template>
             </p-paginator>
 
-            <div #wrapper [ngClass]="cx('tableContainer')" [ngStyle]="sx('tableContainer')">
+            <div #wrapper class="p-datatable-wrapper" [ngStyle]="{ maxHeight: virtualScroll ? '' : scrollHeight }">
                 <p-scroller
                     #scroller
                     *ngIf="virtualScroll"
                     [items]="processedData"
                     [columns]="columns"
-                    [style]="{
-                        height: scrollHeight !== 'flex' ? scrollHeight : undefined
-                    }"
+                    [style]="{ height: scrollHeight !== 'flex' ? scrollHeight : undefined }"
                     [scrollHeight]="scrollHeight !== 'flex' ? undefined : '100%'"
                     [itemSize]="virtualScrollItemSize || _virtualRowHeight"
                     [step]="rows"
                     [delay]="lazy ? virtualScrollDelay : 0"
                     [inline]="true"
+                    [autoSize]="true"
                     [lazy]="lazy"
                     (onLazyLoad)="onLazyItemLoad($event)"
                     [loaderDisabled]="true"
                     [showSpacer]="false"
-                    [showLoader]="loadingBodyTemplate || _loadingBodyTemplate"
+                    [showLoader]="loadingBodyTemplate"
                     [options]="virtualScrollOptions"
-                    [autoSize]="true"
                 >
-                    <ng-template #content let-items let-scrollerOptions="options">
-                        <ng-container
-                            *ngTemplateOutlet="
-                                buildInTable;
-                                context: {
-                                    $implicit: items,
-                                    options: scrollerOptions
-                                }
-                            "
-                        ></ng-container>
+                    <ng-template pTemplate="content" let-items let-scrollerOptions="options">
+                        <ng-container *ngTemplateOutlet="buildInTable; context: { $implicit: items, options: scrollerOptions }"></ng-container>
                     </ng-template>
                 </p-scroller>
                 <ng-container *ngIf="!virtualScroll">
-                    <ng-container
-                        *ngTemplateOutlet="
-                            buildInTable;
-                            context: {
-                                $implicit: processedData,
-                                options: { columns }
-                            }
-                        "
-                    ></ng-container>
+                    <ng-container *ngTemplateOutlet="buildInTable; context: { $implicit: processedData, options: { columns } }"></ng-container>
                 </ng-container>
 
                 <ng-template #buildInTable let-items let-scrollerOptions="options">
-                    <table #table role="table" [ngClass]="cx('table')" [class]="tableStyleClass" [style]="tableStyle" [attr.id]="id + '-table'">
-                        <ng-container *ngTemplateOutlet="colGroupTemplate || _colGroupTemplate; context: { $implicit: scrollerOptions.columns }"></ng-container>
-                        <thead role="rowgroup" #thead [ngClass]="cx('thead')" [ngStyle]="sx('thead')">
-                            <ng-container
-                                *ngTemplateOutlet="
-                                    headerGroupedTemplate || headerTemplate || _headerTemplate;
-                                    context: {
-                                        $implicit: scrollerOptions.columns
-                                    }
-                                "
-                            ></ng-container>
+                    <table
+                        #table
+                        role="table"
+                        [ngClass]="{ 'p-datatable-table': true, 'p-datatable-scrollable-table': scrollable, 'p-datatable-resizable-table': resizableColumns, 'p-datatable-resizable-table-fit': resizableColumns && columnResizeMode === 'fit' }"
+                        [class]="tableStyleClass"
+                        [ngStyle]="tableStyle"
+                        [attr.id]="id + '-table'"
+                    >
+                        <ng-container *ngTemplateOutlet="colGroupTemplate; context: { $implicit: scrollerOptions.columns }"></ng-container>
+                        <thead role="rowgroup" #thead class="p-datatable-thead">
+                            <ng-container *ngTemplateOutlet="headerGroupedTemplate || headerTemplate; context: { $implicit: scrollerOptions.columns }"></ng-container>
                         </thead>
                         <tbody
                             role="rowgroup"
-                            [ngClass]="cx('tbody')"
-                            *ngIf="frozenValue || frozenBodyTemplate || _frozenBodyTemplate"
+                            class="p-datatable-tbody p-datatable-frozen-tbody"
+                            *ngIf="frozenValue || frozenBodyTemplate"
                             [value]="frozenValue"
                             [frozenRows]="true"
                             [pTableBody]="scrollerOptions.columns"
-                            [pTableBodyTemplate]="frozenBodyTemplate || _frozenBodyTemplate"
+                            [pTableBodyTemplate]="frozenBodyTemplate"
                             [frozen]="true"
                         ></tbody>
                         <tbody
                             role="rowgroup"
-                            [ngClass]="cx('tbody', scrollerOptions.contentStyleClass)"
-                            [style]="scrollerOptions.contentStyle"
+                            class="p-datatable-tbody"
+                            [ngClass]="scrollerOptions.contentStyleClass"
+                            [ngStyle]="scrollerOptions.contentStyle"
                             [value]="dataToRender(scrollerOptions.rows)"
                             [pTableBody]="scrollerOptions.columns"
-                            [pTableBodyTemplate]="bodyTemplate || _bodyTemplate"
+                            [pTableBodyTemplate]="bodyTemplate"
                             [scrollerOptions]="scrollerOptions"
                         ></tbody>
                         <tbody
                             role="rowgroup"
                             *ngIf="scrollerOptions.spacerStyle"
-                            [style]="'height: calc(' + scrollerOptions.spacerStyle.height + ' - ' + scrollerOptions.rows.length * scrollerOptions.itemSize + 'px);'"
-                            [ngClass]="cx('virtualScrollerSpacer')"
+                            [ngStyle]="{ height: 'calc(' + scrollerOptions.spacerStyle.height + ' - ' + scrollerOptions.rows.length * scrollerOptions.itemSize + 'px)' }"
+                            class="p-datatable-scroller-spacer"
                         ></tbody>
-                        <tfoot role="rowgroup" *ngIf="footerGroupedTemplate || footerTemplate || _footerTemplate || _footerGroupedTemplate" #tfoot [ngClass]="cx('footer')">
-                            <ng-container
-                                *ngTemplateOutlet="
-                                    footerGroupedTemplate || footerTemplate || _footerTemplate || _footerGroupedTemplate;
-                                    context: {
-                                        $implicit: scrollerOptions.columns
-                                    }
-                                "
-                            ></ng-container>
+                        <tfoot role="rowgroup" *ngIf="footerGroupedTemplate || footerTemplate" #tfoot class="p-datatable-tfoot">
+                            <ng-container *ngTemplateOutlet="footerGroupedTemplate || footerTemplate; context: { $implicit: scrollerOptions.columns }"></ng-container>
                         </tfoot>
                     </table>
                 </ng-template>
@@ -12902,61 +6400,116 @@ var Table = class _Table extends BaseComponent {
                 (onPageChange)="onPageChange($event)"
                 [rowsPerPageOptions]="rowsPerPageOptions"
                 *ngIf="paginator && (paginatorPosition === 'bottom' || paginatorPosition == 'both')"
-                [templateLeft]="paginatorLeftTemplate || _paginatorLeftTemplate"
-                [templateRight]="paginatorRightTemplate || _paginatorRightTemplate"
+                [templateLeft]="paginatorLeftTemplate"
+                [templateRight]="paginatorRightTemplate"
                 [dropdownAppendTo]="paginatorDropdownAppendTo"
                 [dropdownScrollHeight]="paginatorDropdownScrollHeight"
                 [currentPageReportTemplate]="currentPageReportTemplate"
                 [showFirstLastIcon]="showFirstLastIcon"
-                [dropdownItemTemplate]="paginatorDropdownItemTemplate || _paginatorDropdownItemTemplate"
+                [dropdownItemTemplate]="paginatorDropdownItemTemplate"
                 [showCurrentPageReport]="showCurrentPageReport"
                 [showJumpToPageDropdown]="showJumpToPageDropdown"
                 [showJumpToPageInput]="showJumpToPageInput"
                 [showPageLinks]="showPageLinks"
-                [styleClass]="cx('pcPaginator') + ' ' + paginatorStyleClass && paginatorStyleClass"
+                [styleClass]="getPaginatorStyleClasses('p-paginator-bottom')"
                 [locale]="paginatorLocale"
             >
-                <ng-template pTemplate="dropdownicon" *ngIf="paginatorDropdownIconTemplate || _paginatorDropdownIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorDropdownIconTemplate || _paginatorDropdownIconTemplate"></ng-container>
+                <ng-template pTemplate="dropdownicon" *ngIf="paginatorDropdownIconTemplate">
+                    <ng-container *ngTemplateOutlet="paginatorDropdownIconTemplate"></ng-container>
                 </ng-template>
 
-                <ng-template pTemplate="firstpagelinkicon" *ngIf="paginatorFirstPageLinkIconTemplate || _paginatorFirstPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorFirstPageLinkIconTemplate || _paginatorFirstPageLinkIconTemplate"></ng-container>
+                <ng-template pTemplate="firstpagelinkicon" *ngIf="paginatorFirstPageLinkIconTemplate">
+                    <ng-container *ngTemplateOutlet="paginatorFirstPageLinkIconTemplate"></ng-container>
                 </ng-template>
 
-                <ng-template pTemplate="previouspagelinkicon" *ngIf="paginatorPreviousPageLinkIconTemplate || _paginatorPreviousPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorPreviousPageLinkIconTemplate || _paginatorPreviousPageLinkIconTemplate"></ng-container>
+                <ng-template pTemplate="previouspagelinkicon" *ngIf="paginatorPreviousPageLinkIconTemplate">
+                    <ng-container *ngTemplateOutlet="paginatorPreviousPageLinkIconTemplate"></ng-container>
                 </ng-template>
 
-                <ng-template pTemplate="lastpagelinkicon" *ngIf="paginatorLastPageLinkIconTemplate || _paginatorLastPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorLastPageLinkIconTemplate || _paginatorLastPageLinkIconTemplate"></ng-container>
+                <ng-template pTemplate="lastpagelinkicon" *ngIf="paginatorLastPageLinkIconTemplate">
+                    <ng-container *ngTemplateOutlet="paginatorLastPageLinkIconTemplate"></ng-container>
                 </ng-template>
 
-                <ng-template pTemplate="nextpagelinkicon" *ngIf="paginatorNextPageLinkIconTemplate || _paginatorNextPageLinkIconTemplate">
-                    <ng-container *ngTemplateOutlet="paginatorNextPageLinkIconTemplate || _paginatorNextPageLinkIconTemplate"></ng-container>
+                <ng-template pTemplate="nextpagelinkicon" *ngIf="paginatorNextPageLinkIconTemplate">
+                    <ng-container *ngTemplateOutlet="paginatorNextPageLinkIconTemplate"></ng-container>
                 </ng-template>
             </p-paginator>
 
-            <div *ngIf="summaryTemplate || _summaryTemplate" [ngClass]="cx('footer')">
-                <ng-container *ngTemplateOutlet="summaryTemplate || _summaryTemplate"></ng-container>
+            <div *ngIf="summaryTemplate" class="p-datatable-footer">
+                <ng-container *ngTemplateOutlet="summaryTemplate"></ng-container>
             </div>
 
-            <div #resizeHelper [ngClass]="cx('columnResizeIndicator')" style="display:none" *ngIf="resizableColumns"></div>
-            <span #reorderIndicatorUp [ngClass]="cx('rowReorderIndicatorUp')" style="display: none;" *ngIf="reorderableColumns">
-                <ArrowDownIcon *ngIf="!reorderIndicatorUpIconTemplate && !_reorderIndicatorUpIconTemplate" />
-                <ng-template *ngTemplateOutlet="reorderIndicatorUpIconTemplate || _reorderIndicatorUpIconTemplate"></ng-template>
+            <div
+                #resizeHelper
+                class="p-column-resizer-helper"
+                [ngStyle]="{
+                    display: 'none'
+                }"
+                *ngIf="resizableColumns"
+            ></div>
+            <span
+                #reorderIndicatorUp
+                class="p-datatable-reorder-indicator-up"
+                [ngStyle]="{
+                    display: 'none'
+                }"
+                *ngIf="reorderableColumns"
+            >
+                <ArrowDownIcon *ngIf="!reorderIndicatorUpIconTemplate" />
+                <ng-template *ngTemplateOutlet="reorderIndicatorUpIconTemplate"></ng-template>
             </span>
-            <span #reorderIndicatorDown [ngClass]="cx('rowReorderIndicatorDown')" style="display: none;" *ngIf="reorderableColumns">
-                <ArrowUpIcon *ngIf="!reorderIndicatorDownIconTemplate && !_reorderIndicatorDownIconTemplate" />
-                <ng-template *ngTemplateOutlet="reorderIndicatorDownIconTemplate || _reorderIndicatorDownIconTemplate"></ng-template>
+            <span
+                #reorderIndicatorDown
+                class="p-datatable-reorder-indicator-down"
+                [ngStyle]="{
+                    display: 'none'
+                }"
+                *ngIf="reorderableColumns"
+            >
+                <ArrowUpIcon *ngIf="!reorderIndicatorDownIconTemplate" />
+                <ng-template *ngTemplateOutlet="reorderIndicatorDownIconTemplate"></ng-template>
             </span>
         </div>
     `,
-      providers: [TableService, TableStyle],
+      providers: [TableService],
       changeDetection: ChangeDetectionStrategy.Default,
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      },
+      styles: ["@layer primeng{.p-datatable{position:relative}.p-datatable>.p-datatable-wrapper{overflow:auto}.p-datatable-table{border-spacing:0px;width:100%}.p-datatable .p-sortable-column{cursor:pointer;-webkit-user-select:none;user-select:none}.p-datatable .p-sortable-column .p-column-title,.p-datatable .p-sortable-column .p-sortable-column-icon,.p-datatable .p-sortable-column .p-sortable-column-badge{vertical-align:middle}.p-datatable .p-sortable-column .p-icon-wrapper{display:inline}.p-datatable .p-sortable-column .p-sortable-column-badge{display:inline-flex;align-items:center;justify-content:center}.p-datatable-hoverable-rows .p-selectable-row{cursor:pointer}.p-datatable-scrollable>.p-datatable-wrapper{position:relative}.p-datatable-scrollable-table>.p-datatable-thead{position:sticky;top:0;z-index:2}.p-datatable-scrollable-table>.p-datatable-frozen-tbody{position:sticky;z-index:1}.p-datatable-scrollable-table>.p-datatable-tfoot{position:sticky;bottom:0;z-index:1}.p-datatable-scrollable .p-frozen-column{position:sticky;background:inherit;z-index:1}.p-datatable-scrollable th.p-frozen-column{z-index:1}.p-datatable-flex-scrollable{display:flex;flex-direction:column;height:100%}.p-datatable-flex-scrollable>.p-datatable-wrapper{display:flex;flex-direction:column;flex:1;height:100%}.p-datatable-scrollable-table>.p-datatable-tbody>.p-rowgroup-header{position:sticky;z-index:2}.p-datatable-resizable-table>.p-datatable-thead>tr>th,.p-datatable-resizable-table>.p-datatable-tfoot>tr>td,.p-datatable-resizable-table>.p-datatable-tbody>tr>td{overflow:hidden;white-space:nowrap}.p-datatable-resizable-table>.p-datatable-thead>tr>th.p-resizable-column:not(.p-frozen-column){background-clip:padding-box;position:relative}.p-datatable-resizable-table-fit>.p-datatable-thead>tr>th.p-resizable-column:last-child .p-column-resizer{display:none}.p-datatable .p-column-resizer{display:block;position:absolute!important;top:0;right:0;margin:0;width:.5rem;height:100%;padding:0;cursor:col-resize;border:1px solid transparent}.p-datatable .p-column-resizer-helper{width:1px;position:absolute;z-index:10;display:none}.p-datatable .p-row-editor-init,.p-datatable .p-row-editor-save,.p-datatable .p-row-editor-cancel,.p-datatable .p-row-toggler{display:inline-flex;align-items:center;justify-content:center;overflow:hidden;position:relative}.p-datatable-reorder-indicator-up,.p-datatable-reorder-indicator-down{position:absolute}.p-datatable-reorderablerow-handle,[pReorderableColumn]{cursor:move}.p-datatable .p-datatable-loading-overlay{position:absolute;display:flex;align-items:center;justify-content:center;z-index:3}.p-column-filter-row{display:flex;align-items:center;width:100%}.p-column-filter-menu{display:inline-flex}.p-column-filter-row p-columnfilterformelement{flex:1 1 auto;width:1%}.p-column-filter-menu-button,.p-column-filter-clear-button{display:inline-flex;justify-content:center;align-items:center;cursor:pointer;text-decoration:none;overflow:hidden;position:relative}.p-column-filter-overlay{position:absolute;top:0;left:0}.p-column-filter-row-items{margin:0;padding:0;list-style:none}.p-column-filter-row-item{cursor:pointer}.p-column-filter-add-button,.p-column-filter-remove-button{justify-content:center}.p-column-filter-add-button .p-button-label,.p-column-filter-remove-button .p-button-label{flex-grow:0}.p-column-filter-buttonbar{display:flex;align-items:center;justify-content:space-between}.p-column-filter-buttonbar .p-button{width:auto}.p-datatable-tbody>tr>td>.p-column-title{display:none}.p-datatable-scroller-spacer{display:flex}.p-datatable .p-scroller .p-scroller-loading{transform:none!important;min-height:0;position:sticky;top:0;left:0}}\n"]
     }]
-  }], null, {
+  }], () => [{
+    type: Document,
+    decorators: [{
+      type: Inject,
+      args: [DOCUMENT]
+    }]
+  }, {
+    type: void 0,
+    decorators: [{
+      type: Inject,
+      args: [PLATFORM_ID]
+    }]
+  }, {
+    type: Renderer2
+  }, {
+    type: ElementRef
+  }, {
+    type: NgZone
+  }, {
+    type: TableService
+  }, {
+    type: ChangeDetectorRef
+  }, {
+    type: FilterService
+  }, {
+    type: OverlayService
+  }, {
+    type: PrimeNGConfig
+  }, {
+    type: DomSanitizer
+  }], {
     frozenColumns: [{
       type: Input
     }],
@@ -13251,21 +6804,6 @@ var Table = class _Table extends BaseComponent {
     groupRowsBy: [{
       type: Input
     }],
-    size: [{
-      type: Input
-    }],
-    showGridlines: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    stripedRows: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
     groupRowsByOrder: [{
       type: Input,
       args: [{
@@ -13306,9 +6844,6 @@ var Table = class _Table extends BaseComponent {
       type: Input
     }],
     selection: [{
-      type: Input
-    }],
-    virtualRowHeight: [{
       type: Input
     }],
     selectAll: [{
@@ -13419,207 +6954,13 @@ var Table = class _Table extends BaseComponent {
       type: ViewChild,
       args: ["scroller"]
     }],
-    _templates: [{
+    templates: [{
       type: ContentChildren,
       args: [PrimeTemplate]
     }],
-    _headerTemplate: [{
-      type: ContentChild,
-      args: ["header", {
-        descendants: false
-      }]
-    }],
-    _headerGroupedTemplate: [{
-      type: ContentChild,
-      args: ["headergrouped", {
-        descendants: false
-      }]
-    }],
-    _bodyTemplate: [{
-      type: ContentChild,
-      args: ["body", {
-        descendants: false
-      }]
-    }],
-    _loadingBodyTemplate: [{
-      type: ContentChild,
-      args: ["loadingbody", {
-        descendants: false
-      }]
-    }],
-    _captionTemplate: [{
-      type: ContentChild,
-      args: ["caption", {
-        descendants: false
-      }]
-    }],
-    _footerTemplate: [{
-      type: ContentChild,
-      args: ["footer", {
-        descendants: false
-      }]
-    }],
-    _footerGroupedTemplate: [{
-      type: ContentChild,
-      args: ["footergrouped", {
-        descendants: false
-      }]
-    }],
-    _summaryTemplate: [{
-      type: ContentChild,
-      args: ["summary", {
-        descendants: false
-      }]
-    }],
-    _colGroupTemplate: [{
-      type: ContentChild,
-      args: ["colgroup", {
-        descendants: false
-      }]
-    }],
-    _expandedRowTemplate: [{
-      type: ContentChild,
-      args: ["expandedrow", {
-        descendants: false
-      }]
-    }],
-    _groupHeaderTemplate: [{
-      type: ContentChild,
-      args: ["groupheader", {
-        descendants: false
-      }]
-    }],
-    _groupFooterTemplate: [{
-      type: ContentChild,
-      args: ["groupfooter", {
-        descendants: false
-      }]
-    }],
-    _frozenExpandedRowTemplate: [{
-      type: ContentChild,
-      args: ["frozenexpandedrow", {
-        descendants: false
-      }]
-    }],
-    _frozenHeaderTemplate: [{
-      type: ContentChild,
-      args: ["frozenheader", {
-        descendants: false
-      }]
-    }],
-    _frozenBodyTemplate: [{
-      type: ContentChild,
-      args: ["frozenbody", {
-        descendants: false
-      }]
-    }],
-    _frozenFooterTemplate: [{
-      type: ContentChild,
-      args: ["frozenfooter", {
-        descendants: false
-      }]
-    }],
-    _frozenColGroupTemplate: [{
-      type: ContentChild,
-      args: ["frozencolgroup", {
-        descendants: false
-      }]
-    }],
-    _emptyMessageTemplate: [{
-      type: ContentChild,
-      args: ["emptymessage", {
-        descendants: false
-      }]
-    }],
-    _paginatorLeftTemplate: [{
-      type: ContentChild,
-      args: ["paginatorleft", {
-        descendants: false
-      }]
-    }],
-    _paginatorRightTemplate: [{
-      type: ContentChild,
-      args: ["paginatorright", {
-        descendants: false
-      }]
-    }],
-    _paginatorDropdownItemTemplate: [{
-      type: ContentChild,
-      args: ["paginatordropdownitem", {
-        descendants: false
-      }]
-    }],
-    _loadingIconTemplate: [{
-      type: ContentChild,
-      args: ["loadingicon", {
-        descendants: false
-      }]
-    }],
-    _reorderIndicatorUpIconTemplate: [{
-      type: ContentChild,
-      args: ["reorderindicatorupicon", {
-        descendants: false
-      }]
-    }],
-    _reorderIndicatorDownIconTemplate: [{
-      type: ContentChild,
-      args: ["reorderindicatordownicon", {
-        descendants: false
-      }]
-    }],
-    _sortIconTemplate: [{
-      type: ContentChild,
-      args: ["sorticon", {
-        descendants: false
-      }]
-    }],
-    _checkboxIconTemplate: [{
-      type: ContentChild,
-      args: ["checkboxicon", {
-        descendants: false
-      }]
-    }],
-    _headerCheckboxIconTemplate: [{
-      type: ContentChild,
-      args: ["headercheckboxicon", {
-        descendants: false
-      }]
-    }],
-    _paginatorDropdownIconTemplate: [{
-      type: ContentChild,
-      args: ["paginatordropdownicon", {
-        descendants: false
-      }]
-    }],
-    _paginatorFirstPageLinkIconTemplate: [{
-      type: ContentChild,
-      args: ["paginatorfirstpagelinkicon", {
-        descendants: false
-      }]
-    }],
-    _paginatorLastPageLinkIconTemplate: [{
-      type: ContentChild,
-      args: ["paginatorlastpagelinkicon", {
-        descendants: false
-      }]
-    }],
-    _paginatorPreviousPageLinkIconTemplate: [{
-      type: ContentChild,
-      args: ["paginatorpreviouspagelinkicon", {
-        descendants: false
-      }]
-    }],
-    _paginatorNextPageLinkIconTemplate: [{
-      type: ContentChild,
-      args: ["paginatornextpagelinkicon", {
-        descendants: false
-      }]
+    virtualRowHeight: [{
+      type: Input
     }]
-  });
-})();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(Table, {
-    className: "Table"
   });
 })();
 var TableBody = class _TableBody {
@@ -13742,6 +7083,7 @@ var TableBody = class _TableBody {
   static ɵcmp = ɵɵdefineComponent({
     type: _TableBody,
     selectors: [["", "pTableBody", ""]],
+    hostAttrs: [1, "p-element"],
     inputs: {
       columns: [0, "pTableBody", "columns"],
       template: [0, "pTableBodyTemplate", "template"],
@@ -13751,7 +7093,7 @@ var TableBody = class _TableBody {
       scrollerOptions: "scrollerOptions"
     },
     features: [ɵɵInputTransformsFeature],
-    attrs: _c45,
+    attrs: _c17,
     decls: 5,
     vars: 5,
     consts: [[4, "ngIf"], ["ngFor", "", 3, "ngForOf", "ngForTrackBy"], ["role", "row", 4, "ngIf"], ["role", "row"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
@@ -13760,11 +7102,11 @@ var TableBody = class _TableBody {
         ɵɵtemplate(0, TableBody_ng_container_0_Template, 2, 2, "ng-container", 0)(1, TableBody_ng_container_1_Template, 2, 2, "ng-container", 0)(2, TableBody_ng_container_2_Template, 2, 2, "ng-container", 0)(3, TableBody_ng_container_3_Template, 2, 5, "ng-container", 0)(4, TableBody_ng_container_4_Template, 2, 5, "ng-container", 0);
       }
       if (rf & 2) {
-        ɵɵproperty("ngIf", !ctx.dt.expandedRowTemplate && !ctx.dt._expandedRowTemplate);
+        ɵɵproperty("ngIf", !ctx.dt.expandedRowTemplate);
         ɵɵadvance();
-        ɵɵproperty("ngIf", (ctx.dt.expandedRowTemplate || ctx.dt._expandedRowTemplate) && !(ctx.frozen && (ctx.dt.frozenExpandedRowTemplate || ctx.dt._frozenExpandedRowTemplate)));
+        ɵɵproperty("ngIf", ctx.dt.expandedRowTemplate && !(ctx.frozen && ctx.dt.frozenExpandedRowTemplate));
         ɵɵadvance();
-        ɵɵproperty("ngIf", (ctx.dt.frozenExpandedRowTemplate || ctx.dt._frozenExpandedRowTemplate) && ctx.frozen);
+        ɵɵproperty("ngIf", ctx.dt.frozenExpandedRowTemplate && ctx.frozen);
         ɵɵadvance();
         ɵɵproperty("ngIf", ctx.dt.loading);
         ɵɵadvance();
@@ -13781,40 +7123,22 @@ var TableBody = class _TableBody {
     args: [{
       selector: "[pTableBody]",
       template: `
-        <ng-container *ngIf="!dt.expandedRowTemplate && !dt._expandedRowTemplate">
+        <ng-container *ngIf="!dt.expandedRowTemplate">
             <ng-template ngFor let-rowData let-rowIndex="index" [ngForOf]="value" [ngForTrackBy]="dt.rowTrackBy">
-                <ng-container *ngIf="(dt.groupHeaderTemplate || dt._groupHeaderTemplate) && !dt.virtualScroll && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupHeader(value, rowData, rowIndex)" role="row">
+                <ng-container *ngIf="dt.groupHeaderTemplate && !dt.virtualScroll && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupHeader(value, rowData, getRowIndex(rowIndex))" role="row">
                     <ng-container
-                        *ngTemplateOutlet="
-                            dt.groupHeaderTemplate || dt._groupHeaderTemplate;
-                            context: {
-                                $implicit: rowData,
-                                rowIndex: getRowIndex(rowIndex),
-                                columns: columns,
-                                editing: dt.editMode === 'row' && dt.isRowEditing(rowData),
-                                frozen: frozen
-                            }
-                        "
+                        *ngTemplateOutlet="dt.groupHeaderTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }"
                     ></ng-container>
                 </ng-container>
                 <ng-container *ngIf="dt.rowGroupMode !== 'rowspan'">
                     <ng-container
-                        *ngTemplateOutlet="
-                            rowData ? template : dt.loadingBodyTemplate || dt._loadingBodyTemplate;
-                            context: {
-                                $implicit: rowData,
-                                rowIndex: getRowIndex(rowIndex),
-                                columns: columns,
-                                editing: dt.editMode === 'row' && dt.isRowEditing(rowData),
-                                frozen: frozen
-                            }
-                        "
+                        *ngTemplateOutlet="rowData ? template : dt.loadingBodyTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }"
                     ></ng-container>
                 </ng-container>
                 <ng-container *ngIf="dt.rowGroupMode === 'rowspan'">
                     <ng-container
                         *ngTemplateOutlet="
-                            rowData ? template : dt.loadingBodyTemplate || dt._loadingBodyTemplate;
+                            rowData ? template : dt.loadingBodyTemplate;
                             context: {
                                 $implicit: rowData,
                                 rowIndex: getRowIndex(rowIndex),
@@ -13827,123 +7151,63 @@ var TableBody = class _TableBody {
                         "
                     ></ng-container>
                 </ng-container>
-                <ng-container *ngIf="(dt.groupFooterTemplate || dt._groupFooterTemplate) && !dt.virtualScroll && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupFooter(value, rowData, rowIndex)" role="row">
+                <ng-container *ngIf="dt.groupFooterTemplate && !dt.virtualScroll && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupFooter(value, rowData, rowIndex)" role="row">
                     <ng-container
-                        *ngTemplateOutlet="
-                            dt.groupFooterTemplate || dt._groupFooterTemplate;
-                            context: {
-                                $implicit: rowData,
-                                rowIndex: getRowIndex(rowIndex),
-                                columns: columns,
-                                editing: dt.editMode === 'row' && dt.isRowEditing(rowData),
-                                frozen: frozen
-                            }
-                        "
+                        *ngTemplateOutlet="dt.groupFooterTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }"
                     ></ng-container>
                 </ng-container>
             </ng-template>
         </ng-container>
-        <ng-container *ngIf="(dt.expandedRowTemplate || dt._expandedRowTemplate) && !(frozen && (dt.frozenExpandedRowTemplate || dt._frozenExpandedRowTemplate))">
+        <ng-container *ngIf="dt.expandedRowTemplate && !(frozen && dt.frozenExpandedRowTemplate)">
             <ng-template ngFor let-rowData let-rowIndex="index" [ngForOf]="value" [ngForTrackBy]="dt.rowTrackBy">
-                <ng-container *ngIf="!(dt.groupHeaderTemplate && dt._groupHeaderTemplate)">
+                <ng-container *ngIf="!dt.groupHeaderTemplate">
                     <ng-container
-                        *ngTemplateOutlet="
-                            template;
-                            context: {
-                                $implicit: rowData,
-                                rowIndex: getRowIndex(rowIndex),
-                                columns: columns,
-                                expanded: dt.isRowExpanded(rowData),
-                                editing: dt.editMode === 'row' && dt.isRowEditing(rowData),
-                                frozen: frozen
-                            }
-                        "
+                        *ngTemplateOutlet="template; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }"
                     ></ng-container>
                 </ng-container>
-                <ng-container *ngIf="(dt.groupHeaderTemplate || dt._groupHeaderTemplate) && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupHeader(value, rowData, getRowIndex(rowIndex))" role="row">
+                <ng-container *ngIf="dt.groupHeaderTemplate && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupHeader(value, rowData, getRowIndex(rowIndex))" role="row">
                     <ng-container
                         *ngTemplateOutlet="
-                            dt.groupHeaderTemplate || dt._groupHeaderTemplate;
-                            context: {
-                                $implicit: rowData,
-                                rowIndex: getRowIndex(rowIndex),
-                                columns: columns,
-                                expanded: dt.isRowExpanded(rowData),
-                                editing: dt.editMode === 'row' && dt.isRowEditing(rowData),
-                                frozen: frozen
-                            }
+                            dt.groupHeaderTemplate;
+                            context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }
                         "
                     ></ng-container>
                 </ng-container>
                 <ng-container *ngIf="dt.isRowExpanded(rowData)">
-                    <ng-container
-                        *ngTemplateOutlet="
-                            dt.expandedRowTemplate || dt._expandedRowTemplate;
-                            context: {
-                                $implicit: rowData,
-                                rowIndex: getRowIndex(rowIndex),
-                                columns: columns,
-                                frozen: frozen
-                            }
-                        "
-                    ></ng-container>
-                    <ng-container *ngIf="(dt.groupFooterTemplate || dt._groupFooterTemplate) && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupFooter(value, rowData, getRowIndex(rowIndex))" role="row">
+                    <ng-container *ngTemplateOutlet="dt.expandedRowTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, frozen: frozen }"></ng-container>
+                    <ng-container *ngIf="dt.groupFooterTemplate && dt.rowGroupMode === 'subheader' && shouldRenderRowGroupFooter(value, rowData, getRowIndex(rowIndex))" role="row">
                         <ng-container
                             *ngTemplateOutlet="
-                                dt.groupFooterTemplate || dt._groupFooterTemplate;
-                                context: {
-                                    $implicit: rowData,
-                                    rowIndex: getRowIndex(rowIndex),
-                                    columns: columns,
-                                    expanded: dt.isRowExpanded(rowData),
-                                    editing: dt.editMode === 'row' && dt.isRowEditing(rowData),
-                                    frozen: frozen
-                                }
+                                dt.groupFooterTemplate;
+                                context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }
                             "
                         ></ng-container>
                     </ng-container>
                 </ng-container>
             </ng-template>
         </ng-container>
-        <ng-container *ngIf="(dt.frozenExpandedRowTemplate || dt._frozenExpandedRowTemplate) && frozen">
+        <ng-container *ngIf="dt.frozenExpandedRowTemplate && frozen">
             <ng-template ngFor let-rowData let-rowIndex="index" [ngForOf]="value" [ngForTrackBy]="dt.rowTrackBy">
                 <ng-container
-                    *ngTemplateOutlet="
-                        template;
-                        context: {
-                            $implicit: rowData,
-                            rowIndex: getRowIndex(rowIndex),
-                            columns: columns,
-                            expanded: dt.isRowExpanded(rowData),
-                            editing: dt.editMode === 'row' && dt.isRowEditing(rowData),
-                            frozen: frozen
-                        }
-                    "
+                    *ngTemplateOutlet="template; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, expanded: dt.isRowExpanded(rowData), editing: dt.editMode === 'row' && dt.isRowEditing(rowData), frozen: frozen }"
                 ></ng-container>
                 <ng-container *ngIf="dt.isRowExpanded(rowData)">
-                    <ng-container
-                        *ngTemplateOutlet="
-                            dt.frozenExpandedRowTemplate || dt._frozenExpandedRowTemplate;
-                            context: {
-                                $implicit: rowData,
-                                rowIndex: getRowIndex(rowIndex),
-                                columns: columns,
-                                frozen: frozen
-                            }
-                        "
-                    ></ng-container>
+                    <ng-container *ngTemplateOutlet="dt.frozenExpandedRowTemplate; context: { $implicit: rowData, rowIndex: getRowIndex(rowIndex), columns: columns, frozen: frozen }"></ng-container>
                 </ng-container>
             </ng-template>
         </ng-container>
         <ng-container *ngIf="dt.loading">
-            <ng-container *ngTemplateOutlet="dt.loadingBodyTemplate || dt._loadingBodyTemplate; context: { $implicit: columns, frozen: frozen }"></ng-container>
+            <ng-container *ngTemplateOutlet="dt.loadingBodyTemplate; context: { $implicit: columns, frozen: frozen }"></ng-container>
         </ng-container>
         <ng-container *ngIf="dt.isEmpty() && !dt.loading">
-            <ng-container *ngTemplateOutlet="dt.emptyMessageTemplate || dt._emptyMessageTemplate; context: { $implicit: columns, frozen: frozen }"></ng-container>
+            <ng-container *ngTemplateOutlet="dt.emptyMessageTemplate; context: { $implicit: columns, frozen: frozen }"></ng-container>
         </ng-container>
     `,
       changeDetection: ChangeDetectionStrategy.Default,
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: Table
@@ -13982,11 +7246,6 @@ var TableBody = class _TableBody {
     }]
   });
 })();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(TableBody, {
-    className: "TableBody"
-  });
-})();
 var RowGroupHeader = class _RowGroupHeader {
   dt;
   constructor(dt) {
@@ -14001,7 +7260,7 @@ var RowGroupHeader = class _RowGroupHeader {
   static ɵdir = ɵɵdefineDirective({
     type: _RowGroupHeader,
     selectors: [["", "pRowGroupHeader", ""]],
-    hostAttrs: [1, "p-datatable-row-group-header"],
+    hostAttrs: [1, "p-rowgroup-header", "p-element"],
     hostVars: 2,
     hostBindings: function RowGroupHeader_HostBindings(rf, ctx) {
       if (rf & 2) {
@@ -14016,7 +7275,7 @@ var RowGroupHeader = class _RowGroupHeader {
     args: [{
       selector: "[pRowGroupHeader]",
       host: {
-        class: "p-datatable-row-group-header",
+        class: "p-rowgroup-header p-element",
         "[style.top]": "getFrozenRowGroupHeaderStickyPosition"
       }
     }]
@@ -14032,27 +7291,20 @@ var FrozenColumn = class _FrozenColumn {
   }
   set frozen(val) {
     this._frozen = val;
-    Promise.resolve(null).then(() => this.updateStickyPosition());
+    this.updateStickyPosition();
   }
   alignFrozen = "left";
   constructor(el, zone) {
     this.el = el;
     this.zone = zone;
   }
-  ngAfterViewInit() {
+  ngAfterViewChecked() {
     this.zone.runOutsideAngular(() => {
-      setTimeout(() => {
-        this.recalculateColumns();
-      }, 1e3);
+      this.recalculateColumns();
     });
   }
   recalculateColumns() {
-    const siblings = DomHandler.siblings(this.el.nativeElement);
-    const index = DomHandler.index(this.el.nativeElement);
-    const time = (siblings.length - index + 1) * 50;
-    setTimeout(() => {
-      this.updateStickyPosition();
-    }, time);
+    this.updateStickyPosition();
   }
   _frozen = true;
   updateStickyPosition() {
@@ -14088,7 +7340,8 @@ var FrozenColumn = class _FrozenColumn {
   static ɵdir = ɵɵdefineDirective({
     type: _FrozenColumn,
     selectors: [["", "pFrozenColumn", ""]],
-    hostVars: 4,
+    hostAttrs: [1, "p-element"],
+    hostVars: 2,
     hostBindings: function FrozenColumn_HostBindings(rf, ctx) {
       if (rf & 1) {
         ɵɵlistener("resize", function FrozenColumn_resize_HostBindingHandler($event) {
@@ -14096,7 +7349,7 @@ var FrozenColumn = class _FrozenColumn {
         }, false, ɵɵresolveWindow);
       }
       if (rf & 2) {
-        ɵɵclassProp("p-datatable-frozen-column", ctx.frozen)("p-datatable-frozen-column-left", ctx.alignFrozen === "left");
+        ɵɵclassProp("p-frozen-column", ctx.frozen);
       }
     },
     inputs: {
@@ -14111,8 +7364,8 @@ var FrozenColumn = class _FrozenColumn {
     args: [{
       selector: "[pFrozenColumn]",
       host: {
-        "[class.p-datatable-frozen-column]": "frozen",
-        "[class.p-datatable-frozen-column-left]": 'alignFrozen === "left"'
+        class: "p-element",
+        "[class.p-frozen-column]": "frozen"
       }
     }]
   }], () => [{
@@ -14153,32 +7406,22 @@ var SortableColumn = class _SortableColumn {
     }
   }
   updateSortState() {
-    let sorted = false;
-    let sortOrder = 0;
-    if (this.dt.sortMode === "single") {
-      sorted = this.dt.isSorted(this.field);
-      sortOrder = this.dt.sortOrder;
-    } else if (this.dt.sortMode === "multiple") {
-      const sortMeta = this.dt.getSortMeta(this.field);
-      sorted = !!sortMeta;
-      sortOrder = sortMeta ? sortMeta.order : 0;
-    }
-    this.sorted = sorted;
-    this.sortOrder = sorted ? sortOrder === 1 ? "ascending" : "descending" : "none";
+    this.sorted = this.dt.isSorted(this.field);
+    this.sortOrder = this.sorted ? this.dt.sortOrder === 1 ? "ascending" : "descending" : "none";
   }
-  onClick(event2) {
-    if (this.isEnabled() && !this.isFilterElement(event2.target)) {
+  onClick(event) {
+    if (this.isEnabled() && !this.isFilterElement(event.target)) {
       this.updateSortState();
       this.dt.sort({
-        originalEvent: event2,
+        originalEvent: event,
         field: this.field
       });
       DomHandler.clearSelection();
     }
   }
-  onEnterKey(event2) {
-    this.onClick(event2);
-    event2.preventDefault();
+  onEnterKey(event) {
+    this.onClick(event);
+    event.preventDefault();
   }
   isEnabled() {
     return this.pSortableColumnDisabled !== true;
@@ -14200,6 +7443,7 @@ var SortableColumn = class _SortableColumn {
   static ɵdir = ɵɵdefineDirective({
     type: _SortableColumn,
     selectors: [["", "pSortableColumn", ""]],
+    hostAttrs: [1, "p-element"],
     hostVars: 7,
     hostBindings: function SortableColumn_HostBindings(rf, ctx) {
       if (rf & 1) {
@@ -14213,7 +7457,7 @@ var SortableColumn = class _SortableColumn {
       }
       if (rf & 2) {
         ɵɵattribute("tabindex", ctx.isEnabled() ? "0" : null)("role", "columnheader")("aria-sort", ctx.sortOrder);
-        ɵɵclassProp("p-datatable-sortable-column", ctx.isEnabled())("p-datatable-column-sorted", ctx.sorted);
+        ɵɵclassProp("p-sortable-column", ctx.isEnabled())("p-highlight", ctx.sorted);
       }
     },
     inputs: {
@@ -14229,8 +7473,9 @@ var SortableColumn = class _SortableColumn {
     args: [{
       selector: "[pSortableColumn]",
       host: {
-        "[class.p-datatable-sortable-column]": "isEnabled()",
-        "[class.p-datatable-column-sorted]": "sorted",
+        class: "p-element",
+        "[class.p-sortable-column]": "isEnabled()",
+        "[class.p-highlight]": "sorted",
         "[attr.tabindex]": 'isEnabled() ? "0" : null',
         "[attr.role]": '"columnheader"',
         "[attr.aria-sort]": "sortOrder"
@@ -14278,8 +7523,8 @@ var SortIcon = class _SortIcon {
   ngOnInit() {
     this.updateSortState();
   }
-  onClick(event2) {
-    event2.preventDefault();
+  onClick(event) {
+    event.preventDefault();
   }
   updateSortState() {
     if (this.dt.sortMode === "single") {
@@ -14322,6 +7567,7 @@ var SortIcon = class _SortIcon {
   static ɵcmp = ɵɵdefineComponent({
     type: _SortIcon,
     selectors: [["p-sortIcon"]],
+    hostAttrs: [1, "p-element"],
     inputs: {
       field: "field"
     },
@@ -14333,9 +7579,9 @@ var SortIcon = class _SortIcon {
         ɵɵtemplate(0, SortIcon_ng_container_0_Template, 4, 3, "ng-container", 0)(1, SortIcon_span_1_Template, 2, 4, "span", 1)(2, SortIcon_span_2_Template, 2, 1, "span", 2);
       }
       if (rf & 2) {
-        ɵɵproperty("ngIf", !(ctx.dt.sortIconTemplate && ctx.dt._sortIconTemplate));
+        ɵɵproperty("ngIf", !ctx.dt.sortIconTemplate);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.dt.sortIconTemplate || ctx.dt._sortIconTemplate);
+        ɵɵproperty("ngIf", ctx.dt.sortIconTemplate);
         ɵɵadvance();
         ɵɵproperty("ngIf", ctx.isMultiSorted());
       }
@@ -14351,18 +7597,21 @@ var SortIcon = class _SortIcon {
     args: [{
       selector: "p-sortIcon",
       template: `
-        <ng-container *ngIf="!(dt.sortIconTemplate && dt._sortIconTemplate)">
+        <ng-container *ngIf="!dt.sortIconTemplate">
             <SortAltIcon [styleClass]="'p-sortable-column-icon'" *ngIf="sortOrder === 0" />
             <SortAmountUpAltIcon [styleClass]="'p-sortable-column-icon'" *ngIf="sortOrder === 1" />
             <SortAmountDownIcon [styleClass]="'p-sortable-column-icon'" *ngIf="sortOrder === -1" />
         </ng-container>
-        <span *ngIf="dt.sortIconTemplate || dt._sortIconTemplate" class="p-sortable-column-icon">
-            <ng-template *ngTemplateOutlet="dt.sortIconTemplate || dt._sortIconTemplate; context: { $implicit: sortOrder }"></ng-template>
+        <span *ngIf="dt.sortIconTemplate" class="p-sortable-column-icon">
+            <ng-template *ngTemplateOutlet="dt.sortIconTemplate; context: { $implicit: sortOrder }"></ng-template>
         </span>
         <span *ngIf="isMultiSorted()" class="p-sortable-column-badge">{{ getBadgeValue() }}</span>
     `,
       changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: Table
@@ -14372,11 +7621,6 @@ var SortIcon = class _SortIcon {
     field: [{
       type: Input
     }]
-  });
-})();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(SortIcon, {
-    className: "SortIcon"
   });
 })();
 var SelectableRow = class _SelectableRow {
@@ -14408,113 +7652,113 @@ var SelectableRow = class _SelectableRow {
       this.selected = this.dt.isSelected(this.data);
     }
   }
-  onClick(event2) {
+  onClick(event) {
     if (this.isEnabled()) {
       this.dt.handleRowClick({
-        originalEvent: event2,
+        originalEvent: event,
         rowData: this.data,
         rowIndex: this.index
       });
     }
   }
-  onTouchEnd(event2) {
+  onTouchEnd(event) {
     if (this.isEnabled()) {
-      this.dt.handleRowTouchEnd(event2);
+      this.dt.handleRowTouchEnd(event);
     }
   }
-  onKeyDown(event2) {
-    switch (event2.code) {
+  onKeyDown(event) {
+    switch (event.code) {
       case "ArrowDown":
-        this.onArrowDownKey(event2);
+        this.onArrowDownKey(event);
         break;
       case "ArrowUp":
-        this.onArrowUpKey(event2);
+        this.onArrowUpKey(event);
         break;
       case "Home":
-        this.onHomeKey(event2);
+        this.onHomeKey(event);
         break;
       case "End":
-        this.onEndKey(event2);
+        this.onEndKey(event);
         break;
       case "Space":
-        this.onSpaceKey(event2);
+        this.onSpaceKey(event);
         break;
       case "Enter":
-        this.onEnterKey(event2);
+        this.onEnterKey(event);
         break;
       default:
-        if (event2.code === "KeyA" && (event2.metaKey || event2.ctrlKey) && this.dt.selectionMode === "multiple") {
+        if (event.code === "KeyA" && (event.metaKey || event.ctrlKey) && this.dt.selectionMode === "multiple") {
           const data = this.dt.dataToRender(this.dt.processedData);
           this.dt.selection = [...data];
-          this.dt.selectRange(event2, data.length - 1);
-          event2.preventDefault();
+          this.dt.selectRange(event, data.length - 1, true);
+          event.preventDefault();
         }
         break;
     }
   }
-  onArrowDownKey(event2) {
+  onArrowDownKey(event) {
     if (!this.isEnabled()) {
       return;
     }
-    const row = event2.currentTarget;
+    const row = event.currentTarget;
     const nextRow = this.findNextSelectableRow(row);
     if (nextRow) {
       nextRow.focus();
     }
-    event2.preventDefault();
+    event.preventDefault();
   }
-  onArrowUpKey(event2) {
+  onArrowUpKey(event) {
     if (!this.isEnabled()) {
       return;
     }
-    const row = event2.currentTarget;
+    const row = event.currentTarget;
     const prevRow = this.findPrevSelectableRow(row);
     if (prevRow) {
       prevRow.focus();
     }
-    event2.preventDefault();
+    event.preventDefault();
   }
-  onEnterKey(event2) {
+  onEnterKey(event) {
     if (!this.isEnabled()) {
       return;
     }
     this.dt.handleRowClick({
-      originalEvent: event2,
+      originalEvent: event,
       rowData: this.data,
       rowIndex: this.index
     });
   }
-  onEndKey(event2) {
+  onEndKey(event) {
     const lastRow = this.findLastSelectableRow();
     lastRow && this.focusRowChange(this.el.nativeElement, lastRow);
-    if (event2.ctrlKey && event2.shiftKey) {
+    if (event.ctrlKey && event.shiftKey) {
       const data = this.dt.dataToRender(this.dt.rows);
       const lastSelectableRowIndex = DomHandler.getAttribute(lastRow, "index");
       this.dt.anchorRowIndex = lastSelectableRowIndex;
       this.dt.selection = data.slice(this.index, data.length);
-      this.dt.selectRange(event2, this.index);
+      this.dt.selectRange(event, this.index);
     }
-    event2.preventDefault();
+    event.preventDefault();
   }
-  onHomeKey(event2) {
+  onHomeKey(event) {
     const firstRow = this.findFirstSelectableRow();
     firstRow && this.focusRowChange(this.el.nativeElement, firstRow);
-    if (event2.ctrlKey && event2.shiftKey) {
+    if (event.ctrlKey && event.shiftKey) {
       const data = this.dt.dataToRender(this.dt.rows);
       const firstSelectableRowIndex = DomHandler.getAttribute(firstRow, "index");
       this.dt.anchorRowIndex = this.dt.anchorRowIndex || firstSelectableRowIndex;
       this.dt.selection = data.slice(0, this.index + 1);
-      this.dt.selectRange(event2, this.index);
+      this.dt.selectRange(event, this.index);
     }
-    event2.preventDefault();
+    event.preventDefault();
   }
-  onSpaceKey(event2) {
-    const isInput = event2.target instanceof HTMLInputElement || event2.target instanceof HTMLSelectElement || event2.target instanceof HTMLTextAreaElement;
+  onSpaceKey(event) {
+    const isInput = event.target instanceof HTMLInputElement || event.target instanceof HTMLSelectElement || event.target instanceof HTMLTextAreaElement;
     if (isInput) {
       return;
     } else {
-      this.onEnterKey(event2);
-      if (event2.shiftKey && this.dt.selection !== null) {
+      this.onEnterKey(event);
+      if (event.shiftKey && this.dt.selection !== null) {
         const data = this.dt.dataToRender(this.dt.rows);
         let index;
         if (ObjectUtils.isNotEmpty(this.dt.selection) && this.dt.selection.length > 0) {
@@ -14527,9 +7771,9 @@ var SelectableRow = class _SelectableRow {
         }
         this.dt.anchorRowIndex = index;
         this.dt.selection = index !== this.index ? data.slice(Math.min(index, this.index), Math.max(index, this.index) + 1) : [this.data];
-        this.dt.selectRange(event2, this.index);
+        this.dt.selectRange(event, this.index);
       }
-      event2.preventDefault();
+      event.preventDefault();
     }
   }
   focusRowChange(firstFocusableRow, currentFocusedRow) {
@@ -14538,11 +7782,11 @@ var SelectableRow = class _SelectableRow {
     DomHandler.focus(currentFocusedRow);
   }
   findLastSelectableRow() {
-    const rows = DomHandler.find(this.dt.el.nativeElement, ".p-datatable-selectable-row");
+    const rows = DomHandler.find(this.dt.el.nativeElement, ".p-selectable-row");
     return rows ? rows[rows.length - 1] : null;
   }
   findFirstSelectableRow() {
-    const firstRow = DomHandler.findSingle(this.dt.el.nativeElement, ".p-datatable-selectable-row");
+    const firstRow = DomHandler.findSingle(this.dt.el.nativeElement, ".p-selectable-row");
     return firstRow;
   }
   findNextSelectableRow(row) {
@@ -14577,7 +7821,8 @@ var SelectableRow = class _SelectableRow {
   static ɵdir = ɵɵdefineDirective({
     type: _SelectableRow,
     selectors: [["", "pSelectableRow", ""]],
-    hostVars: 6,
+    hostAttrs: [1, "p-element"],
+    hostVars: 7,
     hostBindings: function SelectableRow_HostBindings(rf, ctx) {
       if (rf & 1) {
         ɵɵlistener("click", function SelectableRow_click_HostBindingHandler($event) {
@@ -14589,8 +7834,8 @@ var SelectableRow = class _SelectableRow {
         });
       }
       if (rf & 2) {
-        ɵɵattribute("tabindex", ctx.setRowTabIndex())("data-p-selectable-row", true);
-        ɵɵclassProp("p-datatable-selectable-row", ctx.isEnabled())("p-datatable-row-selected", ctx.selected);
+        ɵɵattribute("tabindex", ctx.setRowTabIndex())("data-p-highlight", ctx.selected)("data-p-selectable-row", true);
+        ɵɵclassProp("p-selectable-row", ctx.isEnabled())("p-highlight", ctx.selected);
       }
     },
     inputs: {
@@ -14607,9 +7852,11 @@ var SelectableRow = class _SelectableRow {
     args: [{
       selector: "[pSelectableRow]",
       host: {
-        "[class.p-datatable-selectable-row]": "isEnabled()",
-        "[class.p-datatable-row-selected]": "selected",
+        class: "p-element",
+        "[class.p-selectable-row]": "isEnabled()",
+        "[class.p-highlight]": "selected",
         "[attr.tabindex]": "setRowTabIndex()",
+        "[attr.data-p-highlight]": "selected",
         "[attr.data-p-selectable-row]": "true"
       }
     }]
@@ -14670,10 +7917,10 @@ var SelectableRowDblClick = class _SelectableRowDblClick {
       this.selected = this.dt.isSelected(this.data);
     }
   }
-  onClick(event2) {
+  onClick(event) {
     if (this.isEnabled()) {
       this.dt.handleRowClick({
-        originalEvent: event2,
+        originalEvent: event,
         rowData: this.data,
         rowIndex: this.index
       });
@@ -14693,6 +7940,7 @@ var SelectableRowDblClick = class _SelectableRowDblClick {
   static ɵdir = ɵɵdefineDirective({
     type: _SelectableRowDblClick,
     selectors: [["", "pSelectableRowDblClick", ""]],
+    hostAttrs: [1, "p-element"],
     hostVars: 4,
     hostBindings: function SelectableRowDblClick_HostBindings(rf, ctx) {
       if (rf & 1) {
@@ -14718,6 +7966,7 @@ var SelectableRowDblClick = class _SelectableRowDblClick {
     args: [{
       selector: "[pSelectableRowDblClick]",
       host: {
+        class: "p-element",
         "[class.p-selectable-row]": "isEnabled()",
         "[class.p-highlight]": "selected"
       }
@@ -14766,15 +8015,15 @@ var ContextMenuRow = class _ContextMenuRow {
       });
     }
   }
-  onContextMenu(event2) {
+  onContextMenu(event) {
     if (this.isEnabled()) {
       this.dt.handleRowRightClick({
-        originalEvent: event2,
+        originalEvent: event,
         rowData: this.data,
         rowIndex: this.index
       });
       this.el.nativeElement.focus();
-      event2.preventDefault();
+      event.preventDefault();
     }
   }
   isEnabled() {
@@ -14791,6 +8040,7 @@ var ContextMenuRow = class _ContextMenuRow {
   static ɵdir = ɵɵdefineDirective({
     type: _ContextMenuRow,
     selectors: [["", "pContextMenuRow", ""]],
+    hostAttrs: [1, "p-element"],
     hostVars: 3,
     hostBindings: function ContextMenuRow_HostBindings(rf, ctx) {
       if (rf & 1) {
@@ -14817,6 +8067,7 @@ var ContextMenuRow = class _ContextMenuRow {
     args: [{
       selector: "[pContextMenuRow]",
       host: {
+        class: "p-element",
         "[class.p-highlight-contextmenu]": "selected",
         "[attr.tabindex]": "isEnabled() ? 0 : undefined"
       }
@@ -14855,10 +8106,10 @@ var RowToggler = class _RowToggler {
   constructor(dt) {
     this.dt = dt;
   }
-  onClick(event2) {
+  onClick(event) {
     if (this.isEnabled()) {
-      this.dt.toggleRow(this.data, event2);
-      event2.preventDefault();
+      this.dt.toggleRow(this.data, event);
+      event.preventDefault();
     }
   }
   isEnabled() {
@@ -14870,6 +8121,7 @@ var RowToggler = class _RowToggler {
   static ɵdir = ɵɵdefineDirective({
     type: _RowToggler,
     selectors: [["", "pRowToggler", ""]],
+    hostAttrs: [1, "p-element"],
     hostBindings: function RowToggler_HostBindings(rf, ctx) {
       if (rf & 1) {
         ɵɵlistener("click", function RowToggler_click_HostBindingHandler($event) {
@@ -14888,7 +8140,10 @@ var RowToggler = class _RowToggler {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(RowToggler, [{
     type: Directive,
     args: [{
-      selector: "[pRowToggler]"
+      selector: "[pRowToggler]",
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: Table
@@ -14935,9 +8190,9 @@ var ResizableColumn = class _ResizableColumn {
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
       if (this.isEnabled()) {
-        DomHandler.addClass(this.el.nativeElement, "p-datatable-resizable-column");
+        DomHandler.addClass(this.el.nativeElement, "p-resizable-column");
         this.resizer = this.renderer.createElement("span");
-        this.renderer.addClass(this.resizer, "p-datatable-column-resizer");
+        this.renderer.addClass(this.resizer, "p-column-resizer");
         this.renderer.appendChild(this.el.nativeElement, this.resizer);
         this.zone.runOutsideAngular(() => {
           this.resizerMouseDownListener = this.renderer.listen(this.resizer, "mousedown", this.onMouseDown.bind(this));
@@ -14972,25 +8227,25 @@ var ResizableColumn = class _ResizableColumn {
       this.resizerTouchEndListener = null;
     }
   }
-  onMouseDown(event2) {
-    this.dt.onColumnResizeBegin(event2);
+  onMouseDown(event) {
+    this.dt.onColumnResizeBegin(event);
     this.bindDocumentEvents();
   }
-  onTouchStart(event2) {
-    this.dt.onColumnResizeBegin(event2);
+  onTouchStart(event) {
+    this.dt.onColumnResizeBegin(event);
     this.bindDocumentEvents();
   }
-  onTouchMove(event2) {
-    this.dt.onColumnResize(event2);
+  onTouchMove(event) {
+    this.dt.onColumnResize(event);
   }
-  onDocumentMouseMove(event2) {
-    this.dt.onColumnResize(event2);
+  onDocumentMouseMove(event) {
+    this.dt.onColumnResize(event);
   }
-  onDocumentMouseUp(event2) {
+  onDocumentMouseUp(event) {
     this.dt.onColumnResizeEnd();
     this.unbindDocumentEvents();
   }
-  onTouchEnd(event2) {
+  onTouchEnd(event) {
     this.dt.onColumnResizeEnd();
     this.unbindDocumentEvents();
   }
@@ -15010,7 +8265,7 @@ var ResizableColumn = class _ResizableColumn {
   static ɵdir = ɵɵdefineDirective({
     type: _ResizableColumn,
     selectors: [["", "pResizableColumn", ""]],
-    hostAttrs: [1, "p-datatable-resizable-column"],
+    hostAttrs: [1, "p-element"],
     inputs: {
       pResizableColumnDisabled: [2, "pResizableColumnDisabled", "pResizableColumnDisabled", booleanAttribute]
     },
@@ -15023,7 +8278,7 @@ var ResizableColumn = class _ResizableColumn {
     args: [{
       selector: "[pResizableColumn]",
       host: {
-        class: "p-datatable-resizable-column"
+        class: "p-element"
       }
     }]
   }], () => [{
@@ -15112,25 +8367,25 @@ var ReorderableColumn = class _ReorderableColumn {
       this.dragLeaveListener = null;
     }
   }
-  onMouseDown(event2) {
-    if (event2.target.nodeName === "INPUT" || event2.target.nodeName === "TEXTAREA" || DomHandler.hasClass(event2.target, "p-datatable-column-resizer")) this.el.nativeElement.draggable = false;
+  onMouseDown(event) {
+    if (event.target.nodeName === "INPUT" || event.target.nodeName === "TEXTAREA" || DomHandler.hasClass(event.target, "p-column-resizer")) this.el.nativeElement.draggable = false;
     else this.el.nativeElement.draggable = true;
   }
-  onDragStart(event2) {
-    this.dt.onColumnDragStart(event2, this.el.nativeElement);
+  onDragStart(event) {
+    this.dt.onColumnDragStart(event, this.el.nativeElement);
   }
-  onDragOver(event2) {
-    event2.preventDefault();
+  onDragOver(event) {
+    event.preventDefault();
   }
-  onDragEnter(event2) {
-    this.dt.onColumnDragEnter(event2, this.el.nativeElement);
+  onDragEnter(event) {
+    this.dt.onColumnDragEnter(event, this.el.nativeElement);
   }
-  onDragLeave(event2) {
-    this.dt.onColumnDragLeave(event2);
+  onDragLeave(event) {
+    this.dt.onColumnDragLeave(event);
   }
-  onDrop(event2) {
+  onDrop(event) {
     if (this.isEnabled()) {
-      this.dt.onColumnDrop(event2, this.el.nativeElement);
+      this.dt.onColumnDrop(event, this.el.nativeElement);
     }
   }
   isEnabled() {
@@ -15145,12 +8400,16 @@ var ReorderableColumn = class _ReorderableColumn {
   static ɵdir = ɵɵdefineDirective({
     type: _ReorderableColumn,
     selectors: [["", "pReorderableColumn", ""]],
-    hostAttrs: [1, "p-datatable-reorderable-column"],
+    hostAttrs: [1, "p-element"],
+    hostVars: 2,
     hostBindings: function ReorderableColumn_HostBindings(rf, ctx) {
       if (rf & 1) {
         ɵɵlistener("drop", function ReorderableColumn_drop_HostBindingHandler($event) {
           return ctx.onDrop($event);
         });
+      }
+      if (rf & 2) {
+        ɵɵstyleProp("cursor", ctx.isEnabled() ? "move" : "default");
       }
     },
     inputs: {
@@ -15165,7 +8424,8 @@ var ReorderableColumn = class _ReorderableColumn {
     args: [{
       selector: "[pReorderableColumn]",
       host: {
-        class: "p-datatable-reorderable-column"
+        class: "p-element",
+        "[style.cursor]": 'isEnabled() ? "move" : "default"'
       }
     }]
   }], () => [{
@@ -15211,7 +8471,9 @@ var EditableColumn = class _EditableColumn {
     this.zone = zone;
   }
   ngOnChanges(changes) {
-    if (this.el.nativeElement && !changes.data?.firstChange) {
+    if (changes.pEditableColumnDisabled?.currentValue === true && DomHandler.hasClass(this.el.nativeElement, "p-cell-editing")) {
+      this.closeEditingCell(false, new Event("cancel"));
+    } else if (changes.data?.firstChange === false && this.el.nativeElement) {
       this.dt.updateEditingCell(this.el.nativeElement, this.data, this.field, this.rowIndex);
     }
   }
@@ -15220,7 +8482,7 @@ var EditableColumn = class _EditableColumn {
       DomHandler.addClass(this.el.nativeElement, "p-editable-column");
     }
   }
-  onClick(event2) {
+  onClick(event) {
     if (this.isEnabled()) {
       this.dt.selfClick = true;
       if (this.dt.editingCell) {
@@ -15228,7 +8490,7 @@ var EditableColumn = class _EditableColumn {
           if (!this.dt.isEditingCellValid()) {
             return;
           }
-          this.closeEditingCell(true, event2);
+          this.closeEditingCell(true, event);
           this.openCell();
         }
       } else {
@@ -15260,11 +8522,11 @@ var EditableColumn = class _EditableColumn {
     };
     this.dt.overlaySubscription = this.dt.overlayService.clickObservable.subscribe(this.overlayEventListener);
   }
-  closeEditingCell(completed, event2) {
+  closeEditingCell(completed, event) {
     const eventData = {
       field: this.dt.editingCellField,
       data: this.dt.editingCellData,
-      originalEvent: event2,
+      originalEvent: event,
       index: this.dt.editingCellRowIndex
     };
     if (completed) {
@@ -15286,80 +8548,80 @@ var EditableColumn = class _EditableColumn {
       this.dt.overlaySubscription.unsubscribe();
     }
   }
-  onEnterKeyDown(event2) {
-    if (this.isEnabled() && !event2.shiftKey) {
+  onEnterKeyDown(event) {
+    if (this.isEnabled() && !event.shiftKey) {
       if (this.dt.isEditingCellValid()) {
-        this.closeEditingCell(true, event2);
+        this.closeEditingCell(true, event);
       }
-      event2.preventDefault();
+      event.preventDefault();
     }
   }
-  onTabKeyDown(event2) {
+  onTabKeyDown(event) {
     if (this.isEnabled()) {
       if (this.dt.isEditingCellValid()) {
-        this.closeEditingCell(true, event2);
+        this.closeEditingCell(true, event);
       }
-      event2.preventDefault();
+      event.preventDefault();
     }
   }
-  onEscapeKeyDown(event2) {
+  onEscapeKeyDown(event) {
     if (this.isEnabled()) {
       if (this.dt.isEditingCellValid()) {
-        this.closeEditingCell(false, event2);
+        this.closeEditingCell(false, event);
       }
-      event2.preventDefault();
+      event.preventDefault();
     }
   }
-  onShiftKeyDown(event2) {
+  onShiftKeyDown(event) {
     if (this.isEnabled()) {
-      if (event2.shiftKey) this.moveToPreviousCell(event2);
+      if (event.shiftKey) this.moveToPreviousCell(event);
       else {
-        this.moveToNextCell(event2);
+        this.moveToNextCell(event);
       }
     }
   }
-  onArrowDown(event2) {
+  onArrowDown(event) {
     if (this.isEnabled()) {
-      let currentCell = this.findCell(event2.target);
+      let currentCell = this.findCell(event.target);
       if (currentCell) {
         let cellIndex = DomHandler.index(currentCell);
         let targetCell = this.findNextEditableColumnByIndex(currentCell, cellIndex);
         if (targetCell) {
           if (this.dt.isEditingCellValid()) {
-            this.closeEditingCell(true, event2);
+            this.closeEditingCell(true, event);
           }
-          DomHandler.invokeElementMethod(event2.target, "blur");
+          DomHandler.invokeElementMethod(event.target, "blur");
           DomHandler.invokeElementMethod(targetCell, "click");
         }
-        event2.preventDefault();
+        event.preventDefault();
       }
     }
   }
-  onArrowUp(event2) {
+  onArrowUp(event) {
     if (this.isEnabled()) {
-      let currentCell = this.findCell(event2.target);
+      let currentCell = this.findCell(event.target);
       if (currentCell) {
         let cellIndex = DomHandler.index(currentCell);
         let targetCell = this.findPrevEditableColumnByIndex(currentCell, cellIndex);
         if (targetCell) {
           if (this.dt.isEditingCellValid()) {
-            this.closeEditingCell(true, event2);
+            this.closeEditingCell(true, event);
           }
-          DomHandler.invokeElementMethod(event2.target, "blur");
+          DomHandler.invokeElementMethod(event.target, "blur");
           DomHandler.invokeElementMethod(targetCell, "click");
         }
-        event2.preventDefault();
+        event.preventDefault();
       }
     }
   }
-  onArrowLeft(event2) {
+  onArrowLeft(event) {
     if (this.isEnabled()) {
-      this.moveToPreviousCell(event2);
+      this.moveToPreviousCell(event);
     }
   }
-  onArrowRight(event2) {
+  onArrowRight(event) {
     if (this.isEnabled()) {
-      this.moveToNextCell(event2);
+      this.moveToNextCell(event);
     }
   }
   findCell(element) {
@@ -15373,34 +8635,34 @@ var EditableColumn = class _EditableColumn {
       return null;
     }
   }
-  moveToPreviousCell(event2) {
-    let currentCell = this.findCell(event2.target);
+  moveToPreviousCell(event) {
+    let currentCell = this.findCell(event.target);
     if (currentCell) {
       let targetCell = this.findPreviousEditableColumn(currentCell);
       if (targetCell) {
         if (this.dt.isEditingCellValid()) {
-          this.closeEditingCell(true, event2);
+          this.closeEditingCell(true, event);
         }
-        DomHandler.invokeElementMethod(event2.target, "blur");
+        DomHandler.invokeElementMethod(event.target, "blur");
         DomHandler.invokeElementMethod(targetCell, "click");
-        event2.preventDefault();
+        event.preventDefault();
       }
     }
   }
-  moveToNextCell(event2) {
-    let currentCell = this.findCell(event2.target);
+  moveToNextCell(event) {
+    let currentCell = this.findCell(event.target);
     if (currentCell) {
       let targetCell = this.findNextEditableColumn(currentCell);
       if (targetCell) {
         if (this.dt.isEditingCellValid()) {
-          this.closeEditingCell(true, event2);
+          this.closeEditingCell(true, event);
         }
-        DomHandler.invokeElementMethod(event2.target, "blur");
+        DomHandler.invokeElementMethod(event.target, "blur");
         DomHandler.invokeElementMethod(targetCell, "click");
-        event2.preventDefault();
+        event.preventDefault();
       } else {
         if (this.dt.isEditingCellValid()) {
-          this.closeEditingCell(true, event2);
+          this.closeEditingCell(true, event);
         }
       }
     }
@@ -15473,6 +8735,7 @@ var EditableColumn = class _EditableColumn {
   static ɵdir = ɵɵdefineDirective({
     type: _EditableColumn,
     selectors: [["", "pEditableColumn", ""]],
+    hostAttrs: [1, "p-element"],
     hostBindings: function EditableColumn_HostBindings(rf, ctx) {
       if (rf & 1) {
         ɵɵlistener("click", function EditableColumn_click_HostBindingHandler($event) {
@@ -15512,7 +8775,10 @@ var EditableColumn = class _EditableColumn {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(EditableColumn, [{
     type: Directive,
     args: [{
-      selector: "[pEditableColumn]"
+      selector: "[pEditableColumn]",
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: Table
@@ -15602,6 +8868,7 @@ var EditableRow = class _EditableRow {
   static ɵdir = ɵɵdefineDirective({
     type: _EditableRow,
     selectors: [["", "pEditableRow", ""]],
+    hostAttrs: [1, "p-element"],
     inputs: {
       data: [0, "pEditableRow", "data"],
       pEditableRowDisabled: [2, "pEditableRowDisabled", "pEditableRowDisabled", booleanAttribute]
@@ -15613,7 +8880,10 @@ var EditableRow = class _EditableRow {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(EditableRow, [{
     type: Directive,
     args: [{
-      selector: "[pEditableRow]"
+      selector: "[pEditableRow]",
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: ElementRef
@@ -15637,9 +8907,9 @@ var InitEditableRow = class _InitEditableRow {
     this.dt = dt;
     this.editableRow = editableRow;
   }
-  onClick(event2) {
+  onClick(event) {
     this.dt.initRowEdit(this.editableRow.data);
-    event2.preventDefault();
+    event.preventDefault();
   }
   static ɵfac = function InitEditableRow_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _InitEditableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableRow));
@@ -15647,7 +8917,7 @@ var InitEditableRow = class _InitEditableRow {
   static ɵdir = ɵɵdefineDirective({
     type: _InitEditableRow,
     selectors: [["", "pInitEditableRow", ""]],
-    hostAttrs: [1, "p-datatable-row-editor-init"],
+    hostAttrs: [1, "p-element"],
     hostBindings: function InitEditableRow_HostBindings(rf, ctx) {
       if (rf & 1) {
         ɵɵlistener("click", function InitEditableRow_click_HostBindingHandler($event) {
@@ -15663,7 +8933,7 @@ var InitEditableRow = class _InitEditableRow {
     args: [{
       selector: "[pInitEditableRow]",
       host: {
-        class: "p-datatable-row-editor-init"
+        class: "p-element"
       }
     }]
   }], () => [{
@@ -15684,9 +8954,9 @@ var SaveEditableRow = class _SaveEditableRow {
     this.dt = dt;
     this.editableRow = editableRow;
   }
-  onClick(event2) {
+  onClick(event) {
     this.dt.saveRowEdit(this.editableRow.data, this.editableRow.el.nativeElement);
-    event2.preventDefault();
+    event.preventDefault();
   }
   static ɵfac = function SaveEditableRow_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _SaveEditableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableRow));
@@ -15694,7 +8964,7 @@ var SaveEditableRow = class _SaveEditableRow {
   static ɵdir = ɵɵdefineDirective({
     type: _SaveEditableRow,
     selectors: [["", "pSaveEditableRow", ""]],
-    hostAttrs: [1, "p-datatable-row-editor-save"],
+    hostAttrs: [1, "p-element"],
     hostBindings: function SaveEditableRow_HostBindings(rf, ctx) {
       if (rf & 1) {
         ɵɵlistener("click", function SaveEditableRow_click_HostBindingHandler($event) {
@@ -15710,7 +8980,7 @@ var SaveEditableRow = class _SaveEditableRow {
     args: [{
       selector: "[pSaveEditableRow]",
       host: {
-        class: "p-datatable-row-editor-save"
+        class: "p-element"
       }
     }]
   }], () => [{
@@ -15731,9 +9001,9 @@ var CancelEditableRow = class _CancelEditableRow {
     this.dt = dt;
     this.editableRow = editableRow;
   }
-  onClick(event2) {
+  onClick(event) {
     this.dt.cancelRowEdit(this.editableRow.data);
-    event2.preventDefault();
+    event.preventDefault();
   }
   static ɵfac = function CancelEditableRow_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _CancelEditableRow)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(EditableRow));
@@ -15741,7 +9011,7 @@ var CancelEditableRow = class _CancelEditableRow {
   static ɵdir = ɵɵdefineDirective({
     type: _CancelEditableRow,
     selectors: [["", "pCancelEditableRow", ""]],
-    hostAttrs: [1, "p-datatable-row-editor-cancel"],
+    hostAttrs: [1, "p-element"],
     hostBindings: function CancelEditableRow_HostBindings(rf, ctx) {
       if (rf & 1) {
         ɵɵlistener("click", function CancelEditableRow_click_HostBindingHandler($event) {
@@ -15757,7 +9027,7 @@ var CancelEditableRow = class _CancelEditableRow {
     args: [{
       selector: "[pCancelEditableRow]",
       host: {
-        class: "p-datatable-row-editor-cancel"
+        class: "p-element"
       }
     }]
   }], () => [{
@@ -15775,9 +9045,7 @@ var CellEditor = class _CellEditor {
   dt;
   editableColumn;
   editableRow;
-  _templates;
-  _inputTemplate;
-  _outputTemplate;
+  templates;
   inputTemplate;
   outputTemplate;
   constructor(dt, editableColumn, editableRow) {
@@ -15786,7 +9054,7 @@ var CellEditor = class _CellEditor {
     this.editableRow = editableRow;
   }
   ngAfterContentInit() {
-    this._templates.forEach((item) => {
+    this.templates.forEach((item) => {
       switch (item.getType()) {
         case "input":
           this.inputTemplate = item.template;
@@ -15808,17 +9076,14 @@ var CellEditor = class _CellEditor {
     selectors: [["p-cellEditor"]],
     contentQueries: function CellEditor_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, _c51, 5);
-        ɵɵcontentQuery(dirIndex, _c522, 5);
         ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._inputTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._outputTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._templates = _t);
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
       }
     },
+    hostAttrs: [1, "p-element"],
     decls: 2,
     vars: 2,
     consts: [[4, "ngIf"], [4, "ngTemplateOutlet"]],
@@ -15843,13 +9108,16 @@ var CellEditor = class _CellEditor {
       selector: "p-cellEditor",
       template: `
         <ng-container *ngIf="editing">
-            <ng-container *ngTemplateOutlet="inputTemplate || _inputTemplate"></ng-container>
+            <ng-container *ngTemplateOutlet="inputTemplate"></ng-container>
         </ng-container>
         <ng-container *ngIf="!editing">
-            <ng-container *ngTemplateOutlet="outputTemplate || _outputTemplate"></ng-container>
+            <ng-container *ngTemplateOutlet="outputTemplate"></ng-container>
         </ng-container>
     `,
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: Table
@@ -15864,23 +9132,10 @@ var CellEditor = class _CellEditor {
       type: Optional
     }]
   }], {
-    _templates: [{
+    templates: [{
       type: ContentChildren,
       args: [PrimeTemplate]
-    }],
-    _inputTemplate: [{
-      type: ContentChild,
-      args: ["input"]
-    }],
-    _outputTemplate: [{
-      type: ContentChild,
-      args: ["output"]
     }]
-  });
-})();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(CellEditor, {
-    className: "CellEditor"
   });
 })();
 var TableRadioButton = class _TableRadioButton {
@@ -15908,15 +9163,21 @@ var TableRadioButton = class _TableRadioButton {
   ngOnInit() {
     this.checked = this.dt.isSelected(this.value);
   }
-  onClick(event2) {
+  onClick(event) {
     if (!this.disabled) {
       this.dt.toggleRowWithRadio({
-        originalEvent: event2.originalEvent,
+        originalEvent: event,
         rowIndex: this.index
       }, this.value);
-      this.inputViewChild?.inputViewChild.nativeElement?.focus();
+      this.inputViewChild?.nativeElement?.focus();
     }
     DomHandler.clearSelection();
+  }
+  onFocus() {
+    this.focused = true;
+  }
+  onBlur() {
+    this.focused = false;
   }
   ngOnDestroy() {
     if (this.subscription) {
@@ -15931,13 +9192,14 @@ var TableRadioButton = class _TableRadioButton {
     selectors: [["p-tableRadioButton"]],
     viewQuery: function TableRadioButton_Query(rf, ctx) {
       if (rf & 1) {
-        ɵɵviewQuery(_c53, 5);
+        ɵɵviewQuery(_c232, 5);
       }
       if (rf & 2) {
         let _t;
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputViewChild = _t.first);
       }
     },
+    hostAttrs: [1, "p-element"],
     inputs: {
       disabled: [2, "disabled", "disabled", booleanAttribute],
       value: "value",
@@ -15947,30 +9209,40 @@ var TableRadioButton = class _TableRadioButton {
       ariaLabel: "ariaLabel"
     },
     features: [ɵɵInputTransformsFeature],
-    decls: 2,
-    vars: 7,
-    consts: [["rb", ""], [3, "ngModelChange", "onClick", "ngModel", "disabled", "inputId", "name", "ariaLabel", "binary", "value"]],
+    decls: 7,
+    vars: 16,
+    consts: [["rb", ""], ["box", ""], [1, "p-radiobutton", "p-component", 3, "click", "ngClass"], [1, "p-hidden-accessible"], ["type", "radio", 3, "focus", "blur", "checked", "disabled", "tabindex"], [3, "ngClass"], [1, "p-radiobutton-icon"]],
     template: function TableRadioButton_Template(rf, ctx) {
       if (rf & 1) {
         const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "p-radioButton", 1, 0);
-        ɵɵtwoWayListener("ngModelChange", function TableRadioButton_Template_p_radioButton_ngModelChange_0_listener($event) {
-          ɵɵrestoreView(_r1);
-          ɵɵtwoWayBindingSet(ctx.checked, $event) || (ctx.checked = $event);
-          return ɵɵresetView($event);
-        });
-        ɵɵlistener("onClick", function TableRadioButton_Template_p_radioButton_onClick_0_listener($event) {
+        ɵɵelementStart(0, "div", 2);
+        ɵɵlistener("click", function TableRadioButton_Template_div_click_0_listener($event) {
           ɵɵrestoreView(_r1);
           return ɵɵresetView(ctx.onClick($event));
         });
-        ɵɵelementEnd();
+        ɵɵelementStart(1, "div", 3)(2, "input", 4, 0);
+        ɵɵlistener("focus", function TableRadioButton_Template_input_focus_2_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onFocus());
+        })("blur", function TableRadioButton_Template_input_blur_2_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onBlur());
+        });
+        ɵɵelementEnd()();
+        ɵɵelementStart(4, "div", 5, 1);
+        ɵɵelement(6, "div", 6);
+        ɵɵelementEnd()();
       }
       if (rf & 2) {
-        ɵɵtwoWayProperty("ngModel", ctx.checked);
-        ɵɵproperty("disabled", ctx.disabled)("inputId", ctx.inputId)("name", ctx.name)("ariaLabel", ctx.ariaLabel)("binary", true)("value", ctx.value);
+        ɵɵproperty("ngClass", ɵɵpureFunction3(8, _c24, ctx.focused, ctx.checked, ctx.disabled));
+        ɵɵadvance(2);
+        ɵɵproperty("checked", ctx.checked)("disabled", ctx.disabled)("tabindex", ctx.disabled ? null : "0");
+        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-label", ctx.ariaLabel);
+        ɵɵadvance(2);
+        ɵɵproperty("ngClass", ɵɵpureFunction3(12, _c25, ctx.checked, ctx.focused, ctx.disabled));
       }
     },
-    dependencies: [NgControlStatus, NgModel, RadioButton],
+    dependencies: [NgClass],
     encapsulation: 2,
     changeDetection: 0
   });
@@ -15980,9 +9252,21 @@ var TableRadioButton = class _TableRadioButton {
     type: Component,
     args: [{
       selector: "p-tableRadioButton",
-      template: ` <p-radioButton #rb [(ngModel)]="checked" [disabled]="disabled" [inputId]="inputId" [name]="name" [ariaLabel]="ariaLabel" [binary]="true" [value]="value" (onClick)="onClick($event)" /> `,
+      template: `
+        <div class="p-radiobutton p-component" [ngClass]="{ 'p-radiobutton-focused': focused, 'p-radiobutton-checked': checked, 'p-radiobutton-disabled': disabled }" (click)="onClick($event)">
+            <div class="p-hidden-accessible">
+                <input #rb type="radio" [attr.id]="inputId" [attr.name]="name" [checked]="checked" (focus)="onFocus()" (blur)="onBlur()" [disabled]="disabled" [attr.aria-label]="ariaLabel" [tabindex]="disabled ? null : '0'" />
+            </div>
+            <div #box [ngClass]="{ 'p-radiobutton-box p-component': true, 'p-highlight': checked, 'p-focus': focused, 'p-disabled': disabled }">
+                <div class="p-radiobutton-icon"></div>
+            </div>
+        </div>
+    `,
       changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: Table
@@ -16019,11 +9303,6 @@ var TableRadioButton = class _TableRadioButton {
     }]
   });
 })();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(TableRadioButton, {
-    className: "TableRadioButton"
-  });
-})();
 var TableCheckbox = class _TableCheckbox {
   dt;
   tableService;
@@ -16038,25 +9317,33 @@ var TableCheckbox = class _TableCheckbox {
   checked;
   focused;
   subscription;
+  tableHeaderCheckboxSubscription;
+  isTableHeaderCheckboxSelection = false;
   constructor(dt, tableService, cd) {
     this.dt = dt;
     this.tableService = tableService;
     this.cd = cd;
     this.subscription = this.dt.tableService.selectionSource$.subscribe(() => {
-      this.checked = this.dt.isSelected(this.value) && !this.disabled;
+      setTimeout(() => {
+        this.checked = this.isTableHeaderCheckboxSelection ? this.dt.isSelected(this.value) && !this.disabled : this.dt.isSelected(this.value);
+        this.cd.markForCheck();
+      });
       this.ariaLabel = this.ariaLabel || this.dt.config.translation.aria ? this.checked ? this.dt.config.translation.aria.selectRow : this.dt.config.translation.aria.unselectRow : void 0;
-      this.cd.markForCheck();
+    });
+    this.tableHeaderCheckboxSubscription = this.dt.tableService.isHeaderCheckboxSelection$.subscribe((val) => {
+      this.isTableHeaderCheckboxSelection = val;
     });
   }
   ngOnInit() {
     this.checked = this.dt.isSelected(this.value);
   }
-  onClick(event2) {
+  onClick(event) {
     if (!this.disabled) {
       this.dt.toggleRowWithCheckbox({
-        originalEvent: event2,
+        originalEvent: event,
         rowIndex: this.index
       }, this.value);
+      this.tableService.onHeaderCheckboxSelection(false);
     }
     DomHandler.clearSelection();
   }
@@ -16070,6 +9357,9 @@ var TableCheckbox = class _TableCheckbox {
     if (this.subscription) {
       this.subscription.unsubscribe();
     }
+    if (this.tableHeaderCheckboxSubscription) {
+      this.tableHeaderCheckboxSubscription.unsubscribe();
+    }
   }
   static ɵfac = function TableCheckbox_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _TableCheckbox)(ɵɵdirectiveInject(Table), ɵɵdirectiveInject(TableService), ɵɵdirectiveInject(ChangeDetectorRef));
@@ -16077,6 +9367,7 @@ var TableCheckbox = class _TableCheckbox {
   static ɵcmp = ɵɵdefineComponent({
     type: _TableCheckbox,
     selectors: [["p-tableCheckbox"]],
+    hostAttrs: [1, "p-element"],
     inputs: {
       disabled: [2, "disabled", "disabled", booleanAttribute],
       value: "value",
@@ -16087,30 +9378,44 @@ var TableCheckbox = class _TableCheckbox {
       ariaLabel: "ariaLabel"
     },
     features: [ɵɵInputTransformsFeature],
-    decls: 2,
-    vars: 5,
-    consts: [[3, "ngModelChange", "onChange", "ngModel", "binary", "disabled", "ariaLabel"], [4, "ngIf"], ["pTemplate", "icon"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
+    decls: 7,
+    vars: 18,
+    consts: [["box", ""], [1, "p-checkbox", "p-component", 3, "click", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", 3, "focus", "blur", "checked", "disabled", "tabindex"], [3, "ngClass"], [4, "ngIf"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
     template: function TableCheckbox_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "p-checkbox", 0);
-        ɵɵtwoWayListener("ngModelChange", function TableCheckbox_Template_p_checkbox_ngModelChange_0_listener($event) {
-          ɵɵtwoWayBindingSet(ctx.checked, $event) || (ctx.checked = $event);
-          return $event;
+        const _r1 = ɵɵgetCurrentView();
+        ɵɵelementStart(0, "div", 1);
+        ɵɵlistener("click", function TableCheckbox_Template_div_click_0_listener($event) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onClick($event));
         });
-        ɵɵlistener("onChange", function TableCheckbox_Template_p_checkbox_onChange_0_listener($event) {
-          return ctx.onClick($event);
+        ɵɵelementStart(1, "div", 2)(2, "input", 3);
+        ɵɵlistener("focus", function TableCheckbox_Template_input_focus_2_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onFocus());
+        })("blur", function TableCheckbox_Template_input_blur_2_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onBlur());
         });
-        ɵɵtemplate(1, TableCheckbox_ng_container_1_Template, 2, 0, "ng-container", 1);
-        ɵɵelementEnd();
+        ɵɵelementEnd()();
+        ɵɵelementStart(3, "div", 4, 0);
+        ɵɵtemplate(5, TableCheckbox_ng_container_5_Template, 2, 1, "ng-container", 5)(6, TableCheckbox_span_6_Template, 2, 4, "span", 5);
+        ɵɵelementEnd()();
       }
       if (rf & 2) {
-        ɵɵtwoWayProperty("ngModel", ctx.checked);
-        ɵɵproperty("binary", true)("disabled", ctx.disabled)("ariaLabel", ctx.ariaLabel);
+        ɵɵproperty("ngClass", ɵɵpureFunction2(11, _c26, ctx.focused, ctx.disabled));
+        ɵɵadvance(2);
+        ɵɵproperty("checked", ctx.checked)("disabled", ctx.disabled)("tabindex", ctx.disabled ? null : "0");
+        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("required", ctx.required)("aria-label", ctx.ariaLabel);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.dt.checkboxIconTemplate || ctx.dt._checkboxIconTemplate);
+        ɵɵproperty("ngClass", ɵɵpureFunction3(14, _c27, ctx.checked, ctx.focused, ctx.disabled));
+        ɵɵadvance(2);
+        ɵɵproperty("ngIf", !ctx.dt.checkboxIconTemplate);
+        ɵɵadvance();
+        ɵɵproperty("ngIf", ctx.dt.checkboxIconTemplate);
       }
     },
-    dependencies: [NgIf, NgTemplateOutlet, PrimeTemplate, NgControlStatus, NgModel, Checkbox],
+    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, CheckIcon],
     encapsulation: 2,
     changeDetection: 0
   });
@@ -16121,16 +9426,36 @@ var TableCheckbox = class _TableCheckbox {
     args: [{
       selector: "p-tableCheckbox",
       template: `
-        <p-checkbox [(ngModel)]="checked" [binary]="true" (onChange)="onClick($event)" [disabled]="disabled" [ariaLabel]="ariaLabel">
-            <ng-container *ngIf="dt.checkboxIconTemplate || dt._checkboxIconTemplate">
-                <ng-template pTemplate="icon">
-                    <ng-template *ngTemplateOutlet="dt.checkboxIconTemplate || dt._checkboxIconTemplate; context: { $implicit: checked }"></ng-template>
-                </ng-template>
-            </ng-container>
-        </p-checkbox>
+        <div class="p-checkbox p-component" [ngClass]="{ 'p-checkbox-focused': focused, 'p-checkbox-disabled': disabled }" (click)="onClick($event)">
+            <div class="p-hidden-accessible">
+                <input
+                    type="checkbox"
+                    [attr.id]="inputId"
+                    [attr.name]="name"
+                    [checked]="checked"
+                    (focus)="onFocus()"
+                    (blur)="onBlur()"
+                    [disabled]="disabled"
+                    [attr.required]="required"
+                    [attr.aria-label]="ariaLabel"
+                    [tabindex]="disabled ? null : '0'"
+                />
+            </div>
+            <div #box [ngClass]="{ 'p-checkbox-box p-component': true, 'p-highlight': checked, 'p-focus': focused, 'p-disabled': disabled }">
+                <ng-container *ngIf="!dt.checkboxIconTemplate">
+                    <CheckIcon [styleClass]="'p-checkbox-icon'" *ngIf="checked" />
+                </ng-container>
+                <span *ngIf="dt.checkboxIconTemplate">
+                    <ng-template *ngTemplateOutlet="dt.checkboxIconTemplate; context: { $implicit: checked }"></ng-template>
+                </span>
+            </div>
+        </div>
     `,
       changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: Table
@@ -16171,11 +9496,6 @@ var TableCheckbox = class _TableCheckbox {
     }]
   });
 })();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(TableCheckbox, {
-    className: "TableCheckbox"
-  });
-})();
 var TableHeaderCheckbox = class _TableHeaderCheckbox {
   dt;
   tableService;
@@ -16188,6 +9508,7 @@ var TableHeaderCheckbox = class _TableHeaderCheckbox {
   focused;
   selectionChangeSubscription;
   valueChangeSubscription;
+  tableHeaderCheckboxSubscription;
   constructor(dt, tableService, cd) {
     this.dt = dt;
     this.tableService = tableService;
@@ -16203,10 +9524,11 @@ var TableHeaderCheckbox = class _TableHeaderCheckbox {
   ngOnInit() {
     this.checked = this.updateCheckedState();
   }
-  onClick(event2) {
+  onClick(event) {
     if (!this.disabled) {
       if (this.dt.value && this.dt.value.length > 0) {
-        this.dt.toggleRowsWithCheckbox(event2, this.checked);
+        this.tableService.onHeaderCheckboxSelection(true);
+        this.dt.toggleRowsWithCheckbox(event, !this.checked);
       }
     }
     DomHandler.clearSelection();
@@ -16248,6 +9570,7 @@ var TableHeaderCheckbox = class _TableHeaderCheckbox {
   static ɵcmp = ɵɵdefineComponent({
     type: _TableHeaderCheckbox,
     selectors: [["p-tableHeaderCheckbox"]],
+    hostAttrs: [1, "p-element"],
     inputs: {
       disabled: [2, "disabled", "disabled", booleanAttribute],
       inputId: "inputId",
@@ -16255,30 +9578,44 @@ var TableHeaderCheckbox = class _TableHeaderCheckbox {
       ariaLabel: "ariaLabel"
     },
     features: [ɵɵInputTransformsFeature],
-    decls: 2,
-    vars: 5,
-    consts: [[3, "ngModelChange", "onChange", "ngModel", "binary", "disabled", "ariaLabel"], [4, "ngIf"], ["pTemplate", "icon"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
+    decls: 8,
+    vars: 17,
+    consts: [["cb", ""], ["box", ""], [1, "p-checkbox", "p-component", 3, "click", "ngClass"], [1, "p-hidden-accessible"], ["type", "checkbox", 3, "focus", "blur", "tabindex", "checked", "disabled"], [3, "ngClass"], [4, "ngIf"], ["class", "p-checkbox-icon", 4, "ngIf"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"], [1, "p-checkbox-icon"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]],
     template: function TableHeaderCheckbox_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "p-checkbox", 0);
-        ɵɵtwoWayListener("ngModelChange", function TableHeaderCheckbox_Template_p_checkbox_ngModelChange_0_listener($event) {
-          ɵɵtwoWayBindingSet(ctx.checked, $event) || (ctx.checked = $event);
-          return $event;
+        const _r1 = ɵɵgetCurrentView();
+        ɵɵelementStart(0, "div", 2);
+        ɵɵlistener("click", function TableHeaderCheckbox_Template_div_click_0_listener($event) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onClick($event));
         });
-        ɵɵlistener("onChange", function TableHeaderCheckbox_Template_p_checkbox_onChange_0_listener($event) {
-          return ctx.onClick($event);
+        ɵɵelementStart(1, "div", 3)(2, "input", 4, 0);
+        ɵɵlistener("focus", function TableHeaderCheckbox_Template_input_focus_2_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onFocus());
+        })("blur", function TableHeaderCheckbox_Template_input_blur_2_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx.onBlur());
         });
-        ɵɵtemplate(1, TableHeaderCheckbox_ng_container_1_Template, 2, 0, "ng-container", 1);
-        ɵɵelementEnd();
+        ɵɵelementEnd()();
+        ɵɵelementStart(4, "div", 5, 1);
+        ɵɵtemplate(6, TableHeaderCheckbox_ng_container_6_Template, 2, 1, "ng-container", 6)(7, TableHeaderCheckbox_span_7_Template, 2, 4, "span", 7);
+        ɵɵelementEnd()();
       }
       if (rf & 2) {
-        ɵɵtwoWayProperty("ngModel", ctx.checked);
-        ɵɵproperty("binary", true)("disabled", ctx.isDisabled())("ariaLabel", ctx.ariaLabel);
+        ɵɵproperty("ngClass", ɵɵpureFunction2(10, _c26, ctx.focused, ctx.isDisabled()));
+        ɵɵadvance(2);
+        ɵɵproperty("tabindex", ctx.disabled ? null : "0")("checked", ctx.checked)("disabled", ctx.isDisabled());
+        ɵɵattribute("id", ctx.inputId)("name", ctx.name)("aria-label", ctx.ariaLabel);
+        ɵɵadvance(2);
+        ɵɵproperty("ngClass", ɵɵpureFunction3(13, _c28, ctx.checked, ctx.focused, ctx.isDisabled()));
+        ɵɵadvance(2);
+        ɵɵproperty("ngIf", !ctx.dt.headerCheckboxIconTemplate);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.dt.headerCheckboxIconTemplate || ctx.dt._headerCheckboxIconTemplate);
+        ɵɵproperty("ngIf", ctx.dt.headerCheckboxIconTemplate);
       }
     },
-    dependencies: [NgIf, NgTemplateOutlet, PrimeTemplate, NgControlStatus, NgModel, Checkbox],
+    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, CheckIcon],
     encapsulation: 2,
     changeDetection: 0
   });
@@ -16289,16 +9626,25 @@ var TableHeaderCheckbox = class _TableHeaderCheckbox {
     args: [{
       selector: "p-tableHeaderCheckbox",
       template: `
-        <p-checkbox [(ngModel)]="checked" (onChange)="onClick($event)" [binary]="true" [disabled]="isDisabled()" [ariaLabel]="ariaLabel">
-            <ng-container *ngIf="dt.headerCheckboxIconTemplate || dt._headerCheckboxIconTemplate">
-                <ng-template pTemplate="icon">
-                    <ng-template *ngTemplateOutlet="dt.headerCheckboxIconTemplate || dt._headerCheckboxIconTemplate; context: { $implicit: checked }"></ng-template>
-                </ng-template>
-            </ng-container>
-        </p-checkbox>
+        <div class="p-checkbox p-component" [ngClass]="{ 'p-checkbox-focused': focused, 'p-checkbox-disabled': isDisabled() }" (click)="onClick($event)">
+            <div class="p-hidden-accessible">
+                <input #cb type="checkbox" [tabindex]="disabled ? null : '0'" [attr.id]="inputId" [attr.name]="name" [checked]="checked" (focus)="onFocus()" (blur)="onBlur()" [disabled]="isDisabled()" [attr.aria-label]="ariaLabel" />
+            </div>
+            <div #box [ngClass]="{ 'p-checkbox-box': true, 'p-highlight': checked, 'p-focus': focused, 'p-disabled': isDisabled() }">
+                <ng-container *ngIf="!dt.headerCheckboxIconTemplate">
+                    <CheckIcon *ngIf="checked" [styleClass]="'p-checkbox-icon'" />
+                </ng-container>
+                <span class="p-checkbox-icon" *ngIf="dt.headerCheckboxIconTemplate">
+                    <ng-template *ngTemplateOutlet="dt.headerCheckboxIconTemplate; context: { $implicit: checked }"></ng-template>
+                </span>
+            </div>
+        </div>
     `,
       changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: Table
@@ -16324,17 +9670,13 @@ var TableHeaderCheckbox = class _TableHeaderCheckbox {
     }]
   });
 })();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(TableHeaderCheckbox, {
-    className: "TableHeaderCheckbox"
-  });
-})();
 var ReorderableRowHandle = class _ReorderableRowHandle {
   el;
   constructor(el) {
     this.el = el;
   }
   ngAfterViewInit() {
+    DomHandler.addClass(this.el.nativeElement, "p-datatable-reorderablerow-handle");
   }
   static ɵfac = function ReorderableRowHandle_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ReorderableRowHandle)(ɵɵdirectiveInject(ElementRef));
@@ -16342,7 +9684,7 @@ var ReorderableRowHandle = class _ReorderableRowHandle {
   static ɵdir = ɵɵdefineDirective({
     type: _ReorderableRowHandle,
     selectors: [["", "pReorderableRowHandle", ""]],
-    hostAttrs: [1, "p-datatable-reorderable-row-handle"]
+    hostAttrs: [1, "p-element"]
   });
 };
 (() => {
@@ -16351,7 +9693,7 @@ var ReorderableRowHandle = class _ReorderableRowHandle {
     args: [{
       selector: "[pReorderableRowHandle]",
       host: {
-        class: "p-datatable-reorderable-row-handle"
+        class: "p-element"
       }
     }]
   }], () => [{
@@ -16414,13 +9756,13 @@ var ReorderableRow = class _ReorderableRow {
       this.dragLeaveListener = null;
     }
   }
-  onMouseDown(event2) {
-    const targetElement = event2.target;
+  onMouseDown(event) {
+    const targetElement = event.target;
     const isHandleClicked = this.isHandleElement(targetElement);
     this.el.nativeElement.draggable = isHandleClicked;
   }
   isHandleElement(element) {
-    if (element?.classList.contains("p-datatable-reorderable-row-handle")) {
+    if (element?.classList.contains("p-datatable-reorderablerow-handle")) {
       return true;
     }
     if (element?.parentElement && !["TD", "TR"].includes(element?.parentElement?.tagName)) {
@@ -16428,28 +9770,28 @@ var ReorderableRow = class _ReorderableRow {
     }
     return false;
   }
-  onDragStart(event2) {
-    this.dt.onRowDragStart(event2, this.index);
+  onDragStart(event) {
+    this.dt.onRowDragStart(event, this.index);
   }
-  onDragEnd(event2) {
-    this.dt.onRowDragEnd(event2);
+  onDragEnd(event) {
+    this.dt.onRowDragEnd(event);
     this.el.nativeElement.draggable = false;
   }
-  onDragOver(event2) {
-    this.dt.onRowDragOver(event2, this.index, this.el.nativeElement);
-    event2.preventDefault();
+  onDragOver(event) {
+    this.dt.onRowDragOver(event, this.index, this.el.nativeElement);
+    event.preventDefault();
   }
-  onDragLeave(event2) {
-    this.dt.onRowDragLeave(event2, this.el.nativeElement);
+  onDragLeave(event) {
+    this.dt.onRowDragLeave(event, this.el.nativeElement);
   }
   isEnabled() {
     return this.pReorderableRowDisabled !== true;
   }
-  onDrop(event2) {
+  onDrop(event) {
     if (this.isEnabled() && this.dt.rowDragging) {
-      this.dt.onRowDrop(event2, this.el.nativeElement);
+      this.dt.onRowDrop(event, this.el.nativeElement);
     }
-    event2.preventDefault();
+    event.preventDefault();
   }
   ngOnDestroy() {
     this.unbindEvents();
@@ -16460,6 +9802,7 @@ var ReorderableRow = class _ReorderableRow {
   static ɵdir = ɵɵdefineDirective({
     type: _ReorderableRow,
     selectors: [["", "pReorderableRow", ""]],
+    hostAttrs: [1, "p-element"],
     hostBindings: function ReorderableRow_HostBindings(rf, ctx) {
       if (rf & 1) {
         ɵɵlistener("drop", function ReorderableRow_drop_HostBindingHandler($event) {
@@ -16478,7 +9821,10 @@ var ReorderableRow = class _ReorderableRow {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ReorderableRow, [{
     type: Directive,
     args: [{
-      selector: "[pReorderableRow]"
+      selector: "[pReorderableRow]",
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: Renderer2
@@ -16505,7 +9851,14 @@ var ReorderableRow = class _ReorderableRow {
     }]
   });
 })();
-var ColumnFilter = class _ColumnFilter extends BaseComponent {
+var ColumnFilter = class _ColumnFilter {
+  document;
+  el;
+  dt;
+  renderer;
+  config;
+  overlayService;
+  cd;
   /**
    * Property represented by the column.
    * @group Props
@@ -16638,54 +9991,6 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
    */
   ariaLabel;
   /**
-   * Used to pass all filter button property object
-   * @defaultValue {
-   filter: { severity: 'secondary', text: true, rounded: true },
-   inline: {
-   clear: { severity: 'secondary', text: true, rounded: true }
-   },
-   popover: {
-   addRule: { severity: 'info', text: true, size: 'small' },
-   removeRule: { severity: 'danger', text: true, size: 'small' },
-   apply: { size: 'small' },
-   clear: { outlined: true, size: 'small' }
-   }
-   }
-   */
-  filterButtonProps = {
-    filter: {
-      severity: "secondary",
-      text: true,
-      rounded: true
-    },
-    inline: {
-      clear: {
-        severity: "secondary",
-        text: true,
-        rounded: true
-      }
-    },
-    popover: {
-      addRule: {
-        severity: "info",
-        text: true,
-        size: "small"
-      },
-      removeRule: {
-        severity: "danger",
-        text: true,
-        size: "small"
-      },
-      apply: {
-        size: "small"
-      },
-      clear: {
-        outlined: true,
-        size: "small"
-      }
-    }
-  };
-  /**
    * Callback to invoke on overlay is shown.
    * @param {AnimationEvent} originalEvent - animation event.
    * @group Emits
@@ -16699,21 +10004,14 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
   onHide = new EventEmitter();
   icon;
   clearButtonViewChild;
-  _templates;
+  templates;
   overlaySubscription;
-  _headerTemplate;
   headerTemplate;
-  _filterTemplate;
   filterTemplate;
-  _footerTemplate;
   footerTemplate;
-  _filterIconTemplate;
   filterIconTemplate;
-  _removeRuleIconTemplate;
   removeRuleIconTemplate;
-  _addRuleIconTemplate;
   addRuleIconTemplate;
-  _clearFilterIconTemplate;
   clearFilterIconTemplate;
   operatorOptions;
   overlayVisible;
@@ -16726,6 +10024,7 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
   resetSubscription;
   selfClick;
   overlayEventListener;
+  window;
   overlayId;
   get fieldConstraints() {
     return this.dt.filters ? this.dt.filters[this.field] : null;
@@ -16772,12 +10071,17 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
   get filterConstraintAriaLabel() {
     return this.config.translation ? this.config.translation.aria.filterConstraint : void 0;
   }
-  dt = inject(Table);
-  overlayService = inject(OverlayService);
-  hostName = "Table";
-  parentInstance = inject(forwardRef(() => Table));
+  constructor(document2, el, dt, renderer, config, overlayService, cd) {
+    this.document = document2;
+    this.el = el;
+    this.dt = dt;
+    this.renderer = renderer;
+    this.config = config;
+    this.overlayService = overlayService;
+    this.cd = cd;
+    this.window = this.document.defaultView;
+  }
   ngOnInit() {
-    super.ngOnInit();
     this.overlayId = UniqueComponentId();
     if (!this.dt.filters[this.field]) {
       this.initFieldFilterConstraint();
@@ -16807,7 +10111,7 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
     }];
   }
   ngAfterContentInit() {
-    this._templates.forEach((item) => {
+    this.templates.forEach((item) => {
       switch (item.getType()) {
         case "header":
           this.headerTemplate = item.template;
@@ -16861,9 +10165,9 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
     }
     this.hide();
   }
-  onRowMatchModeKeyDown(event2) {
-    let item = event2.target;
-    switch (event2.key) {
+  onRowMatchModeKeyDown(event) {
+    let item = event.target;
+    switch (event.key) {
       case "ArrowDown":
         var nextItem = this.findNextItem(item);
         if (nextItem) {
@@ -16871,7 +10175,7 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
           nextItem.tabIndex = "0";
           nextItem.focus();
         }
-        event2.preventDefault();
+        event.preventDefault();
         break;
       case "ArrowUp":
         var prevItem = this.findPrevItem(item);
@@ -16880,7 +10184,7 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
           prevItem.tabIndex = "0";
           prevItem.focus();
         }
-        event2.preventDefault();
+        event.preventDefault();
         break;
     }
   }
@@ -16889,7 +10193,7 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
     this.hide();
   }
   isRowMatchModeSelected(matchMode) {
-    return this.dt.filters[this.field].matchMode === matchMode;
+    return this.dt.filters[this.field]?.matchMode === matchMode;
   }
   addConstraint() {
     this.dt.filters[this.field].push({
@@ -16915,12 +10219,11 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
       this.dt._filter();
     }
   }
-  toggleMenu(event2) {
+  toggleMenu() {
     this.overlayVisible = !this.overlayVisible;
-    event2.stopPropagation();
   }
-  onToggleButtonKeyDown(event2) {
-    switch (event2.key) {
+  onToggleButtonKeyDown(event) {
+    switch (event.key) {
       case "Escape":
       case "Tab":
         this.overlayVisible = false;
@@ -16931,39 +10234,38 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
           if (focusable) {
             focusable[0].focus();
           }
-          event2.preventDefault();
-        } else if (event2.altKey) {
+          event.preventDefault();
+        } else if (event.altKey) {
           this.overlayVisible = true;
-          event2.preventDefault();
+          event.preventDefault();
         }
         break;
       case "Enter":
-        this.toggleMenu(event2);
-        event2.preventDefault();
+        this.toggleMenu();
+        event.preventDefault();
         break;
     }
   }
   onEscape() {
-    this.overlayVisible = false;
     this.icon?.nativeElement.focus();
   }
   findNextItem(item) {
     let nextItem = item.nextElementSibling;
-    if (nextItem) return DomHandler.hasClass(nextItem, "p-datatable-filter-constraint-separator") ? this.findNextItem(nextItem) : nextItem;
+    if (nextItem) return DomHandler.hasClass(nextItem, "p-column-filter-separator") ? this.findNextItem(nextItem) : nextItem;
     else return item.parentElement?.firstElementChild;
   }
   findPrevItem(item) {
     let prevItem = item.previousElementSibling;
-    if (prevItem) return DomHandler.hasClass(prevItem, "p-datatable-filter-constraint-separator") ? this.findPrevItem(prevItem) : prevItem;
+    if (prevItem) return DomHandler.hasClass(prevItem, "p-column-filter-separator") ? this.findPrevItem(prevItem) : prevItem;
     else return item.parentElement?.lastElementChild;
   }
   onContentClick() {
     this.selfClick = true;
   }
-  onOverlayAnimationStart(event2) {
-    switch (event2.toState) {
+  onOverlayAnimationStart(event) {
+    switch (event.toState) {
       case "visible":
-        this.overlay = event2.element;
+        this.overlay = event.element;
         this.renderer.appendChild(this.document.body, this.overlay);
         zindexutils.set("overlay", this.overlay, this.config.zIndex.overlay);
         DomHandler.absolutePosition(this.overlay, this.icon?.nativeElement);
@@ -16977,7 +10279,7 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
         };
         this.overlaySubscription = this.overlayService.clickObservable.subscribe(this.overlayEventListener);
         this.onShow.emit({
-          originalEvent: event2
+          originalEvent: event
         });
         break;
       case "void":
@@ -16988,15 +10290,15 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
         break;
     }
   }
-  onOverlayAnimationEnd(event2) {
-    switch (event2.toState) {
+  onOverlayAnimationEnd(event) {
+    switch (event.toState) {
       case "visible":
         this.focusOnFirstElement();
         break;
       case "void":
-        zindexutils.clear(event2.element);
+        zindexutils.clear(event.element);
         this.onHide.emit({
-          originalEvent: event2
+          originalEvent: event
         });
         break;
     }
@@ -17022,7 +10324,7 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
   hasRowFilter() {
     return this.dt.filters[this.field] && !this.dt.isFilterBlank(this.dt.filters[this.field].value);
   }
-  get hasFilter() {
+  hasFilter() {
     let fieldFilter = this.dt.filters[this.field];
     if (fieldFilter) {
       if (Array.isArray(fieldFilter)) return !this.dt.isFilterBlank(fieldFilter[0].value);
@@ -17030,16 +10332,19 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
     }
     return false;
   }
-  isOutsideClicked(event2) {
-    return !(DomHandler.hasClass(this.overlay?.nextElementSibling, "p-overlay") || DomHandler.hasClass(this.overlay?.nextElementSibling, "p-popover") || this.overlay?.isSameNode(event2.target) || this.overlay?.contains(event2.target) || this.icon?.nativeElement.isSameNode(event2.target) || this.icon?.nativeElement.contains(event2.target) || DomHandler.hasClass(event2.target, "p-datatable-filter-add-rule-button") || DomHandler.hasClass(event2.target.parentElement, "p-datatable-filter-add-rule-button") || DomHandler.hasClass(event2.target, "p-datatable-filter-remove-rule-button") || DomHandler.hasClass(event2.target.parentElement, "p-datatable-filter-remove-rule-button"));
+  isOutsideClicked(event) {
+    return !(DomHandler.hasClass(this.overlay?.nextElementSibling, "p-overlay") || this.overlay?.isSameNode(event.target) || this.overlay?.contains(event.target) || this.icon?.nativeElement.isSameNode(event.target) || this.icon?.nativeElement.contains(event.target) || DomHandler.hasClass(event.target, "p-column-filter-add-button") || DomHandler.hasClass(event.target.parentElement, "p-column-filter-add-button") || DomHandler.hasClass(event.target, "p-column-filter-remove-button") || DomHandler.hasClass(event.target.parentElement, "p-column-filter-remove-button"));
   }
   bindDocumentClickListener() {
     if (!this.documentClickListener) {
       const documentTarget = this.el ? this.el.nativeElement.ownerDocument : "document";
-      this.documentClickListener = this.renderer.listen(documentTarget, "mousedown", (event2) => {
-        const dialogElements = document.querySelectorAll('[role="dialog"]');
-        const targetIsColumnFilterMenuButton = event2.target.closest(".p-datatable-column-filter-button");
-        if (this.overlayVisible && this.isOutsideClicked(event2) && (targetIsColumnFilterMenuButton || dialogElements?.length <= 1)) {
+      this.documentClickListener = this.renderer.listen(documentTarget, "mousedown", (event) => {
+        let isDateDialog = false;
+        document.querySelectorAll('[role="dialog"]').forEach((d) => {
+          if (DomHandler.hasClass(d, "p-datepicker")) isDateDialog = true;
+        });
+        const targetIsColumnFilterMenuButton = event.target.closest(".p-column-filter-menu-button");
+        if (this.overlayVisible && this.isOutsideClicked(event) && (targetIsColumnFilterMenuButton || !isDateDialog)) {
           this.hide();
         }
         this.selfClick = false;
@@ -17055,7 +10360,7 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
   }
   bindDocumentResizeListener() {
     if (!this.documentResizeListener) {
-      this.documentResizeListener = this.renderer.listen(this.document.defaultView, "resize", (event2) => {
+      this.documentResizeListener = this.renderer.listen(this.window, "resize", (event) => {
         if (this.overlayVisible && !DomHandler.isTouchDevice()) {
           this.hide();
         }
@@ -17117,44 +10422,26 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
     if (this.overlaySubscription) {
       this.overlaySubscription.unsubscribe();
     }
-    super.ngOnDestroy();
   }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵColumnFilter_BaseFactory;
-    return function ColumnFilter_Factory(__ngFactoryType__) {
-      return (ɵColumnFilter_BaseFactory || (ɵColumnFilter_BaseFactory = ɵɵgetInheritedFactory(_ColumnFilter)))(__ngFactoryType__ || _ColumnFilter);
-    };
-  })();
+  static ɵfac = function ColumnFilter_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _ColumnFilter)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Table), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(PrimeNGConfig), ɵɵdirectiveInject(OverlayService), ɵɵdirectiveInject(ChangeDetectorRef));
+  };
   static ɵcmp = ɵɵdefineComponent({
     type: _ColumnFilter,
     selectors: [["p-columnFilter"]],
     contentQueries: function ColumnFilter_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, _c04, 4);
-        ɵɵcontentQuery(dirIndex, _c54, 4);
-        ɵɵcontentQuery(dirIndex, _c52, 4);
-        ɵɵcontentQuery(dirIndex, _c55, 4);
-        ɵɵcontentQuery(dirIndex, _c56, 4);
-        ɵɵcontentQuery(dirIndex, _c57, 4);
-        ɵɵcontentQuery(dirIndex, _c58, 4);
         ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._headerTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._filterTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._footerTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._filterIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._removeRuleIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._addRuleIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._clearFilterIconTemplate = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._templates = _t);
+        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
       }
     },
     viewQuery: function ColumnFilter_Query(rf, ctx) {
       if (rf & 1) {
-        ɵɵviewQuery(Button, 5, ElementRef);
-        ɵɵviewQuery(_c59, 5);
+        ɵɵviewQuery(_c29, 5);
+        ɵɵviewQuery(_c30, 5);
       }
       if (rf & 2) {
         let _t;
@@ -17162,6 +10449,7 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.clearButtonViewChild = _t.first);
       }
     },
+    hostAttrs: [1, "p-element"],
     inputs: {
       field: "field",
       type: "type",
@@ -17188,36 +10476,35 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
       currencyDisplay: "currencyDisplay",
       useGrouping: [2, "useGrouping", "useGrouping", booleanAttribute],
       showButtons: [2, "showButtons", "showButtons", booleanAttribute],
-      ariaLabel: "ariaLabel",
-      filterButtonProps: "filterButtonProps"
+      ariaLabel: "ariaLabel"
     },
     outputs: {
       onShow: "onShow",
       onHide: "onHide"
     },
-    features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature],
+    features: [ɵɵInputTransformsFeature],
     decls: 5,
-    vars: 5,
-    consts: [["icon", ""], ["menu", ""], ["clearBtn", ""], [3, "ngClass"], ["class", "p-fluid", 3, "type", "field", "ariaLabel", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "showButtons", 4, "ngIf"], [3, "styleClass", "ariaLabel", "buttonProps", "click", "keydown", 4, "ngIf"], [3, "styleClass", "ariaLabel", "buttonProps", "onClick", 4, "ngIf"], ["role", "dialog", 3, "ngClass", "id", "click", "keydown.escape", 4, "ngIf"], [1, "p-fluid", 3, "type", "field", "ariaLabel", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "showButtons"], [3, "click", "keydown", "styleClass", "ariaLabel", "buttonProps"], [4, "ngIf"], ["class", "pi-filter-icon", 4, "ngIf"], [1, "pi-filter-icon"], [4, "ngTemplateOutlet"], [3, "onClick", "styleClass", "ariaLabel", "buttonProps"], ["role", "dialog", 3, "click", "keydown.escape", "ngClass", "id"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngClass", 4, "ngIf", "ngIfElse"], [3, "ngClass", "p-datatable-filter-constraint-selected", "click", "keydown", "keydown.enter", 4, "ngFor", "ngForOf"], [3, "click", "keydown", "keydown.enter", "ngClass"], [3, "ngClass", 4, "ngIf"], [3, "ngClass", 4, "ngFor", "ngForOf"], [3, "outlined", "label", "buttonProps", "onClick", 4, "ngIf"], ["size", "small", 3, "label", "buttonProps", "onClick", 4, "ngIf"], [3, "ngModelChange", "options", "ngModel", "styleClass"], [3, "options", "ngModel", "styleClass", "ngModelChange", 4, "ngIf"], [3, "type", "field", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping"], ["severity", "danger", "size", "small", 3, "styleClass", "text", "ariaLabel", "label", "buttonProps", "onClick", 4, "ngIf"], ["severity", "danger", "size", "small", 3, "onClick", "styleClass", "text", "ariaLabel", "label", "buttonProps"], ["type", "button", "size", "small", 3, "onClick", "label", "styleClass", "text", "buttonProps"], [3, "onClick", "outlined", "label", "buttonProps"], ["size", "small", 3, "onClick", "label", "buttonProps"]],
+    vars: 8,
+    consts: [["icon", ""], ["menu", ""], ["clearBtn", ""], [1, "p-column-filter", 3, "ngClass"], ["class", "p-fluid", 3, "type", "field", "ariaLabel", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "showButtons", 4, "ngIf"], ["type", "button", "class", "p-column-filter-menu-button p-link", "aria-haspopup", "true", 3, "ngClass", "click", "keydown", 4, "ngIf"], ["type", "button", "class", "p-column-filter-clear-button p-link", 3, "ngClass", "click", 4, "ngIf"], ["role", "dialog", 3, "ngClass", "id", "click", "keydown.escape", 4, "ngIf"], [1, "p-fluid", 3, "type", "field", "ariaLabel", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "showButtons"], ["type", "button", "aria-haspopup", "true", 1, "p-column-filter-menu-button", "p-link", 3, "click", "keydown", "ngClass"], [3, "styleClass", 4, "ngIf"], ["class", "pi-filter-icon", 4, "ngIf"], [3, "styleClass"], [1, "pi-filter-icon"], [4, "ngTemplateOutlet"], ["type", "button", 1, "p-column-filter-clear-button", "p-link", 3, "click", "ngClass"], [4, "ngIf"], ["role", "dialog", 3, "click", "keydown.escape", "ngClass", "id"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "p-column-filter-row-items", 4, "ngIf", "ngIfElse"], [1, "p-column-filter-row-items"], ["class", "p-column-filter-row-item", 3, "ngClass", "click", "keydown", "keydown.enter", 4, "ngFor", "ngForOf"], [1, "p-column-filter-separator"], [1, "p-column-filter-row-item", 3, "click", "keydown", "keydown.enter"], [1, "p-column-filter-row-item", 3, "click", "keydown", "keydown.enter", "ngClass"], ["class", "p-column-filter-operator", 4, "ngIf"], [1, "p-column-filter-constraints"], ["class", "p-column-filter-constraint", 4, "ngFor", "ngForOf"], ["class", "p-column-filter-add-rule", 4, "ngIf"], ["class", "p-column-filter-buttonbar", 4, "ngIf"], [1, "p-column-filter-operator"], ["styleClass", "p-column-filter-operator-dropdown", 3, "ngModelChange", "options", "ngModel"], [1, "p-column-filter-constraint"], ["styleClass", "p-column-filter-matchmode-dropdown", 3, "options", "ngModel", "ngModelChange", 4, "ngIf"], [3, "type", "field", "filterConstraint", "filterTemplate", "placeholder", "minFractionDigits", "maxFractionDigits", "prefix", "suffix", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping"], ["type", "button", "pButton", "", "class", "p-column-filter-remove-button p-button-text p-button-danger p-button-sm", "pRipple", "", 3, "label", "click", 4, "ngIf"], ["styleClass", "p-column-filter-matchmode-dropdown", 3, "ngModelChange", "options", "ngModel"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-column-filter-remove-button", "p-button-text", "p-button-danger", "p-button-sm", 3, "click", "label"], [1, "p-column-filter-add-rule"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-column-filter-add-button", "p-button-text", "p-button-sm", 3, "click", "label"], [1, "p-column-filter-buttonbar"], ["type", "button", "pButton", "", "class", "p-button-outlined p-button-sm", "pRipple", "", 3, "label", "click", 4, "ngIf"], ["type", "button", "pButton", "", "class", "p-button-sm", "pRipple", "", 3, "label", "click", 4, "ngIf"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-button-outlined", "p-button-sm", 3, "click", "label"], ["type", "button", "pButton", "", "pRipple", "", 1, "p-button-sm", 3, "click", "label"]],
     template: function ColumnFilter_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵelementStart(0, "div", 3);
-        ɵɵtemplate(1, ColumnFilter_p_columnFilterFormElement_1_Template, 1, 16, "p-columnFilterFormElement", 4)(2, ColumnFilter_p_button_2_Template, 3, 6, "p-button", 5)(3, ColumnFilter_p_button_3_Template, 3, 3, "p-button", 6)(4, ColumnFilter_div_4_Template, 6, 14, "div", 7);
+        ɵɵtemplate(1, ColumnFilter_p_columnFilterFormElement_1_Template, 1, 16, "p-columnFilterFormElement", 4)(2, ColumnFilter_button_2_Template, 4, 9, "button", 5)(3, ColumnFilter_button_3_Template, 4, 6, "button", 6)(4, ColumnFilter_div_4_Template, 6, 16, "div", 7);
         ɵɵelementEnd();
       }
       if (rf & 2) {
-        ɵɵproperty("ngClass", ctx.cx("filter"));
+        ɵɵproperty("ngClass", ɵɵpureFunction2(5, _c31, ctx.display === "row", ctx.display === "menu"));
         ɵɵadvance();
         ɵɵproperty("ngIf", ctx.display === "row");
         ɵɵadvance();
         ɵɵproperty("ngIf", ctx.showMenuButton);
         ɵɵadvance();
-        ɵɵproperty("ngIf", ctx.showClearButton && ctx.display === "row" && ctx.hasFilter);
+        ɵɵproperty("ngIf", ctx.showClearButton && ctx.display === "row");
         ɵɵadvance();
         ɵɵproperty("ngIf", ctx.showMenu && ctx.overlayVisible);
       }
     },
-    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, Select, NgControlStatus, NgModel, Button, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon, ColumnFilterFormElement],
+    dependencies: () => [NgClass, NgForOf, NgIf, NgTemplateOutlet, Dropdown, NgControlStatus, NgModel, ButtonDirective, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon, ColumnFilterFormElement],
     encapsulation: 2,
     data: {
       animation: [trigger("overlayAnimation", [transition(":enter", [style({
@@ -17235,7 +10522,7 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
     args: [{
       selector: "p-columnFilter",
       template: `
-        <div [ngClass]="cx('filter')">
+        <div class="p-column-filter" [ngClass]="{ 'p-column-filter-row': display === 'row', 'p-column-filter-menu': display === 'menu' }">
             <p-columnFilterFormElement
                 *ngIf="display === 'row'"
                 class="p-fluid"
@@ -17256,33 +10543,31 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
                 [useGrouping]="useGrouping"
                 [showButtons]="showButtons"
             ></p-columnFilterFormElement>
-            <p-button
+            <button
+                #icon
                 *ngIf="showMenuButton"
-                [styleClass]="cx('pcColumnFilterButton')"
-                [attr.aria-haspopup]="true"
-                [ariaLabel]="filterMenuButtonAriaLabel"
+                type="button"
+                class="p-column-filter-menu-button p-link"
+                aria-haspopup="true"
+                [attr.aria-label]="filterMenuButtonAriaLabel"
                 [attr.aria-controls]="overlayVisible ? overlayId : null"
                 [attr.aria-expanded]="overlayVisible ?? false"
-                (click)="toggleMenu($event)"
+                [ngClass]="{ 'p-column-filter-menu-button-open': overlayVisible, 'p-column-filter-menu-button-active': hasFilter() }"
+                (click)="toggleMenu()"
                 (keydown)="onToggleButtonKeyDown($event)"
-                [buttonProps]="filterButtonProps?.filter"
             >
-                <ng-template #icon>
-                    <FilterIcon *ngIf="!filterIconTemplate && !_filterIconTemplate" />
-                    <span class="pi-filter-icon" *ngIf="filterIconTemplate || _filterIconTemplate">
-                        <ng-template *ngTemplateOutlet="filterIconTemplate || _filterIconTemplate"></ng-template>
-                    </span>
-                </ng-template>
-            </p-button>
-            <p-button *ngIf="showClearButton && display === 'row' && hasFilter" [styleClass]="cx('pcColumnfilterClearButton')" (onClick)="clearFilter()" [ariaLabel]="clearButtonLabel" [buttonProps]="filterButtonProps?.inline?.clear">
-                <ng-template #icon>
-                    <FilterSlashIcon *ngIf="!clearFilterIconTemplate && !_clearFilterIconTemplate" />
-                    <ng-template *ngTemplateOutlet="clearFilterIconTemplate || _clearFilterIconTemplate"></ng-template>
-                </ng-template>
-            </p-button>
+                <FilterIcon [styleClass]="'pi-filter-icon'" *ngIf="!filterIconTemplate" />
+                <span class="pi-filter-icon" *ngIf="filterIconTemplate">
+                    <ng-template *ngTemplateOutlet="filterIconTemplate"></ng-template>
+                </span>
+            </button>
+            <button #icon *ngIf="showClearButton && display === 'row'" [ngClass]="{ 'p-hidden-space': !hasRowFilter() }" type="button" class="p-column-filter-clear-button p-link" (click)="clearFilter()" [attr.aria-label]="clearButtonLabel">
+                <FilterSlashIcon *ngIf="!clearFilterIconTemplate" />
+                <ng-template *ngTemplateOutlet="clearFilterIconTemplate"></ng-template>
+            </button>
             <div
                 *ngIf="showMenu && overlayVisible"
-                [ngClass]="cx('filterOverlay')"
+                [ngClass]="{ 'p-column-filter-overlay p-component p-fluid': true, 'p-column-filter-overlay-menu': display === 'menu' }"
                 [id]="overlayId"
                 [attr.aria-modal]="true"
                 role="dialog"
@@ -17292,42 +10577,40 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
                 (@overlayAnimation.done)="onOverlayAnimationEnd($event)"
                 (keydown.escape)="onEscape()"
             >
-                <ng-container *ngTemplateOutlet="headerTemplate || _headerTemplate; context: { $implicit: field }"></ng-container>
-                <ul *ngIf="display === 'row'; else menu" [ngClass]="cx('filterConstraintList')">
+                <ng-container *ngTemplateOutlet="headerTemplate; context: { $implicit: field }"></ng-container>
+                <ul *ngIf="display === 'row'; else menu" class="p-column-filter-row-items">
                     <li
+                        class="p-column-filter-row-item"
                         *ngFor="let matchMode of matchModes; let i = index"
                         (click)="onRowMatchModeChange(matchMode.value)"
                         (keydown)="onRowMatchModeKeyDown($event)"
-                        (keydown.enter)="onRowMatchModeChange(matchMode.value)"
-                        [ngClass]="cx('filterConstraint')"
-                        [class.p-datatable-filter-constraint-selected]="isRowMatchModeSelected(matchMode.value)"
+                        (keydown.enter)="this.onRowMatchModeChange(matchMode.value)"
+                        [ngClass]="{ 'p-highlight': isRowMatchModeSelected(matchMode.value) }"
                         [attr.tabindex]="i === 0 ? '0' : null"
                     >
                         {{ matchMode.label }}
                     </li>
-                    <li [ngClass]="cx('filterConstraintSeparator')"></li>
-                    <li [ngClass]="cx('filterConstraint')" (click)="onRowClearItemClick()" (keydown)="onRowMatchModeKeyDown($event)" (keydown.enter)="onRowClearItemClick()">
-                        {{ noFilterLabel }}
-                    </li>
+                    <li class="p-column-filter-separator"></li>
+                    <li class="p-column-filter-row-item" (click)="onRowClearItemClick()" (keydown)="onRowMatchModeKeyDown($event)" (keydown.enter)="onRowClearItemClick()">{{ noFilterLabel }}</li>
                 </ul>
                 <ng-template #menu>
-                    <div [ngClass]="cx('filterOperator')" *ngIf="isShowOperator">
-                        <p-select [options]="operatorOptions" [ngModel]="operator" (ngModelChange)="onOperatorChange($event)" [styleClass]="cx('pcFilterOperatorDropdown')"></p-select>
+                    <div class="p-column-filter-operator" *ngIf="isShowOperator">
+                        <p-dropdown [options]="operatorOptions" [ngModel]="operator" (ngModelChange)="onOperatorChange($event)" styleClass="p-column-filter-operator-dropdown"></p-dropdown>
                     </div>
-                    <div [ngClass]="cx('filterRuleList')">
-                        <div *ngFor="let fieldConstraint of fieldConstraints; let i = index" [ngClass]="cx('filterRule')">
-                            <p-select
+                    <div class="p-column-filter-constraints">
+                        <div *ngFor="let fieldConstraint of fieldConstraints; let i = index" class="p-column-filter-constraint">
+                            <p-dropdown
                                 *ngIf="showMatchModes && matchModes"
                                 [options]="matchModes"
                                 [ngModel]="fieldConstraint.matchMode"
                                 (ngModelChange)="onMenuMatchModeChange($event, fieldConstraint)"
-                                [styleClass]="cx('pcFilterConstraintDropdown')"
-                            ></p-select>
+                                styleClass="p-column-filter-matchmode-dropdown"
+                            ></p-dropdown>
                             <p-columnFilterFormElement
                                 [type]="type"
                                 [field]="field"
                                 [filterConstraint]="fieldConstraint"
-                                [filterTemplate]="filterTemplate || _filterTemplate"
+                                [filterTemplate]="filterTemplate"
                                 [placeholder]="placeholder"
                                 [minFractionDigits]="minFractionDigits"
                                 [maxFractionDigits]="maxFractionDigits"
@@ -17340,44 +10623,34 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
                                 [useGrouping]="useGrouping"
                             ></p-columnFilterFormElement>
                             <div>
-                                <p-button
+                                <button
                                     *ngIf="showRemoveIcon"
-                                    [styleClass]="cx('pcFilterRemoveRuleButton')"
-                                    [text]="true"
-                                    severity="danger"
-                                    size="small"
-                                    (onClick)="removeConstraint(fieldConstraint)"
-                                    [ariaLabel]="removeRuleButtonLabel"
+                                    type="button"
+                                    pButton
+                                    class="p-column-filter-remove-button p-button-text p-button-danger p-button-sm"
+                                    (click)="removeConstraint(fieldConstraint)"
+                                    pRipple
+                                    [attr.aria-label]="removeRuleButtonLabel"
                                     [label]="removeRuleButtonLabel"
-                                    [buttonProps]="filterButtonProps?.popover?.removeRule"
                                 >
-                                    <TrashIcon *ngIf="!removeRuleIconTemplate && !_removeRuleIconTemplate" />
-                                    <ng-template *ngTemplateOutlet="removeRuleIconTemplate || _removeRuleIconTemplate"></ng-template>
-                                </p-button>
+                                    <TrashIcon *ngIf="!removeRuleIconTemplate" [styleClass]="'p-button-icon-left'" />
+                                    <ng-template *ngTemplateOutlet="removeRuleIconTemplate"></ng-template>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div *ngIf="isShowAddConstraint">
-                        <p-button
-                            type="button"
-                            [label]="addRuleButtonLabel"
-                            [attr.aria-label]="addRuleButtonLabel"
-                            [styleClass]="cx('pcFilterAddRuleButton')"
-                            [text]="true"
-                            size="small"
-                            (onClick)="addConstraint()"
-                            [buttonProps]="filterButtonProps?.popover?.addRule"
-                        >
-                            <PlusIcon *ngIf="!addRuleIconTemplate && !_addRuleIconTemplate" />
-                            <ng-template *ngTemplateOutlet="addRuleIconTemplate || _addRuleIconTemplate"></ng-template>
-                        </p-button>
+                    <div class="p-column-filter-add-rule" *ngIf="isShowAddConstraint">
+                        <button type="button" pButton [label]="addRuleButtonLabel" [attr.aria-label]="addRuleButtonLabel" class="p-column-filter-add-button p-button-text p-button-sm" (click)="addConstraint()" pRipple>
+                            <PlusIcon *ngIf="!addRuleIconTemplate" [styleClass]="'p-button-icon-left'" />
+                            <ng-template *ngTemplateOutlet="addRuleIconTemplate"></ng-template>
+                        </button>
                     </div>
-                    <div [ngClass]="cx('filterButtonbar')">
-                        <p-button #clearBtn *ngIf="showClearButton" [outlined]="true" (onClick)="clearFilter()" [attr.aria-label]="clearButtonLabel" [label]="clearButtonLabel" [buttonProps]="filterButtonProps?.popover?.clear" />
-                        <p-button *ngIf="showApplyButton" (onClick)="applyFilter()" size="small" [label]="applyButtonLabel" [attr.aria-label]="applyButtonLabel" [buttonProps]="filterButtonProps?.popover?.apply" />
+                    <div class="p-column-filter-buttonbar" *ngIf="showButtons">
+                        <button #clearBtn *ngIf="showClearButton" type="button" pButton class="p-button-outlined p-button-sm" (click)="clearFilter()" [attr.aria-label]="clearButtonLabel" [label]="clearButtonLabel" pRipple></button>
+                        <button *ngIf="showApplyButton" type="button" pButton (click)="applyFilter()" class="p-button-sm" [label]="applyButtonLabel" pRipple [attr.aria-label]="applyButtonLabel"></button>
                     </div>
                 </ng-template>
-                <ng-container *ngTemplateOutlet="footerTemplate || _footerTemplate; context: { $implicit: field }"></ng-container>
+                <ng-container *ngTemplateOutlet="footerTemplate; context: { $implicit: field }"></ng-container>
             </div>
         </div>
     `,
@@ -17387,9 +10660,30 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
       }), animate(".12s cubic-bezier(0, 0, 0.2, 1)")]), transition(":leave", [animate(".1s linear", style({
         opacity: 0
       }))])])],
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      }
     }]
-  }], null, {
+  }], () => [{
+    type: Document,
+    decorators: [{
+      type: Inject,
+      args: [DOCUMENT]
+    }]
+  }, {
+    type: ElementRef
+  }, {
+    type: Table
+  }, {
+    type: Renderer2
+  }, {
+    type: PrimeNGConfig
+  }, {
+    type: OverlayService
+  }, {
+    type: ChangeDetectorRef
+  }], {
     field: [{
       type: Input
     }],
@@ -17504,9 +10798,6 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
     ariaLabel: [{
       type: Input
     }],
-    filterButtonProps: [{
-      type: Input
-    }],
     onShow: [{
       type: Output
     }],
@@ -17515,66 +10806,16 @@ var ColumnFilter = class _ColumnFilter extends BaseComponent {
     }],
     icon: [{
       type: ViewChild,
-      args: [Button, {
-        static: false,
-        read: ElementRef
-      }]
+      args: ["icon"]
     }],
     clearButtonViewChild: [{
       type: ViewChild,
       args: ["clearBtn"]
     }],
-    _templates: [{
+    templates: [{
       type: ContentChildren,
       args: [PrimeTemplate]
-    }],
-    _headerTemplate: [{
-      type: ContentChild,
-      args: ["header", {
-        descendants: false
-      }]
-    }],
-    _filterTemplate: [{
-      type: ContentChild,
-      args: ["filter", {
-        descendants: false
-      }]
-    }],
-    _footerTemplate: [{
-      type: ContentChild,
-      args: ["footer", {
-        descendants: false
-      }]
-    }],
-    _filterIconTemplate: [{
-      type: ContentChild,
-      args: ["filtericon", {
-        descendants: false
-      }]
-    }],
-    _removeRuleIconTemplate: [{
-      type: ContentChild,
-      args: ["removeruleicon", {
-        descendants: false
-      }]
-    }],
-    _addRuleIconTemplate: [{
-      type: ContentChild,
-      args: ["addruleicon", {
-        descendants: false
-      }]
-    }],
-    _clearFilterIconTemplate: [{
-      type: ContentChild,
-      args: ["clearfiltericon", {
-        descendants: false
-      }]
     }]
-  });
-})();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(ColumnFilter, {
-    className: "ColumnFilter"
   });
 })();
 var ColumnFilterFormElement = class _ColumnFilterFormElement {
@@ -17615,14 +10856,14 @@ var ColumnFilterFormElement = class _ColumnFilterFormElement {
       this.dt._filter();
     }
   }
-  onTextInputEnterKeyDown(event2) {
+  onTextInputEnterKeyDown(event) {
     this.dt._filter();
-    event2.preventDefault();
+    event.preventDefault();
   }
-  onNumericInputKeyDown(event2) {
-    if (event2.key === "Enter") {
+  onNumericInputKeyDown(event) {
+    if (event.key === "Enter") {
       this.dt._filter();
-      event2.preventDefault();
+      event.preventDefault();
     }
   }
   static ɵfac = function ColumnFilterFormElement_Factory(__ngFactoryType__) {
@@ -17631,6 +10872,7 @@ var ColumnFilterFormElement = class _ColumnFilterFormElement {
   static ɵcmp = ɵɵdefineComponent({
     type: _ColumnFilterFormElement,
     selectors: [["p-columnFilterFormElement"]],
+    hostAttrs: [1, "p-element"],
     inputs: {
       field: "field",
       type: "type",
@@ -17651,7 +10893,7 @@ var ColumnFilterFormElement = class _ColumnFilterFormElement {
     features: [ɵɵInputTransformsFeature],
     decls: 3,
     vars: 2,
-    consts: [["builtInElement", ""], [4, "ngIf", "ngIfElse"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngSwitch"], ["type", "text", "pInputText", "", 3, "ariaLabel", "value", "input", "keydown.enter", 4, "ngSwitchCase"], [3, "ngModel", "showButtons", "minFractionDigits", "maxFractionDigits", "ariaLabel", "prefix", "suffix", "placeholder", "mode", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "ngModelChange", "onKeyDown", 4, "ngSwitchCase"], [3, "indeterminate", "binary", "ngModel", "ngModelChange", 4, "ngSwitchCase"], ["appendTo", "body", 3, "ariaLabel", "placeholder", "ngModel", "ngModelChange", 4, "ngSwitchCase"], ["type", "text", "pInputText", "", 3, "input", "keydown.enter", "ariaLabel", "value"], [3, "ngModelChange", "onKeyDown", "ngModel", "showButtons", "minFractionDigits", "maxFractionDigits", "ariaLabel", "prefix", "suffix", "placeholder", "mode", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping"], [3, "ngModelChange", "indeterminate", "binary", "ngModel"], ["appendTo", "body", 3, "ngModelChange", "ariaLabel", "placeholder", "ngModel"]],
+    consts: [["builtInElement", ""], [4, "ngIf", "ngIfElse"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngSwitch"], ["type", "text", "pInputText", "", 3, "ariaLabel", "value", "input", "keydown.enter", 4, "ngSwitchCase"], [3, "ngModel", "showButtons", "minFractionDigits", "maxFractionDigits", "ariaLabel", "prefix", "suffix", "placeholder", "mode", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping", "ngModelChange", "onKeyDown", 4, "ngSwitchCase"], [3, "ariaLabel", "ngModel", "ngModelChange", 4, "ngSwitchCase"], ["appendTo", "body", 3, "ariaLabel", "placeholder", "ngModel", "ngModelChange", 4, "ngSwitchCase"], ["type", "text", "pInputText", "", 3, "input", "keydown.enter", "ariaLabel", "value"], [3, "ngModelChange", "onKeyDown", "ngModel", "showButtons", "minFractionDigits", "maxFractionDigits", "ariaLabel", "prefix", "suffix", "placeholder", "mode", "locale", "localeMatcher", "currency", "currencyDisplay", "useGrouping"], [3, "ngModelChange", "ariaLabel", "ngModel"], ["appendTo", "body", 3, "ngModelChange", "ariaLabel", "placeholder", "ngModel"]],
     template: function ColumnFilterFormElement_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵtemplate(0, ColumnFilterFormElement_ng_container_0_Template, 2, 19, "ng-container", 1)(1, ColumnFilterFormElement_ng_template_1_Template, 5, 5, "ng-template", null, 0, ɵɵtemplateRefExtractor);
@@ -17661,7 +10903,7 @@ var ColumnFilterFormElement = class _ColumnFilterFormElement {
         ɵɵproperty("ngIf", ctx.filterTemplate)("ngIfElse", builtInElement_r6);
       }
     },
-    dependencies: [NgIf, NgTemplateOutlet, NgSwitch, NgSwitchCase, InputText, NgControlStatus, NgModel, DatePicker, InputNumber, Checkbox],
+    dependencies: [NgIf, NgTemplateOutlet, NgSwitch, NgSwitchCase, InputNumber, NgControlStatus, NgModel, InputText, Calendar, TriStateCheckbox],
     encapsulation: 2
   });
 };
@@ -17676,7 +10918,7 @@ var ColumnFilterFormElement = class _ColumnFilterFormElement {
                 *ngTemplateOutlet="
                     filterTemplate;
                     context: {
-                        $implicit: filterConstraint.value,
+                        $implicit: filterConstraint?.value,
                         filterCallback: filterCallback,
                         type: type,
                         field: field,
@@ -17727,13 +10969,15 @@ var ColumnFilterFormElement = class _ColumnFilterFormElement {
                     [currencyDisplay]="currencyDisplay"
                     [useGrouping]="useGrouping"
                 ></p-inputNumber>
-                <p-checkbox [indeterminate]="true" [binary]="true" *ngSwitchCase="'boolean'" [ngModel]="filterConstraint?.value" (ngModelChange)="onModelChange($event)" />
-
-                <p-datepicker [ariaLabel]="ariaLabel" *ngSwitchCase="'date'" [placeholder]="placeholder" [ngModel]="filterConstraint?.value" (ngModelChange)="onModelChange($event)" appendTo="body"></p-datepicker>
+                <p-triStateCheckbox [ariaLabel]="ariaLabel" *ngSwitchCase="'boolean'" [ngModel]="filterConstraint?.value" (ngModelChange)="onModelChange($event)"></p-triStateCheckbox>
+                <p-calendar [ariaLabel]="ariaLabel" *ngSwitchCase="'date'" [placeholder]="placeholder" [ngModel]="filterConstraint?.value" (ngModelChange)="onModelChange($event)" appendTo="body"></p-calendar>
             </ng-container>
         </ng-template>
     `,
-      encapsulation: ViewEncapsulation$1.None
+      encapsulation: ViewEncapsulation$1.None,
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: Table
@@ -17796,40 +11040,29 @@ var ColumnFilterFormElement = class _ColumnFilterFormElement {
     }]
   });
 })();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(ColumnFilterFormElement, {
-    className: "ColumnFilterFormElement"
-  });
-})();
 var TableModule = class _TableModule {
   static ɵfac = function TableModule_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _TableModule)();
   };
   static ɵmod = ɵɵdefineNgModule({
-    type: _TableModule
+    type: _TableModule,
+    declarations: [Table, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, TableBody, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement],
+    imports: [CommonModule, PaginatorModule, InputTextModule, DropdownModule, FormsModule, ButtonModule, SelectButtonModule, CalendarModule, InputNumberModule, TriStateCheckboxModule, ScrollerModule, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon],
+    exports: [Table, SharedModule, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement, ScrollerModule]
   });
   static ɵinj = ɵɵdefineInjector({
-    providers: [TableStyle],
-    imports: [CommonModule, PaginatorModule, InputTextModule, SelectModule, FormsModule, ButtonModule, SelectButtonModule, DatePickerModule, InputNumberModule, CheckboxModule, ScrollerModule, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon, RadioButtonModule, SharedModule, ScrollerModule]
+    imports: [CommonModule, PaginatorModule, InputTextModule, DropdownModule, FormsModule, ButtonModule, SelectButtonModule, CalendarModule, InputNumberModule, TriStateCheckboxModule, ScrollerModule, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon, SharedModule, ScrollerModule]
   });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TableModule, [{
     type: NgModule,
     args: [{
-      imports: [CommonModule, PaginatorModule, InputTextModule, SelectModule, FormsModule, ButtonModule, SelectButtonModule, DatePickerModule, InputNumberModule, CheckboxModule, ScrollerModule, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon, RadioButtonModule],
+      imports: [CommonModule, PaginatorModule, InputTextModule, DropdownModule, FormsModule, ButtonModule, SelectButtonModule, CalendarModule, InputNumberModule, TriStateCheckboxModule, ScrollerModule, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon],
       exports: [Table, SharedModule, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement, ScrollerModule],
-      declarations: [Table, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, TableBody, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement],
-      providers: [TableStyle]
+      declarations: [Table, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, TableBody, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement]
     }]
   }], null, null);
-})();
-(function() {
-  (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(TableModule, {
-    declarations: [Table, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, TableBody, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement],
-    imports: [CommonModule, PaginatorModule, InputTextModule, SelectModule, FormsModule, ButtonModule, SelectButtonModule, DatePickerModule, InputNumberModule, CheckboxModule, ScrollerModule, ArrowDownIcon, ArrowUpIcon, SpinnerIcon, SortAltIcon, SortAmountUpAltIcon, SortAmountDownIcon, CheckIcon, FilterIcon, FilterSlashIcon, PlusIcon, TrashIcon, RadioButtonModule],
-    exports: [Table, SharedModule, SortableColumn, FrozenColumn, RowGroupHeader, SelectableRow, RowToggler, ContextMenuRow, ResizableColumn, ReorderableColumn, EditableColumn, CellEditor, SortIcon, TableRadioButton, TableCheckbox, TableHeaderCheckbox, ReorderableRowHandle, ReorderableRow, SelectableRowDblClick, EditableRow, InitEditableRow, SaveEditableRow, CancelEditableRow, ColumnFilter, ColumnFilterFormElement, ScrollerModule]
-  });
 })();
 export {
   CancelEditableRow,
@@ -17855,11 +11088,9 @@ export {
   Table,
   TableBody,
   TableCheckbox,
-  TableClasses,
   TableHeaderCheckbox,
   TableModule,
   TableRadioButton,
-  TableService,
-  TableStyle
+  TableService
 };
 //# sourceMappingURL=primeng_table.js.map
