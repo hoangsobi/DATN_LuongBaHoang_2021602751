@@ -1,27 +1,16 @@
 import {
   Button,
-  ButtonClasses,
   ButtonDirective,
-  ButtonIcon,
-  ButtonLabel,
-  ButtonModule,
-  ButtonStyle
-} from "./chunk-6XWXUNUS.js";
-import "./chunk-CJJYOLWX.js";
-import "./chunk-NHXGZ5UY.js";
-import "./chunk-DPTKBWVE.js";
-import "./chunk-QYDFBSVR.js";
-import "./chunk-SOKPZCQ7.js";
-import "./chunk-HLIPVD2M.js";
-import "./chunk-JZFRVOZK.js";
-import "./chunk-WDMUDEB6.js";
+  ButtonModule
+} from "./chunk-TNKOLSEQ.js";
+import "./chunk-VNAEY2G3.js";
+import "./chunk-SLKG3S73.js";
+import "./chunk-LJGW4UUE.js";
+import "./chunk-YCFEHKBY.js";
+import "./chunk-VKUFYADX.js";
 export {
   Button,
-  ButtonClasses,
   ButtonDirective,
-  ButtonIcon,
-  ButtonLabel,
-  ButtonModule,
-  ButtonStyle
+  ButtonModule
 };
 //# sourceMappingURL=primeng_button.js.map

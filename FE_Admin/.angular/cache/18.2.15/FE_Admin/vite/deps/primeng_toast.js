@@ -1,6 +1,9 @@
 import {
-  zindexutils
-} from "./chunk-TPQC65W5.js";
+  CheckIcon
+} from "./chunk-ZIMREN4U.js";
+import {
+  TimesIcon
+} from "./chunk-CBZSW7SF.js";
 import {
   animate,
   animateChild,
@@ -9,69 +12,56 @@ import {
   style,
   transition,
   trigger
-} from "./chunk-UPZTWTS2.js";
+} from "./chunk-VBPCWGUM.js";
 import {
-  Button
-} from "./chunk-6XWXUNUS.js";
-import {
-  CheckIcon,
-  ExclamationTriangleIcon,
-  InfoCircleIcon,
-  TimesCircleIcon,
-  TimesIcon
-} from "./chunk-CJJYOLWX.js";
-import "./chunk-NHXGZ5UY.js";
-import {
-  BaseComponent
-} from "./chunk-DPTKBWVE.js";
-import {
-  BaseStyle
-} from "./chunk-QYDFBSVR.js";
-import {
-  MessageService,
-  PrimeTemplate,
-  SharedModule,
-  isEmpty,
-  setAttribute,
-  uuid
-} from "./chunk-SOKPZCQ7.js";
+  BaseIcon,
+  DomHandler,
+  Ripple,
+  RippleModule
+} from "./chunk-SLKG3S73.js";
 import {
   CommonModule,
+  DOCUMENT,
   NgClass,
   NgForOf,
   NgIf,
   NgStyle,
   NgTemplateOutlet
-} from "./chunk-HLIPVD2M.js";
+} from "./chunk-LJGW4UUE.js";
+import {
+  MessageService,
+  ObjectUtils,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId,
+  zindexutils
+} from "./chunk-YCFEHKBY.js";
 import {
   ChangeDetectionStrategy,
+  ChangeDetectorRef,
   Component,
-  ContentChild,
   ContentChildren,
   EventEmitter,
-  Injectable,
+  Inject,
   Input,
   NgModule,
   NgZone,
   Output,
+  Renderer2,
   ViewChild,
   ViewEncapsulation$1,
   booleanAttribute,
-  inject,
   numberAttribute,
   setClassMetadata,
-  ɵsetClassDebugInfo,
   ɵɵInheritDefinitionFeature,
   ɵɵInputTransformsFeature,
-  ɵɵProvidersFeature,
   ɵɵStandaloneFeature,
   ɵɵadvance,
   ɵɵattribute,
   ɵɵclassMap,
-  ɵɵconditional,
   ɵɵcontentQuery,
   ɵɵdefineComponent,
-  ɵɵdefineInjectable,
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵdirectiveInject,
@@ -85,404 +75,286 @@ import {
   ɵɵgetInheritedFactory,
   ɵɵlistener,
   ɵɵloadQuery,
+  ɵɵnamespaceSVG,
   ɵɵnextContext,
   ɵɵproperty,
   ɵɵpureFunction1,
   ɵɵpureFunction2,
   ɵɵpureFunction4,
   ɵɵqueryRefresh,
+  ɵɵreference,
   ɵɵresetView,
   ɵɵrestoreView,
-  ɵɵsetNgModuleScope,
-  ɵɵstyleMap,
   ɵɵtemplate,
+  ɵɵtemplateRefExtractor,
   ɵɵtext,
   ɵɵtextInterpolate,
-  ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-JZFRVOZK.js";
-import "./chunk-WDMUDEB6.js";
+} from "./chunk-VKUFYADX.js";
 
-// node_modules/primeng/fesm2022/primeng-toast.mjs
-var theme = ({
-  dt
-}) => `
-.p-toast {
-    width: ${dt("toast.width")};
-    white-space: pre-line;
-    word-break: break-word;
-}
-
-.p-toast-message {
-    margin: 0 0 1rem 0;
-}
-
-.p-toast-message-icon {
-    flex-shrink: 0;
-    font-size: ${dt("toast.icon.size")};
-    width: ${dt("toast.icon.size")};
-    height: ${dt("toast.icon.size")};
-}
-
-.p-toast-message-content {
-    display: flex;
-    align-items: flex-start;
-    padding: ${dt("toast.content.padding")};
-    gap: ${dt("toast.content.gap")};
-}
-
-.p-toast-message-text {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    gap: ${dt("toast.text.gap")};
-}
-
-.p-toast-summary {
-    font-weight: ${dt("toast.summary.font.weight")};
-    font-size: ${dt("toast.summary.font.size")};
-}
-
-.p-toast-detail {
-    font-weight: ${dt("toast.detail.font.weight")};
-    font-size: ${dt("toast.detail.font.size")};
-}
-
-.p-toast-close-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    background: transparent;
-    transition: background ${dt("toast.transition.duration")}, color ${dt("toast.transition.duration")}, outline-color ${dt("toast.transition.duration")}, box-shadow ${dt("toast.transition.duration")};
-    outline-color: transparent;
-    color: inherit;
-    width: ${dt("toast.close.button.width")};
-    height: ${dt("toast.close.button.height")};
-    border-radius: ${dt("toast.close.button.border.radius")};
-    margin: -25% 0 0 0;
-    right: -25%;
-    padding: 0;
-    border: none;
-    user-select: none;
-}
-
-.p-toast-close-button:dir(rtl) {
-    margin: -25% 0 0 auto;
-    left: -25%;
-    right: auto;
-}
-
-.p-toast-message-info,
-.p-toast-message-success,
-.p-toast-message-warn,
-.p-toast-message-error,
-.p-toast-message-secondary,
-.p-toast-message-contrast {
-    border-width: ${dt("toast.border.width")};
-    border-style: solid;
-    backdrop-filter: blur(${dt("toast.blur")});
-    border-radius: ${dt("toast.border.radius")};
-}
-
-.p-toast-close-icon {
-    font-size: ${dt("toast.close.icon.size")};
-    width: ${dt("toast.close.icon.size")};
-    height: ${dt("toast.close.icon.size")};
-}
-
-.p-toast-close-button:focus-visible {
-    outline-width: ${dt("focus.ring.width")};
-    outline-style: ${dt("focus.ring.style")};
-    outline-offset: ${dt("focus.ring.offset")};
-}
-
-.p-toast-message-info {
-    background: ${dt("toast.info.background")};
-    border-color: ${dt("toast.info.border.color")};
-    color: ${dt("toast.info.color")};
-    box-shadow: ${dt("toast.info.shadow")};
-}
-
-.p-toast-message-info .p-toast-detail {
-    color: ${dt("toast.info.detail.color")};
-}
-
-.p-toast-message-info .p-toast-close-button:focus-visible {
-    outline-color: ${dt("toast.info.close.button.focus.ring.color")};
-    box-shadow: ${dt("toast.info.close.button.focus.ring.shadow")};
-}
-
-.p-toast-message-info .p-toast-close-button:hover {
-    background: ${dt("toast.info.close.button.hover.background")};
-}
-
-.p-toast-message-success {
-    background: ${dt("toast.success.background")};
-    border-color: ${dt("toast.success.border.color")};
-    color: ${dt("toast.success.color")};
-    box-shadow: ${dt("toast.success.shadow")};
-}
-
-.p-toast-message-success .p-toast-detail {
-    color: ${dt("toast.success.detail.color")};
-}
-
-.p-toast-message-success .p-toast-close-button:focus-visible {
-    outline-color: ${dt("toast.success.close.button.focus.ring.color")};
-    box-shadow: ${dt("toast.success.close.button.focus.ring.shadow")};
-}
-
-.p-toast-message-success .p-toast-close-button:hover {
-    background: ${dt("toast.success.close.button.hover.background")};
-}
-
-.p-toast-message-warn {
-    background: ${dt("toast.warn.background")};
-    border-color: ${dt("toast.warn.border.color")};
-    color: ${dt("toast.warn.color")};
-    box-shadow: ${dt("toast.warn.shadow")};
-}
-
-.p-toast-message-warn .p-toast-detail {
-    color: ${dt("toast.warn.detail.color")};
-}
-
-.p-toast-message-warn .p-toast-close-button:focus-visible {
-    outline-color: ${dt("toast.warn.close.button.focus.ring.color")};
-    box-shadow: ${dt("toast.warn.close.button.focus.ring.shadow")};
-}
-
-.p-toast-message-warn .p-toast-close-button:hover {
-    background: ${dt("toast.warn.close.button.hover.background")};
-}
-
-.p-toast-message-error {
-    background: ${dt("toast.error.background")};
-    border-color: ${dt("toast.error.border.color")};
-    color: ${dt("toast.error.color")};
-    box-shadow: ${dt("toast.error.shadow")};
-}
-
-.p-toast-message-error .p-toast-detail {
-    color: ${dt("toast.error.detail.color")};
-}
-
-.p-toast-message-error .p-toast-close-button:focus-visible {
-    outline-color: ${dt("toast.error.close.button.focus.ring.color")};
-    box-shadow: ${dt("toast.error.close.button.focus.ring.shadow")};
-}
-
-.p-toast-message-error .p-toast-close-button:hover {
-    background: ${dt("toast.error.close.button.hover.background")};
-}
-
-.p-toast-message-secondary {
-    background: ${dt("toast.secondary.background")};
-    border-color: ${dt("toast.secondary.border.color")};
-    color: ${dt("toast.secondary.color")};
-    box-shadow: ${dt("toast.secondary.shadow")};
-}
-
-.p-toast-message-secondary .p-toast-detail {
-    color: ${dt("toast.secondary.detail.color")};
-}
-
-.p-toast-message-secondary .p-toast-close-button:focus-visible {
-    outline-color: ${dt("toast.secondary.close.button.focus.ring.color")};
-    box-shadow: ${dt("toast.secondary.close.button.focus.ring.shadow")};
-}
-
-.p-toast-message-secondary .p-toast-close-button:hover {
-    background: ${dt("toast.secondary.close.button.hover.background")};
-}
-
-.p-toast-message-contrast {
-    background: ${dt("toast.contrast.background")};
-    border-color: ${dt("toast.contrast.border.color")};
-    color: ${dt("toast.contrast.color")};
-    box-shadow: ${dt("toast.contrast.shadow")};
-}
-
-.p-toast-message-contrast .p-toast-detail {
-    color: ${dt("toast.contrast.detail.color")};
-}
-
-.p-toast-message-contrast .p-toast-close-button:focus-visible {
-    outline-color: ${dt("toast.contrast.close.button.focus.ring.color")};
-    box-shadow: ${dt("toast.contrast.close.button.focus.ring.shadow")};
-}
-
-.p-toast-message-contrast .p-toast-close-button:hover {
-    background: ${dt("toast.contrast.close.button.hover.background")};
-}
-
-.p-toast-top-center {
-    transform: translateX(-50%);
-}
-
-.p-toast-bottom-center {
-    transform: translateX(-50%);
-}
-
-.p-toast-center {
-    min-width: 20vw;
-    transform: translate(-50%, -50%);
-}
-
-.p-toast-message-enter-from {
-    opacity: 0;
-    transform: translateY(50%);
-}
-
-.p-toast-message-leave-from {
-    max-height: 1000px;
-}
-
-.p-toast .p-toast-message.p-toast-message-leave-to {
-    max-height: 0;
-    opacity: 0;
-    margin-bottom: 0;
-    overflow: hidden;
-}
-
-.p-toast-message-enter-active {
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-.p-toast-message-leave-active {
-    transition: max-height 0.45s cubic-bezier(0, 1, 0, 1), opacity 0.3s, margin-bottom 0.3s;
-}
-`;
-var inlineStyles = {
-  root: ({
-    instance
-  }) => {
-    const {
-      _position
-    } = instance;
-    return {
-      position: "fixed",
-      top: _position === "top-right" || _position === "top-left" || _position === "top-center" ? "20px" : _position === "center" ? "50%" : null,
-      right: (_position === "top-right" || _position === "bottom-right") && "20px",
-      bottom: (_position === "bottom-left" || _position === "bottom-right" || _position === "bottom-center") && "20px",
-      left: _position === "top-left" || _position === "bottom-left" ? "20px" : _position === "center" || _position === "top-center" || _position === "bottom-center" ? "50%" : null
-    };
+// node_modules/primeng/fesm2022/primeng-icons-exclamationtriangle.mjs
+var ExclamationTriangleIcon = class _ExclamationTriangleIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
   }
-};
-var classes = {
-  root: ({
-    instance
-  }) => ({
-    "p-toast p-component": true,
-    [`p-toast-${instance._position}`]: !!instance._position
-  }),
-  message: ({
-    instance
-  }) => ({
-    "p-toast-message": true,
-    "p-toast-message-info": instance.message.severity === "info" || instance.message.severity === void 0,
-    "p-toast-message-warn": instance.message.severity === "warn",
-    "p-toast-message-error": instance.message.severity === "error",
-    "p-toast-message-success": instance.message.severity === "success",
-    "p-toast-message-secondary": instance.message.severity === "secondary",
-    "p-toast-message-contrast": instance.message.severity === "contrast"
-  }),
-  messageContent: "p-toast-message-content",
-  messageIcon: ({
-    instance
-  }) => ({
-    "p-toast-message-icon": true,
-    [`pi ${instance.message.icon}`]: !!instance.message.icon
-  }),
-  messageText: "p-toast-message-text",
-  summary: "p-toast-summary",
-  detail: "p-toast-detail",
-  closeButton: "p-toast-close-button",
-  closeIcon: ({
-    instance
-  }) => ({
-    "p-toast-close-icon": true,
-    [`pi ${instance.message.closeIcon}`]: !!instance.message.closeIcon
-  })
-};
-var ToastStyle = class _ToastStyle extends BaseStyle {
-  name = "toast";
-  theme = theme;
-  classes = classes;
-  inlineStyles = inlineStyles;
   static ɵfac = /* @__PURE__ */ (() => {
-    let ɵToastStyle_BaseFactory;
-    return function ToastStyle_Factory(__ngFactoryType__) {
-      return (ɵToastStyle_BaseFactory || (ɵToastStyle_BaseFactory = ɵɵgetInheritedFactory(_ToastStyle)))(__ngFactoryType__ || _ToastStyle);
+    let ɵExclamationTriangleIcon_BaseFactory;
+    return function ExclamationTriangleIcon_Factory(__ngFactoryType__) {
+      return (ɵExclamationTriangleIcon_BaseFactory || (ɵExclamationTriangleIcon_BaseFactory = ɵɵgetInheritedFactory(_ExclamationTriangleIcon)))(__ngFactoryType__ || _ExclamationTriangleIcon);
     };
   })();
-  static ɵprov = ɵɵdefineInjectable({
-    token: _ToastStyle,
-    factory: _ToastStyle.ɵfac
+  static ɵcmp = ɵɵdefineComponent({
+    type: _ExclamationTriangleIcon,
+    selectors: [["ExclamationTriangleIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 8,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["d", "M13.4018 13.1893H0.598161C0.49329 13.189 0.390283 13.1615 0.299143 13.1097C0.208003 13.0578 0.131826 12.9832 0.0780112 12.8932C0.0268539 12.8015 0 12.6982 0 12.5931C0 12.4881 0.0268539 12.3848 0.0780112 12.293L6.47985 1.08982C6.53679 1.00399 6.61408 0.933574 6.70484 0.884867C6.7956 0.836159 6.897 0.810669 7 0.810669C7.103 0.810669 7.2044 0.836159 7.29516 0.884867C7.38592 0.933574 7.46321 1.00399 7.52015 1.08982L13.922 12.293C13.9731 12.3848 14 12.4881 14 12.5931C14 12.6982 13.9731 12.8015 13.922 12.8932C13.8682 12.9832 13.792 13.0578 13.7009 13.1097C13.6097 13.1615 13.5067 13.189 13.4018 13.1893ZM1.63046 11.989H12.3695L7 2.59425L1.63046 11.989Z", "fill", "currentColor"], ["d", "M6.99996 8.78801C6.84143 8.78594 6.68997 8.72204 6.57787 8.60993C6.46576 8.49782 6.40186 8.34637 6.39979 8.18784V5.38703C6.39979 5.22786 6.46302 5.0752 6.57557 4.96265C6.68813 4.85009 6.84078 4.78686 6.99996 4.78686C7.15914 4.78686 7.31179 4.85009 7.42435 4.96265C7.5369 5.0752 7.60013 5.22786 7.60013 5.38703V8.18784C7.59806 8.34637 7.53416 8.49782 7.42205 8.60993C7.30995 8.72204 7.15849 8.78594 6.99996 8.78801Z", "fill", "currentColor"], ["d", "M6.99996 11.1887C6.84143 11.1866 6.68997 11.1227 6.57787 11.0106C6.46576 10.8985 6.40186 10.7471 6.39979 10.5885V10.1884C6.39979 10.0292 6.46302 9.87658 6.57557 9.76403C6.68813 9.65147 6.84078 9.58824 6.99996 9.58824C7.15914 9.58824 7.31179 9.65147 7.42435 9.76403C7.5369 9.87658 7.60013 10.0292 7.60013 10.1884V10.5885C7.59806 10.7471 7.53416 10.8985 7.42205 11.0106C7.30995 11.1227 7.15849 11.1866 6.99996 11.1887Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function ExclamationTriangleIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1)(3, "path", 2)(4, "path", 3);
+        ɵɵelementEnd();
+        ɵɵelementStart(5, "defs")(6, "clipPath", 4);
+        ɵɵelement(7, "rect", 5);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(5);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
   });
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToastStyle, [{
-    type: Injectable
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ExclamationTriangleIcon, [{
+    type: Component,
+    args: [{
+      selector: "ExclamationTriangleIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    d="M13.4018 13.1893H0.598161C0.49329 13.189 0.390283 13.1615 0.299143 13.1097C0.208003 13.0578 0.131826 12.9832 0.0780112 12.8932C0.0268539 12.8015 0 12.6982 0 12.5931C0 12.4881 0.0268539 12.3848 0.0780112 12.293L6.47985 1.08982C6.53679 1.00399 6.61408 0.933574 6.70484 0.884867C6.7956 0.836159 6.897 0.810669 7 0.810669C7.103 0.810669 7.2044 0.836159 7.29516 0.884867C7.38592 0.933574 7.46321 1.00399 7.52015 1.08982L13.922 12.293C13.9731 12.3848 14 12.4881 14 12.5931C14 12.6982 13.9731 12.8015 13.922 12.8932C13.8682 12.9832 13.792 13.0578 13.7009 13.1097C13.6097 13.1615 13.5067 13.189 13.4018 13.1893ZM1.63046 11.989H12.3695L7 2.59425L1.63046 11.989Z"
+                    fill="currentColor"
+                />
+                <path
+                    d="M6.99996 8.78801C6.84143 8.78594 6.68997 8.72204 6.57787 8.60993C6.46576 8.49782 6.40186 8.34637 6.39979 8.18784V5.38703C6.39979 5.22786 6.46302 5.0752 6.57557 4.96265C6.68813 4.85009 6.84078 4.78686 6.99996 4.78686C7.15914 4.78686 7.31179 4.85009 7.42435 4.96265C7.5369 5.0752 7.60013 5.22786 7.60013 5.38703V8.18784C7.59806 8.34637 7.53416 8.49782 7.42205 8.60993C7.30995 8.72204 7.15849 8.78594 6.99996 8.78801Z"
+                    fill="currentColor"
+                />
+                <path
+                    d="M6.99996 11.1887C6.84143 11.1866 6.68997 11.1227 6.57787 11.0106C6.46576 10.8985 6.40186 10.7471 6.39979 10.5885V10.1884C6.39979 10.0292 6.46302 9.87658 6.57557 9.76403C6.68813 9.65147 6.84078 9.58824 6.99996 9.58824C7.15914 9.58824 7.31179 9.65147 7.42435 9.76403C7.5369 9.87658 7.60013 10.0292 7.60013 10.1884V10.5885C7.59806 10.7471 7.53416 10.8985 7.42205 11.0106C7.30995 11.1227 7.15849 11.1866 6.99996 11.1887Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
   }], null, null);
 })();
-var ToastClasses;
-(function(ToastClasses2) {
-  ToastClasses2["root"] = "p-toast";
-  ToastClasses2["message"] = "p-toast-message";
-  ToastClasses2["messageContent"] = "p-toast-message-content";
-  ToastClasses2["messageIcon"] = "p-toast-message-icon";
-  ToastClasses2["messageText"] = "p-toast-message-text";
-  ToastClasses2["summary"] = "p-toast-summary";
-  ToastClasses2["detail"] = "p-toast-detail";
-  ToastClasses2["closeButton"] = "p-toast-close-button";
-  ToastClasses2["closeIcon"] = "p-toast-close-icon";
-})(ToastClasses || (ToastClasses = {}));
+
+// node_modules/primeng/fesm2022/primeng-icons-infocircle.mjs
+var InfoCircleIcon = class _InfoCircleIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
+  static ɵfac = /* @__PURE__ */ (() => {
+    let ɵInfoCircleIcon_BaseFactory;
+    return function InfoCircleIcon_Factory(__ngFactoryType__) {
+      return (ɵInfoCircleIcon_BaseFactory || (ɵInfoCircleIcon_BaseFactory = ɵɵgetInheritedFactory(_InfoCircleIcon)))(__ngFactoryType__ || _InfoCircleIcon);
+    };
+  })();
+  static ɵcmp = ɵɵdefineComponent({
+    type: _InfoCircleIcon,
+    selectors: [["InfoCircleIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 6,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M3.11101 12.8203C4.26215 13.5895 5.61553 14 7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.61553 13.5895 4.26215 12.8203 3.11101C12.0511 1.95987 10.9579 1.06266 9.67879 0.532846C8.3997 0.00303296 6.99224 -0.13559 5.63437 0.134506C4.2765 0.404603 3.02922 1.07129 2.05026 2.05026C1.07129 3.02922 0.404603 4.2765 0.134506 5.63437C-0.13559 6.99224 0.00303296 8.3997 0.532846 9.67879C1.06266 10.9579 1.95987 12.0511 3.11101 12.8203ZM3.75918 2.14976C4.71846 1.50879 5.84628 1.16667 7 1.16667C8.5471 1.16667 10.0308 1.78125 11.1248 2.87521C12.2188 3.96918 12.8333 5.45291 12.8333 7C12.8333 8.15373 12.4912 9.28154 11.8502 10.2408C11.2093 11.2001 10.2982 11.9478 9.23232 12.3893C8.16642 12.8308 6.99353 12.9463 5.86198 12.7212C4.73042 12.4962 3.69102 11.9406 2.87521 11.1248C2.05941 10.309 1.50384 9.26958 1.27876 8.13803C1.05367 7.00647 1.16919 5.83358 1.61071 4.76768C2.05222 3.70178 2.79989 2.79074 3.75918 2.14976ZM7.00002 4.8611C6.84594 4.85908 6.69873 4.79698 6.58977 4.68801C6.48081 4.57905 6.4187 4.43185 6.41669 4.27776V3.88888C6.41669 3.73417 6.47815 3.58579 6.58754 3.4764C6.69694 3.367 6.84531 3.30554 7.00002 3.30554C7.15473 3.30554 7.3031 3.367 7.4125 3.4764C7.52189 3.58579 7.58335 3.73417 7.58335 3.88888V4.27776C7.58134 4.43185 7.51923 4.57905 7.41027 4.68801C7.30131 4.79698 7.1541 4.85908 7.00002 4.8611ZM7.00002 10.6945C6.84594 10.6925 6.69873 10.6304 6.58977 10.5214C6.48081 10.4124 6.4187 10.2652 6.41669 10.1111V6.22225C6.41669 6.06754 6.47815 5.91917 6.58754 5.80977C6.69694 5.70037 6.84531 5.63892 7.00002 5.63892C7.15473 5.63892 7.3031 5.70037 7.4125 5.80977C7.52189 5.91917 7.58335 6.06754 7.58335 6.22225V10.1111C7.58134 10.2652 7.51923 10.4124 7.41027 10.5214C7.30131 10.6304 7.1541 10.6925 7.00002 10.6945Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function InfoCircleIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+        ɵɵelement(5, "rect", 3);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(3);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InfoCircleIcon, [{
+    type: Component,
+    args: [{
+      selector: "InfoCircleIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.11101 12.8203C4.26215 13.5895 5.61553 14 7 14C8.85652 14 10.637 13.2625 11.9497 11.9497C13.2625 10.637 14 8.85652 14 7C14 5.61553 13.5895 4.26215 12.8203 3.11101C12.0511 1.95987 10.9579 1.06266 9.67879 0.532846C8.3997 0.00303296 6.99224 -0.13559 5.63437 0.134506C4.2765 0.404603 3.02922 1.07129 2.05026 2.05026C1.07129 3.02922 0.404603 4.2765 0.134506 5.63437C-0.13559 6.99224 0.00303296 8.3997 0.532846 9.67879C1.06266 10.9579 1.95987 12.0511 3.11101 12.8203ZM3.75918 2.14976C4.71846 1.50879 5.84628 1.16667 7 1.16667C8.5471 1.16667 10.0308 1.78125 11.1248 2.87521C12.2188 3.96918 12.8333 5.45291 12.8333 7C12.8333 8.15373 12.4912 9.28154 11.8502 10.2408C11.2093 11.2001 10.2982 11.9478 9.23232 12.3893C8.16642 12.8308 6.99353 12.9463 5.86198 12.7212C4.73042 12.4962 3.69102 11.9406 2.87521 11.1248C2.05941 10.309 1.50384 9.26958 1.27876 8.13803C1.05367 7.00647 1.16919 5.83358 1.61071 4.76768C2.05222 3.70178 2.79989 2.79074 3.75918 2.14976ZM7.00002 4.8611C6.84594 4.85908 6.69873 4.79698 6.58977 4.68801C6.48081 4.57905 6.4187 4.43185 6.41669 4.27776V3.88888C6.41669 3.73417 6.47815 3.58579 6.58754 3.4764C6.69694 3.367 6.84531 3.30554 7.00002 3.30554C7.15473 3.30554 7.3031 3.367 7.4125 3.4764C7.52189 3.58579 7.58335 3.73417 7.58335 3.88888V4.27776C7.58134 4.43185 7.51923 4.57905 7.41027 4.68801C7.30131 4.79698 7.1541 4.85908 7.00002 4.8611ZM7.00002 10.6945C6.84594 10.6925 6.69873 10.6304 6.58977 10.5214C6.48081 10.4124 6.4187 10.2652 6.41669 10.1111V6.22225C6.41669 6.06754 6.47815 5.91917 6.58754 5.80977C6.69694 5.70037 6.84531 5.63892 7.00002 5.63892C7.15473 5.63892 7.3031 5.70037 7.4125 5.80977C7.52189 5.91917 7.58335 6.06754 7.58335 6.22225V10.1111C7.58134 10.2652 7.51923 10.4124 7.41027 10.5214C7.30131 10.6304 7.1541 10.6925 7.00002 10.6945Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-icons-timescircle.mjs
+var TimesCircleIcon = class _TimesCircleIcon extends BaseIcon {
+  pathId;
+  ngOnInit() {
+    this.pathId = "url(#" + UniqueComponentId() + ")";
+  }
+  static ɵfac = /* @__PURE__ */ (() => {
+    let ɵTimesCircleIcon_BaseFactory;
+    return function TimesCircleIcon_Factory(__ngFactoryType__) {
+      return (ɵTimesCircleIcon_BaseFactory || (ɵTimesCircleIcon_BaseFactory = ɵɵgetInheritedFactory(_TimesCircleIcon)))(__ngFactoryType__ || _TimesCircleIcon);
+    };
+  })();
+  static ɵcmp = ɵɵdefineComponent({
+    type: _TimesCircleIcon,
+    selectors: [["TimesCircleIcon"]],
+    standalone: true,
+    features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    decls: 6,
+    vars: 7,
+    consts: [["width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none", "xmlns", "http://www.w3.org/2000/svg"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M7 14C5.61553 14 4.26215 13.5895 3.11101 12.8203C1.95987 12.0511 1.06266 10.9579 0.532846 9.67879C0.00303296 8.3997 -0.13559 6.99224 0.134506 5.63437C0.404603 4.2765 1.07129 3.02922 2.05026 2.05026C3.02922 1.07129 4.2765 0.404603 5.63437 0.134506C6.99224 -0.13559 8.3997 0.00303296 9.67879 0.532846C10.9579 1.06266 12.0511 1.95987 12.8203 3.11101C13.5895 4.26215 14 5.61553 14 7C14 8.85652 13.2625 10.637 11.9497 11.9497C10.637 13.2625 8.85652 14 7 14ZM7 1.16667C5.84628 1.16667 4.71846 1.50879 3.75918 2.14976C2.79989 2.79074 2.05222 3.70178 1.61071 4.76768C1.16919 5.83358 1.05367 7.00647 1.27876 8.13803C1.50384 9.26958 2.05941 10.309 2.87521 11.1248C3.69102 11.9406 4.73042 12.4962 5.86198 12.7212C6.99353 12.9463 8.16642 12.8308 9.23232 12.3893C10.2982 11.9478 11.2093 11.2001 11.8502 10.2408C12.4912 9.28154 12.8333 8.15373 12.8333 7C12.8333 5.45291 12.2188 3.96918 11.1248 2.87521C10.0308 1.78125 8.5471 1.16667 7 1.16667ZM4.66662 9.91668C4.58998 9.91704 4.51404 9.90209 4.44325 9.87271C4.37246 9.84333 4.30826 9.8001 4.2544 9.74557C4.14516 9.6362 4.0838 9.48793 4.0838 9.33335C4.0838 9.17876 4.14516 9.0305 4.2544 8.92113L6.17553 7L4.25443 5.07891C4.15139 4.96832 4.09529 4.82207 4.09796 4.67094C4.10063 4.51982 4.16185 4.37563 4.26872 4.26876C4.3756 4.16188 4.51979 4.10066 4.67091 4.09799C4.82204 4.09532 4.96829 4.15142 5.07887 4.25446L6.99997 6.17556L8.92106 4.25446C9.03164 4.15142 9.1779 4.09532 9.32903 4.09799C9.48015 4.10066 9.62434 4.16188 9.73121 4.26876C9.83809 4.37563 9.89931 4.51982 9.90198 4.67094C9.90464 4.82207 9.84855 4.96832 9.74551 5.07891L7.82441 7L9.74554 8.92113C9.85478 9.0305 9.91614 9.17876 9.91614 9.33335C9.91614 9.48793 9.85478 9.6362 9.74554 9.74557C9.69168 9.8001 9.62748 9.84333 9.55669 9.87271C9.4859 9.90209 9.40996 9.91704 9.33332 9.91668C9.25668 9.91704 9.18073 9.90209 9.10995 9.87271C9.03916 9.84333 8.97495 9.8001 8.9211 9.74557L6.99997 7.82444L5.07884 9.74557C5.02499 9.8001 4.96078 9.84333 4.88999 9.87271C4.81921 9.90209 4.74326 9.91704 4.66662 9.91668Z", "fill", "currentColor"], [3, "id"], ["width", "14", "height", "14", "fill", "white"]],
+    template: function TimesCircleIcon_Template(rf, ctx) {
+      if (rf & 1) {
+        ɵɵnamespaceSVG();
+        ɵɵelementStart(0, "svg", 0)(1, "g");
+        ɵɵelement(2, "path", 1);
+        ɵɵelementEnd();
+        ɵɵelementStart(3, "defs")(4, "clipPath", 2);
+        ɵɵelement(5, "rect", 3);
+        ɵɵelementEnd()()();
+      }
+      if (rf & 2) {
+        ɵɵclassMap(ctx.getClassNames());
+        ɵɵattribute("aria-label", ctx.ariaLabel)("aria-hidden", ctx.ariaHidden)("role", ctx.role);
+        ɵɵadvance();
+        ɵɵattribute("clip-path", ctx.pathId);
+        ɵɵadvance(3);
+        ɵɵproperty("id", ctx.pathId);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TimesCircleIcon, [{
+    type: Component,
+    args: [{
+      selector: "TimesCircleIcon",
+      standalone: true,
+      imports: [BaseIcon],
+      template: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" [attr.aria-label]="ariaLabel" [attr.aria-hidden]="ariaHidden" [attr.role]="role" [class]="getClassNames()">
+            <g [attr.clip-path]="pathId">
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7 14C5.61553 14 4.26215 13.5895 3.11101 12.8203C1.95987 12.0511 1.06266 10.9579 0.532846 9.67879C0.00303296 8.3997 -0.13559 6.99224 0.134506 5.63437C0.404603 4.2765 1.07129 3.02922 2.05026 2.05026C3.02922 1.07129 4.2765 0.404603 5.63437 0.134506C6.99224 -0.13559 8.3997 0.00303296 9.67879 0.532846C10.9579 1.06266 12.0511 1.95987 12.8203 3.11101C13.5895 4.26215 14 5.61553 14 7C14 8.85652 13.2625 10.637 11.9497 11.9497C10.637 13.2625 8.85652 14 7 14ZM7 1.16667C5.84628 1.16667 4.71846 1.50879 3.75918 2.14976C2.79989 2.79074 2.05222 3.70178 1.61071 4.76768C1.16919 5.83358 1.05367 7.00647 1.27876 8.13803C1.50384 9.26958 2.05941 10.309 2.87521 11.1248C3.69102 11.9406 4.73042 12.4962 5.86198 12.7212C6.99353 12.9463 8.16642 12.8308 9.23232 12.3893C10.2982 11.9478 11.2093 11.2001 11.8502 10.2408C12.4912 9.28154 12.8333 8.15373 12.8333 7C12.8333 5.45291 12.2188 3.96918 11.1248 2.87521C10.0308 1.78125 8.5471 1.16667 7 1.16667ZM4.66662 9.91668C4.58998 9.91704 4.51404 9.90209 4.44325 9.87271C4.37246 9.84333 4.30826 9.8001 4.2544 9.74557C4.14516 9.6362 4.0838 9.48793 4.0838 9.33335C4.0838 9.17876 4.14516 9.0305 4.2544 8.92113L6.17553 7L4.25443 5.07891C4.15139 4.96832 4.09529 4.82207 4.09796 4.67094C4.10063 4.51982 4.16185 4.37563 4.26872 4.26876C4.3756 4.16188 4.51979 4.10066 4.67091 4.09799C4.82204 4.09532 4.96829 4.15142 5.07887 4.25446L6.99997 6.17556L8.92106 4.25446C9.03164 4.15142 9.1779 4.09532 9.32903 4.09799C9.48015 4.10066 9.62434 4.16188 9.73121 4.26876C9.83809 4.37563 9.89931 4.51982 9.90198 4.67094C9.90464 4.82207 9.84855 4.96832 9.74551 5.07891L7.82441 7L9.74554 8.92113C9.85478 9.0305 9.91614 9.17876 9.91614 9.33335C9.91614 9.48793 9.85478 9.6362 9.74554 9.74557C9.69168 9.8001 9.62748 9.84333 9.55669 9.87271C9.4859 9.90209 9.40996 9.91704 9.33332 9.91668C9.25668 9.91704 9.18073 9.90209 9.10995 9.87271C9.03916 9.84333 8.97495 9.8001 8.9211 9.74557L6.99997 7.82444L5.07884 9.74557C5.02499 9.8001 4.96078 9.84333 4.88999 9.87271C4.81921 9.90209 4.74326 9.91704 4.66662 9.91668Z"
+                    fill="currentColor"
+                />
+            </g>
+            <defs>
+                <clipPath [id]="pathId">
+                    <rect width="14" height="14" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    `
+    }]
+  }], null, null);
+})();
+
+// node_modules/primeng/fesm2022/primeng-toast.mjs
 var _c0 = ["container"];
-var _c1 = (a0, a1, a2, a3) => ({
+var _c1 = (a0) => [a0, "p-toast-message"];
+var _c2 = (a0, a1, a2, a3) => ({
   showTransformParams: a0,
   hideTransformParams: a1,
   showTransitionParams: a2,
   hideTransitionParams: a3
 });
-var _c2 = (a0) => ({
+var _c3 = (a0) => ({
   value: "visible",
   params: a0
 });
-var _c3 = (a0, a1) => ({
+var _c4 = (a0, a1) => ({
   $implicit: a0,
   closeFn: a1
 });
-var _c4 = (a0) => ({
+var _c5 = (a0) => ({
   $implicit: a0
 });
-function ToastItem_Conditional_2_ng_container_0_Template(rf, ctx) {
+function ToastItem_ng_container_2_ng_container_1_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainer(0);
   }
 }
-function ToastItem_Conditional_2_Template(rf, ctx) {
+function ToastItem_ng_container_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, ToastItem_Conditional_2_ng_container_0_Template, 1, 0, "ng-container", 3);
+    ɵɵelementContainerStart(0);
+    ɵɵtemplate(1, ToastItem_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 4);
+    ɵɵelementContainerEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.headlessTemplate)("ngTemplateOutletContext", ɵɵpureFunction2(2, _c3, ctx_r1.message, ctx_r1.onCloseIconClick));
+    ɵɵadvance();
+    ɵɵproperty("ngTemplateOutlet", ctx_r1.headlessTemplate)("ngTemplateOutletContext", ɵɵpureFunction2(2, _c4, ctx_r1.message, ctx_r1.onCloseIconClick));
   }
 }
-function ToastItem_Conditional_3_ng_container_1_span_1_Template(rf, ctx) {
+function ToastItem_ng_template_3_ng_container_1_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "span", 4);
+    ɵɵelement(0, "span");
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext(3);
-    ɵɵproperty("ngClass", ctx_r1.cx("messageIcon"));
+    ɵɵclassMap("p-toast-message-icon pi " + ctx_r1.message.icon);
   }
 }
-function ToastItem_Conditional_3_ng_container_1_span_2_Case_1_Template(rf, ctx) {
+function ToastItem_ng_template_3_ng_container_1_span_2_CheckIcon_2_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelement(0, "CheckIcon");
   }
@@ -490,7 +362,7 @@ function ToastItem_Conditional_3_ng_container_1_span_2_Case_1_Template(rf, ctx) 
     ɵɵattribute("aria-hidden", true)("data-pc-section", "icon");
   }
 }
-function ToastItem_Conditional_3_ng_container_1_span_2_Case_2_Template(rf, ctx) {
+function ToastItem_ng_template_3_ng_container_1_span_2_InfoCircleIcon_3_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelement(0, "InfoCircleIcon");
   }
@@ -498,7 +370,7 @@ function ToastItem_Conditional_3_ng_container_1_span_2_Case_2_Template(rf, ctx) 
     ɵɵattribute("aria-hidden", true)("data-pc-section", "icon");
   }
 }
-function ToastItem_Conditional_3_ng_container_1_span_2_Case_3_Template(rf, ctx) {
+function ToastItem_ng_template_3_ng_container_1_span_2_TimesCircleIcon_4_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelement(0, "TimesCircleIcon");
   }
@@ -506,7 +378,7 @@ function ToastItem_Conditional_3_ng_container_1_span_2_Case_3_Template(rf, ctx) 
     ɵɵattribute("aria-hidden", true)("data-pc-section", "icon");
   }
 }
-function ToastItem_Conditional_3_ng_container_1_span_2_Case_4_Template(rf, ctx) {
+function ToastItem_ng_template_3_ng_container_1_span_2_ExclamationTriangleIcon_5_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelement(0, "ExclamationTriangleIcon");
   }
@@ -514,37 +386,35 @@ function ToastItem_Conditional_3_ng_container_1_span_2_Case_4_Template(rf, ctx) 
     ɵɵattribute("aria-hidden", true)("data-pc-section", "icon");
   }
 }
-function ToastItem_Conditional_3_ng_container_1_span_2_Case_5_Template(rf, ctx) {
+function ToastItem_ng_template_3_ng_container_1_span_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "InfoCircleIcon");
-  }
-  if (rf & 2) {
-    ɵɵattribute("aria-hidden", true)("data-pc-section", "icon");
-  }
-}
-function ToastItem_Conditional_3_ng_container_1_span_2_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵelementStart(0, "span", 4);
-    ɵɵtemplate(1, ToastItem_Conditional_3_ng_container_1_span_2_Case_1_Template, 1, 2, "CheckIcon")(2, ToastItem_Conditional_3_ng_container_1_span_2_Case_2_Template, 1, 2, "InfoCircleIcon")(3, ToastItem_Conditional_3_ng_container_1_span_2_Case_3_Template, 1, 2, "TimesCircleIcon")(4, ToastItem_Conditional_3_ng_container_1_span_2_Case_4_Template, 1, 2, "ExclamationTriangleIcon")(5, ToastItem_Conditional_3_ng_container_1_span_2_Case_5_Template, 1, 2, "InfoCircleIcon");
+    ɵɵelementStart(0, "span", 13);
+    ɵɵelementContainerStart(1);
+    ɵɵtemplate(2, ToastItem_ng_template_3_ng_container_1_span_2_CheckIcon_2_Template, 1, 2, "CheckIcon", 6)(3, ToastItem_ng_template_3_ng_container_1_span_2_InfoCircleIcon_3_Template, 1, 2, "InfoCircleIcon", 6)(4, ToastItem_ng_template_3_ng_container_1_span_2_TimesCircleIcon_4_Template, 1, 2, "TimesCircleIcon", 6)(5, ToastItem_ng_template_3_ng_container_1_span_2_ExclamationTriangleIcon_5_Template, 1, 2, "ExclamationTriangleIcon", 6);
+    ɵɵelementContainerEnd();
     ɵɵelementEnd();
   }
   if (rf & 2) {
-    let tmp_7_0;
     const ctx_r1 = ɵɵnextContext(3);
-    ɵɵproperty("ngClass", ctx_r1.cx("messageIcon"));
     ɵɵattribute("aria-hidden", true)("data-pc-section", "icon");
+    ɵɵadvance(2);
+    ɵɵproperty("ngIf", ctx_r1.message.severity === "success");
     ɵɵadvance();
-    ɵɵconditional((tmp_7_0 = ctx_r1.message.severity) === "success" ? 1 : tmp_7_0 === "info" ? 2 : tmp_7_0 === "error" ? 3 : tmp_7_0 === "warn" ? 4 : 5);
+    ɵɵproperty("ngIf", ctx_r1.message.severity === "info");
+    ɵɵadvance();
+    ɵɵproperty("ngIf", ctx_r1.message.severity === "error");
+    ɵɵadvance();
+    ɵɵproperty("ngIf", ctx_r1.message.severity === "warn");
   }
 }
-function ToastItem_Conditional_3_ng_container_1_Template(rf, ctx) {
+function ToastItem_ng_template_3_ng_container_1_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, ToastItem_Conditional_3_ng_container_1_span_1_Template, 1, 1, "span", 7)(2, ToastItem_Conditional_3_ng_container_1_span_2_Template, 6, 4, "span", 7);
-    ɵɵelementStart(3, "div", 4)(4, "div", 4);
+    ɵɵtemplate(1, ToastItem_ng_template_3_ng_container_1_span_1_Template, 1, 2, "span", 8)(2, ToastItem_ng_template_3_ng_container_1_span_2_Template, 6, 6, "span", 9);
+    ɵɵelementStart(3, "div", 10)(4, "div", 11);
     ɵɵtext(5);
     ɵɵelementEnd();
-    ɵɵelementStart(6, "div", 4);
+    ɵɵelementStart(6, "div", 12);
     ɵɵtext(7);
     ɵɵelementEnd()();
     ɵɵelementContainerEnd();
@@ -556,98 +426,83 @@ function ToastItem_Conditional_3_ng_container_1_Template(rf, ctx) {
     ɵɵadvance();
     ɵɵproperty("ngIf", !ctx_r1.message.icon);
     ɵɵadvance();
-    ɵɵproperty("ngClass", ctx_r1.cx("messageText"));
     ɵɵattribute("data-pc-section", "text");
     ɵɵadvance();
-    ɵɵproperty("ngClass", ctx_r1.cx("summary"));
     ɵɵattribute("data-pc-section", "summary");
     ɵɵadvance();
-    ɵɵtextInterpolate1(" ", ctx_r1.message.summary, " ");
+    ɵɵtextInterpolate(ctx_r1.message.summary);
     ɵɵadvance();
-    ɵɵproperty("ngClass", ctx_r1.cx("detail"));
     ɵɵattribute("data-pc-section", "detail");
     ɵɵadvance();
     ɵɵtextInterpolate(ctx_r1.message.detail);
   }
 }
-function ToastItem_Conditional_3_ng_container_2_Template(rf, ctx) {
+function ToastItem_ng_template_3_ng_container_2_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainer(0);
   }
 }
-function ToastItem_Conditional_3_Conditional_3_Conditional_1_span_0_Template(rf, ctx) {
+function ToastItem_ng_template_3_button_3_span_1_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "span", 4);
-  }
-  if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(4);
-    ɵɵproperty("ngClass", ctx_r1.cx("closeIcon"));
-  }
-}
-function ToastItem_Conditional_3_Conditional_3_Conditional_1_Template(rf, ctx) {
-  if (rf & 1) {
-    ɵɵtemplate(0, ToastItem_Conditional_3_Conditional_3_Conditional_1_span_0_Template, 1, 1, "span", 7);
+    ɵɵelement(0, "span");
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext(3);
-    ɵɵproperty("ngIf", ctx_r1.message.closeIcon);
+    ɵɵclassMap("pt-1 text-base p-toast-message-icon pi " + ctx_r1.message.closeIcon);
   }
 }
-function ToastItem_Conditional_3_Conditional_3_Conditional_2_Template(rf, ctx) {
+function ToastItem_ng_template_3_button_3_TimesIcon_2_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "TimesIcon", 4);
+    ɵɵelement(0, "TimesIcon", 16);
   }
   if (rf & 2) {
-    const ctx_r1 = ɵɵnextContext(3);
-    ɵɵproperty("ngClass", ctx_r1.cx("closeIcon"));
+    ɵɵproperty("styleClass", "p-toast-icon-close-icon");
     ɵɵattribute("aria-hidden", true)("data-pc-section", "closeicon");
   }
 }
-function ToastItem_Conditional_3_Conditional_3_Template(rf, ctx) {
+function ToastItem_ng_template_3_button_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "p-button", 8);
-    ɵɵlistener("onClick", function ToastItem_Conditional_3_Conditional_3_Template_p_button_onClick_0_listener($event) {
+    ɵɵelementStart(0, "button", 14);
+    ɵɵlistener("click", function ToastItem_ng_template_3_button_3_Template_button_click_0_listener($event) {
       ɵɵrestoreView(_r3);
       const ctx_r1 = ɵɵnextContext(2);
       return ɵɵresetView(ctx_r1.onCloseIconClick($event));
-    })("keydown.enter", function ToastItem_Conditional_3_Conditional_3_Template_p_button_keydown_enter_0_listener($event) {
+    })("keydown.enter", function ToastItem_ng_template_3_button_3_Template_button_keydown_enter_0_listener($event) {
       ɵɵrestoreView(_r3);
       const ctx_r1 = ɵɵnextContext(2);
       return ɵɵresetView(ctx_r1.onCloseIconClick($event));
     });
-    ɵɵtemplate(1, ToastItem_Conditional_3_Conditional_3_Conditional_1_Template, 1, 1, "span", 4)(2, ToastItem_Conditional_3_Conditional_3_Conditional_2_Template, 1, 3, "TimesIcon", 4);
+    ɵɵtemplate(1, ToastItem_ng_template_3_button_3_span_1_Template, 1, 2, "span", 8)(2, ToastItem_ng_template_3_button_3_TimesIcon_2_Template, 1, 3, "TimesIcon", 15);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext(2);
-    ɵɵproperty("styleClass", ctx_r1.cx("closeButton"));
-    ɵɵattribute("ariaLabel", ctx_r1.closeAriaLabel)("data-pc-section", "closebutton");
+    ɵɵattribute("aria-label", ctx_r1.closeAriaLabel)("data-pc-section", "closebutton");
     ɵɵadvance();
-    ɵɵconditional(ctx_r1.message.closeIcon ? 1 : 2);
+    ɵɵproperty("ngIf", ctx_r1.message.closeIcon);
+    ɵɵadvance();
+    ɵɵproperty("ngIf", !ctx_r1.message.closeIcon);
   }
 }
-function ToastItem_Conditional_3_Template(rf, ctx) {
+function ToastItem_ng_template_3_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 4);
-    ɵɵtemplate(1, ToastItem_Conditional_3_ng_container_1_Template, 8, 10, "ng-container", 5)(2, ToastItem_Conditional_3_ng_container_2_Template, 1, 0, "ng-container", 3)(3, ToastItem_Conditional_3_Conditional_3_Template, 3, 4, "p-button", 6);
+    ɵɵelementStart(0, "div", 5);
+    ɵɵtemplate(1, ToastItem_ng_template_3_ng_container_1_Template, 8, 7, "ng-container", 6)(2, ToastItem_ng_template_3_ng_container_2_Template, 1, 0, "ng-container", 4)(3, ToastItem_ng_template_3_button_3_Template, 3, 4, "button", 7);
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
-    ɵɵclassMap(ctx_r1.message == null ? null : ctx_r1.message.contentStyleClass);
-    ɵɵproperty("ngClass", ctx_r1.cx("messageContent"));
+    ɵɵproperty("ngClass", ctx_r1.message == null ? null : ctx_r1.message.contentStyleClass);
     ɵɵattribute("data-pc-section", "content");
     ɵɵadvance();
     ɵɵproperty("ngIf", !ctx_r1.template);
     ɵɵadvance();
-    ɵɵproperty("ngTemplateOutlet", ctx_r1.template)("ngTemplateOutletContext", ɵɵpureFunction1(8, _c4, ctx_r1.message));
+    ɵɵproperty("ngTemplateOutlet", ctx_r1.template)("ngTemplateOutletContext", ɵɵpureFunction1(6, _c5, ctx_r1.message));
     ɵɵadvance();
-    ɵɵconditional((ctx_r1.message == null ? null : ctx_r1.message.closable) !== false ? 3 : -1);
+    ɵɵproperty("ngIf", (ctx_r1.message == null ? null : ctx_r1.message.closable) !== false);
   }
 }
-var _c5 = ["message"];
-var _c6 = ["headless"];
 function Toast_p_toastItem_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = ɵɵgetCurrentView();
@@ -671,11 +526,12 @@ function Toast_p_toastItem_2_Template(rf, ctx) {
     const msg_r3 = ctx.$implicit;
     const i_r4 = ctx.index;
     const ctx_r1 = ɵɵnextContext();
-    ɵɵproperty("message", msg_r3)("index", i_r4)("life", ctx_r1.life)("template", ctx_r1.template || ctx_r1._template)("headlessTemplate", ctx_r1.headlessTemplate || ctx_r1._headlessTemplate)("@toastAnimation", void 0)("showTransformOptions", ctx_r1.showTransformOptions)("hideTransformOptions", ctx_r1.hideTransformOptions)("showTransitionOptions", ctx_r1.showTransitionOptions)("hideTransitionOptions", ctx_r1.hideTransitionOptions);
+    ɵɵproperty("message", msg_r3)("index", i_r4)("life", ctx_r1.life)("template", ctx_r1.template)("headlessTemplate", ctx_r1.headlessTemplate)("@toastAnimation", void 0)("showTransformOptions", ctx_r1.showTransformOptions)("hideTransformOptions", ctx_r1.hideTransformOptions)("showTransitionOptions", ctx_r1.showTransitionOptions)("hideTransitionOptions", ctx_r1.hideTransitionOptions);
   }
 }
-var ToastItem = class _ToastItem extends BaseComponent {
+var ToastItem = class _ToastItem {
   zone;
+  config;
   message;
   index;
   life;
@@ -687,14 +543,12 @@ var ToastItem = class _ToastItem extends BaseComponent {
   hideTransitionOptions;
   onClose = new EventEmitter();
   containerViewChild;
-  _componentStyle = inject(ToastStyle);
   timeout;
-  constructor(zone) {
-    super();
+  constructor(zone, config) {
     this.zone = zone;
+    this.config = config;
   }
   ngAfterViewInit() {
-    super.ngAfterViewInit();
     this.initTimeout();
   }
   initTimeout() {
@@ -734,10 +588,9 @@ var ToastItem = class _ToastItem extends BaseComponent {
   }
   ngOnDestroy() {
     this.clearTimeout();
-    super.ngOnDestroy();
   }
   static ɵfac = function ToastItem_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ToastItem)(ɵɵdirectiveInject(NgZone));
+    return new (__ngFactoryType__ || _ToastItem)(ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(PrimeNGConfig));
   };
   static ɵcmp = ɵɵdefineComponent({
     type: _ToastItem,
@@ -751,6 +604,7 @@ var ToastItem = class _ToastItem extends BaseComponent {
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
       }
     },
+    hostAttrs: [1, "p-element"],
     inputs: {
       message: "message",
       index: [2, "index", "index", numberAttribute],
@@ -765,15 +619,14 @@ var ToastItem = class _ToastItem extends BaseComponent {
     outputs: {
       onClose: "onClose"
     },
-    standalone: true,
-    features: [ɵɵProvidersFeature([ToastStyle]), ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
-    decls: 4,
-    vars: 15,
-    consts: [["container", ""], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true", 3, "mouseenter", "mouseleave", "ngClass"], [3, "ngClass", "class"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngClass"], [4, "ngIf"], ["rounded", "", "text", "", 3, "styleClass"], [3, "ngClass", 4, "ngIf"], ["rounded", "", "text", "", 3, "onClick", "keydown.enter", "styleClass"]],
+    features: [ɵɵInputTransformsFeature],
+    decls: 5,
+    vars: 18,
+    consts: [["container", ""], ["notHeadless", ""], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true", 3, "mouseenter", "mouseleave", "ngClass"], [4, "ngIf", "ngIfElse"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "p-toast-message-content", 3, "ngClass"], [4, "ngIf"], ["type", "button", "class", "p-toast-icon-close p-link", "pRipple", "", 3, "click", "keydown.enter", 4, "ngIf"], [3, "class", 4, "ngIf"], ["class", "p-toast-message-icon", 4, "ngIf"], [1, "p-toast-message-text"], [1, "p-toast-summary"], [1, "p-toast-detail"], [1, "p-toast-message-icon"], ["type", "button", "pRipple", "", 1, "p-toast-icon-close", "p-link", 3, "click", "keydown.enter"], [3, "styleClass", 4, "ngIf"], [3, "styleClass"]],
     template: function ToastItem_Template(rf, ctx) {
       if (rf & 1) {
         const _r1 = ɵɵgetCurrentView();
-        ɵɵelementStart(0, "div", 1, 0);
+        ɵɵelementStart(0, "div", 2, 0);
         ɵɵlistener("mouseenter", function ToastItem_Template_div_mouseenter_0_listener() {
           ɵɵrestoreView(_r1);
           return ɵɵresetView(ctx.onMouseEnter());
@@ -781,18 +634,19 @@ var ToastItem = class _ToastItem extends BaseComponent {
           ɵɵrestoreView(_r1);
           return ɵɵresetView(ctx.onMouseLeave());
         });
-        ɵɵtemplate(2, ToastItem_Conditional_2_Template, 1, 5, "ng-container")(3, ToastItem_Conditional_3_Template, 4, 10, "div", 2);
+        ɵɵtemplate(2, ToastItem_ng_container_2_Template, 2, 5, "ng-container", 3)(3, ToastItem_ng_template_3_Template, 4, 8, "ng-template", null, 1, ɵɵtemplateRefExtractor);
         ɵɵelementEnd();
       }
       if (rf & 2) {
+        const notHeadless_r4 = ɵɵreference(4);
         ɵɵclassMap(ctx.message == null ? null : ctx.message.styleClass);
-        ɵɵproperty("ngClass", ctx.cx("message"))("@messageState", ɵɵpureFunction1(13, _c2, ɵɵpureFunction4(8, _c1, ctx.showTransformOptions, ctx.hideTransformOptions, ctx.showTransitionOptions, ctx.hideTransitionOptions)));
+        ɵɵproperty("ngClass", ɵɵpureFunction1(9, _c1, "p-toast-message-" + (ctx.message == null ? null : ctx.message.severity)))("@messageState", ɵɵpureFunction1(16, _c3, ɵɵpureFunction4(11, _c2, ctx.showTransformOptions, ctx.hideTransformOptions, ctx.showTransitionOptions, ctx.hideTransitionOptions)));
         ɵɵattribute("id", ctx.message == null ? null : ctx.message.id)("data-pc-name", "toast")("data-pc-section", "root");
         ɵɵadvance(2);
-        ɵɵconditional(ctx.headlessTemplate ? 2 : 3);
+        ɵɵproperty("ngIf", ctx.headlessTemplate)("ngIfElse", notHeadless_r4);
       }
     },
-    dependencies: [CommonModule, NgClass, NgIf, NgTemplateOutlet, CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesIcon, TimesCircleIcon, Button, SharedModule],
+    dependencies: () => [NgClass, NgIf, NgTemplateOutlet, Ripple, CheckIcon, InfoCircleIcon, TimesCircleIcon, ExclamationTriangleIcon, TimesIcon],
     encapsulation: 2,
     data: {
       animation: [trigger("messageState", [state("visible", style({
@@ -815,23 +669,13 @@ var ToastItem = class _ToastItem extends BaseComponent {
     type: Component,
     args: [{
       selector: "p-toastItem",
-      standalone: true,
-      imports: [CommonModule, CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesIcon, TimesCircleIcon, Button, SharedModule],
       template: `
         <div
             #container
             [attr.id]="message?.id"
             [class]="message?.styleClass"
-            [ngClass]="cx('message')"
-            [@messageState]="{
-                value: 'visible',
-                params: {
-                    showTransformParams: showTransformOptions,
-                    hideTransformParams: hideTransformOptions,
-                    showTransitionParams: showTransitionOptions,
-                    hideTransitionParams: hideTransitionOptions
-                }
-            }"
+            [ngClass]="['p-toast-message-' + message?.severity, 'p-toast-message']"
+            [@messageState]="{ value: 'visible', params: { showTransformParams: showTransformOptions, hideTransformParams: hideTransformOptions, showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions } }"
             (mouseenter)="onMouseEnter()"
             (mouseleave)="onMouseLeave()"
             role="alert"
@@ -840,50 +684,42 @@ var ToastItem = class _ToastItem extends BaseComponent {
             [attr.data-pc-name]="'toast'"
             [attr.data-pc-section]="'root'"
         >
-            @if (headlessTemplate) {
+            <ng-container *ngIf="headlessTemplate; else notHeadless">
                 <ng-container *ngTemplateOutlet="headlessTemplate; context: { $implicit: message, closeFn: onCloseIconClick }"></ng-container>
-            } @else {
-                <div [ngClass]="cx('messageContent')" [class]="message?.contentStyleClass" [attr.data-pc-section]="'content'">
+            </ng-container>
+            <ng-template #notHeadless>
+                <div class="p-toast-message-content" [ngClass]="message?.contentStyleClass" [attr.data-pc-section]="'content'">
                     <ng-container *ngIf="!template">
-                        <span *ngIf="message.icon" [ngClass]="cx('messageIcon')"></span>
-                        <span [ngClass]="cx('messageIcon')" *ngIf="!message.icon" [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'">
-                            @switch (message.severity) {
-                                @case ('success') {
-                                    <CheckIcon [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'" />
-                                }
-                                @case ('info') {
-                                    <InfoCircleIcon [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'" />
-                                }
-                                @case ('error') {
-                                    <TimesCircleIcon [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'" />
-                                }
-                                @case ('warn') {
-                                    <ExclamationTriangleIcon [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'" />
-                                }
-                                @default {
-                                    <InfoCircleIcon [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'" />
-                                }
-                            }
+                        <span *ngIf="message.icon" [class]="'p-toast-message-icon pi ' + message.icon"></span>
+                        <span class="p-toast-message-icon" *ngIf="!message.icon" [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'">
+                            <ng-container>
+                                <CheckIcon *ngIf="message.severity === 'success'" [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'" />
+                                <InfoCircleIcon *ngIf="message.severity === 'info'" [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'" />
+                                <TimesCircleIcon *ngIf="message.severity === 'error'" [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'" />
+                                <ExclamationTriangleIcon *ngIf="message.severity === 'warn'" [attr.aria-hidden]="true" [attr.data-pc-section]="'icon'" />
+                            </ng-container>
                         </span>
-                        <div [ngClass]="cx('messageText')" [attr.data-pc-section]="'text'">
-                            <div [ngClass]="cx('summary')" [attr.data-pc-section]="'summary'">
-                                {{ message.summary }}
-                            </div>
-                            <div [ngClass]="cx('detail')" [attr.data-pc-section]="'detail'">{{ message.detail }}</div>
+                        <div class="p-toast-message-text" [attr.data-pc-section]="'text'">
+                            <div class="p-toast-summary" [attr.data-pc-section]="'summary'">{{ message.summary }}</div>
+                            <div class="p-toast-detail" [attr.data-pc-section]="'detail'">{{ message.detail }}</div>
                         </div>
                     </ng-container>
                     <ng-container *ngTemplateOutlet="template; context: { $implicit: message }"></ng-container>
-                    @if (message?.closable !== false) {
-                        <p-button [styleClass]="cx('closeButton')" (onClick)="onCloseIconClick($event)" (keydown.enter)="onCloseIconClick($event)" [attr.ariaLabel]="closeAriaLabel" [attr.data-pc-section]="'closebutton'" rounded text>
-                            @if (message.closeIcon) {
-                                <span *ngIf="message.closeIcon" [ngClass]="cx('closeIcon')"></span>
-                            } @else {
-                                <TimesIcon [ngClass]="cx('closeIcon')" [attr.aria-hidden]="true" [attr.data-pc-section]="'closeicon'" />
-                            }
-                        </p-button>
-                    }
+                    <button
+                        type="button"
+                        class="p-toast-icon-close p-link"
+                        (click)="onCloseIconClick($event)"
+                        (keydown.enter)="onCloseIconClick($event)"
+                        *ngIf="message?.closable !== false"
+                        pRipple
+                        [attr.aria-label]="closeAriaLabel"
+                        [attr.data-pc-section]="'closebutton'"
+                    >
+                        <span *ngIf="message.closeIcon" [class]="'pt-1 text-base p-toast-message-icon pi ' + message.closeIcon"></span>
+                        <TimesIcon *ngIf="!message.closeIcon" [styleClass]="'p-toast-icon-close-icon'" [attr.aria-hidden]="true" [attr.data-pc-section]="'closeicon'" />
+                    </button>
                 </div>
-            }
+            </ng-template>
         </div>
     `,
       animations: [trigger("messageState", [state("visible", style({
@@ -899,10 +735,14 @@ var ToastItem = class _ToastItem extends BaseComponent {
       }))])])],
       encapsulation: ViewEncapsulation$1.None,
       changeDetection: ChangeDetectionStrategy.OnPush,
-      providers: [ToastStyle]
+      host: {
+        class: "p-element"
+      }
     }]
   }], () => [{
     type: NgZone
+  }, {
+    type: PrimeNGConfig
   }], {
     message: [{
       type: Input
@@ -946,12 +786,12 @@ var ToastItem = class _ToastItem extends BaseComponent {
     }]
   });
 })();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(ToastItem, {
-    className: "ToastItem"
-  });
-})();
-var Toast = class _Toast extends BaseComponent {
+var Toast = class _Toast {
+  document;
+  renderer;
+  messageService;
+  cd;
+  config;
   /**
    * Key of the message in case message is targeted to a specific toast component.
    * @group Props
@@ -1034,29 +874,25 @@ var Toast = class _Toast extends BaseComponent {
    * @group Emits
    */
   onClose = new EventEmitter();
-  /**
-   * Custom template of message.
-   * @group Templates
-   */
-  template;
-  /**
-   * Custom headless template.
-   * @group Templates
-   */
-  headlessTemplate;
   containerViewChild;
+  templates;
   messageSubscription;
   clearSubscription;
   messages;
   messagesArchieve;
+  template;
+  headlessTemplate;
   _position = "top-right";
-  messageService = inject(MessageService);
-  _componentStyle = inject(ToastStyle);
+  constructor(document, renderer, messageService, cd, config) {
+    this.document = document;
+    this.renderer = renderer;
+    this.messageService = messageService;
+    this.cd = cd;
+    this.config = config;
+  }
   styleElement;
-  id = uuid("pn_id_");
-  templates;
+  id = UniqueComponentId();
   ngOnInit() {
-    super.ngOnInit();
     this.messageSubscription = this.messageService.messageObserver.subscribe((messages) => {
       if (messages) {
         if (Array.isArray(messages)) {
@@ -1078,25 +914,7 @@ var Toast = class _Toast extends BaseComponent {
       this.cd.markForCheck();
     });
   }
-  _template;
-  _headlessTemplate;
-  ngAfterContentInit() {
-    this.templates?.forEach((item) => {
-      switch (item.getType()) {
-        case "message":
-          this._template = item.template;
-          break;
-        case "headless":
-          this._headlessTemplate = item.template;
-          break;
-        default:
-          this._template = item.template;
-          break;
-      }
-    });
-  }
   ngAfterViewInit() {
-    super.ngAfterViewInit();
     if (this.breakpoints) {
       this.createStyle();
     }
@@ -1126,6 +944,21 @@ var Toast = class _Toast extends BaseComponent {
       return m.summary === message.summary && m.detail == message.detail && m.severity === message.severity;
     }) != null;
   }
+  ngAfterContentInit() {
+    this.templates?.forEach((item) => {
+      switch (item.getType()) {
+        case "message":
+          this.template = item.template;
+          break;
+        case "headless":
+          this.headlessTemplate = item.template;
+          break;
+        default:
+          this.template = item.template;
+          break;
+      }
+    });
+  }
   onMessageClose(event) {
     this.messages?.splice(event.index, 1);
     this.onClose.emit({
@@ -1143,7 +976,7 @@ var Toast = class _Toast extends BaseComponent {
   }
   onAnimationEnd(event) {
     if (event.toState === "void") {
-      if (this.autoZIndex && isEmpty(this.messages)) {
+      if (this.autoZIndex && ObjectUtils.isEmpty(this.messages)) {
         zindexutils.clear(this.containerViewChild?.nativeElement);
       }
     }
@@ -1152,6 +985,7 @@ var Toast = class _Toast extends BaseComponent {
     if (!this.styleElement) {
       this.styleElement = this.renderer.createElement("style");
       this.styleElement.type = "text/css";
+      DomHandler.setAttribute(this.styleElement, "nonce", this.config?.csp()?.nonce);
       this.renderer.appendChild(this.document.head, this.styleElement);
       let innerHTML = "";
       for (let breakpoint in this.breakpoints) {
@@ -1168,7 +1002,6 @@ var Toast = class _Toast extends BaseComponent {
                 `;
       }
       this.renderer.setProperty(this.styleElement, "innerHTML", innerHTML);
-      setAttribute(this.styleElement, "nonce", this.config?.csp()?.nonce);
     }
   }
   destroyStyle() {
@@ -1188,27 +1021,19 @@ var Toast = class _Toast extends BaseComponent {
       this.clearSubscription.unsubscribe();
     }
     this.destroyStyle();
-    super.ngOnDestroy();
   }
-  static ɵfac = /* @__PURE__ */ (() => {
-    let ɵToast_BaseFactory;
-    return function Toast_Factory(__ngFactoryType__) {
-      return (ɵToast_BaseFactory || (ɵToast_BaseFactory = ɵɵgetInheritedFactory(_Toast)))(__ngFactoryType__ || _Toast);
-    };
-  })();
+  static ɵfac = function Toast_Factory(__ngFactoryType__) {
+    return new (__ngFactoryType__ || _Toast)(ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(MessageService), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(PrimeNGConfig));
+  };
   static ɵcmp = ɵɵdefineComponent({
     type: _Toast,
     selectors: [["p-toast"]],
     contentQueries: function Toast_ContentQueries(rf, ctx, dirIndex) {
       if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, _c5, 5);
-        ɵɵcontentQuery(dirIndex, _c6, 5);
         ɵɵcontentQuery(dirIndex, PrimeTemplate, 4);
       }
       if (rf & 2) {
         let _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.template = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headlessTemplate = _t.first);
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templates = _t);
       }
     },
@@ -1221,6 +1046,7 @@ var Toast = class _Toast extends BaseComponent {
         ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.containerViewChild = _t.first);
       }
     },
+    hostAttrs: [1, "p-element"],
     inputs: {
       key: "key",
       autoZIndex: [2, "autoZIndex", "autoZIndex", booleanAttribute],
@@ -1240,11 +1066,10 @@ var Toast = class _Toast extends BaseComponent {
     outputs: {
       onClose: "onClose"
     },
-    standalone: true,
-    features: [ɵɵProvidersFeature([ToastStyle]), ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+    features: [ɵɵInputTransformsFeature],
     decls: 3,
-    vars: 7,
-    consts: [["container", ""], [3, "ngClass", "ngStyle"], [3, "message", "index", "life", "template", "headlessTemplate", "showTransformOptions", "hideTransformOptions", "showTransitionOptions", "hideTransitionOptions", "onClose", 4, "ngFor", "ngForOf"], [3, "onClose", "message", "index", "life", "template", "headlessTemplate", "showTransformOptions", "hideTransformOptions", "showTransitionOptions", "hideTransitionOptions"]],
+    vars: 5,
+    consts: [["container", ""], [1, "p-toast", "p-component", 3, "ngClass", "ngStyle"], [3, "message", "index", "life", "template", "headlessTemplate", "showTransformOptions", "hideTransformOptions", "showTransitionOptions", "hideTransitionOptions", "onClose", 4, "ngFor", "ngForOf"], [3, "onClose", "message", "index", "life", "template", "headlessTemplate", "showTransformOptions", "hideTransformOptions", "showTransitionOptions", "hideTransitionOptions"]],
     template: function Toast_Template(rf, ctx) {
       if (rf & 1) {
         ɵɵelementStart(0, "div", 1, 0);
@@ -1252,14 +1077,14 @@ var Toast = class _Toast extends BaseComponent {
         ɵɵelementEnd();
       }
       if (rf & 2) {
-        ɵɵstyleMap(ctx.style);
         ɵɵclassMap(ctx.styleClass);
-        ɵɵproperty("ngClass", ctx.cx("root"))("ngStyle", ctx.sx("root"));
+        ɵɵproperty("ngClass", "p-toast-" + ctx._position)("ngStyle", ctx.style);
         ɵɵadvance(2);
         ɵɵproperty("ngForOf", ctx.messages);
       }
     },
-    dependencies: [CommonModule, NgClass, NgForOf, NgStyle, ToastItem, SharedModule],
+    dependencies: [NgClass, NgForOf, NgStyle, ToastItem],
+    styles: ["@layer primeng{.p-toast{position:fixed;width:25rem}.p-toast-message{overflow:hidden}.p-toast-message-content{display:flex;align-items:flex-start}.p-toast-message-text{flex:1 1 auto}.p-toast-top-right{top:20px;right:20px}.p-toast-top-left{top:20px;left:20px}.p-toast-bottom-left{bottom:20px;left:20px}.p-toast-bottom-right{bottom:20px;right:20px}.p-toast-top-center{top:20px;left:50%;transform:translate(-50%)}.p-toast-bottom-center{bottom:20px;left:50%;transform:translate(-50%)}.p-toast-center{left:50%;top:50%;min-width:20vw;transform:translate(-50%,-50%)}.p-toast-icon-close{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;flex:none}.p-toast-icon-close.p-link{cursor:pointer}}\n"],
     encapsulation: 2,
     data: {
       animation: [trigger("toastAnimation", [transition(":enter, :leave", [query("@*", animateChild())])])]
@@ -1272,18 +1097,16 @@ var Toast = class _Toast extends BaseComponent {
     type: Component,
     args: [{
       selector: "p-toast",
-      standalone: true,
-      imports: [CommonModule, ToastItem, SharedModule],
       template: `
-        <div #container [ngClass]="cx('root')" [ngStyle]="sx('root')" [style]="style" [class]="styleClass">
+        <div #container class="p-toast p-component" [ngClass]="'p-toast-' + _position" [ngStyle]="style" [class]="styleClass">
             <p-toastItem
                 *ngFor="let msg of messages; let i = index"
                 [message]="msg"
                 [index]="i"
                 [life]="life"
                 (onClose)="onMessageClose($event)"
-                [template]="template || _template"
-                [headlessTemplate]="headlessTemplate || _headlessTemplate"
+                [template]="template"
+                [headlessTemplate]="headlessTemplate"
                 @toastAnimation
                 (@toastAnimation.start)="onAnimationStart($event)"
                 (@toastAnimation.done)="onAnimationEnd($event)"
@@ -1297,9 +1120,26 @@ var Toast = class _Toast extends BaseComponent {
       animations: [trigger("toastAnimation", [transition(":enter, :leave", [query("@*", animateChild())])])],
       changeDetection: ChangeDetectionStrategy.OnPush,
       encapsulation: ViewEncapsulation$1.None,
-      providers: [ToastStyle]
+      host: {
+        class: "p-element"
+      },
+      styles: ["@layer primeng{.p-toast{position:fixed;width:25rem}.p-toast-message{overflow:hidden}.p-toast-message-content{display:flex;align-items:flex-start}.p-toast-message-text{flex:1 1 auto}.p-toast-top-right{top:20px;right:20px}.p-toast-top-left{top:20px;left:20px}.p-toast-bottom-left{bottom:20px;left:20px}.p-toast-bottom-right{bottom:20px;right:20px}.p-toast-top-center{top:20px;left:50%;transform:translate(-50%)}.p-toast-bottom-center{bottom:20px;left:50%;transform:translate(-50%)}.p-toast-center{left:50%;top:50%;min-width:20vw;transform:translate(-50%,-50%)}.p-toast-icon-close{display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;flex:none}.p-toast-icon-close.p-link{cursor:pointer}}\n"]
     }]
-  }], null, {
+  }], () => [{
+    type: Document,
+    decorators: [{
+      type: Inject,
+      args: [DOCUMENT]
+    }]
+  }, {
+    type: Renderer2
+  }, {
+    type: MessageService
+  }, {
+    type: ChangeDetectorRef
+  }, {
+    type: PrimeNGConfig
+  }], {
     key: [{
       type: Input
     }],
@@ -1360,14 +1200,6 @@ var Toast = class _Toast extends BaseComponent {
     onClose: [{
       type: Output
     }],
-    template: [{
-      type: ContentChild,
-      args: ["message"]
-    }],
-    headlessTemplate: [{
-      type: ContentChild,
-      args: ["headless"]
-    }],
     containerViewChild: [{
       type: ViewChild,
       args: ["container"]
@@ -1378,42 +1210,33 @@ var Toast = class _Toast extends BaseComponent {
     }]
   });
 })();
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && ɵsetClassDebugInfo(Toast, {
-    className: "Toast"
-  });
-})();
 var ToastModule = class _ToastModule {
   static ɵfac = function ToastModule_Factory(__ngFactoryType__) {
     return new (__ngFactoryType__ || _ToastModule)();
   };
   static ɵmod = ɵɵdefineNgModule({
-    type: _ToastModule
+    type: _ToastModule,
+    declarations: [Toast, ToastItem],
+    imports: [CommonModule, RippleModule, CheckIcon, InfoCircleIcon, TimesCircleIcon, ExclamationTriangleIcon, TimesIcon],
+    exports: [Toast, SharedModule]
   });
   static ɵinj = ɵɵdefineInjector({
-    imports: [Toast, SharedModule, SharedModule]
+    imports: [CommonModule, RippleModule, CheckIcon, InfoCircleIcon, TimesCircleIcon, ExclamationTriangleIcon, TimesIcon, SharedModule]
   });
 };
 (() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ToastModule, [{
     type: NgModule,
     args: [{
-      imports: [Toast, SharedModule],
-      exports: [Toast, SharedModule]
+      imports: [CommonModule, RippleModule, CheckIcon, InfoCircleIcon, TimesCircleIcon, ExclamationTriangleIcon, TimesIcon],
+      exports: [Toast, SharedModule],
+      declarations: [Toast, ToastItem]
     }]
   }], null, null);
 })();
-(function() {
-  (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(ToastModule, {
-    imports: [Toast, SharedModule],
-    exports: [Toast, SharedModule]
-  });
-})();
 export {
   Toast,
-  ToastClasses,
   ToastItem,
-  ToastModule,
-  ToastStyle
+  ToastModule
 };
 //# sourceMappingURL=primeng_toast.js.map

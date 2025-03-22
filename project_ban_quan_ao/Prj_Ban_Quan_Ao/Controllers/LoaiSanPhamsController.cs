@@ -24,7 +24,7 @@ namespace Prj_Ban_Quan_Ao.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<LoaiSanPham>>> GetLoaiSanPhams()
         {
-            return await _context.LoaiSanPhams.ToListAsync();
+            return await _context.LoaiSanPhams.OrderByDescending(x => x.NgayTao).ToListAsync();
         }
 
         // GET: api/LoaiSanPhams/5
@@ -93,10 +93,14 @@ namespace Prj_Ban_Quan_Ao.Controllers
                 return NotFound();
             }
 
+            var check = await _context.SanPhams.AnyAsync(x => x.LoaiSanPhamId == id);
+            if(check) {
+                return Ok(new { status = "exist" });
+            }   
             _context.LoaiSanPhams.Remove(loaiSanPham);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+             return Ok(new { status = "success" });
         }
 
         private bool LoaiSanPhamExists(Guid id)

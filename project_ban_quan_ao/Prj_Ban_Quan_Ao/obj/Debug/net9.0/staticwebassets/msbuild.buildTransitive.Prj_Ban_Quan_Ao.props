@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Prj_Ban_Quan_Ao.props" />
-</Project>

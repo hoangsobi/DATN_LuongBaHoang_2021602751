@@ -10,14 +10,13 @@ import {
   MessageService,
   OverlayService,
   PrimeIcons,
+  PrimeNGConfig,
   PrimeTemplate,
   SharedModule,
   TranslationKeys,
   TreeDragDropService
-} from "./chunk-SOKPZCQ7.js";
-import "./chunk-HLIPVD2M.js";
-import "./chunk-JZFRVOZK.js";
-import "./chunk-WDMUDEB6.js";
+} from "./chunk-YCFEHKBY.js";
+import "./chunk-VKUFYADX.js";
 export {
   ConfirmEventType,
   ConfirmationService,
@@ -30,6 +29,7 @@ export {
   MessageService,
   OverlayService,
   PrimeIcons,
+  PrimeNGConfig,
   PrimeTemplate,
   SharedModule,
   TranslationKeys,
