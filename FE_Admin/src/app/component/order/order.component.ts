@@ -143,22 +143,32 @@ export class OrderComponent {
   }
 
 
-  deleteCate(cateId: any){
-    // this.confirmationService.confirm({
-    //   message: 'Xác nhận xóa danh mục này?',
-    //   accept: async () => {
-    //     this._orderService(cateId).subscribe(data => {
-    //       if(data.status == "success")
-    //       {
-    //         this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Xóa danh mục thành công'});
-    //         this.getAll();
-    //       }
-    //       else
-    //       {
-    //         this._messageService.add({severity:'info', summary: 'Thông báo', detail: 'Danh mục này đang được sử dụng'});
-    //       }
-    //     })
-    //   }
-    // });
+  changeStatusOrder(action: any, orderId: any, status: any){
+    this._orderService.changeStatusOrder(action, orderId, status).subscribe(data => {
+      if(data.status == "success")
+      {
+        this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Thay đổi trạng thái đơn hàng thành công'});
+        this.getAll();
+      }
+      else
+      {
+        this._messageService.add({severity:'info', summary: 'Thông báo', detail: 'Thay đổi trạng thái đơn hàng thất bại'});
+      }
+    })
+  }
+
+
+  huyDonHang(orderId: any){
+    this._orderService.huyDonHang(orderId).subscribe(data => {
+      if(data.status == "success")
+      {
+        this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Hủy đơn hàng thành công'});
+        this.getAll();
+      }
+      else
+      {
+        this._messageService.add({severity:'info', summary: 'Thông báo', detail: 'Hủy đơn hàng thất bại'});
+      }
+    })
   }
 }
