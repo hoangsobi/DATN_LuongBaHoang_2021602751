@@ -34,4 +34,14 @@ export class OrderService {
       getListSanPhamByIDDonHang(orderId: any): Observable<any>{
         return this.http.get(`${this.url}/getListSanPhamByIDDonHang/${orderId}`, this.httpOptions);
       }
+
+      changeStatusOrder(action: any, orderId: any, status: any): Observable<any>{
+        if(action == 0)
+         return this.http.get(`${this.url}/changeStatusDown/${orderId}/${status}`, this.httpOptions);
+        return this.http.get(`${this.url}/changeStatusUp/${orderId}/${status}`, this.httpOptions);
+      }
+
+      huyDonHang(orderId: any): Observable<any>{
+        return this.http.get(`${this.url}/huyDon/${orderId}`, this.httpOptions);
+      }
 }

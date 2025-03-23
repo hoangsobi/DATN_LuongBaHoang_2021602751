@@ -27,10 +27,25 @@
           <td>{{product.tenHienThi}}</td>
           <td>{{product.ngayTao | date:'hh:mm dd/MM/yyyy'}}</td>
           <td>{{product.thanhTien | formatVnd}}</td>
-          <td>{{product.trangThai}}</td>
+          <td>
+            <div style="display: flex;">
+              <div style="min-width: 20px; padding: 0 2px;">
+                              <i class="pi pi-backward" style="color: orange; cursor: pointer; padding: 0 2px;"  *ngIf="product.trangThai != TrangThaiDonHang.ChoXacNhan && product.trangThai != TrangThaiDonHang.DaHuy" (click)="changeStatusOrder(0, product.id, product.trangThai)" ></i>
+              </div>
+
+              <div style="min-width: 200px; text-align: center;">            {{product.trangThai}}</div>
+
+              <div *ngIf="product.trangThai != TrangThaiDonHang.GiaoHangThanhCong" (click)="changeStatusOrder(1, product.id, product.trangThai)" style="cursor: pointer; padding: 0 2px;">
+                <i class="pi pi-box" style="color: green;"></i>
+                <i class="pi pi-angle-right"></i>
+              </div>
+
+            </div>
+
+          </td>
           <td style="width: 100px;">
             <button pButton pRipple type="button" class="p-button-info p-button-text" style="padding: 8px; border-radius: 5px;" (click)="showOrder(product.id)"><i class=" pi pi-eye"></i></button>
-            <button pButton pRipple type="button" class="p-button-danger p-button-text" style="padding: 8px; border-radius: 5px;" (click)="deleteCate(product.id)"><i class=" pi pi-times-circle"></i></button>
+            <button pButton pRipple type="button" class="p-button-danger p-button-text" style="padding: 8px; border-radius: 5px;" (click)="huyDonHang(product.id)"><i class=" pi pi-times-circle"></i></button>
           </td>
       </tr>
   </ng-template>

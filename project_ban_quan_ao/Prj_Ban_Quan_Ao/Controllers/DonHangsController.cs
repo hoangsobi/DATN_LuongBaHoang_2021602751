@@ -338,5 +338,54 @@ namespace Prj_Ban_Quan_Ao.Controllers
 
 
         }
+
+
+
+        [HttpGet("changeStatusDown/{orderId}/{status}")]
+        public async Task<ActionResult<object>> changeStatusDown(Guid orderId, string status)
+        {
+            var order = await _context.DonHangs.FirstOrDefaultAsync(x => x.Id.Equals(orderId));
+            if(status == Enums.TrangThaiDonHang.GiaoHangThanhCong)
+                order.TrangThai = Enums.TrangThaiDonHang.DangGiaoHang;
+            else if(status == Enums.TrangThaiDonHang.DangGiaoHang)
+                order.TrangThai = Enums.TrangThaiDonHang.DangChuanBiHang;
+            else if(status == Enums.TrangThaiDonHang.DangChuanBiHang)
+                order.TrangThai = Enums.TrangThaiDonHang.ChoXacNhan;
+            else if(status == Enums.TrangThaiDonHang.ChoXacNhan)
+                order.TrangThai = Enums.TrangThaiDonHang.DaHuy;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new {status = "success"});
+        }
+
+        [HttpGet("changeStatusUp/{orderId}/{status}")]
+        public async Task<ActionResult<object>> changeStatusUp(Guid orderId, string status)
+        {
+            var order = await _context.DonHangs.FirstOrDefaultAsync(x => x.Id.Equals(orderId));
+            if(status == Enums.TrangThaiDonHang.DaHuy)
+                order.TrangThai = Enums.TrangThaiDonHang.ChoXacNhan;
+            else if(status == Enums.TrangThaiDonHang.ChoXacNhan)
+                order.TrangThai = Enums.TrangThaiDonHang.DangChuanBiHang;
+            else if(status == Enums.TrangThaiDonHang.DangChuanBiHang)
+                order.TrangThai = Enums.TrangThaiDonHang.DangGiaoHang;
+            else if(status == Enums.TrangThaiDonHang.DangGiaoHang)
+                order.TrangThai = Enums.TrangThaiDonHang.GiaoHangThanhCong;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new {status = "success"});
+        }
+
+        [HttpGet("huydon/{orderId}")]
+         public async Task<ActionResult<object>> HuyDon(Guid orderId)
+        {
+            var order = await _context.DonHangs.FirstOrDefaultAsync(x => x.Id.Equals(orderId));
+                order.TrangThai = Enums.TrangThaiDonHang.DaHuy;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new {status = "success"});
+        }
     }
 }
