@@ -1,9 +1,38 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  constructor() { }
+   httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+  url = 'https://localhost:7295/api/sanphams';
+  constructor(
+    private http: HttpClient,
+  ) { }
+
+  getAllDonHang(): Observable<any>{
+    return this.http.get(this.url, this.httpOptions);
+  }
+
+  postSanPham(productId: any, body: any): Observable<any>{
+    return this.http.put(`${this.url}/${productId}`, body, this.httpOptions);
+  }
+
+  deleteSanPham(productId: any): Observable<any>{
+    return this.http.delete(`${this.url}/${productId}`, this.httpOptions);
+  }
+
+  getProductById(productId: any): Observable<any>{
+    return this.http.get(`${this.url}/${productId}`, this.httpOptions);
+  }
+
+  putSanPham(productId: any, body: any): Observable<any>{
+    return this.http.put(`${this.url}/${productId}`, body, this.httpOptions);
+  }
+
 }
