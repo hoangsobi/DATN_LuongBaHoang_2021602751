@@ -1,1 +1,159 @@
-<p>product works!</p>
+
+<p-table [value]="listDanhMuc" [tableStyle]="{'min-width': '60rem'}">
+  <ng-template pTemplate="caption">
+      <div class="flex align-items-center justify-content-between" style="display: flex; justify-content: space-between;">
+        <div style="display: flex; align-items: center;">
+            Đơn hàng
+
+            <button pButton  icon="pi pi-window-maximize" label="Thêm mới" style="margin-left: 12px; padding: 4px 8px; border-radius: 5px; font-size: 14px; background-color: #0ea5e9;" (click)="showAdd()"></button>
+        </div>
+
+          <button pButton icon="pi pi-refresh" (click)="getAll()" style="border-radius: 10px; padding: 2px 6px"></button>
+      </div>
+  </ng-template>
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Mã</th>
+          <th>Tên</th>
+          <th>Ảnh</th>
+          <th>Giá</th>
+          <th>Giá giảm</th>
+          <th>Số lượng</th>
+          <th>Loại</th>
+          <th style="min-width: 150px;">hành động</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-product>
+      <tr>
+          <td>{{product.maSanPham}}</td>
+          <td>{{product.ten}}</td>
+          <td> <img [src]="product.duongDanAnh" width="80px" style="object-fit: contain;" /></td>
+          <td>{{product.gia | formatVnd}}</td>
+          <td>{{product.giaSauGiam | formatVnd}}</td>
+          <td>{{product.soLuong}}</td>
+          <td>{{product.tenLoai}}</td>
+          <td style="width: 100px;">
+            <button pButton pRipple type="button" class="p-button-info p-button-text" style="padding: 8px; border-radius: 5px;" (click)="showProduct(product.id)"><i class=" pi pi-pencil"></i></button>
+            <button pButton pRipple type="button" class="p-button-danger p-button-text" style="padding: 8px; border-radius: 5px;" (click)="deleteProduct(product.id)"><i class=" pi pi-trash"></i></button>
+          </td>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="summary">
+      <div class="flex align-items-center justify-content-between">
+
+      </div>
+  </ng-template>
+</p-table>
+<div style="text-align: center; width: 100%;">
+  <p-paginator  [rows]="20" [totalRecords]="listDanhMuc.length"></p-paginator>
+</div>
+
+<p-dialog  #dialog header="Thông tin sản phẩm" [(visible)]="showForm" maximizable="true" (onShow)="dialog.maximize()" [style]="{width: '100%', maxHeight: '100vh'}" [draggable]="false" [modal]="true">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="itemDes">
+        <div>
+          <span style="margin-right: 20px;">Code:</span>
+        </div>
+        <input type="text" pInputText [(ngModel)]="curProduct.maSanPham" style="padding: 5px 10px;"/>
+      </div>
+
+      <div class="itemDes">
+        <div>
+          <span style="margin-right: 20px;">Tên:</span>
+        </div>
+        <input type="text" pInputText [(ngModel)]="curProduct.ten" style="padding: 5px 10px;"/>
+      </div>
+      <div class="itemDes">
+        <div>
+          <span style="margin-right: 20px;">Giá:</span>
+        </div>
+
+        <input type="text" pInputText [(ngModel)]="curProduct.gia" style="padding: 5px 10px;"/>
+      </div>
+      <div class="itemDes">
+        <div>
+          <span style="margin-right: 20px;">Giá sau giảm:</span>
+        </div>
+
+        <input type="text" pInputText [(ngModel)]="curProduct.giaSauGiam" style="padding: 5px 10px;"/>
+      </div>
+      <div class="itemDes">
+        <div>
+          <span style="margin-right: 20px;">Chất liệu:</span>
+        </div>
+
+        <input type="text" pInputText [(ngModel)]="curProduct.chatLieu" style="padding: 5px 10px;"/>
+      </div>
+
+
+      <div class="itemDes">
+        <div>
+          <span style="margin-right: 20px;">Ngày tạo:</span>
+        </div>
+
+        <p-calendar [(ngModel)]="curProduct.ngayTao" [showIcon]="true" inputId="icon" disabled="true"></p-calendar>
+      </div>
+
+      <div class="itemDes">
+        <div>
+          <span style="margin-right: 20px;">Ghi chú:</span>
+        </div>
+
+        <input type="text" pInputText [(ngModel)]="curProduct.ghiChu" style="padding: 5px 10px;"/>
+      </div>
+
+    </div>
+    <div class="col-lg-6">
+      Ảnh sản phẩm (ảnh đầu tiên sẽ là ảnh đại diện):
+      <p-fileUpload name="myfile[]" [multiple]="true" [customUpload]="true" (uploadHandler)="myUploader($event)" [showUploadButton]="false" (onSelect)="ganFile($event)"
+      (onRemove)="xoaGanFile($event)" (onClear)="clearGanFile()"></p-fileUpload>
+
+      <div *ngIf="files.length > 0">
+        <button pButton pRipple type="button" label="upload" class="p-button-info p-button-text" style="padding: 8px; border-radius: 5px; font-weight: 800;" (click)="myUploader(files)"></button>
+      </div>
+
+      <div style="margin-top: 10px;"  *ngIf="uploadedUrls.length > 0" >
+        <ul style="display: flex;">
+          <li *ngFor="let url of uploadedUrls">
+            <img [src]="url" alt="Uploaded Image" width="100" style="margin-right: 10px; object-fit: contain;"  />
+          </li>
+        </ul>
+      </div>
+
+      <div class="itemDes" style="margin-top: 20px; ">
+        <div style="min-width: 100px;">
+          <span style="margin-right: 20px; min-width: 100px;">Danh mục:</span>
+        </div>
+        <div style="width: 100%;">
+          <p-dropdown [options]="listCategory" [(ngModel)]="curProduct.loaiSanPhamId" optionLabel="tenLoai" optionValue="id" [filter]="true" filterBy="name"></p-dropdown>
+        </div>
+      </div>
+
+
+
+      <div class="itemDes" style="min-width: 100px;">
+        <div style="min-width: 100px;">
+          <span style="margin-right: 20px;">Mô tả:</span>
+        </div>
+        <div style="width: 100%;">
+          <textarea pInputTextarea [(ngModel)]="curProduct.moTa" style="padding: 5px 10px; width: 100%; height: 300px;"></textarea>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; width: 100%; margin-top: 20px;" *ngIf="action == 0">
+      <button pButton  label="Thêm" class="p-button-info p-button-text" style="padding: 4px 8px; border-radius: 5px; font-weight: 800; margin-right: 20px; background-color: #0ea5e9; color: white;" (click)="addProduct(curProduct.id)"></button>
+    </div>
+    <div style="text-align: center; width: 100%; margin-top: 20px;" *ngIf="action == 1">
+      <button pButton  label="Lưu" class="p-button-info p-button-text" style="padding: 4px 8px; border-radius: 5px; font-weight: 800; margin-right: 20px; background-color: #0ea5e9; color: white;" (click)="updateProduct(curProduct.id)"></button>
+
+    </div>
+  </div>
+
+
+
+
+</p-dialog>
+
+<p-confirmDialog header="Khóa/Mở khóa tài khoản" icon="fas fa-circle-info"></p-confirmDialog>
+<p-toast></p-toast>

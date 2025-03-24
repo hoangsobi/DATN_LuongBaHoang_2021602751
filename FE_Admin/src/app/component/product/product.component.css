@@ -1,0 +1,35 @@
+
+
+::ng-deep .p-fileupload-buttonbar,
+::ng-deep .p-fileupload-row{
+  padding: 10px;
+}
+
+::ng-deep .p-fileupload-row div{
+  text-align: center;
+}
+
+::ng-deep .p-fileupload-choose{
+  margin-right: 10px;
+}
+
+::ng-deep .p-inputtext{
+  width:100%;
+}
+
+::ng-deep .p-inputwrapper{
+  width:100%;
+}
+
+
+
+.itemDes{
+  margin: 10px 0;
+  display: flex;
+}
+.itemDes div{
+
+  min-width: 200px;
+}
+
+

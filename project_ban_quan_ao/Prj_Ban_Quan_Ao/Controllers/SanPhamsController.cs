@@ -22,9 +22,40 @@ namespace Prj_Ban_Quan_Ao.Controllers
 
         // GET: api/SanPhams
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<SanPham>>> GetSanPhams()
+        public async Task<ActionResult<object>> GetSanPhams()
         {
-            return await _context.SanPhams.ToListAsync();
+
+            var query = await (from sp in _context.SanPhams
+                    join lsp in _context.LoaiSanPhams on sp.LoaiSanPhamId equals lsp.Id
+                    join spkc in _context.SanPhamKichCos on sp.Id equals spkc.SanPhamId into spGroup
+                    from grouped in spGroup.DefaultIfEmpty()
+                    group grouped by new
+                    {
+                        sp.Id,
+                        sp.MaSanPham,
+                        sp.Ten,
+                        sp.DuongDanAnh,
+                        sp.Gia,
+                        sp.GiaSauGiam,
+                        sp.NgayTao,
+                        lsp.TenLoai,
+                    } into g
+                    select new
+                    {
+                        g.Key.Id,
+                        g.Key.MaSanPham,
+                        g.Key.Ten,
+                        g.Key.DuongDanAnh,
+                        g.Key.Gia,
+                        g.Key.GiaSauGiam,
+                        g.Key.NgayTao,
+                        soLuong = g.Sum(x => x != null ? x.SoLuong : 0),
+                        tenLoai = g.Key.TenLoai
+                    })
+                    .OrderByDescending(x => x.NgayTao)
+                    .ToListAsync();
+
+            return Ok(query);
         }
 
         // GET: api/SanPhams/5
