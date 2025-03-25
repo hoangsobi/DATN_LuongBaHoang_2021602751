@@ -22,6 +22,11 @@
 }
 
 
+::ng-deep .p-fileupload-buttonbar .p-button{
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
 
 .itemDes{
   margin: 10px 0;
