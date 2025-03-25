@@ -20,6 +20,7 @@ import { CategoryService } from '../../service/category.service';
 import { OrderService } from '../../service/order.service';
 import { PhuongThucVanChuyen, TrangThaiDonHang } from '../../Enums/Enums';
 import { ProductService } from '../../service/product.service';
+import { ImageService } from '../../service/image.service';
 
 @Pipe({ standalone: true, name: 'formatVnd' })
 export class FormatVndPipe implements PipeTransform {
@@ -63,6 +64,7 @@ providers:[
     MessageService,
     ConfirmationService,
     CategoryService,
+    ImageService
 ],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
@@ -71,7 +73,21 @@ export class ProductComponent {
 
 
   files: File[] = []; // Lưu danh sách file
+  file2: any;
   uploadedUrls: string[] = [];
+  listColor = [
+    {name: 'Đỏ', id: 1},
+    {name: 'Cam', id: 2},
+    {name: 'Vàng', id: 3},
+    {name: 'Lục', id: 4},
+    {name: 'Xanh Dương', id: 5},
+    {name: 'Tím', id: 6},
+    {name: 'Trắng', id: 8},
+    {name: 'Đen', id: 7},
+  ];
+  curColor: any;
+  curSoLuong: any;
+  curKichCo: any;
 
   showForm = false;
   curId: any;
@@ -91,9 +107,11 @@ export class ProductComponent {
     ghiChu: '',
     chatLieu: '',
     duongDanAnh: '',
+    ngayCapNhat: new Date(),
   };
   constructor(
     private _productService: ProductService,
+    private _imageService: ImageService,
     private _messageService: MessageService,
     private confirmationService: ConfirmationService,
     private _categoryService: CategoryService,
@@ -122,6 +140,7 @@ export class ProductComponent {
       ghiChu: '',
       chatLieu: '',
       duongDanAnh: '',
+      ngayCapNhat: new Date(),
     };
   }
 
@@ -137,8 +156,11 @@ export class ProductComponent {
   showProduct(orderId: any){
     this.showForm = true;
     this.action = 1;
+    this.curId = orderId;
     this._productService.getProductById(orderId).subscribe(data => {
       this.curProduct = data;
+      this.curProduct.ngayTao = new Date(data.ngayTao);
+      this.curProduct.ngayCapNhat = new Date(data.ngayCapNhat);
   })
   }
 
@@ -170,12 +192,18 @@ export class ProductComponent {
     this.showForm = true;
   }
   ganFile(event: any): void {
-    console.log(event);
     this.files = event.currentFiles;
   }
 
+  ganFile2(event: any): void {
+    this.file2 = event.currentFiles[0];
+  }
   // Xóa file khỏi danh sách khi người dùng bỏ chọn
   xoaGanFile(event: any): void {
+
+  }
+
+  xoaGanFile2(event: any): void {
 
   }
 
@@ -184,9 +212,33 @@ export class ProductComponent {
     this.files = [];
   }
 
+  clearGanFile2(): void {
+    this.file2 = null;
+  }
+
   // Xử lý upload
   myUploader(event: any): void {
     if (this.files.length === 0) {
+      alert('Please select at least one file');
+      return;
+    }
+
+    // this._imageService.uploadImages(this.files).subscribe(
+    //   (response) => {
+    //     this.uploadedUrls = response.urls; // Gán URL ảnh trả về
+    //     this.body.imageUrls = this.uploadedUrls.join(',');
+    //     this._messageService.add({severity:'success', summary: 'Thông báo', detail: 'Upload ảnh thành công', life: 3000});
+    //   },
+    //   (error) => {
+    //     console.error('Error uploading images:', error);
+    //     this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Có lỗi xảy ra, hãy thử lại sau', life: 3000});
+    //   }
+    // );
+  }
+
+
+  myUploader2(event: any): void {
+    if (!this.file2) {
       alert('Please select at least one file');
       return;
     }
@@ -221,5 +273,17 @@ export class ProductComponent {
     })
   }
 
+  updateSoLuong(){
+    this._productService.updateSoLuong(this.curId, this.curColor, this.curKichCo, this.curSoLuong).subscribe(data => {
+      this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Cập nhật số lượng thành công'});
+      this.getAll();
+    })
+  }
+
+  getSoLuong(){
+    this._productService.getSoLuong(this.curId, this.curColor, this.curKichCo).subscribe(data => {
+      this.curSoLuong = data;
+    })
+  }
 
 }

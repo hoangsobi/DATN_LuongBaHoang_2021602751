@@ -11,6 +11,7 @@ export class ProductService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
   url = 'https://localhost:7295/api/sanphams';
+  urlspkc = 'https://localhost:7295/api/sanphamkichcoes';
   constructor(
     private http: HttpClient,
   ) { }
@@ -33,6 +34,14 @@ export class ProductService {
 
   putSanPham(productId: any, body: any): Observable<any>{
     return this.http.put(`${this.url}/${productId}`, body, this.httpOptions);
+  }
+
+  updateSoLuong(sanPhamId: any, curColor: any, curKichCo: any,  curSoLuong: any): Observable<any>{
+    return this.http.get(`${this.urlspkc}/updateSoLuong/${sanPhamId}/${curColor}/${curKichCo}/${curSoLuong}`, this.httpOptions);
+  }
+
+  getSoLuong(sanPhamId: any, curColor: any, curKichCo: any): Observable<any>{
+    return this.http.get(`${this.urlspkc}/getSoLuong/${sanPhamId}/${curColor}/${curKichCo}`, this.httpOptions);
   }
 
 }

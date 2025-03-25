@@ -41,6 +41,42 @@ namespace Prj_Ban_Quan_Ao.Controllers
             return sanPhamKichCo;
         }
 
+
+                // GET: api/SanPhamKichCoes/5
+        [HttpGet("updateSoLuong/{sanPhamId}/{curColor}/{curKichCo}/{curSoLuong}")]
+        public async Task<ActionResult<SanPhamKichCo>> updateSoLuong(Guid sanPhamId, int curColor, double curKichCo, int curSoLuong)
+        {
+            var check = await _context.SanPhamKichCos.FirstOrDefaultAsync(x => x.SanPhamId == sanPhamId && x.Mau == curColor && x.KichCo == curKichCo);
+            if(check != null)
+            {
+                check.SoLuong = curSoLuong;
+               await _context.SaveChangesAsync();
+                return Ok();
+            }
+
+            var newspckc = new SanPhamKichCo();
+            newspckc.SanPhamId = sanPhamId;
+            newspckc.Mau = curColor;
+            newspckc.KichCo = curKichCo;
+            newspckc.SoLuong = curSoLuong;
+
+            _context.SanPhamKichCos.Add(newspckc);
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
+
+         [HttpGet("getSoLuong/{sanPhamId}/{curColor}/{curKichCo}")]
+        public async Task<ActionResult<int>> getSoLuong(Guid sanPhamId, int curColor, double curKichCo)
+        {
+            var check = await _context.SanPhamKichCos.FirstOrDefaultAsync(x => x.SanPhamId == sanPhamId && x.Mau == curColor && x.KichCo == curKichCo);
+            if(check != null)
+            {
+              
+                return Ok(check.SoLuong);
+            }
+            return 0;
+        }
+
         // PUT: api/SanPhamKichCoes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
