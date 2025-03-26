@@ -1,4 +1,5 @@
-﻿using IdentityTest_3.Services;
+﻿using Prj_Ban_Quan_Ao.Services;
+using IdentityTest_3.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<CloudinaryService>();
+builder.Services.Configure<CloudinarySetting>(builder.Configuration.GetSection("Cloudinary"));
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddDbContext<DbQuanAoContext>(options =>
 {

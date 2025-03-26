@@ -24,7 +24,28 @@ namespace Prj_Ban_Quan_Ao.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<LoaiSanPham>>> GetLoaiSanPhams()
         {
-            return await _context.LoaiSanPhams.OrderByDescending(x => x.NgayTao).ToListAsync();
+            return await _context.LoaiSanPhams.Where(x => x.LoaiSanPhamChaId == null).OrderByDescending(x => x.NgayTao).ToListAsync();
+        }
+
+        [HttpGet("getAllDanhMucCon")]
+        public async Task<ActionResult<IEnumerable<object>>> GetLoaiSanPhamCons()
+        {
+            var danhMucCons = await _context.LoaiSanPhams
+                .Where(x => x.LoaiSanPhamChaId != null)
+                .OrderByDescending(x => x.NgayTao)
+                .Select(x => new
+                {
+                    x.Id,
+                    x.TenLoai,
+                    x.NgayTao,
+                    TenLoaiCha = _context.LoaiSanPhams
+                        .Where(p => p.Id == x.LoaiSanPhamChaId)
+                        .Select(p => p.TenLoai)
+                        .FirstOrDefault()
+                })
+                .ToListAsync();
+
+            return danhMucCons;
         }
 
         // GET: api/LoaiSanPhams/5

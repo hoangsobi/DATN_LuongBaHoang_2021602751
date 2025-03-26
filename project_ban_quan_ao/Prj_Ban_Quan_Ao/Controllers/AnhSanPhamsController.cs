@@ -97,6 +97,27 @@ namespace Prj_Ban_Quan_Ao.Controllers
             return CreatedAtAction("GetAnhSanPham", new { id = anhSanPham.Id }, anhSanPham);
         }
 
+        [HttpPost("AddMultiple")]
+        public async Task<ActionResult<IEnumerable<AnhSanPham>>> PostAnhSanPhams(List<AnhSanPham> anhSanPhams)
+        {
+            if (anhSanPhams == null || anhSanPhams.Count == 0)
+            {
+                return BadRequest("Danh sách ảnh sản phẩm không được rỗng.");
+            }
+
+            var sanPhamIds = anhSanPhams.Select(a => a.SanPhamId).Distinct().ToList();
+
+            // Xóa các ảnh cũ có SanPhamId trùng với danh sách mới
+            var anhSanPhamCu = _context.AnhSanPhams.Where(a => sanPhamIds.Contains(a.SanPhamId));
+            _context.AnhSanPhams.RemoveRange(anhSanPhamCu);
+
+            _context.AnhSanPhams.AddRange(anhSanPhams);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+
         // DELETE: api/AnhSanPhams/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAnhSanPham(Guid id)
