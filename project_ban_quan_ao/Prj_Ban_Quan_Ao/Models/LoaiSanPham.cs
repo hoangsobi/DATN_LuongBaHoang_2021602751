@@ -13,5 +13,7 @@ public partial class LoaiSanPham
 
     public DateTime? NgayTao { get; set; }
 
+    public Guid? LoaiSanPhamChaId { get; set; }
+
     public virtual ICollection<SanPham> SanPhams { get; set; } = new List<SanPham>();
 }

@@ -116,26 +116,38 @@
 
       <div style="margin-bottom: 10px;">
               Ảnh đại diện:
-        <p-fileUpload name="myfile2[]" [multiple]="false" [customUpload]="true" (uploadHandler)="myUploader2($event)" [showUploadButton]="false" (onSelect)="ganFile2($event)"
-        (onRemove)="xoaGanFile2($event)" (onClear)="clearGanFile2()"></p-fileUpload>
+        <p-fileUpload #fileUpload2 name="myfile2[]" [multiple]="false" [customUpload]="true" (uploadHandler)="myUploader2()" [showUploadButton]="false" (onSelect)="ganFile2($event)"
+        (onRemove)="xoaGanFile2($event)" (onClear)="clearGanFile2($event)"></p-fileUpload>
+      </div>
+      <div style="margin-bottom: 20px;"  *ngIf="curProduct.duongDanAnh">
+        <img [src]="curProduct.duongDanAnh" alt="Uploaded Image" width="100" style="object-fit: contain;" />
       </div>
 
-
+      <div style="margin-bottom: 10px;">
       Ảnh chi tiết:
-      <p-fileUpload name="myfile[]" [multiple]="true" [customUpload]="true" (uploadHandler)="myUploader($event)" [showUploadButton]="false" (onSelect)="ganFile($event)"
-      (onRemove)="xoaGanFile($event)" (onClear)="clearGanFile()"></p-fileUpload>
+      <p-fileUpload #fileUpload name="myfile[]" [multiple]="true" [customUpload]="true" (uploadHandler)="myUploader()" [showUploadButton]="false" (onSelect)="ganFile($event)"
+      (onRemove)="xoaGanFile($event)" (onClear)="clearGanFile($event)"></p-fileUpload>
+      </div>
+
+      <div style="margin-bottom: 20px;"  *ngIf="curListAnh.length > 0">
+        <ul style="display: flex; list-style: none;">
+          <li *ngFor="let anh of curListAnh" style="list-style: none;">
+            <img [src]="anh" alt="Uploaded Image" width="100" style="margin-right: 10px; object-fit: contain;"  />
+          </li>
+        </ul>
+      </div>
 
       <!-- <div *ngIf="files.length > 0">
         <button pButton pRipple type="button" label="upload" class="p-button-info p-button-text" style="padding: 8px; border-radius: 5px; font-weight: 800;" (click)="myUploader(files)"></button>
       </div> -->
 
-      <div style="margin-top: 10px;"  *ngIf="uploadedUrls.length > 0" >
+      <!-- <div style="margin-top: 10px;"  *ngIf="uploadedUrls.length > 0" >
         <ul style="display: flex;">
           <li *ngFor="let url of uploadedUrls">
             <img [src]="url" alt="Uploaded Image" width="100" style="margin-right: 10px; object-fit: contain;"  />
           </li>
         </ul>
-      </div>
+      </div> -->
 
       <div class="itemDes" style="margin-top: 20px; ">
         <div style="min-width: 100px;">
@@ -154,33 +166,37 @@
 
   </div>
 
-  <div class="row" style="margin-top: 20px; background-color: antiquewhite; padding: 10px 100px;">
-    <div class="col-lg-6">
-      <div class="itemDes">
-        <div>
-          <span style="margin-right: 20px;">Màu sắc:</span>
-        </div>
-        <p-dropdown [options]="listColor" [(ngModel)]="curColor" optionLabel="name" optionValue="id" [filter]="true" filterBy="name" (onChange)="getSoLuong()"></p-dropdown>
-
-      </div>
-      <div class="itemDes">
-        <div>
-          <span style="margin-right: 20px;">Kích cỡ:</span>
-        </div>
-        <input type="text" pInputText [(ngModel)]="curKichCo" style="padding: 5px 10px;" (blur)="getSoLuong()"/>
-
-      </div>
-
-    </div>
-    <div class="col-lg-6">
-      <div>
-        <span style="margin-right: 20px;">Số lượng:</span>
-      </div>
-      <input type="text" pInputText [(ngModel)]="curSoLuong" style="padding: 5px 10px;"/>
-      <div *ngIf="curColor && curKichCo && curSoLuong">
-        <button pButton pRipple type="button" label="Cập nhật" class="p-button-info p-button-text" style="padding: 8px; border-radius: 5px; font-weight: 800;" (click)="updateSoLuong()"></button>
-      </div>
-    </div>
+  <div class="row" style="margin-top: 20px; background-color: antiquewhite; padding: 10px 100px;" *ngIf="action == 1">
+    <table style="width: 100%;" class="subTable">
+      <tr>
+        <th>Màu sắc</th>
+        <th>Kích cỡ</th>
+        <th>Số lượng</th>
+        <th>Thao tác</th>
+      </tr>
+      <tr *ngFor="let item of listSanPhamSoLuong; let i = index;">
+        <td>
+          <p-dropdown [options]="listColor" [(ngModel)]="item.mau" optionLabel="name" optionValue="id" [filter]="true" filterBy="name"></p-dropdown>
+        </td>
+        <td>
+          <input type="text" pInputText [(ngModel)]="item.kichCo" style="padding: 5px 10px;"/>
+        </td>
+        <td>
+          <input type="text" pInputText [(ngModel)]="item.soLuong" style="padding: 5px 10px;"/>
+        </td>
+        <td style="text-align: center;">
+          <button pButton pRipple type="button" class="p-button-info p-button-text" style="padding: 8px; border-radius: 5px; font-weight: 800; color: red;" icon="pi pi-trash" (click)="xoaSub(i)"></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button pButton pRipple type="button" label="Thêm" class="p-button-info p-button-text" style="padding: 8px; border-radius: 5px; font-weight: 800;" (click)="addViewSoLuong()"></button>
+        </td>
+        <td>
+          <button pButton pRipple type="button" label="Cập nhật" class="p-button-info p-button-text" style="padding: 8px; border-radius: 5px; font-weight: 800;" (click)="updateSoLuong()"></button>
+        </td>
+      </tr>
+    </table>
   </div>
   <div class="row">
     <div class="col-lg-12">
@@ -197,7 +213,7 @@
 
 
     <div style="text-align: center; width: 100%; margin-top: 20px;" *ngIf="action == 0">
-      <button pButton  label="Thêm" class="p-button-info p-button-text" style="padding: 4px 8px; border-radius: 5px; font-weight: 800; margin-right: 20px; background-color: #0ea5e9; color: white;" (click)="addProduct(curProduct.id)"></button>
+      <button pButton  label="Thêm" class="p-button-info p-button-text" style="padding: 4px 8px; border-radius: 5px; font-weight: 800; margin-right: 20px; background-color: #0ea5e9; color: white;" (click)="addProduct()"></button>
     </div>
     <div style="text-align: center; width: 100%; margin-top: 20px;" *ngIf="action == 1">
       <button pButton  label="Lưu" class="p-button-info p-button-text" style="padding: 4px 8px; border-radius: 5px; font-weight: 800; margin-right: 20px; background-color: #0ea5e9; color: white;" (click)="updateProduct(curProduct.id)"></button>

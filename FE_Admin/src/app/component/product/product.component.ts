@@ -1,5 +1,5 @@
 import { HttpClientModule } from '@angular/common/http';
-import { Component, Pipe, PipeTransform } from '@angular/core';
+import { Component, Pipe, PipeTransform, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
@@ -9,7 +9,7 @@ import { InputNumberModule } from 'primeng/inputnumber';
 import { InputTextModule } from 'primeng/inputtext';
 import { TableModule } from 'primeng/table';
 import { ToastModule } from 'primeng/toast';
-import { FileUploadModule } from 'primeng/fileupload';
+import { FileUpload, FileUploadModule } from 'primeng/fileupload';
 import { PaginatorModule } from 'primeng/paginator';
 import { CommonModule } from '@angular/common';
 import { RouterModule, RouterOutlet } from '@angular/router';
@@ -21,6 +21,8 @@ import { OrderService } from '../../service/order.service';
 import { PhuongThucVanChuyen, TrangThaiDonHang } from '../../Enums/Enums';
 import { ProductService } from '../../service/product.service';
 import { ImageService } from '../../service/image.service';
+import { resolve } from 'path';
+import { lastValueFrom } from 'rxjs';
 
 @Pipe({ standalone: true, name: 'formatVnd' })
 export class FormatVndPipe implements PipeTransform {
@@ -70,11 +72,13 @@ providers:[
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
-
+  @ViewChild('fileUpload2') fileUpload2!: FileUpload;
+  @ViewChild('fileUpload') fileUpload!: FileUpload;
 
   files: File[] = []; // Lưu danh sách file
   file2: any;
   uploadedUrls: string[] = [];
+  curListAnh = [];
   listColor = [
     {name: 'Đỏ', id: 1},
     {name: 'Cam', id: 2},
@@ -85,12 +89,12 @@ export class ProductComponent {
     {name: 'Trắng', id: 8},
     {name: 'Đen', id: 7},
   ];
-  curColor: any;
-  curSoLuong: any;
-  curKichCo: any;
+  curId: any;
+  listSanPhamSoLuong = [
+    { sanPhamId: '', mau: null, kichCo: 0, soLuong: 0 }  // Một mục đầu tiên trống để thêm thông tin
+  ];
 
   showForm = false;
-  curId: any;
   action = 0; //0: them, 1: sua, 2: xoa
   listDanhMuc = [];
   listCategory: any;
@@ -157,16 +161,22 @@ export class ProductComponent {
     this.showForm = true;
     this.action = 1;
     this.curId = orderId;
+    this.clearGanFile(null);
+    this.clearGanFile2(null);
     this._productService.getProductById(orderId).subscribe(data => {
       this.curProduct = data;
+      this.curListAnh = data.listAnhSanPham;
       this.curProduct.ngayTao = new Date(data.ngayTao);
       this.curProduct.ngayCapNhat = new Date(data.ngayCapNhat);
-  })
+    })
+    this._productService.getSoLuong(this.curId).subscribe(data => {
+      this.listSanPhamSoLuong = data;
+    });
   }
 
   deleteProduct(orderId: any){
     this.confirmationService.confirm({
-      message: 'Xác nhận xóa danh mục này?',
+      message: 'Xác nhận xóa sản phẩm này?',
       accept: async () => {
         this._productService.deleteSanPham(orderId).subscribe(data => {
           if(data.status == "success")
@@ -176,7 +186,7 @@ export class ProductComponent {
           }
           else
           {
-            this._messageService.add({severity:'info', summary: 'Thông báo', detail: 'Xóa sản phẩm thất bại'});
+            this._messageService.add({severity:'info', summary: 'Thông báo', detail: 'Xóa sản phẩm thất bại: Sản phẩm đã được đặt hàng'});
           }
         })
       }
@@ -188,7 +198,10 @@ export class ProductComponent {
 
   showAdd(){
     this.action = 0;
+    this.clearGanFile(null);
+    this.clearGanFile2(null);
     this.resetBody();
+    this.curListAnh = [];
     this.showForm = true;
   }
   ganFile(event: any): void {
@@ -208,82 +221,120 @@ export class ProductComponent {
   }
 
   // Xóa toàn bộ file khi người dùng clear danh sách
-  clearGanFile(): void {
+  clearGanFile($event: any): void {
     this.files = [];
+    this.fileUpload.clear();
   }
 
-  clearGanFile2(): void {
+  clearGanFile2($event: any): void {
     this.file2 = null;
+    this.fileUpload2.clear();
   }
 
   // Xử lý upload
-  myUploader(event: any): void {
-    if (this.files.length === 0) {
-      alert('Please select at least one file');
-      return;
+  myUploader(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      if (this.files.length === 0) {
+        return resolve();
+      }
+
+      this._imageService.uploadImages(this.files).subscribe(
+        (response) => {
+          this.uploadedUrls = response.urls;
+          let listAnhSanPham: any[] = [];
+          this.uploadedUrls.forEach((url) => {
+            listAnhSanPham.push({
+              duongDan: url,
+              sanPhamId: this.curProduct.id
+            });
+          });
+          console.log(listAnhSanPham);
+
+          this._imageService.postAnhSanPham(listAnhSanPham).subscribe(
+            () => resolve(),
+            (error) => reject(error)
+          );
+        },
+        (error) => reject(error)
+      );
+    });
+  }
+
+
+  myUploader2(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      if (!this.file2) {
+        return resolve(); // Không có file thì bỏ qua
+      }
+
+      this._imageService.uploadSingleImage(this.file2).subscribe(
+        (response) => {
+          this.curProduct.duongDanAnh = response.url;
+          resolve();
+        },
+        (error) => reject(error)
+      );
+    });
+  }
+
+
+  async addProduct(){
+    try {
+      this.curProduct.id = crypto.randomUUID();
+
+      await Promise.all([this.myUploader2()]);
+
+      await lastValueFrom(this._productService.postSanPham(this.curProduct));
+
+      await Promise.all([this.myUploader()]);
+
+      // this._productService.postSanPham(this.curProduct).subscribe(data => {
+          this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Thêm sản phẩm thành công'});
+          this.showForm = false;
+          this.clearGanFile(null);
+          this.clearGanFile2(null);
+          this.getAll();
+      //})
+    } catch (error) {
+      console.error("Lỗi khi upload ảnh:", error);
     }
-
-    // this._imageService.uploadImages(this.files).subscribe(
-    //   (response) => {
-    //     this.uploadedUrls = response.urls; // Gán URL ảnh trả về
-    //     this.body.imageUrls = this.uploadedUrls.join(',');
-    //     this._messageService.add({severity:'success', summary: 'Thông báo', detail: 'Upload ảnh thành công', life: 3000});
-    //   },
-    //   (error) => {
-    //     console.error('Error uploading images:', error);
-    //     this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Có lỗi xảy ra, hãy thử lại sau', life: 3000});
-    //   }
-    // );
   }
 
+  async updateProduct(productId: any){
+    try {
 
-  myUploader2(event: any): void {
-    if (!this.file2) {
-      alert('Please select at least one file');
-      return;
+      await Promise.all([this.myUploader(), this.myUploader2()]);
+      this.curProduct.ngayCapNhat = new Date();
+      this._productService.putSanPham(productId, this.curProduct).subscribe(data => {
+          this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Sửa sản phẩm thành công'});
+          this.showForm = false;
+          this.clearGanFile(null);
+          this.clearGanFile2(null);
+          this.getAll();
+      })
+    } catch (error) {
+      console.error("Lỗi khi upload ảnh:", error);
     }
-
-    // this._imageService.uploadImages(this.files).subscribe(
-    //   (response) => {
-    //     this.uploadedUrls = response.urls; // Gán URL ảnh trả về
-    //     this.body.imageUrls = this.uploadedUrls.join(',');
-    //     this._messageService.add({severity:'success', summary: 'Thông báo', detail: 'Upload ảnh thành công', life: 3000});
-    //   },
-    //   (error) => {
-    //     console.error('Error uploading images:', error);
-    //     this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Có lỗi xảy ra, hãy thử lại sau', life: 3000});
-    //   }
-    // );
-  }
-
-
-  addProduct(productId: any){
-    this._productService.postSanPham(productId, this.curProduct).subscribe(data => {
-        this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Thêm sản phẩm thành công'});
-        this.showForm = false;
-        this.getAll();
-    })
-  }
-
-  updateProduct(productId: any){
-    this._productService.putSanPham(productId, this.curProduct).subscribe(data => {
-        this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Sửa sản phẩm thành công'});
-        this.showForm = false;
-        this.getAll();
-    })
   }
 
   updateSoLuong(){
-    this._productService.updateSoLuong(this.curId, this.curColor, this.curKichCo, this.curSoLuong).subscribe(data => {
+    this._productService.updateSoLuong(this.curId, this.listSanPhamSoLuong).subscribe(data => {
       this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Cập nhật số lượng thành công'});
       this.getAll();
     })
   }
 
-  getSoLuong(){
-    this._productService.getSoLuong(this.curId, this.curColor, this.curKichCo).subscribe(data => {
-      this.curSoLuong = data;
-    })
+  addViewSoLuong(){
+    this.listSanPhamSoLuong.push({
+      sanPhamId: this.curId,
+      soLuong: 0,
+      kichCo: 0,
+      mau: null
+    });
+  }
+
+  xoaSub(i: any){
+    this.listSanPhamSoLuong.splice(i, 1);
   }
 
 }

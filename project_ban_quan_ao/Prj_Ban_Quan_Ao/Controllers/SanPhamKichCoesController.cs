@@ -43,38 +43,27 @@ namespace Prj_Ban_Quan_Ao.Controllers
 
 
                 // GET: api/SanPhamKichCoes/5
-        [HttpGet("updateSoLuong/{sanPhamId}/{curColor}/{curKichCo}/{curSoLuong}")]
-        public async Task<ActionResult<SanPhamKichCo>> updateSoLuong(Guid sanPhamId, int curColor, double curKichCo, int curSoLuong)
+        [HttpPost("updateSoLuong/{sanPhamId}")]
+        public async Task<ActionResult<SanPhamKichCo>> updateSoLuong(Guid sanPhamId, List<SanPhamKichCo> sanPhamKichCos)
         {
-            var check = await _context.SanPhamKichCos.FirstOrDefaultAsync(x => x.SanPhamId == sanPhamId && x.Mau == curColor && x.KichCo == curKichCo);
-            if(check != null)
+            var check = await _context.SanPhamKichCos.Where(x => x.SanPhamId == sanPhamId).ToListAsync();
+            if(check != null && check.Any())
             {
-                check.SoLuong = curSoLuong;
+               _context.SanPhamKichCos.RemoveRange(check);
                await _context.SaveChangesAsync();
-                return Ok();
             }
 
-            var newspckc = new SanPhamKichCo();
-            newspckc.SanPhamId = sanPhamId;
-            newspckc.Mau = curColor;
-            newspckc.KichCo = curKichCo;
-            newspckc.SoLuong = curSoLuong;
-
-            _context.SanPhamKichCos.Add(newspckc);
+            
+            await _context.SanPhamKichCos.AddRangeAsync(sanPhamKichCos);
             await _context.SaveChangesAsync();
             return Ok();
         }
 
-         [HttpGet("getSoLuong/{sanPhamId}/{curColor}/{curKichCo}")]
-        public async Task<ActionResult<int>> getSoLuong(Guid sanPhamId, int curColor, double curKichCo)
+         [HttpGet("getSoLuong/{sanPhamId}")]
+        public async Task<ActionResult<SanPhamKichCo>> getSoLuong(Guid sanPhamId)
         {
-            var check = await _context.SanPhamKichCos.FirstOrDefaultAsync(x => x.SanPhamId == sanPhamId && x.Mau == curColor && x.KichCo == curKichCo);
-            if(check != null)
-            {
-              
-                return Ok(check.SoLuong);
-            }
-            return 0;
+            var check = await _context.SanPhamKichCos.Where(x => x.SanPhamId == sanPhamId).ToListAsync();
+            return Ok(check);
         }
 
         // PUT: api/SanPhamKichCoes/5

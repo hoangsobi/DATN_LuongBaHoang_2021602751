@@ -436,6 +436,7 @@ public partial class DbQuanAoContext : DbContext
             entity.Property(e => e.Id)
                 .HasDefaultValueSql("(newid())")
                 .HasColumnName("id");
+            entity.Property(e => e.LoaiSanPhamChaId).HasColumnName("LoaiSanPhamCha_Id");
             entity.Property(e => e.MoTa).HasColumnName("moTa");
             entity.Property(e => e.NgayTao)
                 .HasDefaultValueSql("(getdate())")
@@ -594,9 +595,7 @@ public partial class DbQuanAoContext : DbContext
                     tb.HasTrigger("trg_UpdateSanPhamKichCo");
                 });
 
-            entity.HasIndex(e => new { e.SanPhamId, e.KichCo }, "UC_SanphamKichco").IsUnique();
-
-            entity.HasIndex(e => new { e.SanPhamId, e.KichCo, e.Mau }, "uq_sanpham_kichCo").IsUnique();
+            entity.HasIndex(e => new { e.SanPhamId, e.KichCo, e.Mau }, "uq_sanpham_kichco").IsUnique();
 
             entity.Property(e => e.Id)
                 .HasDefaultValueSql("(newid())")

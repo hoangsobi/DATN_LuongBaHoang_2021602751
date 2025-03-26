@@ -5,6 +5,7 @@ import { UserAdminComponent } from './component/user-admin/user-admin.component'
 import { CategoryComponent } from './component/category/category.component';
 import { OrderComponent } from './component/order/order.component';
 import { ProductComponent } from './component/product/product.component';
+import { SubCategoryComponent } from './component/sub-category/sub-category.component';
 
 export const routes: Routes = [
   { path: '', component: DashboardComponent, title:'Dashboard' },
@@ -12,6 +13,7 @@ export const routes: Routes = [
   { path: 'user', component: UserComponent, title:'User' },
   { path: 'user-admin', component: UserAdminComponent, title:'Admin' },
   { path: 'category', component: CategoryComponent, title:'Category' },
+  { path: 'subCategory', component: SubCategoryComponent, title:'Sub-Category' },
   { path: 'order', component: OrderComponent, title:'Order' },
   { path: 'product', component: ProductComponent, title:'Product' },
 ];

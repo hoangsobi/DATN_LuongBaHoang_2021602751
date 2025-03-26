@@ -19,6 +19,10 @@ export class CategoryService {
     return this.http.get(this.url, this.httpOptions);
   }
 
+  getAllDanhMucCon(): Observable<any>{
+    return this.http.get(`${this.url}/getAllDanhMucCon`, this.httpOptions);
+  }
+
   putDanhMuc(cateId: any, body: any): Observable<any>{
     return this.http.put(`${this.url}/${cateId}`, body, this.httpOptions);
   }

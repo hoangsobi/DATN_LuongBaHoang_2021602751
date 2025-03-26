@@ -60,27 +60,54 @@ namespace Prj_Ban_Quan_Ao.Controllers
 
         // GET: api/SanPhams/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<SanPham>> GetSanPham(Guid id)
+        public async Task<ActionResult<object>> GetSanPham(Guid id)
         {
-            var sanPham = await _context.SanPhams.FindAsync(id);
+                var sanPham = await _context.SanPhams
+                    .Where(sp => sp.Id == id)
+                    .GroupJoin(
+                        _context.AnhSanPhams.OrderBy(a => a.NgayTao),
+                        sp => sp.Id,
+                        a => a.SanPhamId,
+                        (sp, anhSanPhams) => new
+                        {
+                            sp.Id,
+                             sp.Ten,
+                             sp.MaSanPham,
+                             sp.NgayTao,
+                             sp.Gia,
+                             sp.GiaSauGiam,
+                             sp.NgayCapNhat,
+                             sp.LoaiSanPhamId,
+                             sp.ChatLieu,
+                             sp.GhiChu,
+                             sp.MoTa,
+                             sp.DuongDanAnh,
+                            ListAnhSanPham = anhSanPhams.Select(x => x.DuongDan).ToList()
+                        }
+                    )
+                    .FirstOrDefaultAsync();
 
-            if (sanPham == null)
-            {
-                return NotFound();
-            }
+                if (sanPham == null)
+                {
+                    return NotFound();
+                }
 
-            return sanPham;
+                return Ok(sanPham);
+
         }
+
 
         // PUT: api/SanPhams/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutSanPham(Guid id, SanPham sanPham)
         {
+            var query = await _context.SanPhams.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
             if (id != sanPham.Id)
             {
                 return BadRequest();
             }
+            sanPham.NgayTao = query.NgayTao;
 
             _context.Entry(sanPham).State = EntityState.Modified;
 
@@ -218,16 +245,40 @@ namespace Prj_Ban_Quan_Ao.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSanPham(Guid id)
         {
-            var sanPham = await _context.SanPhams.FindAsync(id);
-            if (sanPham == null)
+            using (var transaction = await _context.Database.BeginTransactionAsync())
             {
-                return NotFound();
+                try
+                {
+                     await _context.AnhSanPhams
+                    .Where(a => a.SanPhamId == id)
+                    .ExecuteDeleteAsync(); 
+                    // Xóa tất cả các dòng trong bảng SanPham_KichCo có liên quan đến SanPham
+                    await _context.SanPhamKichCos
+                        .Where(spkc => spkc.SanPhamId == id)
+                        .ExecuteDeleteAsync(); // Cách này tối ưu hơn so với RemoveRange()
+
+                    // Tìm sản phẩm cần xóa
+                    var sanPham = await _context.SanPhams.FindAsync(id);
+                    if (sanPham == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Xóa sản phẩm
+                    _context.SanPhams.Remove(sanPham);
+                    await _context.SaveChangesAsync();
+
+                    // Commit transaction
+                    await transaction.CommitAsync();
+
+                    return Ok(new {status="success"});
+                }
+                catch (Exception)
+                {
+                    await transaction.RollbackAsync();
+                    return Ok(new {status="error"});
+                }
             }
-
-            _context.SanPhams.Remove(sanPham);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
         }
 
         private bool SanPhamExists(Guid id)

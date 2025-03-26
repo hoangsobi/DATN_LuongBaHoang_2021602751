@@ -20,8 +20,12 @@ export class ProductService {
     return this.http.get(this.url, this.httpOptions);
   }
 
-  postSanPham(productId: any, body: any): Observable<any>{
-    return this.http.put(`${this.url}/${productId}`, body, this.httpOptions);
+  postSanPham(body: any): Observable<any>{
+    return this.http.post(`${this.url}`, body, this.httpOptions);
+  }
+
+  postSanPhamMul( body: any): Observable<any>{
+    return this.http.post(`${this.url}/AddMultiple`, body, this.httpOptions);
   }
 
   deleteSanPham(productId: any): Observable<any>{
@@ -36,12 +40,13 @@ export class ProductService {
     return this.http.put(`${this.url}/${productId}`, body, this.httpOptions);
   }
 
-  updateSoLuong(sanPhamId: any, curColor: any, curKichCo: any,  curSoLuong: any): Observable<any>{
-    return this.http.get(`${this.urlspkc}/updateSoLuong/${sanPhamId}/${curColor}/${curKichCo}/${curSoLuong}`, this.httpOptions);
+  updateSoLuong(sanPhamId: any, body: any): Observable<any>{
+    return this.http.post(`${this.urlspkc}/updateSoLuong/${sanPhamId}`, body, this.httpOptions);
   }
 
-  getSoLuong(sanPhamId: any, curColor: any, curKichCo: any): Observable<any>{
-    return this.http.get(`${this.urlspkc}/getSoLuong/${sanPhamId}/${curColor}/${curKichCo}`, this.httpOptions);
+  getSoLuong(sanPhamId: any): Observable<any>{
+    return this.http.get(`${this.urlspkc}/getSoLuong/${sanPhamId}`, this.httpOptions);
   }
+
 
 }
