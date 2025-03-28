@@ -1,0 +1,8 @@
+.fatall{
+  background-color: white;
+  padding: 10px;
+}
+
+::ng-deep .p-dropdown{
+  width: 100%;
+}

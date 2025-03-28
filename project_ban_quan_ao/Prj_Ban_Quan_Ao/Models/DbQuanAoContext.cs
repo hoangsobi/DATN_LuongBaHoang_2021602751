@@ -39,6 +39,8 @@ public partial class DbQuanAoContext : DbContext
 
     public virtual DbSet<ChatBox> ChatBoxes { get; set; }
 
+    public virtual DbSet<ChiPhi> ChiPhis { get; set; }
+
     public virtual DbSet<DanhGium> DanhGia { get; set; }
 
     public virtual DbSet<DiaChi> DiaChis { get; set; }
@@ -53,6 +55,8 @@ public partial class DbQuanAoContext : DbContext
 
     public virtual DbSet<MaGiamGium> MaGiamGia { get; set; }
 
+    public virtual DbSet<Quyen> Quyens { get; set; }
+
     public virtual DbSet<SanPham> SanPhams { get; set; }
 
     public virtual DbSet<SanPhamDonHang> SanPhamDonHangs { get; set; }
@@ -62,6 +66,8 @@ public partial class DbQuanAoContext : DbContext
     public virtual DbSet<SanPhamKichCo> SanPhamKichCos { get; set; }
 
     public virtual DbSet<VaiTro> VaiTros { get; set; }
+
+    public virtual DbSet<VaiTroQuyen> VaiTroQuyens { get; set; }
 
     public virtual DbSet<YeuThich> YeuThiches { get; set; }
 
@@ -275,6 +281,37 @@ public partial class DbQuanAoContext : DbContext
             entity.Property(e => e.NoiDung).HasColumnName("noiDung");
         });
 
+        modelBuilder.Entity<ChiPhi>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__ChiPhi__3213E83F83A3FBE0");
+
+            entity.ToTable("ChiPhi");
+
+            entity.Property(e => e.Id)
+                .HasDefaultValueSql("(newid())")
+                .HasColumnName("id");
+            entity.Property(e => e.AccountId).HasColumnName("accountId");
+            entity.Property(e => e.MucDich)
+                .HasMaxLength(1000)
+                .HasColumnName("mucDich");
+            entity.Property(e => e.NgayChi)
+                .HasColumnType("datetime")
+                .HasColumnName("ngayChi");
+            entity.Property(e => e.NgayTao)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("ngayTao");
+            entity.Property(e => e.SoTien).HasColumnName("soTien");
+            entity.Property(e => e.TenChiPhi)
+                .HasMaxLength(500)
+                .HasColumnName("tenChiPhi");
+
+            entity.HasOne(d => d.Account).WithMany(p => p.ChiPhis)
+                .HasForeignKey(d => d.AccountId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK__ChiPhi__accountI__2077C861");
+        });
+
         modelBuilder.Entity<DanhGium>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__DanhGia__3213E83F6069BE80");
@@ -467,6 +504,31 @@ public partial class DbQuanAoContext : DbContext
             entity.Property(e => e.SoLuong).HasColumnName("soLuong");
         });
 
+        modelBuilder.Entity<Quyen>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Quyen__3213E83F63867134");
+
+            entity.ToTable("Quyen");
+
+            entity.Property(e => e.Id)
+                .HasDefaultValueSql("(newid())")
+                .HasColumnName("id");
+            entity.Property(e => e.IconClass)
+                .HasMaxLength(50)
+                .HasColumnName("iconClass");
+            entity.Property(e => e.NgayTao)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("ngayTao");
+            entity.Property(e => e.Order).HasColumnName("order");
+            entity.Property(e => e.Rout)
+                .HasMaxLength(500)
+                .HasColumnName("rout");
+            entity.Property(e => e.Ten)
+                .HasMaxLength(500)
+                .HasColumnName("ten");
+        });
+
         modelBuilder.Entity<SanPham>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__SanPham__3213E83F1C164B26");
@@ -630,6 +692,31 @@ public partial class DbQuanAoContext : DbContext
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("ngayTao");
+        });
+
+        modelBuilder.Entity<VaiTroQuyen>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__VaiTro_Q__3213E83F12D834F2");
+
+            entity.ToTable("VaiTro_Quyen");
+
+            entity.Property(e => e.Id)
+                .HasDefaultValueSql("(newid())")
+                .HasColumnName("id");
+            entity.Property(e => e.NgayTao)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("ngayTao");
+
+            entity.HasOne(d => d.Quyen).WithMany(p => p.VaiTroQuyens)
+                .HasForeignKey(d => d.QuyenId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_VaiTro_Quyen_Quyen");
+
+            entity.HasOne(d => d.VaiTro).WithMany(p => p.VaiTroQuyens)
+                .HasForeignKey(d => d.VaiTroId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_VaiTro_Quyen_VaiTro");
         });
 
         modelBuilder.Entity<YeuThich>(entity =>
