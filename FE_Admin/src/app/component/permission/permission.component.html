@@ -1,0 +1,29 @@
+
+<div class="fatall">
+  <p style="font-weight: bold; padding: 10px; font-size: 18px;">Phân quyền</p>
+  <div class="row">
+    <div class="col-lg-6">
+      <div style="padding: 10px;">
+        <p>Vị trí:</p>
+        <p-dropdown [options]="listRole" [(ngModel)]="selectedRole" placeholder="Chọn vai trò" (onChange)="getListPermissionRole()"  optionLabel="name" optionValue="id"></p-dropdown>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div style="padding: 10px;">
+        <p>Chức năng:</p>
+        <div>
+          <div *ngFor="let item of listPermission; let index = index"  style="margin-bottom: 10px;">
+            <p-checkbox  [binary]="true" [ngModel]="isChecked(item.rout)"  (onChange)="togglePermission({id: item.id, ten: item.ten,rout: item.rout})"  inputId="{{index}}"/>
+            <label for="{{index}}" class="ml-2 mr-2 mb-0">{{item.ten}}</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+    <button pButton pRipple type="button" label="Cập nhật" class="p-button-info p-button" style="padding: 8px; border-radius: 5px; font-weight: 800;" (click)="updatePermissionRole()"></button>
+  </div>
+</div>
+
+<p-toast></p-toast>
+

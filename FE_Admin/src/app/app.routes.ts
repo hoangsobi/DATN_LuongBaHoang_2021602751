@@ -6,14 +6,28 @@ import { CategoryComponent } from './component/category/category.component';
 import { OrderComponent } from './component/order/order.component';
 import { ProductComponent } from './component/product/product.component';
 import { SubCategoryComponent } from './component/sub-category/sub-category.component';
+import { ExpenseComponent } from './component/expense/expense.component';
+import { LoginComponent } from './component/login/login.component';
+import { AdminLayoutComponent } from './component/admin-layout/admin-layout.component';
+import { AuthGuard } from './service/auth.guard';
+import { PermissionComponent } from './component/permission/permission.component';
 
 export const routes: Routes = [
-  { path: '', component: DashboardComponent, title:'Dashboard' },
-  { path: 'dashboard', component: DashboardComponent, title:'Dashboard' },
-  { path: 'user', component: UserComponent, title:'User' },
-  { path: 'user-admin', component: UserAdminComponent, title:'Admin' },
-  { path: 'category', component: CategoryComponent, title:'Category' },
-  { path: 'subCategory', component: SubCategoryComponent, title:'Sub-Category' },
-  { path: 'order', component: OrderComponent, title:'Order' },
-  { path: 'product', component: ProductComponent, title:'Product' },
+  { path: 'login', component: LoginComponent, title: 'Login' },
+  {
+    path: '',
+    component: AdminLayoutComponent,
+    children: [
+      { path: '', component: DashboardComponent, title:'Dashboard', canActivate: [AuthGuard] },
+      { path: 'dashboard', component: DashboardComponent, title:'Dashboard', canActivate: [AuthGuard] },
+      { path: 'user', component: UserComponent, title:'User', canActivate: [AuthGuard] },
+      { path: 'user-admin', component: UserAdminComponent, title:'Admin', canActivate: [AuthGuard] },
+      { path: 'category', component: CategoryComponent, title:'Category', canActivate: [AuthGuard] },
+      { path: 'subCategory', component: SubCategoryComponent, title:'Sub-Category', canActivate: [AuthGuard] },
+      { path: 'order', component: OrderComponent, title:'Order', canActivate: [AuthGuard] },
+      { path: 'product', component: ProductComponent, title:'Product', canActivate: [AuthGuard] },
+      { path: 'expense', component: ExpenseComponent, title:'Expense', canActivate: [AuthGuard] },
+      { path: 'permission', component: PermissionComponent, title:'Permission', canActivate: [AuthGuard] },
+    ]
+  }
 ];

@@ -12,4 +12,6 @@ public partial class VaiTro
     public DateTime? NgayTao { get; set; }
 
     public virtual ICollection<Account> Accounts { get; set; } = new List<Account>();
+
+    public virtual ICollection<VaiTroQuyen> VaiTroQuyens { get; set; } = new List<VaiTroQuyen>();
 }

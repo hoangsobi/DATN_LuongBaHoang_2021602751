@@ -31,6 +31,8 @@ public partial class Account
 
     public virtual ICollection<AccountMaGiamGium> AccountMaGiamGia { get; set; } = new List<AccountMaGiamGium>();
 
+    public virtual ICollection<ChiPhi> ChiPhis { get; set; } = new List<ChiPhi>();
+
     public virtual ICollection<DanhGium> DanhGia { get; set; } = new List<DanhGium>();
 
     public virtual ICollection<DiaChi> DiaChis { get; set; } = new List<DiaChi>();

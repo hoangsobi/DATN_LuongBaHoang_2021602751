@@ -5,3 +5,9 @@
 .tablesp{
   font-family: 'nunito', sans-serif;
 }
+
+
+::ng-deep .p-dialog-footer .p-button{
+  margin-left: 10px;
+  border-radius: 10px;
+}

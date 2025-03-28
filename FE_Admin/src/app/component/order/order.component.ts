@@ -144,17 +144,39 @@ export class OrderComponent {
 
 
   changeStatusOrder(action: any, orderId: any, status: any){
-    this._orderService.changeStatusOrder(action, orderId, status).subscribe(data => {
-      if(data.status == "success")
-      {
-        this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Thay đổi trạng thái đơn hàng thành công'});
-        this.getAll();
-      }
-      else
-      {
-        this._messageService.add({severity:'info', summary: 'Thông báo', detail: 'Thay đổi trạng thái đơn hàng thất bại'});
-      }
-    })
+    if(status == TrangThaiDonHang.DangChuanBiHang && action == 1)
+    {
+      this.confirmationService.confirm({
+        message: 'Bạn có chắc chắn muốn chuyển trạng thái đơn hàng?',
+        accept: () => {
+          this._orderService.changeStatusOrder(action, orderId, status).subscribe(data => {
+            if(data.status == "success")
+            {
+              this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Thay đổi trạng thái đơn hàng thành công'});
+              this.getAll();
+            }
+            else
+            {
+              this._messageService.add({severity:'info', summary: 'Thông báo', detail: 'Thay đổi trạng thái đơn hàng thất bại'});
+            }
+          })
+        }
+      })
+    }
+    else
+    {
+      this._orderService.changeStatusOrder(action, orderId, status).subscribe(data => {
+        if(data.status == "success")
+        {
+          this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Thay đổi trạng thái đơn hàng thành công'});
+          this.getAll();
+        }
+        else
+        {
+          this._messageService.add({severity:'info', summary: 'Thông báo', detail: 'Thay đổi trạng thái đơn hàng thất bại'});
+        }
+      })
+    }
   }
 
 

@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using Prj_Ban_Quan_Ao.Models;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
@@ -18,10 +22,12 @@ namespace Prj_Ban_Quan_Ao.Controllers
     public class AccountsController : ControllerBase
     {
         private readonly DbQuanAoContext _context;
+        private readonly IConfiguration _configuration;
 
-        public AccountsController(DbQuanAoContext context)
+        public AccountsController(DbQuanAoContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
         // GET: api/Accounts
@@ -47,7 +53,7 @@ namespace Prj_Ban_Quan_Ao.Controllers
         {
             return await (from ac in _context.Accounts
                           join vt in _context.VaiTros on ac.VaiTroId equals vt.Id
-                          where vt.Name == "Admin"
+                          where vt.Name != "User"
                           orderby ac.NgayTao descending
                           select new
                           {
@@ -266,6 +272,110 @@ namespace Prj_Ban_Quan_Ao.Controllers
         private bool AccountExists(Guid id)
         {
             return _context.Accounts.Any(e => e.Id == id);
+        }
+
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginRequestCustom loginRequest)
+        {
+            // Kiểm tra thông tin đăng nhập
+            var user = await Authenticate(loginRequest.TenDangNhap, loginRequest.MatKhau);
+
+            if (user == null)
+            {
+                return Ok(new {status="wrong"});
+            }
+
+            // Tạo token JWT
+            var token = GenerateJwtToken(user);
+
+            return Ok(new { token = token, status = "success" });
+        }
+
+        // Kiểm tra thông tin đăng nhập
+        private async Task<AccountCustom> Authenticate(string tenDangNhap, string matKhau)
+        {
+            var idUserRole = await _context.VaiTros
+                             .Where(x => x.Name == "User")
+                             .Select(x => x.Id)
+                             .FirstOrDefaultAsync();
+            // Tìm người dùng trong cơ sở dữ liệu (có thể sử dụng mã hash mật khẩu trong thực tế)
+      
+           var user = await  (from a in _context.Accounts
+                join v in _context.VaiTros on a.VaiTroId equals v.Id
+                where a.TenDangNhap == tenDangNhap && a.MatKhau == matKhau && a.VaiTroId != idUserRole
+                select new
+                {
+                    a.Id,
+                    a.TenDangNhap,
+                    a.TenHienThi,
+                    a.MatKhau,
+                    a.GioiTinh,
+                    a.NgaySinh,
+                    a.SoDienThoai,
+                    a.Email,
+                    a.DuongDanAnh,
+                    a.NgayTao,
+                    a.IsLocked,
+                    a.VaiTroId,
+                    VaiTroName = v.Name // Lấy tên vai trò từ bảng VaiTro
+                }).FirstOrDefaultAsync();
+
+                if (user != null)
+                {
+
+                    var quyenList = await (from vq in _context.VaiTroQuyens
+                               join q in _context.Quyens on vq.QuyenId equals q.Id
+                               where vq.VaiTroId == user.VaiTroId
+                               orderby q.Order
+                               select new QuyenDto { Rout = q.Rout, Ten = q.Ten, IconClass = q.IconClass, Order = q.Order}).ToListAsync();
+
+                    // Nếu tìm thấy người dùng, tạo đối tượng Account và gán thông tin vai trò
+                    return new AccountCustom
+                    {
+                        Id = user.Id,
+                        TenDangNhap = user.TenDangNhap,
+                        TenHienThi = user.TenHienThi,
+                        MatKhau = user.MatKhau,
+                        SoDienThoai = user.SoDienThoai,
+                        Email = user.Email,
+                        DuongDanAnh = user.DuongDanAnh,
+                        IsLocked = user.IsLocked,
+                        VaiTroName = user.VaiTroName,
+                        listRout = quyenList// Lưu tên vai trò vào tài khoản
+                    };
+                }
+
+                return null;
+        }
+
+        // Tạo token JWT
+        private string GenerateJwtToken(AccountCustom user)
+        {
+            var claims = new List<System.Security.Claims.Claim>
+            {
+                new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Name, user.TenDangNhap),
+                new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Name, user.TenHienThi),
+                new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Name, user.DuongDanAnh),
+                new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Role, user.VaiTroName) // Giả sử VaiTroId là Role
+            };
+
+            foreach (var quyen in user.listRout)
+            {
+                claims.Add(new System.Security.Claims.Claim("Permissions", $"{quyen.Ten}:{quyen.Rout}:{quyen.IconClass}:{quyen.Order}"));
+            }
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken(
+                issuer: _configuration["Jwt:Issuer"],
+                audience: _configuration["Jwt:Audience"],
+                claims: claims,
+                expires: DateTime.Now.AddMinutes(30),
+                signingCredentials: creds);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
 

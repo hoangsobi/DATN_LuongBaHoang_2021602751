@@ -264,3 +264,4 @@ D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\
 D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\Prj_Ban_Quan_Ao.genruntimeconfig.cache
 D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\obj\Debug\net8.0\ref\Prj_Ban_Quan_Ao.dll
 D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\CloudinaryDotNet.dll
+D:\CodeDoAn(Client)\LuongBaHoang_2021602751\project_ban_quan_ao\Prj_Ban_Quan_Ao\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll

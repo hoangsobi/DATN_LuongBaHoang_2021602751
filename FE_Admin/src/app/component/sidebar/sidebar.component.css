@@ -1,0 +1,15 @@
+.nav-item i {
+  font-size: 18px !important;
+}
+
+
+.logoutButton{
+  width: 100%;
+  border: none;
+  transition: 0.5s;
+  text-align: left;
+  background-color: white;
+}
+.logoutButton:hover {
+  background-color: lightblue;
+}
