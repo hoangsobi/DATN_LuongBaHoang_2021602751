@@ -27,6 +27,12 @@ namespace Prj_Ban_Quan_Ao.Controllers
             return await _context.LoaiSanPhams.Where(x => x.LoaiSanPhamChaId == null).OrderByDescending(x => x.NgayTao).ToListAsync();
         }
 
+        [HttpGet("getAllLoaiSanPham")]
+        public async Task<ActionResult<IEnumerable<LoaiSanPham>>> GetAllLoaiSanPham()
+        {
+            return await _context.LoaiSanPhams.Where(x => x.LoaiSanPhamChaId != null).OrderByDescending(x => x.NgayTao).ToListAsync();
+        }
+
         [HttpGet("getAllDanhMucCon")]
         public async Task<ActionResult<IEnumerable<object>>> GetLoaiSanPhamCons()
         {

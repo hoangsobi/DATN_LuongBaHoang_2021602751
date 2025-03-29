@@ -3,9 +3,9 @@ import {
   CALENDAR_VALUE_ACCESSOR,
   Calendar,
   CalendarModule
-} from "./chunk-F6I3EVS3.js";
-import "./chunk-7EFYKCJS.js";
+} from "./chunk-4BPCT2BT.js";
 import "./chunk-KNJOOWCU.js";
+import "./chunk-7EFYKCJS.js";
 import "./chunk-TINXO6WX.js";
 import "./chunk-NTYNY7A2.js";
 import "./chunk-YBWAZV4F.js";

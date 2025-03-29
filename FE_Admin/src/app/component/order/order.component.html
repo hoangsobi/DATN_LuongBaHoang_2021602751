@@ -17,7 +17,7 @@
           <th>Khách hàng</th>
           <th>Ngày tạo</th>
           <th>Thành tiền</th>
-          <th>Trạng thái</th>
+          <th style="text-align: center;">Trạng thái</th>
           <th style="min-width: 150px;">hành động</th>
       </tr>
   </ng-template>
@@ -30,7 +30,7 @@
           <td>
             <div style="display: flex;">
               <div style="min-width: 20px; padding: 0 2px;">
-                              <i class="pi pi-backward" style="color: orange; cursor: pointer; padding: 0 2px;"  *ngIf="product.trangThai != TrangThaiDonHang.ChoXacNhan && product.trangThai != TrangThaiDonHang.DaHuy" (click)="changeStatusOrder(0, product.id, product.trangThai)" ></i>
+                              <!-- <i class="pi pi-backward" style="color: orange; cursor: pointer; padding: 0 2px;"  *ngIf="product.trangThai != TrangThaiDonHang.ChoXacNhan && product.trangThai != TrangThaiDonHang.DaHuy" (click)="changeStatusOrder(0, product.id, product.trangThai)" ></i> -->
               </div>
 
               <div style="min-width: 200px; text-align: center;">            {{product.trangThai}}</div>
