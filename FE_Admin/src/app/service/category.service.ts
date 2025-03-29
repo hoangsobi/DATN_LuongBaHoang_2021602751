@@ -19,6 +19,10 @@ export class CategoryService {
     return this.http.get(this.url, this.httpOptions);
   }
 
+  getAllDanhMucProduct(): Observable<any>{
+    return this.http.get(`${this.url}/getAllLoaiSanPham`, this.httpOptions);
+  }
+
   getAllDanhMucCon(): Observable<any>{
     return this.http.get(`${this.url}/getAllDanhMucCon`, this.httpOptions);
   }

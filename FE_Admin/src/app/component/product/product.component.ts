@@ -152,7 +152,7 @@ export class ProductComponent {
     this._productService.getAllDonHang().subscribe(data => {
       this.listDanhMuc = data;
     })
-    this._categoryService.getAllDanhMuc().subscribe(data => {
+    this._categoryService.getAllDanhMucProduct().subscribe(data => {
       this.listCategory = data;
     })
   }
