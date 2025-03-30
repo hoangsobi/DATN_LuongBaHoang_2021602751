@@ -97,6 +97,8 @@ export class ProductComponent {
   showForm = false;
   action = 0; //0: them, 1: sua, 2: xoa
   listDanhMuc = [];
+  allSP: any;
+  totalRecords = 0;
   listCategory: any;
   listOrderProduct: any;
   curProduct = {
@@ -150,7 +152,10 @@ export class ProductComponent {
 
   getAll(){
     this._productService.getAllDonHang().subscribe(data => {
-      this.listDanhMuc = data;
+      this.listDanhMuc = data.slice(0, 20);
+      this.allSP = data;
+      this.totalRecords = data.length;
+      this
     })
     this._categoryService.getAllDanhMucProduct().subscribe(data => {
       this.listCategory = data;
@@ -280,6 +285,11 @@ export class ProductComponent {
 
   async addProduct(){
     try {
+      if(this.checkrq())
+        {
+          this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Vui lòng nhập đầy đủ thông tin'});
+          return;
+        }
       this.curProduct.id = crypto.randomUUID();
 
       await Promise.all([this.myUploader2()]);
@@ -302,7 +312,11 @@ export class ProductComponent {
 
   async updateProduct(productId: any){
     try {
-
+      if(this.checkrq())
+      {
+        this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Vui lòng nhập đầy đủ thông tin'});
+        return;
+      }
       await Promise.all([this.myUploader(), this.myUploader2()]);
       this.curProduct.ngayCapNhat = new Date();
       this._productService.putSanPham(productId, this.curProduct).subscribe(data => {
@@ -337,4 +351,17 @@ export class ProductComponent {
     this.listSanPhamSoLuong.splice(i, 1);
   }
 
+  checkrq(){
+    if(!this.curProduct.chatLieu || !this.curProduct.maSanPham || !this.curProduct.ten || !this.curProduct.gia || !this.curProduct.loaiSanPhamId )
+    {
+      return true;
+    }
+    return false;
+  }
+
+
+  onPageChange(event: any)
+  {
+    this.listDanhMuc = this.allSP.slice(event.page * 20, event.page * 20 + 20);
+  }
 }

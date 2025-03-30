@@ -47,6 +47,8 @@ import { Dropdown, DropdownModule } from 'primeng/dropdown';
 export class UserComponent {
   showForm = false;
   isAdd = false;
+  page = 0;
+  totalRecords = 0;
   stateOptions = [
     { label: 'Nam', value: true },
     { label: 'Nữ', value: false }
@@ -88,8 +90,9 @@ export class UserComponent {
   }
 
   getAll(){
-    this._userService.getAllUser().subscribe(data => {
-      this.listUser = data;
+    this._userService.getAllUser(this.page).subscribe(data => {
+      this.listUser = data.listAcc;
+      this.totalRecords = data.totalRecords;
     })
   }
 
@@ -158,6 +161,10 @@ export class UserComponent {
   }
 
   addUser(){
+    if(this.checkrq()){
+      this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Vui lòng nhập đầy đủ thông tin', life: 3000});
+      return;
+    }
     let newBody = {
       tenHienThi: this.body.tenHienThi,
       tenDangNhap: this.body.tenDangNhap,
@@ -174,6 +181,20 @@ export class UserComponent {
       this.getAll();
       this.showForm = false;
     })
+  }
+
+
+  checkrq(){
+    if(!this.body.tenHienThi || !this.body.tenDangNhap || !this.body.matKhau || !this.body.email || !this.body.soDienThoai){
+      return true;
+    }
+    return false;
+  }
+
+  onPageChange(event: any)
+  {
+    this.page = event.page;
+    this.getAll();
   }
 
 }

@@ -31,15 +31,26 @@ namespace Prj_Ban_Quan_Ao.Controllers
         }
 
         // GET: api/Accounts
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Account>>> GetAccounts()
+        [HttpGet("page/{page}")]
+        public async Task<ActionResult<IEnumerable<Account>>> GetAccounts(int page)
         {
-            return await (from ac in _context.Accounts
+            var totalRecords = await (from ac in _context.Accounts
+                                      join vt in _context.VaiTros on ac.VaiTroId equals vt.Id
+                                      where vt.Name == "User"
+                                      select ac).CountAsync();
+            var accPage = await (from ac in _context.Accounts
                           join vt in _context.VaiTros on ac.VaiTroId equals vt.Id
                           where vt.Name == "User"
                           select ac)
                           .OrderByDescending(x => x.NgayTao)
+                          .Skip((page) * 10)
+                          .Take(10)
                           .ToListAsync();
+            return Ok(new
+            {
+                listAcc = accPage,
+                totalRecords = totalRecords
+            });
         }
 
         [HttpGet("getAllRole")]
@@ -178,6 +189,11 @@ namespace Prj_Ban_Quan_Ao.Controllers
         [HttpPost]
         public async Task<ActionResult<Account>> PostAccount(Account account)
         {
+            if(!account.VaiTroId.HasValue || account.VaiTroId == Guid.Empty)
+            {
+                var user = await _context.VaiTros.FirstOrDefaultAsync(x => x.Name == "User");
+                account.VaiTroId = user.Id;
+            }
             _context.Accounts.Add(account);
             //var newCart = new GioHang
             //{
@@ -188,7 +204,7 @@ namespace Prj_Ban_Quan_Ao.Controllers
             //_context.GioHangs.Add(newCart);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetAccount", new { id = account.Id, status = "success" }, account);
+            return Ok();
         }
 
         // DELETE: api/Accounts/5
@@ -357,6 +373,7 @@ namespace Prj_Ban_Quan_Ao.Controllers
                 new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Name, user.TenDangNhap),
                 new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Name, user.TenHienThi),
                 new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Name, user.DuongDanAnh),
+                new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Name, user.Id.ToString()),
                 new System.Security.Claims.Claim(System.Security.Claims.ClaimTypes.Role, user.VaiTroName) // Giả sử VaiTroId là Role
             };
 
