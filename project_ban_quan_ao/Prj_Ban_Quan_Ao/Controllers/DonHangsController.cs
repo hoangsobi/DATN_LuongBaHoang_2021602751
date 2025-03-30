@@ -31,7 +31,9 @@ namespace Prj_Ban_Quan_Ao.Controllers
         {
             return await (from dh in _context.DonHangs
                           join ac in _context.Accounts on dh.AccountId equals ac.Id
-                          orderby dh.NgayTao descending
+                          orderby 
+                                dh.TrangThai == TrangThaiDonHang.GiaoHangThanhCong || dh.TrangThai == TrangThaiDonHang.DaHuy ascending,
+                                dh.NgayTao descending
                           select new
                           {
                               dh.Id,

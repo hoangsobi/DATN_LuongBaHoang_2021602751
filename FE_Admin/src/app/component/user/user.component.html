@@ -42,7 +42,7 @@
         </ng-template>
       </p-table>
       <div style="text-align: center; width: 100%;">
-        <p-paginator  [rows]="20" [totalRecords]="listUser.length"></p-paginator>
+        <p-paginator (onPageChange)="onPageChange($event)" [rows]="10" [totalRecords]="totalRecords"></p-paginator>
       </div>
 
 <p-dialog header="Thông tin người dùng" [(visible)]="showForm" maximizable="true" [style]="{width: '100%', maxHeight: '100vh'}" [draggable]="false" [modal]="true">
@@ -62,6 +62,7 @@
       <div class="itemDes">
         <div>
           <span style="margin-right: 20px;">Tên hiển thị:</span>
+          <span style="color: red;">*</span>
         </div>
         <div style="width: 100%;">
           <input type="text" pInputText [(ngModel)]="body.tenHienThi" style="padding: 5px 10px; width: 100%;" [disabled]="!isAdd"/>
@@ -73,6 +74,7 @@
       <div class="itemDes">
         <div>
           <span style="margin-right: 20px;">Tên đăng nhập:</span>
+          <span style="color: red;">*</span>
         </div>
         <div style="width: 100%;">
           <input type="text" pInputText [(ngModel)]="body.tenDangNhap" style="padding: 5px 10px; width: 100%;" [disabled]="!isAdd"/>
@@ -83,6 +85,7 @@
       <div class="itemDes">
         <div>
           <span style="margin-right: 20px;">Mật khẩu:</span>
+          <span style="color: red;">*</span>
         </div>
         <div style="width: 100%;">
           <input type="text" pInputText [(ngModel)]="body.matKhau" style="padding: 5px 10px; width: 100%;" [disabled]="!isAdd"/>
@@ -93,7 +96,8 @@
 
       <div class="itemDes">
         <div>
-          <span style="margin-right: 20px;">Email(Tên đăng nhập):</span>
+          <span style="margin-right: 20px;">Email:</span>
+          <span style="color: red;">*</span>
         </div>
         <div style="width: 100%;">
           <input type="text" pInputText [(ngModel)]="body.email" style="padding: 5px 10px; width: 100%;" [disabled]="!isAdd"/>
@@ -119,6 +123,7 @@
       <div class="itemDes">
         <div>
           <span style="margin-right: 20px;">Số điện thoại:</span>
+          <span style="color: red;">*</span>
         </div>
         <div style="width: 100%;">
           <input type="text" pInputText [(ngModel)]="body.soDienThoai" style="padding: 5px 10px; width: 100%;" [disabled]="!isAdd"/>

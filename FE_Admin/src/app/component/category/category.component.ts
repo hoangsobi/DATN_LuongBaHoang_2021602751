@@ -47,6 +47,8 @@ providers:[
 })
 export class CategoryComponent {
   listDanhMuc = [];
+  allDM: any;
+  totalRecords = 0;
   showForm = false;
   action = 0; //0: them, 1: sua, 2: xem
   curId: any;
@@ -81,7 +83,9 @@ export class CategoryComponent {
 
   getAll(){
     this._categoryService.getAllDanhMuc().subscribe(data => {
-      this.listDanhMuc = data;
+      this.listDanhMuc = data.slice(0, 10);
+      this.allDM = data;
+      this.totalRecords = data.length;
     })
   }
 
@@ -111,6 +115,11 @@ export class CategoryComponent {
 
 
   addCate(){
+    if(this.checkrq())
+    {
+      this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Tên danh mục không được để trống'});
+      return;
+    }
     this._categoryService.postDanhMuc(this.body).subscribe(data => {
         this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Thêm danh mục thành công'});
         this.showForm = false;
@@ -119,6 +128,11 @@ export class CategoryComponent {
   }
 
   saveCate(){
+    if(this.checkrq())
+    {
+      this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Tên danh mục không được để trống'});
+      return;
+    }
     this._categoryService.putDanhMuc(this.curId, this.body).subscribe(data => {
         this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Sửa danh mục thành công'});
         this.showForm = false;
@@ -143,5 +157,18 @@ export class CategoryComponent {
         })
       }
     });
+  }
+
+  checkrq(){
+    if(!this.body.tenLoai){
+      return true;
+    }
+    return false;
+  }
+
+
+  onPageChange(event: any)
+  {
+    this.listDanhMuc = this.allDM.slice(event.page * 10, event.page * 10 + 10);
   }
 }

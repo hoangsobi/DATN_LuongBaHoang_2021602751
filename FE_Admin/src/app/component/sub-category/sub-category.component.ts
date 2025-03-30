@@ -46,6 +46,8 @@ import { CategoryService } from '../../service/category.service';
 })
 export class SubCategoryComponent {
   listDanhMuc = [];
+  allDM: any;
+  totalrecords = 0;
   showForm = false;
   action = 0; //0: them, 1: sua, 2: xem
   curId: any;
@@ -82,7 +84,9 @@ export class SubCategoryComponent {
 
   getAll(){
     this._categoryService.getAllDanhMucCon().subscribe(data => {
-      this.listDanhMuc = data;
+      this.listDanhMuc = data.slice(0, 10);
+      this.allDM = data;
+      this.totalrecords = data.length;
     })
   }
 
@@ -113,11 +117,19 @@ export class SubCategoryComponent {
   showAdd(){
     this.action = 0;
     this.resetBody();
+    this._categoryService.getAllDanhMuc().subscribe(data => {
+      this.listCategoryCha = data;
+    })
     this.showForm = true;
   }
 
 
   addCate(){
+    if(this.checkrq())
+      {
+        this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Vui lòng nhập đầy đủ thông tin'});
+        return;
+      }
     this._categoryService.postDanhMuc(this.body).subscribe(data => {
         this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Thêm danh mục thành công'});
         this.showForm = false;
@@ -126,6 +138,11 @@ export class SubCategoryComponent {
   }
 
   saveCate(){
+    if(this.checkrq())
+    {
+      this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Vui lòng nhập đầy đủ thông tin'});
+      return;
+    }
     this._categoryService.putDanhMuc(this.curId, this.body).subscribe(data => {
         this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Sửa danh mục thành công'});
         this.showForm = false;
@@ -150,5 +167,16 @@ export class SubCategoryComponent {
         })
       }
     });
+  }
+
+  checkrq(){
+    if(!this.body.tenLoai || !this.body.loaiSanPhamChaId) return true;
+    return false;
+  }
+
+
+  onPageChange(event: any)
+  {
+    this.listDanhMuc = this.allDM.slice(event.page * 10, event.page * 10 + 10);
   }
 }

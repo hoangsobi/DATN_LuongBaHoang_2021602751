@@ -47,6 +47,8 @@ import { Dropdown, DropdownModule } from 'primeng/dropdown';
 export class UserAdminComponent {
   showForm = false;
   isAdd = false;
+  totalRecords = 0;
+  allAcc: any;
   stateOptions = [
     { label: 'Nam', value: true },
     { label: 'Nữ', value: false }
@@ -91,7 +93,9 @@ export class UserAdminComponent {
 
   getAll(){
     this._userService.getAllUserAdmin().subscribe(data => {
-      this.listUser = data;
+      this.listUser = data.slice(0, 10);
+      this.totalRecords = data.length;
+      this.allAcc = data;
     })
   }
 
@@ -166,6 +170,10 @@ export class UserAdminComponent {
   }
 
   addUser(){
+    if(this.checkrq()){
+      this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Vui lòng nhập đầy đủ thông tin', life: 3000});
+      return;
+    }
     let newBody = {
       tenHienThi: this.body.tenHienThi,
       tenDangNhap: this.body.tenDangNhap,
@@ -186,6 +194,10 @@ export class UserAdminComponent {
   }
 
   saveUser(){
+    if(this.checkrq()){
+      this._messageService.add({severity:'error', summary: 'Thông báo', detail: 'Vui lòng nhập đầy đủ thông tin', life: 3000});
+      return;
+    }
     let newBody = {
       id: this.curUserId,
       tenHienThi: this.body.tenHienThi,
@@ -206,4 +218,15 @@ export class UserAdminComponent {
     })
   }
 
+  checkrq(){
+    if(!this.body.tenHienThi || !this.body.tenDangNhap || !this.body.matKhau || !this.body.email || !this.body.soDienThoai || !this.body.vaiTroId){
+      return true;
+    }
+    return false;
+  }
+
+  onPageChange(event: any)
+  {
+    this.listUser = this.allAcc.slice(event.page * 10, event.page * 10 + 10);
+  }
 }

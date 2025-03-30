@@ -15,8 +15,8 @@ export class UserService {
     private http: HttpClient,
   ) { }
 
-  getAllUser(): Observable<any>{
-    return this.http.get(this.url, this.httpOptions);
+  getAllUser(page: any): Observable<any>{
+    return this.http.get(`${this.url}/page/${page}`, this.httpOptions);
   }
 
   getAllRole(): Observable<any>{

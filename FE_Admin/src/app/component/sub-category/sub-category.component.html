@@ -37,7 +37,7 @@
   </ng-template>
 </p-table>
 <div style="text-align: center; width: 100%;">
-  <p-paginator  [rows]="20" [totalRecords]="listDanhMuc.length"></p-paginator>
+  <p-paginator  [rows]="10" (onPageChange)="onPageChange($event)" [totalRecords]="totalrecords"></p-paginator>
 </div>
 
 <p-dialog header="Thông tin danh mục con" [(visible)]="showForm" maximizable="true" [style]="{width: '50%', maxHeight: '100vh', height:'600px'}" [draggable]="false" [modal]="true">
@@ -48,6 +48,7 @@
 <div class="itemDes">
   <div>
     <span style="margin-right: 20px;">Tên:</span>
+    <span style="color: red;">*</span>
   </div>
   <div style="width: 100%;">
     <input type="text" pInputText [(ngModel)]="body.tenLoai" style="padding: 5px 10px; width: 100%;" [disabled]="action == 2"/>
@@ -58,6 +59,7 @@
 <div class="itemDes">
   <div>
     <span style="margin-right: 20px;">Danh mục cha:</span>
+    <span style="color: red;">*</span>
   </div>
   <div style="width: 100%;">
     <p-dropdown [options]="listCategoryCha" [(ngModel)]="body.loaiSanPhamChaId" optionLabel="tenLoai" optionValue="id" [filter]="true" filterBy="name"></p-dropdown>

@@ -69,6 +69,8 @@ export class OrderComponent {
   TrangThaiDonHang = TrangThaiDonHang;
   PhuongThucVanChuyen = PhuongThucVanChuyen;
   listDanhMuc = [];
+  allDonHang: any;
+  totalRecords = 0;
   showForm = false;
   action = 0; //0: them, 1: sua, 2: xem
   curId: any;
@@ -126,7 +128,9 @@ export class OrderComponent {
 
   getAll(){
     this._orderService.getAllDonHang().subscribe(data => {
-      this.listDanhMuc = data;
+      this.listDanhMuc = data.slice(0, 10);
+      this.allDonHang = data;
+      this.totalRecords = data.length;
     })
   }
 
@@ -192,5 +196,11 @@ export class OrderComponent {
         this._messageService.add({severity:'info', summary: 'Thông báo', detail: 'Hủy đơn hàng thất bại'});
       }
     })
+  }
+
+
+  onPageChange(event: any)
+  {
+    this.listDanhMuc = this.allDonHang.slice(event.page * 10, event.page * 10 + 10);
   }
 }

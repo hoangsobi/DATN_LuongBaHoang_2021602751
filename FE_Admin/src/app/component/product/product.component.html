@@ -45,7 +45,7 @@
   </ng-template>
 </p-table>
 <div style="text-align: center; width: 100%;">
-  <p-paginator  [rows]="20" [totalRecords]="listDanhMuc.length"></p-paginator>
+  <p-paginator  [rows]="20" (onPageChange)="onPageChange($event)" [totalRecords]="totalRecords"></p-paginator>
 </div>
 
 <p-dialog  #dialog header="Thông tin sản phẩm" [(visible)]="showForm" maximizable="true" (onShow)="dialog.maximize()" [style]="{width: '100%', maxHeight: '100vh'}" [draggable]="false" [modal]="true">
@@ -54,6 +54,7 @@
       <div class="itemDes">
         <div>
           <span style="margin-right: 20px;">Code:</span>
+          <span style="color: red;">*</span>
         </div>
         <input type="text" pInputText [(ngModel)]="curProduct.maSanPham" style="padding: 5px 10px;"/>
       </div>
@@ -61,12 +62,14 @@
       <div class="itemDes">
         <div>
           <span style="margin-right: 20px;">Tên:</span>
+          <span style="color: red;">*</span>
         </div>
         <input type="text" pInputText [(ngModel)]="curProduct.ten" style="padding: 5px 10px;"/>
       </div>
       <div class="itemDes">
         <div>
           <span style="margin-right: 20px;">Giá:</span>
+          <span style="color: red;">*</span>
         </div>
 
         <input type="text" pInputText [(ngModel)]="curProduct.gia" style="padding: 5px 10px;"/>
@@ -81,6 +84,7 @@
       <div class="itemDes">
         <div>
           <span style="margin-right: 20px;">Chất liệu:</span>
+          <span style="color: red;">*</span>
         </div>
 
         <input type="text" pInputText [(ngModel)]="curProduct.chatLieu" style="padding: 5px 10px;"/>
@@ -150,8 +154,9 @@
       </div> -->
 
       <div class="itemDes" style="margin-top: 20px; ">
-        <div style="min-width: 100px;">
+        <div style="min-width: 120px;">
           <span style="margin-right: 20px; min-width: 100px;">Danh mục:</span>
+          <span style="color: red;">*</span>
         </div>
         <div style="width: 100%;">
           <p-dropdown [options]="listCategory" [(ngModel)]="curProduct.loaiSanPhamId" optionLabel="tenLoai" optionValue="id" [filter]="true" filterBy="name"></p-dropdown>
