@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prj_Ban_Quan_Ao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77839421a1277b7d53e9ec85cee07dce44389f0c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a1c35b6b795b0764eb8d612205bf7f29c643213")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prj_Ban_Quan_Ao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prj_Ban_Quan_Ao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

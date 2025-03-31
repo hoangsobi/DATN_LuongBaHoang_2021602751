@@ -11,6 +11,7 @@ import { LoginComponent } from './component/login/login.component';
 import { AdminLayoutComponent } from './component/admin-layout/admin-layout.component';
 import { AuthGuard } from './service/auth.guard';
 import { PermissionComponent } from './component/permission/permission.component';
+import { CouponComponent } from './component/coupon/coupon.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent, title: 'Login' },
@@ -28,6 +29,7 @@ export const routes: Routes = [
       { path: 'product', component: ProductComponent, title:'Product', canActivate: [AuthGuard] },
       { path: 'expense', component: ExpenseComponent, title:'Expense', canActivate: [AuthGuard] },
       { path: 'permission', component: PermissionComponent, title:'Permission', canActivate: [AuthGuard] },
+      { path: 'coupon', component: CouponComponent, title:'Coupon', canActivate: [AuthGuard] },
     ]
   }
 ];
