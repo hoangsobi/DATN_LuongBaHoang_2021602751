@@ -25,7 +25,7 @@ namespace Prj_Ban_Quan_Ao.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MaGiamGium>>> GetMaGiamGia()
         {
-            return await _context.MaGiamGia.ToListAsync();
+            return await _context.MaGiamGia.OrderByDescending(x => x.NgayTao).ToListAsync();
         }
 
         // GET: api/MaGiamGiums/5
@@ -93,7 +93,7 @@ namespace Prj_Ban_Quan_Ao.Controllers
                         where am.AccountId == idAccount
                         select am.MagiamgiaId)
                        .Contains(mgg.Id)
-                       orderby mgg.NgayTao
+                orderby mgg.NgayTao
                 select mgg;
 
             return Ok(query);
@@ -105,10 +105,10 @@ namespace Prj_Ban_Quan_Ao.Controllers
             var query =
                 from mgg in _context.MaGiamGia
                 where (from am in _context.AccountMaGiamGia
-                        where am.AccountId == idAccount
-                        select am.MagiamgiaId)
+                       where am.AccountId == idAccount
+                       select am.MagiamgiaId)
                        .Contains(mgg.Id)
-                       orderby mgg.NgayTao
+                orderby mgg.NgayTao
                 select mgg;
 
             return Ok(query);
@@ -124,10 +124,14 @@ namespace Prj_Ban_Quan_Ao.Controllers
                 return NotFound();
             }
 
+            var ck1 = await _context.AccountMaGiamGia.AnyAsync(x => x.MagiamgiaId == id);
+            var ck2 = await _context.DonHangs.AnyAsync(x => x.MaGiamGiaId == id);
+            if (ck1 || ck2)
+                return Ok(new { status = "used" });
             _context.MaGiamGia.Remove(maGiamGium);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(new {status = "success"});
         }
 
         private bool MaGiamGiumExists(Guid id)
