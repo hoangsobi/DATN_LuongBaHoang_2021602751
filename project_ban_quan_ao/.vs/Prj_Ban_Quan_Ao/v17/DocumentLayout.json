@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\magiamgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\magiamgiumscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -37,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\controllers\\dashboardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\dashboardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\custommodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,16 +127,8 @@
       "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\sanphamkichco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Visual_Studio_2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
@@ -172,10 +176,6 @@
       "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\controllers\\sanphamdonhangscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\loaisanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|d:\\codedoan(client)\\luongbahoang_2021602751\\project_ban_quan_ao\\prj_ban_quan_ao\\models\\yeuthich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FABBBA4A-1705-4192-A098-D0BF32CA156F}|Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj|solutionrelative:prj_ban_quan_ao\\models\\yeuthich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -211,11 +211,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "AccountsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
@@ -228,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "customModel.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\customModel.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\customModel.cs",
@@ -257,44 +257,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\appsettings.json",
-              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\appsettings.json",
-              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\appsettings.json",
-              "RelativeToolTip": "Prj_Ban_Quan_Ao\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-28T15:11:48.913Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Program.cs",
-              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Program.cs",
-              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Program.cs",
-              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
+              "DocumentIndex": 0,
+              "Title": "GioHang.cs",
+              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
+              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAADgvwwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T15:10:42.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DbQuanAoContext.cs",
-              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
-              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
-              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
-              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAkwEsAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T15:15:31.201Z",
+              "WhenOpened": "2025-03-15T11:00:19.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "LoaiSanPham.cs",
+              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
+              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T16:10:19.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
+              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAUwAUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T04:37:32.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DonHang.cs",
+              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
+              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA9wAUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T00:49:15.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MaGiamGiumsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\MaGiamGiumsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\MaGiamGiumsController.cs",
@@ -307,7 +322,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "DbQuanAoContext.cs",
+              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
+              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAkwEsAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T15:15:31.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Program.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Program.cs",
+              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Program.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T15:10:42.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\appsettings.json",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\appsettings.json",
+              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\appsettings.json",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-28T15:11:48.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MaGiamGium.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\MaGiamGium.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\MaGiamGium.cs",
@@ -315,12 +366,11 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\MaGiamGium.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAzwAUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T15:15:54.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T15:15:54.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "DonHangsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\DonHangsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\DonHangsController.cs",
@@ -332,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "LoaiSanPhamsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\LoaiSanPhamsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\LoaiSanPhamsController.cs",
@@ -344,19 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DonHang.cs",
-              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
-              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
-              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
-              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T00:49:15.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "DashboardsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\DashboardsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\DashboardsController.cs",
@@ -368,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "AnhDanhGiumsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AnhDanhGiumsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\AnhDanhGiumsController.cs",
@@ -380,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "VaiTrosController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\VaiTrosController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\VaiTrosController.cs",
@@ -392,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "VaiTroQuyen.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\VaiTroQuyen.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\VaiTroQuyen.cs",
@@ -404,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Account.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\Account.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\Account.cs",
@@ -416,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "AnhSanPhamsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AnhSanPhamsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\AnhSanPhamsController.cs",
@@ -428,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "ChiPhisController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\ChiPhisController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\ChiPhisController.cs",
@@ -440,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "YeuThichesController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\YeuThichesController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\YeuThichesController.cs",
@@ -452,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "DanhGiumsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\DanhGiumsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\DanhGiumsController.cs",
@@ -464,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "SanPhamKichCoesController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamKichCoesController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamKichCoesController.cs",
@@ -476,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "CloudinaryController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\CloudinaryController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\CloudinaryController.cs",
@@ -488,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "SanPhamsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamsController.cs",
@@ -500,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "AnhSanPham.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\AnhSanPham.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\AnhSanPham.cs",
@@ -512,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "AnhDanhGium.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\AnhDanhGium.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\AnhDanhGium.cs",
@@ -524,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "CloudinaryService.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Services\\CloudinaryService.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Services\\CloudinaryService.cs",
@@ -536,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "CloudinarySetting.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\CloudinarySetting.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\CloudinarySetting.cs",
@@ -548,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "ChatBox.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\ChatBox.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\ChatBox.cs",
@@ -560,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "SanPhamKichCo.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPhamKichCo.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\SanPhamKichCo.cs",
@@ -572,19 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "SanPham.cs",
-              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
-              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
-              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
-              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAwwAUAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T04:37:32.773Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Enums.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\Enums.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\Enums.cs",
@@ -596,19 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "GioHang.cs",
-              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
-              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
-              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
-              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAADgvw8AAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T11:00:19.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "D:\\Visual_Studio_2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\Visual_Studio_2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -620,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Prj_Ban_Quan_Ao.csproj",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj",
@@ -632,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Microsoft.NET.TargetFrameworkInference.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
@@ -642,7 +656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "AccountMaGiamGiumsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AccountMaGiamGiumsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\AccountMaGiamGiumsController.cs",
@@ -650,12 +664,11 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\AccountMaGiamGiumsController.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:49:03.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:49:03.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "SanPhamGioHang.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPhamGioHang.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\SanPhamGioHang.cs",
@@ -667,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "SanPhamGioHangsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamGioHangsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamGioHangsController.cs",
@@ -679,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "SanPhamDonHang.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\SanPhamDonHang.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\SanPhamDonHang.cs",
@@ -691,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -700,7 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Properties\\launchSettings.json",
@@ -712,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\appsettings.Development.json",
@@ -724,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "GioHangsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\GioHangsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\GioHangsController.cs",
@@ -736,7 +749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "SanPhamDonHangsController.cs",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\SanPhamDonHangsController.cs",
               "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamDonHangsController.cs",
@@ -745,18 +758,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T07:00:45.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "LoaiSanPham.cs",
-              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
-              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
-              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
-              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T16:10:19.871Z"
             },
             {
               "$type": "Document",
