@@ -11,7 +11,7 @@ public partial class GioHang
 
     public DateTime? NgayTao { get; set; }
 
-    public virtual Account IdNavigation { get; set; } = null!;
+    public virtual Account? Account { get; set; }
 
     public virtual ICollection<SanPhamGioHang> SanPhamGioHangs { get; set; } = new List<SanPhamGioHang>();
 }
