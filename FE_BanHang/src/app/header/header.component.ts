@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { StorageMap } from '@ngx-pwa/local-storage';
 import { FormsModule } from '@angular/forms';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-header',
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
-    DangnhapService
+    DangnhapService,
+    ApiService
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
@@ -29,12 +31,14 @@ export class HeaderComponent {
   isAdmin = false;
   searchKey: any;
   soSPTrongGio = 0;
+  listCate: any;
   private subscription: Subscription = new Subscription();
 
   private static subscription: Subscription;
   constructor(
     public router: Router,
     public _dangNhapService: DangnhapService,
+    public _apiService: ApiService,
     private storage : StorageMap
   ){
     const storedValue = storage.get('isDangNhap').subscribe(data =>
@@ -97,6 +101,10 @@ export class HeaderComponent {
     });
     this.subscription = DangnhapService.soSPTrongGio$.subscribe(value => {
       this.soSPTrongGio = value;
+    });
+
+    this._apiService.getLoaiSanPham().subscribe((data: any) => {
+      this.listCate = data;
     });
   }
   ngOnDestroy() {

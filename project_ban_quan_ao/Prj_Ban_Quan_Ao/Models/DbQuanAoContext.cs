@@ -434,7 +434,7 @@ public partial class DbQuanAoContext : DbContext
                 .HasDefaultValue(0)
                 .HasColumnName("tongSoLuong");
 
-            entity.HasOne(d => d.IdNavigation).WithOne(p => p.GioHang)
+            entity.HasOne(d => d.Account).WithOne(p => p.GioHang)
                 .HasForeignKey<GioHang>(d => d.Id)
                 .HasConstraintName("fk_GioHang_id");
         });
