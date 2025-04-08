@@ -266,7 +266,7 @@ export class ApiService {
   }
 
   getLoaiSanPham(): Observable<any>{
-    return this.http.get(this.urlLoaiSanPham, this.httpOptions);
+    return this.http.get(`${this.urlLoaiSanPham}/getAllLoaiSanPhamAll`, this.httpOptions);
   }
 
   getSoLuongTrongGio(idAccount: any): Observable<any>{

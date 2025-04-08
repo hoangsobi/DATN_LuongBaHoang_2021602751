@@ -131,43 +131,46 @@ namespace Prj_Ban_Quan_Ao.Controllers
         }
 
         [HttpGet("getsanphambypage/{idDanhMuc}/{page}")]
-        public IActionResult GetSanPhamByPage(string idDanhMuc, int page)
+        public async Task<IActionResult> GetSanPhamByPage(string idDanhMuc, int page)
         {
             var skiped = 20;
             if (idDanhMuc.ToString() == "00000000-0000-0000-0000-000000000000")
             {
                 var query =
-                            (from sp in _context.SanPhams
-                             select sp).Skip(skiped * page).Take(skiped);
+                            await (from sp in _context.SanPhams
+                             select sp).Skip(skiped * page).Take(skiped).ToListAsync();
                 return Ok(query);
             }
             else
             {
-                var query =
+                var listIdDanhMuc = await _context.LoaiSanPhams.Where(x => x.LoaiSanPhamChaId.ToString() == idDanhMuc).Select(x => x.Id).ToListAsync();
+
+                var query =await
                            (from sp in _context.SanPhams
-                            where sp.LoaiSanPhamId.ToString() == idDanhMuc
-                            select sp).Skip(skiped * page).Take(skiped);
+                            where sp.LoaiSanPhamId.ToString() == idDanhMuc || listIdDanhMuc.Contains(sp.LoaiSanPhamId ?? Guid.Empty) 
+                            select sp).Skip(skiped * page).Take(skiped).ToListAsync();
                 return Ok(query);
             }
         }
 
         [HttpGet("getallsanphambydanhmuc/{idDanhMuc}")]
-        public IActionResult GetAllSanPhamByDanhMuc(string idDanhMuc)
+        public async Task<IActionResult> GetAllSanPhamByDanhMuc(string idDanhMuc)
         {   
             if(idDanhMuc.ToString() == "00000000-0000-0000-0000-000000000000")
             {
                 var query =
-                      (from sp in _context.SanPhams
-                       select sp);
-                return Ok(query.Count());
+                      await (from sp in _context.SanPhams
+                       select sp).ToListAsync();
+                return Ok(query.Count);
             }
             else
             {
-                var query =
+                 var listIdDanhMuc = await _context.LoaiSanPhams.Where(x => x.LoaiSanPhamChaId.ToString() == idDanhMuc).Select(x => x.Id).ToListAsync();
+                var query = await
                       (from sp in _context.SanPhams
-                       where sp.LoaiSanPhamId.ToString() == idDanhMuc
-                       select sp);
-                return Ok(query.Count());
+                       where sp.LoaiSanPhamId.ToString() == idDanhMuc || listIdDanhMuc.Contains(sp.LoaiSanPhamId ?? Guid.Empty) 
+                       select sp).ToListAsync();
+                return Ok(query.Count);
             }
            
         }

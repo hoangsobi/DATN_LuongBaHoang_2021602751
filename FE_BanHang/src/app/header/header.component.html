@@ -35,49 +35,31 @@
           <div class="menu__item cha1" routerLink="/shop/00000000-0000-0000-0000-000000000000"><a>All Product <i class="fa-solid fa-angle-down"></i></a></div>
           <div class="con">
             <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <a routerLink="/shop/00000000-0000-0000-0000-000000000000" style="text-decoration: none; color: black;">Tất cả sản phẩm</a>
-                  <a>Áo</a>
-                  <ul>
-                    <li routerLink="/shop/7EEAA5E7-41EF-49A6-AC4D-A23DFFBE3F81">Áo thun</li>
-                    <li routerLink="/shop/F5439B71-98C9-4CCE-AC2F-7A689E924CEA">Áo polo</li>
-                    <li routerLink="/shop/2904143F-949A-4BF6-A530-A0E9D24507B9">Áo sơ mi</li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
-                  <a>Túi và Balo</a>
-                  <ul>
-                    <li>Balo</li>
-                    <li>Túi đeo chéo</li>
-                    <li>Túi đeo vai</li>
-                  </ul>
-                  <a>Quần</a>
-                  <ul>
-                    <li routerLink="/shop/FDD00170-D6FD-4749-9D08-E351F09461B7">Quần jeans</li>
-                    <li routerLink="/shop/21729103-15E7-4448-9309-DE07B2720E03">Quần shorts</li>
-                    <li routerLink="/shop/AF60CBAC-CC26-414A-98DE-0ADD96792401">Quần joggers</li>
-                    <li routerLink="/shop/71A9CE9B-559D-4EB3-9727-E659FB1F8D95">Chân váy</li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
-                  <a>Áo khoác, Hoodie và Sweater</a>
-                  <ul>
-                    <li  routerLink="/shop/48F1B6D1-EF14-44ED-8BD9-4305669B74A0">Áo khoác dù</li>
-                    <li routerLink="/shop/A2E2E9F9-C630-44EC-AAF4-D83C61CAC11D">Hoodie</li>
-                    <li routerLink="/shop/9CA5D890-DAC1-467A-B06A-28CF711AA898">Sweeter</li>
-                    <li routerLink="/shop/44A4EC7A-7EE6-4C92-A311-73F1DB460FEA">Bomber</li>
-                  </ul>
-                </div>
-                <div class="col-md-3">
-                  <a>Phụ kiện</a>
-                  <ul>
-                    <li routerLink="/shop/D4F1D78D-7505-4041-8F36-68200096E893">Nón</li>
-                    <li routerLink="/shop/36A8691F-7AB8-4148-A19E-1A65F8C9E04B">Đồng hồ</li>
-                  </ul>
-                </div>
+              <div style="display: flex; justify-content: space-between;">
+
+                <a routerLink="/shop/00000000-0000-0000-0000-000000000000" style="text-decoration: none; color: black;">Tất cả sản phẩm</a>
+                <ng-container *ngFor="let item of listCate">
+                  <ng-container *ngIf="!item.loaiSanPhamChaId">
+                    <div>
+                      <a [routerLink]="['/shop', item.id]" style="text-decoration: none; color: black;">
+                        {{ item.tenLoai }}
+                      </a>
+                      <ul>
+                        <ng-container *ngFor="let item2 of listCate">
+                          <li *ngIf="item2.loaiSanPhamChaId === item.id">
+                            <a [routerLink]="['/shop', item2.id]" style="text-decoration: none; color: black; font-weight: 400;">
+                              {{ item2.tenLoai }}
+                            </a>
+                          </li>
+                        </ng-container>
+                      </ul>
+                    </div>
+                  </ng-container>
+                </ng-container>
               </div>
-            </div>
+
+
+                </div>
           </div>
           <div class="menu__item" routerLink="/discount"><a>Discount code</a></div>
           <!-- <div class="menu__item"><a>Collection</a></div> -->
