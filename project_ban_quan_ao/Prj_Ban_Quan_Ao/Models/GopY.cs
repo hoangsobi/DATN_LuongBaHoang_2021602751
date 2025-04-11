@@ -16,4 +16,8 @@ public partial class GopY
     public string? NoiDung { get; set; }
 
     public DateTime? NgayTao { get; set; }
+
+    public string? TieuDe { get; set; }
+
+    public string? PhanHoi { get; set; }
 }

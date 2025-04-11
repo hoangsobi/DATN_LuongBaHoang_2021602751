@@ -459,9 +459,13 @@ public partial class DbQuanAoContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("ngayTao");
             entity.Property(e => e.NoiDung).HasColumnName("noiDung");
+            entity.Property(e => e.PhanHoi).HasColumnName("phanHoi");
             entity.Property(e => e.SoDienThoai)
                 .HasMaxLength(255)
                 .HasColumnName("soDienThoai");
+            entity.Property(e => e.TieuDe)
+                .HasMaxLength(500)
+                .HasColumnName("tieuDe");
         });
 
         modelBuilder.Entity<LoaiSanPham>(entity =>

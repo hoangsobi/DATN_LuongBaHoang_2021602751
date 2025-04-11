@@ -38,4 +38,8 @@
         public const string DangGiaoHang = "Đang giao hàng";
         public const string GiaoHangThanhCong = "Giao hàng thành công";
     }
+    public class PhanHoiRequest
+    {
+        public string PhanHoi { get; set; }
+    }
 }
