@@ -13,10 +13,19 @@ import {
 import {
   Ripple,
   RippleModule
-} from "./chunk-YBWAZV4F.js";
+} from "./chunk-KRC5OQFE.js";
 import {
   DomHandler
 } from "./chunk-BN45BW6I.js";
+import {
+  MessageService,
+  ObjectUtils,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId,
+  zindexutils
+} from "./chunk-IB6RXGGY.js";
 import {
   animate,
   animateChild,
@@ -35,15 +44,6 @@ import {
   NgStyle,
   NgTemplateOutlet
 } from "./chunk-CIB77MNN.js";
-import {
-  MessageService,
-  ObjectUtils,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId,
-  zindexutils
-} from "./chunk-IB6RXGGY.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

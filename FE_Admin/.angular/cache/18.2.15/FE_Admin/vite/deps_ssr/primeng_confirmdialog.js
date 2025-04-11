@@ -2,7 +2,7 @@ import { createRequire } from 'module';const require = createRequire(import.meta
 import {
   ButtonDirective,
   ButtonModule
-} from "./chunk-KNJOOWCU.js";
+} from "./chunk-HZPTCDIX.js";
 import {
   CheckIcon
 } from "./chunk-ZIHP5QPD.js";
@@ -13,11 +13,22 @@ import "./chunk-NTYNY7A2.js";
 import {
   Ripple,
   RippleModule
-} from "./chunk-YBWAZV4F.js";
+} from "./chunk-KRC5OQFE.js";
 import "./chunk-ULOFXYOF.js";
 import {
   DomHandler
 } from "./chunk-BN45BW6I.js";
+import {
+  ConfirmEventType,
+  ConfirmationService,
+  Footer,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  TranslationKeys,
+  UniqueComponentId,
+  zindexutils
+} from "./chunk-IB6RXGGY.js";
 import {
   animate,
   animation,
@@ -34,17 +45,6 @@ import {
   NgStyle,
   NgTemplateOutlet
 } from "./chunk-CIB77MNN.js";
-import {
-  ConfirmEventType,
-  ConfirmationService,
-  Footer,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  TranslationKeys,
-  UniqueComponentId,
-  zindexutils
-} from "./chunk-IB6RXGGY.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

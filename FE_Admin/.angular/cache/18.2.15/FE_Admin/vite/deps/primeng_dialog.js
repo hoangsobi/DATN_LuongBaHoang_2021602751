@@ -1,18 +1,10 @@
 import {
-  TimesIcon
-} from "./chunk-CKNURVDK.js";
-import {
-  animate,
-  animation,
-  style,
-  transition,
-  trigger,
-  useAnimation
-} from "./chunk-3PW7EFJ7.js";
-import {
   ButtonDirective,
   ButtonModule
 } from "./chunk-W5UCR27W.js";
+import {
+  TimesIcon
+} from "./chunk-CKNURVDK.js";
 import "./chunk-BYJTVPAM.js";
 import {
   Ripple,
@@ -23,6 +15,14 @@ import {
   BaseIcon,
   DomHandler
 } from "./chunk-XOQN5XQD.js";
+import {
+  animate,
+  animation,
+  style,
+  transition,
+  trigger,
+  useAnimation
+} from "./chunk-3PW7EFJ7.js";
 import {
   CommonModule,
   DOCUMENT,

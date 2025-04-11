@@ -12,6 +12,7 @@ import { AdminLayoutComponent } from './component/admin-layout/admin-layout.comp
 import { AuthGuard } from './service/auth.guard';
 import { PermissionComponent } from './component/permission/permission.component';
 import { CouponComponent } from './component/coupon/coupon.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent, title: 'Login' },
@@ -30,6 +31,7 @@ export const routes: Routes = [
       { path: 'expense', component: ExpenseComponent, title:'Expense', canActivate: [AuthGuard] },
       { path: 'permission', component: PermissionComponent, title:'Permission', canActivate: [AuthGuard] },
       { path: 'coupon', component: CouponComponent, title:'Coupon', canActivate: [AuthGuard] },
+      { path: 'contact', component: ContactComponent, title:'Contact', canActivate: [AuthGuard] },
     ]
   }
 ];

@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Prj_Ban_Quan_Ao.Models;
+using SendGrid.Helpers.Mail;
+using SendGrid;
 
 namespace Prj_Ban_Quan_Ao.Controllers
 {
@@ -14,6 +18,7 @@ namespace Prj_Ban_Quan_Ao.Controllers
     public class GopiesController : ControllerBase
     {
         private readonly DbQuanAoContext _context;
+        private readonly string _sendGridApiKey = "";
 
         public GopiesController(DbQuanAoContext context)
         {
@@ -24,7 +29,7 @@ namespace Prj_Ban_Quan_Ao.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<GopY>>> GetGopies()
         {
-            return await _context.Gopies.ToListAsync();
+            return await _context.Gopies.OrderByDescending(x => x.NgayTao).ToListAsync();
         }
 
         // GET: api/Gopies/5
@@ -70,6 +75,50 @@ namespace Prj_Ban_Quan_Ao.Controllers
             }
 
             return NoContent();
+        }
+
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPut("phanHoi/{id}/{email}")]
+        public async Task<IActionResult> PhanHoi(Guid id, string email, [FromBody] PhanHoiRequest phanHoi)
+        {
+            try
+            {
+
+
+            // Gửi email phản hồi bằng SendGrid
+            var client = new SendGridClient(_sendGridApiKey);
+            var from = new EmailAddress("binhghitao@gmail.com", "Fashion Store");
+            var to = new EmailAddress(email);
+            var msg = MailHelper.CreateSingleEmail(from, to, "Phản hồi từ Fashion Store", phanHoi.PhanHoi, phanHoi.PhanHoi);
+            var res = await client.SendEmailAsync(msg);
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Gopies.Any(e => e.Id == id)) return Ok(new {status = "error"});
+                throw;
+            }
+            var gy = await _context.Gopies.FindAsync(id);
+            gy.PhanHoi = phanHoi.PhanHoi; 
+
+            _context.Entry(gy).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!GopYExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return Ok(new {status = "success"});
         }
 
         // POST: api/Gopies
