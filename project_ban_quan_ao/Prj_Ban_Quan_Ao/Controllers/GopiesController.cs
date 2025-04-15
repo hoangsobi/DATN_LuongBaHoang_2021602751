@@ -10,6 +10,10 @@ using Microsoft.EntityFrameworkCore;
 using Prj_Ban_Quan_Ao.Models;
 using SendGrid.Helpers.Mail;
 using SendGrid;
+using MimeKit;
+using MimeKit;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
+using System.Reactive.Subjects;
 
 namespace Prj_Ban_Quan_Ao.Controllers
 {
@@ -81,23 +85,34 @@ namespace Prj_Ban_Quan_Ao.Controllers
         [HttpPut("phanHoi/{id}/{email}")]
         public async Task<IActionResult> PhanHoi(Guid id, string email, [FromBody] PhanHoiRequest phanHoi)
         {
-            try
-            {
+
+            string fromEmail = "hoangluongba6603@gmail.com";
+            if (email == null)
+                return Ok(new { Status = "success" });
 
 
-            // Gửi email phản hồi bằng SendGrid
-            var client = new SendGridClient(_sendGridApiKey);
-            var from = new EmailAddress("binhghitao@gmail.com", "Fashion Store");
-            var to = new EmailAddress(email);
-            var msg = MailHelper.CreateSingleEmail(from, to, "Phản hồi từ Fashion Store", phanHoi.PhanHoi, phanHoi.PhanHoi);
-            var res = await client.SendEmailAsync(msg);
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!_context.Gopies.Any(e => e.Id == id)) return Ok(new {status = "error"});
-                throw;
-            }
-            var gy = await _context.Gopies.FindAsync(id);
+                var smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 587,
+                    EnableSsl = true,
+                    Credentials = new NetworkCredential("hoangluongba6603@gmail.com", "kywghvziirtolimc"),
+                    DeliveryMethod = SmtpDeliveryMethod.Network
+                };
+            var mailMessage = new MailMessage
+                {
+                    From = new MailAddress(fromEmail, "Fashion Store"),
+                    Subject = "Fashion Store phản hồi",
+                    Body = phanHoi.PhanHoi,
+                    IsBodyHtml = false
+                };
+
+                mailMessage.To.Add(email);
+
+                await smtpClient.SendMailAsync(mailMessage);
+
+
+
+             var gy = await _context.Gopies.FindAsync(id);
             gy.PhanHoi = phanHoi.PhanHoi; 
 
             _context.Entry(gy).State = EntityState.Modified;
