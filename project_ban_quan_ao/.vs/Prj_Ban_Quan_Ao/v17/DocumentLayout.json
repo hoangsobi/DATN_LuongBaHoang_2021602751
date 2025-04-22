@@ -218,34 +218,6 @@
           "SelectedChildIndex": 8,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountsController.cs",
-              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
-              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
-              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
-              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
-              "ViewState": "AQIAAOEAAAAAAAAAAAAAwFkBAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:25:08.523Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "customModel.cs",
-              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\customModel.cs",
-              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\customModel.cs",
-              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\customModel.cs",
-              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\customModel.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAwwCcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T11:21:08.212Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
@@ -263,6 +235,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
+              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\AccountsController.cs",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAAwFkBAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T06:25:08.523Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "customModel.cs",
+              "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\customModel.cs",
+              "RelativeDocumentMoniker": "Prj_Ban_Quan_Ao\\Models\\customModel.cs",
+              "ToolTip": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\Models\\customModel.cs",
+              "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\customModel.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAwwCcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T11:21:08.212Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\CodeDoAn(Client)\\LuongBaHoang_2021602751\\project_ban_quan_ao\\Prj_Ban_Quan_Ao\\appsettings.json",
@@ -271,8 +269,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-28T15:11:48.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T15:11:48.913Z"
             },
             {
               "$type": "Document",
@@ -284,8 +281,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\DbQuanAoContext.cs",
               "ViewState": "AQIAAEIAAAAAAAAAAAAAwEsAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T15:15:31.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T15:15:31.201Z"
             },
             {
               "$type": "Document",
@@ -310,8 +306,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Program.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAowBQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T15:10:42.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T15:10:42.097Z"
             },
             {
               "$type": "Document",
@@ -323,8 +318,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\AnhDanhGiumsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:50:19.261Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:50:19.261Z"
             },
             {
               "$type": "Document",
@@ -336,8 +330,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\GopY.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T17:22:09.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T17:22:09.145Z"
             },
             {
               "$type": "Document",
@@ -349,8 +342,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\GioHang.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwA0AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T11:00:19.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T11:00:19.14Z"
             },
             {
               "$type": "Document",
@@ -362,8 +354,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\DanhGiumsController.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAjwBoAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:54:03.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:54:03.972Z"
             },
             {
               "$type": "Document",
@@ -375,8 +366,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\ChiPhisController.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAWwA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:38:38.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T08:38:38.904Z"
             },
             {
               "$type": "Document",
@@ -388,8 +378,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\ChatBoxesController.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAjwA8AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:58:37.431Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T02:58:37.431Z"
             },
             {
               "$type": "Document",
@@ -401,8 +390,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\GioHangsController.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAewA0AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:56:04.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:56:04.325Z"
             },
             {
               "$type": "Document",
@@ -414,8 +402,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamsController.cs",
               "ViewState": "AQIAAK4AAAAAAAAAAIBJwLAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T07:00:09.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T07:00:09.79Z"
             },
             {
               "$type": "Document",
@@ -427,8 +414,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\LoaiSanPhamsController.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAwwCUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:57:01.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:57:01.225Z"
             },
             {
               "$type": "Document",
@@ -440,8 +426,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\DonHang.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAowAUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T00:49:15.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T00:49:15.382Z"
             },
             {
               "$type": "Document",
@@ -453,8 +438,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\SanPham.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAUwAUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T04:37:32.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T04:37:32.773Z"
             },
             {
               "$type": "Document",
@@ -466,8 +450,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\LoaiSanPham.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T16:10:19.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T16:10:19.871Z"
             },
             {
               "$type": "Document",
@@ -479,8 +462,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\MaGiamGiumsController.cs",
               "ViewState": "AQIAAHAAAAAAAAAAAAAwwIUAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:59:30.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:59:30.037Z"
             },
             {
               "$type": "Document",
@@ -492,8 +474,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\MaGiamGium.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwAUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T15:15:54.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T15:15:54.943Z"
             },
             {
               "$type": "Document",
@@ -505,8 +486,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\DonHangsController.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAAwCIAAAB8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:55:08.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:55:08.785Z"
             },
             {
               "$type": "Document",
@@ -518,8 +498,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\DashboardsController.cs",
               "ViewState": "AQIAAE0AAAAAAAAAAAAcwFoAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:29:12.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T13:29:12.984Z"
             },
             {
               "$type": "Document",
@@ -531,8 +510,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\VaiTrosController.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAkwDsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T06:09:25.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T06:09:25.443Z"
             },
             {
               "$type": "Document",
@@ -544,8 +522,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\VaiTroQuyen.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T17:45:44.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T17:45:44.36Z"
             },
             {
               "$type": "Document",
@@ -557,8 +534,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\Account.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAADgvxgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T01:55:50.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T01:55:50.569Z"
             },
             {
               "$type": "Document",
@@ -570,8 +546,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\AnhSanPhamsController.cs",
               "ViewState": "AQIAAF4AAAAAAAAAAAAAwGIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:50:55.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:50:55.445Z"
             },
             {
               "$type": "Document",
@@ -583,8 +558,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\YeuThichesController.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T07:02:11.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T07:02:11.222Z"
             },
             {
               "$type": "Document",
@@ -596,8 +570,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamKichCoesController.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAABlwDAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T07:01:40.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T07:01:40.809Z"
             },
             {
               "$type": "Document",
@@ -609,8 +582,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\CloudinaryController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwAYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T17:02:41.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T17:02:41.384Z"
             },
             {
               "$type": "Document",
@@ -622,8 +594,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\AnhSanPham.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T15:17:22.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-28T15:17:22.04Z"
             },
             {
               "$type": "Document",
@@ -635,8 +606,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\AnhDanhGium.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T04:29:22.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T04:29:22.952Z"
             },
             {
               "$type": "Document",
@@ -648,8 +618,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Services\\CloudinaryService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T16:40:45.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T16:40:45.74Z"
             },
             {
               "$type": "Document",
@@ -661,8 +630,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\CloudinarySetting.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T16:58:27.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T16:58:27.042Z"
             },
             {
               "$type": "Document",
@@ -674,8 +642,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\ChatBox.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T03:15:54.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T03:15:54.903Z"
             },
             {
               "$type": "Document",
@@ -687,8 +654,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\SanPhamKichCo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T08:25:40.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T08:25:40.646Z"
             },
             {
               "$type": "Document",
@@ -700,8 +666,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\Enums.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T14:43:49.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T14:43:49.686Z"
             },
             {
               "$type": "Document",
@@ -713,8 +678,7 @@
               "RelativeToolTip": "..\\..\\..\\Visual_Studio_2022\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AQIAABwNAAAAAAAAAAAgwCcNAACBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-03-20T14:04:40.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T14:04:40.459Z"
             },
             {
               "$type": "Document",
@@ -726,8 +690,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Prj_Ban_Quan_Ao.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-15T09:30:54.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T09:30:54.163Z"
             },
             {
               "$type": "Document",
@@ -737,8 +700,7 @@
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "ViewState": "AQIAAJkAAAAAAAAAAIAwwKUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-03-20T14:03:08.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T14:03:08.723Z"
             },
             {
               "$type": "Document",
@@ -763,8 +725,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\SanPhamGioHang.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T15:36:54.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T15:36:54.075Z"
             },
             {
               "$type": "Document",
@@ -776,8 +737,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamGioHangsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T06:50:16.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T06:50:16.197Z"
             },
             {
               "$type": "Document",
@@ -789,8 +749,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\SanPhamDonHang.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T15:36:33.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T15:36:33.76Z"
             },
             {
               "$type": "Document",
@@ -811,8 +770,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-14T06:28:14.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:28:14.132Z"
             },
             {
               "$type": "Document",
@@ -824,8 +782,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-15T09:15:50.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T09:15:50.52Z"
             },
             {
               "$type": "Document",
@@ -837,8 +794,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\SanPhamDonHangsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T07:00:45.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T07:00:45.137Z"
             },
             {
               "$type": "Document",
@@ -850,8 +806,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\YeuThich.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T05:16:18.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T05:16:18.578Z"
             },
             {
               "$type": "Document",
@@ -863,8 +818,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\BaiViet.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T14:39:03.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T14:39:03.015Z"
             },
             {
               "$type": "Document",
@@ -876,8 +830,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\BaiVietsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:51:22.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:51:22.462Z"
             },
             {
               "$type": "Document",
@@ -889,8 +842,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Models\\DanhGium.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T09:04:26.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T09:04:26.226Z"
             },
             {
               "$type": "Document",
@@ -902,8 +854,7 @@
               "RelativeToolTip": "Prj_Ban_Quan_Ao\\Controllers\\DiaChisController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T06:54:38.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T06:54:38.218Z"
             }
           ]
         },
