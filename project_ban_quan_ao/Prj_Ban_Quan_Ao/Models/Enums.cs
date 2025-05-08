@@ -6,7 +6,7 @@ namespace Prj_Ban_Quan_Ao.Models
     {
         public static class TrangThaiDonHang
         {
-            public const string ChoXacNhan = "Chờ xác nhận";
+            public const string ChoXacNhan = "Chờ xác nhận đơn hàng";
             public const string DaHuy = "Đã hủy";
             public const string DangChuanBiHang = "Đang chuẩn bị hàng";
             public const string DangGiaoHang = "Đang giao hàng";

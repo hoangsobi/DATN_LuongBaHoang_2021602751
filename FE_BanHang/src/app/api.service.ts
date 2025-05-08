@@ -29,6 +29,7 @@ export class ApiService {
   urlChatbox = 'https://localhost:7295/api/ChatBoxes';
   urlYeuThich = 'https://localhost:7295/api/YeuThiches';
   urlGopY = 'https://localhost:7295/api/gopies';
+  urlVaiTro = 'https://localhost:7295/api/vaitros';
   urlNganHang = 'https://script.googleusercontent.com/macros/echo?user_content_key=KKOXq9WoXNQjrgip6gZklMO289nVsbFtAxfTPQcBLocKO5G4FkR8E4xZ9vOblohxonR3pKYOBzQL7QZq_D0gOXrkjdH8gguHm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnE3Gn5h3gdOjQImlD03Ta2b-eJegv4hVZ8ICk7HExm88oPoTx5DtFvyS5I90xLDGdKhmu_ADNuU2HRjtSZcdGl3s5oHYTKmyIA&lib=MK3RoRVaPzSOwqCAUHf3RT0TUDqEcDcnD';
   constructor(
     private http: HttpClient,
@@ -281,5 +282,13 @@ export class ApiService {
   postGopY(body: any): Observable<any>
   {
     return this.http.post(this.urlGopY, body, this.httpOptions);
+  }
+
+  getVaiTroByName(name: string): Observable<any> {
+    return this.http.get(`${this.urlVaiTro}/getVaiTroByName/${name}`, this.httpOptions);
+  }
+
+  changeStatusOrder( orderId: any, status: any): Observable<any>{
+    return this.http.get(`${this.urlDonHang}/changeStatusUp/${orderId}/${status}`, this.httpOptions);
   }
 }

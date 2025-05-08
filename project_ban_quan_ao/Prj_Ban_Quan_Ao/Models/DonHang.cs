@@ -30,6 +30,10 @@ public partial class DonHang
 
     public DateTime? NgayHuy { get; set; }
 
+    public string? TenNguoiMua { get; set; }
+
+    public string? SoDienThoai { get; set; }
+
     public virtual Account? Account { get; set; }
 
     public virtual ICollection<SanPhamDonHang> SanPhamDonHangs { get; set; } = new List<SanPhamDonHang>();

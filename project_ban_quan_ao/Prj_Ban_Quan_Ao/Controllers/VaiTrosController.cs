@@ -28,6 +28,12 @@ namespace Prj_Ban_Quan_Ao.Controllers
             return await _context.VaiTros.Where(x => x.Name != "User").OrderByDescending(x => x.NgayTao).ToListAsync();
         }
 
+        [HttpGet("getVaiTroByName/{name}")]
+        public async Task<ActionResult<VaiTro>> GetVaiTroId(string name)
+        {
+            return await _context.VaiTros.Where(x => x.Name == name).FirstOrDefaultAsync();
+        }
+
         [HttpGet("getListQuyen")]
         public async Task<ActionResult<IEnumerable<Quyen>>> getQuyens()
         {

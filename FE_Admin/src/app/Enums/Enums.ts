@@ -9,7 +9,7 @@ export enum PhuongThucThanhToan {
 }
 
 export enum TrangThaiDonHang {
-  ChoXacNhan = 'Chờ xác nhận',
+  ChoXacNhan = 'Chờ xác nhận đơn hàng',
   DaHuy = 'Đã hủy',
   DangChuanBiHang = 'Đang chuẩn bị hàng',
   DangGiaoHang = 'Đang giao hàng',

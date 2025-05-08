@@ -45,7 +45,7 @@ export class DangkyComponent {
   hoVaTen: any;
   tenDangNhap: any;
   password: any;
-  vaitro = false;
+  vaitro: any;
   gioiTinh = 1;
   ngaySinh: any;
   sdt: any;
@@ -135,22 +135,28 @@ export class DangkyComponent {
       {
         gt = false;
       }
-      let formattedNgaySinh = new Date(this.ngaySinh).toISOString().split('T')[0];
-      const body = {
-        tenDangNhap: this.tenDangNhap,
-        tenHienThi: this.hoVaTen,
-        matKhau: this.password,
-        vaiTro: this.vaitro,
-        gioiTinh: gt,
-        ngaySinh: formattedNgaySinh,
-        soDienThoai: this.sdt,
-        email: this.email,
-        duongDanAnh: 'https://cdnphoto.dantri.com.vn/8w3URKZ3wSPLSitAFORfdXr81xE=/thumb_w/960/2021/02/14/1-lexus-lx-570-2021-15-1613236617688.jpg'
-      }
-      this._apiService.postAccount(body).subscribe(result => {
-          this.messageService.add({severity:'success', summary: 'Thông báo', detail: 'Đăng ký tài khoản thành công', life: 3000});
-          this.showConfirmEmail = false;
-      })
+      this._apiService.getVaiTroByName("User").subscribe(data => {
+        this.vaitro = data.id;
+
+        let formattedNgaySinh = new Date(this.ngaySinh).toISOString().split('T')[0];
+        const body = {
+          tenDangNhap: this.tenDangNhap,
+          tenHienThi: this.hoVaTen,
+          matKhau: this.password,
+          vaiTroId: this.vaitro,
+          gioiTinh: gt,
+          ngaySinh: formattedNgaySinh,
+          soDienThoai: this.sdt,
+          email: this.email,
+          duongDanAnh: 'https://cdnphoto.dantri.com.vn/8w3URKZ3wSPLSitAFORfdXr81xE=/thumb_w/960/2021/02/14/1-lexus-lx-570-2021-15-1613236617688.jpg'
+        }
+        this._apiService.postAccount(body).subscribe(result => {
+            this.messageService.add({severity:'success', summary: 'Thông báo', detail: 'Đăng ký tài khoản thành công', life: 3000});
+            this.showConfirmEmail = false;
+        })
+
+       });
+
     }
   }
 

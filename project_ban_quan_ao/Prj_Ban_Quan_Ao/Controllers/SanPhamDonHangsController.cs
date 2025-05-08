@@ -164,14 +164,14 @@ namespace Prj_Ban_Quan_Ao.Controllers
                              kichCo = sdh.KichCo,
                              mau = sdh.Mau,
                              ten = sp.Ten,
-                             gia = sp.Gia,
+                             gia = sdh.Gia,
                              isDanhGia = _context.DanhGia.Any(dg =>
                                   dg.AccountId.ToString() == accountId &&
                                   dg.SanPhamId == sp.Id &&
                                   dg.KichCo == sdh.KichCo &&
                                   dg.Mau == sdh.Mau &&
                                   dg.DonHangId.ToString() == idDonHang),
-                            giaSauGiam = sp.GiaSauGiam,
+                            giaSauGiam = sdh.Gia,
                              duongDanAnh = sp.DuongDanAnh
                          };
 

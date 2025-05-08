@@ -15,6 +15,7 @@ import {DialogService} from 'primeng/dynamicdialog';
 import { RatingModule } from 'primeng/rating';
 import {FileUploadModule} from 'primeng/fileupload';
 import {HttpClientModule} from '@angular/common/http';
+import { TrangThaiDonHang } from '../enums/enum';
 
 @Pipe({ standalone: true, name: 'formatVnd' })
 export class FormatVndPipe implements PipeTransform {
@@ -192,7 +193,25 @@ export class ChitietdonhangComponent {
   }
 
   daNhanHang(): void{
-
+    if(this.DonHang.trangThai == TrangThaiDonHang.DangGiaoHang )
+      {
+        this.confirmationService.confirm({
+          message: 'Xác nhận đã nhận được hàng?',
+          accept: () => {
+            this._apiService.changeStatusOrder(this.DonHang.id, this.DonHang.trangThai).subscribe(data => {
+              if(data.status == "success")
+              {
+                this._messageService.add({severity:'success', summary: 'Thành công', detail: 'Thay đổi trạng thái đơn hàng thành công'});
+                this.callAPI();
+              }
+              else
+              {
+                this._messageService.add({severity:'info', summary: 'Thông báo', detail: 'Thay đổi trạng thái đơn hàng thất bại'});
+              }
+            })
+          }
+        })
+      }
   }
 
 
