@@ -24,9 +24,10 @@ namespace Prj_Ban_Quan_Ao.Controllers
         [HttpGet("getThongKeHead")]
         public async Task<ActionResult<IEnumerable<object>>> GetThongKeHead()
         {
+            var vaiTroId = await _context.VaiTros.Where(x => x.Name == "User").Select(x => x.Id).FirstOrDefaultAsync();
             var thisYear = DateTime.Now.Year;
             var thisMonth = DateTime.Now.Month;
-            var nguoiDung = await _context.Accounts.CountAsync();
+            var nguoiDung = await _context.Accounts.Where(x => x.VaiTroId == vaiTroId).CountAsync();
             var donHang = await _context.DonHangs.Where(x => x.TrangThai != TrangThaiDonHang.GiaoHangThanhCong && x.TrangThai != TrangThaiDonHang.DaHuy).CountAsync();
             var doanhThuThang = await _context.DonHangs.Where(x => x.NgayTao.HasValue && x.NgayTao.Value.Month == thisMonth && x.TrangThai == TrangThaiDonHang.GiaoHangThanhCong).SumAsync(x => x.ThanhTien);
             var doanhThuNam =  await _context.DonHangs.Where(x => x.NgayTao.HasValue && x.NgayTao.Value.Year == thisYear && x.TrangThai == TrangThaiDonHang.GiaoHangThanhCong).SumAsync(x => x.ThanhTien);
@@ -44,6 +45,7 @@ namespace Prj_Ban_Quan_Ao.Controllers
             var orderStats = await (from od in _context.DonHangs
                                     where od.NgayTao.HasValue
                                           && od.NgayTao.Value.Year == currentYear
+                                          && od.TrangThai == TrangThaiDonHang.GiaoHangThanhCong
                                     group od by od.NgayTao.Value.Month into g
                                     select new
                                     {
