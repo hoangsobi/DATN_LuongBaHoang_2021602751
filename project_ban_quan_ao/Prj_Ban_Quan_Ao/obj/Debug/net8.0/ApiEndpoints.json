@@ -1,0 +1,3362 @@
+[
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountMaGiamGiumsController",
+    "Method": "GetAccountMaGiamGia",
+    "RelativePath": "api/AccountMaGiamGiums",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.AccountMaGiamGium, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountMaGiamGiumsController",
+    "Method": "PostAccountMaGiamGium",
+    "RelativePath": "api/AccountMaGiamGiums",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountMaGiamGium",
+        "Type": "Prj_Ban_Quan_Ao.Models.AccountMaGiamGium",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.AccountMaGiamGium",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountMaGiamGiumsController",
+    "Method": "GetAccountMaGiamGium",
+    "RelativePath": "api/AccountMaGiamGiums/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.AccountMaGiamGium",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountMaGiamGiumsController",
+    "Method": "PutAccountMaGiamGium",
+    "RelativePath": "api/AccountMaGiamGiums/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountMaGiamGium",
+        "Type": "Prj_Ban_Quan_Ao.Models.AccountMaGiamGium",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountMaGiamGiumsController",
+    "Method": "DeleteAccountMaGiamGium",
+    "RelativePath": "api/AccountMaGiamGiums/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountMaGiamGiumsController",
+    "Method": "GetMaGiamGiaByAccount",
+    "RelativePath": "api/AccountMaGiamGiums/getmagiamgiabyaccount/{idAccount}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAccount",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountMaGiamGiumsController",
+    "Method": "XoaAccountMaGiamGia",
+    "RelativePath": "api/AccountMaGiamGiums/xoaaccountmagiamgia/{idAccount}/{idMaGiamGia}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAccount",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "idMaGiamGia",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "PostAccount",
+    "RelativePath": "api/Accounts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "account",
+        "Type": "Prj_Ban_Quan_Ao.Models.Account",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.Account",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "GetAccount",
+    "RelativePath": "api/Accounts/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "PutAccount",
+    "RelativePath": "api/Accounts/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "account",
+        "Type": "Prj_Ban_Quan_Ao.Models.Account",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "DeleteAccount",
+    "RelativePath": "api/Accounts/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "checkDangNhap",
+    "RelativePath": "api/Accounts/checkdangnhap",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tendangnhap",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "matkhau",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "AccountExistsUserName",
+    "RelativePath": "api/Accounts/checkusername/{tenDangNhap}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tenDangNhap",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "GetRoles",
+    "RelativePath": "api/Accounts/getAllRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.VaiTro, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "GetAllAccounts",
+    "RelativePath": "api/Accounts/getalluseradmin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "GetListUserForAdminSupport",
+    "RelativePath": "api/Accounts/getlistuserforadminsupport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "GuiEmail",
+    "RelativePath": "api/Accounts/guiemail/{emailNguoiDung}/{code}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailNguoiDung",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "LockUser",
+    "RelativePath": "api/Accounts/lockUser/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "Login",
+    "RelativePath": "api/Accounts/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "Prj_Ban_Quan_Ao.Models.LoginRequestCustom",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "GetAccounts",
+    "RelativePath": "api/Accounts/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.Account, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "UnlockUser",
+    "RelativePath": "api/Accounts/unlockUser/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhDanhGiumsController",
+    "Method": "GetAnhDanhGia",
+    "RelativePath": "api/AnhDanhGiums",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.AnhDanhGium, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhDanhGiumsController",
+    "Method": "PostAnhDanhGium",
+    "RelativePath": "api/AnhDanhGiums",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "anhDanhGium",
+        "Type": "Prj_Ban_Quan_Ao.Models.AnhDanhGium",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.AnhDanhGium",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhDanhGiumsController",
+    "Method": "GetAnhDanhGium",
+    "RelativePath": "api/AnhDanhGiums/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.AnhDanhGium",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhDanhGiumsController",
+    "Method": "PutAnhDanhGium",
+    "RelativePath": "api/AnhDanhGiums/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "anhDanhGium",
+        "Type": "Prj_Ban_Quan_Ao.Models.AnhDanhGium",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhDanhGiumsController",
+    "Method": "DeleteAnhDanhGium",
+    "RelativePath": "api/AnhDanhGiums/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhSanPhamsController",
+    "Method": "GetAnhSanPhams",
+    "RelativePath": "api/AnhSanPhams",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.AnhSanPham, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhSanPhamsController",
+    "Method": "PostAnhSanPham",
+    "RelativePath": "api/AnhSanPhams",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "anhSanPham",
+        "Type": "Prj_Ban_Quan_Ao.Models.AnhSanPham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.AnhSanPham",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhSanPhamsController",
+    "Method": "GetAnhSanPham",
+    "RelativePath": "api/AnhSanPhams/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.AnhSanPham",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhSanPhamsController",
+    "Method": "PutAnhSanPham",
+    "RelativePath": "api/AnhSanPhams/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "anhSanPham",
+        "Type": "Prj_Ban_Quan_Ao.Models.AnhSanPham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhSanPhamsController",
+    "Method": "DeleteAnhSanPham",
+    "RelativePath": "api/AnhSanPhams/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhSanPhamsController",
+    "Method": "PostAnhSanPhams",
+    "RelativePath": "api/AnhSanPhams/AddMultiple",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "anhSanPhams",
+        "Type": "System.Collections.Generic.List\u00601[[Prj_Ban_Quan_Ao.Models.AnhSanPham, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.AnhSanPham, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhSanPhamsController",
+    "Method": "getAnhSanPhamBySanPham",
+    "RelativePath": "api/AnhSanPhams/getanhsanphambysanpham/{idSanPham}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSanPham",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AnhSanPhamsController",
+    "Method": "UploadImage",
+    "RelativePath": "api/AnhSanPhams/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IdentityTest_3.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Prj_Ban_Quan_Ao.Models.Account",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IdentityTest_3.Controllers.AuthController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Prj_Ban_Quan_Ao.Models.Account",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.BaiVietsController",
+    "Method": "GetBaiViets",
+    "RelativePath": "api/BaiViets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.BaiViet, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.BaiVietsController",
+    "Method": "PostBaiViet",
+    "RelativePath": "api/BaiViets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "baiViet",
+        "Type": "Prj_Ban_Quan_Ao.Models.BaiViet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.BaiViet",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.BaiVietsController",
+    "Method": "GetBaiViet",
+    "RelativePath": "api/BaiViets/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.BaiViet",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.BaiVietsController",
+    "Method": "PutBaiViet",
+    "RelativePath": "api/BaiViets/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "baiViet",
+        "Type": "Prj_Ban_Quan_Ao.Models.BaiViet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.BaiVietsController",
+    "Method": "DeleteBaiViet",
+    "RelativePath": "api/BaiViets/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChatBoxesController",
+    "Method": "GetChatBoxes",
+    "RelativePath": "api/ChatBoxes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.ChatBox, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChatBoxesController",
+    "Method": "PostChatBox",
+    "RelativePath": "api/ChatBoxes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatBox",
+        "Type": "Prj_Ban_Quan_Ao.Models.ChatBox",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.ChatBox",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChatBoxesController",
+    "Method": "PutChatBox",
+    "RelativePath": "api/ChatBoxes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "chatBox",
+        "Type": "Prj_Ban_Quan_Ao.Models.ChatBox",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChatBoxesController",
+    "Method": "DeleteChatBox",
+    "RelativePath": "api/ChatBoxes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChatBoxesController",
+    "Method": "GetChatBox",
+    "RelativePath": "api/ChatBoxes/{idAccount}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAccount",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.ChatBox, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChiPhisController",
+    "Method": "GetChiPhis",
+    "RelativePath": "api/ChiPhis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChiPhisController",
+    "Method": "PostChiPhi",
+    "RelativePath": "api/ChiPhis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ChiPhi",
+        "Type": "Prj_Ban_Quan_Ao.Models.ChiPhi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.ChiPhi",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChiPhisController",
+    "Method": "GetChiPhi",
+    "RelativePath": "api/ChiPhis/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.ChiPhi",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChiPhisController",
+    "Method": "PutChiPhi",
+    "RelativePath": "api/ChiPhis/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "ChiPhi",
+        "Type": "Prj_Ban_Quan_Ao.Models.ChiPhi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChiPhisController",
+    "Method": "DeleteChiPhi",
+    "RelativePath": "api/ChiPhis/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.ChiPhisController",
+    "Method": "ThanhToanChiPhi",
+    "RelativePath": "api/ChiPhis/thanhToan/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookStore.Controllers.CloudinaryController",
+    "Method": "UploadSingleImage",
+    "RelativePath": "api/Cloudinary/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookStore.Controllers.CloudinaryController",
+    "Method": "UploadMultipleImages",
+    "RelativePath": "api/Cloudinary/upload-multiple",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "files",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DanhGiumsController",
+    "Method": "GetDanhGia",
+    "RelativePath": "api/DanhGiums",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.DanhGium, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DanhGiumsController",
+    "Method": "PostDanhGium",
+    "RelativePath": "api/DanhGiums",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "danhGium",
+        "Type": "Prj_Ban_Quan_Ao.Models.DanhGium",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.DanhGium",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DanhGiumsController",
+    "Method": "GetDanhGium",
+    "RelativePath": "api/DanhGiums/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.DanhGium",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DanhGiumsController",
+    "Method": "PutDanhGium",
+    "RelativePath": "api/DanhGiums/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "danhGium",
+        "Type": "Prj_Ban_Quan_Ao.Models.DanhGium",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DanhGiumsController",
+    "Method": "DeleteDanhGium",
+    "RelativePath": "api/DanhGiums/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DanhGiumsController",
+    "Method": "GetDanhGiaVeSanPhamByAccount",
+    "RelativePath": "api/DanhGiums/getdanhgiavesanphambyaccount/{sanPhamId}/{accountId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPhamId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DanhGiumsController",
+    "Method": "GetListDanhGiaByIdSanPham",
+    "RelativePath": "api/DanhGiums/getlistdanhgiabyidsanpham/{sanPhamId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPhamId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DashboardsController",
+    "Method": "GetDoanhThuTheoThangTrongNam",
+    "RelativePath": "api/Dashboards/getDoanhThuTheoThangTrongNam",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DashboardsController",
+    "Method": "GetDonHangGanNhat",
+    "RelativePath": "api/Dashboards/getDonHangGanNhat",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DashboardsController",
+    "Method": "GetKhachThanThiet",
+    "RelativePath": "api/Dashboards/getKhachThanThiet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DashboardsController",
+    "Method": "GetThongKeDoanhThuChiPhi",
+    "RelativePath": "api/Dashboards/getThongKeDoanhThuChiPhi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DashboardsController",
+    "Method": "GetThongKeHead",
+    "RelativePath": "api/Dashboards/getThongKeHead",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DiaChisController",
+    "Method": "GetDiaChis",
+    "RelativePath": "api/DiaChis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.DiaChi, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DiaChisController",
+    "Method": "PostDiaChi",
+    "RelativePath": "api/DiaChis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "diaChi",
+        "Type": "Prj_Ban_Quan_Ao.Models.DiaChi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.DiaChi",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DiaChisController",
+    "Method": "GetDiaChi",
+    "RelativePath": "api/DiaChis/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.DiaChi",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DiaChisController",
+    "Method": "PutDiaChi",
+    "RelativePath": "api/DiaChis/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "diaChi",
+        "Type": "Prj_Ban_Quan_Ao.Models.DiaChi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DiaChisController",
+    "Method": "DeleteDiaChi",
+    "RelativePath": "api/DiaChis/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DiaChisController",
+    "Method": "ListDiaChiTheoUser",
+    "RelativePath": "api/DiaChis/listdiachitheouser/{idAccount}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAccount",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "GetDonHangs",
+    "RelativePath": "api/DonHangs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "PostDonHang",
+    "RelativePath": "api/DonHangs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "donHang",
+        "Type": "Prj_Ban_Quan_Ao.Models.DonHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.DonHang",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "GetDonHang",
+    "RelativePath": "api/DonHangs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "PutDonHang",
+    "RelativePath": "api/DonHangs/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "donHang",
+        "Type": "Prj_Ban_Quan_Ao.Models.DonHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "DeleteDonHang",
+    "RelativePath": "api/DonHangs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "changeStatusDown",
+    "RelativePath": "api/DonHangs/changeStatusDown/{orderId}/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "changeStatusUp",
+    "RelativePath": "api/DonHangs/changeStatusUp/{orderId}/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "GetDoanhThuTheoNam",
+    "RelativePath": "api/DonHangs/getdoanhthutheonam",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "GetDoanhThuTheoNgay",
+    "RelativePath": "api/DonHangs/getdoanhthutheongay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "GetDoanhThuTheoThang",
+    "RelativePath": "api/DonHangs/getdoanhthutheothang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "GetListDonHangByAccountId",
+    "RelativePath": "api/DonHangs/getlistdonhangbyaccountid/{idAccount}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAccount",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "GetListSanPhamByIDDonHang",
+    "RelativePath": "api/DonHangs/getListSanPhamByIDDonHang/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "GetSoLuongTrangThaiDonHang",
+    "RelativePath": "api/DonHangs/GetSoLuongTrangThaiDonHang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "GetThanhTienTrangThaiDonHang",
+    "RelativePath": "api/DonHangs/GetThanhTienTrangThaiDonHang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "HuyDon",
+    "RelativePath": "api/DonHangs/huydon/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.DonHangsController",
+    "Method": "HuyDonHang",
+    "RelativePath": "api/DonHangs/huydonhang/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "donHang",
+        "Type": "Prj_Ban_Quan_Ao.Models.DonHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GioHangsController",
+    "Method": "GetGioHangs",
+    "RelativePath": "api/GioHangs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.GioHang, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GioHangsController",
+    "Method": "PostGioHang",
+    "RelativePath": "api/GioHangs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gioHang",
+        "Type": "Prj_Ban_Quan_Ao.Models.GioHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.GioHang",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GioHangsController",
+    "Method": "GetGioHang",
+    "RelativePath": "api/GioHangs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.GioHang",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GioHangsController",
+    "Method": "PutGioHang",
+    "RelativePath": "api/GioHangs/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "gioHang",
+        "Type": "Prj_Ban_Quan_Ao.Models.GioHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GioHangsController",
+    "Method": "DeleteGioHang",
+    "RelativePath": "api/GioHangs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GioHangsController",
+    "Method": "GetSLSPTrongGioByIdAccount",
+    "RelativePath": "api/GioHangs/getslsptronggiobyidaccount/{idAccount}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAccount",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GopiesController",
+    "Method": "GetGopies",
+    "RelativePath": "api/Gopies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.GopY, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GopiesController",
+    "Method": "PostGopY",
+    "RelativePath": "api/Gopies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gopY",
+        "Type": "Prj_Ban_Quan_Ao.Models.GopY",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.GopY",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GopiesController",
+    "Method": "GetGopY",
+    "RelativePath": "api/Gopies/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.GopY",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GopiesController",
+    "Method": "PutGopY",
+    "RelativePath": "api/Gopies/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "gopY",
+        "Type": "Prj_Ban_Quan_Ao.Models.GopY",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GopiesController",
+    "Method": "DeleteGopY",
+    "RelativePath": "api/Gopies/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.GopiesController",
+    "Method": "PhanHoi",
+    "RelativePath": "api/Gopies/phanHoi/{id}/{email}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "phanHoi",
+        "Type": "Prj_Ban_Quan_Ao.Models.PhanHoiRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.LoaiSanPhamsController",
+    "Method": "GetLoaiSanPhams",
+    "RelativePath": "api/LoaiSanPhams",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.LoaiSanPham, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.LoaiSanPhamsController",
+    "Method": "PostLoaiSanPham",
+    "RelativePath": "api/LoaiSanPhams",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loaiSanPham",
+        "Type": "Prj_Ban_Quan_Ao.Models.LoaiSanPham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.LoaiSanPham",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.LoaiSanPhamsController",
+    "Method": "GetLoaiSanPham",
+    "RelativePath": "api/LoaiSanPhams/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.LoaiSanPham",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.LoaiSanPhamsController",
+    "Method": "PutLoaiSanPham",
+    "RelativePath": "api/LoaiSanPhams/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "loaiSanPham",
+        "Type": "Prj_Ban_Quan_Ao.Models.LoaiSanPham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.LoaiSanPhamsController",
+    "Method": "DeleteLoaiSanPham",
+    "RelativePath": "api/LoaiSanPhams/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.LoaiSanPhamsController",
+    "Method": "GetLoaiSanPhamCons",
+    "RelativePath": "api/LoaiSanPhams/getAllDanhMucCon",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.LoaiSanPhamsController",
+    "Method": "GetAllLoaiSanPham",
+    "RelativePath": "api/LoaiSanPhams/getAllLoaiSanPham",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.LoaiSanPham, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.LoaiSanPhamsController",
+    "Method": "getAllLoaiSanPhamAll",
+    "RelativePath": "api/LoaiSanPhams/getAllLoaiSanPhamAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.LoaiSanPham, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.LoaiSanPhamsController",
+    "Method": "GetSoLuongLoaiSanPham",
+    "RelativePath": "api/LoaiSanPhams/GetSoLuongLoaiSanPham",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.MaGiamGiumsController",
+    "Method": "GetMaGiamGia",
+    "RelativePath": "api/MaGiamGiums",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.MaGiamGium, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.MaGiamGiumsController",
+    "Method": "PostMaGiamGium",
+    "RelativePath": "api/MaGiamGiums",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maGiamGium",
+        "Type": "Prj_Ban_Quan_Ao.Models.MaGiamGium",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.MaGiamGium",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.MaGiamGiumsController",
+    "Method": "GetMaGiamGium",
+    "RelativePath": "api/MaGiamGiums/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.MaGiamGium",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.MaGiamGiumsController",
+    "Method": "PutMaGiamGium",
+    "RelativePath": "api/MaGiamGiums/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "maGiamGium",
+        "Type": "Prj_Ban_Quan_Ao.Models.MaGiamGium",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.MaGiamGiumsController",
+    "Method": "DeleteMaGiamGium",
+    "RelativePath": "api/MaGiamGiums/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.MaGiamGiumsController",
+    "Method": "GetMaGiamGiaConLai",
+    "RelativePath": "api/MaGiamGiums/getmagiamgiaconlai/{idAccount}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAccount",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.MaGiamGiumsController",
+    "Method": "GetMaGiamGiaDaLuu",
+    "RelativePath": "api/MaGiamGiums/getmagiamgiadaluu/{idAccount}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAccount",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamDonHangsController",
+    "Method": "GetSanPhamDonHangs",
+    "RelativePath": "api/SanPhamDonHangs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.SanPhamDonHang, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamDonHangsController",
+    "Method": "PostSanPhamDonHang",
+    "RelativePath": "api/SanPhamDonHangs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPhamDonHang",
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamDonHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamDonHang",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamDonHangsController",
+    "Method": "GetSanPhamDonHang",
+    "RelativePath": "api/SanPhamDonHangs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamDonHang",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamDonHangsController",
+    "Method": "PutSanPhamDonHang",
+    "RelativePath": "api/SanPhamDonHangs/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "sanPhamDonHang",
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamDonHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamDonHangsController",
+    "Method": "DeleteSanPhamDonHang",
+    "RelativePath": "api/SanPhamDonHangs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamDonHangsController",
+    "Method": "DeleteSanPhamByIdSanPham",
+    "RelativePath": "api/SanPhamDonHangs/deletesanphambyidsanpham/{idSanPham}/{idDonHang}/{kichCo}/{mau}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSanPham",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "idDonHang",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "kichCo",
+        "Type": "System.Double",
+        "IsRequired": true
+      },
+      {
+        "Name": "mau",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamDonHangsController",
+    "Method": "GetMaGiamGiaByAccount",
+    "RelativePath": "api/SanPhamDonHangs/getlistsanphambyiddonhang/{idDonHang}/{accountId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDonHang",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamDonHangsController",
+    "Method": "SuaSanPhamDonHang",
+    "RelativePath": "api/SanPhamDonHangs/suasanphamdonhang/{idSanPham}/{idDonHang}/{kichCo}/{mau}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSanPham",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "idDonHang",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "kichCo",
+        "Type": "System.Double",
+        "IsRequired": true
+      },
+      {
+        "Name": "mau",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamGioHangsController",
+    "Method": "GetSanPhamGioHangs",
+    "RelativePath": "api/SanPhamGioHangs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.SanPhamGioHang, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamGioHangsController",
+    "Method": "PostSanPhamGioHang",
+    "RelativePath": "api/SanPhamGioHangs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPhamGioHang",
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamGioHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamGioHang",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamGioHangsController",
+    "Method": "GetSanPhamGioHang",
+    "RelativePath": "api/SanPhamGioHangs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamGioHang",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamGioHangsController",
+    "Method": "PutSanPhamGioHang",
+    "RelativePath": "api/SanPhamGioHangs/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "sanPhamGioHang",
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamGioHang",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamGioHangsController",
+    "Method": "DeleteSanPhamGioHang",
+    "RelativePath": "api/SanPhamGioHangs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamGioHangsController",
+    "Method": "GetSanPhamTrongGioHang",
+    "RelativePath": "api/SanPhamGioHangs/getsanphamtronggiohang/{idGioHang}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idGioHang",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamGioHangsController",
+    "Method": "XoaMotSanPhamTrongGioHang",
+    "RelativePath": "api/SanPhamGioHangs/xoamotsanphamtronggiohang/{idGioHang}/{idSanPham}/{kichCo}/{mau}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idGioHang",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "idSanPham",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "kichCo",
+        "Type": "System.Double",
+        "IsRequired": true
+      },
+      {
+        "Name": "mau",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamGioHangsController",
+    "Method": "XoaSanPhamTrongGioHang",
+    "RelativePath": "api/SanPhamGioHangs/xoasanphamtronggiohang/{idGioHang}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idGioHang",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamKichCoesController",
+    "Method": "GetSanPhamKichCos",
+    "RelativePath": "api/SanPhamKichCoes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.SanPhamKichCo, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamKichCoesController",
+    "Method": "PostSanPhamKichCo",
+    "RelativePath": "api/SanPhamKichCoes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPhamKichCo",
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamKichCo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamKichCo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamKichCoesController",
+    "Method": "GetSanPhamKichCo",
+    "RelativePath": "api/SanPhamKichCoes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamKichCo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamKichCoesController",
+    "Method": "PutSanPhamKichCo",
+    "RelativePath": "api/SanPhamKichCoes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "sanPhamKichCo",
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamKichCo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamKichCoesController",
+    "Method": "DeleteSanPhamKichCo",
+    "RelativePath": "api/SanPhamKichCoes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamKichCoesController",
+    "Method": "GetKichCoSanPham",
+    "RelativePath": "api/SanPhamKichCoes/getkichcosanpham/{idSanPham}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idSanPham",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamKichCoesController",
+    "Method": "getSoLuong",
+    "RelativePath": "api/SanPhamKichCoes/getSoLuong/{sanPhamId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPhamId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamKichCo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamKichCoesController",
+    "Method": "updateSoLuong",
+    "RelativePath": "api/SanPhamKichCoes/updateSoLuong/{sanPhamId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPhamId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "sanPhamKichCos",
+        "Type": "System.Collections.Generic.List\u00601[[Prj_Ban_Quan_Ao.Models.SanPhamKichCo, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPhamKichCo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "GetSanPhams",
+    "RelativePath": "api/SanPhams",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "PostSanPham",
+    "RelativePath": "api/SanPhams",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPham",
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPham",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "GetSanPham",
+    "RelativePath": "api/SanPhams/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "PutSanPham",
+    "RelativePath": "api/SanPhams/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "sanPham",
+        "Type": "Prj_Ban_Quan_Ao.Models.SanPham",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "DeleteSanPham",
+    "RelativePath": "api/SanPhams/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "GetAllSanPhamByDanhMuc",
+    "RelativePath": "api/SanPhams/getallsanphambydanhmuc/{idDanhMuc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDanhMuc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "GetSanPhamByDanhMuc",
+    "RelativePath": "api/SanPhams/getsanphambydanhmuc/{idDanhMuc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDanhMuc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "GetSanPhamByPage",
+    "RelativePath": "api/SanPhams/getsanphambypage/{idDanhMuc}/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idDanhMuc",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "GetSanPhamBySearchKey",
+    "RelativePath": "api/SanPhams/getsanphambysearchkey/{searchKey}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchKey",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "GetSanPhamMoiVe",
+    "RelativePath": "api/SanPhams/getsanphammoive/{soSanPhamLay}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "soSanPhamLay",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "GetSanPhamNhieuLuotMua",
+    "RelativePath": "api/SanPhams/getsanphamnhieuluotmua",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.SanPhamsController",
+    "Method": "GetSoLuongLoaiSanPham",
+    "RelativePath": "api/SanPhams/GetSoLuongLoaiSanPham",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.VaiTrosController",
+    "Method": "GetVaiTros",
+    "RelativePath": "api/VaiTros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.VaiTro, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.VaiTrosController",
+    "Method": "getQuyens",
+    "RelativePath": "api/VaiTros/getListQuyen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.Quyen, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.VaiTrosController",
+    "Method": "getQuyenByVaiTroId",
+    "RelativePath": "api/VaiTros/getQuyenByVaiTroId/{vaiTroId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vaiTroId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.VaiTrosController",
+    "Method": "UpdatePermissionRole",
+    "RelativePath": "api/VaiTros/updatePermissionRole/{vaiTroId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vaiTroId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "quyen",
+        "Type": "System.Collections.Generic.List\u00601[[Prj_Ban_Quan_Ao.Models.Quyen, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.YeuThichesController",
+    "Method": "GetYeuThiches",
+    "RelativePath": "api/YeuThiches",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Prj_Ban_Quan_Ao.Models.YeuThich, Prj_Ban_Quan_Ao, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.YeuThichesController",
+    "Method": "PostYeuThich",
+    "RelativePath": "api/YeuThiches",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "yeuThich",
+        "Type": "Prj_Ban_Quan_Ao.Models.YeuThich",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.YeuThich",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.YeuThichesController",
+    "Method": "GetYeuThich",
+    "RelativePath": "api/YeuThiches/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.YeuThich",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.YeuThichesController",
+    "Method": "PutYeuThich",
+    "RelativePath": "api/YeuThiches/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "yeuThich",
+        "Type": "Prj_Ban_Quan_Ao.Models.YeuThich",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.YeuThichesController",
+    "Method": "DeleteYeuThich",
+    "RelativePath": "api/YeuThiches/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.YeuThichesController",
+    "Method": "GetSanPhamMoiVe",
+    "RelativePath": "api/YeuThiches/checkYeuThich/{sanPhamId}/{accountId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPhamId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.YeuThichesController",
+    "Method": "GetAllSanPhamYeuThich",
+    "RelativePath": "api/YeuThiches/getallsanphamyeuthich/{accountId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.YeuThichesController",
+    "Method": "XoaSanPhamYeuThich",
+    "RelativePath": "api/YeuThiches/xoaSanPhamYeuThich/{sanPhamId}/{accountId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sanPhamId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

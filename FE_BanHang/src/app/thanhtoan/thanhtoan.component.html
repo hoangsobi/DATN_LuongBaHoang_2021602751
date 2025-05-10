@@ -244,6 +244,7 @@
   <p-dialog header="" [(visible)]="display" [style]="{width: '400px'}" [closable]="false" [draggable]="false" [modal]="true">
     <div style="text-align: center; margin-bottom: 25px;">
         <img src="https://cdn-icons-png.freepik.com/512/6815/6815090.png" style="width: 100px; height: 100px; object-fit: cover;">
+
     </div>
     <div style="text-align: center; font-size: 24px;">Đặt hàng thành công</div>
   </p-dialog>
@@ -251,6 +252,8 @@
   <p-dialog header="Thông tin chuyển khoản" [(visible)]="showQR" [style]="{width: '500px'}" [draggable]="false" [modal]="true">
     <div style="text-align: center;">
         <img [src]="imgQR" style="width: 400px; height: auto; object-fit: cover;">
+        <br/>
+        <span>Nội dung chuyển khoản(bắt buộc chứa chuỗi): {{chuoiCK}}</span>
     </div>
     <div>
       <p style="text-align: right;">{{ minutes }}:{{ seconds < 10 ? '0' : '' }}{{ seconds }}</p>

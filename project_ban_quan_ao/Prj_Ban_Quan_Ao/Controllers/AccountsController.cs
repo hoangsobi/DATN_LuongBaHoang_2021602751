@@ -249,8 +249,8 @@ namespace Prj_Ban_Quan_Ao.Controllers
         {
             string subject = "Xác nhận đăng ký tài khoản Fashion Store";
             string message = $"Xin chào, {emailNguoiDung} \n \n Cảm ơn bạn đã lựa chọn và tin tưởng cửa hàng của chúng tôi \n Vui lòng nhập đoạn code sau đây để hoàn tất đăng ký. Lưu ý không cung cấp đoạn code cho bất kì ai! \n Code: {code}";
-            var mail = "binhghitao@gmail.com";
-            var pw = "";
+            var mail = "hoangluongba662003@gmail.com";
+            var pw = "Hoang2003@";
             var client = new SmtpClient("smtp-mail.outlook.com", 587)
             {
                 EnableSsl = true,

@@ -78,6 +78,7 @@ export class ThanhtoanComponent {
   seconds: number = 0;
   intervalId: any;
   display = false;
+  chuoiCK = '';
 
 
   listSanPham: any;
@@ -201,7 +202,9 @@ export class ThanhtoanComponent {
       this.showQR = true;
       let thanhTien = this.tongTien * (1-this.luongGiam/100) + parseInt(this.phiVanChuyen);
       const currentDate = new Date();
-      this.imgQR = `https://img.vietqr.io/image/970422-0328689795-compact2.png?amount=${thanhTien}&addInfo=Thanh toan don hang ${currentDate.toLocaleString()}`;
+      var randomNum = this.generateUniqueSevenDigitNumber();
+            this.chuoiCK = `ORDER${randomNum}`;
+      this.imgQR = `https://img.vietqr.io/image/MB-0356206503-compact2.png?amount=${thanhTien}&addInfo=Thanh toan don hang ${this.chuoiCK}`;
       this.minutes = 10;
       this.seconds = 0;
       clearInterval(this.intervalId);
@@ -214,7 +217,7 @@ export class ThanhtoanComponent {
             return;
           }
           this._apiService.getThanhToan().subscribe(data => {
-            if(data.data[data.data.length - 1]["Giá trị"] >= this.thanhToan && data.data[data.data.length - 1]["Mô tả"] == `Thanh toan don hang ${this.convertDateToString(currentDate.toLocaleString())}`)
+            if(data.data[data.data.length - 1]["Giá trị"] >= this.thanhToan && data.data[data.data.length - 1]["Mô tả"].includes(this.chuoiCK))
               {
                 clearInterval(newInterval);
                 this.display = true;
@@ -256,6 +259,19 @@ export class ThanhtoanComponent {
 
 
 
+  }
+
+  generateUniqueSevenDigitNumber() {
+    const digits = Array.from({ length: 10 }, (_, i) => i); // Mảng 0 đến 9
+    let result = '';
+
+    for (let i = 0; i < 9; i++) {
+      const randomIndex = Math.floor(Math.random() * digits.length);
+      result += digits[randomIndex];
+      digits.splice(randomIndex, 1);
+    }
+
+    return result;
   }
 
   acceptDonHang(body: any){
