@@ -100,8 +100,8 @@ namespace Prj_Ban_Quan_Ao.Controllers
                 };
             var mailMessage = new MailMessage
                 {
-                    From = new MailAddress(fromEmail, "Fashion Store"),
-                    Subject = "Fashion Store phản hồi",
+                    From = new MailAddress(fromEmail, "YODY"),
+                    Subject = "YODY phản hồi",
                     Body = phanHoi.PhanHoi,
                     IsBodyHtml = false
                 };

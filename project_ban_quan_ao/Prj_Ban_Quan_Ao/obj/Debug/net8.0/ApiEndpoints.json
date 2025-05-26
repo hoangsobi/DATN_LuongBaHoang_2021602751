@@ -226,6 +226,22 @@
   },
   {
     "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
+    "Method": "CheckAccountLock",
+    "RelativePath": "api/Accounts/checkAccountLock/{accountId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
     "Method": "checkDangNhap",
     "RelativePath": "api/Accounts/checkdangnhap",
     "HttpMethod": "GET",
@@ -340,13 +356,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Prj_Ban_Quan_Ao.Controllers.AccountsController",
@@ -3152,6 +3162,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Prj_Ban_Quan_Ao.Controllers.VaiTrosController",
+    "Method": "GetVaiTroId",
+    "RelativePath": "api/VaiTros/getVaiTroByName/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Prj_Ban_Quan_Ao.Models.VaiTro",
         "MediaTypes": [
           "text/plain",
           "application/json",

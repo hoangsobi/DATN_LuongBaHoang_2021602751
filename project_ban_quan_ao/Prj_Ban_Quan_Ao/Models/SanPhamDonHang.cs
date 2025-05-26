@@ -22,6 +22,8 @@ public partial class SanPhamDonHang
     /// </summary>
     public int? Mau { get; set; }
 
+    public int? Gia { get; set; }
+
     public virtual DonHang? DonHang { get; set; }
 
     public virtual SanPham? SanPham { get; set; }

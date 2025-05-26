@@ -8,25 +8,24 @@
           <img [src]="account.duongDanAnh">
         </div>
         <div class="cotthongtin">
-          <div style="margin-top: 20px;">{{account.tenHienThi}}</div>
-          <div><a style="font-size: 14px;">Đăng xuất</a></div>
+          <div style="margin-top: 20px;">{{hoTen}}</div>
         </div>
       </div>
       <div class="hang">
         <span class="p-float-label">
-          <input id="float-input" type="text" pInputText [ngModel]="account.tenHienThi">
+          <input id="float-input" type="text" pInputText [(ngModel)]="account.tenHienThi">
           <label for="float-input" class="labelFocus">Họ tên</label>
       </span>
       </div>
       <div class="hang">
         <span class="p-float-label">
-          <input id="float-input" type="text" pInputText [ngModel]="account.soDienThoai">
+          <input id="float-input" type="text" pInputText [(ngModel)]="account.soDienThoai">
           <label for="float-input" class="labelFocus">Số điện thoại</label>
       </span>
       </div>
       <div class="hang">
         <span class="p-float-label">
-          <input id="float-input" type="text" pInputText [ngModel]="account.email">
+          <input id="float-input" type="text" pInputText [ngModel]="account.email" disabled="true">
           <label for="float-input" class="labelFocus">Email</label>
       </span>
       </div>

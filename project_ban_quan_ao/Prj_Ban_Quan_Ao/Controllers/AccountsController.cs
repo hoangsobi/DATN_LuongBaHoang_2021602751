@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using Prj_Ban_Quan_Ao.Models;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
@@ -224,16 +225,22 @@ namespace Prj_Ban_Quan_Ao.Controllers
         }
 
         [HttpGet("checkdangnhap")]
-        public IActionResult checkDangNhap(string tendangnhap, string matkhau)
+        public async Task<IActionResult> checkDangNhap(string tendangnhap, string matkhau)
         {
+            var role = await _context.VaiTros.Where(x => x.Name == "User").Select(x => x.Id).FirstOrDefaultAsync();
             var query =
-                        (from ac in _context.Accounts
+                        await (from ac in _context.Accounts
                          where ac.TenDangNhap == tendangnhap &&
                                 ac.MatKhau == matkhau
-                         select ac);
-            if (query.Any())
+                                && ac.VaiTroId == role
+                         select ac).FirstOrDefaultAsync();
+
+            if (query != null)
             {
-                return Ok(new { status = "success", message = "Đăng nhập thành công.", accounts = query.FirstOrDefault() });
+                if(query.IsLocked == true)
+                    return Ok(new { status = "locked", message = "Tài khoản đã bị khóa."});
+                //var token = GenerateJwtToken(query.FirstOrDefault());
+                return Ok(new { status = "success", message = "Đăng nhập thành công.", accounts = query });
             }
             return Ok(new { status = "error", message = "Tên đăng nhập hoặc mật khẩu không đúng.", tendang = tendangnhap, matkhau = matkhau});
         }
@@ -244,25 +251,60 @@ namespace Prj_Ban_Quan_Ao.Controllers
             return _context.Accounts.Any(e => e.TenDangNhap == tenDangNhap);
         }
 
-        [HttpGet("guiemail/{emailNguoiDung}/{code}")]
-        public Task GuiEmail(string emailNguoiDung,string code)
+        [HttpGet("checkAccountLock/{accountId}")]
+        public async Task<ActionResult> CheckAccountLock(Guid accountId)
         {
-            string subject = "Xác nhận đăng ký tài khoản Fashion Store";
-            string message = $"Xin chào, {emailNguoiDung} \n \n Cảm ơn bạn đã lựa chọn và tin tưởng cửa hàng của chúng tôi \n Vui lòng nhập đoạn code sau đây để hoàn tất đăng ký. Lưu ý không cung cấp đoạn code cho bất kì ai! \n Code: {code}";
-            var mail = "hoangluongba662003@gmail.com";
-            var pw = "Hoang2003@";
-            var client = new SmtpClient("smtp-mail.outlook.com", 587)
-            {
-                EnableSsl = true,
-                Credentials = new NetworkCredential(mail, pw)
-            };
-            return client.SendMailAsync(
-                new MailMessage(
-                   from: mail,
-                   to: emailNguoiDung,
-                   subject,
-                   message
-                ));
+            var query = await _context.Accounts.FirstOrDefaultAsync(e => e.Id == accountId);
+            return Ok(query.IsLocked);
+        }
+
+        [HttpGet("guiemail/{emailNguoiDung}/{code}")]
+        public async Task<object> GuiEmail(string emailNguoiDung,string code)
+        {
+            //string subject = "Xác nhận đăng ký tài khoản Fashion Store";
+            //string message = $"Xin chào, {emailNguoiDung} \n \n Cảm ơn bạn đã lựa chọn và tin tưởng cửa hàng của chúng tôi \n Vui lòng nhập đoạn code sau đây để hoàn tất đăng ký. Lưu ý không cung cấp đoạn code cho bất kì ai! \n Code: {code}";
+            //var mail = "hoangluongba6603@gmail.com";
+            //var pw = "Hoang2003@";
+            //var client = new SmtpClient("smtp-mail.outlook.com", 587)
+            //{
+            //    EnableSsl = true,
+            //    Credentials = new NetworkCredential(mail, pw)
+            //};
+            //return client.SendMailAsync(
+            //    new MailMessage(
+            //       from: mail,
+            //       to: emailNguoiDung,
+            //       subject,
+            //       message
+            //));
+
+
+
+            string fromEmail = "hoangluongba6603@gmail.com";
+            if (emailNguoiDung == null)
+                return Ok(new { Status = "success" });
+
+
+                var smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 587,
+                    EnableSsl = true,
+                    Credentials = new NetworkCredential("hoangluongba6603@gmail.com", "kywghvziirtolimc"),
+                    DeliveryMethod = SmtpDeliveryMethod.Network
+                };
+            var mailMessage = new MailMessage
+                {
+                    From = new MailAddress(fromEmail, "YODY"),
+                    Subject = "Xác nhận đăng ký tài khoản YODY",
+                Body = $"Xin chào, {emailNguoiDung} \n \n Cảm ơn bạn đã lựa chọn và tin tưởng cửa hàng của chúng tôi \n Vui lòng nhập đoạn code sau đây để hoàn tất đăng ký. Lưu ý không cung cấp đoạn code cho bất kì ai! \n Code: {code}",
+                    IsBodyHtml = false
+                };
+
+                mailMessage.To.Add(emailNguoiDung);
+
+                await smtpClient.SendMailAsync(mailMessage);
+            return Ok(new { Status = "success" });
+
         }
 
 
@@ -300,6 +342,11 @@ namespace Prj_Ban_Quan_Ao.Controllers
             if (user == null)
             {
                 return Ok(new {status="wrong"});
+            }
+
+            if(user.IsLocked.HasValue && user.IsLocked == true)
+            {
+                return Ok(new { status = "locked" });
             }
 
             // Tạo token JWT

@@ -68,7 +68,8 @@ namespace Prj_Ban_Quan_Ao.Controllers
                                trangThai = dh.TrangThai,
                                MaGiamGia = mgg.Ma,
                                luongGiam = mgg.LuongGiam,
-                               tenHienThi = ac.TenHienThi,
+                               tenHienThi = dh.TenNguoiMua,
+                               soDienThoai = dh.SoDienThoai,
                            }).FirstOrDefault();
 
             if (donHang == null)

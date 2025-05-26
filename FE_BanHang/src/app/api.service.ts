@@ -29,6 +29,7 @@ export class ApiService {
   urlChatbox = 'https://localhost:7295/api/ChatBoxes';
   urlYeuThich = 'https://localhost:7295/api/YeuThiches';
   urlGopY = 'https://localhost:7295/api/gopies';
+  urlVaiTro = 'https://localhost:7295/api/vaitros';
   urlNganHang = 'https://script.google.com/macros/s/AKfycbyEN4JnrNtFPUyzGi1JqCpfS6jnwowqCjfPZJSxFMo-rZRkBFzhLKYbTP6t45MGYc1b/exec';
   constructor(
     private http: HttpClient,
@@ -281,5 +282,13 @@ export class ApiService {
   postGopY(body: any): Observable<any>
   {
     return this.http.post(this.urlGopY, body, this.httpOptions);
+  }
+
+  getVaiTroByName(name: string): Observable<any> {
+    return this.http.get(`${this.urlVaiTro}/getVaiTroByName/${name}`, this.httpOptions);
+  }
+
+  changeStatusOrder( orderId: any, status: any): Observable<any>{
+    return this.http.get(`${this.urlDonHang}/changeStatusUp/${orderId}/${status}`, this.httpOptions);
   }
 }

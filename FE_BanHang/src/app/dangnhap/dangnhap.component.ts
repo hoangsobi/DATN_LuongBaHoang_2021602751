@@ -64,6 +64,10 @@ export class DangnhapComponent {
 
 
       }
+      else if(rq.status == "locked")
+      {
+        this.messageService.add({severity:'error', summary: 'Thông báo', detail: 'Tài khoản đã bị khóa', life: 3000});
+      }
       else
       {
         this.messageService.add({severity:'error', summary: 'Thông báo', detail: 'Thông tin tài khoản hoặc mật khẩu không chính xác', life: 3000});

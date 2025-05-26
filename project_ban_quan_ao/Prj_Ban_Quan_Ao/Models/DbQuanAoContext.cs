@@ -406,6 +406,10 @@ public partial class DbQuanAoContext : DbContext
                 .HasColumnName("ngayTao");
             entity.Property(e => e.PhuongThucThanhToan).HasColumnName("phuongThucThanhToan");
             entity.Property(e => e.PhuongThucVanChuyen).HasColumnName("phuongThucVanChuyen");
+            entity.Property(e => e.SoDienThoai)
+                .HasMaxLength(50)
+                .HasColumnName("soDienThoai");
+            entity.Property(e => e.TenNguoiMua).HasColumnName("tenNguoiMua");
             entity.Property(e => e.ThanhTien).HasColumnName("thanhTien");
             entity.Property(e => e.TrangThai)
                 .HasComment("Chờ xác nhận đơn hàng, Đang chuẩn bị hàng, Đang giao hàng, Giao hàng thành công, Đã hủy")
@@ -592,6 +596,7 @@ public partial class DbQuanAoContext : DbContext
                 .HasDefaultValueSql("(newid())")
                 .HasColumnName("id");
             entity.Property(e => e.DonHangId).HasColumnName("DonHang_id");
+            entity.Property(e => e.Gia).HasColumnName("gia");
             entity.Property(e => e.KichCo).HasColumnName("kichCo");
             entity.Property(e => e.Mau)
                 .HasComment("1.đỏ, 2. cam, 3. vàng, 4. xanh lục, 5. xanh dương, 6. tím, 7.đen, 8. trắng")

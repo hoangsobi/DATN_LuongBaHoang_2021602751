@@ -92,6 +92,7 @@ export class ThanhtoanComponent {
   rqDC: any;
   rqPTTT: any;
   rqPTVC: any;
+  hoTen: any;
 
   constructor(
     public _dangNhapService: DangnhapService,
@@ -104,6 +105,7 @@ export class ThanhtoanComponent {
     const storedValueAccount = storage.get('account').subscribe(data =>
       {
         this.account = data;
+        this.hoTen = this.account.tenHienThi;
         if(this.account)
           this.callAPI();
         this.thanhToan = this.tongTien;
@@ -230,6 +232,8 @@ export class ThanhtoanComponent {
                   ghiChu: this.ghiChu,
                   phuongThucVanChuyen: this.phuongThucVanChuyen,
                   phuongThucThanhToan: this.phuongThucThanhToan,
+                  soDienThoai: this.account.soDienThoai,
+                  tenNguoiMua: this.account.tenHienThi,
                   trangThai: "Chờ xác nhận đơn hàng",
                 }
                 this.acceptDonHang(body);
@@ -249,6 +253,8 @@ export class ThanhtoanComponent {
       phuongThucVanChuyen: this.phuongThucVanChuyen,
       phuongThucThanhToan: this.phuongThucThanhToan,
       trangThai: "Chờ xác nhận đơn hàng",
+      soDienThoai: this.account.soDienThoai,
+      tenNguoiMua: this.account.tenHienThi,
     }
     this.confirmationService.confirm({
       message: 'Xác nhận đặt đơn hàng này?',
@@ -285,6 +291,7 @@ export class ThanhtoanComponent {
           soLuong: this.listSanPham[i].soLuong,
           kichCo: this.listSanPham[i].kichCo,
           mau: this.listSanPham[i].mau,
+          gia: this.listSanPham[i].giaSauGiam? this.listSanPham[i].giaSauGiam : this.listSanPham[i].gia,
         }
         this._apiService.postSanPhamDonHang(body2).subscribe();
       }
